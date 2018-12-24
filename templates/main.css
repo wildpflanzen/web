@@ -1,0 +1,70 @@
+﻿body { margin:0; padding:0;}
+
+.wrapper {
+max-width: 1024px;
+margin: 0 auto;
+margin-top: 0;
+padding: 0;
+background-color: rgb(240,240,240);
+}
+
+.content {
+text-align: center;
+}
+
+.index_species {
+display: inline-block;
+margin-bottom: 16px;
+width: 240px;
+padding: 6px;
+vertical-align: top;
+}
+
+.index_thumb img {
+max-width: 100%;
+width: 240px;
+}
+
+.thumb {
+display: inline-block;
+margin-bottom: 16px;
+width: 480px;
+padding: 6px;
+vertical-align: top;
+}
+.thumb img {
+max-width: 100%;
+width: 480px;
+}
+   
+.index_name {
+font-size: 18px;
+font-family: Helvetica, Arial, sans-serif;
+line-height: 20px;
+padding: 12px;
+}
+
+.index_name a {
+text-decoration: none;
+color: rgb(64, 64, 64);
+font-weight: 400;
+}
+
+.index_name a:hover {
+color: #989898;
+outline: 0;
+cursor: pointer;
+}
+
+.footer {
+padding: 12px;
+margin-top: 32px;
+border: 1px solid black;
+clear: both;
+text-align: center;
+}
+
+.footer a {
+text-decoration: none;
+color: rgb(64, 64, 64);
+}

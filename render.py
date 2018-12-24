@@ -32,7 +32,7 @@ def make_html_main(database):
    html_template = jinja_env.get_template('main-de.html')
    
    # Make html main file
-   filename = os.path.join('docs', 'main.html')
+   filename = os.path.join('docs', 'index.html')
    print('   %s' % filename)
    html = html_template.render(groups=database['groups'])
    with codecs.open(filename, 'w', encoding='utf-8-sig') as fo:
@@ -153,9 +153,9 @@ def make_thumbnails(database):
             # Make thumbnail without overwrite
             if not os.path.isfile(thumb_out):
                if i == 0:
-                  thumbnail(source_in, thumb_out, size='480x360')
+                  thumbnail(source_in, thumb_out, size='360x240')
                else:
-                  thumbnail(source_in, thumb_out, size='480x360')
+                  thumbnail(source_in, thumb_out, size='360x240')
 
             # Copy image without overwrite
             if not os.path.isfile(image_out):
