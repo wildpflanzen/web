@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
+
+<head>
+   <!-- Metadata -->
+   {%- include 'metadata-de.html' %}
+   
+   <title>{{ blume.genus }} {{ blume.species }} | Wildpflanzen</title>
+   
+   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
+   <link href="static/main.css" rel="stylesheet" type="text/css" media="all" />
+</head>
+
+
+<body>
+   <div class="wrapper">
+
+   <div class="navi">
+   <!-- Navigation -->
+   <!--
+      <a href="@!data["color"]!@@!data["type"]!@_de_1.html">
+      <span class="navi3">@!petals!@</span></a>
+      <span class="navi31">@!data["name_de"]!@</span>
+    -->
+   </div>
+    
+   <div class="content">
+
+   <!-- Blume data -->
+   <h1>{{ blume.genus_de }} {{ blume.species_de }} / {{ blume.genus }} {{ blume.species }}</h1>
+   <div class="family">{{ blume.family_de }} / {{ blume.family }}</div>
+   {% if blume.floration %}<div class="floration">Blütezeit: {{ blume.floration }}</div>{% endif %}
+   
+   <!-- Blume photo sessions -->
+   {% for session in blume.sessions %}
+   <div class="session">Session: {{ session.date }} / {{ session.location }}</div>
+   {% for thumb in session.thumbs %}
+   <div class="thumb"><a href="images/{{ thumb }}"><img src="thumbs/{{ thumb }}" alt="{{ blume.genus }} {{ blume.species }}" /></a></div>
+   {% endfor %}
+   {% endfor %}
+
+   </div>
+   
+   <!-- Footer -->
+   {%- include 'footer-de.html' %}
+
+   </div>
+</body>
+</html>

@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
+
+<head>
+   <!-- Metadata -->
+   {%- include 'metadata-de.html' %}
+   
+   <title>Index | Wildpflanzen</title>
+   
+   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
+   <link href="static/main.css" rel="stylesheet" type="text/css" media="all" />
+</head>
+
+
+<body>
+   <div class="wrapper">
+
+   <div class="navi">
+   <!-- Navigation -->
+   <!--
+      <a href="@!data["color"]!@@!data["type"]!@_de_1.html">
+      <span class="navi3">@!petals!@</span></a>
+      <span class="navi31">@!data["name_de"]!@</span>
+    -->
+   </div>
+    
+   <div class="content">
+
+   {% for species in group %}
+   <div class="index_thumb"><img src="thumbs/{{ species.sessions[0].thumbs[0] }}" alt="{{ species.genus }} {{ species.species }}" /></div>
+   <div class="index_species">{{ species.genus }} {{ species.species }}</div>
+   {% endfor %}
+
+   </div>
+   
+   <!-- Footer -->
+   {%- include 'footer-de.html' %}
+
+   </div>
+</body>
+</html>
