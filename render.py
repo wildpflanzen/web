@@ -18,10 +18,25 @@ def main():
    # Make thumbnails
    make_thumbnails(database)
 
-   # Make blume html pages
+   # Make species html pages
    make_html_index(database)
-   return
-   make_html(database)
+   make_html_species(database)
+   make_html_main(database)
+
+
+def make_html_main(database):
+
+   # Setup Jinja environment
+   jinja_env = Environment( loader=FileSystemLoader(searchpath='templates') )
+   jinja_env.globals['database'] = database
+   html_template = jinja_env.get_template('main-de.html')
+   
+   # Make html main file
+   filename = os.path.join('docs', 'main.html')
+   print('   %s' % filename)
+   html = html_template.render(groups=database['groups'])
+   with codecs.open(filename, 'w', encoding='utf-8-sig') as fo:
+      fo.write(html)
 
 
 def make_html_index(database):
@@ -33,120 +48,130 @@ def make_html_index(database):
    html_template = jinja_env.get_template('index-de.html')
 
    # Make html index files
-   groups = extract_groups(database)
-   for group in groups:
-      filename = os.path.join('docs', group + '.html')
+   for group_path, group in database['groups'].items():
+      filename = os.path.join('docs', group['name'] + '.html')
       print('   %s' % filename)
-      html = html_template.render(group=groups[group])
+      html = html_template.render(group=group)
       with codecs.open(filename, 'w', encoding='utf-8-sig') as fo:
          fo.write(html)
 
 
-def extract_groups(database):
-   groups = {}
-
-   # Extract groups
-   for species in database:
-      groupname = '-'.join(species['group'])
-      if not groupname in groups:
-         groups[groupname] = [species]
-      else:
-         groups[groupname].append(species)
-  
-   return groups
-
-
-def make_html(database):
+def make_html_species(database):
    print('\n\nRendering html pages ...')
 
    # Setup Jinja environment
    jinja_env = Environment( loader=FileSystemLoader(searchpath='templates') )
    jinja_env.globals['database'] = database
-   html_template = jinja_env.get_template('blume-de.html')
+   html_template = jinja_env.get_template('species-de.html')
 
-   counter = 0
    # Make html files
    filenames = []
-   for blume in database:
-      counter += 1
-      if counter > 5: return
-      filename = blume['species'] + '-' +  blume['genus'] + '.html'
-      filename = re.sub(' ', '-', filename).lower()
-      filename = os.path.join('docs', filename)
+   for register in database['species']:
+      filename = os.path.join('docs', register['name'] + '.html')
       if filename in filenames:
          print('   Error: duplicated html %s' % filename)
          continue
       elif not os.path.isfile(filename):
          print('   %s' % filename)
          filenames.append(filename)
-         html = html_template.render(blume=blume)
+         html = html_template.render(register=register)
          with codecs.open(filename, 'w', encoding='utf-8-sig') as fo:
             fo.write(html)
+
+
+def test_file(register, file):
+   filename = os.path.join(register['path'], file)
+   if not os.path.isfile(filename):
+      print("   Error, doesn't exitst: %s" % filename)
+      return None
+   return filename
 
 
 def test_errors(database):
    print('\n\nFinding errors ...')
 
-   # Test if exists database image files
-   for reg in database:
-      imagefiles = []
+   # Test image files
+   names = []
+   for register in database['species']:
+      # Test species names
+      if register['name'] in names:
+         print('   Duplicated name: %s' + register['name'])
+      names.append(register['name'])
+
       # Test if database images exists
-      for session in reg['sessions']:
+      images = []
+      for session in register['sessions']:
          for image in session['images']:
-            imagefile = os.path.join(reg['path'], image)
-            if not os.path.isfile(imagefile):
-               print("   Error, doesn't exitst: %s" % imagefile)
-            else:
-               imagefiles.append(imagefile)
+            if test_file(register, image):
+               images.append(image)
+      if 'thumb' in register:
+         if test_file(register, image):
+            images.append(image)
 
       # Test if image files are in database
-      for file in os.listdir(reg['path']):
-         if os.path.splitext(file)[1] == '.jpg':
-            file = os.path.join(reg['path'], file)
-            if not file in imagefiles:
+      for file in os.listdir(register['path']):
+         if file[-4:].lower() == '.jpg' and file not in images:
                print('   Error, not in database: %s' % file)
+      
+      # Link species with group
+      group_path = register['group_path']
+      if not group_path in database['groups']:
+         print('   species without group: %s' % register['path'])
+         continue
+      group = database['groups'][group_path]
+      if not register in group['species']:
+          group['species'].append(register)
+          register['group'] = group
+      else:
+         print('   duplicated species: %s' % group_path)
+
+
+def image_name(register, imagename, session=None):
+   thumbname = register['name'] + '-' + re.sub('[^0-9]', '', imagename) + '.jpg'
+   if session:
+      if not 'thumbs' in session:
+         session['thumbs'] = []
+      if thumbname in session['thumbs']:
+         print('   Error, duplicated image: %s' % os.path.join(reg['path'], thumbname))
+      else:
+         session['thumbs'].append(thumbname)
+   return thumbname
 
 
 def make_thumbnails(database):
    print('\n\nMaking thumbnails ...')
    thumbfiles = {}
-   for reg in database:
-      for session in reg['sessions']:
-         session['thumbs'] = []
-         for i in range(len(session['images'])):
-            # Full thumbnail and image names
-            imagename = session['images'][i]
-            thumbname = reg['name'] + '-' + re.sub('[^0-9]', '', imagename) + '.jpg'
-            if thumbname in session['thumbs']:
-               print('   Error, duplicated image: %s' % os.path.join(reg['path'], thumbname))
-               continue
-            session['thumbs'].append(thumbname)
-
+   for register in database['species']:
+      for session in register['sessions']:
+         for i, image in enumerate(session['images']):
             # Add relative path
-            source_in = os.path.join(reg['path'], imagename)
+            thumbname = image_name(register, image, session)
+            source_in = os.path.join(register['path'], image)
             image_out = os.path.join('docs', 'images', thumbname)
             thumb_out = os.path.join('docs', 'thumbs', thumbname)
 
-            # Don't overwrite thumbnails
+            # Make thumbnail without overwrite
             if not os.path.isfile(thumb_out):
                if i == 0:
-                  thumbnail(source_in, thumb_out, size='320x240')
+                  thumbnail(source_in, thumb_out, size='480x360')
                else:
-                  thumbnail(source_in, thumb_out, size='320x240')
+                  thumbnail(source_in, thumb_out, size='480x360')
 
+            # Copy image without overwrite
             if not os.path.isfile(image_out):
                shutil.copy2(source_in, image_out)
 
       # Add main thumbnail if doesn't exists
-      if not 'thumb' in reg:
-         reg['thumb'] = reg['sessions'][0]['thumbs'][0]
-
+      if not 'thumb' in register:
+         register['thumb'] = register['sessions'][0]['thumbs'][0]
+      else:
+         register['thumb'] = image_name(register, register['thumb'])
 
 
 def thumbnail(filein, thumb, size='320x240'):
    print('   Thumbnail: ' + thumb)
    imagemagick = '/bin/imagemagick/convert.exe'
-   options = '-strip -resize %s -interlace Plane -gaussian-blur 0.05 -quality 85' % size
+   options = '-quality 88 -thumbnail %s -unsharp 0x.5' % size
    command = imagemagick + ' ' + filein + ' ' + options + ' ' + thumb
    subprocess.call(command, shell=True)
 
@@ -168,8 +193,9 @@ def make_dir(path):
          os.mkdir(addpath)
 
 
-def read_path(path):
-   database = []
+def read_path(path, database=None):
+   if not database:
+      database = {'groups':{}, 'species': []}
 
    # Process files
    index = False
@@ -185,18 +211,32 @@ def read_path(path):
    for f in fnames:
       fullname = os.path.join(path, f)
       if os.path.isdir(fullname):
-         database = database + read_path(fullname)
+         read_path(fullname, database)
 
    # Return data
    return database
 
 
+def species_name(register):
+   # Generate species name
+   if 'genus' in register and 'species' in register:
+      name = register['genus'] + '-' +  register['species']
+      name = re.sub('[^a-zA-Z]', '-', name)
+      name = re.sub('-+', '-', name).lower()
+      return name.lower()
+   else:
+      print('   Error, missing genus or species in database: %s' % register['path'])
+      return ''
+
 
 def read_data(fname, database):
    # Test if data file
    path, file = os.path.split(fname)
-   if not file == 'index.txt':
+   if file != 'index.txt':
       return
+   path = os.path.normpath(path)
+   splitpath = path.split(os.sep)[1:]
+
 
    # Read data
    #print('Reading: ' + fname)
@@ -206,17 +246,32 @@ def read_data(fname, database):
    register = docs[0]
 
    # Add group and path
-   path = os.path.normpath(path)
-   splitpath = path.split(os.sep)
-   register['group'] =splitpath[1:-1]
-   register['name'] = re.sub('[_ \+]', '-', splitpath[-1]).lower()
    register['path'] = path
-   register['database'] = fname
 
-   # Add photo sessions
-   register['sessions'] = [s for s in docs[1:]]
-   database.append(register)
+   if 'group_desc' in register:
+      # Generate group unique name
+      name = re.sub(' ', '', '-'.join(splitpath))
+      name = re.sub('_|--', '-', name).lower()
+      register['name'] = name
+      
+      # Group path
+      group_path = '/'.join(splitpath)
+      register['group_path'] = group_path
+      
+      # Add group species list
+      register['species'] = []
+      database['groups'][group_path] = register
 
+   else:
+      # Generate species unique name
+      register['name'] = species_name(register)
+
+      # Group path
+      register['group_path'] = '/'.join(splitpath[:-1])
+
+      # Add photo sessions
+      register['sessions'] = [s for s in docs[1:]]
+      database['species'].append(register)
 
 
 main()

@@ -16,17 +16,18 @@
    <div class="wrapper">
 
    <div class="navi">
-   <a href="main.html">Main page</a>
+   <!-- Navigation -->
    </div>
     
    <div class="content">
 
-   {% for species in group.species %}
-   <div class="index_species">
-   <div class="index_thumb"><a href="{{ species.name }}.html"><img src="thumbs/{{ species.thumb }}" alt="{{ species.genus }} {{ species.species }}" /></a></div>
-   <div class="index_name"><a href="{{ species.name }}.html">{{ species.genus }} {{ species.species }}</a></div>
-   </div>
+   <ul>
+   {% for key, group in groups.items() %}
+   <li>
+   <a href="{{ group.name }}.html">{{ group.group_desc }}</a>
+   </li>
    {% endfor %}
+   </ul>
 
    </div>
    

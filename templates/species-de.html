@@ -5,7 +5,7 @@
    <!-- Metadata -->
    {%- include 'metadata-de.html' %}
    
-   <title>{{ blume.genus }} {{ blume.species }} | Wildpflanzen</title>
+   <title>{{ register.genus }} {{ register.species }} | Wildpflanzen</title>
    
    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
    <link href="static/main.css" rel="stylesheet" type="text/css" media="all" />
@@ -17,25 +17,21 @@
 
    <div class="navi">
    <!-- Navigation -->
-   <!--
-      <a href="@!data["color"]!@@!data["type"]!@_de_1.html">
-      <span class="navi3">@!petals!@</span></a>
-      <span class="navi31">@!data["name_de"]!@</span>
-    -->
+   <a href="{{ register.group.name }}.html">{{ register.group.group_desc }}</a>
    </div>
     
    <div class="content">
 
-   <!-- Blume data -->
-   <h1>{{ blume.genus_de }} {{ blume.species_de }} / {{ blume.genus }} {{ blume.species }}</h1>
-   <div class="family">{{ blume.family_de }} / {{ blume.family }}</div>
-   {% if blume.floration %}<div class="floration">Blütezeit: {{ blume.floration }}</div>{% endif %}
+   <!-- Species data -->
+   <h1>{{ register.genus_de }} {{ register.species_de }} / {{ register.genus }} {{ register.species }}</h1>
+   <div class="family">{{ register.family_de }} / {{ register.family }}</div>
+   {% if register.floration %}<div class="floration">Blütezeit: {{ register.floration }}</div>{% endif %}
    
-   <!-- Blume photo sessions -->
-   {% for session in blume.sessions %}
+   <!-- Species photo sessions -->
+   {% for session in register.sessions %}
    <div class="session">Session: {{ session.date }} / {{ session.location }}</div>
    {% for thumb in session.thumbs %}
-   <div class="thumb"><a href="images/{{ thumb }}"><img src="thumbs/{{ thumb }}" alt="{{ blume.genus }} {{ blume.species }}" /></a></div>
+   <div class="thumb"><a href="images/{{ thumb }}"><img src="thumbs/{{ thumb }}" alt="{{ register.genus }} {{ register.species }}" /></a></div>
    {% endfor %}
    {% endfor %}
 
