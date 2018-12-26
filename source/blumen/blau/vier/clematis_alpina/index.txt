@@ -1,0 +1,21 @@
+﻿family: 'Ranunculaceae'
+genus: 'Clematis'
+species: 'Alpina'
+
+family_de: 'Hahnenfuβgewächse'
+genus_de: 'Alpen'
+species_de: 'Waldrebe'
+
+floration: 'April - Jun'
+
+---
+
+date: '7.2013'
+location: 'Dolomiten, Italien'
+images:
+  - 1.jpg
+  - 2.jpg
+  - 3.jpg
+  - 4.jpg
+  - 5.jpg
+  - 6.jpg

@@ -1,0 +1,16 @@
+﻿family: 'Plantaginaceae'
+genus: 'Plantago'
+species: 'Lanceolata'
+
+family_de: 'Wegerichgewächse'
+genus_de: 'Spitz'
+species_de: 'Wegerich'
+
+floration: ''
+
+---
+
+date: '05.13'
+location: 'Königsheide, Berlin'
+images:
+  - p1.jpg

@@ -1,0 +1,21 @@
+﻿family: 'Melanthiaceae'
+genus: 'Veratrum'
+species: 'Album ssp. lobelianum'
+
+family_de: 'Germergewächse'
+genus_de: 'Grünlicher'
+species_de: 'Weiβer germer'
+
+floration: 'Juni - August'
+
+---
+
+date: '7.2013'
+location: 'Adamello, Italien'
+images:
+  - 1.jpg
+  - 2.jpg
+  - 3.jpg
+  - 4.jpg
+  - 5.jpg
+  - 6.jpg

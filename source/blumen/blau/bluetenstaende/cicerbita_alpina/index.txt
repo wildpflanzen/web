@@ -1,0 +1,22 @@
+﻿family: 'Asteraceae'
+genus: 'Cicerbita'
+species: 'Alpina'
+
+family_de: 'Korbblütengewächse'
+genus_de: 'Alpen'
+species_de: 'Milchlattich'
+
+floration: 'Juli - September'
+
+---
+
+date: '7.2013'
+location: 'Adamello, Italien'
+images:
+  - 1.jpg
+  - 2.jpg
+  - 3.jpg
+  - 4.jpg
+  - 5.jpg
+  - 6.jpg
+  - 7.jpg

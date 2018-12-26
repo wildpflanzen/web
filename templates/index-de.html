@@ -1,12 +1,13 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
 
 <head>
    <!-- Metadata -->
    {%- include 'metadata-de.html' %}
-   
-   <title>Index | Wildpflanzen</title>
-   
+
+   <title>{{ index.name }} Index | Wildpflanzen</title>
+
    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
    <link href="static/main.css" rel="stylesheet" type="text/css" media="all" />
 </head>
@@ -18,18 +19,44 @@
    <div class="navi">
    <a href="index.html">Main page</a>
    </div>
-    
+
    <div class="content">
 
-   {% for species in group.species %}
-   <div class="index_species">
-   <div class="index_thumb"><a href="{{ species.name }}.html"><img src="thumbs/{{ species.thumb }}" alt="{{ species.genus }} {{ species.species }}" /></a></div>
-   <div class="index_name"><a href="{{ species.name }}.html">{{ species.genus }} {{ species.species }}</a></div>
-   </div>
+   <h1>Index {{ index.index_name | capitalize() }}</h1>
+
+   {% for key in index['keys'] %} {% set species = index['species'][key] %}
+      <h2>{{ key }}</h2>
+      <ul>
+      {%- if index.index_name == 'family' %}
+      {% for specie in species|sort(attribute='genus') %}
+      <li><a href="{{specie.filename}}.html">{{ specie.genus }} {{ specie.species }} / {{ specie.genus_de }} {{ specie.species_de }}</a></li>
+      {%- endfor %}
+
+      {%- elif index.index_name == 'family_de' %}
+      {% for specie in species|sort(attribute='genus_de') %}
+      <li><a href="{{specie.filename}}.html">{{ specie.genus_de }} {{ specie.species_de }} / {{ specie.genus }} {{ specie.species }}</a></li>
+      {%- endfor %}
+
+      {%- elif index.index_name == 'genus' %}
+      {% for specie in species|sort(attribute='genus') %}
+      <li><a href="{{specie.filename}}.html">{{ specie.genus }} {{ specie.species }} / {{ specie.genus_de }} {{ specie.species_de }}</a></li>
+      {%- endfor %}
+
+      {%- elif index.index_name == 'genus_de' %}
+      {% for specie in species|sort(attribute='genus_de') %}
+      <li><a href="{{specie.filename}}.html">{{ specie.genus_de }} {{ specie.species_de }} / {{ specie.genus }} {{ specie.species }}</a></li>
+      {%- endfor %}
+
+      {%- else %}
+
+      <!-- Error, unknown index "{{index.index_name}}" -->
+
+      {% endif %}
+      </ul>
    {% endfor %}
 
    </div>
-   
+
    <!-- Footer -->
    {%- include 'footer-de.html' %}
 

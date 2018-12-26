@@ -1,0 +1,19 @@
+﻿family: 'Ranunculaceae'
+genus: 'Aconitum'
+species: 'Lycoctonum'
+
+family_de: 'Hahnenfuβgewächse'
+genus_de: 'Gelber'
+species_de: 'Eisenhut'
+
+floration: ''
+
+---
+
+date: '7.2013'
+location: 'Adamello, Italien'
+images:
+  - 1.jpg
+  - 2.jpg
+  - 3.jpg
+  - 4.jpg

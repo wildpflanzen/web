@@ -1,0 +1,12 @@
+﻿order: 'Coleoptera'
+genus: 'Adelocera'
+species: 'Murina'
+
+
+---
+
+
+date: '11.2013'
+location:
+images:
+  - 11.jpg

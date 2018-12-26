@@ -1,0 +1,12 @@
+﻿order: 'Diptera'
+genus: 'Abrachyglossum'
+species: 'Capitatum'
+
+
+---
+
+
+date: '03.2016'
+location:
+images:
+  - r0033009.jpg

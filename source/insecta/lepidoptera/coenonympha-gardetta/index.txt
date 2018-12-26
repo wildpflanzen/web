@@ -1,0 +1,13 @@
+﻿order: 'Lepidoptera'
+genus: 'Coenonympha'
+species: 'Gardetta'
+
+
+---
+
+
+date: '06.2014'
+location:
+images:
+  - R0014742.jpg
+  - R0014745.jpg

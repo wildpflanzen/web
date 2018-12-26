@@ -1,0 +1,25 @@
+﻿family: 'Lamiaceae'
+genus: 'Ajuga'
+species: ' pyramidalis'
+
+family_de: 'Lippenblütengewächse'
+genus_de: 'Pyramiden'
+species_de: 'Günsel'
+
+floration: 'Juni - August'
+
+---
+
+date: '7.2013'
+location: 'Adamello, Italien'
+images:
+  - 1.jpg
+  - 10.jpg
+  - 2.jpg
+  - 3.jpg
+  - 4.jpg
+  - 5.jpg
+  - 6.jpg
+  - 7.jpg
+  - 8.jpg
+  - 9.jpg

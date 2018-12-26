@@ -1,0 +1,17 @@
+﻿family: 'Iridaceae'
+genus: 'Crocus'
+species: 'Vernus'
+
+family_de: 'Schwertliliengewächse'
+genus_de: 'Frühlings'
+species_de: 'Krokus'
+
+floration: ''
+
+---
+
+date: '2. 2014'
+location: 'Plänterwald, Berlin'
+images:
+  - 1.jpg
+  - 2.jpg

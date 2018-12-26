@@ -1,0 +1,14 @@
+﻿order: 'Hymenoptera'
+genus: 'Ancistrocerus'
+species: 'Parietum'
+
+
+---
+
+
+date: '11.2014'
+location:
+images:
+  - r0030744.jpg
+  - r0030739.jpg
+  - r0030742.jpg

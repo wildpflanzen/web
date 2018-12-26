@@ -1,0 +1,25 @@
+﻿family: 'Boraginaceae'
+genus: 'Anchusa'
+species: 'Arvensis'
+
+family_de: 'Raublattgewächse'
+genus_de: 'Acker'
+species_de: 'Krummhals'
+
+floration: 'Mai - September'
+
+---
+
+date: '7.2016'
+location: 'Treptow, Berlin'
+images:
+  - 1.jpg
+  - 2.jpg
+  - 3.jpg
+  - 4.jpg
+  - 5.jpg
+  - 6.jpg
+  - 7.jpg
+  - 8.jpg
+  - 9.jpg
+  - 10.jpg

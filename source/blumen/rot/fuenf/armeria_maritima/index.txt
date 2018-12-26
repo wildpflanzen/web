@@ -1,0 +1,22 @@
+﻿family: 'Plumbaginaceae'
+genus: 'Armeria'
+species: 'Maritima ssp. elongata'
+
+family_de: 'Bleiwurzgewächse'
+genus_de: 'Sand'
+species_de: 'Grasnelke'
+
+floration: 'Juni - August'
+
+---
+
+date: '7.2013'
+location: 'Spreewald, Brandenburg'
+images:
+  - 1.jpg
+  - 2.jpg
+  - 3.jpg
+  - 4.jpg
+  - 5.jpg
+  - 6.jpg
+  - 7.jpg

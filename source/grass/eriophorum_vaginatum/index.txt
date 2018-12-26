@@ -1,0 +1,18 @@
+﻿family: ''
+genus: 'Eriophorum'
+species: 'Vaginatum'
+
+family_de: ''
+genus_de: '⋅'
+species_de: 'Scheidiges wollgras'
+
+floration: ''
+
+---
+
+date: '7.2013'
+location: 'Adamello, Italien'
+images:
+  - 3.jpg
+  - 1.jpg
+  - 2.jpg

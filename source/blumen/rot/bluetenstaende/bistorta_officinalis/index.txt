@@ -1,0 +1,21 @@
+﻿family: 'Polygonaceae'
+genus: 'Bistorta'
+species: 'Officinalis'
+
+family_de: 'Knöterichgewächse'
+genus_de: 'Schlangen'
+species_de: 'Knöterich'
+
+floration: 'Mai - Jun'
+
+---
+
+date: '5.2014'
+location: 'Spreewald, Brandenburg'
+images:
+  - 1.jpg
+  - 2.jpg
+  - 3.jpg
+  - 4.jpg
+  - 5.jpg
+  - 6.jpg

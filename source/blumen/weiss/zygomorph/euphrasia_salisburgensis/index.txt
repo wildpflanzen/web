@@ -1,0 +1,24 @@
+﻿family: 'Orobanchaceae'
+genus: 'Euphrasia'
+species: 'Salisburgensis'
+
+family_de: 'Sommerwurzgewächse'
+genus_de: 'Salzburger'
+species_de: 'Augentrost'
+
+floration: 'Juli - August'
+
+---
+
+date: '7.2013'
+location: 'Dolomiten, Italien'
+images:
+  - 1.jpg
+  - 2.jpg
+  - 3.jpg
+  - 4.jpg
+  - 5.jpg
+  - 6.jpg
+  - 7.jpg
+  - 8.jpg
+  - 9.jpg

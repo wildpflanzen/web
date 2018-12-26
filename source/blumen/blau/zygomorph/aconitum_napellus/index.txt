@@ -1,0 +1,20 @@
+﻿family: 'Ranunculaceae'
+genus: 'Aconitum'
+species: 'Napellus'
+
+family_de: 'Hahnenfuβgewächse'
+genus_de: 'Blaue'
+species_de: 'Eisenhut'
+
+floration: 'Juni - August'
+
+---
+
+date: '7.2013'
+location: 'Adamello, Italien'
+images:
+  - 1.jpg
+  - 2.jpg
+  - 3.jpg
+  - 4.jpg
+  - 5.jpg

@@ -1,0 +1,14 @@
+﻿order: 'Hemiptera'
+genus: 'Eucallipterus'
+species: 'Tiliae'
+
+
+---
+
+
+date: '01.2015'
+location:
+images:
+  - 0030898.jpg
+  - 0030928.jpg
+  - 0030918.jpg

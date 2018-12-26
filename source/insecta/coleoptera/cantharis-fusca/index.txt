@@ -1,0 +1,13 @@
+﻿order: 'Coleoptera'
+genus: 'Cantharis'
+species: 'Fusca'
+
+
+---
+
+
+date: '11.2013'
+location:
+images:
+  - 17.jpg
+  - 18.jpg

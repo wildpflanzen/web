@@ -1,0 +1,19 @@
+﻿family: 'Liliaceae'
+genus: 'Lilium'
+species: 'Bulbiferum'
+
+family_de: 'Liliengewächse'
+genus_de: 'Feuer'
+species_de: 'Lilie'
+
+floration: 'Juli - August'
+
+---
+
+date: '7.2013'
+location: 'Adamello, Italien'
+images:
+  - 1.jpg
+  - 2.jpg
+  - 3.jpg
+  - 4.jpg

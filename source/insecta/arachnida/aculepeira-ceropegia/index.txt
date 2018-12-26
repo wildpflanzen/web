@@ -1,0 +1,14 @@
+﻿order: 'Arachnida'
+genus: 'Aculepeira'
+species: 'Ceropegia'
+
+
+---
+
+
+date: '03.2016'
+location:
+images:
+  - r0033305.jpg
+  - r0033772.jpg
+  - r0033770.jpg

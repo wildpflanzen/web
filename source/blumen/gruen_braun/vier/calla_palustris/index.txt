@@ -1,0 +1,18 @@
+﻿family: 'Araceae'
+genus: 'Calla'
+species: 'Palustris'
+
+family_de: 'Aronstabgewächse'
+genus_de: ''
+species_de: 'Schlangenwurz'
+
+floration: 'Mai - August'
+
+---
+
+date: '8.2016'
+location: 'Löcknitz, Grünheide'
+images:
+  - 1.jpg
+  - 2.jpg
+  - 3.jpg

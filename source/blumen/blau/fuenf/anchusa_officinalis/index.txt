@@ -1,0 +1,16 @@
+﻿family: 'Boraginaceae'
+genus: 'Anchusa'
+species: 'Officinalis'
+
+family_de: 'Raublattgewächse'
+genus_de: 'Gewöhnliche'
+species_de: 'Ochsenzunge'
+
+floration: 'Mai - August'
+
+---
+
+date: '6.2013'
+location: 'Spandau, Berlin'
+images:
+  - 1.jpg

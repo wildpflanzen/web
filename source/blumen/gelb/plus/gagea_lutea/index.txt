@@ -1,0 +1,19 @@
+﻿family: 'Liliaceae'
+genus: 'Gagea'
+species: 'Lutea'
+
+family_de: 'Liliengewächse'
+genus_de: ''
+species_de: 'Waldgelbstern'
+
+floration: ''
+
+---
+
+date: '04.13'
+location: 'Gatow, Berlin'
+images:
+  - w2.jpg
+  - w1.jpg
+  - w3.jpg
+  - w4.jpg

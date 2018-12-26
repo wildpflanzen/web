@@ -1,0 +1,20 @@
+﻿family: 'Ranunculaceae'
+genus: 'Eranthis'
+species: 'Hyemalis'
+
+family_de: 'Hahnenfuβgewächse'
+genus_de: ''
+species_de: 'Winterling'
+
+floration: ''
+
+---
+
+date: '3.2013'
+location: 'Hasenheide, Berlin'
+images:
+  - 1.jpg
+  - 2.jpg
+  - 3.jpg
+  - 4.jpg
+  - 5.jpg

@@ -1,0 +1,19 @@
+﻿family: 'Asteraceae'
+genus: 'Achillea'
+species: 'Millefolium'
+
+family_de: 'Korbblütengewächse'
+genus_de: 'Gewöhnliche'
+species_de: 'Schafgarbe'
+
+floration: ''
+
+---
+
+date: '07.2013'
+location: 'Neukölln, Berlin'
+images:
+  - 1.jpg
+  - 2.jpg
+  - 3.jpg
+  - 4.jpg

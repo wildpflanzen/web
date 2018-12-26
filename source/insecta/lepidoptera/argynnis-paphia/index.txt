@@ -1,0 +1,13 @@
+﻿order: 'Lepidoptera'
+genus: 'Argynnis'
+species: 'Paphia'
+
+
+---
+
+
+date: '11.2013'
+location:
+images:
+  - 83.jpg
+  - 82.jpg

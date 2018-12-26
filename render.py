@@ -1,3 +1,16 @@
+"""
+   Static web generator for image files.
+
+   ----------------------------------------------------------------
+
+   :copyright: (c) 2018 by Carlos Pardo
+   :license: GPL v3  <https://www.gnu.org/licenses/gpl-3.0.html>
+
+   This program is free software; you can redistribute it and/or
+   modify it under the terms of the GNU General Public License
+   version 3 as published by the Free Software Foundation.
+"""
+
 import os
 import re
 import codecs
@@ -5,141 +18,330 @@ from jinja2 import Environment, FileSystemLoader, Template
 import yaml
 import subprocess
 import shutil
+from collections import UserDict
 
 
 def main():
    # Read database
-   print('\n\nReading data ...')
-   database = read_path('source')
-
-   # Test database errors
-   test_errors(database)
+   print('\nReading data ...')
+   database = Database()
+   database.read_path('source')
+   database.test_errors()
 
    # Make thumbnails
    make_thumbnails(database)
 
-   # Make species html pages
-   make_html_index(database)
-   make_html_species(database)
-   make_html_main(database)
+   # Make html pages
+   generator = HTML_generator(database)
+   generator.overwrite = True
 
+   # Copy static files
+   generator.copy_static()
 
-def make_html_main(database):
+   generator.html_species()
+   generator.html_groups()
+   generator.html_main()
+   generator.html_index()
 
-   # Setup Jinja environment
-   jinja_env = Environment( loader=FileSystemLoader(searchpath='templates') )
-   jinja_env.globals['database'] = database
-   html_template = jinja_env.get_template('main-de.html')
    
-   # Make html main file
-   filename = os.path.join('docs', 'index.html')
-   print('   %s' % filename)
-   html = html_template.render(groups=database['groups'])
-   with codecs.open(filename, 'w', encoding='utf-8-sig') as fo:
-      fo.write(html)
+   # End
+   print('\nRender end.\n')
 
 
-def make_html_index(database):
-   print('\n\nRendering html index pages ...')
+# --------------------------------------------------------------------
+#    HTML RENDERING
+# --------------------------------------------------------------------
+class HTML_generator():
 
-   # Setup Jinja environment
-   jinja_env = Environment( loader=FileSystemLoader(searchpath='templates') )
-   jinja_env.globals['database'] = database
-   html_template = jinja_env.get_template('index-de.html')
+   def __init__(self, database):
+      self.database = database
+      self.overwrite = False
+      self.verbose = True
 
-   # Make html index files
-   for group_path, group in database['groups'].items():
-      filename = os.path.join('docs', group['name'] + '.html')
-      print('   %s' % filename)
-      html = html_template.render(group=group)
-      with codecs.open(filename, 'w', encoding='utf-8-sig') as fo:
-         fo.write(html)
+   def copy_static(self):
+      source = 'templates/static'
+      dest = 'docs/static'
+      if not os.path.isdir(dest):
+         os.mkdir(dest)
+      for fname in os.listdir(source):
+         if self.overwrite or not os.path.isfile(os.path.join(dest, fname)):
+            shutil.copy2(os.path.join(source, fname), os.path.join(dest, fname))
+
+   def html_index(self):
+      print('\nRendering html index ...')
+
+      # Make html family index
+      self.make_index('family')
+
+      # Make html family_de index
+      self.make_index('family_de')
+
+      # Make html genus index
+      self.make_index('genus', \
+                      filter_func=lambda n:  n[0].upper() if len(n) else '')
+
+      # Make html genus index
+      self.make_index('genus_de', \
+                      filter_func=lambda n:  n[0].upper() if len(n) else '')
 
 
-def make_html_species(database):
-   print('\n\nRendering html pages ...')
+   def make_index(self, index_name, filter_func=lambda n: n):
+      sorted_species =  {}
+      for specie in self.database['species']:
+         for k in [index_name, 'genus', 'genus_de', 'specie', 'specie_de']:
+            if not k in specie:
+               specie[k] = '{unknown}'
 
-   # Setup Jinja environment
-   jinja_env = Environment( loader=FileSystemLoader(searchpath='templates') )
-   jinja_env.globals['database'] = database
-   html_template = jinja_env.get_template('species-de.html')
+         key = filter_func(specie[index_name])
+         if key in sorted_species:
+            sorted_species[key].append(specie)
+         else:
+            sorted_species[key] = [specie]
+      keys = [k for k in sorted_species.keys()]
+      keys.sort()
+      self.index = {'keys': keys, 'species': sorted_species }
+      self.index['index_name'] = index_name
 
-   # Make html files
-   filenames = []
-   for register in database['species']:
-      filename = os.path.join('docs', register['name'] + '.html')
-      if filename in filenames:
-         print('   Error: duplicated html %s' % filename)
-         continue
-      elif not os.path.isfile(filename):
-         print('   %s' % filename)
-         filenames.append(filename)
+      # Jinja template
+      html_template = self.jinja_environment('index-de.html')
+      html = html_template.render(index=self.index)
+      output = os.path.join('docs', 'index-' + re.sub('[_ ]', '-', index_name)+'.html')
+      self.write_file(output, html)
+
+
+   def html_main(self):
+      print('\nRendering html main index ...')
+
+      # Jinja environment
+      html_template = self.jinja_environment('main-de.html')
+
+      # Make html main file
+      filename = os.path.join('docs', 'index-de.html')
+      html = html_template.render(groups=self.database['groups'])
+      self.write_file(filename, html)
+
+
+   def html_groups(self):
+      print('\nRendering html groups ...')
+
+      # Jinja environment
+      html_template = self.jinja_environment('groups-de.html')
+
+      # Make html group files
+      for group_path, group in self.database['groups'].items():
+         filename = os.path.join('docs', group['filename'] + '.html')
+         html = html_template.render(group=group)
+         self.write_file(filename, html)
+
+
+   def html_species(self):
+      print('\nRendering html species ...')
+
+      # Jinja environment
+      html_template = self.jinja_environment('species-de.html')
+
+      # Make html files
+      for register in self.database['species']:
+         if not 'group' in register:
+            continue
+         filename = os.path.join('docs', register['filename'] + '.html')
          html = html_template.render(register=register)
-         with codecs.open(filename, 'w', encoding='utf-8-sig') as fo:
-            fo.write(html)
+         self.write_file(filename, html)
 
 
-def test_file(register, file):
-   filename = os.path.join(register['path'], file)
-   if not os.path.isfile(filename):
-      print("   Error, doesn't exitst: %s" % filename)
-      return None
-   return filename
+   def jinja_environment(self, template_file):
+      # Setup Jinja environment
+      jinja_env = Environment( loader=FileSystemLoader(searchpath='templates') )
+      return jinja_env.get_template(template_file)
 
 
-def test_errors(database):
-   print('\n\nFinding errors ...')
+   def write_file(self, filename, data):
+      if self.overwrite or not os.path.isfile(filename):
+         if self.verbose:
+            print('   %s' % filename)
+         with codecs.open(filename, 'w', encoding='utf-8') as fo:
+            fo.write(data)
+            return True
+      return False
 
-   # Test image files
-   names = []
-   for register in database['species']:
-      # Test species names
-      if register['name'] in names:
-         print('   Duplicated name: %s' + register['name'])
-      names.append(register['name'])
 
-      # Test if database images exists
-      images = []
-      for session in register['sessions']:
-         for image in session['images']:
-            if test_file(register, image):
+# --------------------------------------------------------------------
+#    DATABASE CLASS
+# --------------------------------------------------------------------
+
+class Database(UserDict):
+
+   def __init__(self):
+      UserDict.__init__(self) 
+      self['groups'] = {}
+      self['species'] = []
+      self.filenames = []
+
+
+   def read_path(self, path):
+      # Process files
+      fnames = [f.lower() for f in os.listdir(path)]
+      if 'index.txt' in fnames:
+         self.read_data(path, 'index.txt')
+
+      # Recurse subdirs
+      for f in fnames:
+         fullname = os.path.join(path, f)
+         if os.path.isdir(fullname):
+            self.read_path(fullname)
+
+
+   def read_data(self, path, fname):
+
+      # Read yaml documents from file
+      with codecs.open(os.path.join(path, fname), 'r', encoding='utf-8-sig') as fi:
+         data = fi.read()
+      docs = [d for d in yaml.load_all(data)]
+
+      # Create register with first yaml document and add path
+      self.register = docs[0]
+      # Complete source path
+      self.register['path'] = path.replace('\\', '/')
+      # Path clasification
+      self.register['splitpath'] = self.register['path'].split('/')[1:]
+
+      if 'species' in self.register:
+         # Register of species
+         self.add_species(docs[1:])
+      elif 'group_name' in self.register:
+         # Register of group of species
+         self.add_group()
+      else:
+         # Register unknown
+         print('   Error, unknown type of register: %s' % fname)
+
+
+   def add_species(self, sessions=None):
+      # Generate species unique filename
+      self.file_name()
+
+      # Group path
+      self.register['group_path'] = os.path.split(self.register['path'])[0]
+
+      # Add photo sessions
+      self.register['sessions'] = []
+      if sessions:
+         self.register['sessions'] = [s for s in sessions]
+
+      # Store register in database
+      self['species'].append(self.register)
+
+
+   def add_group(self):
+      # Generate group unique name
+      self.file_name()
+
+      # Add group species list
+      self.register['species'] = []
+
+      # Store register in database
+      self['groups'][self.register['path']] = self.register
+
+
+   def file_name(self):
+      # Generate register name
+      if 'genus' in self.register and 'species' in self.register:
+         name = self.register['genus'] + '-' + self.register['species']
+      else:
+         name = '-'.join(self.register['splitpath'])
+
+      # Normalize filename
+      name = re.sub('[^a-zA-Z0-9]', '-', name).lower()
+      name = re.sub('-+', '-', name)
+      name = re.sub('-^', '', name).lower()
+
+      # Test if duplicated
+      if name in self.filenames:
+         print('   Error, duplicated name: %s' % name)
+      else:
+         self.filenames.append(name)
+
+      # Store filename
+      self.register['filename'] = name
+
+
+   def test_errors(self):
+      print('\nFinding errors ...')
+
+      # Test all species
+      for register in self['species']:
+         # Test if database images exists
+         images = []
+         for session in register['sessions']:
+            for image in session['images']:
+               if self.test_file(register['path'], image):
+                  images.append(image)
+         if 'thumb' in register:
+            if test_file(register['path'], image):
                images.append(image)
-      if 'thumb' in register:
-         if test_file(register, image):
-            images.append(image)
 
-      # Test if image files are in database
-      for file in os.listdir(register['path']):
-         if file[-4:].lower() == '.jpg' and file not in images:
-               print('   Error, not in database: %s' % file)
-      
-      # Link species with group
-      group_path = register['group_path']
-      if not group_path in database['groups']:
-         print('   species without group: %s' % register['path'])
-         continue
-      group = database['groups'][group_path]
-      if not register in group['species']:
-          group['species'].append(register)
-          register['group'] = group
-      else:
-         print('   duplicated species: %s' % group_path)
+         # Test if image files are in database
+         for file in os.listdir(register['path']):
+            if file[-4:].lower() == '.jpg' and file not in images:
+                  print('   Error, not in database: %s' % os.path.join(register['path'], file))
+
+         # Link species with group
+         group_path = register['group_path']
+         if not group_path in self['groups']:
+            print('   species without group: %s' % register['path'])
+            continue
+         group = self['groups'][group_path]
+         if not register in group['species']:
+             group['species'].append(register)
+             register['group'] = group
+         else:
+            print('   duplicated species: %s' % group_path)
 
 
-def image_name(register, imagename, session=None):
-   thumbname = register['name'] + '-' + re.sub('[^0-9]', '', imagename) + '.jpg'
-   if session:
-      if not 'thumbs' in session:
-         session['thumbs'] = []
-      if thumbname in session['thumbs']:
-         print('   Error, duplicated image: %s' % os.path.join(reg['path'], thumbname))
-      else:
-         session['thumbs'].append(thumbname)
-   return thumbname
+      # Delete empty groups
+      clean_groups = {}
+      for key, group in self['groups'].items():
+         if group['species']:
+            clean_groups[key] = group
+      self['groups'] = clean_groups
 
+      # Sort groups and link in chain
+      keys = [k for k in self['groups'].keys()]
+      keys.sort()
+      for i in range(len(keys)-1):
+         self['groups'][keys[i]]['group_next'] = self['groups'][keys[i+1]]
+         self['groups'][keys[i]]['group_prev'] = self['groups'][keys[i-1]]
+      self['groups'][keys[-1]]['group_next'] = self['groups'][keys[0]]
+      self['groups'][keys[-1]]['group_prev'] = self['groups'][keys[-2]]
+
+      # Sort species and link in chain
+      all_species = []
+      for key in keys:
+         species = [s for s in self['groups'][key]['species']]
+         species.sort(key=lambda s: s['filename'])
+         all_species = all_species + species
+
+      for i in range(len(all_species)-1):
+         all_species[i]['species_next'] = all_species[i+1]
+         all_species[i]['species_prev'] = all_species[i-1]
+      all_species[-1]['species_next'] = all_species[0]
+      all_species[-1]['species_prev'] = all_species[-2]
+
+
+   def test_file(self, path, file):
+      filename = os.path.join(path, file)
+      if not os.path.isfile(filename):
+         print("   Error, doesn't exitst: %s" % filename)
+         return None
+      return filename
+
+
+# --------------------------------------------------------------------
+#    MAKE THUMBNAILS
+# --------------------------------------------------------------------
 
 def make_thumbnails(database):
-   print('\n\nMaking thumbnails ...')
+   print('\nMaking thumbnails ...')
    thumbfiles = {}
    for register in database['species']:
       for session in register['sessions']:
@@ -152,10 +354,7 @@ def make_thumbnails(database):
 
             # Make thumbnail without overwrite
             if not os.path.isfile(thumb_out):
-               if i == 0:
-                  thumbnail(source_in, thumb_out, size='360x240')
-               else:
-                  thumbnail(source_in, thumb_out, size='360x240')
+               thumbnail(source_in, thumb_out, size='360x240')
 
             # Copy image without overwrite
             if not os.path.isfile(image_out):
@@ -176,102 +375,16 @@ def thumbnail(filein, thumb, size='320x240'):
    subprocess.call(command, shell=True)
 
 
-def write(path, fname, data):
-   make_dir(path)
-   fullname = os.path.join(path, fname)
-   with codecs.open(fullname, 'w', encoding='utf-8-sig') as fo:
-      fo.write(data)
-      print('   ' + fullname)
-
-
-def make_dir(path):
-   subdirs = re.split('/', re.sub(r'\\', '/', path))
-   addpath = ''
-   for subdir in subdirs:
-      addpath = os.path.join(addpath, subdir)
-      if not os.path.exists(addpath):
-         os.mkdir(addpath)
-
-
-def read_path(path, database=None):
-   if not database:
-      database = {'groups':{}, 'species': []}
-
-   # Process files
-   index = False
-   fnames = os.listdir(path)
-   for f in fnames:
-      if f.lower() == 'index.txt':
-         index = True
-         read_data(os.path.join(path, f), database)
-   if not index:
-      print('   Error, path without index: ' + path)
-      
-   # Recurse subdirs
-   for f in fnames:
-      fullname = os.path.join(path, f)
-      if os.path.isdir(fullname):
-         read_path(fullname, database)
-
-   # Return data
-   return database
-
-
-def species_name(register):
-   # Generate species name
-   if 'genus' in register and 'species' in register:
-      name = register['genus'] + '-' +  register['species']
-      name = re.sub('[^a-zA-Z]', '-', name)
-      name = re.sub('-+', '-', name).lower()
-      return name.lower()
-   else:
-      print('   Error, missing genus or species in database: %s' % register['path'])
-      return ''
-
-
-def read_data(fname, database):
-   # Test if data file
-   path, file = os.path.split(fname)
-   if file != 'index.txt':
-      return
-   path = os.path.normpath(path)
-   splitpath = path.split(os.sep)[1:]
-
-
-   # Read data
-   #print('Reading: ' + fname)
-   with codecs.open(fname, 'r', encoding='utf-8-sig') as fi:
-      data = fi.read()
-   docs =  [d for d in yaml.load_all(data)]
-   register = docs[0]
-
-   # Add group and path
-   register['path'] = path
-
-   if 'group_desc' in register:
-      # Generate group unique name
-      name = re.sub(' ', '', '-'.join(splitpath))
-      name = re.sub('_|--', '-', name).lower()
-      register['name'] = name
-      
-      # Group path
-      group_path = '/'.join(splitpath)
-      register['group_path'] = group_path
-      
-      # Add group species list
-      register['species'] = []
-      database['groups'][group_path] = register
-
-   else:
-      # Generate species unique name
-      register['name'] = species_name(register)
-
-      # Group path
-      register['group_path'] = '/'.join(splitpath[:-1])
-
-      # Add photo sessions
-      register['sessions'] = [s for s in docs[1:]]
-      database['species'].append(register)
+def image_name(register, imagename, session=None):
+   thumbname = register['filename'] + '-' + re.sub('[^0-9]', '', imagename) + '.jpg'
+   if session:
+      if not 'thumbs' in session:
+         session['thumbs'] = []
+      if thumbname in session['thumbs']:
+         print('   Error, duplicated image: %s' % os.path.join(reg['path'], thumbname))
+      else:
+         session['thumbs'].append(thumbname)
+   return thumbname
 
 
 main()

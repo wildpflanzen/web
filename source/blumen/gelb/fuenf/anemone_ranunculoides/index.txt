@@ -1,0 +1,21 @@
+﻿family: 'Ranunculaceae'
+genus: 'Anemone'
+species: 'Ranunculoides'
+
+family_de: 'Hahnenfuβgewächse'
+genus_de: 'Gelbe'
+species_de: 'Windröschen'
+
+floration: ''
+
+---
+
+date: '4.2013'
+location: 'Plänterwald, Berlin'
+images:
+  - a1.jpg
+  - a2.jpg
+  - a3.jpg
+  - a4.jpg
+  - a5.jpg
+  - a6.jpg

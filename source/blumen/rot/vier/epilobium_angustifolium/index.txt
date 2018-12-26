@@ -1,0 +1,19 @@
+﻿family: 'Onagraceae'
+genus: 'Epilobium'
+species: 'Angustifolium'
+
+family_de: 'Nachtkerzengewächse'
+genus_de: 'Schmalblättriges'
+species_de: 'Weidenröschen'
+
+floration: 'Juni - August'
+
+---
+
+date: '8.2013'
+location: 'Ortlergruppe, Italien'
+images:
+  - 1.jpg
+  - 2.jpg
+  - 3.jpg
+  - 4.jpg

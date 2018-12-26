@@ -1,0 +1,20 @@
+﻿family: 'Plumbaginaceae'
+genus: 'Armeria'
+species: 'Alpina'
+
+family_de: 'Bleiwurzgewächse'
+genus_de: 'Alpen'
+species_de: 'Grasnelke'
+
+floration: 'Juli - September'
+
+---
+
+date: '7.2013'
+location: 'Dolomiten, Italien'
+images:
+  - 1.jpg
+  - 2.jpg
+  - 3.jpg
+  - 4.jpg
+  - 5.jpg

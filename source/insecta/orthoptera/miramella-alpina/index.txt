@@ -1,0 +1,12 @@
+﻿order: 'Orthoptera'
+genus: 'Miramella'
+species: 'Alpina'
+
+
+---
+
+
+date: '11.2013'
+location:
+images:
+  - 107.jpg

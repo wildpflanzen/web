@@ -1,0 +1,21 @@
+﻿family: 'Orchidaceae'
+genus: 'Goodyera'
+species: 'Repens'
+
+family_de: 'Orchideen'
+genus_de: 'Kriechendes'
+species_de: 'Netzblatt'
+
+floration: 'Juni - August'
+
+---
+
+date: '7.2013'
+location: 'Dolomiten, Italien'
+images:
+  - 1.jpg
+  - 2.jpg
+  - 3.jpg
+  - 4.jpg
+  - 5.jpg
+  - 6.jpg

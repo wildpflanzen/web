@@ -1,0 +1,19 @@
+﻿family: 'Fabaceae'
+genus: 'Astragalus'
+species: 'Frigidus'
+
+family_de: 'Hülsenfrüchtler'
+genus_de: 'Gletscher'
+species_de: 'Tragant'
+
+floration: ''
+
+---
+
+date: '7.2013'
+location: 'Adamello, Italien'
+images:
+  - 1.jpg
+  - 2.jpg
+  - 3.jpg
+  - 4.jpg

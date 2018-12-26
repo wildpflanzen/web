@@ -1,0 +1,16 @@
+﻿family: 'Asteraceae'
+genus: 'Centaurea'
+species: 'Cyanus'
+
+family_de: 'Korbblütengewächse'
+genus_de: ''
+species_de: 'Kornblume'
+
+floration: 'Juni - Oktober'
+
+---
+
+date: '6.2013'
+location: 'Spreewald, Brandenburg'
+images:
+  - 1.jpg

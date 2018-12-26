@@ -1,0 +1,18 @@
+﻿family: ''
+genus: 'Carex'
+species: 'Pseudocyperus'
+
+family_de: ''
+genus_de: 'Scheinzyper'
+species_de: 'Segge'
+
+floration: ''
+
+---
+
+date: '6.2013'
+location: 'Spreewald, Brandenburg'
+images:
+  - 2.jpg
+  - 1.jpg
+  - 3.jpg

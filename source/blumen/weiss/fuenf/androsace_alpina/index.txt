@@ -1,0 +1,18 @@
+﻿family: 'Primulaceae'
+genus: 'Androsace'
+species: 'Alpina'
+
+family_de: 'Primelgewächse'
+genus_de: 'Alpen'
+species_de: 'Mannsschild'
+
+floration: ''
+
+---
+
+date: '7.2013'
+location: 'Adamello, Italien'
+images:
+  - 1.jpg
+  - 2.jpg
+  - 3.jpg

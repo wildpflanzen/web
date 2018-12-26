@@ -1,0 +1,16 @@
+﻿family: 'Caryophyllaceae'
+genus: 'Agrostemma'
+species: 'Githago'
+
+family_de: 'Nelkengewächse'
+genus_de: 'Gewöhnlicher'
+species_de: 'Kornrade'
+
+floration: ''
+
+---
+
+date: '6.2013'
+location: 'Neukölln, Berlin'
+images:
+  - 1.jpg

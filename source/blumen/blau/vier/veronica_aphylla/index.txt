@@ -1,0 +1,22 @@
+﻿family: 'Plantaginaceae'
+genus: 'Veronica'
+species: 'Aphylla'
+
+family_de: 'Wegerichgewächse'
+genus_de: 'Blattloser'
+species_de: 'Ehrenpreis'
+
+floration: ''
+
+---
+
+date: '7.2013'
+location: 'Dolomiten, Italian'
+images:
+  - 1.jpg
+  - 2.jpg
+  - 3.jpg
+  - 4.jpg
+  - 5.jpg
+  - 6.jpg
+  - 7.jpg

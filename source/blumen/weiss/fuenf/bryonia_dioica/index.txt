@@ -1,0 +1,20 @@
+﻿family: 'Cucurbitaceae'
+genus: 'Bryonia'
+species: 'Dioica'
+
+family_de: 'Kürbisgewächse'
+genus_de: 'Rotbeerige'
+species_de: 'Zaunrübe'
+
+floration: 'Juni - September'
+
+---
+
+date: '6.2013'
+location: 'Wannsee, Berlin'
+images:
+  - 1.jpg
+  - 2.jpg
+  - 3.jpg
+  - 4.jpg
+  - 5.jpg

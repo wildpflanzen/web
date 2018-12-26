@@ -1,0 +1,16 @@
+﻿family: 'Boraginaceae'
+genus: 'Borago'
+species: 'Officinalis'
+
+family_de: 'Raublattgewächse'
+genus_de: ''
+species_de: 'Borretsch'
+
+floration: ''
+
+---
+
+date: '7.2013'
+location: 'Adamello, Italien'
+images:
+  - 1.jpg

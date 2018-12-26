@@ -1,0 +1,27 @@
+﻿family: 'Lamiaceae'
+genus: 'Lamium'
+species: 'Album'
+
+family_de: 'Lippenblütengewächse'
+genus_de: 'Weiβe'
+species_de: 'Taubnessel'
+
+floration: ''
+
+---
+
+date: '4.2013'
+location: 'Plänterwald, Berlin'
+images:
+  - l1.jpg
+  - l12.jpg
+  - l2.jpg
+  - l11.jpg
+  - l3.jpg
+  - l4.jpg
+  - l10.jpg
+  - l5.jpg
+  - l6.jpg
+  - l7.jpg
+  - l8.jpg
+  - l9.jpg

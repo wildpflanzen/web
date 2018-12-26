@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
 
 <head>
@@ -17,13 +18,18 @@
 
    <div class="navi">
    <!-- Navigation -->
-   <a href="{{ register.group.name }}.html">{{ register.group.group_desc }}</a>
+   <ul>
+   <li><a href="{{ register.group.filename }}.html">{{ register.group.group_name }}</a></li>
+   <li><a href="{{ register.species_next.filename }}.html">Next specie</a></li>
+   <li><a href="{{ register.species_prev.filename }}.html">Prev specie</a></li>   
+   </ul>
+
    </div>
     
    <div class="content">
-
-   <!-- Species data -->
-   <h1>{{ register.genus_de }} {{ register.species_de }} / {{ register.genus }} {{ register.species }}</h1>
+   
+   <!-- Species name -->
+   <h1>{% if register.genus_de and register.species_de %}{{ register.genus_de }} {{ register.species_de }} / {% endif %} {{ register.genus }} {{ register.species }}</h1>
    <div class="family">{{ register.family_de }} / {{ register.family }}</div>
    {% if register.floration %}<div class="floration">Blütezeit: {{ register.floration }}</div>{% endif %}
    

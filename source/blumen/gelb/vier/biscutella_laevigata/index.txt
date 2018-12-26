@@ -1,0 +1,20 @@
+﻿family: 'Brassicaceae'
+genus: 'Biscutella'
+species: 'Laevigata'
+
+family_de: 'Kreuzblütengewächse'
+genus_de: ''
+species_de: 'Brillenschötchen'
+
+floration: ''
+
+---
+
+date: '7.2013'
+location: 'Dolomiten, Italien'
+images:
+  - 1.jpg
+  - 2.jpg
+  - 3.jpg
+  - 4.jpg
+  - 5.jpg

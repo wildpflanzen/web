@@ -1,0 +1,16 @@
+﻿family: 'Urticaceae'
+genus: 'Parietaria'
+species: 'Officinalis'
+
+family_de: 'Brennnesselgewächse'
+genus_de: 'Aufrechte'
+species_de: 'Glaskraut'
+
+floration: ''
+
+---
+
+date: '07.2013'
+location: 'Mitte, Berlin'
+images:
+  - 1.jpg

@@ -1,0 +1,18 @@
+﻿family: 'Asteraceae'
+genus: 'Cirsium'
+species: 'Spinosissimum'
+
+family_de: 'Korbblütengewächse'
+genus_de: 'Alpen'
+species_de: 'Kratzdistel'
+
+floration: 'Juli - September'
+
+---
+
+date: '8.2015'
+location: 'Ortlergruppe, Italien'
+images:
+  - 1.jpg
+  - 2.jpg
+  - 3.jpg

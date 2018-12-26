@@ -1,0 +1,16 @@
+﻿family: 'Ranunculaceae'
+genus: 'Aquilegia'
+species: 'Vulgaris'
+
+family_de: 'Hahnenfuβgewächse'
+genus_de: 'Gewöhnliche'
+species_de: 'Akele'
+
+floration: ''
+
+---
+
+date: '06.2013'
+location: 'Tiergearten, Berlin'
+images:
+  - a1.jpg
