@@ -4,8 +4,7 @@
 Static web site generator for image photograps
 
 
-`Wildpflanzen. Webpage hosted in GitHub. 
-<https://picuino.github.io/wildpflanzen/index.html>`_
+[Wildpflanzen. Webpage hosted in GitHub](https://picuino.github.io/wildpflanzen/index.html)
 
 
 
