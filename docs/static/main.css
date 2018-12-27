@@ -1,4 +1,6 @@
-﻿body { margin:0; padding:0;}
+﻿/*** General styles ***/
+
+body { margin:0; padding:0;}
 
 .wrapper {
 max-width: 1024px;
@@ -23,11 +25,13 @@ color: rgb(64, 64, 64);
 font-weight: 400;
 }
 
-
 .content {
 text-align: center;
 padding: 8px;
 }
+
+
+/*** Navigation bar ***/
 
 .navi {
 font-size: 18px;
@@ -42,19 +46,40 @@ color: rgb(64, 64, 64);
 font-weight: 400;
 }
 
-.thumb {
+
+/*** Species pages ***/
+
+.sp_session {
+margin-bottom: 16px;
+margin-top: 16px;
+padding-top: 16px;
+border-top: 1px solid black;
+}
+
+.sp_session ul {
+margin: 0; 
+padding: 0;
+}
+
+.sp_session ul li {
 display: inline-block;
-margin-bottom: 4px;
+margin: 4px;
 width: 320px;
-padding: 2px;
 vertical-align: top;
 }
 
-.thumb img {
+.sp_session ul li img {
 max-width: 100%;
 width: 320px;
 }
-   
+
+.sp_session ul li a {
+padding: 0;
+margin: 0;
+}
+
+/*** Index pages ***/
+
 .index_species {
 display: inline-block;
 width: 320px;
@@ -87,6 +112,9 @@ color: #989898;
 outline: 0;
 cursor: pointer;
 }
+
+
+/*** Footer ***/
 
 .footer {
 padding: 24px 12px 32px 12px;

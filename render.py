@@ -59,13 +59,18 @@ class HTML_generator():
       self.verbose = True
 
    def copy_static(self):
-      source = 'templates/static'
-      dest = 'docs/static'
-      if not os.path.isdir(dest):
-         os.mkdir(dest)
-      for fname in os.listdir(source):
-         if self.overwrite or not os.path.isfile(os.path.join(dest, fname)):
-            shutil.copy2(os.path.join(source, fname), os.path.join(dest, fname))
+      print("Copying static files ...")
+      self.copy_files('templates/root', 'docs')
+      self.copy_files('templates/static', 'docs/static')     
+
+   def copy_files(self, src, dst):
+      if not os.path.isdir(src):
+         return
+      if not os.path.isdir(dst):
+         os.mkdir(dst)
+      for fname in os.listdir(src):
+         if self.overwrite or not os.path.isfile(os.path.join(dst, fname)):
+            shutil.copy2(os.path.join(src, fname), os.path.join(dst, fname))
 
    def html_index(self):
       print('\nRendering html index ...')
@@ -197,6 +202,7 @@ class Database(UserDict):
       with codecs.open(os.path.join(path, fname), 'r', encoding='utf-8-sig') as fi:
          data = fi.read()
       docs = [d for d in yaml.load_all(data)]
+        
 
       # Create register with first yaml document and add path
       self.register = docs[0]
@@ -297,7 +303,6 @@ class Database(UserDict):
          else:
             print('   duplicated species: %s' % group_path)
 
-
       # Delete empty groups
       clean_groups = {}
       for key, group in self['groups'].items():
@@ -328,6 +333,7 @@ class Database(UserDict):
       all_species[-1]['species_prev'] = all_species[-2]
 
 
+   # Test if file exists
    def test_file(self, path, file):
       filename = os.path.join(path, file)
       if not os.path.isfile(filename):

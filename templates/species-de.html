@@ -30,18 +30,27 @@
    
    <!-- Species name -->
    <h1>{% if register.genus_de and register.species_de %}{{ register.genus_de }} {{ register.species_de }} / {% endif %} {{ register.genus }} {{ register.species }}</h1>
+   <div class="sp_info">
    <div class="family">{{ register.family_de }} / {{ register.family }}</div>
    {% if register.floration %}<div class="floration">Blütezeit: {{ register.floration }}</div>{% endif %}
+   </div>
    
    <!-- Species photo sessions -->
+   <div class="sp_sessions">
    {% for session in register.sessions %}
-   <div class="session">Session: {{ session.date }} / {{ session.location }}</div>
+   <div class="sp_session">
+   <ul>
    {% for thumb in session.thumbs %}
-   <div class="thumb"><a href="images/{{ thumb }}"><img src="thumbs/{{ thumb }}" alt="{{ register.genus }} {{ register.species }}" /></a></div>
+   <li><a href="images/{{ thumb }}"><img src="thumbs/{{ thumb }}" alt="{{ register.genus }} {{ register.species }}" /></a></li>
    {% endfor %}
-   {% endfor %}
-
+   </ul>
+   <div class="sp_date">Session: {{ session.date }} / {{ session.location }}</div>
    </div>
+   {% endfor %}
+   </div>
+
+
+   </div> 
    
    <!-- Footer -->
    {%- include 'footer-de.html' %}
