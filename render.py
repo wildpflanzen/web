@@ -20,6 +20,8 @@ import subprocess
 import shutil
 from collections import UserDict
 
+imagemagick = '/bin/imagemagick/convert.exe'
+
 
 def main():
    # Read database
@@ -376,8 +378,8 @@ def make_thumbnails(database):
 
 
 def thumbnail(filein, thumb, size='320x240'):
+   global imagemagick
    print('   Thumbnail: ' + thumb)
-   imagemagick = '/bin/imagemagick/convert.exe'
    options = '-quality 88 -thumbnail %s -unsharp 0x.5' % size
    command = imagemagick + ' ' + filein + ' ' + options + ' ' + thumb
    subprocess.call(command, shell=True)

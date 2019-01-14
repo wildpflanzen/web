@@ -1,5 +1,5 @@
 @echo off
-set python=c:\python37\python.exe
+set python=/Bin/python37/python.exe
 
 set install=install --upgrade
 
