@@ -1,0 +1,23 @@
+﻿family: 'Plantaginaceae'
+genus: 'Veronica'
+species: 'Officinalis'
+
+family_de: 'Wegerichgewächse'
+genus_de: 'Wald'
+species_de: 'Ehrenpreis'
+
+floration: 'Juni - August'
+
+thumb: 1.jpg
+
+---
+
+date: '7.2013'
+location: 'Adamello, Italian'
+images:
+  - 1.jpg
+  - 2.jpg
+  - 3.jpg
+  - 4.jpg
+  - 5.jpg
+  - 6.jpg

@@ -1,0 +1,18 @@
+﻿family: 'Asteraceae'
+genus: 'Helichrysum'
+species: 'Arenarium'
+
+family_de: 'Korbblütengewächse'
+genus_de: 'Sand'
+species_de: 'Strohblume'
+
+floration: ''
+
+thumb: 1.jpg
+
+---
+
+date: '06.2013'
+location: 'Teltowkanal, Berlin'
+images:
+  - 1.jpg

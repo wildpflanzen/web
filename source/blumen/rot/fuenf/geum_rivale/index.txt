@@ -1,0 +1,24 @@
+﻿family: 'Rosaceae'
+genus: 'Geum'
+species: 'Rivale'
+
+family_de: 'Rosengewächse'
+genus_de: 'Bach'
+species_de: 'Nelkenwurz'
+
+floration: 'April - Jul'
+
+thumb: 1.jpg
+
+---
+
+date: '5.2014'
+location: 'Spreewald, Brandenburg'
+images:
+  - 1.jpg
+  - 2.jpg
+  - 3.jpg
+  - 4.jpg
+  - 5.jpg
+  - 6.jpg
+  - 7.jpg

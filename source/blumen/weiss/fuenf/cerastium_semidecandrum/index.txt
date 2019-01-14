@@ -1,0 +1,21 @@
+﻿family: 'Caryophyllaceae'
+genus: 'Cerastium'
+species: 'Semidecandrum'
+
+family_de: 'Nelkengewächse'
+genus_de: 'Sand'
+species_de: 'Hornkraut'
+
+floration: ''
+
+thumb: 1.jpg
+
+---
+
+date: '3.2014'
+location: 'Teltowkanal, Berlin'
+images:
+  - 1.jpg
+  - 2.jpg
+  - 3.jpg
+  - 4.jpg

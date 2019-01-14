@@ -1,0 +1,25 @@
+﻿family: 'Gentianaceae'
+genus: 'Gentianella'
+species: 'Germanica'
+
+family_de: 'Enziangewächse'
+genus_de: 'Deutscher'
+species_de: 'Kranzenzian'
+
+floration: 'Juli - Oktober'
+
+thumb: 1.jpg
+
+---
+
+date: '7.2013'
+location: 'Adamello, Italien'
+images:
+  - 1.jpg
+  - 2.jpg
+  - 3.jpg
+  - 4.jpg
+  - 5.jpg
+  - 6.jpg
+  - 7.jpg
+  - 8.jpg

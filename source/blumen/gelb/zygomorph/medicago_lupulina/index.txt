@@ -1,0 +1,18 @@
+﻿family: 'Fabaceae'
+genus: 'Medicago'
+species: 'Lupulina'
+
+family_de: 'Hülsenfrüchtler'
+genus_de: ''
+species_de: 'Hopfenklee'
+
+floration: ''
+
+thumb: 1.jpg
+
+---
+
+date: '6.2013'
+location: 'Spandau, Berlin'
+images:
+  - 1.jpg

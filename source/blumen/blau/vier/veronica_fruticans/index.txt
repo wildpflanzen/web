@@ -1,0 +1,18 @@
+﻿family: 'Plantaginaceae'
+genus: 'Veronica'
+species: 'Fruticans'
+
+family_de: 'Wegerichgewächse'
+genus_de: 'Felsen'
+species_de: 'Ehrenpreis'
+
+floration: ''
+
+thumb: 1.jpg
+
+---
+
+date: '7.2012'
+location: 'Dolomiten, Italian'
+images:
+  - 1.jpg

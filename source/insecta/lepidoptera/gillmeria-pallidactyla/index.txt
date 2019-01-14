@@ -1,0 +1,10 @@
+﻿order: 'Lepidoptera'
+genus: 'Gillmeria'
+species: 'Pallidactyla'
+
+---
+
+date: '01.2016'
+location:
+images:
+  - r0030791.jpg

@@ -1,0 +1,11 @@
+﻿order: 'Lepidoptera'
+genus: 'Lepidoptera'
+species: '26'
+
+---
+
+date: '11.2013'
+location:
+images:
+  - 76.jpg
+  - 77.jpg

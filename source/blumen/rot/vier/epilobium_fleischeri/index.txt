@@ -8,6 +8,8 @@ species_de: 'Weidenröschen'
 
 floration: 'Juli - September'
 
+thumb: 1.jpg
+
 ---
 
 date: '7.2013'

@@ -1,0 +1,23 @@
+﻿family: 'Balsaminaceae'
+genus: 'Impatiens'
+species: 'Parviflora'
+
+family_de: 'Balsaminengewächse'
+genus_de: 'Kleinblütiges'
+species_de: 'Springkraut'
+
+floration: 'Juni - September'
+
+thumb: 1.jpg
+
+---
+
+date: '6.2013'
+location: 'Plänterwald, Berlin'
+images:
+  - 1.jpg
+  - 2.jpg
+  - 3.jpg
+  - 4.jpg
+  - 5.jpg
+  - 6.jpg

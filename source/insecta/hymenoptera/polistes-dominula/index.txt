@@ -1,0 +1,11 @@
+﻿order: 'Hymenoptera'
+genus: 'Polistes'
+species: 'Dominula'
+
+---
+
+date: '12.2016'
+location:
+images:
+  - r0034876.jpg
+  - r0034889.jpg

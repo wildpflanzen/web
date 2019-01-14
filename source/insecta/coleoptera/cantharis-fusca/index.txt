@@ -2,9 +2,7 @@
 genus: 'Cantharis'
 species: 'Fusca'
 
-
 ---
-
 
 date: '11.2013'
 location:

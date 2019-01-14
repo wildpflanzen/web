@@ -1,0 +1,23 @@
+﻿family: 'Lythraceae'
+genus: 'Lythrum'
+species: 'Salicaria'
+
+family_de: 'Weiderichgewächse'
+genus_de: 'Blut'
+species_de: 'Weiderich'
+
+floration: 'Juli - September'
+
+thumb: 1.jpg
+
+---
+
+date: '8.2016'
+location: 'Teufelsmoor, Berlin'
+images:
+  - 1.jpg
+  - 2.jpg
+  - 3.jpg
+  - 4.jpg
+  - 5.jpg
+  - 6.jpg

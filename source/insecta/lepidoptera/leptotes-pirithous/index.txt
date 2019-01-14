@@ -1,0 +1,10 @@
+﻿order: 'Lepidoptera'
+genus: 'Leptotes'
+species: 'Pirithous'
+
+---
+
+date: '11.2015'
+location:
+images:
+  - r0034305.jpg

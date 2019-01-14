@@ -1,0 +1,24 @@
+﻿family: 'Asteraceae'
+genus: 'Galinsoga'
+species: 'Ciliata'
+
+family_de: 'Korbblütengewächse'
+genus_de: 'Zottiges'
+species_de: 'Franzosenkraut, zottiges knopfkraut'
+
+floration: 'Mai - Oktober'
+
+thumb: 1.jpg
+
+---
+
+date: '9.2013'
+location: 'Neukölln, Berlin'
+images:
+  - 1.jpg
+  - 2.jpg
+  - 3.jpg
+  - 4.jpg
+  - 5.jpg
+  - 6.jpg
+  - 7.jpg

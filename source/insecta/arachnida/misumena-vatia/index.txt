@@ -1,0 +1,12 @@
+﻿order: 'Arachnida'
+genus: 'Misumena'
+species: 'Vatia'
+
+
+---
+
+date: '11.2013'
+location:
+images:
+  - 98.jpg
+  - 50.jpg

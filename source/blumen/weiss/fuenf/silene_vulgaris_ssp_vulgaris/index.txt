@@ -1,0 +1,23 @@
+﻿family: 'Caryophyllaceae'
+genus: 'Silene'
+species: 'Vulgaris ssp. vulgaris'
+
+family_de: 'Nelkengewächse'
+genus_de: 'Gewöhnliches'
+species_de: 'Leimkraut'
+
+floration: ''
+
+thumb: 1.jpg
+
+---
+
+date: '6.2013'
+location: 'Teltowkanal, Berlin'
+images:
+  - 1.jpg
+  - 2.jpg
+  - 3.jpg
+  - 4.jpg
+  - 5.jpg
+  - 6.jpg

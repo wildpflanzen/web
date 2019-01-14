@@ -1,0 +1,25 @@
+﻿family: 'Boraginaceae'
+genus: 'Myosotis'
+species: 'Ramosissima'
+
+family_de: 'Raublattgewächse'
+genus_de: 'Hügel'
+species_de: 'Vergissmeinnicht'
+
+floration: 'April - Jun'
+
+thumb: m2.jpg
+
+---
+
+date: '4.2013'
+location: 'Spandau, Berlin'
+images:
+  - m2.jpg
+  - m1.jpg
+  - m3.jpg
+  - m7.jpg
+  - m5.jpg
+  - m4.jpg
+  - m6.jpg
+  - m8.jpg

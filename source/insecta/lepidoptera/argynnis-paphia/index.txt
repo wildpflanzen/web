@@ -2,9 +2,7 @@
 genus: 'Argynnis'
 species: 'Paphia'
 
-
 ---
-
 
 date: '11.2013'
 location:

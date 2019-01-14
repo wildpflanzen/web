@@ -5,7 +5,6 @@ species: '27'
 
 ---
 
-
 date: '11.2013'
 location:
 images:

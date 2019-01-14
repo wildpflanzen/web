@@ -1,0 +1,18 @@
+﻿family: 'Asteraceae'
+genus: 'Doronicum'
+species: 'Clus'
+
+family_de: 'Korbblütengewächse'
+genus_de: 'Clusius'
+species_de: 'Gemswurz'
+
+floration: ''
+
+thumb: 1.jpg
+
+---
+
+date: '07.2013'
+location: 'Adamello, Italien'
+images:
+  - 1.jpg

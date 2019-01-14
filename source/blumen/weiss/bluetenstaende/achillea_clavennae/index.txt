@@ -8,6 +8,8 @@ species_de: 'Schafgarbe'
 
 floration: ''
 
+thumb: 1.jpg
+
 ---
 
 date: '07.2013'

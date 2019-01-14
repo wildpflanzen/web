@@ -1,0 +1,10 @@
+﻿order: 'Hymenoptera'
+genus: 'Bombus'
+species: 'Terrestris'
+
+---
+
+date: '11.2014'
+location:
+images:
+  - r0030994.jpg

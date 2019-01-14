@@ -1,0 +1,28 @@
+﻿family: 'Ranunculaceae'
+genus: 'Ranunculus'
+species: 'Ficaria'
+
+family_de: 'Hahnenfuβgewächse'
+genus_de: ''
+species_de: 'Scharbockskraut'
+
+floration: ''
+
+thumb: r4.jpg
+
+---
+
+date: '04.13'
+location: 'Plänterwald, Berlin'
+images:
+  - r4.jpg
+  - r1.jpg
+  - r2.jpg
+  - r3.jpg
+  - r5.jpg
+  - r6.jpg
+  - r7.jpg
+  - r8.jpg
+  - r9.jpg
+  - r10.jpg
+  - 11.jpg

@@ -1,0 +1,21 @@
+﻿family: 'Asteraceae'
+genus: 'Matricaria'
+species: 'Chamomilla'
+
+family_de: 'Korbblütengewächse'
+genus_de: 'Echte'
+species_de: 'Kamille'
+
+floration: 'Mai - September'
+
+thumb: 1.jpg
+
+---
+
+date: '06.2013'
+location: 'Spreewald, Brandenburg'
+images:
+  - 1.jpg
+  - 2.jpg
+  - 3.jpg
+  - 4.jpg

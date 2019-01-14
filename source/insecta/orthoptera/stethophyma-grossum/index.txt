@@ -1,0 +1,11 @@
+﻿order: 'Orthoptera'
+genus: 'Stethophyma'
+species: 'Grossum'
+
+---
+
+date: '12.2014'
+location:
+images:
+  - R0031168.jpg
+  - R0031161.jpg

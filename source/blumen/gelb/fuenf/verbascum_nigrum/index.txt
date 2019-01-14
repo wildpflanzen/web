@@ -1,0 +1,19 @@
+﻿family: 'Scrophulariaceae'
+genus: 'Verbascum'
+species: 'Nigrum'
+
+family_de: 'Braunwurzgewächse'
+genus_de: 'Schwarze'
+species_de: 'Königskerze'
+
+floration: ''
+
+thumb: 1.jpg
+
+---
+
+date: '8.2013'
+location: 'Blumental, Berlin'
+images:
+  - 1.jpg
+

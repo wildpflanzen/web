@@ -8,6 +8,8 @@ species_de: 'Knöterich'
 
 floration: 'Mai - Jun'
 
+thumb: 1.jpg
+
 ---
 
 date: '5.2014'

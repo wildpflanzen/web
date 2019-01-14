@@ -1,0 +1,27 @@
+﻿family: 'Ranunculaceae'
+genus: 'Ranunculus'
+species: 'Repens'
+
+family_de: 'Hahnenfuβgewächse'
+genus_de: 'Kriechender'
+species_de: 'Hahnenfuβ'
+
+floration: ''
+
+thumb: r1.jpg
+
+---
+
+date: '4.2013'
+location: 'Neukölln, Berlin'
+images:
+  - r1.jpg
+  - r2.jpg
+  - r3.jpg
+  - r4.jpg
+  - r5.jpg
+  - r6.jpg
+  - r7.jpg
+  - r8.jpg
+  - r9.jpg
+  - r10.jpg

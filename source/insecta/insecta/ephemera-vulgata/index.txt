@@ -2,9 +2,7 @@
 genus: 'Ephemera'
 species: 'Vulgata'
 
-
 ---
-
 
 date: '11.2013'
 location:

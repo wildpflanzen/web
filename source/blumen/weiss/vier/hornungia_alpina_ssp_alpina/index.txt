@@ -1,0 +1,22 @@
+﻿family: 'Brassicaceae'
+genus: 'Hornungia'
+species: 'Alpina ssp. alpina'
+
+family_de: 'Kreuzblütengewächse'
+genus_de: 'Kalk'
+species_de: 'Gämskresse, alpen- gämskresse'
+
+floration: ''
+
+thumb: 1.jpg
+
+---
+
+date: '7.2013'
+location: 'Dolomiten, Italien'
+images:
+  - 1.jpg
+  - 2.jpg
+  - 3.jpg
+  - 4.jpg
+  - 5.jpg

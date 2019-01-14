@@ -1,0 +1,18 @@
+﻿family: 'Rosaceae'
+genus: 'Potentilla'
+species: 'Anserina'
+
+family_de: 'Rosengewächse'
+genus_de: 'Gänse'
+species_de: 'Fingerkraut'
+
+floration: ''
+
+thumb: 1.jpg
+
+---
+
+date: '6.2013'
+location: 'Spreewald'
+images:
+  - 1.jpg

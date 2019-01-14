@@ -8,6 +8,8 @@ species_de: 'Brillenschötchen'
 
 floration: ''
 
+thumb: 1.jpg
+
 ---
 
 date: '7.2013'

@@ -1,0 +1,22 @@
+﻿family: 'Orobanchaceae'
+genus: 'Melampyrum'
+species: 'Pratense ssp. pratense'
+
+family_de: 'Sommerwurzgewächse'
+genus_de: 'Gewöhnlicher'
+species_de: 'Wiesen-wachtelweizen'
+
+floration: 'Mai - August'
+
+thumb: 1.jpg
+
+---
+
+date: '6.2014'
+location: 'Müggelsee, Berlin'
+images:
+  - 1.jpg
+  - 2.jpg
+  - 3.jpg
+  - 4.jpg
+  - 5.jpg

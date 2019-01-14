@@ -1,0 +1,21 @@
+﻿family: 'Boraginaceae'
+genus: 'Cynoglossum'
+species: 'Officinale'
+
+family_de: 'Raublattgewächse'
+genus_de: 'Echte'
+species_de: 'Hundszunge'
+
+floration: ''
+
+thumb: 1.jpg
+
+---
+
+date: '5.2013'
+location: 'Königsheide, Berlin'
+images:
+  - 1.jpg
+  - 2.jpg
+  - 3.jpg
+  - 4.jpg

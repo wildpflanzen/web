@@ -1,0 +1,24 @@
+﻿family: 'Caryophyllaceae'
+genus: 'Dianthus'
+species: 'Carthusianorum'
+
+family_de: 'Nelkengewächse'
+genus_de: 'Karthäuser'
+species_de: 'Nelke'
+
+floration: 'Juni - September'
+
+thumb: k1.jpg
+
+---
+
+date: '4.2013'
+location: 'Königsheide, Berlin'
+images:
+  - k7.jpg
+  - k1.jpg
+  - k2.jpg
+  - k3.jpg
+  - k4.jpg
+  - k5.jpg
+  - k6.jpg

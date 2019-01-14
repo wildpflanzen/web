@@ -2,9 +2,7 @@
 genus: 'Andrena'
 species: 'Fulva'
 
-
 ---
-
 
 date: '03.2014'
 location:

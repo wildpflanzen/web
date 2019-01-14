@@ -1,0 +1,18 @@
+﻿family: 'Asteraceae'
+genus: 'Tragopogon'
+species: 'Dubius'
+
+family_de: 'Korbblütengewächse'
+genus_de: 'Groβe'
+species_de: 'Bocksbart'
+
+floration: ''
+
+thumb: 1.jpg
+
+---
+
+date: '5.2013'
+location: 'Spandau, Berlin'
+images:
+  - 1.jpg

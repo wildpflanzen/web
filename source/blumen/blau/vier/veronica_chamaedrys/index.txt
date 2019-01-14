@@ -1,0 +1,31 @@
+﻿family: 'Plantaginaceae'
+genus: 'Veronica'
+species: 'Chamaedrys'
+
+family_de: 'Wegerichgewächse'
+genus_de: 'Gamander'
+species_de: 'Ehrenpreis'
+
+floration: ''
+
+thumb: v7.jpg
+
+---
+
+date: '5.2013'
+location: 'Johannistal, Berlin'
+images:
+  - v7.jpg
+  - v15.jpg
+  - v11.jpg
+  - v4.jpg
+  - v5.jpg
+  - v2.jpg
+  - v6.jpg
+  - v9.jpg
+  - v10.jpg
+  - v1.jpg
+  - v12.jpg
+  - v13.jpg
+  - v14.jpg
+  - v8.jpg

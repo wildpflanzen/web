@@ -1,0 +1,28 @@
+﻿family: 'Rosaceae'
+genus: 'Geum'
+species: 'Reptans'
+
+family_de: 'Rosengewächse'
+genus_de: 'Kriechende'
+species_de: 'Nelkenwurz'
+
+floration: 'Juni - August'
+
+thumb: 1.jpg
+
+---
+
+date: '8.2015'
+location: 'Ortlergruppe, Italien'
+images:
+  - 1.jpg
+  - 10.jpg
+  - 11.jpg
+  - 2.jpg
+  - 3.jpg
+  - 4.jpg
+  - 5.jpg
+  - 6.jpg
+  - 7.jpg
+  - 8.jpg
+  - 9.jpg

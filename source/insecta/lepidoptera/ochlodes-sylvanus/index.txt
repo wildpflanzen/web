@@ -1,0 +1,15 @@
+﻿order: 'Lepidoptera'
+genus: 'Ochlodes'
+species: 'Sylvanus'
+
+---
+
+date: '11.2013'
+location:
+images:
+  - 61.jpg
+  - 60.jpg
+  - 59.jpg
+  - r0011686.jpg
+  - r0030865.jpg
+  - r0030872.jpg

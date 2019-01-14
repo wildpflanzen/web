@@ -1,0 +1,22 @@
+﻿family: 'Gentianaceae'
+genus: 'Gentiana'
+species: 'Asclepiadea'
+
+family_de: 'Enziangewächse'
+genus_de: 'Schwalbenwurz'
+species_de: 'Enzian'
+
+floration: 'August - Oktober'
+
+thumb: 1.jpg
+
+---
+
+date: '8.2015'
+location: 'Karwendel, Österreich'
+images:
+  - 1.jpg
+  - 2.jpg
+  - 3.jpg
+  - 4.jpg
+  - 5.jpg

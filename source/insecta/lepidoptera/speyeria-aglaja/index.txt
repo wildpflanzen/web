@@ -1,0 +1,11 @@
+﻿order: 'Lepidoptera'
+genus: 'Speyeria'
+species: 'Aglaja'
+
+---
+
+date: '11.2013'
+location:
+images:
+  - 80.jpg
+  - 81.jpg

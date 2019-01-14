@@ -8,6 +8,8 @@ species_de: 'Maiglöckchen'
 
 floration: ''
 
+thumb: c1.jpg
+
 ---
 
 date: '03.2013'

@@ -1,0 +1,12 @@
+﻿order: 'Coleoptera'
+genus: 'Oedemera'
+species: 'Lurida'
+
+---
+
+date: '11.2013'
+location:
+images:
+  - 13.jpg
+  - 14.jpg
+  - 15.jpg

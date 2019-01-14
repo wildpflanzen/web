@@ -1,0 +1,13 @@
+﻿order: 'Coleoptera'
+genus: 'Clytra'
+species: 'Laeviuscula'
+
+
+---
+
+date: '11.2013'
+location:
+images:
+  - 66.jpg
+  - 68.jpg
+  - 67.jpg

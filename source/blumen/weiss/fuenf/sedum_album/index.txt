@@ -1,0 +1,22 @@
+﻿family: 'Crassulaceae'
+genus: 'Sedum'
+species: 'Album'
+
+family_de: 'Dickblattgewächse'
+genus_de: 'Weiβe'
+species_de: 'Fetthenne'
+
+floration: ''
+
+thumb: 1.jpg
+
+---
+
+date: '6.2013'
+location: 'Spandau, Berlin'
+images:
+  - 1.jpg
+  - 2.jpg
+  - 3.jpg
+  - 4.jpg
+  - 5.jpg

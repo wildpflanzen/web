@@ -1,0 +1,28 @@
+﻿family: 'Ranunculaceae'
+genus: 'Pulsatilla'
+species: 'Alpina ssp. apiifolia'
+
+family_de: 'Hahnenfuβgewächse'
+genus_de: 'Gelbe'
+species_de: 'Alpen- kuhschelle'
+
+floration: 'Mai - Jul'
+
+thumb: 1.jpg
+
+---
+
+date: '7.13'
+location: 'Adamello, Italien'
+images:
+  - 1.jpg
+  - 10.jpg
+  - 11.jpg
+  - 2.jpg
+  - 3.jpg
+  - 4.jpg
+  - 5.jpg
+  - 6.jpg
+  - 7.jpg
+  - 8.jpg
+  - 9.jpg

@@ -1,0 +1,20 @@
+﻿family: 'Lamiaceae'
+genus: 'Horminum'
+species: 'Pyrenaicum'
+
+family_de: 'Lippenblütengewächse'
+genus_de: 'Pyrenäen'
+species_de: 'Drachenmaul'
+
+floration: 'Juni - August'
+
+thumb: 1.jpg
+
+---
+
+date: '7.2013'
+location: 'Dolomiten, Italien'
+images:
+  - 1.jpg
+  - 2.jpg
+  - 3.jpg

@@ -1,0 +1,18 @@
+﻿family: 'Fabaceae'
+genus: 'Trifolium'
+species: 'Campestre'
+
+family_de: 'Hülsenfrüchtler'
+genus_de: 'Feld'
+species_de: 'Klee'
+
+floration: ''
+
+thumb: 1.jpg
+
+---
+
+date: '5.2013'
+location: 'Spandau, Berlin'
+images:
+  - 1.jpg

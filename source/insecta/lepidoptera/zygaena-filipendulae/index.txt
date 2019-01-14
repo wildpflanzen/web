@@ -1,0 +1,10 @@
+﻿order: 'Lepidoptera'
+genus: 'Zygaena'
+species: 'Filipendulae'
+
+---
+
+date: '11.2014'
+location:
+images:
+  - r0031309.jpg

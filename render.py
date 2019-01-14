@@ -25,8 +25,7 @@ def main():
    # Read database
    print('\nReading data ...')
    database = Database()
-   database.read_path('source')
-   database.test_errors()
+   database.read('source')
 
    # Make thumbnails
    make_thumbnails(database)
@@ -183,7 +182,12 @@ class Database(UserDict):
       self.filenames = []
 
 
-   def read_path(self, path):
+   def read(self, path):
+      self.read_paths(path)
+      self.test_errors()
+      
+
+   def read_paths(self, path):
       # Process files
       fnames = [f.lower() for f in os.listdir(path)]
       if 'index.txt' in fnames:
@@ -193,7 +197,7 @@ class Database(UserDict):
       for f in fnames:
          fullname = os.path.join(path, f)
          if os.path.isdir(fullname):
-            self.read_path(fullname)
+            self.read_paths(fullname)
 
 
    def read_data(self, path, fname):
@@ -282,9 +286,11 @@ class Database(UserDict):
             for image in session['images']:
                if self.test_file(register['path'], image):
                   images.append(image)
-         if 'thumb' in register:
-            if test_file(register['path'], image):
-               images.append(image)
+         if 'thumb' in register and not register['thumb'] in images:
+            if self.test_file(register['path'], register['thumb']):
+               images.append(register['thumb'])
+         else:
+            register['thumb'] = images[0]
 
          # Test if image files are in database
          for file in os.listdir(register['path']):
@@ -337,7 +343,7 @@ class Database(UserDict):
    def test_file(self, path, file):
       filename = os.path.join(path, file)
       if not os.path.isfile(filename):
-         print("   Error, doesn't exitst: %s" % filename)
+         print("   Error, file doesn't exitst: %s" % filename)
          return None
       return filename
 
@@ -354,6 +360,8 @@ def make_thumbnails(database):
          for i, image in enumerate(session['images']):
             # Add relative path
             thumbname = image_name(register, image, session)
+            if register['thumb'] == image:
+               register['thumb'] = thumbname
             source_in = os.path.join(register['path'], image)
             image_out = os.path.join('docs', 'images', thumbname)
             thumb_out = os.path.join('docs', 'thumbs', thumbname)
@@ -366,12 +374,6 @@ def make_thumbnails(database):
             if not os.path.isfile(image_out):
                shutil.copy2(source_in, image_out)
 
-      # Add main thumbnail if doesn't exists
-      if not 'thumb' in register:
-         register['thumb'] = register['sessions'][0]['thumbs'][0]
-      else:
-         register['thumb'] = image_name(register, register['thumb'])
-
 
 def thumbnail(filein, thumb, size='320x240'):
    print('   Thumbnail: ' + thumb)
@@ -383,6 +385,7 @@ def thumbnail(filein, thumb, size='320x240'):
 
 def image_name(register, imagename, session=None):
    thumbname = register['filename'] + '-' + re.sub('[^0-9]', '', imagename) + '.jpg'
+   thumbname = re.sub('-+', '-', thumbname)
    if session:
       if not 'thumbs' in session:
          session['thumbs'] = []

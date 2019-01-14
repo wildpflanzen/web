@@ -1,0 +1,24 @@
+﻿family: 'Caprifoliaceae'
+genus: 'Valeriana'
+species: 'Saxatilis'
+
+family_de: 'Geiβblattgewächse'
+genus_de: 'Felsen'
+species_de: 'Baldrian'
+
+floration: 'Juni - August'
+
+thumb: 1.jpg
+
+---
+
+date: '7.2013'
+location: 'Dolomiten, Italien'
+images:
+  - 1.jpg
+  - 2.jpg
+  - 3.jpg
+  - 4.jpg
+  - 5.jpg
+  - 6.jpg
+  - 7.jpg

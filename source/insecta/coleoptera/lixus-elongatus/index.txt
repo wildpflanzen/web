@@ -1,0 +1,10 @@
+﻿order: 'Coleoptera'
+genus: 'Lixus'
+species: 'Elongatus'
+
+---
+
+date: '11.2013'
+location:
+images:
+  - 113.jpg

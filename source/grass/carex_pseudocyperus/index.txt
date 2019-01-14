@@ -8,6 +8,8 @@ species_de: 'Segge'
 
 floration: ''
 
+thumb: 1.jpg
+
 ---
 
 date: '6.2013'

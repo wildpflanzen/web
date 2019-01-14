@@ -1,0 +1,18 @@
+﻿family: 'Lamiaceae'
+genus: 'Salvia'
+species: 'Pratensis'
+
+family_de: 'Lippenblütengewächse'
+genus_de: 'Wiesen'
+species_de: 'Salbe'
+
+floration: ''
+
+thumb: 1.jpg
+
+---
+
+date: '5.2013'
+location: 'Neulölln, Berlin'
+images:
+  - 1.jpg

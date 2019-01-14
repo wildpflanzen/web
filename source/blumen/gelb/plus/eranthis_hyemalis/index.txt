@@ -8,6 +8,8 @@ species_de: 'Winterling'
 
 floration: ''
 
+thumb: 1.jpg
+
 ---
 
 date: '3.2013'

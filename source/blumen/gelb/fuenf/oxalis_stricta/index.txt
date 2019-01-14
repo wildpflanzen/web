@@ -1,0 +1,22 @@
+﻿family: 'Oxalidaceae'
+genus: 'Oxalis'
+species: 'Stricta'
+
+family_de: 'Sauerkleegewächse'
+genus_de: 'Aufrechter'
+species_de: 'Sauerklee'
+
+floration: ''
+
+thumb: 1.jpg
+
+---
+
+date: '6.2013'
+location: 'Spreewald'
+images:
+  - 1.jpg
+  - 2.jpg
+  - 3.jpg
+  - 4.jpg
+  - 5.jpg

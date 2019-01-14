@@ -1,0 +1,20 @@
+﻿family: 'Brassicaceae'
+genus: 'Berteroa'
+species: 'Incana'
+
+family_de: 'Kreuzblütengewächse'
+genus_de: ''
+species_de: 'Graukresse'
+
+floration: ''
+
+thumb: 1.jpg
+
+---
+
+date: '06.2013'
+location: 'Teltowkanal, Berlin'
+images:
+  - 1.jpg
+  - 2.jpg
+  - 3.jpg

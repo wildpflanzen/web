@@ -1,0 +1,11 @@
+﻿order: 'Hymenoptera'
+genus: 'Halictus'
+species: '18'
+
+---
+
+date: '08.2016'
+location:
+images:
+  - r0034520.jpg
+  - r0034528.jpg

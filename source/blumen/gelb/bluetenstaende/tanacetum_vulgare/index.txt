@@ -1,0 +1,21 @@
+﻿family: 'Asteraceae'
+genus: 'Tanacetum'
+species: 'Vulgare'
+
+family_de: 'Korbblütengewächse'
+genus_de: ''
+species_de: 'Rainfarn'
+
+floration: 'Juni - September'
+
+thumb: 1.jpg
+
+---
+
+date: '7.2014'
+location: 'Johannisthal, Berlin'
+images:
+  - 1.jpg
+  - 2.jpg
+  - 3.jpg
+  - 4.jpg

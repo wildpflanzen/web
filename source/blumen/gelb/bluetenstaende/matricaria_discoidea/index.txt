@@ -1,0 +1,22 @@
+﻿family: 'Asteraceae'
+genus: 'Matricaria'
+species: 'Discoidea'
+
+family_de: 'Korbblütengewächse'
+genus_de: 'Strahlenlose'
+species_de: 'Kamille'
+
+floration: ''
+
+thumb: m1.jpg
+
+---
+
+date: '04.13'
+location: 'Neukölln, Berlin'
+images:
+  - m1.jpg
+  - m2.jpg
+  - m3.jpg
+  - m4.jpg
+  - m5.jpg

@@ -1,0 +1,24 @@
+﻿family: 'Asparagaceae'
+genus: 'Ornithogalum'
+species: 'Umbellatum'
+
+family_de: 'Spargelgewächse'
+genus_de: 'Dolden'
+species_de: 'Milchstern'
+
+floration: ''
+
+thumb: o1.jpg
+
+---
+
+date: '03.2013'
+location: 'Königsheide, Berlin'
+images:
+  - o1.jpg
+  - o2.jpg
+  - o3.jpg
+  - o4.jpg
+  - o5.jpg
+  - o6.jpg
+  - o7.jpg

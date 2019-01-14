@@ -1,0 +1,23 @@
+﻿family: 'Primulaceae'
+genus: 'Lysimachia'
+species: 'Thyrsiflora'
+
+family_de: 'Primelgewächse'
+genus_de: 'Strauβ'
+species_de: 'Gilbweiderich'
+
+floration: 'Mai - Jul'
+
+thumb: 1.jpg
+
+---
+
+date: '7.2014'
+location: 'Teufelseemoor, Berlin'
+images:
+  - 1.jpg
+  - 2.jpg
+  - 3.jpg
+  - 4.jpg
+  - 5.jpg
+  - 6.jpg

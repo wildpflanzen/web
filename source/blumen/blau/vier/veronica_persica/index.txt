@@ -1,0 +1,20 @@
+﻿family: 'Plantaginaceae'
+genus: 'Veronica'
+species: 'Persica'
+
+family_de: 'Wegerichgewächse'
+genus_de: 'Persische'
+species_de: 'Ehrenpreis'
+
+floration: ''
+
+thumb: v3.jpg
+
+---
+
+date: '4.2013'
+location: 'Gatow, Berlin'
+images:
+  - v3.jpg
+  - v2.jpg
+  - v1.jpg

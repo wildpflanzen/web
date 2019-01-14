@@ -1,0 +1,23 @@
+﻿family: 'Rubiaceae'
+genus: 'Galium'
+species: 'Palustre'
+
+family_de: 'Rötegewächse'
+genus_de: 'Sumpf'
+species_de: 'Labkraut'
+
+floration: 'Mai - Jul'
+
+thumb: 1.jpg
+
+---
+
+date: '6.2014'
+location: 'Teufelseemoor, Berlin'
+images:
+  - 1.jpg
+  - 2.jpg
+  - 3.jpg
+  - 4.jpg
+  - 5.jpg
+  - 6.jpg

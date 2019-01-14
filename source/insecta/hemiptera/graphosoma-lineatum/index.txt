@@ -1,0 +1,10 @@
+﻿order: 'Hemiptera'
+genus: 'Graphosoma'
+species: 'Lineatum'
+
+---
+
+date: '11.2013'
+location:
+images:
+  - 106.jpg

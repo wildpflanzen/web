@@ -1,0 +1,18 @@
+﻿family: 'Plantaginaceae'
+genus: 'Linaria'
+species: 'Vulgaris'
+
+family_de: 'Wegerichgewächse'
+genus_de: 'Echte'
+species_de: 'Leinkraut'
+
+floration: ''
+
+thumb: 1.jpg
+
+---
+
+date: '6.2013'
+location: 'Spreewald'
+images:
+  - 1.jpg

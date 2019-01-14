@@ -1,0 +1,10 @@
+﻿order: 'Orthoptera'
+genus: 'Orthoptera'
+species: '40'
+
+---
+
+date: '11.2013'
+location:
+images:
+  - 26.jpg

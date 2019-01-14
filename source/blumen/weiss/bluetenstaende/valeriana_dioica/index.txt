@@ -1,0 +1,22 @@
+﻿family: 'Caprifoliaceae'
+genus: 'Valeriana'
+species: 'Dioica'
+
+family_de: 'Geiβblattgewächse'
+genus_de: 'Kleiner'
+species_de: 'Baldrian'
+
+floration: 'Mai - Jun'
+
+thumb: 1.jpg
+
+---
+
+date: '5.2014'
+location: 'Spreewald, Brandenburg'
+images:
+  - 1.jpg
+  - 2.jpg
+  - 3.jpg
+  - 4.jpg
+  - 5.jpg

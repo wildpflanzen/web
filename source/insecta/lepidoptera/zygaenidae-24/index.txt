@@ -1,0 +1,10 @@
+﻿order: 'Lepidoptera'
+genus: 'Zygaenidae'
+species: '24'
+
+---
+
+date: '01.2016'
+location:
+images:
+  - r0016235.jpg

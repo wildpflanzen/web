@@ -1,0 +1,20 @@
+﻿family: 'Fabaceae'
+genus: 'Vicia'
+species: 'Tetrasperma'
+
+family_de: 'Hülsenfrüchtler'
+genus_de: 'Viersamige'
+species_de: 'Wicke'
+
+floration: 'Mai - Jun'
+
+thumb: 1.jpg
+
+---
+
+date: '6.2014'
+location: 'Müggelsee, Berlin'
+images:
+  - 1.jpg
+  - 2.jpg
+  - 3.jpg

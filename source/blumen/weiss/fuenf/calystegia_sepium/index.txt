@@ -1,0 +1,21 @@
+﻿family: 'Convolvulaceae'
+genus: 'Calystegia'
+species: 'Sepium'
+
+family_de: 'Windengewächse'
+genus_de: 'Echte'
+species_de: 'Zaunwinde'
+
+floration: 'Juni bis September'
+
+thumb: 1.jpg
+
+---
+
+date: '9.2013'
+location: 'Teltowkanal, Berlin'
+images:
+  - 1.jpg
+  - 2.jpg
+  - 3.jpg
+  - 4.jpg

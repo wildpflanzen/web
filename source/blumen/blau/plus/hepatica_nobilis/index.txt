@@ -1,0 +1,28 @@
+﻿family: 'Ranunculaceae'
+genus: 'Hepatica'
+species: 'Nobilis'
+
+family_de: 'Hahnenfuβgewächse'
+genus_de: 'Dreilappiges'
+species_de: 'Leberblümchen'
+
+floration: ''
+
+thumb: h8.jpg
+
+---
+
+date: '4.2013'
+location: 'Blumental, Brandenburg'
+images:
+  - h8.jpg
+  - h9.jpg
+  - h4.jpg
+  - h3.jpg
+  - h11.jpg
+  - h12.jpg
+  - h2.jpg
+  - h7.jpg
+  - h5.jpg
+  - h6.jpg
+  - h1.jpg

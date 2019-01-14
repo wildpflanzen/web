@@ -2,9 +2,7 @@
 genus: 'Andrena'
 species: 'Flavipes'
 
-
 ---
-
 
 date: '03.2014'
 location:

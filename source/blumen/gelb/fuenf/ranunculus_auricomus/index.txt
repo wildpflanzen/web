@@ -1,0 +1,29 @@
+﻿family: 'Ranunculaceae'
+genus: 'Ranunculus'
+species: 'Auricomus'
+
+family_de: 'Hahnenfuβgewächse'
+genus_de: ''
+species_de: 'Goldhahnenfuβ'
+
+floration: ''
+
+thumb: r1.jpg
+
+---
+
+date: '4.2013'
+location: 'Plänterwald, Berlin'
+images:
+  - r1.jpg
+  - r3.jpg
+  - r6.jpg
+  - r5.jpg
+  - r9.jpg
+  - r10.jpg
+  - r11.jpg
+  - r12.jpg
+  - r7.jpg
+  - r8.jpg
+  - r2.jpg
+  - r4.jpg

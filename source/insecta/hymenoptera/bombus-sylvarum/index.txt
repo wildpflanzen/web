@@ -1,0 +1,11 @@
+﻿order: 'Hymenoptera'
+genus: 'Bombus'
+species: 'Sylvarum'
+
+---
+
+date: '03.2016'
+location:
+images:
+  - r0033029.jpg
+  - r0033034.jpg

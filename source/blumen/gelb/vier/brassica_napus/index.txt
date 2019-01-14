@@ -8,6 +8,8 @@ species_de: 'Raps'
 
 floration: ''
 
+thumb: 1.jpg
+
 ---
 
 date: '5.2013'

@@ -1,0 +1,25 @@
+﻿family: 'Campanulaceae'
+genus: 'Campanula'
+species: 'Trachelium'
+
+family_de: 'Glockenblumengewächse'
+genus_de: 'Nesselblättrige'
+species_de: 'Glockenblume'
+
+floration: ''
+
+thumb: 1.jpg
+
+---
+
+date: '7.2013'
+location: 'Wannsee, Berlin'
+images:
+  - 1.jpg
+  - 2.jpg
+  - 3.jpg
+  - 4.jpg
+  - 5.jpg
+  - 6.jpg
+  - 7.jpg
+  - 8.jpg

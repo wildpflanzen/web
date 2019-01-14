@@ -1,0 +1,22 @@
+﻿family: 'Brassicaceae'
+genus: 'Draba'
+species: 'Praecox'
+
+family_de: 'Kreuzblütengewächse'
+genus_de: 'Frühes'
+species_de: 'Hungerblümchen'
+
+floration: ''
+
+thumb: 1.jpg
+
+---
+
+date: '3.2013'
+location: 'Plänterwald, Berlin'
+images:
+  - 1.jpg
+  - 2.jpg
+  - 3.jpg
+  - 4.jpg
+  - 5.jpg

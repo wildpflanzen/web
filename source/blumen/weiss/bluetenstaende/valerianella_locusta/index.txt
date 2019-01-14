@@ -1,0 +1,21 @@
+﻿family: 'Caprifoliaceae'
+genus: 'Valerianella'
+species: 'Locusta'
+
+family_de: 'Geiβblattgewächse'
+genus_de: 'Gewöhnlicher'
+species_de: 'Feldsalat'
+
+floration: 'April - Ma'
+
+thumb: 1.jpg
+
+---
+
+date: '5.2013'
+location: 'Neukölln, Berlin'
+images:
+  - 1.jpg
+  - 2.jpg
+  - 3.jpg
+  - 4.jpg

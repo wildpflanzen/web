@@ -1,0 +1,19 @@
+﻿family: 'Saxifragaceae'
+genus: 'Saxifraga'
+species: 'Aizoides'
+
+family_de: 'Steinbrechgewächse'
+genus_de: 'Fetthennen'
+species_de: 'Steinbrech'
+
+floration: ''
+
+thumb: 1.jpg
+
+---
+
+date: '7.2012'
+location: 'Dololomiten, Italien'
+images:
+  - 1.jpg
+  - 2.jpg

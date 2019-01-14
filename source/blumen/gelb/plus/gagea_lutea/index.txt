@@ -8,6 +8,8 @@ species_de: 'Waldgelbstern'
 
 floration: ''
 
+thumb: w2.jpg
+
 ---
 
 date: '04.13'

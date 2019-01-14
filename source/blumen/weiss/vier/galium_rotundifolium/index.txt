@@ -1,0 +1,24 @@
+﻿family: 'Rubiaceae'
+genus: 'Galium'
+species: 'Rotundifolium'
+
+family_de: 'Rötegewächse'
+genus_de: 'Rundblättrige'
+species_de: 'Labkraut'
+
+floration: ''
+
+thumb: 1.jpg
+
+---
+
+date: '06.2013'
+location: 'Spreewald, Brandenburg'
+images:
+  - 1.jpg
+  - 2.jpg
+  - 3.jpg
+  - 4.jpg
+  - 5.jpg
+  - 6.jpg
+  - 7.jpg

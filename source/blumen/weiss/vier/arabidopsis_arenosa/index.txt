@@ -8,6 +8,8 @@ species_de: 'Schaumkresse'
 
 floration: ''
 
+thumb: a1.jpg
+
 ---
 
 date: '4.2013'

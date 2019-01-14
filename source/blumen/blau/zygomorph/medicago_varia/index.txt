@@ -1,0 +1,18 @@
+﻿family: 'Fabaceae'
+genus: 'Medicago'
+species: 'X varia'
+
+family_de: 'Hülsenfrüchtler'
+genus_de: 'Bastard'
+species_de: 'Luzerne'
+
+floration: ''
+
+thumb: 1.jpg
+
+---
+
+date: '6.2013'
+location: 'Teltowkanal, Berlin'
+images:
+  - 1.jpg

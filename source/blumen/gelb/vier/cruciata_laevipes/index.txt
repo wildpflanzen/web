@@ -1,0 +1,23 @@
+﻿family: 'Rubiaceae'
+genus: 'Cruciata'
+species: 'Laevipes'
+
+family_de: 'Rötegewächse'
+genus_de: 'Gewimpertes'
+species_de: 'Kreuzlabkraut'
+
+floration: 'April - August'
+
+thumb: 1.jpg
+
+---
+
+date: '8.2015'
+location: 'Texelgruppe, Italien'
+images:
+  - 1.jpg
+  - 2.jpg
+  - 3.jpg
+  - 4.jpg
+  - 5.jpg
+  - 6.jpg

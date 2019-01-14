@@ -1,0 +1,10 @@
+﻿order: 'Diptera'
+genus: 'Pelatachina'
+species: 'Tibialis'
+
+---
+
+date: '11.2013'
+location:
+images:
+  - 102.jpg

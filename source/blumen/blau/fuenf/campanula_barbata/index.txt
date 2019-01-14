@@ -1,0 +1,25 @@
+﻿family: 'Campanulaceae'
+genus: 'Campanula'
+species: 'Barbata'
+
+family_de: 'Glockenblumengewächse'
+genus_de: 'Bärtige'
+species_de: 'Glockenblume'
+
+floration: ''
+
+thumb: 1.jpg
+
+---
+
+date: '7.2013'
+location: 'Dolomiten, Italien'
+images:
+  - 1.jpg
+  - 2.jpg
+  - 3.jpg
+  - 4.jpg
+  - 6.jpg
+  - 7.jpg
+  - 8.jpg
+  - 9.jpg

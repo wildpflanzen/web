@@ -1,0 +1,24 @@
+﻿family: 'Convolvulaceae'
+genus: 'Convolvulus'
+species: 'Arvensis'
+
+family_de: 'Windengewächse'
+genus_de: 'Acker'
+species_de: 'Winde'
+
+floration: 'April - Oktober'
+
+thumb: 1.jpg
+
+---
+
+date: '6.2013'
+location: 'Spandau, Berlin'
+images:
+  - 1.jpg
+  - 2.jpg
+  - 3.jpg
+  - 4.jpg
+  - 5.jpg
+  - 6.jpg
+  - 7.jpg

@@ -1,0 +1,12 @@
+﻿order: 'Coleoptera'
+genus: 'Lucanus'
+species: 'Cervus'
+
+thumb: r0014901.jpg
+
+---
+
+date: '01.2016'
+location:
+images:
+  - r0014901.jpg

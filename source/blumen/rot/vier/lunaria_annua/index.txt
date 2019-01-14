@@ -1,0 +1,25 @@
+﻿family: 'Brassicaceae'
+genus: 'Lunaria'
+species: 'Annua'
+
+family_de: 'Kreuzblütengewächse'
+genus_de: 'Einjährige'
+species_de: 'Silberblatt'
+
+floration: ''
+
+thumb: l1.jpg
+
+---
+
+date: '4.2013'
+location: 'Plänterwald, Berlin'
+images:
+  - l1.jpg
+  - l2.jpg
+  - l4.jpg
+  - l7.jpg
+  - l5.jpg
+  - l6.jpg
+  - l3.jpg
+  - l8.jpg

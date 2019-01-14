@@ -1,0 +1,20 @@
+﻿family: 'Brassicaceae'
+genus: 'Petrocallis'
+species: 'Pyrenaica'
+
+family_de: 'Kreuzblütengewächse'
+genus_de: ''
+species_de: 'Steinschmückel'
+
+floration: ''
+
+thumb: 1.jpg
+
+---
+
+date: '7.2013'
+location: 'Adamello, Italien'
+images:
+  - 1.jpg
+  - 2.jpg
+  - 3.jpg

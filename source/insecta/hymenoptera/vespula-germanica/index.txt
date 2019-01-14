@@ -1,0 +1,10 @@
+﻿order: 'Hymenoptera'
+genus: 'Vespula'
+species: 'Germanica'
+
+---
+
+date: '01.2016'
+location:
+images:
+  - r0029214.jpg

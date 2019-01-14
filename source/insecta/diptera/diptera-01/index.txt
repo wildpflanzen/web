@@ -2,9 +2,7 @@
 genus: 'Diptera'
 species: '01'
 
-
 ---
-
 
 date: '11.2013'
 location:

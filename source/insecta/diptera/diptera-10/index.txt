@@ -1,0 +1,13 @@
+﻿order: 'Diptera'
+genus: 'Diptera'
+species: '10'
+
+thumb: R0031055.jpg
+
+---
+
+date: '08.2014'
+location:
+images:
+  - R0031055.jpg
+  - R0031069.jpg

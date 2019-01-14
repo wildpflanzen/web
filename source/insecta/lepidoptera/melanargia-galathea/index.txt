@@ -1,0 +1,10 @@
+﻿order: 'Lepidoptera'
+genus: 'Melanargia'
+species: 'Galathea'
+
+---
+
+date: '06.2014'
+location:
+images:
+  - R0014327.jpg

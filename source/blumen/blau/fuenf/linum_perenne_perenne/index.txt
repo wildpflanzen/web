@@ -1,0 +1,18 @@
+﻿family: 'Linaceae'
+genus: 'Linum'
+species: 'Perenne ssp perenne'
+
+family_de: 'Leingewächse'
+genus_de: 'Ausdauernder'
+species_de: 'Lein'
+
+floration: ''
+
+thumb: 1.jpg
+
+---
+
+date: '6.2013'
+location: 'Spreewald'
+images:
+  - 1.jpg

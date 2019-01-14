@@ -1,0 +1,19 @@
+﻿family: 'Linaceae'
+genus: 'Linum'
+species: 'Viscosum'
+
+family_de: 'Leingewächse'
+genus_de: 'Klebriger'
+species_de: 'Lein'
+
+floration: 'Juni - Jul'
+
+thumb: 1.jpg
+
+---
+
+date: '7.2013'
+location: 'Dolomiten, Italien'
+images:
+  - 2.jpg
+  - 1.jpg

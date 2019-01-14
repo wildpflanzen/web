@@ -1,0 +1,24 @@
+﻿family: 'Lamiaceae'
+genus: 'Lamium'
+species: 'Purpureum'
+
+family_de: 'Lippenblütengewächse'
+genus_de: 'Purpurrote'
+species_de: 'Taubnessel'
+
+floration: 'März - Oktober'
+
+thumb: 1.jpg
+
+---
+
+date: '4.2013'
+location: 'Gatow, Berlin'
+images:
+  - 7.jpg
+  - 5.jpg
+  - 6.jpg
+  - 3.jpg
+  - 4.jpg
+  - 1.jpg
+  - 2.jpg

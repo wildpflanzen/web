@@ -1,0 +1,12 @@
+﻿order: 'Arachnida'
+genus: 'Salticus'
+species: 'Scenicus'
+
+
+---
+
+date: '11.2013'
+location:
+images:
+  - 97.jpg
+  - 96.jpg

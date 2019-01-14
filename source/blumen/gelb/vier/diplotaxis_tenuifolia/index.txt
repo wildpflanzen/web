@@ -1,0 +1,21 @@
+﻿family: 'Brassicaceae'
+genus: 'Diplotaxis'
+species: 'Tenuifolia'
+
+family_de: 'Kreuzblütengewächse'
+genus_de: 'Schmalblättrige'
+species_de: 'Doppelsame, wilde rauke'
+
+floration: ''
+
+thumb: 1.jpg
+
+---
+
+date: '5.2013'
+location: 'Neukölln, Berlin'
+images:
+  - 1.jpg
+  - 2.jpg
+  - 3.jpg
+  - 4.jpg

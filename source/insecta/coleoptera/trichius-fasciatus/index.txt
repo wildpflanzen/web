@@ -1,0 +1,11 @@
+﻿order: 'Coleoptera'
+genus: 'Trichius'
+species: 'Fasciatus'
+
+---
+
+date: '11.2013'
+location:
+images:
+  - 62.jpg
+  - 63.jpg

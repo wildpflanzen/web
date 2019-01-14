@@ -1,0 +1,22 @@
+﻿family: 'Gentianaceae'
+genus: 'Gentianopsis'
+species: 'Ciliata'
+
+family_de: 'Enziangewächse'
+genus_de: 'Gewöhnlicher'
+species_de: 'Fransenenzian'
+
+floration: 'August - September'
+
+thumb: 1.jpg
+
+---
+
+date: '8.2015'
+location: 'Karwendel, Österreich'
+images:
+  - 1.jpg
+  - 2.jpg
+  - 3.jpg
+  - 4.jpg
+  - 5.jpg

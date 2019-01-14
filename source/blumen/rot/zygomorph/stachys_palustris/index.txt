@@ -1,0 +1,18 @@
+﻿family: 'Lamiaceae'
+genus: 'Stachys'
+species: 'Palustris'
+
+family_de: 'Lippenblütengewächse'
+genus_de: 'Sumpf'
+species_de: 'Ziest'
+
+floration: ''
+
+thumb: s1.jpg
+
+---
+
+date: '07.2013'
+location: 'Spreewald, Brandenburg'
+images:
+  - s1.jpg

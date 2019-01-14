@@ -1,0 +1,11 @@
+﻿order: 'Lepidoptera'
+genus: 'Lycaenidae'
+species: 'Polyommatinae'
+
+---
+
+date: '01.2016'
+location:
+images:
+  - r0034310.jpg
+  - r0034309.jpg

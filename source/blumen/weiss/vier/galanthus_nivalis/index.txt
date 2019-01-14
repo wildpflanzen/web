@@ -1,0 +1,22 @@
+﻿family: 'Amaryllidaceae'
+genus: 'Galanthus'
+species: 'Nivalis'
+
+family_de: 'Amaryllisgewächse'
+genus_de: 'Kleines'
+species_de: 'Schneeglöckchen'
+
+floration: ''
+
+thumb: s1.jpg
+
+---
+
+date: '03.2013'
+location: 'Hasenheide, Berlin'
+images:
+  - s2.jpg
+  - s1.jpg
+  - s3.jpg
+  - s4.jpg
+  - s5.jpg

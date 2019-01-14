@@ -1,0 +1,21 @@
+﻿family: 'Primulaceae'
+genus: 'Lysimachia'
+species: 'Nummularia'
+
+family_de: 'Primelgewächse'
+genus_de: 'Pfennig-gilbweiderich,'
+species_de: 'Pfennigkraut'
+
+floration: 'Juli - September'
+
+thumb: 1.jpg
+
+---
+
+date: '06.2013'
+location: 'Spreewald, Brandenburg'
+images:
+  - 1.jpg
+  - 2.jpg
+  - 3.jpg
+  - 4.jpg

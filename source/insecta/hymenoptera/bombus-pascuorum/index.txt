@@ -1,0 +1,12 @@
+﻿order: 'Hymenoptera'
+genus: 'Bombus'
+species: 'Pascuorum'
+
+---
+
+date: '11.2014'
+location:
+images:
+  - r0031433.jpg
+  - r0034355.jpg
+  - 130.jpg

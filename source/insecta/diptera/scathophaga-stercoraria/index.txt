@@ -1,0 +1,12 @@
+﻿order: 'Diptera'
+genus: 'Scathophaga'
+species: 'Stercoraria'
+
+---
+
+date: '11.2013'
+location:
+images:
+  - 88.jpg
+  - 87.jpg
+  - 89.jpg

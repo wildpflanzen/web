@@ -1,0 +1,27 @@
+﻿family: 'Asteraceae'
+genus: 'Erigeron'
+species: 'Annuus'
+
+family_de: 'Korbblütengewächse'
+genus_de: 'Einjähriges'
+species_de: 'Berufkraut'
+
+floration: ''
+
+thumb: 1.jpg
+
+---
+
+date: '6.2013'
+location: 'Plänterwald, Berlin'
+images:
+  - 1.jpg
+  - 2.jpg
+  - 3.jpg
+  - 4.jpg
+  - 5.jpg
+  - 6.jpg
+  - 7.jpg
+  - 8.jpg
+  - 9.jpg
+  - 10.jpg

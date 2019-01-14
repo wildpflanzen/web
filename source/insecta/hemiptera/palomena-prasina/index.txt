@@ -1,0 +1,11 @@
+﻿order: 'Hemiptera'
+genus: 'Palomena'
+species: 'Prasina'
+
+---
+
+date: '01.2017'
+location:
+images:
+  - r0034999.jpg
+  - r0034998.jpg

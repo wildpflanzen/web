@@ -2,9 +2,7 @@
 genus: 'Adelocera'
 species: 'Murina'
 
-
 ---
-
 
 date: '11.2013'
 location:

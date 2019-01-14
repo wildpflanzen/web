@@ -2,9 +2,7 @@
 genus: 'Insecta'
 species: '43'
 
-
 ---
-
 
 date: '06.2014'
 location:

@@ -1,0 +1,14 @@
+﻿order: 'Coleoptera'
+genus: 'Diochrysa'
+species: 'Fastuosa'
+
+thumb: r0014859.jpg
+
+---
+
+date: '03.2016'
+location:
+images:
+  - r0014859.jpg
+  - r0014862.jpg
+  - r0015564.jpg

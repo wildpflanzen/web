@@ -1,0 +1,30 @@
+﻿family: 'Asteraceae'
+genus: 'Taraxacum'
+species: 'Officinale'
+
+family_de: 'Korbblütengewächse'
+genus_de: 'Gewöhnliche'
+species_de: 'Löwenzahn'
+
+floration: 'April - Jul'
+
+thumb: 1.jpg
+
+---
+
+date: '4.2013'
+location: 'Plänterwald, Berlin'
+images:
+  - 1.jpg
+  - 2.jpg
+  - 3.jpg
+  - 5.jpg
+  - 4.jpg
+  - 9.jpg
+  - 7.jpg
+  - 11.jpg
+  - 10.jpg
+  - 8.jpg
+  - 6.jpg
+  - 12.jpg
+  - 13.jpg

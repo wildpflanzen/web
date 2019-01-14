@@ -1,0 +1,23 @@
+﻿family: 'Brassicaceae'
+genus: 'Nasturtium'
+species: 'Officinale'
+
+family_de: 'Kreuzblütengewächse'
+genus_de: 'Echte'
+species_de: 'Brunnenkresse'
+
+floration: ''
+
+thumb: 1.jpg
+
+---
+
+date: '6.2013'
+location: 'Spreewald, Brandenburg'
+images:
+  - 1.jpg
+  - 2.jpg
+  - 3.jpg
+  - 4.jpg
+  - 5.jpg
+  - 6.jpg

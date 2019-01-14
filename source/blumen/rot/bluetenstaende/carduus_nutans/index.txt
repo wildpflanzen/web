@@ -1,0 +1,22 @@
+﻿family: 'Asteraceae'
+genus: 'Carduus'
+species: 'Nutans'
+
+family_de: 'Korbblütengewächse'
+genus_de: 'Nickende'
+species_de: 'Distel'
+
+floration: 'Juli - September'
+
+thumb: 1.jpg
+
+---
+
+date: '7.2014'
+location: 'Tempelhofer Feld, Berlin'
+images:
+  - 1.jpg
+  - 2.jpg
+  - 3.jpg
+  - 4.jpg
+  - 5.jpg

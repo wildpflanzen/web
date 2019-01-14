@@ -1,0 +1,22 @@
+﻿family: 'Caryophyllaceae'
+genus: 'Cerastium'
+species: 'Holosteoides'
+
+family_de: 'Nelkengewächse'
+genus_de: 'Gewöhnliches'
+species_de: 'Hornkraut'
+
+floration: ''
+
+thumb: 1.jpg
+
+---
+
+date: '6.2013'
+location: 'Spreewald'
+images:
+  - 1.jpg
+  - 2.jpg
+  - 3.jpg
+  - 4.jpg
+  - 5.jpg

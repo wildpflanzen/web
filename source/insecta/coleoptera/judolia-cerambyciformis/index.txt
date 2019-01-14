@@ -1,0 +1,12 @@
+﻿order: 'Coleoptera'
+genus: 'Judolia'
+species: 'Cerambyciformis'
+
+thumb: r0014312.jpg
+
+---
+
+date: '03.2016'
+location:
+images:
+  - r0014312.jpg

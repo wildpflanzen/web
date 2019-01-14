@@ -1,0 +1,23 @@
+﻿family: 'Plantaginaceae'
+genus: 'Veronica'
+species: 'Serpyllifolia'
+
+family_de: 'Wegerichgewächse'
+genus_de: 'Quendel'
+species_de: 'Ehrenpreis'
+
+floration: 'Mai - Oktober'
+
+thumb: 1.jpg
+
+---
+
+date: '7.2013'
+location: 'Adamello, Italian'
+images:
+  - 1.jpg
+  - 2.jpg
+  - 3.jpg
+  - 4.jpg
+  - 5.jpg
+  - 6.jpg

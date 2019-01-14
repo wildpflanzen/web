@@ -1,0 +1,23 @@
+﻿family: 'Primulaceae'
+genus: 'Soldanella'
+species: 'Alpina'
+
+family_de: 'Primelgewächse'
+genus_de: 'Gewöhnliches'
+species_de: 'Alpenglöckchen'
+
+floration: ''
+
+thumb: 1.jpg
+
+---
+
+date: '7.2013'
+location: 'Dolomiten, Italien'
+images:
+  - 1.jpg
+  - 2.jpg
+  - 3.jpg
+  - 4.jpg
+  - 5.jpg
+  - 6.jpg

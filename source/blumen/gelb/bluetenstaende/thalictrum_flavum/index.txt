@@ -1,0 +1,21 @@
+﻿family: 'Ranunculaceae'
+genus: 'Thalictrum'
+species: 'Flavum'
+
+family_de: 'Hahnenfuβgewächse'
+genus_de: 'Gelbe'
+species_de: 'Wiesenraute'
+
+floration: 'Juni - August'
+
+thumb: 1.jpg
+
+---
+
+date: '7.2013'
+location: 'Adamello, Italien'
+images:
+  - 1.jpg
+  - 2.jpg
+  - 3.jpg
+  - 4.jpg

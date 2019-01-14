@@ -1,0 +1,41 @@
+﻿family: 'Rosaceae'
+genus: 'Geum'
+species: 'Urbanum'
+
+family_de: 'Rosengewächse'
+genus_de: 'Echte'
+species_de: 'Nelkenwurz'
+
+floration: 'Mai - Oktober'
+
+thumb: 1.jpg
+
+---
+
+date: '4.2013'
+location: 'Gatow, Berlin'
+images:
+  - 1.jpg
+  - 2.jpg
+  - 3.jpg
+  - 4.jpg
+  - 5.jpg
+  - 6.jpg
+
+thumb: 1.jpg
+
+---
+
+date: '4.2013'
+location: 'Gatow, Berlin'
+images:
+  - g21.jpg
+  - g22.jpg
+  - g23.jpg
+  - g24.jpg
+  - g25.jpg
+  - g26.jpg
+  - g27.jpg
+  - g28.jpg
+  - g29.jpg
+  - g30.jpg

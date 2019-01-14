@@ -1,0 +1,18 @@
+﻿family: 'Lamiaceae'
+genus: 'Leonurus'
+species: 'Cardiaca'
+
+family_de: 'Lippenblütengewächse'
+genus_de: 'Echter'
+species_de: 'Löwenschwanz'
+
+floration: ''
+
+thumb: l1.jpg
+
+---
+
+date: '6.2013'
+location: 'Spandau, Berlin'
+images:
+  - l1.jpg

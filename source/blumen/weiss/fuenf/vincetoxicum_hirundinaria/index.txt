@@ -1,0 +1,28 @@
+﻿family: 'Apocynaceae'
+genus: 'Vincetoxicum'
+species: 'Hirundinaria'
+
+family_de: 'Hundsgiftgewächse'
+genus_de: 'Weiβe'
+species_de: 'Schwalbenwurz'
+
+floration: 'Juni - August'
+
+thumb: 1.jpg
+
+---
+
+date: '7.2013'
+location: 'Adamello, Italien'
+images:
+  - 1.jpg
+  - 10.jpg
+  - 11.jpg
+  - 2.jpg
+  - 3.jpg
+  - 4.jpg
+  - 5.jpg
+  - 6.jpg
+  - 7.jpg
+  - 8.jpg
+  - 9.jpg

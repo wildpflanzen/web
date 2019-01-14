@@ -1,0 +1,21 @@
+﻿family: 'Plantaginaceae'
+genus: 'Linaria'
+species: 'Alpina'
+
+family_de: 'Wegerichgewächse'
+genus_de: 'Alpen'
+species_de: 'Leinkraut'
+
+floration: 'Juni - September'
+
+thumb: 1.jpg
+
+---
+
+date: '7.2013'
+location: 'Adamello, Italien'
+images:
+  - 1.jpg
+  - 2.jpg
+  - 3.jpg
+  - 4.jpg

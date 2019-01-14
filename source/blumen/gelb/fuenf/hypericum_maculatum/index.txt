@@ -1,0 +1,24 @@
+﻿family: 'Hypericaceae'
+genus: 'Hypericum'
+species: 'Maculatum'
+
+family_de: 'Johanniskrautgewächse'
+genus_de: 'Geflecktes'
+species_de: 'Johanniskraut'
+
+floration: 'Juni - August'
+
+thumb: 1.jpg
+
+---
+
+date: '8.2015'
+location: 'Texelgruppe, Italien'
+images:
+  - 1.jpg
+  - 2.jpg
+  - 3.jpg
+  - 4.jpg
+  - 5.jpg
+  - 6.jpg
+  - 7.jpg

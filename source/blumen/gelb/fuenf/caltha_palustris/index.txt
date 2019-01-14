@@ -8,6 +8,8 @@ species_de: 'Sumpfdotterblume'
 
 floration: 'April - Jun'
 
+thumb: 1.jpg
+
 ---
 
 date: '4.2014'

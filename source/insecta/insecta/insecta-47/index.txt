@@ -1,0 +1,10 @@
+﻿order: 'Insecta'
+genus: 'Insecta'
+species: '47'
+
+---
+
+date: '11.2013'
+location:
+images:
+  - 29.jpg

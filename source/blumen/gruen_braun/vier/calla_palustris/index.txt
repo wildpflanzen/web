@@ -8,6 +8,8 @@ species_de: 'Schlangenwurz'
 
 floration: 'Mai - August'
 
+thumb: 1.jpg
+
 ---
 
 date: '8.2016'

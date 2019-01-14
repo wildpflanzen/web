@@ -1,0 +1,11 @@
+﻿order: 'Arachnida'
+genus: 'Arachnida'
+species: '29'
+
+
+---
+
+date: '11.2013'
+location:
+images:
+  - 99.jpg

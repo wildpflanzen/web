@@ -1,0 +1,24 @@
+﻿family: 'Plantaginaceae'
+genus: 'Veronica'
+species: 'Hederifolia'
+
+family_de: 'Wegerichgewächse'
+genus_de: 'Efeublättriger'
+species_de: 'Ehrenpreis'
+
+floration: ''
+
+thumb: v1.jpg
+
+---
+
+date: '4.2013'
+location: 'Gatow, Berlin'
+images:
+  - v1.jpg
+  - v2.jpg
+  - v3.jpg
+  - v4.jpg
+  - v7.jpg
+  - v5.jpg
+  - v6.jpg

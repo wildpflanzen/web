@@ -1,0 +1,22 @@
+﻿family: 'Asparagaceae'
+genus: 'Muscari'
+species: 'Botryoides'
+
+family_de: 'Spargelgewächse'
+genus_de: 'Kleine'
+species_de: 'Traubenhyazinthe'
+
+floration: ''
+
+thumb: 1.jpg
+
+---
+
+date: '6.2013'
+location: 'Plänterwald, Berlin'
+images:
+  - 1.jpg
+  - 2.jpg
+  - 3.jpg
+  - 4.jpg
+  - 5.jpg

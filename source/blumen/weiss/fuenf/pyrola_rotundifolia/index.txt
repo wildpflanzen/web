@@ -1,0 +1,29 @@
+﻿family: 'Ericaceae'
+genus: 'Pyrola'
+species: 'Rotundifolia'
+
+family_de: 'Heidekrautgewächse'
+genus_de: 'Rundblättriges'
+species_de: 'Wintergrün'
+
+floration: ''
+
+thumb: 1.jpg
+
+---
+
+date: '7.2013'
+location: 'Dolomiten, Italien'
+images:
+  - 1.jpg
+  - 2.jpg
+  - 22.jpg
+  - 3.jpg
+  - 4.jpg
+  - 5.jpg
+  - 6.jpg
+  - 7.jpg
+  - 8.jpg
+  - 9.jpg
+  - 10.jpg
+  - 11.jpg

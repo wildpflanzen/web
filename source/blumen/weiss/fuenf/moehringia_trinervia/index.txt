@@ -1,0 +1,27 @@
+﻿family: 'Caryophyllaceae'
+genus: 'Moehringia'
+species: 'Trinervia'
+
+family_de: 'Nelkengewächse'
+genus_de: 'Dreinervige'
+species_de: 'Nabelmiere'
+
+floration: ''
+
+thumb: m1.jpg
+
+---
+
+date: '4.2013'
+location: 'Plänterwald, Berlin'
+images:
+  - m1.jpg
+  - m2.jpg
+  - m3.jpg
+  - m5.jpg
+  - m6.jpg
+  - m4.jpg
+  - m8.jpg
+  - m7.jpg
+  - m9.jpg
+  - m10.jpg

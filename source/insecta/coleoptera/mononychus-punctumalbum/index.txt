@@ -1,0 +1,10 @@
+﻿order: 'Coleoptera'
+genus: 'Mononychus'
+species: 'Punctumalbum'
+
+---
+
+date: '11.2013'
+location:
+images:
+  - 32.jpg

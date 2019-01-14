@@ -2,9 +2,7 @@
 genus: 'Chrysopa'
 species: 'Perla'
 
-
 ---
-
 
 date: '11.2013'
 location:

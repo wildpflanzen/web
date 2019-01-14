@@ -1,0 +1,14 @@
+﻿order: 'Coleoptera'
+genus: 'Pyrochroa'
+species: 'Coccinea'
+
+thumb: R0030570.jpg
+
+---
+
+date: '12.2014'
+location:
+images:
+  - R0030570.jpg
+  - R0030584.jpg
+  - 43.jpg

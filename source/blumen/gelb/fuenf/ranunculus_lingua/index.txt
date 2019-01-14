@@ -1,0 +1,24 @@
+﻿family: 'Ranunculaceae'
+genus: 'Ranunculus'
+species: 'Lingua'
+
+family_de: 'Hahnenfuβgewächse'
+genus_de: 'Zungen'
+species_de: 'Hahnenfuβ'
+
+floration: 'Mai - August'
+
+thumb: 1.jpg
+
+---
+
+date: '6.2014'
+location: 'Teufelsseemoor, Berlin'
+images:
+  - 1.jpg
+  - 2.jpg
+  - 3.jpg
+  - 4.jpg
+  - 5.jpg
+  - 6.jpg
+  - 7.jpg

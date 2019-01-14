@@ -1,0 +1,27 @@
+﻿family: 'Asteraceae'
+genus: 'Hieracium'
+species: 'Pilosella'
+
+family_de: 'Korbblütengewächse'
+genus_de: 'Kleines'
+species_de: 'Habichtskraut'
+
+floration: ''
+
+thumb: h1.jpg
+
+---
+
+date: '05.13'
+location: 'Königsheide, Berlin'
+images:
+  - h1.jpg
+  - h2.jpg
+  - h4.jpg
+  - h3.jpg
+  - h5.jpg
+  - h6.jpg
+  - h7.jpg
+  - h8.jpg
+  - h9.jpg
+  - h10.jpg

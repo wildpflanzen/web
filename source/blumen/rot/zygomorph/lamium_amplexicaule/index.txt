@@ -1,0 +1,23 @@
+﻿family: 'Lamiaceae'
+genus: 'Lamium'
+species: 'Amplexicaule'
+
+family_de: 'Lippenblütengewächse'
+genus_de: 'Stängelumfassende'
+species_de: 'Taubnessel'
+
+floration: 'April - August'
+
+thumb: 1.jpg
+
+---
+
+date: '5.2014'
+location: 'Spreewald, Brandenburg'
+images:
+  - 1.jpg
+  - 2.jpg
+  - 3.jpg
+  - 4.jpg
+  - 5.jpg
+  - 6.jpg

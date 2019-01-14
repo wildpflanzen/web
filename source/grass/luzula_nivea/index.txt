@@ -8,6 +8,8 @@ species_de: 'Hainsimse'
 
 floration: ''
 
+thumb: 1.jpg
+
 ---
 
 date: '7.2013'

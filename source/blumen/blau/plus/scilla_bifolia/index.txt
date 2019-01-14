@@ -1,0 +1,23 @@
+﻿family: 'Asparagaceae'
+genus: 'Scilla'
+species: 'Bifolia'
+
+family_de: 'Spargelgewächse'
+genus_de: 'Zweiblätrige'
+species_de: 'Blaustern'
+
+floration: ''
+
+thumb: s1.jpg
+
+---
+
+date: '4.2013'
+location: 'Gatow, Berlin'
+images:
+  - s1.jpg
+  - s2.jpg
+  - s3.jpg
+  - s4.jpg
+  - s5.jpg
+  - s6.jpg

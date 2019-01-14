@@ -1,0 +1,12 @@
+﻿order: 'Hymenoptera'
+genus: 'Bombus'
+species: 'Lapidarius'
+
+---
+
+date: '11.2014'
+location:
+images:
+  - r0030962.jpg
+  - r0031015.jpg
+  - r0031024.jpg

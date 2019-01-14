@@ -1,0 +1,23 @@
+﻿family: 'Caryophyllaceae'
+genus: 'Dianthus'
+species: 'Monspessulanus'
+
+family_de: 'Nelkengewächse'
+genus_de: 'Montpellier'
+species_de: 'Nelke'
+
+floration: 'Mai - August'
+
+thumb: 1.jpg
+
+---
+
+date: '8.2015'
+location: 'Texelgruppe, Italia'
+images:
+  - 1.jpg
+  - 2.jpg
+  - 3.jpg
+  - 4.jpg
+  - 5.jpg
+  - 6.jpg

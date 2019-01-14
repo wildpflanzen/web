@@ -1,0 +1,10 @@
+﻿order: 'Coleoptera'
+genus: 'Coleoptera'
+species: '36'
+
+---
+
+date: '11.2013'
+location:
+images:
+  - 12.jpg

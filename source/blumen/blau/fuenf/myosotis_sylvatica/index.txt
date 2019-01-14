@@ -1,0 +1,29 @@
+﻿family: 'Boraginaceae'
+genus: 'Myosotis'
+species: 'Sylvatica'
+
+family_de: 'Raublattgewächse'
+genus_de: 'Wald'
+species_de: 'Vergissmeinnicht'
+
+floration: ''
+
+thumb: m1.jpg
+
+---
+
+date: '4.2013'
+location: 'Plänterwald, Berlin'
+images:
+  - m1.jpg
+  - m13.jpg
+  - m2.jpg
+  - m3.jpg
+  - m4.jpg
+  - m5.jpg
+  - m12.jpg
+  - m10.jpg
+  - m9.jpg
+  - m8.jpg
+  - m6.jpg
+  - m11.jpg

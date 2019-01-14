@@ -1,0 +1,14 @@
+﻿order: 'Coleoptera'
+genus: 'Rhagium'
+species: 'Mordax'
+
+thumb: r0011706.jpg
+
+---
+
+date: '01.2016'
+location:
+images:
+  - r0011706.jpg
+  - r0011709.jpg
+  - r0011711.jpg

@@ -1,0 +1,24 @@
+﻿family: 'Ranunculaceae'
+genus: 'Ranunculus'
+species: 'Sceleratus'
+
+family_de: 'Hahnenfuβgewächse'
+genus_de: 'Gift'
+species_de: 'Hahnenfuβ'
+
+floration: 'Juni - Oktober'
+
+thumb: 1.jpg
+
+---
+
+date: '6.2014'
+location: 'Teufelsseemoor, Berlin'
+images:
+  - 1.jpg
+  - 2.jpg
+  - 3.jpg
+  - 4.jpg
+  - 5.jpg
+  - 6.jpg
+  - 7.jpg

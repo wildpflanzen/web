@@ -1,0 +1,23 @@
+﻿family: 'Asteraceae'
+genus: 'Sonchus'
+species: 'Oleraceus'
+
+family_de: 'Korbblütengewächse'
+genus_de: 'Gewöhnliche'
+species_de: 'Gänsedistel'
+
+floration: 'Juni - Oktober'
+
+thumb: 1.jpg
+
+---
+
+date: '9.13'
+location: 'Neukölln, Berlin'
+images:
+  - 1.jpg
+  - 2.jpg
+  - 3.jpg
+  - 4.jpg
+  - 5.jpg
+  - 6.jpg

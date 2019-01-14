@@ -8,6 +8,8 @@ species_de: 'Alpendost'
 
 floration: 'Juli - August'
 
+thumb: 1.jpg
+
 ---
 
 date: '7.2013'

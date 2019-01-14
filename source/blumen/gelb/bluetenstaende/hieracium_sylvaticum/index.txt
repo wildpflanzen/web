@@ -1,0 +1,24 @@
+﻿family: 'Asteraceae'
+genus: 'Hieracium'
+species: 'Sylvaticum'
+
+family_de: 'Korbblütengewächse'
+genus_de: 'Wald'
+species_de: 'Habichtskraut'
+
+floration: ''
+
+thumb: 1.jpg
+
+---
+
+date: '5.13'
+location: 'Königsheide, Berlin'
+images:
+  - 1.jpg
+  - 2.jpg
+  - 3.jpg
+  - 4.jpg
+  - 5.jpg
+  - 6.jpg
+  - 7.jpg

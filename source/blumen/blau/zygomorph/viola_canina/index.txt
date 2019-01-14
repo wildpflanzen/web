@@ -1,0 +1,26 @@
+﻿family: 'Violaceae'
+genus: 'Viola'
+species: 'Canina'
+
+family_de: 'Veilchengewächse'
+genus_de: 'Hund'
+species_de: 'Veilchen'
+
+floration: ''
+
+thumb: v1.jpg
+
+---
+
+date: '4.2013'
+location: 'Plänterwald, Berlin'
+images:
+  - v1.jpg
+  - v4.jpg
+  - v2.jpg
+  - v3.jpg
+  - v6.jpg
+  - v7.jpg
+  - v8.jpg
+  - v9.jpg
+  - v5.jpg

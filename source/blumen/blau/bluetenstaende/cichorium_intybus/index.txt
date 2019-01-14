@@ -1,0 +1,20 @@
+﻿family: 'Asteraceae'
+genus: 'Cichorium'
+species: 'Intybus'
+
+family_de: 'Korbblütengewächse'
+genus_de: 'Gewöhnliche'
+species_de: 'Wegwarte'
+
+floration: ''
+
+thumb: 1.jpg
+
+---
+
+date: '8.2013'
+location: 'Blumental, Brandenburg'
+images:
+  - 1.jpg
+  - 2.jpg
+  - 3.jpg

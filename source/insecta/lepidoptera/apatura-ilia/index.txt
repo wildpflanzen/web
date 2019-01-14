@@ -2,9 +2,7 @@
 genus: 'Apatura'
 species: 'Ilia'
 
-
 ---
-
 
 date: '11.2014'
 location:

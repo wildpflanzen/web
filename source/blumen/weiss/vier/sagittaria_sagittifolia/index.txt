@@ -1,0 +1,22 @@
+﻿family: 'Alismataceae'
+genus: 'Sagittaria'
+species: 'Sagittifolia'
+
+family_de: 'Froschlöffelgewächse'
+genus_de: 'Gewöhnliches'
+species_de: 'Pfeilkraut'
+
+floration: ''
+
+thumb: 1.jpg
+
+---
+
+date: '6.2013'
+location: 'Spreewald'
+images:
+  - 1.jpg
+  - 2.jpg
+  - 3.jpg
+  - 4.jpg
+  - 5.jpg

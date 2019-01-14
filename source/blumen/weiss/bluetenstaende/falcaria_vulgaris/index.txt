@@ -1,0 +1,23 @@
+﻿family: 'Apiaceae'
+genus: 'Falcaria'
+species: 'Vulgaris'
+
+family_de: 'Doldengewächse'
+genus_de: 'Gemeine'
+species_de: 'Sichelmöhre'
+
+floration: 'Juli - September'
+
+thumb: 1.jpg
+
+---
+
+date: '7.2014'
+location: 'Johannisthal, Berlin'
+images:
+  - 1.jpg
+  - 2.jpg
+  - 3.jpg
+  - 4.jpg
+  - 5.jpg
+  - 6.jpg

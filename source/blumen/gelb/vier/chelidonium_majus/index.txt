@@ -8,6 +8,8 @@ species_de: 'Schöllkraut'
 
 floration: ''
 
+thumb: 1.jpg
+
 ---
 
 date: '4.2013'

@@ -1,0 +1,10 @@
+﻿order: 'Diptera'
+genus: 'Sicus'
+species: 'Ferrugineus'
+
+---
+
+date: '11.2013'
+location:
+images:
+  - 24.jpg

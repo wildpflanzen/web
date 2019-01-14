@@ -8,6 +8,8 @@ species_de: 'Buschwindröschen'
 
 floration: ''
 
+thumb: 1.jpg
+
 ---
 
 date: '4.2013'

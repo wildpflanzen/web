@@ -1,0 +1,24 @@
+﻿family: 'Polygonaceae'
+genus: 'Rumex'
+species: 'Obtusifolius'
+
+family_de: 'Knöterichgewächse'
+genus_de: 'Stumpfblättriger'
+species_de: 'Ampfer'
+
+floration: 'Mai - September'
+
+thumb: 1.jpg
+
+---
+
+date: '6.2013'
+location: 'Plänterwald, Berlin'
+images:
+  - 1.jpg
+  - 2.jpg
+  - 3.jpg
+  - 4.jpg
+  - 5.jpg
+  - 6.jpg
+  - 7.jpg

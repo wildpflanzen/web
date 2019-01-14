@@ -2,9 +2,7 @@
 genus: 'Grillotalpa'
 species: 'Grillotalpa'
 
-
 ---
-
 
 date: '01.2016'
 location:

@@ -1,0 +1,25 @@
+﻿family: 'Apiaceae'
+genus: 'Heracleum'
+species: 'Sphondylium'
+
+family_de: 'Doldengewächse'
+genus_de: 'Wiesen'
+species_de: 'Bärenklau'
+
+floration: 'Juni - Oktober'
+
+thumb: 1.jpg
+
+---
+
+date: '11.2013'
+location: 'Dolomiten, Italien'
+images:
+  - 1.jpg
+  - 2.jpg
+  - 3.jpg
+  - 4.jpg
+  - 5.jpg
+  - 6.jpg
+  - 7.jpg
+  - 8.jpg

@@ -1,0 +1,23 @@
+﻿family: 'Violaceae'
+genus: 'Viola'
+species: 'Arvensis'
+
+family_de: 'Veilchengewächse'
+genus_de: 'Acker'
+species_de: 'Stiefmütterchen'
+
+floration: ''
+
+thumb: 1.jpg
+
+---
+
+date: '4.2014'
+location: 'Karlshorst, Berlin'
+images:
+  - 1.jpg
+  - 2.jpg
+  - 3.jpg
+  - 4.jpg
+  - 5.jpg
+  - 6.jpg

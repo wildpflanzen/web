@@ -1,0 +1,21 @@
+﻿family: 'Lamiaceae'
+genus: 'Lycopus'
+species: 'Europaeus'
+
+family_de: 'Lippenblütengewächse'
+genus_de: 'Ufer'
+species_de: 'Wolfstrapp'
+
+floration: 'Juli - September'
+
+thumb: 1.jpg
+
+---
+
+date: '9.2013'
+location: 'Neukölln, Berlin'
+images:
+  - 1.jpg
+  - 2.jpg
+  - 3.jpg
+  - 4.jpg

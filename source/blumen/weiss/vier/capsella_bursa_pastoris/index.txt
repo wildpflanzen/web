@@ -1,0 +1,23 @@
+﻿family: 'Brassicaceae'
+genus: 'Capsella'
+species: 'Bursa-pastoris'
+
+family_de: 'Kreuzblütengewächse'
+genus_de: 'Gewöhnliches'
+species_de: 'Hirtentäschel'
+
+floration: ''
+
+thumb: 1.jpg
+
+---
+
+date: '5.2013'
+location: 'Teltowkanal, Berlin'
+images:
+  - 1.jpg
+  - 2.jpg
+  - 3.jpg
+  - 4.jpg
+  - 5.jpg
+  - 6.jpg

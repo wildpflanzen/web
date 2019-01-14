@@ -1,0 +1,23 @@
+﻿family: 'Caryophyllaceae'
+genus: 'Moehringia'
+species: 'Ciliata'
+
+family_de: 'Nelkengewächse'
+genus_de: 'Bewimperte'
+species_de: 'Nabelmiere'
+
+floration: ''
+
+thumb: 1.jpg
+
+---
+
+date: '7.2013'
+location: 'Dolomiten, Italien'
+images:
+  - 1.jpg
+  - 2.jpg
+  - 3.jpg
+  - 4.jpg
+  - 5.jpg
+  - 6.jpg

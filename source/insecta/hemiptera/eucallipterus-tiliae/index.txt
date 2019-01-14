@@ -2,9 +2,7 @@
 genus: 'Eucallipterus'
 species: 'Tiliae'
 
-
 ---
-
 
 date: '01.2015'
 location:

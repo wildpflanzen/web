@@ -1,0 +1,24 @@
+﻿family: 'Violaceae'
+genus: 'Viola'
+species: 'Odorata'
+
+family_de: 'Veilchengewächse'
+genus_de: 'Duft'
+species_de: 'Veilchen'
+
+floration: 'März - April'
+
+thumb: v1.jpg
+
+---
+
+date: '4.2013'
+location: 'Blumental, Brandenburg'
+images:
+  - v1.jpg
+  - v2.jpg
+  - v3.jpg
+  - v4.jpg
+  - v7.jpg
+  - v5.jpg
+  - v6.jpg

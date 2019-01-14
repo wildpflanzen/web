@@ -1,0 +1,11 @@
+﻿order: 'Coleoptera'
+genus: 'Strangalia'
+species: 'Maculata'
+
+---
+
+date: '11.2013'
+location:
+images:
+  - 114.jpg
+  - 115.jpg

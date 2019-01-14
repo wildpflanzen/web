@@ -5,7 +5,6 @@ species: 'Aurata'
 
 ---
 
-
 date: '11.2013'
 location:
 images:

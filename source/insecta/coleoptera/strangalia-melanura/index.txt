@@ -1,0 +1,10 @@
+﻿order: 'Coleoptera'
+genus: 'Strangalia'
+species: 'Melanura'
+
+---
+
+date: '11.2013'
+location:
+images:
+  - 116.jpg

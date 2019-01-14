@@ -8,6 +8,8 @@ species_de: 'Akele'
 
 floration: 'Mai - Jul'
 
+thumb: 1.jpg
+
 ---
 
 date: '7.2013'

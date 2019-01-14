@@ -1,0 +1,18 @@
+﻿family: 'Nymphaeaceae'
+genus: 'Nuphar'
+species: 'Lutea'
+
+family_de: 'Seerosengewächse'
+genus_de: 'Gelbe'
+species_de: 'Teichrose'
+
+floration: ''
+
+thumb: 1.jpg
+
+---
+
+date: '06.2013'
+location: 'Spreewald'
+images:
+  - 1.jpg

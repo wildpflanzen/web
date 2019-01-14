@@ -2,9 +2,7 @@
 genus: 'Cercopis'
 species: 'Vulnerata'
 
-
 ---
-
 
 date: '01.2017'
 location:

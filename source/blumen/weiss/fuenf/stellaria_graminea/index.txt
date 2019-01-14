@@ -1,0 +1,24 @@
+﻿family: 'Caryophyllaceae'
+genus: 'Stellaria'
+species: 'Graminea'
+
+family_de: 'Nelkengewächse'
+genus_de: 'Gras'
+species_de: 'Sternmiere'
+
+floration: ''
+
+thumb: 1.jpg
+
+---
+
+date: '6.2013'
+location: 'Spreewald, Brandenburg'
+images:
+  - 1.jpg
+  - 2.jpg
+  - 3.jpg
+  - 4.jpg
+  - 5.jpg
+  - 6.jpg
+  - 7.jpg

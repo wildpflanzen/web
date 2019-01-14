@@ -1,0 +1,11 @@
+﻿order: 'Hymenoptera'
+genus: 'Megalodontes'
+species: 'Cephalotes'
+
+---
+
+date: '03.2014'
+location:
+images:
+  - 104.jpg
+  - 105.jpg

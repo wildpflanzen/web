@@ -1,0 +1,22 @@
+﻿family: 'Orchidaceae'
+genus: 'Gymnadenia'
+species: 'Conopsea ssp. alpina'
+
+family_de: 'Orchideen'
+genus_de: 'Alpen'
+species_de: 'Händelwurz'
+
+floration: ''
+
+thumb: 1.jpg
+
+---
+
+date: '7.2013'
+location: 'Adamello, Italien'
+images:
+  - 1.jpg
+  - 2.jpg
+  - 3.jpg
+  - 4.jpg
+  - 5.jpg

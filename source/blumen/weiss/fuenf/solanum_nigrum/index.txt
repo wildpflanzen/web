@@ -1,0 +1,18 @@
+﻿family: 'Solanaceae'
+genus: 'Solanum'
+species: 'Nigrum'
+
+family_de: 'Nachtschattengewächse'
+genus_de: 'Schwarzer'
+species_de: 'Nachtschatten'
+
+floration: ''
+
+thumb: 1.jpg
+
+---
+
+date: '9.2013'
+location: 'Neukölln, Berlin'
+images:
+  - 1.jpg

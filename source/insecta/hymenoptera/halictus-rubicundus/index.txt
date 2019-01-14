@@ -1,0 +1,11 @@
+﻿order: 'Hymenoptera'
+genus: 'Halictus'
+species: 'Rubicundus'
+
+---
+
+date: '08.2016'
+location:
+images:
+  - r0034561.jpg
+  - r0034570.jpg

@@ -1,0 +1,13 @@
+﻿order: 'Diptera'
+genus: 'Diptera'
+species: '08'
+
+thumb: r0031328.jpg
+
+---
+
+date: '01.2016'
+location:
+images:
+  - r0031328.jpg
+  - r0031331.jpg

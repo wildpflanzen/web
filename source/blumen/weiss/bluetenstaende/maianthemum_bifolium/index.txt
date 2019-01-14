@@ -1,0 +1,25 @@
+﻿family: 'Convallariaceae'
+genus: 'Maianthemum'
+species: 'Bifolium'
+
+family_de: 'Maiglöckchengewächse'
+genus_de: 'Zweiblättrige'
+species_de: 'Schattenblume'
+
+floration: ''
+
+thumb: 1.jpg
+
+---
+
+date: '3.2013'
+location: 'Königsheide, Berlin'
+images:
+  - 1.jpg
+  - 2.jpg
+  - 3.jpg
+  - 4.jpg
+  - 5.jpg
+  - 6.jpg
+  - 7.jpg
+  - 8.jpg

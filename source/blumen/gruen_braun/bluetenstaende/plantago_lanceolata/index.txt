@@ -8,6 +8,8 @@ species_de: 'Wegerich'
 
 floration: ''
 
+thumb: p1.jpg
+
 ---
 
 date: '05.13'

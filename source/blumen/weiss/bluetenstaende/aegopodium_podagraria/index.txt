@@ -1,0 +1,18 @@
+﻿family: 'Apiaceae'
+genus: 'Aegopodium'
+species: 'Podagraria'
+
+family_de: 'Doldengewächse'
+genus_de: 'Gewöhnliche'
+species_de: 'Giersch'
+
+floration: ''
+
+thumb: a1.jpg
+
+---
+
+date: '7.2013'
+location: 'Spreewald, Brandenburg'
+images:
+  - a1.jpg

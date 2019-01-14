@@ -8,6 +8,8 @@ species_de: 'Zweiblatt'
 
 floration: 'Mai - Jul'
 
+thumb: 1.jpg
+
 ---
 
 date: '7.13'

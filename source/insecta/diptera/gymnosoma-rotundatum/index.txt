@@ -1,0 +1,10 @@
+﻿order: 'Diptera'
+genus: 'Gymnosoma'
+species: 'Rotundatum'
+
+---
+
+date: '11.2013'
+location:
+images:
+  - 101.jpg
