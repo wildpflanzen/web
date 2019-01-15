@@ -33,11 +33,40 @@ padding: 8px;
 
 /*** Navigation bar ***/
 
-.navi {
+.navi, .naviglobal {
 font-size: 18px;
 font-family: Helvetica, Arial, sans-serif;
 line-height: 20px;
 padding: 12px;
+}
+
+.naviglobal ul {
+margin: 0;
+padding: 0;
+}
+
+.naviglobal ul li {
+display: inline-block;
+margin: 0 0 12px 0;
+padding: 6px;
+border: 1px solid black;
+text-align: center;
+}
+
+
+
+
+.navi ul {
+margin: 0;
+padding: 0;
+}
+
+.navi ul li {
+display: inline-block;
+margin: 0 0 12px 0;
+padding: 6px;
+border: 1px solid black;
+text-align: center;
 }
 
 .navi a {

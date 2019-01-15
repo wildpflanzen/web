@@ -2,24 +2,36 @@
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
 
+{%- import 'macros.txt' as macros %}
+
 <head>
    <!-- Metadata -->
    {%- include 'metadata-de.html' %}
-   
+
    <title>Index | Wildpflanzen</title>
-   
+
    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
    <link href="static/main.css" rel="stylesheet" type="text/css" media="all" />
 </head>
 
 
 <body>
+   <!-- Header -->
+   {%- include 'header.html' %}
+
+
    <div class="wrapper">
 
-   <div class="navi">
+
    <!-- Navigation -->
+   {{ macros.naviglobal('main-index') }}
+
+   <div class="navi">
+
    </div>
-    
+
+
+   <!-- Content -->
    <div class="content">
 
    <h1>Wildpflanzen</h1>
@@ -30,9 +42,9 @@
    {%- endif %}
    {%- endfor %}
    </ul>
-   
+
    </div>
-   
+
    <!-- Footer -->
    {%- include 'footer-de.html' %}
 

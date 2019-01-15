@@ -2,32 +2,42 @@
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
 
+{%- import 'macros.txt' as macros %}
+
 <head>
    <!-- Metadata -->
    {%- include 'metadata-de.html' %}
-   
+
    <title>{{ group.group_name }} | Wildpflanzen</title>
-   
+
    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
    <link href="static/main.css" rel="stylesheet" type="text/css" media="all" />
 </head>
 
 
 <body>
+   <!-- Header -->
+   {%- include 'header.html' %}
+
+
    <div class="wrapper">
 
-   <div class="navi">
+
    <!-- Navigation -->
+   {{ macros.naviglobal('') }}
+   
+   <div class="navi">
    <ul>
    <li><a href="index.html">Main page</a></li>
    <li><a href="{{ group.group_next.filename }}.html">Next group</a></li>
-   <li><a href="{{ group.group_prev.filename }}.html">Prev group</a></li>   
+   <li><a href="{{ group.group_prev.filename }}.html">Prev group</a></li>
    </ul>
-
    </div>
-    
+
+
+   <!-- Content -->
    <div class="content">
-   
+
    <!-- Group name -->
    <h1>{{ group.group_name }}</h1>
 
@@ -40,7 +50,7 @@
    {% endfor %}
 
    </div>
-   
+
    <!-- Footer -->
    {%- include 'footer-de.html' %}
 

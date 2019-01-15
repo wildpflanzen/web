@@ -2,6 +2,8 @@
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
 
+{%- import 'macros.txt' as macros %}
+
 <head>
    <!-- Metadata -->
    {%- include 'metadata-de.html' %}
@@ -14,12 +16,21 @@
 
 
 <body>
+   <!-- Header -->
+   {%- include 'header.html' %}
+
+
    <div class="wrapper">
 
+
+   <!-- Navigation -->
+   {{ macros.naviglobal('index') }}
+
    <div class="navi">
-   <a href="index.html">Main page</a>
    </div>
 
+
+   <!-- Content -->
    <div class="content">
 
    <h1>Index {{ index.index_name | capitalize() }}</h1>
