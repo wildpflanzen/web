@@ -39,10 +39,11 @@ def main():
    # Copy static files
    generator.copy_static()
 
+   # Generate html files
    generator.html_species()
    generator.html_groups()
-   generator.html_main()
    generator.html_index()
+   generator.html_extra()
 
    
    # End
@@ -64,6 +65,7 @@ class HTML_generator():
       self.copy_files('templates/root', 'docs')
       self.copy_files('templates/static', 'docs/static')     
 
+
    def copy_files(self, src, dst):
       if not os.path.isdir(src):
          return
@@ -73,8 +75,26 @@ class HTML_generator():
          if self.overwrite or not os.path.isfile(os.path.join(dst, fname)):
             shutil.copy2(os.path.join(src, fname), os.path.join(dst, fname))
 
+
+   def html_extra(self):
+      print('\nRendering html extra ...')
+      path = 'templates/extra'
+      extra = [f for f in os.listdir(path) if f[-5:].lower() == '.html']
+      for fname in extra:
+         html_template = self.jinja_environment(fname, path=['templates', 'templates/extra'])
+         filename = os.path.join('docs', fname)
+         html = html_template.render(groups=self.database['groups'])
+         self.write_file(filename, html)
+      
+
    def html_index(self):
       print('\nRendering html index ...')
+
+      # Main index
+      html_template = self.jinja_environment('main-de.html')
+      filename = os.path.join('docs', 'index-main.html')
+      html = html_template.render(groups=self.database['groups'])
+      self.write_file(filename, html)
 
       # Make html family index
       self.make_index('family')
@@ -89,6 +109,7 @@ class HTML_generator():
       # Make html genus index
       self.make_index('genus_de', \
                       filter_func=lambda n:  n[0].upper() if len(n) else '')
+
 
 
    def make_index(self, index_name, filter_func=lambda n: n):
@@ -113,18 +134,6 @@ class HTML_generator():
       html = html_template.render(index=self.index)
       output = os.path.join('docs', 'index-' + re.sub('[_ ]', '-', index_name)+'.html')
       self.write_file(output, html)
-
-
-   def html_main(self):
-      print('\nRendering html main index ...')
-
-      # Jinja environment
-      html_template = self.jinja_environment('main-de.html')
-
-      # Make html main file
-      filename = os.path.join('docs', 'index-de.html')
-      html = html_template.render(groups=self.database['groups'])
-      self.write_file(filename, html)
 
 
    def html_groups(self):
@@ -155,9 +164,9 @@ class HTML_generator():
          self.write_file(filename, html)
 
 
-   def jinja_environment(self, template_file):
+   def jinja_environment(self, template_file, path='templates'):
       # Setup Jinja environment
-      jinja_env = Environment( loader=FileSystemLoader(searchpath='templates') )
+      jinja_env = Environment( loader=FileSystemLoader(searchpath=path) )
       return jinja_env.get_template(template_file)
 
 

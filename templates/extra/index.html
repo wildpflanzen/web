@@ -1,38 +1,42 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
-<!-- ============================= H E A D ============================= -->
+
+{%- import 'macros.txt' as macros %}
 
 <head>
-   <meta http-equiv="Content-Language" content="de" />
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <meta name="description" lang="de" content="Wildpflanzen- Wildblumen und Kraeuter bestimmen" />
-  <meta name="keywords" lang="de" content="Wildpflanzen, Wildblumen, Kraeuter, Bestimmung, Wilde Pflanzen, Pflanzenbestimmung, Natur, Blueten, Blumen, Systematik, Bluetenfarbe, heimisch, heimische Pflanzen" />
-  <meta name="page-topic" lang="de" content="Wildpflanzen" />
-  <meta name="robots" content="index, follow" />
-  <meta name="Date" content="01.01.2013" scheme="Day-Month-Year" />
-  <meta name="Revisit-After" content="7 days" />
-<title>WILDPFLANZEN</title>
+   <!-- Metadata -->
+   {%- include 'metadata-de.html' %}
 
+   <title>WILDPFLANZEN</title>
 
-<link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
-<link href="static/main-old.css" rel="stylesheet" type="text/css" media="all"/>
-
+   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
+   <link href="static/main-old.css" rel="stylesheet" type="text/css" media="all"/>
+   <link href="static/main.css" rel="stylesheet" type="text/css" media="all" />
 </head>
-<body>
-<div id="titel">Wildpflanzen</div>
-<div id="navi">
-  <span class="navi1">Bestimmung</span>
-  <a href="index-genus-de.html"><span class="navi">Register</span></a>
-  <a href="systematik.html"><span class="navi">Systematik</span></a>
-  <a href="kontakt.html" ><span class="navi">Kontakt</span></a>
-</div>
-<div class="clear2">&nbsp;</div>
 
-<div class="space1">&nbsp;</div>
+
+<body>
+
+   <!-- Header -->
+   {%- include 'header.html' %}
+
+
+   <div class="wrapper">
+
+
+   <!-- Navigation -->
+   {{ macros.naviglobal('') }}
+
+
+   <!-- Content -->
+   <div class="content">
+
+
 <div id="navi3">
 <span class="navi31">Krautige Pflanzen</span>
 </div>
-<div class="clear">&nbsp;</div>
+
 <div id="farben">
 	    <div id="f_titel">
 		<div class="f_titel">Blütenfarbe</div>
@@ -90,8 +94,8 @@
 		  </div>
 		 </div>
 		 <div class="clear2">&nbsp;</div>
-	    </div></div><!-- f -->
-</div><!-- farben -->
+	    </div>
+   </div><!-- farben -->
 
 
 <div class="clear">&nbsp;</div>
@@ -109,19 +113,21 @@
    <a href="insecta-lepidoptera.html"><span class="navi4">Lepidoptera</span></a>
    <a href="insecta-orthoptera.html"><span class="navi4">Orthoptera</span></a>
    <a href="insecta-insecta.html"><span class="navi4">Insecta.</span></a>
-   <div class="space1">&nbsp;</div> 
 </div>
 <div id="navi4" style="margin-top:16px">
    <a href="grass.html"><span class="navi4">Gräser</span></a>
    <a href="strauch.html"><span class="navi4">Sträucher</span></a>
 </div>
 
-<div class="space1">&nbsp;</div> 
- <div id="footer">
-    <a rel="license" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/3.0/"title="Link zum Creative Commons.org">
-      Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a>
+
+   </div> <!-- end content -->
+
+   </div> <!-- end wrapper -->
+
+   <!-- Footer -->
+   {%- include 'footer-de.html' %}
+
    </div>
 </body>
-
 </html>
 
