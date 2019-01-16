@@ -1,6 +1,9 @@
 ﻿/*** General styles ***/
 
-body { margin:0; padding:0;}
+body { 
+margin:0 8px;
+padding:0;
+}
 
 .wrapper {
 max-width: 1024px;
@@ -34,45 +37,45 @@ padding: 8px;
 /*** Navigation bar ***/
 
 .navi, .naviglobal {
-font-size: 18px;
+margin-top: 24px;
+}
+
+.navi ul, .naviglobal ul {
+margin: 0;
+padding: 0;
+
+width:100%;
+height:21px;
+margin-left: 0;
+margin-top: 0;
+border-left: 1px solid #989898;
+border-bottom: 1px solid #989898;
+}
+
+.navi ul li, .naviglobal ul li {
+height:21px; 
+font-size: 12px;
 font-family: Helvetica, Arial, sans-serif;
-line-height: 20px;
-padding: 12px;
-}
-
-.naviglobal ul {
-margin: 0;
-padding: 0;
-}
-
-.naviglobal ul li {
 display: inline-block;
-margin: 0 0 12px 0;
-padding: 6px;
-border: 1px solid black;
+margin: 0;
+margin-top: 0;
+padding: 0 10px;
+line-height:20px;
+border-top: 1px solid #989898;
+border-right: 1px solid #989898;
 text-align: center;
 }
 
-
-
-
-.navi ul {
-margin: 0;
-padding: 0;
-}
-
-.navi ul li {
-display: inline-block;
-margin: 0 0 12px 0;
-padding: 6px;
-border: 1px solid black;
-text-align: center;
-}
-
-.navi a {
+.navi a, .naviglobal a {
 text-decoration: none;
 color: rgb(64, 64, 64);
-font-weight: 400;
+line-height: 20px;
+}
+
+
+.naviglobal .navilight {
+border-bottom:none;
+background-color:white;
 }
 
 
@@ -156,7 +159,7 @@ margin: 0;
 .footer {
 padding: 24px 12px 32px 12px;
 margin-top: 32px;
-border-top: 1px solid black;
+border-top: 1px solid grey;
 clear: both;
 text-align: center;
 }

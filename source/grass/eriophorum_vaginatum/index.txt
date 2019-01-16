@@ -3,7 +3,7 @@ genus: 'Eriophorum'
 species: 'Vaginatum'
 
 family_de: ''
-genus_de: '⋅'
+genus_de: ''
 species_de: 'Scheidiges wollgras'
 
 floration: ''

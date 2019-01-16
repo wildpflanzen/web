@@ -1,4 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
 
@@ -23,18 +23,18 @@
 
    <div class="wrapper">
 
+   <!-- Navigation -->
+   {% if register.splitpath[0] == 'insecta' %}{{ macros.naviglobal('besucher') }}
+   {%- else %}{{ macros.naviglobal('') }}{% endif %}
 
    <!-- Navigation -->
-   {{ macros.naviglobal('') }}
-   
    <div class="navi">
    <ul>
-   <li><a href="{{ register.group.filename }}.html">{{ register.group.group_name }}</a></li>
-   <li><a href="{{ register.species_next.filename }}.html">Next specie</a></li>
-   <li><a href="{{ register.species_prev.filename }}.html">Prev specie</a></li>
+   </li><li><a href="{{ register.group.filename }}.html">{{ register.group.group_name }}</a>
+   {% if False and register.genus_de and register.species_de %}</li><li>{{ register.genus_de }} {{ register.species_de }}{% endif %}
+   </li>
    </ul>
    </div>
-
 
    <!-- Content -->
    <div class="content">
@@ -51,21 +51,32 @@
    {% for session in register.sessions %}
    <div class="sp_session">
    <ul>
-   {% for thumb in session.thumbs %}
-   <li><a href="images/{{ thumb }}"><img src="thumbs/{{ thumb }}" alt="{{ register.genus }} {{ register.species }}" /></a></li>
-   {% endfor %}
+   {% for thumb in session.thumbs -%}
+   <li><a href="images/{{ thumb }}"><img src="thumbs/{{ thumb }}" alt="{{ register.genus }} {{ register.species }}" /></a>
+   </li>
+   {%- endfor %}
    </ul>
    <div class="sp_date">Session: {{ session.date }} / {{ session.location }}</div>
    </div>
    {% endfor %}
    </div>
 
+   </div> <!-- Content -->
 
+   <!-- Navigation -->
+   <div class="navi">
+   <ul>
+   <li><a href="{{ register.species_prev.filename }}.html">&lt;&lt; Prev</a>
+   </li><li><a href="{{ register.species_next.filename }}.html">Next &gt;&gt;</a>
+   </li>
+   </ul>
    </div>
+
+   </div>  <!-- Wrapper -->
+
 
    <!-- Footer -->
    {%- include 'footer-de.html' %}
 
-   </div>
 </body>
 </html>

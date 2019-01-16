@@ -166,7 +166,8 @@ class HTML_generator():
 
    def jinja_environment(self, template_file, path='templates'):
       # Setup Jinja environment
-      jinja_env = Environment( loader=FileSystemLoader(searchpath=path) )
+      jinja_env = Environment(
+         loader=FileSystemLoader(searchpath=path, encoding='utf-8-sig') )
       return jinja_env.get_template(template_file)
 
 

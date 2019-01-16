@@ -1,4 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
 
@@ -24,17 +24,20 @@
 
 
    <!-- Navigation -->
-   {{ macros.naviglobal('') }}
-   
+   {% if group.splitpath[0] == 'insecta' %}{{ macros.naviglobal('besucher') }}
+   {%- else %}{{ macros.naviglobal('') }}{% endif %}
+
+   <!-- Navigation -->
    <div class="navi">
    <ul>
-   <li><a href="index.html">Main page</a></li>
-   <li><a href="{{ group.group_next.filename }}.html">Next group</a></li>
-   <li><a href="{{ group.group_prev.filename }}.html">Prev group</a></li>
+   <li>{{ group.group_name }}
+   </li><li><a href="{{ group.group_prev.filename }}.html">&lt;&lt; Prev</a>
+   </li><li><a href="{{ group.group_next.filename }}.html">Next &gt;&gt;</a>
+   </li>
    </ul>
    </div>
-
-
+   
+   
    <!-- Content -->
    <div class="content">
 
@@ -49,11 +52,13 @@
    </div>
    {% endfor %}
 
-   </div>
+   </div> <!-- Content -->
+
+   </div>  <!-- Wrapper -->
+
 
    <!-- Footer -->
    {%- include 'footer-de.html' %}
 
-   </div>
 </body>
 </html>
