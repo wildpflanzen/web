@@ -30,13 +30,12 @@
    <!-- Navigation -->
    <div class="navi">
    <ul>
-   <li>{{ group.group_name }}
-   </li><li><a href="{{ group.group_prev.filename }}.html">&lt;&lt; Prev</a>
-   </li><li><a href="{{ group.group_next.filename }}.html">Next &gt;&gt;</a>
+   <li class="navi_select">{{ group.group_name }}
+   </li><li class="nav_right"><a href="{{ group.group_next.filename }}.html">&gt;</a>
+   </li><li class="nav_right"><a href="{{ group.group_prev.filename }}.html">&lt;</a>
    </li>
    </ul>
    </div>
-   
    
    <!-- Content -->
    <div class="content">

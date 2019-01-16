@@ -1,10 +1,10 @@
-﻿{%- macro naviglobal(lightup=0) %}
+﻿{%- macro naviglobal(selected='') %}
    <div class="naviglobal">
    <ul>
-   <li{% if lightup == 'index-main' %} class="navilight"{% endif %}><a href="index.html">Bestimmung</a>
-   </li><li{% if lightup == 'index'      %} class="navilight"{% endif %}><a href="index-genus-de.html">Register</a>
-   </li><li{% if lightup == 'systematik' %} class="navilight"{% endif %}><a href="systematik.html">Systematik</a>
-   </li><li{% if lightup == 'besucher'   %} class="navilight"{% endif %}><a href="insecta-arachnida.html">Besucher</a>
+   <li{% if selected == 'main' %} class="navi_select"{% endif %}><a href="index.html">Bestimmung</a>
+   </li><li{% if selected == 'index'      %} class="navi_select"{% endif %}><a href="index-genus-de.html">Register</a>
+   </li><li{% if selected == 'systematik' %} class="navi_select"{% endif %}><a href="systematik.html">Systematik</a>
+   </li><li{% if selected == 'besucher'   %} class="navi_select"{% endif %}><a href="insecta-arachnida.html">Besucher</a>
    </li>
    </ul>
    </div>
