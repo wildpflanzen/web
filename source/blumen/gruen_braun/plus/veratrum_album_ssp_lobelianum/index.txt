@@ -3,8 +3,8 @@ genus: 'Veratrum'
 species: 'Album ssp. lobelianum'
 
 family_de: 'Germergewächse'
-genus_de: 'Grünlicher'
-species_de: 'Weiβer germer'
+species_de: 'Grünlicher'
+genus_de: 'Weiβer germer'
 
 floration: 'Juni - August'
 

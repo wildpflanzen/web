@@ -3,8 +3,8 @@ genus: 'Pedicularis'
 species: 'Verticillata'
 
 family_de: 'Sommerwurzgewächse'
-genus_de: 'Quirlblaettriges'
-species_de: 'Läusekraut'
+species_de: 'Quirlblaettriges'
+genus_de: 'Läusekraut'
 
 floration: 'Juni - August'
 

@@ -3,8 +3,8 @@ genus: 'Geum'
 species: 'Montanum'
 
 family_de: 'Rosengewächse'
-genus_de: 'Berg'
-species_de: 'Nelkenwurz'
+species_de: 'Berg'
+genus_de: 'Nelkenwurz'
 
 floration: 'Juni - August'
 

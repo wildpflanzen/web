@@ -3,8 +3,8 @@ genus: 'Scabiosa'
 species: 'Columbaria'
 
 family_de: 'Geiβblattgewächse'
-genus_de: 'Tauben'
-species_de: 'Skabiose'
+species_de: 'Tauben'
+genus_de: 'Skabiose'
 
 floration: 'Juni - Oktober'
 

@@ -3,8 +3,8 @@ genus: 'Galium'
 species: 'Aparine'
 
 family_de: 'Rötegewächse'
-genus_de: 'Kletten'
-species_de: 'Labkraut'
+species_de: 'Kletten'
+genus_de: 'Labkraut'
 
 floration: 'Mai - September'
 

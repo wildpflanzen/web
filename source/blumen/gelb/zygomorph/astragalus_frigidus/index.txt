@@ -3,8 +3,8 @@ genus: 'Astragalus'
 species: 'Frigidus'
 
 family_de: 'Hülsenfrüchtler'
-genus_de: 'Gletscher'
-species_de: 'Tragant'
+species_de: 'Gletscher'
+genus_de: 'Tragant'
 
 floration: ''
 

@@ -3,8 +3,8 @@ genus: 'Melampyrum'
 species: 'Pratense ssp. pratense'
 
 family_de: 'Sommerwurzgewächse'
-genus_de: 'Gewöhnlicher'
-species_de: 'Wiesen-wachtelweizen'
+species_de: 'Gewöhnlicher'
+genus_de: 'Wiesen-wachtelweizen'
 
 floration: 'Mai - August'
 

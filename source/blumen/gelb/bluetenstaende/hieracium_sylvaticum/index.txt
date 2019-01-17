@@ -3,8 +3,8 @@ genus: 'Hieracium'
 species: 'Sylvaticum'
 
 family_de: 'Korbblütengewächse'
-genus_de: 'Wald'
-species_de: 'Habichtskraut'
+species_de: 'Wald'
+genus_de: 'Habichtskraut'
 
 floration: ''
 

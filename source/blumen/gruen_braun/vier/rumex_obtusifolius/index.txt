@@ -3,8 +3,8 @@ genus: 'Rumex'
 species: 'Obtusifolius'
 
 family_de: 'Knöterichgewächse'
-genus_de: 'Stumpfblättriger'
-species_de: 'Ampfer'
+species_de: 'Stumpfblättriger'
+genus_de: 'Ampfer'
 
 floration: 'Mai - September'
 

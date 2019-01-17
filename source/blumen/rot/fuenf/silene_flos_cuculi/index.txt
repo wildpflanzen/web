@@ -3,8 +3,8 @@ genus: 'Silene'
 species: 'Flos- cucul'
 
 family_de: 'Nelkengewächse'
-genus_de: 'Kuckucks'
-species_de: 'Lichtnelke'
+species_de: 'Kuckucks'
+genus_de: 'Lichtnelke'
 
 floration: 'Mai - Jul'
 

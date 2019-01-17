@@ -3,8 +3,8 @@ genus: 'Saxifraga'
 species: 'Bryoides'
 
 family_de: 'Steinbrechgewächse'
-genus_de: 'Moos'
-species_de: 'Steinbrech'
+species_de: 'Moos'
+genus_de: 'Steinbrech'
 
 floration: ''
 

@@ -3,8 +3,8 @@ genus: 'Myosotis'
 species: 'Discolor'
 
 family_de: 'Raublattgewächse'
-genus_de: 'Buntes'
-species_de: 'Vergissmeinnicht'
+species_de: 'Buntes'
+genus_de: 'Vergissmeinnicht'
 
 floration: 'April - Jun'
 

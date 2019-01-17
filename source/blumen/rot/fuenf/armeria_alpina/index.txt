@@ -3,8 +3,8 @@ genus: 'Armeria'
 species: 'Alpina'
 
 family_de: 'Bleiwurzgewächse'
-genus_de: 'Alpen'
-species_de: 'Grasnelke'
+species_de: 'Alpen'
+genus_de: 'Grasnelke'
 
 floration: 'Juli - September'
 

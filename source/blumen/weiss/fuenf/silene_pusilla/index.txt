@@ -3,8 +3,8 @@ genus: 'Silene'
 species: 'Pusilla'
 
 family_de: 'Nelkengewächse'
-genus_de: 'Vierzähniges'
-species_de: 'Leimkraut'
+species_de: 'Vierzähniges'
+genus_de: 'Leimkraut'
 
 floration: ''
 

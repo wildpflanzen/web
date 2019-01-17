@@ -3,8 +3,8 @@ genus: 'Centaurea'
 species: 'Stoebe ssp. stoebe'
 
 family_de: 'Korbblütengewächse'
-genus_de: 'Gewöhnliche'
-species_de: 'Rispen- flockenblume'
+species_de: 'Gewöhnliche'
+genus_de: 'Rispen- flockenblume'
 
 floration: 'Juni - August'
 

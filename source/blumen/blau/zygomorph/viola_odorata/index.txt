@@ -3,8 +3,8 @@ genus: 'Viola'
 species: 'Odorata'
 
 family_de: 'Veilchengewächse'
-genus_de: 'Duft'
-species_de: 'Veilchen'
+species_de: 'Duft'
+genus_de: 'Veilchen'
 
 floration: 'März - April'
 

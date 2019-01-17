@@ -3,8 +3,8 @@ genus: 'Saxifraga'
 species: 'Exarata'
 
 family_de: 'Steinbrechgewächse'
-genus_de: 'Furchen'
-species_de: 'Steinbrech'
+species_de: 'Furchen'
+genus_de: 'Steinbrech'
 
 floration: ''
 

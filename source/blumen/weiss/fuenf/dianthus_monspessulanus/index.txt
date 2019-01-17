@@ -3,8 +3,8 @@ genus: 'Dianthus'
 species: 'Monspessulanus'
 
 family_de: 'Nelkengewächse'
-genus_de: 'Montpellier'
-species_de: 'Nelke'
+species_de: 'Montpellier'
+genus_de: 'Nelke'
 
 floration: 'Mai - August'
 

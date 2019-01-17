@@ -3,8 +3,8 @@ genus: 'Solanum'
 species: 'Nigrum'
 
 family_de: 'Nachtschattengewächse'
-genus_de: 'Schwarzer'
-species_de: 'Nachtschatten'
+species_de: 'Schwarzer'
+genus_de: 'Nachtschatten'
 
 floration: ''
 

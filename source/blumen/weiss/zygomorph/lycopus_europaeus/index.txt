@@ -3,8 +3,8 @@ genus: 'Lycopus'
 species: 'Europaeus'
 
 family_de: 'Lippenblütengewächse'
-genus_de: 'Ufer'
-species_de: 'Wolfstrapp'
+species_de: 'Ufer'
+genus_de: 'Wolfstrapp'
 
 floration: 'Juli - September'
 

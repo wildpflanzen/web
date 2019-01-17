@@ -3,8 +3,8 @@ genus: 'Draba'
 species: 'Praecox'
 
 family_de: 'Kreuzblütengewächse'
-genus_de: 'Frühes'
-species_de: 'Hungerblümchen'
+species_de: 'Frühes'
+genus_de: 'Hungerblümchen'
 
 floration: ''
 

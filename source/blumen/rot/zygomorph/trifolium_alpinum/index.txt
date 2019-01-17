@@ -3,8 +3,8 @@ genus: 'Trifolium'
 species: 'Alpinum'
 
 family_de: 'Hülsenfrüchtler'
-genus_de: 'Alpen'
-species_de: 'Klee'
+species_de: 'Alpen'
+genus_de: 'Klee'
 
 floration: 'Juni - August'
 

@@ -3,8 +3,8 @@ genus: 'Senecio'
 species: 'Incanus ssp. carneolicus'
 
 family_de: 'Korbblütengewächse'
-genus_de: 'Krainer'
-species_de: 'Greiskraut'
+species_de: 'Krainer'
+genus_de: 'Greiskraut'
 
 floration: 'Juli - September'
 

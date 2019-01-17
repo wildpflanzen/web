@@ -3,8 +3,8 @@ genus: 'Bidens'
 species: 'Frondosa'
 
 family_de: 'Korbblütengewächse'
-genus_de: 'Schwarzfrüchtiger'
-species_de: 'Zweizahn'
+species_de: 'Schwarzfrüchtiger'
+genus_de: 'Zweizahn'
 
 floration: 'Juli - Oktober'
 

@@ -3,8 +3,8 @@ genus: 'Globularia'
 species: 'Cordifolia'
 
 family_de: 'Wegerichgewächse'
-genus_de: 'Herzblättrige'
-species_de: 'Kugelblume'
+species_de: 'Herzblättrige'
+genus_de: 'Kugelblume'
 
 floration: 'Juni - Jul'
 

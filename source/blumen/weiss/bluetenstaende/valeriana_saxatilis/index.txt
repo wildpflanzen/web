@@ -3,8 +3,8 @@ genus: 'Valeriana'
 species: 'Saxatilis'
 
 family_de: 'Geiβblattgewächse'
-genus_de: 'Felsen'
-species_de: 'Baldrian'
+species_de: 'Felsen'
+genus_de: 'Baldrian'
 
 floration: 'Juni - August'
 

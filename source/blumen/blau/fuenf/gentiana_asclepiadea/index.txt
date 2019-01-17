@@ -3,8 +3,8 @@ genus: 'Gentiana'
 species: 'Asclepiadea'
 
 family_de: 'Enziangewächse'
-genus_de: 'Schwalbenwurz'
-species_de: 'Enzian'
+species_de: 'Schwalbenwurz'
+genus_de: 'Enzian'
 
 floration: 'August - Oktober'
 

@@ -3,8 +3,8 @@ genus: 'Galinsoga'
 species: 'Parviflora'
 
 family_de: 'Korbblütengewächse'
-genus_de: 'Kleinblütiges'
-species_de: 'Franzosenkraut, kleines knopfkraut'
+species_de: 'Kleinblütiges'
+genus_de: 'Franzosenkraut, kleines knopfkraut'
 
 floration: 'Juni - November'
 

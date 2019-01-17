@@ -3,8 +3,8 @@ genus: 'Ajuga'
 species: ' pyramidalis'
 
 family_de: 'Lippenblütengewächse'
-genus_de: 'Pyramiden'
-species_de: 'Günsel'
+species_de: 'Pyramiden'
+genus_de: 'Günsel'
 
 floration: 'Juni - August'
 

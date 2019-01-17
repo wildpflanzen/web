@@ -3,8 +3,8 @@ genus: 'Ranunculus'
 species: 'Repens'
 
 family_de: 'Hahnenfuβgewächse'
-genus_de: 'Kriechender'
-species_de: 'Hahnenfuβ'
+species_de: 'Kriechender'
+genus_de: 'Hahnenfuβ'
 
 floration: ''
 

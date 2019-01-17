@@ -3,8 +3,8 @@ genus: 'Falcaria'
 species: 'Vulgaris'
 
 family_de: 'Doldengewächse'
-genus_de: 'Gemeine'
-species_de: 'Sichelmöhre'
+species_de: 'Gemeine'
+genus_de: 'Sichelmöhre'
 
 floration: 'Juli - September'
 

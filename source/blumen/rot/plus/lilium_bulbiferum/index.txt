@@ -3,8 +3,8 @@ genus: 'Lilium'
 species: 'Bulbiferum'
 
 family_de: 'Liliengewächse'
-genus_de: 'Feuer'
-species_de: 'Lilie'
+species_de: 'Feuer'
+genus_de: 'Lilie'
 
 floration: 'Juli - August'
 

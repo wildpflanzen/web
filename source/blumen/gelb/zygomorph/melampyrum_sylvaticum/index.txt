@@ -3,8 +3,8 @@ genus: 'Melampyrum'
 species: 'Sylvaticum'
 
 family_de: 'Sommerwurzgewächse'
-genus_de: 'Wald'
-species_de: 'Wachtelweizen'
+species_de: 'Wald'
+genus_de: 'Wachtelweizen'
 
 floration: 'Juni > | September'
 

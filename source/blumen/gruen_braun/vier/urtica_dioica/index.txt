@@ -3,8 +3,8 @@ genus: 'Urtica'
 species: 'Dioica'
 
 family_de: 'Brennnesselgewächse'
-genus_de: 'Groβe'
-species_de: 'Brennnessel'
+species_de: 'Groβe'
+genus_de: 'Brennnessel'
 
 floration: ''
 

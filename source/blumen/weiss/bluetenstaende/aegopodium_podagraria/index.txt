@@ -3,8 +3,8 @@ genus: 'Aegopodium'
 species: 'Podagraria'
 
 family_de: 'Doldengewächse'
-genus_de: 'Gewöhnliche'
-species_de: 'Giersch'
+species_de: 'Gewöhnliche'
+genus_de: 'Giersch'
 
 floration: ''
 

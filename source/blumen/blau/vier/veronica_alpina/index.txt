@@ -3,8 +3,8 @@ genus: 'Veronica'
 species: 'Alpina'
 
 family_de: 'Wegerichgewächse'
-genus_de: 'Alpen'
-species_de: 'Ehrenpreis'
+species_de: 'Alpen'
+genus_de: 'Ehrenpreis'
 
 floration: 'Juni - August'
 

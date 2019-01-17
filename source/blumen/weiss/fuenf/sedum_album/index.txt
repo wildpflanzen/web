@@ -3,8 +3,8 @@ genus: 'Sedum'
 species: 'Album'
 
 family_de: 'Dickblattgewächse'
-genus_de: 'Weiβe'
-species_de: 'Fetthenne'
+species_de: 'Weiβe'
+genus_de: 'Fetthenne'
 
 floration: ''
 

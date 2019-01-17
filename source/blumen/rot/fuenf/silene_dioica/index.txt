@@ -3,8 +3,8 @@ genus: 'Silene'
 species: 'Dioica'
 
 family_de: 'Nelkengewächse'
-genus_de: 'Rote'
-species_de: 'Lichtnelke'
+species_de: 'Rote'
+genus_de: 'Lichtnelke'
 
 floration: ''
 

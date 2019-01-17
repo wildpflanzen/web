@@ -3,8 +3,8 @@ genus: 'Sparganium'
 species: 'Erectum'
 
 family_de: 'Rohrkolbengewächse'
-genus_de: 'Ästiger'
-species_de: 'Igelkolben'
+species_de: 'Ästiger'
+genus_de: 'Igelkolben'
 
 floration: 'Juli - August'
 

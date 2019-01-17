@@ -3,8 +3,8 @@ genus: 'Potentilla'
 species: 'Rupestris'
 
 family_de: 'Rosengewächse'
-genus_de: 'Felsen'
-species_de: 'Fingerkraut'
+species_de: 'Felsen'
+genus_de: 'Fingerkraut'
 
 floration: 'Juni - August'
 

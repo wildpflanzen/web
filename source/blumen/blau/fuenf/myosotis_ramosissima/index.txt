@@ -3,8 +3,8 @@ genus: 'Myosotis'
 species: 'Ramosissima'
 
 family_de: 'Raublattgewächse'
-genus_de: 'Hügel'
-species_de: 'Vergissmeinnicht'
+species_de: 'Hügel'
+genus_de: 'Vergissmeinnicht'
 
 floration: 'April - Jun'
 

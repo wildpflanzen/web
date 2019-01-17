@@ -3,8 +3,8 @@ genus: 'Linaria'
 species: 'Alpina'
 
 family_de: 'Wegerichgewächse'
-genus_de: 'Alpen'
-species_de: 'Leinkraut'
+species_de: 'Alpen'
+genus_de: 'Leinkraut'
 
 floration: 'Juni - September'
 

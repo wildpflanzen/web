@@ -3,8 +3,8 @@ genus: 'Paradisea'
 species: 'Liliastrum'
 
 family_de: 'Spargelgewächse'
-genus_de: 'Weiβe'
-species_de: 'Trichterlilie'
+species_de: 'Weiβe'
+genus_de: 'Trichterlilie'
 
 floration: ''
 

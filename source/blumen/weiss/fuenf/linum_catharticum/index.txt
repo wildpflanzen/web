@@ -3,8 +3,8 @@ genus: 'Linum'
 species: 'Catharticum'
 
 family_de: 'Leingewächse'
-genus_de: 'Purgier'
-species_de: 'Lein'
+species_de: 'Purgier'
+genus_de: 'Lein'
 
 floration: 'Juni - August'
 

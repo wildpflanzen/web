@@ -3,8 +3,8 @@ genus: 'Matricaria'
 species: 'Discoidea'
 
 family_de: 'Korbblütengewächse'
-genus_de: 'Strahlenlose'
-species_de: 'Kamille'
+species_de: 'Strahlenlose'
+genus_de: 'Kamille'
 
 floration: ''
 

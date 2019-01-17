@@ -3,8 +3,8 @@ genus: 'Erodium'
 species: 'Cicutarium'
 
 family_de: 'Storchschnabelgewächse'
-genus_de: 'Gewöhnlicher'
-species_de: 'Reiherschnabel'
+species_de: 'Gewöhnlicher'
+genus_de: 'Reiherschnabel'
 
 floration: 'mai - September'
 

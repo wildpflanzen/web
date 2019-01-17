@@ -3,8 +3,8 @@ genus: 'Achillea'
 species: 'Oxyloba'
 
 family_de: 'Korbblütengewächse'
-genus_de: 'Dolomiten'
-species_de: 'Schafgarbe'
+species_de: 'Dolomiten'
+genus_de: 'Schafgarbe'
 
 floration: ''
 

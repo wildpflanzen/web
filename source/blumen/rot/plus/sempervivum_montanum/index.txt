@@ -3,8 +3,8 @@ genus: 'Sempervivum'
 species: 'Montanum'
 
 family_de: 'Dickblattgewächse'
-genus_de: 'Berg'
-species_de: 'Hauswurz'
+species_de: 'Berg'
+genus_de: 'Hauswurz'
 
 floration: 'Juni - September'
 

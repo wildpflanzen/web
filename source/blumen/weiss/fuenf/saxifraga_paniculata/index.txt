@@ -3,8 +3,8 @@ genus: 'Saxifraga'
 species: 'Paniculata'
 
 family_de: 'Steinbrechgewächse'
-genus_de: 'Rispen'
-species_de: 'Steinbrech'
+species_de: 'Rispen'
+genus_de: 'Steinbrech'
 
 floration: ''
 

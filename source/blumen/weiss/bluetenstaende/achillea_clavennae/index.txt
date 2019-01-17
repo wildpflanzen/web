@@ -3,8 +3,8 @@ genus: 'Achillea'
 species: 'Clavennae'
 
 family_de: 'Korbblütengewächse'
-genus_de: 'Bittere'
-species_de: 'Schafgarbe'
+species_de: 'Bittere'
+genus_de: 'Schafgarbe'
 
 floration: ''
 

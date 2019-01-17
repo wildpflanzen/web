@@ -3,8 +3,8 @@ genus: 'Ranunculus'
 species: 'Auricomus'
 
 family_de: 'Hahnenfuβgewächse'
-genus_de: ''
 species_de: 'Goldhahnenfuβ'
+genus_de: ''
 
 floration: ''
 

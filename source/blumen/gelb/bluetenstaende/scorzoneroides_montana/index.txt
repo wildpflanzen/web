@@ -3,8 +3,8 @@ genus: 'Scorzoneroides'
 species: 'Montana'
 
 family_de: 'Korbblütengewächse'
-genus_de: 'Berg'
-species_de: 'Schuppenlöwenzahn'
+species_de: 'Berg'
+genus_de: 'Schuppenlöwenzahn'
 
 floration: ''
 

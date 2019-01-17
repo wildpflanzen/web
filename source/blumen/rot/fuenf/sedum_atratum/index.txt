@@ -3,8 +3,8 @@ genus: 'Sedum'
 species: 'Atratum'
 
 family_de: 'Dickblattgewächse'
-genus_de: 'Dunkle'
-species_de: 'Mauerpfeffer'
+species_de: 'Dunkle'
+genus_de: 'Mauerpfeffer'
 
 floration: 'Juli - August'
 

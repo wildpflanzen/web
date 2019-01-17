@@ -3,8 +3,8 @@ genus: 'Campanula'
 species: 'Rapunculus'
 
 family_de: 'Glockenblumengewächse'
-genus_de: 'Rapunzel'
-species_de: 'Glockenblume'
+species_de: 'Rapunzel'
+genus_de: 'Glockenblume'
 
 floration: ''
 

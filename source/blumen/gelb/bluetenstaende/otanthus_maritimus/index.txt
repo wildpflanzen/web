@@ -3,8 +3,8 @@ genus: 'Otanthus'
 species: 'Maritimus'
 
 family_de: 'Korbblütengewächse'
-genus_de: 'Schneeweiβe'
-species_de: 'Strandfilzblume'
+species_de: 'Schneeweiβe'
+genus_de: 'Strandfilzblume'
 
 floration: 'Juni - Oktober'
 

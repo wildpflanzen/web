@@ -3,8 +3,8 @@ genus: 'Erigeron'
 species: 'Annuus'
 
 family_de: 'Korbblütengewächse'
-genus_de: 'Einjähriges'
-species_de: 'Berufkraut'
+species_de: 'Einjähriges'
+genus_de: 'Berufkraut'
 
 floration: ''
 

@@ -3,8 +3,8 @@ genus: 'Laserpitium'
 species: 'Latifolium'
 
 family_de: 'Doldengewächse'
-genus_de: 'Breitblättriges'
-species_de: 'Laserkraut'
+species_de: 'Breitblättriges'
+genus_de: 'Laserkraut'
 
 floration: ''
 

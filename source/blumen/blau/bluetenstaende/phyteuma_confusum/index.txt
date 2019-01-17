@@ -3,8 +3,8 @@ genus: 'Phyteuma'
 species: 'Confusum'
 
 family_de: 'Glockenblumengewächse'
-genus_de: 'Zwerg'
-species_de: 'Teufelskralle'
+species_de: 'Zwerg'
+genus_de: 'Teufelskralle'
 
 floration: 'Juli bis September'
 

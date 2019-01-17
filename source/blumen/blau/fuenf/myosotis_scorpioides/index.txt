@@ -3,8 +3,8 @@ genus: 'Myosotis'
 species: 'Scorpioides'
 
 family_de: 'Raublattgewächse'
-genus_de: 'Sumpf'
-species_de: 'Vergissmeinnicht'
+species_de: 'Sumpf'
+genus_de: 'Vergissmeinnicht'
 
 floration: 'Mai - September'
 

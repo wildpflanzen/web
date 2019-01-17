@@ -3,8 +3,8 @@ genus: 'Lamium'
 species: 'Maculatum'
 
 family_de: 'Lippenblütengewächse'
-genus_de: 'Gefleckte'
-species_de: 'Taubnessel'
+species_de: 'Gefleckte'
+genus_de: 'Taubnessel'
 
 floration: 'April - September'
 

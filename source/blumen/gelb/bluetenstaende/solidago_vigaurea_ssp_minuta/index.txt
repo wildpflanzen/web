@@ -3,8 +3,8 @@ genus: 'Solidago'
 species: 'Vigaurea ssp. minuta'
 
 family_de: 'Korbblütengewächse'
-genus_de: 'Alpen'
-species_de: 'Goldrute'
+species_de: 'Alpen'
+genus_de: 'Goldrute'
 
 floration: 'Juli - August'
 

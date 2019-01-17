@@ -3,8 +3,8 @@ genus: 'Arnica'
 species: 'Montana'
 
 family_de: 'Korbblütengewächse'
-genus_de: 'Echte'
-species_de: 'Arnika'
+species_de: 'Echte'
+genus_de: 'Arnika'
 
 floration: 'Mai - August'
 

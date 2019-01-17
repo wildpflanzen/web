@@ -3,8 +3,8 @@ genus: 'Daucus'
 species: 'Carota ssp. carota'
 
 family_de: 'Doldengewächse'
-genus_de: 'Wilde'
-species_de: 'Möhre'
+species_de: 'Wilde'
+genus_de: 'Möhre'
 
 floration: 'Mai - September'
 

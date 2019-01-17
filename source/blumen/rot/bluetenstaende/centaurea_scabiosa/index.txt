@@ -3,8 +3,8 @@ genus: 'Centaurea'
 species: 'Scabiosa'
 
 family_de: 'Korbblütengewächse'
-genus_de: 'Skabiosen'
-species_de: 'Flockenblume'
+species_de: 'Skabiosen'
+genus_de: 'Flockenblume'
 
 floration: 'Juni - August'
 

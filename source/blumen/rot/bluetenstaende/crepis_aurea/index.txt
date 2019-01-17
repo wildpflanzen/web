@@ -3,8 +3,8 @@ genus: 'Crepis'
 species: 'Aurea'
 
 family_de: 'Korbblütengewächse'
-genus_de: 'Gold'
-species_de: 'Pippau'
+species_de: 'Gold'
+genus_de: 'Pippau'
 
 floration: 'Juni - September'
 

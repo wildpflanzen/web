@@ -3,8 +3,8 @@ genus: 'Trifolium'
 species: 'Badium'
 
 family_de: 'Hülsenfrüchtler'
-genus_de: 'Braun'
-species_de: 'Klee'
+species_de: 'Braun'
+genus_de: 'Klee'
 
 floration: ''
 

@@ -3,8 +3,8 @@ genus: 'Saxifraga'
 species: 'Rotundifolia'
 
 family_de: 'Steinbrechgewächse'
-genus_de: 'Rundblättriger'
-species_de: 'Steinbrech'
+species_de: 'Rundblättriger'
+genus_de: 'Steinbrech'
 
 floration: ''
 

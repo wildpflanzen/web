@@ -3,8 +3,8 @@ genus: 'Anemone'
 species: 'Ranunculoides'
 
 family_de: 'Hahnenfuβgewächse'
-genus_de: 'Gelbe'
-species_de: 'Windröschen'
+species_de: 'Gelbe'
+genus_de: 'Windröschen'
 
 floration: ''
 

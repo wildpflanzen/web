@@ -3,8 +3,8 @@ genus: 'Scutellaria'
 species: 'Galericulata'
 
 family_de: 'Lippenblütengewächse'
-genus_de: 'Sumpf'
-species_de: 'Helmkraut'
+species_de: 'Sumpf'
+genus_de: 'Helmkraut'
 
 floration: ''
 

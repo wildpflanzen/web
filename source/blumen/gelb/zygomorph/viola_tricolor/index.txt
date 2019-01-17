@@ -3,8 +3,8 @@ genus: 'Viola'
 species: 'Tricolor'
 
 family_de: 'Veilchengewächse'
-genus_de: 'Wildes'
-species_de: 'Stiefmütterchen'
+species_de: 'Wildes'
+genus_de: 'Stiefmütterchen'
 
 floration: 'Mai - September'
 

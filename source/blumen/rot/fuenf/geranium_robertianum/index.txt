@@ -3,8 +3,8 @@ genus: 'Geranium'
 species: 'Robertianum'
 
 family_de: 'Storchschnabelgewächse'
-genus_de: 'Stinkender'
-species_de: 'Storchschnabel, ruprechtskraut'
+species_de: 'Stinkender'
+genus_de: 'Storchschnabel, ruprechtskraut'
 
 floration: 'Mai - Oktober'
 

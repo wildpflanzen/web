@@ -3,8 +3,8 @@ genus: 'Thalictrum'
 species: 'Flavum'
 
 family_de: 'Hahnenfuβgewächse'
-genus_de: 'Gelbe'
-species_de: 'Wiesenraute'
+species_de: 'Gelbe'
+genus_de: 'Wiesenraute'
 
 floration: 'Juni - August'
 

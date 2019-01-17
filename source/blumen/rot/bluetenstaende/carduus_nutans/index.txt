@@ -3,8 +3,8 @@ genus: 'Carduus'
 species: 'Nutans'
 
 family_de: 'Korbblütengewächse'
-genus_de: 'Nickende'
-species_de: 'Distel'
+species_de: 'Nickende'
+genus_de: 'Distel'
 
 floration: 'Juli - September'
 

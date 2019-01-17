@@ -3,8 +3,8 @@ genus: 'Gentiana'
 species: 'Acaulis'
 
 family_de: 'Enziangewächse'
-genus_de: 'Kochscher'
-species_de: 'Enzian'
+species_de: 'Kochscher'
+genus_de: 'Enzian'
 
 floration: 'Mai - August'
 

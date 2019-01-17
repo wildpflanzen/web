@@ -3,8 +3,8 @@ genus: 'Echium'
 species: 'Vulgare'
 
 family_de: 'Raublattgewächse'
-genus_de: 'Gewöhnlicher'
-species_de: 'Natternkopf'
+species_de: 'Gewöhnlicher'
+genus_de: 'Natternkopf'
 
 floration: 'Mai - Oktober'
 

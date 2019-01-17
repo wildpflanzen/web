@@ -3,8 +3,8 @@ genus: 'Goodyera'
 species: 'Repens'
 
 family_de: 'Orchideen'
-genus_de: 'Kriechendes'
-species_de: 'Netzblatt'
+species_de: 'Kriechendes'
+genus_de: 'Netzblatt'
 
 floration: 'Juni - August'
 

@@ -3,8 +3,8 @@ genus: 'Tolpis'
 species: 'Staticifolia'
 
 family_de: 'Korbblütengewächse'
-genus_de: 'Grasnelken'
-species_de: 'Habichtskraut'
+species_de: 'Grasnelken'
+genus_de: 'Habichtskraut'
 
 floration: ''
 

@@ -3,8 +3,8 @@ genus: 'Capsella'
 species: 'Bursa-pastoris'
 
 family_de: 'Kreuzblütengewächse'
-genus_de: 'Gewöhnliches'
-species_de: 'Hirtentäschel'
+species_de: 'Gewöhnliches'
+genus_de: 'Hirtentäschel'
 
 floration: ''
 

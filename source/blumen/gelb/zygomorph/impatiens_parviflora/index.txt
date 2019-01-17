@@ -3,8 +3,8 @@ genus: 'Impatiens'
 species: 'Parviflora'
 
 family_de: 'Balsaminengewächse'
-genus_de: 'Kleinblütiges'
-species_de: 'Springkraut'
+species_de: 'Kleinblütiges'
+genus_de: 'Springkraut'
 
 floration: 'Juni - September'
 

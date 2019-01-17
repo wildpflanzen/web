@@ -3,8 +3,8 @@ genus: 'Lamium'
 species: 'Purpureum'
 
 family_de: 'Lippenblütengewächse'
-genus_de: 'Purpurrote'
-species_de: 'Taubnessel'
+species_de: 'Purpurrote'
+genus_de: 'Taubnessel'
 
 floration: 'März - Oktober'
 

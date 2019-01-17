@@ -3,8 +3,8 @@ genus: 'Trifolium'
 species: 'Montanum'
 
 family_de: 'Hülsenfrüchtler'
-genus_de: 'Berg'
-species_de: 'Klee'
+species_de: 'Berg'
+genus_de: 'Klee'
 
 floration: 'Mai - Jul'
 

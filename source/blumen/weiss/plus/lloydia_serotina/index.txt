@@ -3,8 +3,8 @@ genus: 'Lloydia'
 species: 'Serotina'
 
 family_de: 'Liliengewächse'
-genus_de: ''
 species_de: 'Faltenlilie'
+genus_de: ''
 
 floration: 'Juni - Jul'
 

@@ -3,8 +3,8 @@ genus: 'Diplotaxis'
 species: 'Tenuifolia'
 
 family_de: 'Kreuzblütengewächse'
-genus_de: 'Schmalblättrige'
-species_de: 'Doppelsame, wilde rauke'
+species_de: 'Schmalblättrige'
+genus_de: 'Doppelsame, wilde rauke'
 
 floration: ''
 

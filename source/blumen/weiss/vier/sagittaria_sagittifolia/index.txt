@@ -3,8 +3,8 @@ genus: 'Sagittaria'
 species: 'Sagittifolia'
 
 family_de: 'Froschlöffelgewächse'
-genus_de: 'Gewöhnliches'
-species_de: 'Pfeilkraut'
+species_de: 'Gewöhnliches'
+genus_de: 'Pfeilkraut'
 
 floration: ''
 

@@ -3,8 +3,8 @@ genus: 'Veronica'
 species: 'Officinalis'
 
 family_de: 'Wegerichgewächse'
-genus_de: 'Wald'
-species_de: 'Ehrenpreis'
+species_de: 'Wald'
+genus_de: 'Ehrenpreis'
 
 floration: 'Juni - August'
 

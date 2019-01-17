@@ -3,8 +3,8 @@ genus: 'Digitalis'
 species: 'Grandiflora'
 
 family_de: 'Wegerichgewächse'
-genus_de: 'Großblütiger'
-species_de: 'Fingerhut'
+species_de: 'Großblütiger'
+genus_de: 'Fingerhut'
 
 floration: 'Juni - August'
 

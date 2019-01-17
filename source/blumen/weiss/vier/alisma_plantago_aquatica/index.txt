@@ -3,8 +3,8 @@ genus: 'Alisma'
 species: 'Plantago aquatica'
 
 family_de: 'Froschlöffelgewächse'
-genus_de: 'Gewöhnlicher'
-species_de: 'Froschlöffel'
+species_de: 'Gewöhnlicher'
+genus_de: 'Froschlöffel'
 
 floration: 'Juli - August'
 

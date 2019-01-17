@@ -3,8 +3,8 @@ genus: 'Erigeron'
 species: 'Uniflorus'
 
 family_de: 'Korbblütengewächse'
-genus_de: 'Einköpfiges'
-species_de: 'Berufkraut'
+species_de: 'Einköpfiges'
+genus_de: 'Berufkraut'
 
 floration: 'Juli - September'
 

@@ -3,8 +3,8 @@ genus: 'Draba'
 species: 'Verna'
 
 family_de: 'Kreuzblütengewächse'
-genus_de: 'Frühlings'
-species_de: 'Hungerblümchen'
+species_de: 'Frühlings'
+genus_de: 'Hungerblümchen'
 
 floration: ''
 

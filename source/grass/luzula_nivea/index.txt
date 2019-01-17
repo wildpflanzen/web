@@ -3,8 +3,8 @@ genus: 'Luzula'
 species: 'Nivea'
 
 family_de: ''
-genus_de: 'Schnee'
-species_de: 'Hainsimse'
+species_de: 'Schnee'
+genus_de: 'Hainsimse'
 
 floration: ''
 

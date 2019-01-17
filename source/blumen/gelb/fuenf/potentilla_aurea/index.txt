@@ -3,8 +3,8 @@ genus: 'Potentilla'
 species: 'Aurea'
 
 family_de: 'Rosengewächse'
-genus_de: 'Gold'
-species_de: 'Fingerkraut'
+species_de: 'Gold'
+genus_de: 'Fingerkraut'
 
 floration: ''
 

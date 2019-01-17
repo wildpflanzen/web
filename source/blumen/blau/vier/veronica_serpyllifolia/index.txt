@@ -3,8 +3,8 @@ genus: 'Veronica'
 species: 'Serpyllifolia'
 
 family_de: 'Wegerichgewächse'
-genus_de: 'Quendel'
-species_de: 'Ehrenpreis'
+species_de: 'Quendel'
+genus_de: 'Ehrenpreis'
 
 floration: 'Mai - Oktober'
 

@@ -3,8 +3,8 @@ genus: 'Petrorhagia'
 species: 'Saxifraga'
 
 family_de: 'Nelkengewächse'
-genus_de: 'Steinbrech'
-species_de: 'Felsennelke'
+species_de: 'Steinbrech'
+genus_de: 'Felsennelke'
 
 floration: 'Juni - September'
 

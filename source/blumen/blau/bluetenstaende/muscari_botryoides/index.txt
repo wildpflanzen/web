@@ -3,8 +3,8 @@ genus: 'Muscari'
 species: 'Botryoides'
 
 family_de: 'Spargelgewächse'
-genus_de: 'Kleine'
-species_de: 'Traubenhyazinthe'
+species_de: 'Kleine'
+genus_de: 'Traubenhyazinthe'
 
 floration: ''
 

@@ -3,8 +3,8 @@ genus: 'Silene'
 species: 'Acaulis'
 
 family_de: 'Nelkengewächse'
-genus_de: 'Stängelloses'
-species_de: 'Leimkraut'
+species_de: 'Stängelloses'
+genus_de: 'Leimkraut'
 
 floration: 'Juni - September'
 

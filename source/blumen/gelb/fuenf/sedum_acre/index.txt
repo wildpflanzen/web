@@ -3,8 +3,8 @@ genus: 'Sedum'
 species: 'Acre'
 
 family_de: 'Dickblattgewächse'
-genus_de: 'Scharfer'
-species_de: 'Mauerpfeffer'
+species_de: 'Scharfer'
+genus_de: 'Mauerpfeffer'
 
 floration: ''
 

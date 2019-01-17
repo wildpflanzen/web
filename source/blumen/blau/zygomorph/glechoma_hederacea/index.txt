@@ -3,8 +3,8 @@ genus: 'Glechoma'
 species: 'Hederacea'
 
 family_de: 'Lippenblütengewächse'
-genus_de: ''
 species_de: 'Gundermann'
+genus_de: ''
 
 floration: ''
 

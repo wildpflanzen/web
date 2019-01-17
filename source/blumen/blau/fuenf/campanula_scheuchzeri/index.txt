@@ -3,8 +3,8 @@ genus: 'Campanula'
 species: 'Scheuchzer'
 
 family_de: 'Glockenblumengewächse'
-genus_de: 'Scheuchzers'
-species_de: 'Glockenblume'
+species_de: 'Scheuchzers'
+genus_de: 'Glockenblume'
 
 floration: 'Juli - August'
 

@@ -3,8 +3,8 @@ genus: 'Campanula'
 species: 'Cochlearifolia'
 
 family_de: 'Glockenblumengewächse'
-genus_de: 'Zwerg'
-species_de: 'Glockenblume'
+species_de: 'Zwerg'
+genus_de: 'Glockenblume'
 
 floration: 'Juli - August'
 

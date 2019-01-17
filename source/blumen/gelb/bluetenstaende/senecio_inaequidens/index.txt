@@ -3,8 +3,8 @@ genus: 'Senecio'
 species: 'Inaequidens'
 
 family_de: 'Korbblütengewächse'
-genus_de: 'Schmalblättriges'
-species_de: 'Greiskraut'
+species_de: 'Schmalblättriges'
+genus_de: 'Greiskraut'
 
 floration: 'Juni - November'
 

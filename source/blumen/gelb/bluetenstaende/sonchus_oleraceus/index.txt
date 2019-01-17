@@ -3,8 +3,8 @@ genus: 'Sonchus'
 species: 'Oleraceus'
 
 family_de: 'Korbblütengewächse'
-genus_de: 'Gewöhnliche'
-species_de: 'Gänsedistel'
+species_de: 'Gewöhnliche'
+genus_de: 'Gänsedistel'
 
 floration: 'Juni - Oktober'
 

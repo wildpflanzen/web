@@ -3,8 +3,8 @@ genus: 'Soldanella'
 species: 'Alpina'
 
 family_de: 'Primelgewächse'
-genus_de: 'Gewöhnliches'
-species_de: 'Alpenglöckchen'
+species_de: 'Gewöhnliches'
+genus_de: 'Alpenglöckchen'
 
 floration: ''
 

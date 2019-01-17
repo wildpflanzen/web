@@ -3,8 +3,8 @@ genus: 'Anchusa'
 species: 'Officinalis'
 
 family_de: 'Raublattgewächse'
-genus_de: 'Gewöhnliche'
-species_de: 'Ochsenzunge'
+species_de: 'Gewöhnliche'
+genus_de: 'Ochsenzunge'
 
 floration: 'Mai - August'
 

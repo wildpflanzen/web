@@ -3,8 +3,8 @@ genus: 'Lysimachia'
 species: 'Vulgaris'
 
 family_de: 'Primelgewächse'
-genus_de: 'Gewöhnlicher'
-species_de: 'Gilbweiderich'
+species_de: 'Gewöhnlicher'
+genus_de: 'Gilbweiderich'
 
 floration: 'Juni - August'
 

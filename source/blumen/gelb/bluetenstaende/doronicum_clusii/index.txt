@@ -3,8 +3,8 @@ genus: 'Doronicum'
 species: 'Clus'
 
 family_de: 'Korbblütengewächse'
-genus_de: 'Clusius'
-species_de: 'Gemswurz'
+species_de: 'Clusius'
+genus_de: 'Gemswurz'
 
 floration: ''
 

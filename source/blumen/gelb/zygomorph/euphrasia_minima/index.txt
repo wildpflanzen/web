@@ -3,8 +3,8 @@ genus: 'Euphrasia'
 species: 'Minima'
 
 family_de: 'Lippenblütengewächse'
-genus_de: 'Zwerg'
-species_de: 'Augentrost'
+species_de: 'Zwerg'
+genus_de: 'Augentrost'
 
 floration: 'Juli - September'
 

@@ -3,8 +3,8 @@ genus: 'Senecio'
 species: 'Doronicum ssp. doronicum'
 
 family_de: 'Korbblütengewächse'
-genus_de: 'Gewöhnliches-gemswurz'
-species_de: 'Greiskraut'
+species_de: 'Gewöhnliches-gemswurz'
+genus_de: 'Greiskraut'
 
 floration: 'Juli - August'
 

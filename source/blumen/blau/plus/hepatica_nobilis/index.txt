@@ -3,8 +3,8 @@ genus: 'Hepatica'
 species: 'Nobilis'
 
 family_de: 'Hahnenfuβgewächse'
-genus_de: 'Dreilappiges'
-species_de: 'Leberblümchen'
+species_de: 'Dreilappiges'
+genus_de: 'Leberblümchen'
 
 floration: ''
 

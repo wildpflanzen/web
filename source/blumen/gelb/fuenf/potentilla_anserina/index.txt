@@ -3,8 +3,8 @@ genus: 'Potentilla'
 species: 'Anserina'
 
 family_de: 'Rosengewächse'
-genus_de: 'Gänse'
-species_de: 'Fingerkraut'
+species_de: 'Gänse'
+genus_de: 'Fingerkraut'
 
 floration: ''
 

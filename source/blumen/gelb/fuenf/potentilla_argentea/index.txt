@@ -3,8 +3,8 @@ genus: 'Potentilla'
 species: 'Argentea'
 
 family_de: 'Rosengewächse'
-genus_de: 'Silber'
-species_de: 'Fingerkraut'
+species_de: 'Silber'
+genus_de: 'Fingerkraut'
 
 floration: 'Juni - Oktober'
 

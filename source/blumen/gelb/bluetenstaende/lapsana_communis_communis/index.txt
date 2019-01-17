@@ -3,8 +3,8 @@ genus: 'Lapsana'
 species: 'Communis ssp. communis'
 
 family_de: 'Korbblütengewächse'
-genus_de: 'Gemeiner'
-species_de: 'Rainkohl'
+species_de: 'Gemeiner'
+genus_de: 'Rainkohl'
 
 floration: 'Juni - September'
 

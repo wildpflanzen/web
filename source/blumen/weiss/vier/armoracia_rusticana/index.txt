@@ -3,8 +3,8 @@ genus: 'Armoracia'
 species: 'Rusticana'
 
 family_de: 'Kreuzblütengewächse'
-genus_de: ''
 species_de: 'Meerrettich'
+genus_de: ''
 
 floration: ''
 

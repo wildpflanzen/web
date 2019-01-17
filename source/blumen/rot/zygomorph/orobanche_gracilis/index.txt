@@ -3,8 +3,8 @@ genus: 'Orobanche'
 species: 'Gracilis'
 
 family_de: 'Sommerwurzgewächse'
-genus_de: 'Blutrote'
-species_de: 'Sommerwurz'
+species_de: 'Blutrote'
+genus_de: 'Sommerwurz'
 
 floration: ''
 

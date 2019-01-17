@@ -3,8 +3,8 @@ genus: 'Veronica'
 species: 'Fruticans'
 
 family_de: 'Wegerichgewächse'
-genus_de: 'Felsen'
-species_de: 'Ehrenpreis'
+species_de: 'Felsen'
+genus_de: 'Ehrenpreis'
 
 floration: ''
 

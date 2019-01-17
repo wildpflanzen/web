@@ -3,8 +3,8 @@ genus: 'Veronica'
 species: 'Aphylla'
 
 family_de: 'Wegerichgewächse'
-genus_de: 'Blattloser'
-species_de: 'Ehrenpreis'
+species_de: 'Blattloser'
+genus_de: 'Ehrenpreis'
 
 floration: ''
 

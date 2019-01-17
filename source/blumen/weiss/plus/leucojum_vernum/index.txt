@@ -3,8 +3,8 @@ genus: 'Leucojum'
 species: 'Vernum'
 
 family_de: 'Amaryllisgewächse'
-genus_de: 'Märzenbecher;'
-species_de: 'Frühlings- knotenblume'
+species_de: 'Märzenbecher'
+genus_de: 'knotenblume Frühlings-'
 
 floration: ''
 

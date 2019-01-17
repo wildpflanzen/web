@@ -3,8 +3,8 @@ genus: 'Sanguisorba'
 species: 'Minor'
 
 family_de: 'Rosengewächse'
-genus_de: 'Kleiner'
-species_de: 'Wiesenknopf'
+species_de: 'Kleiner'
+genus_de: 'Wiesenknopf'
 
 floration: 'Mai - August'
 

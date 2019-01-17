@@ -3,8 +3,8 @@ genus: 'Hieracium'
 species: 'Pilosella'
 
 family_de: 'Korbblütengewächse'
-genus_de: 'Kleines'
-species_de: 'Habichtskraut'
+species_de: 'Kleines'
+genus_de: 'Habichtskraut'
 
 floration: ''
 

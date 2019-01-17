@@ -3,8 +3,8 @@ genus: 'Hottonia'
 species: 'Palustris'
 
 family_de: 'Primelgewächse'
-genus_de: 'Europäische'
-species_de: 'Wasserfeder, wasserprimel'
+species_de: 'Europäische'
+genus_de: 'Wasserfeder, wasserprimel'
 
 floration: ''
 

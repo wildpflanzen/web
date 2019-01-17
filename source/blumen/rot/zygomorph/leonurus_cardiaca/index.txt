@@ -3,8 +3,8 @@ genus: 'Leonurus'
 species: 'Cardiaca'
 
 family_de: 'Lippenblütengewächse'
-genus_de: 'Echter'
-species_de: 'Löwenschwanz'
+species_de: 'Echter'
+genus_de: 'Löwenschwanz'
 
 floration: ''
 

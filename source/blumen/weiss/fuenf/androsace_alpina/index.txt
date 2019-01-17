@@ -3,8 +3,8 @@ genus: 'Androsace'
 species: 'Alpina'
 
 family_de: 'Primelgewächse'
-genus_de: 'Alpen'
-species_de: 'Mannsschild'
+species_de: 'Alpen'
+genus_de: 'Mannsschild'
 
 floration: ''
 

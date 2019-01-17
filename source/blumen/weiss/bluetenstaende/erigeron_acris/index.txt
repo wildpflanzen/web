@@ -3,8 +3,8 @@ genus: 'Erigeron'
 species: 'Acris'
 
 family_de: 'Korbblütengewächse'
-genus_de: 'Scharfes'
-species_de: 'Berufkraut'
+species_de: 'Scharfes'
+genus_de: 'Berufkraut'
 
 floration: 'Juni - September'
 

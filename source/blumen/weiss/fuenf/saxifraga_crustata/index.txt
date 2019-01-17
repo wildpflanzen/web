@@ -3,8 +3,8 @@ genus: 'Saxifraga'
 species: 'Crustata'
 
 family_de: 'Steinbrechgewächse'
-genus_de: 'Krusten'
-species_de: 'Steinbrech'
+species_de: 'Krusten'
+genus_de: 'Steinbrech'
 
 floration: ''
 

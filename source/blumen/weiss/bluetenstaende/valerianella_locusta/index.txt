@@ -3,8 +3,8 @@ genus: 'Valerianella'
 species: 'Locusta'
 
 family_de: 'Geiβblattgewächse'
-genus_de: 'Gewöhnlicher'
-species_de: 'Feldsalat'
+species_de: 'Gewöhnlicher'
+genus_de: 'Feldsalat'
 
 floration: 'April - Ma'
 

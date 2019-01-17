@@ -3,8 +3,8 @@ genus: 'Saxifraga'
 species: 'Stellaris'
 
 family_de: 'Steinbrechgewächse'
-genus_de: 'Stern'
-species_de: 'Steinbrech'
+species_de: 'Stern'
+genus_de: 'Steinbrech'
 
 floration: ''
 

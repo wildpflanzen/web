@@ -3,8 +3,8 @@ genus: 'Solidago'
 species: 'Canadensis'
 
 family_de: 'Korbblütengewächse'
-genus_de: 'Kanadische'
-species_de: 'Goldrute'
+species_de: 'Kanadische'
+genus_de: 'Goldrute'
 
 floration: 'August - Oktober'
 

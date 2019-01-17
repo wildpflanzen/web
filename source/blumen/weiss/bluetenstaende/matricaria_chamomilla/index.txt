@@ -3,8 +3,8 @@ genus: 'Matricaria'
 species: 'Chamomilla'
 
 family_de: 'Korbblütengewächse'
-genus_de: 'Echte'
-species_de: 'Kamille'
+species_de: 'Echte'
+genus_de: 'Kamille'
 
 floration: 'Mai - September'
 

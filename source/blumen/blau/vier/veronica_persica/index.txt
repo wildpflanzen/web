@@ -3,8 +3,8 @@ genus: 'Veronica'
 species: 'Persica'
 
 family_de: 'Wegerichgewächse'
-genus_de: 'Persische'
-species_de: 'Ehrenpreis'
+species_de: 'Persische'
+genus_de: 'Ehrenpreis'
 
 floration: ''
 

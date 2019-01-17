@@ -3,8 +3,8 @@ genus: 'Lythrum'
 species: 'Salicaria'
 
 family_de: 'Weiderichgewächse'
-genus_de: 'Blut'
-species_de: 'Weiderich'
+species_de: 'Blut'
+genus_de: 'Weiderich'
 
 floration: 'Juli - September'
 

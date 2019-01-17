@@ -3,8 +3,8 @@ genus: 'Primula'
 species: 'Haller'
 
 family_de: 'Primelgewächse'
-genus_de: 'Hallers'
-species_de: 'Primel'
+species_de: 'Hallers'
+genus_de: 'Primel'
 
 floration: 'Juni - Jul'
 

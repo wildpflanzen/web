@@ -3,8 +3,8 @@ genus: 'Cardamine'
 species: 'Amara'
 
 family_de: 'Kreuzblütengewächse'
-genus_de: 'Bitteres'
-species_de: 'Schaumkraut'
+species_de: 'Bitteres'
+genus_de: 'Schaumkraut'
 
 floration: 'April - Jun'
 

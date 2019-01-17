@@ -3,8 +3,8 @@ genus: 'Senecio'
 species: 'Vulgaris'
 
 family_de: 'Korbblütengewächse'
-genus_de: 'Gewöhnliche'
-species_de: 'Greiskraut'
+species_de: 'Gewöhnliche'
+genus_de: 'Greiskraut'
 
 floration: ''
 

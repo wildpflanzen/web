@@ -3,8 +3,8 @@ genus: 'Saxifraga'
 species: 'Aizoides'
 
 family_de: 'Steinbrechgewächse'
-genus_de: 'Fetthennen'
-species_de: 'Steinbrech'
+species_de: 'Fetthennen'
+genus_de: 'Steinbrech'
 
 floration: ''
 

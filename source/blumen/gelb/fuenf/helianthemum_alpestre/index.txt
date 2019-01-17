@@ -3,8 +3,8 @@ genus: 'Helianthemum'
 species: 'Alpestre'
 
 family_de: 'Zistrosengewächse'
-genus_de: 'Alpen'
-species_de: 'Sonnenröschen'
+species_de: 'Alpen'
+genus_de: 'Sonnenröschen'
 
 floration: 'Mai - August'
 

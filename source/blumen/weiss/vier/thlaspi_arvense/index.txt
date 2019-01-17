@@ -3,8 +3,8 @@ genus: 'Thlaspi'
 species: 'Arvense'
 
 family_de: 'Kreuzblütengewächse'
-genus_de: 'Acker'
-species_de: 'Hellerkraut'
+species_de: 'Acker'
+genus_de: 'Hellerkraut'
 
 floration: ''
 

@@ -3,8 +3,8 @@ genus: 'Saxifraga'
 species: 'Aspera'
 
 family_de: 'Steinbrechgewächse'
-genus_de: 'Rauer'
-species_de: 'Steinbrech'
+species_de: 'Rauer'
+genus_de: 'Steinbrech'
 
 floration: ''
 

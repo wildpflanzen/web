@@ -3,8 +3,8 @@ genus: 'Thalictrum'
 species: 'Aquilegifolia'
 
 family_de: 'Hahnenfuβgewächse'
-genus_de: 'Akeleiblättrige'
-species_de: 'Wiesenraute'
+species_de: 'Akeleiblättrige'
+genus_de: 'Wiesenraute'
 
 floration: ''
 

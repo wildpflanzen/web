@@ -3,8 +3,8 @@ genus: 'Epilobium'
 species: 'Angustifolium'
 
 family_de: 'Nachtkerzengewächse'
-genus_de: 'Schmalblättriges'
-species_de: 'Weidenröschen'
+species_de: 'Schmalblättriges'
+genus_de: 'Weidenröschen'
 
 floration: 'Juni - August'
 

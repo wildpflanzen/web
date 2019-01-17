@@ -3,8 +3,8 @@ genus: 'Phacelia'
 species: 'Tanacetifolia'
 
 family_de: 'Raublattgewächse'
-genus_de: 'Rainfarnblättriges'
-species_de: 'Büschelschön'
+species_de: 'Rainfarnblättriges'
+genus_de: 'Büschelschön'
 
 floration: 'Juni - Oktober'
 

@@ -3,8 +3,8 @@ genus: 'Maianthemum'
 species: 'Bifolium'
 
 family_de: 'Maiglöckchengewächse'
-genus_de: 'Zweiblättrige'
-species_de: 'Schattenblume'
+species_de: 'Zweiblättrige'
+genus_de: 'Schattenblume'
 
 floration: ''
 

@@ -3,8 +3,8 @@ genus: 'Sempervivum'
 species: 'Arachnoideum'
 
 family_de: 'Dickblattgewächse'
-genus_de: 'Spinnweben'
-species_de: 'Hauswurz'
+species_de: 'Spinnweben'
+genus_de: 'Hauswurz'
 
 floration: 'Juni - Jul'
 

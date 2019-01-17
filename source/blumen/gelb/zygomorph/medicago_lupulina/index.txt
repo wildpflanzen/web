@@ -3,8 +3,8 @@ genus: 'Medicago'
 species: 'Lupulina'
 
 family_de: 'Hülsenfrüchtler'
-genus_de: ''
 species_de: 'Hopfenklee'
+genus_de: ''
 
 floration: ''
 

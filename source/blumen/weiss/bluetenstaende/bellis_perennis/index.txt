@@ -3,8 +3,8 @@ genus: 'Bellis'
 species: 'Perennis'
 
 family_de: 'Korbblütengewächse'
-genus_de: 'Gänseblümchen;'
-species_de: 'Maβliebchen'
+species_de: 'Gänseblümchen'
+genus_de: 'Maβliebchen'
 
 floration: 'Juni - Oktober'
 

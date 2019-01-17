@@ -3,8 +3,8 @@ genus: 'Lilium'
 species: 'Martagon'
 
 family_de: 'Liliengewächse'
-genus_de: 'Tuerkenbund'
-species_de: 'Lilie'
+species_de: 'Tuerkenbund'
+genus_de: 'Lilie'
 
 floration: ''
 

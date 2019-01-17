@@ -3,8 +3,8 @@ genus: 'Phyteuma'
 species: 'Betonicifolium'
 
 family_de: 'Glockenblumengewächse'
-genus_de: 'Ziestblättrige'
-species_de: 'Teufelskralle'
+species_de: 'Ziestblättrige'
+genus_de: 'Teufelskralle'
 
 floration: ''
 

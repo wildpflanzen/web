@@ -3,8 +3,8 @@ genus: 'Lunaria'
 species: 'Annua'
 
 family_de: 'Kreuzblütengewächse'
-genus_de: 'Einjährige'
-species_de: 'Silberblatt'
+species_de: 'Einjährige'
+genus_de: 'Silberblatt'
 
 floration: ''
 

@@ -3,8 +3,8 @@ genus: 'Chelidonium'
 species: 'Majus'
 
 family_de: 'Mohngewächse'
-genus_de: ''
 species_de: 'Schöllkraut'
+genus_de: ''
 
 floration: ''
 

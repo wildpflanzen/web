@@ -3,8 +3,8 @@ genus: 'Dianthus'
 species: 'Deltoides'
 
 family_de: 'Nelkengewächse'
-genus_de: 'Heide'
-species_de: 'Nelke'
+species_de: 'Heide'
+genus_de: 'Nelke'
 
 floration: 'Juni - August'
 

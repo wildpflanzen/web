@@ -3,8 +3,8 @@ genus: 'Convolvulus'
 species: 'Arvensis'
 
 family_de: 'Windengewächse'
-genus_de: 'Acker'
-species_de: 'Winde'
+species_de: 'Acker'
+genus_de: 'Winde'
 
 floration: 'April - Oktober'
 

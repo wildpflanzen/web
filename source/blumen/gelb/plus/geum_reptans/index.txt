@@ -3,8 +3,8 @@ genus: 'Geum'
 species: 'Reptans'
 
 family_de: 'Rosengewächse'
-genus_de: 'Kriechende'
-species_de: 'Nelkenwurz'
+species_de: 'Kriechende'
+genus_de: 'Nelkenwurz'
 
 floration: 'Juni - August'
 

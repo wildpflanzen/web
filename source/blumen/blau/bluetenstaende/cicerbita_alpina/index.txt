@@ -3,8 +3,8 @@ genus: 'Cicerbita'
 species: 'Alpina'
 
 family_de: 'Korbblütengewächse'
-genus_de: 'Alpen'
-species_de: 'Milchlattich'
+species_de: 'Alpen'
+genus_de: 'Milchlattich'
 
 floration: 'Juli - September'
 

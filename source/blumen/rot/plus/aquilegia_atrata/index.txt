@@ -3,8 +3,8 @@ genus: 'Aquilegia'
 species: 'Atrata'
 
 family_de: 'Hahnenfuβgewächse'
-genus_de: 'Schwarzviolette'
-species_de: 'Akele'
+species_de: 'Schwarzviolette'
+genus_de: 'Akele'
 
 floration: 'Mai - Jul'
 

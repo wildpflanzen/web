@@ -3,8 +3,8 @@ genus: 'Knautia'
 species: 'Baldensis'
 
 family_de: 'Korbblütengewächse'
-genus_de: 'Monte-baldo'
-species_de: 'Witwenblume'
+species_de: 'Monte-baldo'
+genus_de: 'Witwenblume'
 
 floration: 'Juni - August'
 

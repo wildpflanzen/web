@@ -3,8 +3,8 @@ genus: 'Epilobium'
 species: 'Montanum'
 
 family_de: 'Nachtkerzengewächse'
-genus_de: 'Berg'
-species_de: 'Weidenröschen'
+species_de: 'Berg'
+genus_de: 'Weidenröschen'
 
 floration: 'Juni - August'
 

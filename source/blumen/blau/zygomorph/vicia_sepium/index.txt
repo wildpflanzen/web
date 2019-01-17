@@ -3,8 +3,8 @@ genus: 'Vicia'
 species: 'Sepium'
 
 family_de: 'Hülsenfrüchtler'
-genus_de: 'Zaun'
-species_de: 'Wicke'
+species_de: 'Zaun'
+genus_de: 'Wicke'
 
 floration: ''
 

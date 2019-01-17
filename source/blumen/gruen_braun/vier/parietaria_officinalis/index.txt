@@ -3,8 +3,8 @@ genus: 'Parietaria'
 species: 'Officinalis'
 
 family_de: 'Brennnesselgewächse'
-genus_de: 'Aufrechte'
-species_de: 'Glaskraut'
+species_de: 'Aufrechte'
+genus_de: 'Glaskraut'
 
 floration: ''
 

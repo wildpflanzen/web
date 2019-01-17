@@ -3,8 +3,8 @@ genus: 'Potentilla'
 species: 'Palustris'
 
 family_de: 'Rosengewächse'
-genus_de: 'Sumpf'
-species_de: 'Blutauge'
+species_de: 'Sumpf'
+genus_de: 'Blutauge'
 
 floration: 'Juni - Jul'
 

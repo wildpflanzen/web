@@ -3,8 +3,8 @@ genus: 'Ornithogalum'
 species: 'Umbellatum'
 
 family_de: 'Spargelgewächse'
-genus_de: 'Dolden'
-species_de: 'Milchstern'
+species_de: 'Dolden'
+genus_de: 'Milchstern'
 
 floration: ''
 

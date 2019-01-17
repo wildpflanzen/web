@@ -3,8 +3,8 @@ genus: 'Saponaria'
 species: 'Officinalis'
 
 family_de: 'Nelkengewächse'
-genus_de: 'Echtes'
-species_de: 'Seifenkraut'
+species_de: 'Echtes'
+genus_de: 'Seifenkraut'
 
 floration: ''
 

@@ -3,8 +3,8 @@ genus: 'Carlina'
 species: 'Acaulis ssp. acaulis'
 
 family_de: 'Korbblütengewächse'
-genus_de: 'Gewöhnliche'
-species_de: 'Silberdistel'
+species_de: 'Gewöhnliche'
+genus_de: 'Silberdistel'
 
 floration: 'Juli - Oktober'
 

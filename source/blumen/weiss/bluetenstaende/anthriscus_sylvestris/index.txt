@@ -3,8 +3,8 @@ genus: 'Anthriscus'
 species: 'Sylvestris'
 
 family_de: 'Doldengewächse'
-genus_de: 'Wiesen'
-species_de: 'Kerbel'
+species_de: 'Wiesen'
+genus_de: 'Kerbel'
 
 floration: 'April - Jul'
 

@@ -3,8 +3,8 @@ genus: 'Prenanthes'
 species: 'Purpurea'
 
 family_de: 'Korbblütengewächse'
-genus_de: 'Gewöhnlicher'
-species_de: 'Hasenlattich'
+species_de: 'Gewöhnlicher'
+genus_de: 'Hasenlattich'
 
 floration: 'Juli - August'
 

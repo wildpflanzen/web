@@ -3,8 +3,8 @@ genus: 'Hydrocharis'
 species: 'Morsus-ranae'
 
 family_de: 'Froschbissgewächse'
-genus_de: 'Europäische'
-species_de: 'Froschbiss'
+species_de: 'Europäische'
+genus_de: 'Froschbiss'
 
 floration: 'Juni - August'
 

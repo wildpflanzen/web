@@ -3,8 +3,8 @@ genus: 'Stellaria'
 species: 'Nemorum'
 
 family_de: 'Nelkengewächse'
-genus_de: 'Hain'
-species_de: 'Sternmiere'
+species_de: 'Hain'
+genus_de: 'Sternmiere'
 
 floration: ''
 

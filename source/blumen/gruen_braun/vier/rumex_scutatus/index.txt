@@ -3,8 +3,8 @@ genus: 'Rumex'
 species: 'Scutatus'
 
 family_de: 'Knöterichgewächse'
-genus_de: 'Schild'
-species_de: 'Ampfer'
+species_de: 'Schild'
+genus_de: 'Ampfer'
 
 floration: 'Mai - August'
 

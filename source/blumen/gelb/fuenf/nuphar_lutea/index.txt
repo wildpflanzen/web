@@ -3,8 +3,8 @@ genus: 'Nuphar'
 species: 'Lutea'
 
 family_de: 'Seerosengewächse'
-genus_de: 'Gelbe'
-species_de: 'Teichrose'
+species_de: 'Gelbe'
+genus_de: 'Teichrose'
 
 floration: ''
 

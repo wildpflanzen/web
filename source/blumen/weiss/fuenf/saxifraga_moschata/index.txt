@@ -3,8 +3,8 @@ genus: 'Saxifraga'
 species: 'Moschata'
 
 family_de: 'Steinbrechgewächse'
-genus_de: 'Moschus'
-species_de: 'Steinbrech'
+species_de: 'Moschus'
+genus_de: 'Steinbrech'
 
 floration: ''
 

@@ -3,8 +3,8 @@ genus: 'Gentiana'
 species: 'Orbicularis'
 
 family_de: 'Enziangewächse'
-genus_de: 'Rundblättriger'
-species_de: 'Enzian'
+species_de: 'Rundblättriger'
+genus_de: 'Enzian'
 
 floration: 'Juli - August'
 

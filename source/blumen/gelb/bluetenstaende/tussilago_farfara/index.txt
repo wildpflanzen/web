@@ -3,8 +3,8 @@ genus: 'Tussilago'
 species: 'Farfara'
 
 family_de: 'Korbblütengewächse'
-genus_de: ''
 species_de: 'Huflattich'
+genus_de: ''
 
 floration: ''
 

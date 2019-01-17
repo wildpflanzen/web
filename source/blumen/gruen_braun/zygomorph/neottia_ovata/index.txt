@@ -3,8 +3,8 @@ genus: 'Neottia'
 species: 'Ovata'
 
 family_de: 'Orchideen'
-genus_de: 'Großes'
-species_de: 'Zweiblatt'
+species_de: 'Großes'
+genus_de: 'Zweiblatt'
 
 floration: 'Mai - Jul'
 

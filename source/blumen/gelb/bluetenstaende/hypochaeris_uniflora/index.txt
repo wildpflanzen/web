@@ -3,8 +3,8 @@ genus: 'Hypochaeris'
 species: 'Uniflora'
 
 family_de: 'Korbblütengewächse'
-genus_de: 'Einköpfiges'
-species_de: 'Ferkelkraut'
+species_de: 'Einköpfiges'
+genus_de: 'Ferkelkraut'
 
 floration: 'Juli - Oktober'
 

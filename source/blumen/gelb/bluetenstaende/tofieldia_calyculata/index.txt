@@ -3,8 +3,8 @@ genus: 'Tofieldia'
 species: 'Calyculata'
 
 family_de: 'Simsenliliengewächse'
-genus_de: 'Kelch'
-species_de: 'Simsenlilie'
+species_de: 'Kelch'
+genus_de: 'Simsenlilie'
 
 floration: 'Juni - August'
 

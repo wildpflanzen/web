@@ -3,8 +3,8 @@ genus: 'Sisymbrium'
 species: 'Strictissimum'
 
 family_de: 'Kreuzblütengewächse'
-genus_de: 'Steife'
-species_de: 'Rauke'
+species_de: 'Steife'
+genus_de: 'Rauke'
 
 floration: 'Juni - Jul'
 

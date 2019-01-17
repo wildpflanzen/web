@@ -3,8 +3,8 @@ genus: 'Plantago'
 species: 'Media'
 
 family_de: 'Wegerichgewächse'
-genus_de: 'Mittlerer'
-species_de: 'Wegerich'
+species_de: 'Mittlerer'
+genus_de: 'Wegerich'
 
 floration: 'Mai - September'
 

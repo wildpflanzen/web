@@ -3,8 +3,8 @@ genus: 'Sedum'
 species: 'Dasyphyllum'
 
 family_de: 'Dickblattgewächse'
-genus_de: 'Dickblättrige'
-species_de: 'Fetthenne'
+species_de: 'Dickblättrige'
+genus_de: 'Fetthenne'
 
 floration: ''
 

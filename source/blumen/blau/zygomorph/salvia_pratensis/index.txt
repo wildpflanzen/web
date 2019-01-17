@@ -3,8 +3,8 @@ genus: 'Salvia'
 species: 'Pratensis'
 
 family_de: 'Lippenblütengewächse'
-genus_de: 'Wiesen'
-species_de: 'Salbe'
+species_de: 'Wiesen'
+genus_de: 'Salbe'
 
 floration: ''
 

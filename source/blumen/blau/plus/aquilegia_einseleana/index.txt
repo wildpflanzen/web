@@ -3,8 +3,8 @@ genus: 'Aquilegia'
 species: 'Einseleana'
 
 family_de: 'Hahnenfuβgewächse'
-genus_de: 'Kleinblütige'
-species_de: 'Akele'
+species_de: 'Kleinblütige'
+genus_de: 'Akele'
 
 floration: 'Juni - Jul'
 

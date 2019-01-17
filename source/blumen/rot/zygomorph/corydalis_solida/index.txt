@@ -3,8 +3,8 @@ genus: 'Corydalis'
 species: 'Solida'
 
 family_de: 'Mohngewächse'
-genus_de: 'Gefingerter'
-species_de: 'Lerchensporn'
+species_de: 'Gefingerter'
+genus_de: 'Lerchensporn'
 
 floration: 'April bis Ma'
 

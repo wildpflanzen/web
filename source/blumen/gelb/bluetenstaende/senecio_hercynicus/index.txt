@@ -3,8 +3,8 @@ genus: 'Senecio'
 species: 'Hercynicus'
 
 family_de: 'Korbblütengewächse'
-genus_de: 'Hain'
-species_de: 'Greiskraut'
+species_de: 'Hain'
+genus_de: 'Greiskraut'
 
 floration: 'August - Oktober'
 

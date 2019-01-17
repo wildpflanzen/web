@@ -3,8 +3,8 @@ genus: 'Viola'
 species: 'Biflora'
 
 family_de: 'Veilchengewächse'
-genus_de: 'Zweiblütiges'
-species_de: 'Veilchen'
+species_de: 'Zweiblütiges'
+genus_de: 'Veilchen'
 
 floration: ''
 

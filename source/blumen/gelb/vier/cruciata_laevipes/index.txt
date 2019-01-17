@@ -3,8 +3,8 @@ genus: 'Cruciata'
 species: 'Laevipes'
 
 family_de: 'Rötegewächse'
-genus_de: 'Gewimpertes'
-species_de: 'Kreuzlabkraut'
+species_de: 'Gewimpertes'
+genus_de: 'Kreuzlabkraut'
 
 floration: 'April - August'
 

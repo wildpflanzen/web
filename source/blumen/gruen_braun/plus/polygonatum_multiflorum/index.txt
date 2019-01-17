@@ -3,8 +3,8 @@ genus: 'Polygonatum'
 species: 'Multiflorum'
 
 family_de: 'Spargelgewächse'
-genus_de: 'Vielblütige'
-species_de: 'Weiβwurz'
+species_de: 'Vielblütige'
+genus_de: 'Weiβwurz'
 
 floration: ''
 

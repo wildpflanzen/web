@@ -3,8 +3,8 @@ genus: 'Gentianella'
 species: 'Germanica'
 
 family_de: 'Enziangewächse'
-genus_de: 'Deutscher'
-species_de: 'Kranzenzian'
+species_de: 'Deutscher'
+genus_de: 'Kranzenzian'
 
 floration: 'Juli - Oktober'
 

@@ -3,8 +3,8 @@ genus: 'Leontopodium'
 species: 'Alpinum'
 
 family_de: 'Korbblütengewächse'
-genus_de: 'Alpen'
-species_de: 'Edelweiβ'
+species_de: 'Alpen'
+genus_de: 'Edelweiβ'
 
 floration: ''
 

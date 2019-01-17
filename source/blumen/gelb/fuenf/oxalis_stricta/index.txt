@@ -3,8 +3,8 @@ genus: 'Oxalis'
 species: 'Stricta'
 
 family_de: 'Sauerkleegewächse'
-genus_de: 'Aufrechter'
-species_de: 'Sauerklee'
+species_de: 'Aufrechter'
+genus_de: 'Sauerklee'
 
 floration: ''
 

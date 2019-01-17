@@ -3,8 +3,8 @@ genus: 'Aquilegia'
 species: 'Vulgaris'
 
 family_de: 'Hahnenfuβgewächse'
-genus_de: 'Gewöhnliche'
-species_de: 'Akele'
+species_de: 'Gewöhnliche'
+genus_de: 'Akele'
 
 floration: ''
 

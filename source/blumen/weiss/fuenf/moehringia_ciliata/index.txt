@@ -3,8 +3,8 @@ genus: 'Moehringia'
 species: 'Ciliata'
 
 family_de: 'Nelkengewächse'
-genus_de: 'Bewimperte'
-species_de: 'Nabelmiere'
+species_de: 'Bewimperte'
+genus_de: 'Nabelmiere'
 
 floration: ''
 

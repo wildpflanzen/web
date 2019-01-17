@@ -3,8 +3,8 @@ genus: 'Silene'
 species: 'Latifolia'
 
 family_de: 'Nelkengewächse'
-genus_de: 'Weiβe'
-species_de: 'Lichtnelke'
+species_de: 'Weiβe'
+genus_de: 'Lichtnelke'
 
 floration: ''
 

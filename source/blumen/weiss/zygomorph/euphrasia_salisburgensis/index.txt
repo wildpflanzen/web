@@ -3,8 +3,8 @@ genus: 'Euphrasia'
 species: 'Salisburgensis'
 
 family_de: 'Sommerwurzgewächse'
-genus_de: 'Salzburger'
-species_de: 'Augentrost'
+species_de: 'Salzburger'
+genus_de: 'Augentrost'
 
 floration: 'Juli - August'
 

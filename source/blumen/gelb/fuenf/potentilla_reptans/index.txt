@@ -3,8 +3,8 @@ genus: 'Potentilla'
 species: 'Reptans'
 
 family_de: 'Rosengewächse'
-genus_de: 'Kriechendes'
-species_de: 'Fingerkraut'
+species_de: 'Kriechendes'
+genus_de: 'Fingerkraut'
 
 floration: 'Juni - August'
 

@@ -3,8 +3,8 @@ genus: 'Alchemilla'
 species: 'Nitida'
 
 family_de: 'Rosengewächse'
-genus_de: 'Glanz'
-species_de: 'Frauenmantel'
+species_de: 'Glanz'
+genus_de: 'Frauenmantel'
 
 floration: 'Juni - August'
 

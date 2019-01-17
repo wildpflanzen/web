@@ -3,8 +3,8 @@ genus: 'Phyteuma'
 species: 'Nigrum'
 
 family_de: 'Glockenblumengewächse'
-genus_de: 'Schwarze'
-species_de: 'Teufelskralle'
+species_de: 'Schwarze'
+genus_de: 'Teufelskralle'
 
 floration: 'Mai - Jul'
 

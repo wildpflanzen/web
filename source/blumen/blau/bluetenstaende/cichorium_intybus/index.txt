@@ -3,8 +3,8 @@ genus: 'Cichorium'
 species: 'Intybus'
 
 family_de: 'Korbblütengewächse'
-genus_de: 'Gewöhnliche'
-species_de: 'Wegwarte'
+species_de: 'Gewöhnliche'
+genus_de: 'Wegwarte'
 
 floration: ''
 

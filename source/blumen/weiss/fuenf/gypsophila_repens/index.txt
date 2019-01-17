@@ -3,8 +3,8 @@ genus: 'Gypsophila'
 species: 'Repens'
 
 family_de: 'Nelkengewächse'
-genus_de: 'Kriechendes'
-species_de: 'Gipskraut'
+species_de: 'Kriechendes'
+genus_de: 'Gipskraut'
 
 floration: ''
 

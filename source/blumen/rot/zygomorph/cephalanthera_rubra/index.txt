@@ -3,8 +3,8 @@ genus: 'Cephalanthera'
 species: 'Rubra'
 
 family_de: 'Orchideen'
-genus_de: 'Rotes'
-species_de: 'Waldvögelein'
+species_de: 'Rotes'
+genus_de: 'Waldvögelein'
 
 floration: 'Mai - Jul'
 

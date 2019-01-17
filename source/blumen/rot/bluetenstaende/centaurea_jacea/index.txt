@@ -3,8 +3,8 @@ genus: 'Centaurea'
 species: 'Jacea ssp. jacea'
 
 family_de: 'Korbblütengewächse'
-genus_de: 'Wiesen'
-species_de: 'Flockenblume'
+species_de: 'Wiesen'
+genus_de: 'Flockenblume'
 
 floration: ''
 

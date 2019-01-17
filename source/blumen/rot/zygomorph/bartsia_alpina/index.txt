@@ -3,8 +3,8 @@ genus: 'Bartsia'
 species: 'Alpina'
 
 family_de: 'Sommerwurzgewächse'
-genus_de: ''
 species_de: 'Alpenhelm'
+genus_de: ''
 
 floration: 'Juni - August'
 

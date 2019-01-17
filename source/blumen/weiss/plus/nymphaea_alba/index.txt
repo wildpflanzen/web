@@ -3,8 +3,8 @@ genus: 'Nymphaea'
 species: 'Alba'
 
 family_de: 'Seerosengewächse'
-genus_de: 'Weiβe'
-species_de: 'Seerose'
+species_de: 'Weiβe'
+genus_de: 'Seerose'
 
 floration: 'Juni - August'
 

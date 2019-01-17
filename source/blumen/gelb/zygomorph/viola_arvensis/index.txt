@@ -3,8 +3,8 @@ genus: 'Viola'
 species: 'Arvensis'
 
 family_de: 'Veilchengewächse'
-genus_de: 'Acker'
-species_de: 'Stiefmütterchen'
+species_de: 'Acker'
+genus_de: 'Stiefmütterchen'
 
 floration: ''
 

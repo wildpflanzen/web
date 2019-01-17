@@ -3,8 +3,8 @@ genus: 'Hypericum'
 species: 'Maculatum'
 
 family_de: 'Johanniskrautgewächse'
-genus_de: 'Geflecktes'
-species_de: 'Johanniskraut'
+species_de: 'Geflecktes'
+genus_de: 'Johanniskraut'
 
 floration: 'Juni - August'
 

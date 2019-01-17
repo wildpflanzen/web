@@ -3,8 +3,8 @@ genus: 'Pedicularis'
 species: 'Rostratocapitata'
 
 family_de: 'Sommerwurzgewächse'
-genus_de: 'Kopfiges'
-species_de: 'Läusekraut'
+species_de: 'Kopfiges'
+genus_de: 'Läusekraut'
 
 floration: 'Juni - August'
 

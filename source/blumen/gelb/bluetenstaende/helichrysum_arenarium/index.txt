@@ -3,8 +3,8 @@ genus: 'Helichrysum'
 species: 'Arenarium'
 
 family_de: 'Korbblütengewächse'
-genus_de: 'Sand'
-species_de: 'Strohblume'
+species_de: 'Sand'
+genus_de: 'Strohblume'
 
 floration: ''
 

@@ -3,8 +3,8 @@ genus: 'Nasturtium'
 species: 'Officinale'
 
 family_de: 'Kreuzblütengewächse'
-genus_de: 'Echte'
-species_de: 'Brunnenkresse'
+species_de: 'Echte'
+genus_de: 'Brunnenkresse'
 
 floration: ''
 

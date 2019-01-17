@@ -3,8 +3,8 @@ genus: 'Impatiens'
 species: 'Edgeworth'
 
 family_de: 'Balsaminengewächse'
-genus_de: 'Buntes'
-species_de: 'Springkraut'
+species_de: 'Buntes'
+genus_de: 'Springkraut'
 
 floration: 'Juli - September'
 

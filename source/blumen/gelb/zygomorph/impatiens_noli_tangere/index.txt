@@ -3,8 +3,8 @@ genus: 'Impatiens'
 species: 'Noli-tangere'
 
 family_de: 'Balsaminengewächse'
-genus_de: 'Groβes'
-species_de: 'Springkraut, echtes'
+species_de: 'Groβes'
+genus_de: 'Springkraut, echtes'
 
 floration: 'Juli - August'
 

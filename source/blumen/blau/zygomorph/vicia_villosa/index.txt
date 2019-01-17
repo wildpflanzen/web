@@ -3,8 +3,8 @@ genus: 'Vicia'
 species: 'Villosa'
 
 family_de: 'Hülsenfrüchtler'
-genus_de: 'Zottel'
-species_de: 'Wicke'
+species_de: 'Zottel'
+genus_de: 'Wicke'
 
 floration: 'Juni - August'
 

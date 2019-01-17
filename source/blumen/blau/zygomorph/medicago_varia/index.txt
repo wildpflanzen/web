@@ -3,8 +3,8 @@ genus: 'Medicago'
 species: 'X varia'
 
 family_de: 'Hülsenfrüchtler'
-genus_de: 'Bastard'
-species_de: 'Luzerne'
+species_de: 'Bastard'
+genus_de: 'Luzerne'
 
 floration: ''
 

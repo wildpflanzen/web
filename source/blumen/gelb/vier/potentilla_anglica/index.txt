@@ -3,8 +3,8 @@ genus: 'Potentilla'
 species: 'Anglica'
 
 family_de: 'Rosengewächse'
-genus_de: 'Niederliegendes'
-species_de: 'Fingerkraut'
+species_de: 'Niederliegendes'
+genus_de: 'Fingerkraut'
 
 floration: ''
 

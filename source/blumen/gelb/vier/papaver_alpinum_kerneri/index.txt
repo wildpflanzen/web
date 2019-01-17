@@ -3,8 +3,8 @@ genus: 'Papaver'
 species: 'Alpinum ssp. kerner'
 
 family_de: 'Mohngewächse'
-genus_de: 'Kerner·alpen'
-species_de: 'Mohn'
+species_de: 'Kerner·alpen'
+genus_de: 'Mohn'
 
 floration: ''
 

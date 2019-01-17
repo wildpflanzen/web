@@ -3,8 +3,8 @@ genus: 'Noccaea'
 species: 'Rotundifolia'
 
 family_de: 'Kreuzblütengewächse'
-genus_de: 'Rundblättriges'
-species_de: 'Hellerkraut'
+species_de: 'Rundblättriges'
+genus_de: 'Hellerkraut'
 
 floration: ''
 

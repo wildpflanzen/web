@@ -3,8 +3,8 @@ genus: 'Stachys'
 species: 'Recta'
 
 family_de: 'Lippenblütengewächse'
-genus_de: 'Aufrechter'
-species_de: 'Ziest'
+species_de: 'Aufrechter'
+genus_de: 'Ziest'
 
 floration: 'Juni - Oktober'
 

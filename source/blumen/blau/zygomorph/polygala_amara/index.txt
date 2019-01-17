@@ -3,8 +3,8 @@ genus: 'Polygala'
 species: 'Amara'
 
 family_de: 'Kreuzblumengewächse'
-genus_de: 'Bitteres'
-species_de: 'Kreuzblümchen'
+species_de: 'Bitteres'
+genus_de: 'Kreuzblümchen'
 
 floration: ''
 

@@ -3,8 +3,8 @@ genus: 'Hypericum'
 species: 'Perforatum'
 
 family_de: 'Johanniskrautgewächse'
-genus_de: 'Echtes'
-species_de: 'Johanniskraut'
+species_de: 'Echtes'
+genus_de: 'Johanniskraut'
 
 floration: 'Juni - August'
 

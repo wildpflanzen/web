@@ -3,8 +3,8 @@ genus: 'Clematis'
 species: 'Vitalba'
 
 family_de: ''
-genus_de: 'Gemeine'
-species_de: 'Waldrebe'
+species_de: 'Gemeine'
+genus_de: 'Waldrebe'
 
 floration: ''
 

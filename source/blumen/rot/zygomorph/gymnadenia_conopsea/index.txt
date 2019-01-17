@@ -3,8 +3,8 @@ genus: 'Gymnadenia'
 species: 'Conopsea'
 
 family_de: 'Orchideen'
-genus_de: 'Große'
-species_de: 'Händelwurz'
+species_de: 'Große'
+genus_de: 'Händelwurz'
 
 floration: ''
 

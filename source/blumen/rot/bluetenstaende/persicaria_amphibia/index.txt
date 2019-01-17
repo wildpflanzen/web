@@ -3,8 +3,8 @@ genus: 'Persicaria'
 species: 'Amphibia'
 
 family_de: 'Knöterichgewächse'
-genus_de: 'Wasser'
-species_de: 'Knöterich'
+species_de: 'Wasser'
+genus_de: 'Knöterich'
 
 floration: 'Juni - September'
 

@@ -3,8 +3,8 @@ genus: 'Valeriana'
 species: 'Officinalis agg.'
 
 family_de: 'Geiβblattgewächse'
-genus_de: 'Echter'
-species_de: 'Baldrian'
+species_de: 'Echter'
+genus_de: 'Baldrian'
 
 floration: 'Mai - Jul'
 

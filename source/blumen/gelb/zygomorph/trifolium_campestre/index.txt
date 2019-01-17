@@ -3,8 +3,8 @@ genus: 'Trifolium'
 species: 'Campestre'
 
 family_de: 'Hülsenfrüchtler'
-genus_de: 'Feld'
-species_de: 'Klee'
+species_de: 'Feld'
+genus_de: 'Klee'
 
 floration: ''
 

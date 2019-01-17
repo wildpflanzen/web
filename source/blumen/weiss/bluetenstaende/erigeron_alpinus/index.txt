@@ -3,8 +3,8 @@ genus: 'Erigeron'
 species: 'Alpinus'
 
 family_de: 'Korbblütengewächse'
-genus_de: 'Alpen'
-species_de: 'Berufkraut'
+species_de: 'Alpen'
+genus_de: 'Berufkraut'
 
 floration: 'Juli - August'
 

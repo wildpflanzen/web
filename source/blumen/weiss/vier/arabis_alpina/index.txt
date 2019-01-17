@@ -3,8 +3,8 @@ genus: 'Arabis'
 species: 'Alpina'
 
 family_de: 'Kreuzblütengewächse'
-genus_de: 'Alpen'
-species_de: 'Gänsekresse'
+species_de: 'Alpen'
+genus_de: 'Gänsekresse'
 
 floration: ''
 

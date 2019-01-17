@@ -3,8 +3,8 @@ genus: 'Agrimonia'
 species: 'Eupatoria'
 
 family_de: 'Rosengewächse'
-genus_de: 'Gemeiner'
-species_de: 'Odermennig'
+species_de: 'Gemeiner'
+genus_de: 'Odermennig'
 
 floration: 'Juni - September'
 

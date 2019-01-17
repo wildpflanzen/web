@@ -3,8 +3,8 @@ genus: 'Agrostemma'
 species: 'Githago'
 
 family_de: 'Nelkengewächse'
-genus_de: 'Gewöhnlicher'
-species_de: 'Kornrade'
+species_de: 'Gewöhnlicher'
+genus_de: 'Kornrade'
 
 floration: ''
 

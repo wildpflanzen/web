@@ -3,8 +3,8 @@ genus: 'Gymnadenia'
 species: 'Conopsea ssp. alpina'
 
 family_de: 'Orchideen'
-genus_de: 'Alpen'
-species_de: 'Händelwurz'
+species_de: 'Alpen'
+genus_de: 'Händelwurz'
 
 floration: ''
 

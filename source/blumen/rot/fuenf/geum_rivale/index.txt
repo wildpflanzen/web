@@ -3,8 +3,8 @@ genus: 'Geum'
 species: 'Rivale'
 
 family_de: 'Rosengewächse'
-genus_de: 'Bach'
-species_de: 'Nelkenwurz'
+species_de: 'Bach'
+genus_de: 'Nelkenwurz'
 
 floration: 'April - Jul'
 

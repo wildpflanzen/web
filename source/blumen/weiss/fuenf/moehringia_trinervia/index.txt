@@ -3,8 +3,8 @@ genus: 'Moehringia'
 species: 'Trinervia'
 
 family_de: 'Nelkengewächse'
-genus_de: 'Dreinervige'
-species_de: 'Nabelmiere'
+species_de: 'Dreinervige'
+genus_de: 'Nabelmiere'
 
 floration: ''
 

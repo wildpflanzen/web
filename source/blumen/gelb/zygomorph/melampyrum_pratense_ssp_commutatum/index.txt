@@ -3,8 +3,8 @@ genus: 'Melampyrum'
 species: 'Pratense ssp. commutatum'
 
 family_de: 'Sommerwurzgewächse'
-genus_de: 'Hellgelber'
-species_de: 'Wiesen- wachtelweizen'
+species_de: 'Hellgelber'
+genus_de: 'Wiesen- wachtelweizen'
 
 floration: 'Juni - September'
 

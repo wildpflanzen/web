@@ -3,8 +3,8 @@ genus: 'Euphorbia'
 species: 'Cyparissias'
 
 family_de: 'Wolfsmilchgewächse'
-genus_de: 'Zypressen'
-species_de: 'Wolfsmilch'
+species_de: 'Zypressen'
+genus_de: 'Wolfsmilch'
 
 floration: ''
 

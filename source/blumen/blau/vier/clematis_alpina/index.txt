@@ -3,8 +3,8 @@ genus: 'Clematis'
 species: 'Alpina'
 
 family_de: 'Hahnenfuβgewächse'
-genus_de: 'Alpen'
-species_de: 'Waldrebe'
+species_de: 'Alpen'
+genus_de: 'Waldrebe'
 
 floration: 'April - Jun'
 

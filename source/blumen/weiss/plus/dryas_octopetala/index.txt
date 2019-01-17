@@ -3,8 +3,8 @@ genus: 'Dryas'
 species: 'Octopetala'
 
 family_de: 'Rosengewächse'
-genus_de: 'Weiße'
-species_de: 'Silberwurz'
+species_de: 'Weiße'
+genus_de: 'Silberwurz'
 
 floration: 'Juni - August'
 

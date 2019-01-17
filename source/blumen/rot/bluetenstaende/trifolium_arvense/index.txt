@@ -3,8 +3,8 @@ genus: 'Trifolium'
 species: 'Arvense'
 
 family_de: 'Hülsenfrüchtler'
-genus_de: 'Hasen'
-species_de: 'Klee'
+species_de: 'Hasen'
+genus_de: 'Klee'
 
 floration: 'Juni - Jul'
 

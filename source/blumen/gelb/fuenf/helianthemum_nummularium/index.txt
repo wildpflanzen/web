@@ -3,8 +3,8 @@ genus: 'Helianthemum'
 species: 'Nummularium'
 
 family_de: 'Zistrosengewächse'
-genus_de: 'Gewöhnliches'
-species_de: 'Sonnenröschen'
+species_de: 'Gewöhnliches'
+genus_de: 'Sonnenröschen'
 
 floration: 'Mai - September'
 

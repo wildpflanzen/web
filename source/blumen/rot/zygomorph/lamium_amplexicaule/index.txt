@@ -3,8 +3,8 @@ genus: 'Lamium'
 species: 'Amplexicaule'
 
 family_de: 'Lippenblütengewächse'
-genus_de: 'Stängelumfassende'
-species_de: 'Taubnessel'
+species_de: 'Stängelumfassende'
+genus_de: 'Taubnessel'
 
 floration: 'April - August'
 

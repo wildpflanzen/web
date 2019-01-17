@@ -3,8 +3,8 @@ genus: 'Cerastium'
 species: 'Uniflorum'
 
 family_de: 'Nelkengewächse'
-genus_de: 'Einblütiges'
-species_de: 'Hornkraut'
+species_de: 'Einblütiges'
+genus_de: 'Hornkraut'
 
 floration: ''
 

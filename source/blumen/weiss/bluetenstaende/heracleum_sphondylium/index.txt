@@ -3,8 +3,8 @@ genus: 'Heracleum'
 species: 'Sphondylium'
 
 family_de: 'Doldengewächse'
-genus_de: 'Wiesen'
-species_de: 'Bärenklau'
+species_de: 'Wiesen'
+genus_de: 'Bärenklau'
 
 floration: 'Juni - Oktober'
 

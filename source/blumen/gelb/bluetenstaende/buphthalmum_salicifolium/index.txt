@@ -3,8 +3,8 @@ genus: 'Buphthalmum'
 species: 'Salicifolium'
 
 family_de: 'Korbblütengewächse'
-genus_de: 'Weidenblättriges'
-species_de: 'Ochsenauge'
+species_de: 'Weidenblättriges'
+genus_de: 'Ochsenauge'
 
 floration: 'Mai - September'
 

@@ -3,8 +3,8 @@ genus: 'Pulsatilla'
 species: 'Alpina ssp. apiifolia'
 
 family_de: 'Hahnenfuβgewächse'
-genus_de: 'Gelbe'
-species_de: 'Alpen- kuhschelle'
+species_de: 'Gelbe'
+genus_de: 'Alpen- kuhschelle'
 
 floration: 'Mai - Jul'
 

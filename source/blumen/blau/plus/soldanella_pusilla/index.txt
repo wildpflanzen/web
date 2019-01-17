@@ -3,8 +3,8 @@ genus: 'Soldanella'
 species: 'Pusilla'
 
 family_de: 'Primelgewächse'
-genus_de: 'Kleines'
-species_de: 'Alpenglöckchen'
+species_de: 'Kleines'
+genus_de: 'Alpenglöckchen'
 
 floration: ''
 

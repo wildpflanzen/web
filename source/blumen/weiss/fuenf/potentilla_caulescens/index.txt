@@ -3,8 +3,8 @@ genus: 'Potentilla'
 species: 'Caulescens'
 
 family_de: 'Rosengewächse'
-genus_de: 'Stängel'
-species_de: 'Fingerkraut'
+species_de: 'Stängel'
+genus_de: 'Fingerkraut'
 
 floration: 'Juni - September'
 

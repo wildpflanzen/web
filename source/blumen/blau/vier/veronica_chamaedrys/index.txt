@@ -3,8 +3,8 @@ genus: 'Veronica'
 species: 'Chamaedrys'
 
 family_de: 'Wegerichgewächse'
-genus_de: 'Gamander'
-species_de: 'Ehrenpreis'
+species_de: 'Gamander'
+genus_de: 'Ehrenpreis'
 
 floration: ''
 

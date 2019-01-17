@@ -3,8 +3,8 @@ genus: 'Phyteuma'
 species: 'Orbiculare'
 
 family_de: 'Glockenblumengewächse'
-genus_de: 'Kugel'
-species_de: 'Teufelskralle'
+species_de: 'Kugel'
+genus_de: 'Teufelskralle'
 
 floration: 'Mai - Jul'
 

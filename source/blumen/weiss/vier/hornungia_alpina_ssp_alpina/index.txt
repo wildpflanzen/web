@@ -3,8 +3,8 @@ genus: 'Hornungia'
 species: 'Alpina ssp. alpina'
 
 family_de: 'Kreuzblütengewächse'
-genus_de: 'Kalk'
-species_de: 'Gämskresse, alpen- gämskresse'
+species_de: 'Kalk'
+genus_de: 'Gämskresse, alpen- gämskresse'
 
 floration: ''
 

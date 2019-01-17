@@ -3,8 +3,8 @@ genus: 'Bistorta'
 species: 'Officinalis'
 
 family_de: 'Knöterichgewächse'
-genus_de: 'Schlangen'
-species_de: 'Knöterich'
+species_de: 'Schlangen'
+genus_de: 'Knöterich'
 
 floration: 'Mai - Jun'
 

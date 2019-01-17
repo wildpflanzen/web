@@ -3,8 +3,8 @@ genus: 'Hieracium'
 species: 'Glabratum'
 
 family_de: 'Korbblütengewächse'
-genus_de: 'Verkahlendes'
-species_de: 'Habichtskraut'
+species_de: 'Verkahlendes'
+genus_de: 'Habichtskraut'
 
 floration: ''
 

@@ -3,8 +3,8 @@ genus: 'Galium'
 species: 'Album'
 
 family_de: 'Rötegewächse'
-genus_de: 'Weiβes'
-species_de: 'Labkraut'
+species_de: 'Weiβes'
+genus_de: 'Labkraut'
 
 floration: 'Juni - September'
 

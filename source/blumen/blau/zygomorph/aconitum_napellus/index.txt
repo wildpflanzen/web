@@ -3,8 +3,8 @@ genus: 'Aconitum'
 species: 'Napellus'
 
 family_de: 'Hahnenfuβgewächse'
-genus_de: 'Blaue'
-species_de: 'Eisenhut'
+species_de: 'Blaue'
+genus_de: 'Eisenhut'
 
 floration: 'Juni - August'
 

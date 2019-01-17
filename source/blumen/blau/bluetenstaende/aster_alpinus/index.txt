@@ -3,8 +3,8 @@ genus: 'Aster'
 species: 'Alpinus'
 
 family_de: 'Korbblütengewächse'
-genus_de: 'Alpen'
-species_de: 'Aster'
+species_de: 'Alpen'
+genus_de: 'Aster'
 
 floration: ''
 

@@ -3,8 +3,8 @@ genus: 'Achillea'
 species: 'Atrata'
 
 family_de: 'Korbblütengewächse'
-genus_de: 'Schwarzrandige'
-species_de: 'Schafgarbe'
+species_de: 'Schwarzrandige'
+genus_de: 'Schafgarbe'
 
 floration: ''
 

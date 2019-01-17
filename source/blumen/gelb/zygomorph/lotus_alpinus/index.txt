@@ -3,8 +3,8 @@ genus: 'Lotus'
 species: 'Alpinus'
 
 family_de: 'Hülsenfrüchtler'
-genus_de: 'Alpen'
-species_de: 'Hornklee'
+species_de: 'Alpen'
+genus_de: 'Hornklee'
 
 floration: ''
 

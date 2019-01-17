@@ -3,8 +3,8 @@ genus: 'Leucanthemopsis'
 species: 'Alpina'
 
 family_de: 'Korbblütengewächse'
-genus_de: 'Gewöhnliche'
-species_de: 'Alpenmargerite'
+species_de: 'Gewöhnliche'
+genus_de: 'Alpenmargerite'
 
 floration: 'Juli - August'
 

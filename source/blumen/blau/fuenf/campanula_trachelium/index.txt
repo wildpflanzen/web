@@ -3,8 +3,8 @@ genus: 'Campanula'
 species: 'Trachelium'
 
 family_de: 'Glockenblumengewächse'
-genus_de: 'Nesselblättrige'
-species_de: 'Glockenblume'
+species_de: 'Nesselblättrige'
+genus_de: 'Glockenblume'
 
 floration: ''
 

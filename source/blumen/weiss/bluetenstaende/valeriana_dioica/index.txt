@@ -3,8 +3,8 @@ genus: 'Valeriana'
 species: 'Dioica'
 
 family_de: 'Geiβblattgewächse'
-genus_de: 'Kleiner'
-species_de: 'Baldrian'
+species_de: 'Kleiner'
+genus_de: 'Baldrian'
 
 floration: 'Mai - Jun'
 

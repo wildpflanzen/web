@@ -3,8 +3,8 @@ genus: 'Petrorhagia'
 species: 'Prolifera'
 
 family_de: 'Nelkengewächse'
-genus_de: 'Sprossende'
-species_de: 'Felsennelke'
+species_de: 'Sprossende'
+genus_de: 'Felsennelke'
 
 floration: ''
 

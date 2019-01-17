@@ -3,8 +3,8 @@ genus: 'Epipactis'
 species: 'Atrorubens'
 
 family_de: 'Orchideen'
-genus_de: 'Rotbraune'
-species_de: 'Ständelwurz'
+species_de: 'Rotbraune'
+genus_de: 'Ständelwurz'
 
 floration: 'Juni - Jul'
 

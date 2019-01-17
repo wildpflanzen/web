@@ -3,8 +3,8 @@ genus: 'Hieracium'
 species: 'Pilosum'
 
 family_de: 'Korbblütengewächse'
-genus_de: 'Weißhaariges'
-species_de: 'Habichtskraut'
+species_de: 'Weißhaariges'
+genus_de: 'Habichtskraut'
 
 floration: ''
 

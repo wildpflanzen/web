@@ -3,8 +3,8 @@ genus: 'Campanula'
 species: 'Glomerata'
 
 family_de: 'Glockenblumengewächse'
-genus_de: 'Knäuel'
-species_de: 'Glockenblume'
+species_de: 'Knäuel'
+genus_de: 'Glockenblume'
 
 floration: 'Juni - August'
 

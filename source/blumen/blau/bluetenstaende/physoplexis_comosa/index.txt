@@ -3,8 +3,8 @@ genus: 'Physoplexis'
 species: 'Comosa'
 
 family_de: 'Glockenblumengewächse'
-genus_de: ''
 species_de: 'Schopfteufelskralle'
+genus_de: ''
 
 floration: 'Juli - August'
 

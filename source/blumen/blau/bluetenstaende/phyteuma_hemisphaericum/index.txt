@@ -3,8 +3,8 @@ genus: 'Phyteuma'
 species: 'Hemisphaericum'
 
 family_de: 'Glockenblumengewächse'
-genus_de: 'Halbkugelige'
-species_de: 'Teufelskralle'
+species_de: 'Halbkugelige'
+genus_de: 'Teufelskralle'
 
 floration: 'Juli - August'
 

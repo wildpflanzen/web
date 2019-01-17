@@ -3,8 +3,8 @@ genus: 'Aposeris'
 species: 'Foetida'
 
 family_de: 'Korbblütengewächse'
-genus_de: 'Stinkender'
-species_de: 'Hainsalat'
+species_de: 'Stinkender'
+genus_de: 'Hainsalat'
 
 floration: 'Juni - August'
 

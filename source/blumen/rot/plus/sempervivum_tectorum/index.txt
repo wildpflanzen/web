@@ -3,8 +3,8 @@ genus: 'Sempervivum'
 species: 'Tectorum'
 
 family_de: 'Dickblattgewächse'
-genus_de: 'Dach'
-species_de: 'Hauswurz'
+species_de: 'Dach'
+genus_de: 'Hauswurz'
 
 floration: 'Juni - August'
 

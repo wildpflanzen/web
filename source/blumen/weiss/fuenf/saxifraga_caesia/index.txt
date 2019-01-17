@@ -3,8 +3,8 @@ genus: 'Saxifraga'
 species: 'Caesia'
 
 family_de: 'Steinbrechgewächse'
-genus_de: 'Blaugrüne'
-species_de: 'Steinbrech'
+species_de: 'Blaugrüne'
+genus_de: 'Steinbrech'
 
 floration: ''
 

@@ -3,8 +3,8 @@ genus: 'Vicia'
 species: 'Tetrasperma'
 
 family_de: 'Hülsenfrüchtler'
-genus_de: 'Viersamige'
-species_de: 'Wicke'
+species_de: 'Viersamige'
+genus_de: 'Wicke'
 
 floration: 'Mai - Jun'
 

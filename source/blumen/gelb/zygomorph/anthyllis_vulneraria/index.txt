@@ -3,8 +3,8 @@ genus: 'Anthyllis'
 species: 'Vulneraria'
 
 family_de: 'Hülsenfrüchtler'
-genus_de: 'Gewöhnlicher'
-species_de: 'Wundklee'
+species_de: 'Gewöhnlicher'
+genus_de: 'Wundklee'
 
 floration: 'Juni - September'
 

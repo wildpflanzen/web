@@ -3,8 +3,8 @@ genus: 'Pulmonaria'
 species: 'Officinalis'
 
 family_de: 'Raublattgewächse'
-genus_de: 'Echtes'
-species_de: 'Lungenkraut'
+species_de: 'Echtes'
+genus_de: 'Lungenkraut'
 
 floration: ''
 

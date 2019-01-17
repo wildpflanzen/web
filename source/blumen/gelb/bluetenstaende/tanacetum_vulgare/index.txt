@@ -3,8 +3,8 @@ genus: 'Tanacetum'
 species: 'Vulgare'
 
 family_de: 'Korbblütengewächse'
-genus_de: ''
 species_de: 'Rainfarn'
+genus_de: ''
 
 floration: 'Juni - September'
 

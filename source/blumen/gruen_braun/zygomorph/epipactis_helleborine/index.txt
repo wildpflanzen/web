@@ -3,8 +3,8 @@ genus: 'Epipactis'
 species: 'Helleborine'
 
 family_de: 'Orchideen'
-genus_de: 'Breitblättrige'
-species_de: 'Ständelwurz'
+species_de: 'Breitblättrige'
+genus_de: 'Ständelwurz'
 
 floration: 'Juli - August'
 

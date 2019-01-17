@@ -3,8 +3,8 @@ genus: 'Valeriana'
 species: 'Sambucifolia'
 
 family_de: 'Geiβblattgewächse'
-genus_de: 'Holunderblättriger'
-species_de: 'Baldrian'
+species_de: 'Holunderblättriger'
+genus_de: 'Baldrian'
 
 floration: ''
 

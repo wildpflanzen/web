@@ -3,8 +3,8 @@ genus: 'Veronica'
 species: 'Urticifolia'
 
 family_de: 'Wegerichgewächse'
-genus_de: 'Nesselblättriger'
-species_de: 'Ehrenpreis'
+species_de: 'Nesselblättriger'
+genus_de: 'Ehrenpreis'
 
 floration: 'Juni - August'
 

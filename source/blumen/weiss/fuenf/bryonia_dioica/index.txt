@@ -3,8 +3,8 @@ genus: 'Bryonia'
 species: 'Dioica'
 
 family_de: 'Kürbisgewächse'
-genus_de: 'Rotbeerige'
-species_de: 'Zaunrübe'
+species_de: 'Rotbeerige'
+genus_de: 'Zaunrübe'
 
 floration: 'Juni - September'
 

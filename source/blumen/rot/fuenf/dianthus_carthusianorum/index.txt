@@ -3,8 +3,8 @@ genus: 'Dianthus'
 species: 'Carthusianorum'
 
 family_de: 'Nelkengewächse'
-genus_de: 'Karthäuser'
-species_de: 'Nelke'
+species_de: 'Karthäuser'
+genus_de: 'Nelke'
 
 floration: 'Juni - September'
 

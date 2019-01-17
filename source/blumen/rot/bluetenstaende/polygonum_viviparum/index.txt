@@ -3,8 +3,8 @@ genus: 'Polygonum'
 species: 'Viviparum'
 
 family_de: 'Knöterichgewächse'
-genus_de: 'Knöllchen'
-species_de: 'Wiesenknöterich'
+species_de: 'Knöllchen'
+genus_de: 'Wiesenknöterich'
 
 floration: 'Juni - August'
 

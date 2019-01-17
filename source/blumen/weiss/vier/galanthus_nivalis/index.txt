@@ -3,8 +3,8 @@ genus: 'Galanthus'
 species: 'Nivalis'
 
 family_de: 'Amaryllisgewächse'
-genus_de: 'Kleines'
-species_de: 'Schneeglöckchen'
+species_de: 'Kleines'
+genus_de: 'Schneeglöckchen'
 
 floration: ''
 

@@ -3,8 +3,8 @@ genus: 'Gentianopsis'
 species: 'Ciliata'
 
 family_de: 'Enziangewächse'
-genus_de: 'Gewöhnlicher'
-species_de: 'Fransenenzian'
+species_de: 'Gewöhnlicher'
+genus_de: 'Fransenenzian'
 
 floration: 'August - September'
 

@@ -3,8 +3,8 @@ genus: 'Cardamine'
 species: 'Hirsuta'
 
 family_de: 'Kreuzblütengewächse'
-genus_de: 'Behaartes'
-species_de: 'Schaumkraut'
+species_de: 'Behaartes'
+genus_de: 'Schaumkraut'
 
 floration: 'März - Jun'
 

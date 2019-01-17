@@ -3,8 +3,8 @@ genus: 'Aconitum'
 species: 'Lycoctonum'
 
 family_de: 'Hahnenfuβgewächse'
-genus_de: 'Gelber'
-species_de: 'Eisenhut'
+species_de: 'Gelber'
+genus_de: 'Eisenhut'
 
 floration: ''
 

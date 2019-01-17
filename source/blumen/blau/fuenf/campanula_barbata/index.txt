@@ -3,8 +3,8 @@ genus: 'Campanula'
 species: 'Barbata'
 
 family_de: 'Glockenblumengewächse'
-genus_de: 'Bärtige'
-species_de: 'Glockenblume'
+species_de: 'Bärtige'
+genus_de: 'Glockenblume'
 
 floration: ''
 

@@ -3,8 +3,8 @@ genus: 'Onobrychis'
 species: 'Viciifolia'
 
 family_de: 'Hülsenfrüchtler'
-genus_de: ''
 species_de: 'Saat-esparsette'
+genus_de: ''
 
 floration: ''
 

@@ -3,8 +3,8 @@ genus: 'Myosotis'
 species: 'Sylvatica'
 
 family_de: 'Raublattgewächse'
-genus_de: 'Wald'
-species_de: 'Vergissmeinnicht'
+species_de: 'Wald'
+genus_de: 'Vergissmeinnicht'
 
 floration: ''
 

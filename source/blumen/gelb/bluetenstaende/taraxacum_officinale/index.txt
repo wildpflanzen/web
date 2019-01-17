@@ -3,8 +3,8 @@ genus: 'Taraxacum'
 species: 'Officinale'
 
 family_de: 'Korbblütengewächse'
-genus_de: 'Gewöhnliche'
-species_de: 'Löwenzahn'
+species_de: 'Gewöhnliche'
+genus_de: 'Löwenzahn'
 
 floration: 'April - Jul'
 

@@ -3,8 +3,8 @@ genus: 'Silene'
 species: 'Nutans'
 
 family_de: 'Nelkengewächse'
-genus_de: 'Nickendes'
-species_de: 'Leimkraut'
+species_de: 'Nickendes'
+genus_de: 'Leimkraut'
 
 floration: 'Mai - September'
 

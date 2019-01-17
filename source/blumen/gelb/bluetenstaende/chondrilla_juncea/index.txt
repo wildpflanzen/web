@@ -3,8 +3,8 @@ genus: 'Chondrilla'
 species: 'Juncea'
 
 family_de: 'Korbblütengewächse'
-genus_de: 'Groβe'
-species_de: 'Knorpellattich'
+species_de: 'Groβe'
+genus_de: 'Knorpellattich'
 
 floration: ''
 

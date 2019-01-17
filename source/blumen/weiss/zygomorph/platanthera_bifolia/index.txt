@@ -3,8 +3,8 @@ genus: 'Platanthera'
 species: 'Bifolia'
 
 family_de: 'Orchideen'
-genus_de: 'Zweiblättrige'
-species_de: 'Waldhyazinthe, weiße waldhyazinthe'
+species_de: 'Zweiblättrige'
+genus_de: 'Waldhyazinthe, weiße waldhyazinthe'
 
 floration: 'Juni - August'
 

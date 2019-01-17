@@ -3,8 +3,8 @@ genus: 'Acinos'
 species: 'Alpinus'
 
 family_de: 'Lippenblütengewächse'
-genus_de: 'Alpen'
-species_de: 'Steinquendel'
+species_de: 'Alpen'
+genus_de: 'Steinquendel'
 
 floration: 'Juni - September'
 

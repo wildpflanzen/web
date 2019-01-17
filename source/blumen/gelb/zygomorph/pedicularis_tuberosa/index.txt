@@ -3,8 +3,8 @@ genus: 'Pedicularis'
 species: 'Tuberosa'
 
 family_de: 'Sommerwurzgewächse'
-genus_de: 'Knollen'
-species_de: 'Läusekraut'
+species_de: 'Knollen'
+genus_de: 'Läusekraut'
 
 floration: 'Juni - September'
 

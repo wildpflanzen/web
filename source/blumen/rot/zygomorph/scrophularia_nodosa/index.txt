@@ -3,8 +3,8 @@ genus: 'Scrophularia'
 species: 'Nodosa'
 
 family_de: 'Braunwurzgewächse'
-genus_de: 'Knotige'
-species_de: 'Braunwurz'
+species_de: 'Knotige'
+genus_de: 'Braunwurz'
 
 floration: 'Juni - Jul'
 

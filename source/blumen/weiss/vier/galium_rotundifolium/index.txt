@@ -3,8 +3,8 @@ genus: 'Galium'
 species: 'Rotundifolium'
 
 family_de: 'Rötegewächse'
-genus_de: 'Rundblättrige'
-species_de: 'Labkraut'
+species_de: 'Rundblättrige'
+genus_de: 'Labkraut'
 
 floration: ''
 

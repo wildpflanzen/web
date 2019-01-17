@@ -3,8 +3,8 @@ genus: 'Leucanthemum'
 species: 'Adustum'
 
 family_de: 'Korbblütengewächse'
-genus_de: 'Berg'
-species_de: 'Margerite'
+species_de: 'Berg'
+genus_de: 'Margerite'
 
 floration: ''
 

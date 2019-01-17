@@ -3,8 +3,8 @@ genus: 'Epilobium'
 species: 'Fleischer'
 
 family_de: 'Nachtkerzengewächse'
-genus_de: 'Fleischers'
-species_de: 'Weidenröschen'
+species_de: 'Fleischers'
+genus_de: 'Weidenröschen'
 
 floration: 'Juli - September'
 

@@ -3,8 +3,8 @@ genus: 'Gentiana'
 species: 'Verna'
 
 family_de: 'Enziangewächse'
-genus_de: 'Frühlings'
-species_de: 'Enzian'
+species_de: 'Frühlings'
+genus_de: 'Enzian'
 
 floration: 'März - August'
 

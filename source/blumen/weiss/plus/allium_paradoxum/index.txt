@@ -3,8 +3,8 @@ genus: 'Allium'
 species: 'Paradoxum'
 
 family_de: 'Amaryllisgewächse'
-genus_de: ''
 species_de: 'Wunderlauch'
+genus_de: ''
 
 floration: ''
 

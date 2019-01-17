@@ -3,8 +3,8 @@ genus: 'Convallaria'
 species: 'Majalis'
 
 family_de: 'Spargelgewächse'
-genus_de: ''
 species_de: 'Maiglöckchen'
+genus_de: ''
 
 floration: ''
 

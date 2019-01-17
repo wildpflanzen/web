@@ -3,8 +3,8 @@ genus: 'Jasione'
 species: 'Montana'
 
 family_de: 'Glockenblumengewächse'
-genus_de: 'Berg'
-species_de: 'Sandglöckchen, berg- jasione'
+species_de: 'Berg'
+genus_de: 'Sandglöckchen, berg- jasione'
 
 floration: 'Juni - August'
 

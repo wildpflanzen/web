@@ -3,8 +3,8 @@ genus: 'Scilla'
 species: 'Bifolia'
 
 family_de: 'Spargelgewächse'
-genus_de: 'Zweiblätrige'
-species_de: 'Blaustern'
+species_de: 'Zweiblätrige'
+genus_de: 'Blaustern'
 
 floration: ''
 

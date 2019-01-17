@@ -3,8 +3,8 @@ genus: 'Viola'
 species: 'Canina'
 
 family_de: 'Veilchengewächse'
-genus_de: 'Hund'
-species_de: 'Veilchen'
+species_de: 'Hund'
+genus_de: 'Veilchen'
 
 floration: ''
 

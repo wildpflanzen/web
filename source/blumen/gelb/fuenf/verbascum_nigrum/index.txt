@@ -3,8 +3,8 @@ genus: 'Verbascum'
 species: 'Nigrum'
 
 family_de: 'Braunwurzgewächse'
-genus_de: 'Schwarze'
-species_de: 'Königskerze'
+species_de: 'Schwarze'
+genus_de: 'Königskerze'
 
 floration: ''
 

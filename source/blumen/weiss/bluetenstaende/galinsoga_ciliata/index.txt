@@ -3,8 +3,8 @@ genus: 'Galinsoga'
 species: 'Ciliata'
 
 family_de: 'Korbblütengewächse'
-genus_de: 'Zottiges'
-species_de: 'Franzosenkraut, zottiges knopfkraut'
+species_de: 'Zottiges'
+genus_de: 'Franzosenkraut, zottiges knopfkraut'
 
 floration: 'Mai - Oktober'
 

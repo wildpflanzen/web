@@ -3,8 +3,8 @@ genus: 'Lotus'
 species: 'Corniculatus'
 
 family_de: 'Hülsenfrüchtler'
-genus_de: 'Gewöhnlicher'
-species_de: 'Hornklee'
+species_de: 'Gewöhnlicher'
+genus_de: 'Hornklee'
 
 floration: ''
 

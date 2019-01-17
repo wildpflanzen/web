@@ -3,8 +3,8 @@ genus: 'Calla'
 species: 'Palustris'
 
 family_de: 'Aronstabgewächse'
-genus_de: ''
 species_de: 'Schlangenwurz'
+genus_de: ''
 
 floration: 'Mai - August'
 

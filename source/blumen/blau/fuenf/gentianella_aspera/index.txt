@@ -3,8 +3,8 @@ genus: 'Gentianella'
 species: 'Aspera'
 
 family_de: 'Enziangewächse'
-genus_de: 'Rauer'
-species_de: 'Kranzenzian'
+species_de: 'Rauer'
+genus_de: 'Kranzenzian'
 
 floration: 'Mai - September'
 

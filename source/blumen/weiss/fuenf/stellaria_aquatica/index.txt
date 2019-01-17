@@ -3,8 +3,8 @@ genus: 'Stellaria'
 species: 'Aquatica'
 
 family_de: 'Nelkengewächse'
-genus_de: 'Gemeiner'
-species_de: 'Wasserdarm'
+species_de: 'Gemeiner'
+genus_de: 'Wasserdarm'
 
 floration: ''
 

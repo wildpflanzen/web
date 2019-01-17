@@ -3,8 +3,8 @@ genus: 'Pyrola'
 species: 'Rotundifolia'
 
 family_de: 'Heidekrautgewächse'
-genus_de: 'Rundblättriges'
-species_de: 'Wintergrün'
+species_de: 'Rundblättriges'
+genus_de: 'Wintergrün'
 
 floration: ''
 

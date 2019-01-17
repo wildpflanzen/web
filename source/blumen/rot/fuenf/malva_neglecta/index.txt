@@ -3,8 +3,8 @@ genus: 'Malva'
 species: 'Neglecta'
 
 family_de: 'Malvengewächse'
-genus_de: 'Weg-malve,'
-species_de: 'Kleine käsepappel'
+species_de: 'Weg-malve,'
+genus_de: 'Kleine käsepappel'
 
 floration: 'Juni - Oktober'
 

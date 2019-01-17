@@ -3,8 +3,8 @@ genus: 'Arabidopsis'
 species: 'Arenosa'
 
 family_de: 'Kreuzblütengewächse'
-genus_de: 'Sand'
-species_de: 'Schaumkresse'
+species_de: 'Sand'
+genus_de: 'Schaumkresse'
 
 floration: ''
 

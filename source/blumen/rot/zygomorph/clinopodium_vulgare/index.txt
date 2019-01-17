@@ -3,8 +3,8 @@ genus: 'Clinopodium'
 species: 'Vulgare'
 
 family_de: 'Lippenblütengewächse'
-genus_de: 'Gewöhnlicher'
-species_de: 'Wirbeldost'
+species_de: 'Gewöhnlicher'
+genus_de: 'Wirbeldost'
 
 floration: 'Juli - August'
 

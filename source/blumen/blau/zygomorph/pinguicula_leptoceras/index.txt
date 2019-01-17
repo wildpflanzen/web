@@ -3,8 +3,8 @@ genus: 'Pinguicula'
 species: 'Leptoceras'
 
 family_de: 'Wasserschlauchgewächse'
-genus_de: 'Dünnsporniges'
-species_de: 'Fettkraut'
+species_de: 'Dünnsporniges'
+genus_de: 'Fettkraut'
 
 floration: 'Juni - August'
 

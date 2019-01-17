@@ -3,8 +3,8 @@ genus: 'Adenostyles'
 species: 'Alliariae'
 
 family_de: 'Korbblütengewächse'
-genus_de: 'Graue'
-species_de: 'Alpendost'
+species_de: 'Graue'
+genus_de: 'Alpendost'
 
 floration: 'Juli - August'
 

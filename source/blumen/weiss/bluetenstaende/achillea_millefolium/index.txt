@@ -3,8 +3,8 @@ genus: 'Achillea'
 species: 'Millefolium'
 
 family_de: 'Korbblütengewächse'
-genus_de: 'Gewöhnliche'
-species_de: 'Schafgarbe'
+species_de: 'Gewöhnliche'
+genus_de: 'Schafgarbe'
 
 floration: ''
 

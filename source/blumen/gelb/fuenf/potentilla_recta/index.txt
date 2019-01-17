@@ -3,8 +3,8 @@ genus: 'Potentilla'
 species: 'Recta'
 
 family_de: 'Rosengewächse'
-genus_de: 'Aufrechtes'
-species_de: 'Fingerkraut, hohe fingerkraut'
+species_de: 'Aufrechtes'
+genus_de: 'Fingerkraut, hohe fingerkraut'
 
 floration: 'Mai - September'
 

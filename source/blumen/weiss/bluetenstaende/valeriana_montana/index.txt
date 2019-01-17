@@ -3,8 +3,8 @@ genus: 'Valeriana'
 species: 'Montana'
 
 family_de: 'Geiβblattgewächse'
-genus_de: 'Berg'
-species_de: 'Baldrian'
+species_de: 'Berg'
+genus_de: 'Baldrian'
 
 floration: ''
 

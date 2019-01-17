@@ -3,8 +3,8 @@ genus: 'Myosotis'
 species: 'Alpestris'
 
 family_de: 'Raublattgewächse'
-genus_de: 'Alpen'
-species_de: 'Vergissmeinnicht'
+species_de: 'Alpen'
+genus_de: 'Vergissmeinnicht'
 
 floration: 'Juni - August'
 

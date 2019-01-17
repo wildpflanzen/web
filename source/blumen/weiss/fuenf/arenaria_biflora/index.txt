@@ -3,8 +3,8 @@ genus: 'Arenaria'
 species: 'Biflora'
 
 family_de: 'Nelkengewächse'
-genus_de: 'Zweiblütige'
-species_de: 'Sandkraut'
+species_de: 'Zweiblütige'
+genus_de: 'Sandkraut'
 
 floration: ''
 

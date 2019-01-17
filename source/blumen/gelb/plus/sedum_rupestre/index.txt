@@ -3,8 +3,8 @@ genus: 'Sedum'
 species: 'Rupestre'
 
 family_de: 'Dickblattgewächse'
-genus_de: 'Felsen'
-species_de: 'Fetthenne'
+species_de: 'Felsen'
+genus_de: 'Fetthenne'
 
 floration: 'Juni - August'
 

@@ -3,8 +3,8 @@ genus: 'Silene'
 species: 'Vulgaris ssp. vulgaris'
 
 family_de: 'Nelkengewächse'
-genus_de: 'Gewöhnliches'
-species_de: 'Leimkraut'
+species_de: 'Gewöhnliches'
+genus_de: 'Leimkraut'
 
 floration: ''
 

@@ -3,8 +3,8 @@ genus: 'Vincetoxicum'
 species: 'Hirundinaria'
 
 family_de: 'Hundsgiftgewächse'
-genus_de: 'Weiβe'
-species_de: 'Schwalbenwurz'
+species_de: 'Weiβe'
+genus_de: 'Schwalbenwurz'
 
 floration: 'Juni - August'
 

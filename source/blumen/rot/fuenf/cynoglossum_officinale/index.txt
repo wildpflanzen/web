@@ -3,8 +3,8 @@ genus: 'Cynoglossum'
 species: 'Officinale'
 
 family_de: 'Raublattgewächse'
-genus_de: 'Echte'
-species_de: 'Hundszunge'
+species_de: 'Echte'
+genus_de: 'Hundszunge'
 
 floration: ''
 

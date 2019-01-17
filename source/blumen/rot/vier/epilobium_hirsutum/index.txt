@@ -3,8 +3,8 @@ genus: 'Epilobium'
 species: 'Hirsutum'
 
 family_de: 'Nachtkerzengewächse'
-genus_de: 'Zottiges'
-species_de: 'Weidenröschen'
+species_de: 'Zottiges'
+genus_de: 'Weidenröschen'
 
 floration: 'Juli - September'
 

@@ -3,8 +3,8 @@ genus: 'Ranunculus'
 species: 'Acris'
 
 family_de: 'Hahnenfuβgewächse'
-genus_de: 'Scharfer'
-species_de: 'Hahnenfuβ'
+species_de: 'Scharfer'
+genus_de: 'Hahnenfuβ'
 
 floration: ''
 

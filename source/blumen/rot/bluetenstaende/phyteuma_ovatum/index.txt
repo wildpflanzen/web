@@ -3,8 +3,8 @@ genus: 'Phyteuma'
 species: 'Ovatum'
 
 family_de: 'Glockenblumengewächse'
-genus_de: 'Haller'
-species_de: 'Teufelskralle'
+species_de: 'Haller'
+genus_de: 'Teufelskralle'
 
 floration: 'Juni - August'
 

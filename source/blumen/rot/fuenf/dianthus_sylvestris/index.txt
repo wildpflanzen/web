@@ -3,8 +3,8 @@ genus: 'Dianthus'
 species: 'Sylvestris'
 
 family_de: 'Nelkengewächse'
-genus_de: 'Stein'
-species_de: 'Nelke'
+species_de: 'Stein'
+genus_de: 'Nelke'
 
 floration: 'Juni - September'
 

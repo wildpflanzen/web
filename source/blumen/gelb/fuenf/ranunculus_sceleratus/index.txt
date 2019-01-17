@@ -3,8 +3,8 @@ genus: 'Ranunculus'
 species: 'Sceleratus'
 
 family_de: 'Hahnenfuβgewächse'
-genus_de: 'Gift'
-species_de: 'Hahnenfuβ'
+species_de: 'Gift'
+genus_de: 'Hahnenfuβ'
 
 floration: 'Juni - Oktober'
 

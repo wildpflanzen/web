@@ -3,8 +3,8 @@ genus: 'Conyza'
 species: 'Canadensis'
 
 family_de: 'Korbblütengewächse'
-genus_de: 'Kanadisches'
-species_de: 'Berufkraut'
+species_de: 'Kanadisches'
+genus_de: 'Berufkraut'
 
 floration: 'Juli - Oktober'
 

@@ -3,8 +3,8 @@ genus: 'Ranunculus'
 species: 'Lingua'
 
 family_de: 'Hahnenfuβgewächse'
-genus_de: 'Zungen'
-species_de: 'Hahnenfuβ'
+species_de: 'Zungen'
+genus_de: 'Hahnenfuβ'
 
 floration: 'Mai - August'
 

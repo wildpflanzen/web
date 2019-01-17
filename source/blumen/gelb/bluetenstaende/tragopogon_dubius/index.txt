@@ -3,8 +3,8 @@ genus: 'Tragopogon'
 species: 'Dubius'
 
 family_de: 'Korbblütengewächse'
-genus_de: 'Groβe'
-species_de: 'Bocksbart'
+species_de: 'Groβe'
+genus_de: 'Bocksbart'
 
 floration: ''
 

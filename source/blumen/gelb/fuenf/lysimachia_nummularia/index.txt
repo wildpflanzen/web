@@ -3,8 +3,8 @@ genus: 'Lysimachia'
 species: 'Nummularia'
 
 family_de: 'Primelgewächse'
-genus_de: 'Pfennig-gilbweiderich,'
-species_de: 'Pfennigkraut'
+species_de: 'Pfennig-gilbweiderich,'
+genus_de: 'Pfennigkraut'
 
 floration: 'Juli - September'
 

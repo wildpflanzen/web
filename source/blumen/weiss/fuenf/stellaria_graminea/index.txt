@@ -3,8 +3,8 @@ genus: 'Stellaria'
 species: 'Graminea'
 
 family_de: 'Nelkengewächse'
-genus_de: 'Gras'
-species_de: 'Sternmiere'
+species_de: 'Gras'
+genus_de: 'Sternmiere'
 
 floration: ''
 

@@ -3,8 +3,8 @@ genus: 'Symphytum'
 species: 'Officinale'
 
 family_de: 'Raublattgewächse'
-genus_de: 'Gewöhnlicher'
-species_de: 'Beinwell'
+species_de: 'Gewöhnlicher'
+genus_de: 'Beinwell'
 
 floration: 'Mai - September'
 

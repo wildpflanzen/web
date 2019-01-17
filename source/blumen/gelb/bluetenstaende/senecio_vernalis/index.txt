@@ -3,8 +3,8 @@ genus: 'Senecio'
 species: 'Vernalis'
 
 family_de: 'Korbblütengewächse'
-genus_de: 'Frühlings'
-species_de: 'Greiskraut'
+species_de: 'Frühlings'
+genus_de: 'Greiskraut'
 
 floration: 'April - November'
 

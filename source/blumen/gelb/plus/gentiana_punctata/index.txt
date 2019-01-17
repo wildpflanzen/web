@@ -3,8 +3,8 @@ genus: 'Gentiana'
 species: 'Punctata'
 
 family_de: 'Enziangewächse'
-genus_de: 'Tüpfel'
-species_de: 'Enzian'
+species_de: 'Tüpfel'
+genus_de: 'Enzian'
 
 floration: 'Juli - September'
 

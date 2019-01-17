@@ -3,8 +3,8 @@ genus: 'Allium'
 species: 'Carinatum'
 
 family_de: 'Amaryllisgewächse'
-genus_de: 'Gekielter'
-species_de: 'Lauch'
+species_de: 'Gekielter'
+genus_de: 'Lauch'
 
 floration: 'Juni - Jul'
 

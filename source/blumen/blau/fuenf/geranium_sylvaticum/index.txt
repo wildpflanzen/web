@@ -3,8 +3,8 @@ genus: 'Geranium'
 species: 'Sylvaticum'
 
 family_de: 'Storchschnabelgewächse'
-genus_de: 'Wald'
-species_de: 'Storchschnabel'
+species_de: 'Wald'
+genus_de: 'Storchschnabel'
 
 floration: ''
 

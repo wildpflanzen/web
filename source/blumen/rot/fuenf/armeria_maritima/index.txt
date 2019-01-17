@@ -3,8 +3,8 @@ genus: 'Armeria'
 species: 'Maritima ssp. elongata'
 
 family_de: 'Bleiwurzgewächse'
-genus_de: 'Sand'
-species_de: 'Grasnelke'
+species_de: 'Sand'
+genus_de: 'Grasnelke'
 
 floration: 'Juni - August'
 

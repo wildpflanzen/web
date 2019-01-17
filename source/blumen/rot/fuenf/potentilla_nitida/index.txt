@@ -3,8 +3,8 @@ genus: 'Potentilla'
 species: 'Nitida'
 
 family_de: 'Rosengewächse'
-genus_de: 'Dolomiten'
-species_de: 'Fingerkraut'
+species_de: 'Dolomiten'
+genus_de: 'Fingerkraut'
 
 floration: 'Juli - September'
 

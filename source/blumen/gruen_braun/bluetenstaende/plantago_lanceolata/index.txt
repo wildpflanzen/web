@@ -3,8 +3,8 @@ genus: 'Plantago'
 species: 'Lanceolata'
 
 family_de: 'Wegerichgewächse'
-genus_de: 'Spitz'
-species_de: 'Wegerich'
+species_de: 'Spitz'
+genus_de: 'Wegerich'
 
 floration: ''
 

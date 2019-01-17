@@ -3,8 +3,8 @@ genus: 'Anchusa'
 species: 'Arvensis'
 
 family_de: 'Raublattgewächse'
-genus_de: 'Acker'
-species_de: 'Krummhals'
+species_de: 'Acker'
+genus_de: 'Krummhals'
 
 floration: 'Mai - September'
 

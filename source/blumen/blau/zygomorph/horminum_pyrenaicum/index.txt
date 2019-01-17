@@ -3,8 +3,8 @@ genus: 'Horminum'
 species: 'Pyrenaicum'
 
 family_de: 'Lippenblütengewächse'
-genus_de: 'Pyrenäen'
-species_de: 'Drachenmaul'
+species_de: 'Pyrenäen'
+genus_de: 'Drachenmaul'
 
 floration: 'Juni - August'
 

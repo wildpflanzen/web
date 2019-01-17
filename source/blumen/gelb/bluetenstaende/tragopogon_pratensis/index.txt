@@ -3,8 +3,8 @@ genus: 'Tragopogon'
 species: 'Pratensis'
 
 family_de: 'Korbblütengewächse'
-genus_de: 'Wiesen'
-species_de: 'Bocksbart'
+species_de: 'Wiesen'
+genus_de: 'Bocksbart'
 
 floration: 'Mai - Jul'
 
