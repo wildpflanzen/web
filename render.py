@@ -97,8 +97,8 @@ class HTML_generator():
       print('\nRendering html index ...')
 
       # Main index
-      html_template = self.jinja_environment('main-de.html')
-      filename = os.path.join('docs', 'index-main.html')
+      html_template = self.jinja_environment('index-groups.html')
+      filename = os.path.join('docs', 'index-groups.html')
       html = html_template.render(groups=self.database['groups'])
       self.write_file(filename, html)
 
