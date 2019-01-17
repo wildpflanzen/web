@@ -20,10 +20,15 @@ import subprocess
 import shutil
 from collections import UserDict
 
-imagemagick = '/bin/imagemagick/convert.exe'
+global options
 
 
 def main():
+
+   # Read options
+   global options
+   read_options('options.ini')
+
    # Read database
    print('\nReading data ...')
    database = Database()
@@ -62,6 +67,7 @@ class HTML_generator():
 
    def copy_static(self):
       print("Copying static files ...")
+      self.copy_files('source/static', 'docs/static')
       self.copy_files('templates/root', 'docs')
       self.copy_files('templates/static', 'docs/static')     
 
@@ -361,8 +367,16 @@ class Database(UserDict):
 
 
 # --------------------------------------------------------------------
-#    MAKE THUMBNAILS
+#    READ OPTIONS, MAKE THUMBNAILS 
 # --------------------------------------------------------------------
+
+def read_options(fname):
+   global options
+   print('\nReading options ...')
+   with codecs.open(os.path.join(fname), 'r', encoding='utf-8-sig') as fi:
+      data = fi.read()
+   options = yaml.load(data)
+   
 
 def make_thumbnails(database):
    print('\nMaking thumbnails ...')
@@ -380,18 +394,18 @@ def make_thumbnails(database):
 
             # Make thumbnail without overwrite
             if not os.path.isfile(thumb_out):
-               thumbnail(source_in, thumb_out, size='360x240')
+               thumbnail(source_in, thumb_out)
 
             # Copy image without overwrite
             if not os.path.isfile(image_out):
                shutil.copy2(source_in, image_out)
 
 
-def thumbnail(filein, thumb, size='320x240'):
-   global imagemagick
+def thumbnail(filein, thumb):
+   global options
    print('   Thumbnail: ' + thumb)
-   options = '-quality 88 -thumbnail %s -unsharp 0x.5' % size
-   command = imagemagick + ' ' + filein + ' ' + options + ' ' + thumb
+   options = ' '.join(options['thumb_options'])
+   command = options['imagemagick'] + ' ' + filein + ' ' + options + ' ' + thumb
    subprocess.call(command, shell=True)
 
 
