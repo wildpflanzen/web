@@ -103,11 +103,11 @@ class HTML_generator():
       self.make_index('family_de')
 
       # Make html genus index
-      self.make_index('genus', \
+      self.make_index('species', \
                       filter_func=lambda n:  n[0].upper() if len(n) else '')
 
       # Make html genus index
-      self.make_index('genus_de', \
+      self.make_index('species_de', \
                       filter_func=lambda n:  n[0].upper() if len(n) else '')
 
 
@@ -313,10 +313,12 @@ class Database(UserDict):
             if file[-4:].lower() == '.jpg' and file not in images:
                print('   Error, not in database: %s' % os.path.join(register['path'], file))
                
-         # Fill and test deutche name
-         for key in ['genus_de', 'species_de', 'family_de']:
+         # Create empty keys
+         for key in ['family', 'genus', 'species', 'family_de', 'genus_de', 'species_de']:
             if not key in register:
                register[key] = ''
+
+         # Test deutche name
          if register['splitpath'][1] in ['blumen']:
             if register['genus_de'] and len(register['species_de'])<1:
                print('   Warning, deutche genus without specie: %s' % os.path.join(register['path'], 'index.txt'))

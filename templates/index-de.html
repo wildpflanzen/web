@@ -21,22 +21,22 @@
       <h2>{{ key }}</h2>
       <ul>
       {%- if index.index_name == 'family' %}
-      {% for specie in species|sort(attribute='genus') %}
+      {% for specie in species|sort(attribute='species') %}
       <li><a href="{{specie.filename}}.html">{{ specie.genus }} {{ specie.species }} / {{ specie.species_de }} {{ specie.genus_de }} </a></li>
       {%- endfor %}
 
       {%- elif index.index_name == 'family_de' %}
-      {% for specie in species|sort(attribute='genus_de') %}
+      {% for specie in species|sort(attribute='species_de') %}
       <li><a href="{{specie.filename}}.html">{{ specie.genus_de }} {{ specie.species_de }} / {{ specie.genus }} {{ specie.species }}</a></li>
       {%- endfor %}
 
       {%- elif index.index_name == 'genus' %}
-      {% for specie in species|sort(attribute='genus') %}
+      {% for specie in species|sort(attribute='species') %}
       <li><a href="{{specie.filename}}.html">{{ specie.genus }} {{ specie.species }} / {{ specie.species_de }} {{ specie.genus_de }}</a></li>
       {%- endfor %}
 
       {%- elif index.index_name == 'genus_de' %}
-      {% for specie in species|sort(attribute='genus_de') %}
+      {% for specie in species|sort(attribute='species_de') %}
       <li><a href="{{specie.filename}}.html">{{ specie.genus_de }} {{ specie.species_de }} / {{ specie.genus }} {{ specie.species }}</a></li>
       {%- endfor %}
 
