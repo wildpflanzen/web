@@ -23,16 +23,16 @@
    <div class="wrapper">
 
 
-   <!-- Navigation -->
-   {% if group.splitpath[0] == 'insecta' %}{{ macros.naviglobal('besucher') }}
-   {%- else %}{{ macros.naviglobal('') }}{% endif %}
+   <!-- Global Navigation -->
+   {% if group.splitpath[0] == 'insecta' %}{{ macros.navi_global('besucher') }}
+   {%- else %}{{ macros.navi_global('') }}{% endif %}
 
-   <!-- Navigation -->
+   <!-- Local Navigation -->
    <div class="navi">
    <ul>
-   <li class="navi_select">{{ group.group_name }}
-   </li><li class="nav_right"><a href="{{ group.group_next.filename }}.html">&gt;</a>
-   </li><li class="nav_right"><a href="{{ group.group_prev.filename }}.html">&lt;</a>
+   <li class="next_prev"><a href="{{ group.group_next.filename }}.html">&lt;</a>
+   </li><li class="navi_select"><span class="btn">{{ group.group_name }}<span>
+   </li><li class="next_prev"><a href="{{ group.group_prev.filename }}.html">&gt;</a>
    </li>
    </ul>
    </div>

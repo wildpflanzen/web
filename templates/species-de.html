@@ -23,20 +23,21 @@
 
    <div class="wrapper">
 
-   <!-- Navigation -->
-   {% if register.splitpath[0] == 'insecta' %}{{ macros.naviglobal('besucher') }}
-   {%- else %}{{ macros.naviglobal('') }}{% endif %}
 
-   <!-- Navigation -->
+   <!-- Global Navigation -->
+   {% if register.splitpath[0] == 'insecta' %}{{ macros.navi_global('besucher') }}
+   {%- else %}{{ macros.navi_global('') }}{% endif %}
+
+   <!-- Local Navigation -->
    <div class="navi">
    <ul>
-   <li><a href="{{ register.group.filename }}.html">{{ register.group.group_name }}</a>
-   {% if False and register.genus_de and register.species_de %}</li><li>{{ register.genus_de }} {{ register.species_de }}{% endif %}
-   </li><li class="nav_right"><a href="{{ register.species_next.filename }}.html">&gt;</a>
-   </li><li class="nav_right"><a href="{{ register.species_prev.filename }}.html">&lt;</a>
+   <li class="next_prev"><a href="{{ register.species_next.filename }}.html">&lt;</a>
+   </li><li><a href="{{ register.group.filename }}.html">{{ register.group.group_name }}</a>
+   </li><li class="next_prev"><a href="{{ register.species_prev.filename }}.html">&gt;</a>
    </li>
    </ul>
    </div>
+
 
    <!-- Content -->
    <div class="content">

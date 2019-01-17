@@ -8,7 +8,7 @@
    <!-- Metadata -->
    {%- include 'metadata-de.html' %}
 
-   <title>WILDPFLANZEN</title>
+   <title>Wildpflanzen</title>
 
    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
    <link href="static/main-old.css" rel="stylesheet" type="text/css" media="all"/>
@@ -17,7 +17,6 @@
 
 
 <body>
-
    <!-- Header -->
    {%- include 'header.html' %}
 
@@ -25,19 +24,22 @@
    <div class="wrapper">
 
 
-   <!-- Navigation -->
-   {{ macros.naviglobal('main') }}
+   <!-- Global Navigation -->
+   {{ macros.navi_global('main') }}
 
-
+   <!-- Local Navigation -->
+   <div class="navi">
+   <ul>
+   <li class="navi_select"><span class="btn">KRAUTIGE PFLANZEN<span>
+   </li>
+   </ul>
+   </div>  
+   
+   
    <!-- Content -->
    <div class="content">
 
-
-<div id="navi3">
-<span class="navi31">Krautige Pflanzen</span>
-</div>
-
-<div id="farben">
+   <div id="farben">
 	    <div id="f_titel">
 		<div class="f_titel">Blütenfarbe</div>
 		<div class="f_titel2">Blütenblätter</div>
