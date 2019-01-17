@@ -1,44 +1,26 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
+{% extends "base.html" %}
 
-{%- import 'macros.txt' as macros %}
 
-<head>
-   <!-- Metadata -->
-   {%- include 'metadata-de.html' %}
+{% block page_title -%}Wildpflanzen{% endblock -%}
 
-   <title>Wildpflanzen</title>
 
-   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
+{% block extra_head -%}
    <link href="static/main-old.css" rel="stylesheet" type="text/css" media="all"/>
-   <link href="static/main.css" rel="stylesheet" type="text/css" media="all" />
-</head>
+{% endblock %}
 
 
-<body>
-   <!-- Header -->
-   {%- include 'header.html' %}
+{% block navi_global %}{{ macros.navi_global('main') }}{%- endblock %}
 
 
-   <div class="wrapper">
-
-
-   <!-- Global Navigation -->
-   {{ macros.navi_global('main') }}
-
-   <!-- Local Navigation -->
-   <div class="navi">
+{% block navi_local %}
    <ul>
    <li class="navi_select"><span class="btn">KRAUTIGE PFLANZEN<span>
    </li>
    </ul>
-   </div>  
+{%- endblock %}
    
-   
-   <!-- Content -->
-   <div class="content">
 
+{% block content %}
    <div id="farben">
 	    <div id="f_titel">
 		<div class="f_titel">Blütenfarbe</div>
@@ -100,37 +82,25 @@
    </div><!-- farben -->
 
 
-<div class="clear">&nbsp;</div>
-
-<div class="space_foot2">&nbsp;</div>
-
-<div id="navi4" style="margin-top:200px;">
-   <a href="insecta-arachnida.html"><span class="navi4">Arachnida</span></a>
-   <a href="insecta-coleoptera.html"><span class="navi4">Coleoptera</span></a>
-   <a href="insecta-diptera.html"><span class="navi4">Diptera</span></a>
-   <a href="insecta-hemiptera.html"><span class="navi4">Hemiptera</span></a>
-</div>
-<div id="navi4" style="margin-top:2px;">
-   <a href="insecta-hymenoptera.html"><span class="navi4">Hymenoptera</span></a>
-   <a href="insecta-lepidoptera.html"><span class="navi4">Lepidoptera</span></a>
-   <a href="insecta-orthoptera.html"><span class="navi4">Orthoptera</span></a>
-   <a href="insecta-insecta.html"><span class="navi4">Insecta.</span></a>
-</div>
-<div id="navi4" style="margin-top:16px">
-   <a href="grass.html"><span class="navi4">Gräser</span></a>
-   <a href="strauch.html"><span class="navi4">Sträucher</span></a>
-</div>
-
-   {%- include 'content-end.html' %}
-
-   </div> <!-- end content -->
-
-   </div> <!-- end wrapper -->
-
-   <!-- Footer -->
-   {%- include 'footer-de.html' %}
-
+   
+   
+   <div class="space_foot2">&nbsp;</div>
+   
+   <div id="navi4" style="margin-top:200px;">
+      <a href="insecta-arachnida.html"><span class="navi4">Arachnida</span></a>
+      <a href="insecta-coleoptera.html"><span class="navi4">Coleoptera</span></a>
+      <a href="insecta-diptera.html"><span class="navi4">Diptera</span></a>
+      <a href="insecta-hemiptera.html"><span class="navi4">Hemiptera</span></a>
    </div>
-</body>
-</html>
+   <div id="navi4" style="margin-top:2px;">
+      <a href="insecta-hymenoptera.html"><span class="navi4">Hymenoptera</span></a>
+      <a href="insecta-lepidoptera.html"><span class="navi4">Lepidoptera</span></a>
+      <a href="insecta-orthoptera.html"><span class="navi4">Orthoptera</span></a>
+      <a href="insecta-insecta.html"><span class="navi4">Insecta.</span></a>
+   </div>
+   <div id="navi4" style="margin-top:16px">
+      <a href="grass.html"><span class="navi4">Gräser</span></a>
+      <a href="strauch.html"><span class="navi4">Sträucher</span></a>
+   </div>
+{%- endblock %}
 

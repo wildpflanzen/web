@@ -1,49 +1,24 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
-
-{%- import 'macros.txt' as macros %}
-
-<head>
-   <!-- Metadata -->
-   {%- include 'metadata-de.html' %}
-
-   <title>{{ register.genus }} {{ register.species }} | Wildpflanzen</title>
-
-   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
-   <link href="static/main.css" rel="stylesheet" type="text/css" media="all" />
-</head>
+﻿{% extends "base.html" %}
 
 
-<body>
-
-   <!-- Header -->
-   {%- include 'header.html' %}
-
-
-   <div class="wrapper">
+{% block page_title -%}
+   {{ register.genus }} {{ register.species }} | Wildpflanzen
+{%- endblock %}
 
 
-   <!-- Global Navigation -->
-   {% if register.splitpath[0] == 'insecta' %}{{ macros.navi_global('besucher') }}
-   {%- else %}{{ macros.navi_global('') }}{% endif %}
-
-   <!-- Local Navigation -->
-   <div class="navi">
+{% block navi_local %}
    <ul>
    <li class="next_prev"><a href="{{ register.species_next.filename }}.html">&lt;</a>
    </li><li><a href="{{ register.group.filename }}.html">{{ register.group.group_name }}</a>
    </li><li class="next_prev"><a href="{{ register.species_prev.filename }}.html">&gt;</a>
    </li>
    </ul>
-   </div>
+{%- endblock %}
 
 
-   <!-- Content -->
-   <div class="content">
-
+{% block content %}
    <!-- Species name -->
-   <h1>{% if register.genus_de and register.species_de %}{{ register.genus_de }} {{ register.species_de }} / {% endif %} {{ register.genus }} {{ register.species }}</h1>
+   <h1>{% if register.genus_de and register.species_de %}{{ register.species_de }} {{ register.genus_de }} / {% endif %} {{ register.genus }} {{ register.species }}</h1>
    <div class="sp_info">
    <div class="family">{{ register.family_de }} / {{ register.family }}</div>
    {% if register.floration %}<div class="floration">Blütezeit: {{ register.floration }}</div>{% endif %}
@@ -64,16 +39,20 @@
    {% endfor %}
    </div>
 
-   {%- include 'content-end.html' %}
-   
-   </div> <!-- Content -->
+   <div class="nach_oben"><a href="#header">nach oben</a></div>
+{%- endblock %}
 
 
-   </div>  <!-- Wrapper -->
-
-
-   <!-- Footer -->
-   {%- include 'footer-de.html' %}
-
-</body>
-</html>
+{% block data %}
+   keys: [{% for key in register.keys() %}'{{key}}', {% endfor %}]
+   {%- for key in ['family', 'genus', 'species', 'family_de', 'species_de', 'genus_de', 'floration', 'thumb', 'path' ] %}
+   {{key}}: '{{ register[key] }}'
+   {%- endfor %}
+   sessions:
+   {%- for session in register.sessions %}
+     - {% for key in ['date', 'location'] -%}
+       {{key}}: '{{ session[key] }}'
+       {% endfor -%}
+       images: [{%- for image in session.images %}{{ image }}, {% endfor %}]
+       {% endfor %}
+{%- endblock %}

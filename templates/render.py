@@ -24,15 +24,15 @@ global options
 
 
 def main():
+   global options
 
    # Read options
-   global options
    read_options('options.ini')
 
    # Read database
    print('\nReading data ...')
    database = Database()
-   database.read('source')
+   database.read(options['source'])
 
    # Make thumbnails
    make_thumbnails(database)
@@ -46,7 +46,6 @@ def main():
 
    # Generate html files
    generator.html_species()
-   generator.html_groups()
    generator.html_index()
    generator.html_extra()
 
@@ -59,17 +58,18 @@ def main():
 #    HTML RENDERING
 # --------------------------------------------------------------------
 class HTML_generator():
+   global options
 
    def __init__(self, database):
       self.database = database
       self.overwrite = False
-      self.verbose = True
+      self.verbose = options['verbose']
 
    def copy_static(self):
-      print("Copying static files ...")
-      self.copy_files('source/static', 'docs/static')
-      self.copy_files('templates/root', 'docs')
-      self.copy_files('templates/static', 'docs/static')     
+      print("\nCopying static files ...")
+      self.copy_files(options['source'] + '/static', options['output'] + '/static')
+      self.copy_files('root', options['output'])
+      self.copy_files('static', options['output'] + '/static')     
 
 
    def copy_files(self, src, dst):
@@ -84,23 +84,17 @@ class HTML_generator():
 
    def html_extra(self):
       print('\nRendering html extra ...')
-      path = 'templates/extra'
+      path = 'extra'
       extra = [f for f in os.listdir(path) if f[-5:].lower() == '.html']
       for fname in extra:
-         html_template = self.jinja_environment(fname, path=['templates', 'templates/extra'])
-         filename = os.path.join('docs', fname)
+         html_template = self.jinja_environment(fname, path=['', 'extra'])
+         filename = os.path.join(options['output'], fname)
          html = html_template.render(groups=self.database['groups'])
          self.write_file(filename, html)
       
 
    def html_index(self):
       print('\nRendering html index ...')
-
-      # Main index
-      html_template = self.jinja_environment('index-groups.html')
-      filename = os.path.join('docs', 'index-groups.html')
-      html = html_template.render(groups=self.database['groups'])
-      self.write_file(filename, html)
 
       # Make html family index
       self.make_index('family')
@@ -138,10 +132,10 @@ class HTML_generator():
       # Jinja template
       html_template = self.jinja_environment('index-de.html')
       html = html_template.render(index=self.index)
-      output = os.path.join('docs', 'index-' + re.sub('[_ ]', '-', index_name)+'.html')
+      output = os.path.join(options['output'], 'index-' + re.sub('[_ ]', '-', index_name)+'.html')
       self.write_file(output, html)
 
-
+ 
    def html_groups(self):
       print('\nRendering html groups ...')
 
@@ -165,12 +159,12 @@ class HTML_generator():
       for register in self.database['species']:
          if not 'group' in register:
             continue
-         filename = os.path.join('docs', register['filename'] + '.html')
+         filename = os.path.join(options['output'], register['filename'] + '.html')
          html = html_template.render(register=register)
          self.write_file(filename, html)
 
 
-   def jinja_environment(self, template_file, path='templates'):
+   def jinja_environment(self, template_file, path=''):
       # Setup Jinja environment
       jinja_env = Environment(
          loader=FileSystemLoader(searchpath=path, encoding='utf-8-sig') )
@@ -192,6 +186,7 @@ class HTML_generator():
 # --------------------------------------------------------------------
 
 class Database(UserDict):
+   global options
 
    def __init__(self):
       UserDict.__init__(self) 
@@ -203,6 +198,7 @@ class Database(UserDict):
    def read(self, path):
       self.read_paths(path)
       self.test_errors()
+      self.combine_database()
       
 
    def read_paths(self, path):
@@ -304,6 +300,8 @@ class Database(UserDict):
             for image in session['images']:
                if self.test_file(register['path'], image):
                   images.append(image)
+                  
+         # Test thumbnail image
          if 'thumb' in register and not register['thumb'] in images:
             if self.test_file(register['path'], register['thumb']):
                images.append(register['thumb'])
@@ -313,19 +311,31 @@ class Database(UserDict):
          # Test if image files are in database
          for file in os.listdir(register['path']):
             if file[-4:].lower() == '.jpg' and file not in images:
-                  print('   Error, not in database: %s' % os.path.join(register['path'], file))
-
+               print('   Error, not in database: %s' % os.path.join(register['path'], file))
+               
+         # Fill and test deutche name
+         for key in ['genus_de', 'species_de', 'family_de']:
+            if not key in register:
+               register[key] = ''
+         if register['splitpath'][1] in ['blumen']:
+            if register['genus_de'] and len(register['species_de'])<1:
+               print('   Warning, deutche genus without specie: %s' % os.path.join(register['path'], 'index.txt'))
+            if ' ' in register['species_de']:
+               print('   ' + str(register['species_de']))
+               if register['species_de'][-1] != '-':
+                  print('   Warning, subspecie without hyphen: %s' % os.path.join(register['path'], 'index.txt'))
+         
          # Link species with group
          group_path = register['group_path']
          if not group_path in self['groups']:
-            print('   species without group: %s' % register['path'])
+            print('   Warning, species without group: %s' % register['path'])
             continue
          group = self['groups'][group_path]
          if not register in group['species']:
              group['species'].append(register)
              register['group'] = group
          else:
-            print('   duplicated species: %s' % group_path)
+            print('   Error, duplicated species: %s' % group_path)
 
       # Delete empty groups
       clean_groups = {}
@@ -334,6 +344,8 @@ class Database(UserDict):
             clean_groups[key] = group
       self['groups'] = clean_groups
 
+
+   def combine_database(self):
       # Sort groups and link in chain
       keys = [k for k in self['groups'].keys()]
       keys.sort()
@@ -372,6 +384,7 @@ class Database(UserDict):
 
 def read_options(fname):
    global options
+   
    print('\nReading options ...')
    with codecs.open(os.path.join(fname), 'r', encoding='utf-8-sig') as fi:
       data = fi.read()
@@ -379,6 +392,8 @@ def read_options(fname):
    
 
 def make_thumbnails(database):
+   global options
+
    print('\nMaking thumbnails ...')
    thumbfiles = {}
    for register in database['species']:
@@ -386,11 +401,10 @@ def make_thumbnails(database):
          for i, image in enumerate(session['images']):
             # Add relative path
             thumbname = image_name(register, image, session)
-            if register['thumb'] == image:
-               register['thumb'] = thumbname
+            register['thumbname'] = thumbname
             source_in = os.path.join(register['path'], image)
-            image_out = os.path.join('docs', 'images', thumbname)
-            thumb_out = os.path.join('docs', 'thumbs', thumbname)
+            image_out = os.path.join(options['output'], 'images', thumbname)
+            thumb_out = os.path.join(options['output'], 'thumbs', thumbname)
 
             # Make thumbnail without overwrite
             if not os.path.isfile(thumb_out):
@@ -404,12 +418,13 @@ def make_thumbnails(database):
 def thumbnail(filein, thumb):
    global options
    print('   Thumbnail: ' + thumb)
-   options = ' '.join(options['thumb_options'])
-   command = options['imagemagick'] + ' ' + filein + ' ' + options + ' ' + thumb
+   thumb_options = ' '.join(options['thumb_options'])
+   command = options['imagemagick'] + ' ' + filein + ' ' + thumb_options + ' ' + thumb
    subprocess.call(command, shell=True)
 
 
 def image_name(register, imagename, session=None):
+   global options
    thumbname = register['filename'] + '-' + re.sub('[^0-9]', '', imagename) + '.jpg'
    thumbname = re.sub('-+', '-', thumbname)
    if session:

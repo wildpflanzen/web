@@ -1,36 +1,13 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
-
-{%- import 'macros.txt' as macros %}
-
-<head>
-   <!-- Metadata -->
-   {%- include 'metadata-de.html' %}
-
-   <title>Wildpflanzen</title>
-
-   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
-   <link href="static/main-old.css" rel="stylesheet" type="text/css" media="all"/>
-   <link href="static/main.css" rel="stylesheet" type="text/css" media="all" />
-</head>
+{% extends "base.html" %}
 
 
-<body>
-   <!-- Header -->
-   {%- include 'header.html' %}
+{% block page_title -%}Kontakt | Wildpflanzen{% endblock -%}
 
 
-   <div class="wrapper">
+{% block navi_global %}{{ macros.navi_global('kontakt') }}{%- endblock %}
 
 
-   <!-- Global Navigation -->
-   {{ macros.navi_global('') }}
-
-
-   <!-- Content -->
-   <div class="content">
-
+{% block content %}
 	<p>Liebe Besucher,<br />
       um uns die wunderbare Vielfalt der Natur n&auml;her beizubringen, 
       bearbeiten wir diese kleine Datenbank  und stellen sie gerne 
@@ -51,19 +28,8 @@
 	</p>
 	<p> Unser Kontaktadresse lautet: info (at) wildpflanzen.com.de </p>
 	<p> Viel Spa&beta; im sch&ouml;nen Gr&uuml;nen! </p>
+{%- endblock %}
 
-   {%- include 'content-end.html' %}
-
-   </div> <!-- end content -->
-
-   </div> <!-- end wrapper -->
-
-   <!-- Footer -->
-   {%- include 'footer-de.html' %}
-
-   </div>
-</body>
-</html>
 
 
 

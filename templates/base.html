@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
+
+{%- import 'macros.txt' as macros %}
+
+<head>
+   <!-- Metadata -->
+   {% block metadata %}
+   <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+   <meta http-equiv="Content-Type" content="text/html" />
+   <meta http-equiv="Content-Language" content="de" />
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+   <meta name="description" lang="en" content="" />
+   <meta name="keywords" lang="en" content="" />
+
+   <meta name="author" content="Irene Pardo" />
+   <meta name="copyright" content="CC BY-SA 4.0" />
+   {% endblock %}
+
+   <title>{% block page_title %}{% endblock %}</title>
+
+   {% block links %}
+   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
+   <link href="static/main.css" rel="stylesheet" type="text/css" media="all" />
+   {% endblock %}
+   
+   {% block extra_head %}
+   {% endblock %}   
+</head>
+
+<body>
+   <!-- Header -->
+   <div id="header" class="header">
+   {% block header %}
+   <h1>Wildpflanzen</h1>
+   {% endblock %}
+   </div> <!-- Header end -->
+
+   <div class="wrapper">
+
+   <!-- Global Navigation -->
+   {% block navi_global %}
+   {{ macros.navi_global('') }}
+   {% endblock %}
+
+   <!-- Local Navigation -->
+   <div class="navi">
+   {% block navi_local %}
+   {% endblock %}
+   </div>   
+
+   <!-- Content -->
+   <div class="content"> 
+   {% block content %}
+   {% endblock %}  
+   </div>  <!-- Content end -->
+
+   </div>  <!-- Wrapper end -->
+
+   <!-- Footer -->
+   <div class="footer">
+   {% block footer %}
+       <div class="footer_links">
+       <ul>
+       <li><a href="impressum.html">Impressum</a>
+       </li><li><a href="cookies.html">Cookies</a>
+       </li><li><a href="kontakt.html">Kontakt</a>
+       </li>
+       </ul>
+       </div>
+   
+      <p>Contents available under the 
+      <a rel="license" onclick="this.target='_blank'" 
+         href="http://creativecommons.org/licenses/by-sa/4.0/">
+         Creative Commons Attribution-ShareAlike 4.0 License
+      </a>
+      </p>
+   {% endblock %}
+   </div><!-- Footer end -->
+
+
+   <!-- Database
+   {% block data -%}
+   {%- endblock %}
+   -->
+
+   <!-- Page Build with Python and Jinja2 templates -->
+</body>
+</html>

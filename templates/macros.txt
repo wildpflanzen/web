@@ -26,8 +26,8 @@
 
 
 {%- macro index_name(option='') %}
-   {%- if option == 'genus_de' %}Deutche Gattung
-   {%- elif option == 'genus' %}Wissenschaftliche Gattung
+   {%- if option == 'genus_de' %}Deutche Allgemein
+   {%- elif option == 'genus' %}Wissenschaftliche Allgemein
    {%- elif option == 'family_de' %}Deutche Familien
    {%- elif option == 'family' %}Wissenschaftliche Familien
    {%- endif -%} 

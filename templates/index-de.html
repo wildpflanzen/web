@@ -1,38 +1,20 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
-
-{%- import 'macros.txt' as macros %}
-
-<head>
-   <!-- Metadata -->
-   {%- include 'metadata-de.html' %}
-
-   <title>{{ index.name }} Index | Wildpflanzen</title>
-
-   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
-   <link href="static/main.css" rel="stylesheet" type="text/css" media="all" />
-</head>
+﻿{% extends "base.html" %}
 
 
-<body>
-   <!-- Header -->
-   {%- include 'header.html' %}
+{% block page_title -%}{{ index.name }} Index | Wildpflanzen{%- endblock -%}
 
 
-   <div class="wrapper">
-
-
-   <!-- Global Navigation -->
+{% block navi_global %}
    {{ macros.navi_global('index') }}
+{%- endblock %}
 
-   <!-- Local Navigation -->
+
+{% block navi_local %}
    {{ macros.navi_index(index.index_name) }}
+{%- endblock %}
 
 
-   <!-- Content -->
-   <div class="content">
-
+{% block content %}
    <h1>{{ macros.index_name(index.index_name) }}</h1>
 
    {% for key in index['keys'] %} {% set species = index['species'][key] %}
@@ -40,7 +22,7 @@
       <ul>
       {%- if index.index_name == 'family' %}
       {% for specie in species|sort(attribute='genus') %}
-      <li><a href="{{specie.filename}}.html">{{ specie.genus }} {{ specie.species }} / {{ specie.genus_de }} {{ specie.species_de }}</a></li>
+      <li><a href="{{specie.filename}}.html">{{ specie.genus }} {{ specie.species }} / {{ specie.species_de }} {{ specie.genus_de }} </a></li>
       {%- endfor %}
 
       {%- elif index.index_name == 'family_de' %}
@@ -50,7 +32,7 @@
 
       {%- elif index.index_name == 'genus' %}
       {% for specie in species|sort(attribute='genus') %}
-      <li><a href="{{specie.filename}}.html">{{ specie.genus }} {{ specie.species }} / {{ specie.genus_de }} {{ specie.species_de }}</a></li>
+      <li><a href="{{specie.filename}}.html">{{ specie.genus }} {{ specie.species }} / {{ specie.species_de }} {{ specie.genus_de }}</a></li>
       {%- endfor %}
 
       {%- elif index.index_name == 'genus_de' %}
@@ -65,16 +47,6 @@
       {% endif %}
       </ul>
    {% endfor %}
-
-   {%- include 'content-end.html' %}
    
-   </div>  <!-- Content -->
-
-
-   </div>  <!-- Wrapper -->
-
-   <!-- Footer -->
-   {%- include 'footer-de.html' %}
-
-</body>
-</html>
+   <div class="nach_oben"><a href="#header">nach oben</a></div>
+{%- endblock %}
