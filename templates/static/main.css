@@ -1,4 +1,6 @@
-﻿/*** General styles ***/
+﻿/******************************
+   General styles
+ ******************************/
 
 body { 
 margin:0 8px;
@@ -29,6 +31,11 @@ margin-top: 40px;
 margin-bottom: 32px;
 }
 
+a {
+color: #404040;
+text-decoration: none;
+}
+
 ul {
 display: inline-block;
 }
@@ -51,8 +58,14 @@ text-align: center;
 padding: 8px;
 }
 
+.nach_oben {
+text-align: right;
+}
 
-/*** Navigation bar ***/
+
+/******************************
+   Navigation bar 
+ ******************************/
 
 .navi, .naviglobal {
 margin-top: 24px;
@@ -110,7 +123,10 @@ border-right: none;
 width: 48px;
 }
 
-/*** Index pages ***/
+
+/******************************
+   Index pages
+ ******************************/
 
 .index_species {
 display: inline-block;
@@ -151,7 +167,9 @@ cursor: pointer;
 }
 
 
-/*** Species pages ***/
+/******************************
+   Species pages
+ ******************************/
 
 .sp_session {
 margin-bottom: 16px;
@@ -185,7 +203,9 @@ margin: 0;
 }
 
 
-/*** Footer ***/
+/******************************
+   Footer
+ ******************************/
 
 .footer {
 max-width: 1024px;
@@ -209,6 +229,7 @@ height: 24px;
 display: inline-block;
 font-family: Helvetica, Arial, sans-serif;
 font-size: 12px;
+color: #404040;
 margin: 0;
 padding: 2px 10px;
 text-align: center;
@@ -221,5 +242,6 @@ border-right: none;
 
 .footer a {
 text-decoration: none;
-color: rgb(64, 64, 64);
+color: #404040;
 }
+

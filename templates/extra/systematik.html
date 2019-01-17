@@ -27,29 +27,36 @@
    <!-- Global Navigation -->
    {{ macros.navi_global('systematik') }}
 
+   <!-- Local Navigation -->
+   <div class="navi">
+   <ul>
+   <li class="navi_select"><span class="btn">PLANTAE<span>
+   </li>
+   </ul>
+   </div>
+
 
    <!-- Content -->
    <div class="content">
 
 
 
-   <div id="navi3"> <span class="navi31">Plantae</span></div>
-   
+
+
    <h4><a target="_blank" href="static/mabberley_rothmaler_fischer.pdf"title="Link zum PDF">Nach Mabberley, Rothmaler, Fischer &rarr;</a></h4>
-   
+
    <div class="content_s">
      <a target="_blank" href="static/eukarya_g.jpg" title="vergr&ouml;ssern"><img style="border:solid 1px #CDB7B5;" src="static/eukarya2.jpg" alt="img"/></a>
    </div>
    <div class="linnie">&nbsp;</div><div class="nach_oben"><a href="#titel">nach oben</a></div>
-   
+
    <div class="content_s">
      <a target="_blank" href="static/polypodiopsida_g.jpg" title="vergr&ouml;ssern"><img style="border:solid 1px #CDB7B5;" src="static/polypodiopsida2.jpg" alt="img"/></a>
    </div>
    <p>...In Bearbeitung</p>
-   
-   <div class="linnie">&nbsp;</div>
-   <div class="nach_oben"><a href="#titel">nach oben</a></div>
 
+
+   {%- include 'content-end.html' %}
 
    </div> <!-- end content -->
 
