@@ -29,10 +29,10 @@
    <!-- Group species -->
    {% for species in group.species %}
    <div class="index_species">
-   <div class="index_thumb"><a href="{{ species.filename }}.html"><img src="thumbs/{{ species.thumb }}" alt="{{ species.genus }} {{ species.species }}" /></a></div>
+   <div class="index_thumb"><a href="{{ species.filename }}.html"><img src="thumbs/{{ species.thumbname }}" alt="{{ species.genus }} {{ species.species }}" /></a></div>
    <div class="index_name"><a href="{{ species.filename }}.html">{{ species.species_de }} {{ species.genus_de }} / {{ species.genus }} {{ species.species }}</a></div>
    </div>
    {% endfor %}
 
-   <div class="nach_oben"><a href="#header">nach oben</a></div>
+   {{ macros.nach_oben() }}
 {%- endblock %}

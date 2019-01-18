@@ -1,7 +1,7 @@
 ﻿{% extends "base.html" %}
 
 
-{% block page_title -%}{{ index.name }} Index | Wildpflanzen{%- endblock -%}
+{% block page_title -%}{{ macros.index_title(index.index_name) }} | Wildpflanzen{%- endblock -%}
 
 
 {% block navi_global %}
@@ -15,38 +15,43 @@
 
 
 {% block content %}
-   <h1>{{ macros.index_name(index.index_name) }}</h1>
+   <!-- Page title -->
+   <h1>{{ macros.index_title(index.index_name) }}</h1>
+   
+   {% for key in index['keys'] %}<a href='#index-{{key}}'>{{key}}</a> {% endfor %}
 
-   {% for key in index['keys'] %} {% set species = index['species'][key] %}
-      <h2>{{ key }}</h2>
+   {% for key in index['keys'] %} {% set species = index.species[key] %}
+      <h2 id='index-{{key}}'>{{ key }}</h2>
       <ul>
-      {%- if index.index_name == 'family' %}
-      {% for specie in species|sort(attribute='species') %}
-      <li><a href="{{specie.filename}}.html">{{ specie.genus }} {{ specie.species }} / {{ specie.species_de }} {{ specie.genus_de }} </a></li>
-      {%- endfor %}
-
-      {%- elif index.index_name == 'family_de' %}
-      {% for specie in species|sort(attribute='species_de') %}
-      <li><a href="{{specie.filename}}.html">{{ specie.genus_de }} {{ specie.species_de }} / {{ specie.genus }} {{ specie.species }}</a></li>
-      {%- endfor %}
+      {%- if index.index_name == 'genus_de' %}
+         {% for specie in species|sort(attribute='name_de') %}
+         <li><a href="{{specie.filename}}.html">{% if specie.genus_de %}{{ specie.genus_de }}, {% endif %}{{ specie.species_de }} / {{ specie.genus }} {{ specie.species }}</a></li>
+         {%- endfor %}
 
       {%- elif index.index_name == 'genus' %}
-      {% for specie in species|sort(attribute='species') %}
-      <li><a href="{{specie.filename}}.html">{{ specie.genus }} {{ specie.species }} / {{ specie.species_de }} {{ specie.genus_de }}</a></li>
-      {%- endfor %}
+         {% for specie in species|sort(attribute='genus') %}
+         <li><a href="{{specie.filename}}.html">{{ specie.genus }} {{ specie.species }} / {% if specie.genus_de %}{{ specie.genus_de }}, {% endif %}{{ specie.species_de }}</a></li>
+         {%- endfor %}
 
-      {%- elif index.index_name == 'genus_de' %}
-      {% for specie in species|sort(attribute='species_de') %}
-      <li><a href="{{specie.filename}}.html">{{ specie.genus_de }} {{ specie.species_de }} / {{ specie.genus }} {{ specie.species }}</a></li>
-      {%- endfor %}
+      {%- elif index.index_name == 'family' %}
+         {% for specie in species|sort(attribute='genus') %}
+         <li><a href="{{specie.filename}}.html">{{ specie.genus }} {{ specie.species }} / {% if specie.genus_de %}{{ specie.genus_de }}, {% endif %}{{ specie.species_de }} </a></li>
+         {%- endfor %}
+
+      {%- elif index.index_name == 'family_de' %}
+         {% for specie in species|sort(attribute='name_de') %}
+         <li><a href="{{specie.filename}}.html">{% if specie.genus_de %}{{ specie.genus_de }}, {% endif %}{{ specie.species_de }} / {{ specie.genus }} {{ specie.species }}</a></li>
+         {%- endfor %}
 
       {%- else %}
 
-      <!-- Error, unknown index "{{index.index_name}}" -->
+         <!-- Error, unknown index: "{{index.index_name}}" -->
 
       {% endif %}
       </ul>
+
+      {{ macros.nach_oben() }}
+
    {% endfor %}
    
-   <div class="nach_oben"><a href="#header">nach oben</a></div>
 {%- endblock %}

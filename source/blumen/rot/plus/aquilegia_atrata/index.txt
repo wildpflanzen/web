@@ -4,7 +4,7 @@ species: 'Atrata'
 
 family_de: 'Hahnenfuβgewächse'
 species_de: 'Schwarzviolette'
-genus_de: 'Akele'
+genus_de: 'Akelei'
 
 floration: 'Mai - Jul'
 

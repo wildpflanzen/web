@@ -20,34 +20,31 @@ import subprocess
 import shutil
 from collections import UserDict
 
-global options
-
-
 def main():
-   global options
 
    # Read options
-   read_options('options.ini')
+   options = read_options('options.ini')
 
    # Read database
    print('\nReading data ...')
-   database = Database()
-   database.read(options['source'])
+   database = Database(options)
+   database.read()
 
    # Make thumbnails
-   make_thumbnails(database)
+   make_thumbnails(database, options)
 
    # Make html pages
-   generator = HTML_generator(database)
+   generator = HTML_generator(database, options)
    generator.overwrite = True
 
    # Copy static files
    generator.copy_static()
 
    # Generate html files
-   generator.html_species()
+   #generator.html_species()
+   #generator.html_groups()
    generator.html_index()
-   generator.html_extra()
+   #generator.html_extra()
 
    
    # End
@@ -58,18 +55,20 @@ def main():
 #    HTML RENDERING
 # --------------------------------------------------------------------
 class HTML_generator():
-   global options
 
-   def __init__(self, database):
+   def __init__(self, database, options):
       self.database = database
       self.overwrite = False
       self.verbose = options['verbose']
+      self.output = options['output']
+      self.source = options['source']
+      
 
    def copy_static(self):
       print("\nCopying static files ...")
-      self.copy_files(options['source'] + '/static', options['output'] + '/static')
-      self.copy_files('root', options['output'])
-      self.copy_files('static', options['output'] + '/static')     
+      self.copy_files(self.source + '/static', self.output + '/static')
+      self.copy_files('root', self.output)
+      self.copy_files('static', self.output + '/static')     
 
 
    def copy_files(self, src, dst):
@@ -88,13 +87,20 @@ class HTML_generator():
       extra = [f for f in os.listdir(path) if f[-5:].lower() == '.html']
       for fname in extra:
          html_template = self.jinja_environment(fname, path=['', 'extra'])
-         filename = os.path.join(options['output'], fname)
+         filename = os.path.join(self.output, fname)
          html = html_template.render(groups=self.database['groups'])
          self.write_file(filename, html)
       
 
    def html_index(self):
-      print('\nRendering html index ...')
+
+      # Make html genus index
+      self.make_index('genus')
+
+      # Make html genus_de index
+      for specie in self.database['species']:
+         specie['name_de'] = self.getindex(specie, 'genus_de', 'species_de')
+      self.make_index('genus_de', 'species_de')
 
       # Make html family index
       self.make_index('family')
@@ -102,37 +108,48 @@ class HTML_generator():
       # Make html family_de index
       self.make_index('family_de')
 
-      # Make html genus index
-      self.make_index('species', \
-                      filter_func=lambda n:  n[0].upper() if len(n) else '')
 
-      # Make html genus index
-      self.make_index('species_de', \
-                      filter_func=lambda n:  n[0].upper() if len(n) else '')
+   def getindex(self, variable, index1, index2=''):
+      res = ''
+      if index1 in variable and variable[index1]:
+         res = variable[index1]
+      if index2 and index2 in variable and variable[index2]:
+         res = res + ' ' + variable[index2]
+      res = res.strip(' ')
+      return res
 
-
-
-   def make_index(self, index_name, filter_func=lambda n: n):
+                
+   def make_index(self, index1, index2=''):
+      print('\nRendering index: %s %s' % (index1, index2)) 
       sorted_species =  {}
       for specie in self.database['species']:
-         for k in [index_name, 'genus', 'genus_de', 'specie', 'specie_de']:
-            if not k in specie:
-               specie[k] = '{unknown}'
+         name = self.getindex(specie, index1, index2)
 
-         key = filter_func(specie[index_name])
+         # Test if name exists and select first character
+         if not name:
+            if self.verbose: print('x', sep='', end='')
+            continue
+         else:
+            if self.verbose: print('.', sep='', end='')
+         key = name[0].upper()
+
+         # Add new specie
          if key in sorted_species:
             sorted_species[key].append(specie)
          else:
             sorted_species[key] = [specie]
+      if self.verbose: print()
+
+      # Sort key characters
       keys = [k for k in sorted_species.keys()]
       keys.sort()
       self.index = {'keys': keys, 'species': sorted_species }
-      self.index['index_name'] = index_name
+      self.index['index_name'] = index1
 
       # Jinja template
       html_template = self.jinja_environment('index-de.html')
       html = html_template.render(index=self.index)
-      output = os.path.join(options['output'], 'index-' + re.sub('[_ ]', '-', index_name)+'.html')
+      output = os.path.join(self.output, 'index-' + re.sub('[_ ]', '-', index1)+'.html')
       self.write_file(output, html)
 
  
@@ -144,7 +161,7 @@ class HTML_generator():
 
       # Make html group files
       for group_path, group in self.database['groups'].items():
-         filename = os.path.join('docs', group['filename'] + '.html')
+         filename = os.path.join(self.output, group['filename'] + '.html')
          html = html_template.render(group=group)
          self.write_file(filename, html)
 
@@ -159,7 +176,7 @@ class HTML_generator():
       for register in self.database['species']:
          if not 'group' in register:
             continue
-         filename = os.path.join(options['output'], register['filename'] + '.html')
+         filename = os.path.join(self.output, register['filename'] + '.html')
          html = html_template.render(register=register)
          self.write_file(filename, html)
 
@@ -186,38 +203,40 @@ class HTML_generator():
 # --------------------------------------------------------------------
 
 class Database(UserDict):
-   global options
 
-   def __init__(self):
+   def __init__(self, options):
       UserDict.__init__(self) 
       self['groups'] = {}
       self['species'] = []
       self.filenames = []
+      self.source = options['source']
 
 
-   def read(self, path):
-      self.read_paths(path)
+   def read(self):
+      self.read_paths(self.source)
       self.test_errors()
       self.combine_database()
       
 
-   def read_paths(self, path):
+   def read_paths(self, basepath, path=''):
       # Process files
-      fnames = [f.lower() for f in os.listdir(path)]
-      if 'index.txt' in fnames:
-         self.read_data(path, 'index.txt')
+      fnames = os.listdir(os.path.join(basepath, path))
+      for f in fnames:
+         if 'index.txt' in f.lower():
+            self.read_data(basepath, path, f)
 
       # Recurse subdirs
       for f in fnames:
-         fullname = os.path.join(path, f)
+         fullname = os.path.join(basepath, path, f)
          if os.path.isdir(fullname):
-            self.read_paths(fullname)
+            self.read_paths(basepath, os.path.join(path, f))
 
 
-   def read_data(self, path, fname):
+   def read_data(self, basepath, path, fname):
 
       # Read yaml documents from file
-      with codecs.open(os.path.join(path, fname), 'r', encoding='utf-8-sig') as fi:
+      fullpath = os.path.join(basepath, path)
+      with codecs.open(os.path.join(fullpath, fname), 'r', encoding='utf-8-sig') as fi:
          data = fi.read()
       docs = [d for d in yaml.load_all(data)]
         
@@ -225,9 +244,9 @@ class Database(UserDict):
       # Create register with first yaml document and add path
       self.register = docs[0]
       # Complete source path
-      self.register['path'] = path.replace('\\', '/')
+      self.register['path'] = path.replace('\\', '/')      
       # Path clasification
-      self.register['splitpath'] = self.register['path'].split('/')[1:]
+      self.register['splitpath'] = self.register['path'].split('/')
 
       if 'species' in self.register:
          # Register of species
@@ -282,6 +301,8 @@ class Database(UserDict):
       # Test if duplicated
       if name in self.filenames:
          print('   Error, duplicated name: %s' % name)
+         print(self.register)
+         input()
       else:
          self.filenames.append(name)
 
@@ -294,6 +315,7 @@ class Database(UserDict):
 
       # Test all species
       for register in self['species']:
+         
          # Test if database images exists
          images = []
          for session in register['sessions']:
@@ -309,12 +331,13 @@ class Database(UserDict):
             register['thumb'] = images[0]
 
          # Test if image files are in database
-         for file in os.listdir(register['path']):
+         for file in os.listdir(os.path.join(self.source, register['path'])):
             if file[-4:].lower() == '.jpg' and file not in images:
                print('   Error, not in database: %s' % os.path.join(register['path'], file))
                
          # Create empty keys
-         for key in ['family', 'genus', 'species', 'family_de', 'genus_de', 'species_de']:
+         for key in ['family', 'genus', 'species',
+                     'family_de', 'genus_de', 'species_de']:
             if not key in register:
                register[key] = ''
 
@@ -340,11 +363,11 @@ class Database(UserDict):
             print('   Error, duplicated species: %s' % group_path)
 
       # Delete empty groups
-      clean_groups = {}
+      used_groups = {}
       for key, group in self['groups'].items():
          if group['species']:
-            clean_groups[key] = group
-      self['groups'] = clean_groups
+            used_groups[key] = group
+      self['groups'] = used_groups
 
 
    def combine_database(self):
@@ -373,7 +396,7 @@ class Database(UserDict):
 
    # Test if file exists
    def test_file(self, path, file):
-      filename = os.path.join(path, file)
+      filename = os.path.join(self.source, path, file)
       if not os.path.isfile(filename):
          print("   Error, file doesn't exitst: %s" % filename)
          return None
@@ -384,18 +407,15 @@ class Database(UserDict):
 #    READ OPTIONS, MAKE THUMBNAILS 
 # --------------------------------------------------------------------
 
-def read_options(fname):
-   global options
-   
+def read_options(fname):   
    print('\nReading options ...')
    with codecs.open(os.path.join(fname), 'r', encoding='utf-8-sig') as fi:
       data = fi.read()
    options = yaml.load(data)
+   return options
    
 
-def make_thumbnails(database):
-   global options
-
+def make_thumbnails(database, options):
    print('\nMaking thumbnails ...')
    thumbfiles = {}
    for register in database['species']:
@@ -410,15 +430,14 @@ def make_thumbnails(database):
 
             # Make thumbnail without overwrite
             if not os.path.isfile(thumb_out):
-               thumbnail(source_in, thumb_out)
+               thumbnail(source_in, thumb_out, options)
 
             # Copy image without overwrite
             if not os.path.isfile(image_out):
                shutil.copy2(source_in, image_out)
 
 
-def thumbnail(filein, thumb):
-   global options
+def thumbnail(filein, thumb, options):
    print('   Thumbnail: ' + thumb)
    thumb_options = ' '.join(options['thumb_options'])
    command = options['imagemagick'] + ' ' + filein + ' ' + thumb_options + ' ' + thumb

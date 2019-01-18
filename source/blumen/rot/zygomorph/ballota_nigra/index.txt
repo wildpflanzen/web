@@ -4,7 +4,7 @@ species: 'Nigra'
 
 family_de: 'Lippenblütengewächse'
 species_de: 'Schwarznessel'
-genus_de: 
+genus_de: ''
 
 floration: 'Juni - Oktober'
 

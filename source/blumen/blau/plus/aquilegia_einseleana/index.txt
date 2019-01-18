@@ -4,7 +4,7 @@ species: 'Einseleana'
 
 family_de: 'Hahnenfuβgewächse'
 species_de: 'Kleinblütige'
-genus_de: 'Akele'
+genus_de: 'Akelei'
 
 floration: 'Juni - Jul'
 

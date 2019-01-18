@@ -1,4 +1,5 @@
-﻿{%- macro navi_global(selected='') %}
+﻿
+{%- macro navi_global(selected) %}
    <div class="naviglobal">
    <ul>
    <li{% if selected == 'main' %} class="navi_select"{% endif %}><a href="index.html">Bestimmung</a>
@@ -11,26 +12,28 @@
 {% endmacro -%}
 
 
-{%- macro navi_index(selected='') %}
+{%- macro navi_index(selected) %}
    <div class="navi">
    <ul>
    <li{% if selected == 'genus_de' %} class="navi_select"{% endif %}><a href="index-genus-de.html"> Allgemein, Deutche</a>
-   </li><li{% if selected == 'genus' %} class="navi_select"{% endif %}><a href="index-genus.html"> Allgemein, Wissenschaftliche</a>
+   </li><li{% if selected == 'genus' %} class="navi_select"{% endif %}><a href="index-genus.html"> Allgemein, Wissen</a>
    </li><li{% if selected == 'family_de' %} class="navi_select"{% endif %}><a href="index-family-de.html">Familien, Deutche</a>
-   </li><li{% if selected == 'family' %} class="navi_select"{% endif %}><a href="index-family.html">Familien, Wissenschaftliche</a>
-   </li><li{% if selected == 'groups' %} class="navi_select"{% endif %}><a href="index-groups.html">Gruppen</a>
+   </li><li{% if selected == 'family' %} class="navi_select"{% endif %}><a href="index-family.html">Familien, Wissen</a>
    </li>
    </ul>
    </div>
 {% endmacro -%}
 
 
-{%- macro index_name(option='') %}
+{%- macro index_title(option) -%}
    {%- if option == 'genus_de' %}Deutche Allgemein
    {%- elif option == 'genus' %}Wissenschaftliche Allgemein
    {%- elif option == 'family_de' %}Deutche Familien
    {%- elif option == 'family' %}Wissenschaftliche Familien
-   {%- endif -%} 
+   {%- endif %}
 {% endmacro -%}
 
 
+{%- macro nach_oben() -%}
+   <div class="nach_oben"><a href="#page_init">nach oben</a></div>
+{% endmacro -%}
