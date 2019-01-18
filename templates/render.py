@@ -41,10 +41,10 @@ def main():
    generator.copy_static()
 
    # Generate html files
-   #generator.html_species()
-   #generator.html_groups()
+   generator.html_species()
+   generator.html_groups()
    generator.html_index()
-   #generator.html_extra()
+   generator.html_extra()
 
    
    # End
