@@ -1,6 +1,5 @@
 ﻿
 {%- macro navi_global(selected) %}
-   <div class="naviglobal">
    <ul>
    <li{% if selected == 'main' %} class="navi_select"{% endif %}><a href="index.html">Bestimmung</a>
    </li><li{% if selected == 'index'      %} class="navi_select"{% endif %}><a href="index-genus-de.html">Register</a>
@@ -8,7 +7,6 @@
    </li><li{% if selected == 'besucher'   %} class="navi_select"{% endif %}><a href="insecta-arachnida.html">Besucher</a>
    </li>
    </ul>
-   </div>
 {% endmacro -%}
 
 

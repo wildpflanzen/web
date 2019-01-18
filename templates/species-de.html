@@ -8,9 +8,9 @@
 
 {% block navi_local %}
    <ul>
-   <li class="next_prev"><a href="{{ register.species_next.filename }}.html">&lt;</a>
+   <li class="next_prev"><a href="{{ register.species_prev.filename }}.html">&lt;</a>
    </li><li><a href="{{ register.group.filename }}.html">{{ register.group.group_name }}</a>
-   </li><li class="next_prev"><a href="{{ register.species_prev.filename }}.html">&gt;</a>
+   </li><li class="next_prev"><a href="{{ register.species_next.filename }}.html">&gt;</a>
    </li>
    </ul>
 {%- endblock %}
@@ -18,9 +18,13 @@
 
 {% block content %}
    <!-- Species name -->
-   <h1>{% if register.genus_de and register.species_de %}{{ register.species_de }} {{ register.genus_de }} / {% endif %} {{ register.genus }} {{ register.species }}</h1>
+   <h1>{% if register.genus_de %}{{ register.genus_de }}, {% endif %}{{ register.species_de }}
+       {%- if register.genus_de or register.species_de %} / {% endif -%}
+       {{ register.genus }} {{ register.species }}</h1>
    <div class="sp_info">
-   <div class="family">{{ register.family_de }} / {{ register.family }}</div>
+   <div class="family">{{ register.family_de }}
+       {%- if register.family_de and register.family %} / {% endif -%}
+       {{ register.family }}</div>
    {% if register.floration %}<div class="floration">Blütezeit: {{ register.floration }}</div>{% endif %}
    </div>
 

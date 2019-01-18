@@ -54,7 +54,6 @@ font-weight: 400;
 
 .content {
 text-align: center;
-padding: 8px;
 }
 
 .nach_oben {
@@ -133,7 +132,7 @@ display: inline-block;
 width: 320px;
 max-width: 100%;
 vertical-align: top;
-background-color: rgb(240,240,240);
+background-color: #F0F0F0;
 margin: 2px 2px 8px 2px;
 }
 
@@ -151,12 +150,13 @@ max-height: 100%;
 font-size: 18px;
 font-family: Helvetica, Arial, sans-serif;
 line-height: 20px;
-padding: 12px;
+padding: 12px 6px 12px 6px;
+text-align: left;
 }
 
 .index_name a {
 text-decoration: none;
-color: rgb(64, 64, 64);
+color: #404040;
 font-weight: 400;
 }
 
