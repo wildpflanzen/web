@@ -1,4 +1,21 @@
-﻿{% extends "base.html" %}
+﻿{#-
+
+   Static web generator for image files.
+   https://github.com/picuino/wildpflanzen
+
+   ===============================================================
+
+   :copyright: (c) 2018-2019 by Carlos Pardo
+   :license: GPL v3  <https://www.gnu.org/licenses/gpl-3.0.html>
+
+   This program is free software; you can redistribute it and/or
+   modify it under the terms of the GNU General Public License
+   version 3 as published by the Free Software Foundation.
+
+-#}
+
+
+{% extends "base.html" %}
 
 
 {% block page_title -%}
@@ -14,9 +31,9 @@
 
 {% block navi_local %}
    <ul>
-   <li class="next_prev"><a href="{{ group.group_prev.filename }}.html">&lt;</a>
+   <li class="navi_next"><a href="{{ group.group_prev.filename }}.html">&lt;</a>
    </li><li class="navi_select"><span class="btn">{{ group.group_name }}<span>
-   </li><li class="next_prev"><a href="{{ group.group_next.filename }}.html">&gt;</a>
+   </li><li class="navi_next"><a href="{{ group.group_next.filename }}.html">&gt;</a>
    </li>
    </ul>
 {%- endblock %}
@@ -28,11 +45,17 @@
 
    <!-- Group species -->
    {% for species in group.species %}
-   <div class="index_species">
-   <div class="index_thumb"><a href="{{ species.filename }}.html"><img src="thumbs/{{ species.thumbname }}" alt="{{ species.genus }} {{ species.species }}" /></a></div>
-   <div class="index_name"><a href="{{ species.filename }}.html">{{ macros.name_deutche(species) }} 
-       {%- if macros.name_deutche(species) %} / {% endif -%} 
-       {{ species.genus }} {{ species.species }}</a></div>
+   <div class="group_species">
+      <div class="group_thumb">
+         <a href="{{ species.filename }}.html">
+         <img src="thumbs/{{ species.thumbname }}" alt="{{ species.genus }} {{ species.species }}" />
+      </a>
+      </div>
+      <div class="group_name">
+         <a href="{{ species.filename }}.html">{{ macros.name_deutche(species) }}
+          {%- if macros.name_deutche(species) %} / {% endif -%}
+          {{ species.genus }} {{ species.species }}</a>
+      </div>
    </div>
    {% endfor %}
 

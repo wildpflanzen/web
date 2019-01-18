@@ -1,14 +1,17 @@
 """
+
    Static web generator for image files.
+   https://github.com/picuino/wildpflanzen
 
-   ----------------------------------------------------------------
+   ===============================================================
 
-   :copyright: (c) 2018 by Carlos Pardo
+   :copyright: (c) 2018-2019 by Carlos Pardo
    :license: GPL v3  <https://www.gnu.org/licenses/gpl-3.0.html>
 
    This program is free software; you can redistribute it and/or
    modify it under the terms of the GNU General Public License
    version 3 as published by the Free Software Foundation.
+   
 """
 
 import os

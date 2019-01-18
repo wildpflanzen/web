@@ -9,18 +9,26 @@ font-family: Helvetica, Arial, sans-serif;
 font-size: 14px;
 }
 
-h1 {
+h1, h2 {
 font-family: Arial, Helvetica, sans-serif;
 font-size: 44px;
 font-weight: 400;
 letter-spacing: 2px;
 margin: 0;
-padding-top: 40px;
-padding-bottom: 32px;
+padding: 0;
+padding-top: 24px;
+margin-bottom: 32px;
 }
 
-.content h1 {
+.content h1, .content h2 {
 font-size: 24px;
+padding-top: 0;
+margin-top: 32px;
+margin-bottom: 24px;
+}
+
+.content h2 {
+font-size: 20px;
 }
 
 .wrapper, .header {
@@ -29,36 +37,13 @@ margin: 0 auto;
 margin-top: 0;
 }
 
-
-a {
+a:hover {
+text-decoration: none;
 color: #404040;
-text-decoration: none;
+cursor: pointer; 
 }
 
-ul {
-display: inline-block;
-}
-
-ul li {
-text-align: left;
-text-decoration: none;
-margin: 14px;
-font-size: 20px;
-}
-
-ul li a {
-text-decoration: none;
-color: rgb(64, 64, 64);
-font-weight: 400;
-}
-
-.content {
-text-align: center;
-}
-
-.nach_oben {
-text-align: right;
-}
+li { list-style-type: none; }
 
 
 /******************************
@@ -118,16 +103,103 @@ border-left: 1px solid #989898;
 border-right: none;
 }
 
-.next_prev {
+.navi_next {
 width: 55px;
+}
+
+
+/******************************
+   Content 
+ ******************************/
+
+.content {
+text-align: center;
+font-family: Helvetica, Arial, sans-serif;
+font-size: 14px;
+}
+
+.content a {
+color: #404040;
+text-decoration: none;
+}
+
+.content ul {
+display: inline-block;
+margin: 0;
+padding: 0;
+}
+
+.content ul li {
+text-align: left;
+margin: 0;
+line-height: 24px;
+}
+
+.content .nach_oben {
+text-align: right;
+margin-top: 24px;
+margin-bottom: 24px;
 }
 
 
 /******************************
    Index pages
  ******************************/
+ 
+.index_dict {
+margin: 0 auto;
+margin-top: 24px;
+margin-bottom: 24px;
+max-width: 480px;
+}
+
+.index_dict ul {
+margin: 0;
+padding: 0;
+}
+
+.index_dict ul li {
+display: inline-block;
+text-align: center;
+font-family: Helvetica, Arial, sans-serif;
+font-size: 16px;
+color: black;
+margin: 0;
+padding: 0;
+text-align: center;
+line-height: 22px;
+}
+
+.index_dict a {
+line-height: 14px;
+display:block;
+text-decoration: none;
+color: #404040;
+border: 1px solid #ccc;
+padding: 12px;
+margin: 2px;
+min-width: 18px;
+}
+
+.index_dict a:hover {
+background-color: #EEF3E2;
+}
 
 .index_species {
+display: inline-block;
+}
+
+.index_species ul {
+display: block;
+text-align: left;
+}
+
+
+/******************************
+   Group pages
+ ******************************/
+
+.group_species {
 display: inline-block;
 width: 320px;
 max-width: 100%;
@@ -136,17 +208,17 @@ background-color: #F0F0F0;
 margin: 2px 2px 8px 2px;
 }
 
-.index_thumb {
+.group_thumb {
 width: 320px;
 height: 240px;
 }
 
-.index_thumb img {
+.group_thumb img {
 max-width: 100%;
 max-height: 100%;
 }
 
-.index_name {
+.group_name {
 font-size: 18px;
 font-family: Helvetica, Arial, sans-serif;
 line-height: 20px;
@@ -154,16 +226,15 @@ padding: 12px 6px 12px 6px;
 text-align: left;
 }
 
-.index_name a {
+.group_name a {
 text-decoration: none;
 color: #404040;
 font-weight: 400;
 }
 
-.index_name a:hover {
+.group_name a:hover {
 color: #989898;
 outline: 0;
-cursor: pointer;
 }
 
 
@@ -200,12 +271,6 @@ max-height: 100%;
 .sp_session ul li a {
 padding: 0;
 margin: 0;
-}
-
-.index_name {
-font-family: Helvetica, Arial, sans-serif;
-font-size: 14px;
-font-weight: 400;
 }
 
 

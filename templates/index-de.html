@@ -1,4 +1,21 @@
-﻿{% extends "base.html" %}
+﻿{#-
+
+   Static web generator for image files.
+   https://github.com/picuino/wildpflanzen
+
+   ===============================================================
+
+   :copyright: (c) 2018-2019 by Carlos Pardo
+   :license: GPL v3  <https://www.gnu.org/licenses/gpl-3.0.html>
+
+   This program is free software; you can redistribute it and/or
+   modify it under the terms of the GNU General Public License
+   version 3 as published by the Free Software Foundation.
+
+-#}
+
+
+{% extends "base.html" %}
 
 
 {% block page_title -%}{{ macros.index_title(index.index_name) }} | Wildpflanzen{%- endblock -%}
@@ -10,18 +27,51 @@
 
 
 {% block navi_local %}
-   {{ macros.navi_index(index.index_name) }}
+   <ul>
+   {% if not 'family' in index.index_name %}<li class="navi_select"><span class="btn">Allgemein</span>
+   {%- elif '_de' in index.index_name %}<li><a href="index-genus-de.html">Allgemein</a>
+   {%- else %}<li><a href="index-genus.html">Allgemein</a>{% endif %}
+   {% if 'family' in index.index_name %}</li><li class="navi_select"><span class="btn">Nach Familien</span>
+   {%- elif '_de' in index.index_name %}</li><li><a href="index-family-de.html">Nach Familien</a>
+   {%- else %}</li><li><a href="index-family.html">Nach Familien</a>{% endif %}
+   </li>
+   </ul>
+   </div>
+
+   <div class="navi">
+   <ul>
+   {% if '_de' in index.index_name %}<li class="navi_select"><span class="btn">Deutsche Namen</span>
+   {%- elif 'family' in index.index_name %}<li><a href="index-family-de.html">Deutsche Namen</a>
+   {%- else %}<li><a href="index-genus-de.html">Deutsche Namen</a>{% endif %}
+   {% if not '_de' in index.index_name %}</li><li class="navi_select"><span class="btn">Wissenschaftliche Namen</span>
+   {%- elif 'family' in index.index_name %}</li><li><a href="index-family.html">Wissenschaftliche Namen</a>
+   {%- else %}</li><li><a href="index-genus.html">Wissenschaftliche Namen</a>{% endif %}
+   </li>
+   </ul>
 {%- endblock %}
 
 
 {% block content %}
    <!-- Page title -->
    <h1>{{ macros.index_title(index.index_name) }}</h1>
-   
-   {% for key in index['keys'] %}<a href='#index-{{key}}'>{{key}}</a> {% endfor %}
 
+   <!-- Dictionary keys -->
+   <div class="index_dict">
+   <ul>
+   {% for key in index['keys'] %}
+   {% if loop.index > 1 %}</li>{% endif %}<li><a href='#index-{{key|lower()}}'>{{key}}</a>
+   {%- endfor %}
+   </li>
+   </ul>
+   </div>
+
+   <!-- list of sorted species -->
+   <div class="index_species">
    {% for key in index['keys'] %} {% set species_list = index.species[key] %}
-      <h2 id='index-{{key}}'>{{ key }}</h2>
+   
+      {%- if 'family' in index.index_name %}<h2 id='index-{{key|lower()}}'>{{species_list[0]['family_de']}} / {{species_list[0]['family']}}</h2>
+      {%- else %}<h2 id='index-{{key|lower()}}'>{{ key }}</h2>{% endif %}
+      
       <ul>
       {%- if index.index_name == 'genus_de' %}
          {% for species in species_list|sort(attribute='name_de') %}
@@ -49,9 +99,8 @@
 
       {% endif %}
       </ul>
-
       {{ macros.nach_oben() }}
-
    {% endfor %}
-   
+   </div> <!-- index_species end -->
+
 {%- endblock %}

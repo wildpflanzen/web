@@ -1,4 +1,20 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+﻿{#-
+
+   Static web generator for image files.
+   https://github.com/picuino/wildpflanzen
+
+   ===============================================================
+   
+   :copyright: (c) 2018-2019 by Carlos Pardo
+   :license: GPL v3  <https://www.gnu.org/licenses/gpl-3.0.html>
+
+   This program is free software; you can redistribute it and/or
+   modify it under the terms of the GNU General Public License
+   version 3 as published by the Free Software Foundation.
+   
+-#}
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
 
@@ -17,17 +33,17 @@
 
    <meta name="author" content="Irene Pardo" />
    <meta name="copyright" content="CC BY-SA 4.0" />
-   {% endblock %}
+   {%- endblock %}
 
    <title>{% block page_title %}{% endblock %}</title>
 
    {% block links %}
    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
    <link href="static/main.css" rel="stylesheet" type="text/css" media="all" />
-   {% endblock %}
+   {%- endblock %}
    
    {% block extra_head %}
-   {% endblock %}   
+   {%- endblock %}   
 </head>
 
 <body>
@@ -36,7 +52,7 @@
    <div class="header">
    {% block header %}
    <h1>Wildpflanzen</h1>
-   {% endblock %}
+   {%- endblock %}
    </div> <!-- Header end -->
 
    <div class="wrapper">
@@ -45,19 +61,19 @@
    <div class="naviglobal">
    {% block navi_global %}
    {{ macros.navi_global('') }}
-   {% endblock %}
+   {%- endblock %}
    </div>
 
    <!-- Local Navigation -->
    <div class="navi">
    {% block navi_local %}
-   {% endblock %}
+   {%- endblock %}
    </div>   
 
    <!-- Content -->
    <div class="content"> 
    {% block content %}
-   {% endblock %}  
+   {%- endblock %}  
    </div>  <!-- Content end -->
 
    </div>  <!-- Wrapper end -->
@@ -81,15 +97,19 @@
          Creative Commons Attribution-ShareAlike 4.0 License
       </a>
       </p>
-   {% endblock %}
+   {%- endblock %}
    </div>  <!-- Footer end -->
 
 
    <!-- Database
-   {% block data -%}
+   {% block data %}
    {%- endblock %}
    -->
 
-   <!-- Page Build with Python and Jinja2 templates -->
+   <!--
+   Page Build with Python language and Jinja2 template engine.
+   Source code: https://github.com/picuino/wildpflanzen
+   -->
+   
 </body>
 </html>

@@ -1,4 +1,21 @@
-﻿{% extends "base.html" %}
+﻿{#-
+
+   Static web generator for image files.
+   https://github.com/picuino/wildpflanzen
+
+   ===============================================================
+
+   :copyright: (c) 2018-2019 by Carlos Pardo
+   :license: GPL v3  <https://www.gnu.org/licenses/gpl-3.0.html>
+
+   This program is free software; you can redistribute it and/or
+   modify it under the terms of the GNU General Public License
+   version 3 as published by the Free Software Foundation.
+
+-#}
+
+
+{% extends "base.html" %}
 
 
 {% block page_title -%}
@@ -8,9 +25,9 @@
 
 {% block navi_local %}
    <ul>
-   <li class="next_prev"><a href="{{ species.species_prev.filename }}.html">&lt;</a>
+   <li class="navi_next"><a href="{{ species.species_prev.filename }}.html">&lt;</a>
    </li><li><a href="{{ species.group.filename }}.html">{{ species.group.group_name }}</a>
-   </li><li class="next_prev"><a href="{{ species.species_next.filename }}.html">&gt;</a>
+   </li><li class="navi_next"><a href="{{ species.species_next.filename }}.html">&gt;</a>
    </li>
    </ul>
 {%- endblock %}
@@ -20,10 +37,10 @@
    <!-- Species name -->
    <h1>{{ macros.name_deutche(species) }} {% if macros.name_deutche(species) %} / {% endif %} {{ species.genus }} {{ species.species }}</h1>
    <div class="sp_info">
-   <div class="family">{{ species.family_de }}
+   <div class="sp_family">{{ species.family_de }}
        {%- if species.family_de and species.family %} / {% endif -%}
        {{ species.family }}</div>
-   {% if species.floration %}<div class="floration">Blütezeit: {{ species.floration }}</div>{% endif %}
+   {% if species.floration %}<div class="sp_floration">Blütezeit: {{ species.floration }}</div>{% endif %}
    </div>
 
    <!-- Species photo sessions -->
@@ -46,15 +63,5 @@
 
 
 {% block data %}
-   keys: [{% for key in species.keys() %}'{{key}}', {% endfor %}]
-   {%- for key in ['family', 'genus', 'species', 'family_de', 'species_de', 'genus_de', 'floration', 'thumb', 'path' ] %}
-   {{key}}: '{{ species[key] }}'
-   {%- endfor %}
-   sessions:
-   {%- for session in species.sessions %}
-     - {% for key in ['date', 'location'] -%}
-       {{key}}: '{{ session[key] }}'
-       {% endfor -%}
-       images: [{%- for image in session.images %}{{ image }}, {% endfor %}]
-       {% endfor %}
+    {{ macros.dump_species(species) }}
 {%- endblock %}
