@@ -30,8 +30,8 @@
    {% for species in group.species %}
    <div class="index_species">
    <div class="index_thumb"><a href="{{ species.filename }}.html"><img src="thumbs/{{ species.thumbname }}" alt="{{ species.genus }} {{ species.species }}" /></a></div>
-   <div class="index_name"><a href="{{ species.filename }}.html">{{ species.species_de }} {{ species.genus_de }}
-       {%- if species.species_de or species.genus_de %} / {% endif -%}
+   <div class="index_name"><a href="{{ species.filename }}.html">{{ macros.name_deutche(species) }} 
+       {%- if macros.name_deutche(species) %} / {% endif -%} 
        {{ species.genus }} {{ species.species }}</a></div>
    </div>
    {% endfor %}

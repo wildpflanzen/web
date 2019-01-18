@@ -112,9 +112,15 @@ class HTML_generator():
    def getindex(self, variable, index1, index2=''):
       res = ''
       if index1 in variable and variable[index1]:
-         res = variable[index1]
+         if isinstance(variable[index1], list):
+            res = variable[index1][0]
+         else:
+            res = variable[index1]
       if index2 and index2 in variable and variable[index2]:
-         res = res + ' ' + variable[index2]
+         if isinstance(variable[index2], list):
+            res = res + ' ' + variable[index2][0]
+         else:
+            res = res + ' ' + variable[index2]
       res = res.strip(' ')
       return res
 
@@ -177,7 +183,7 @@ class HTML_generator():
          if not 'group' in register:
             continue
          filename = os.path.join(self.output, register['filename'] + '.html')
-         html = html_template.render(register=register)
+         html = html_template.render(species=register)
          self.write_file(filename, html)
 
 
@@ -341,13 +347,20 @@ class Database(UserDict):
             if not key in register:
                register[key] = ''
 
+         # Force list in deutche genus and species
+         if not isinstance(register['genus_de'], list):
+            register['genus_de'] = [ register['genus_de'] ]
+         if not isinstance(register['species_de'], list):
+            register['species_de'] = [ register['species_de'] ]
+         if len(register['species_de']) != len(register['genus_de']):
+            print('   Error, different number of deutche names: %s' % os.path.join(register['path'], 'index.txt'))
+
          # Test deutche name
          if register['splitpath'][1] in ['blumen']:
-            if register['genus_de'] and len(register['species_de'])<1:
-               print('   Warning, deutche genus without specie: %s' % os.path.join(register['path'], 'index.txt'))
-            if ' ' in register['species_de']:
-               print('   ' + str(register['species_de']))
-               if register['species_de'][-1] != '-':
+            for i in range(len(register['species_de'])):
+               if register['genus_de'][i] and len(register['species_de'][i])<1:
+                  print('   Warning, deutche genus without specie: %s' % os.path.join(register['path'], 'index.txt'))
+               elif ' ' in register['species_de'][i] and register['species_de'][i][-1] != '-':
                   print('   Warning, subspecie without hyphen: %s' % os.path.join(register['path'], 'index.txt'))
          
          # Link species with group

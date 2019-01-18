@@ -2,15 +2,15 @@
 
 
 {% block page_title -%}
-   {{ register.genus }} {{ register.species }} | Wildpflanzen
+   {{ species.genus }} {{ species.species }} | Wildpflanzen
 {%- endblock %}
 
 
 {% block navi_local %}
    <ul>
-   <li class="next_prev"><a href="{{ register.species_prev.filename }}.html">&lt;</a>
-   </li><li><a href="{{ register.group.filename }}.html">{{ register.group.group_name }}</a>
-   </li><li class="next_prev"><a href="{{ register.species_next.filename }}.html">&gt;</a>
+   <li class="next_prev"><a href="{{ species.species_prev.filename }}.html">&lt;</a>
+   </li><li><a href="{{ species.group.filename }}.html">{{ species.group.group_name }}</a>
+   </li><li class="next_prev"><a href="{{ species.species_next.filename }}.html">&gt;</a>
    </li>
    </ul>
 {%- endblock %}
@@ -18,23 +18,21 @@
 
 {% block content %}
    <!-- Species name -->
-   <h1>{% if register.genus_de %}{{ register.genus_de }}, {% endif %}{{ register.species_de }}
-       {%- if register.genus_de or register.species_de %} / {% endif -%}
-       {{ register.genus }} {{ register.species }}</h1>
+   <h1>{{ macros.name_deutche(species) }} {% if macros.name_deutche(species) %} / {% endif %} {{ species.genus }} {{ species.species }}</h1>
    <div class="sp_info">
-   <div class="family">{{ register.family_de }}
-       {%- if register.family_de and register.family %} / {% endif -%}
-       {{ register.family }}</div>
-   {% if register.floration %}<div class="floration">Blütezeit: {{ register.floration }}</div>{% endif %}
+   <div class="family">{{ species.family_de }}
+       {%- if species.family_de and species.family %} / {% endif -%}
+       {{ species.family }}</div>
+   {% if species.floration %}<div class="floration">Blütezeit: {{ species.floration }}</div>{% endif %}
    </div>
 
    <!-- Species photo sessions -->
    <div class="sp_sessions">
-   {% for session in register.sessions %}
+   {% for session in species.sessions %}
    <div class="sp_session">
    <ul>
    {% for thumb in session.thumbs -%}
-   <li><a href="images/{{ thumb }}"><img src="thumbs/{{ thumb }}" alt="{{ register.genus }} {{ register.species }}" /></a>
+   <li><a href="images/{{ thumb }}"><img src="thumbs/{{ thumb }}" alt="{{ species.genus }} {{ species.species }}" /></a>
    </li>
    {%- endfor %}
    </ul>
@@ -48,12 +46,12 @@
 
 
 {% block data %}
-   keys: [{% for key in register.keys() %}'{{key}}', {% endfor %}]
+   keys: [{% for key in species.keys() %}'{{key}}', {% endfor %}]
    {%- for key in ['family', 'genus', 'species', 'family_de', 'species_de', 'genus_de', 'floration', 'thumb', 'path' ] %}
-   {{key}}: '{{ register[key] }}'
+   {{key}}: '{{ species[key] }}'
    {%- endfor %}
    sessions:
-   {%- for session in register.sessions %}
+   {%- for session in species.sessions %}
      - {% for key in ['date', 'location'] -%}
        {{key}}: '{{ session[key] }}'
        {% endfor -%}

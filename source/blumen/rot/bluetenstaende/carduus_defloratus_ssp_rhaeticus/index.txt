@@ -3,8 +3,8 @@ genus: 'Carduus'
 species: 'Defloratus ssp. rhaeticus'
 
 family_de: 'Korbblütengewächse'
-species_de: 'Rhätische'
-genus_de: 'Bergdistel'
+species_de: 'Rhätische Berg-'
+genus_de: 'Distel'
 
 floration: 'Juni - Oktober'
 

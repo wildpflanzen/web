@@ -3,8 +3,8 @@ genus: 'Cirsium'
 species: 'Arvense'
 
 family_de: 'Korbblütengewächse'
-species_de: 'Acker'
-genus_de: 'Kratzdistel'
+species_de: 'Acker Kratz-'
+genus_de: 'Distel'
 
 floration: 'Juli - Oktober'
 

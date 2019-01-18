@@ -3,8 +3,8 @@ genus: 'Carlina'
 species: 'Vulgaris'
 
 family_de: 'Korbblütengewächse'
-species_de: 'Gewöhnliche'
-genus_de: 'Golddistel'
+species_de: 'Gewöhnliche Gold-'
+genus_de: 'Distel'
 
 floration: 'Juli - September'
 

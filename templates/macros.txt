@@ -1,4 +1,29 @@
 ﻿
+
+{%- macro name_deutche_index(species) -%}
+{%- for species_de in species.species_de %}
+   {%- set genus_de = species.genus_de[loop.index0] %}
+   {%- if genus_de %}{{ genus_de }}, {% endif %}{{ species_de }}
+   {%- if loop.index != loop.length %}; {% endif %}
+{%- endfor -%}
+{%- endmacro -%}
+
+
+{%- macro name_deutche(species) -%}
+{%- for species_de in species.species_de %}
+   {%- set genus_de = species.genus_de[loop.index0] %}
+   {%- if genus_de and species_de and species_de[-1] == '-' -%}
+   {{ species_de[:-1] }}{{ genus_de | lower() }}
+   {%- elif genus_de and species_de -%}
+   {{ species_de }} {{ genus_de }}
+   {%- else -%}
+   {{ species_de }}
+   {%- endif -%}
+   {%- if loop.index != loop.length %}; {% endif %}
+{%- endfor -%}
+{%- endmacro -%}
+
+
 {%- macro navi_global(selected) %}
    <ul>
    <li{% if selected == 'main' %} class="navi_select"{% endif %}><a href="index.html">Bestimmung</a>

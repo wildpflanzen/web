@@ -3,8 +3,8 @@ genus: 'Cirsium'
 species: 'Spinosissimum'
 
 family_de: 'Korbblütengewächse'
-species_de: 'Alpen'
-genus_de: 'Kratzdistel'
+species_de: 'Alpen Kratz-'
+genus_de: 'Distel'
 
 floration: 'Juli - September'
 

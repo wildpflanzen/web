@@ -20,27 +20,27 @@
    
    {% for key in index['keys'] %}<a href='#index-{{key}}'>{{key}}</a> {% endfor %}
 
-   {% for key in index['keys'] %} {% set species = index.species[key] %}
+   {% for key in index['keys'] %} {% set species_list = index.species[key] %}
       <h2 id='index-{{key}}'>{{ key }}</h2>
       <ul>
       {%- if index.index_name == 'genus_de' %}
-         {% for specie in species|sort(attribute='name_de') %}
-         <li><a href="{{specie.filename}}.html">{% if specie.genus_de %}{{ specie.genus_de }}, {% endif %}{{ specie.species_de }} / {{ specie.genus }} {{ specie.species }}</a></li>
+         {% for species in species_list|sort(attribute='name_de') %}
+         <li><a href="{{species.filename}}.html">{{ macros.name_deutche_index(species) }} {% if macros.name_deutche_index(species) %} / {% endif %} {{ species.genus }} {{ species.species }}</a></li>
          {%- endfor %}
 
       {%- elif index.index_name == 'genus' %}
-         {% for specie in species|sort(attribute='genus') %}
-         <li><a href="{{specie.filename}}.html">{{ specie.genus }} {{ specie.species }} / {% if specie.genus_de %}{{ specie.genus_de }}, {% endif %}{{ specie.species_de }}</a></li>
+         {% for species in species_list|sort(attribute='genus') %}
+         <li><a href="{{species.filename}}.html">{{ species.genus }} {{ species.species }} {% if macros.name_deutche_index(species) %} / {% endif %} {{ macros.name_deutche_index(species) }}</a></li>
          {%- endfor %}
 
       {%- elif index.index_name == 'family' %}
-         {% for specie in species|sort(attribute='genus') %}
-         <li><a href="{{specie.filename}}.html">{{ specie.genus }} {{ specie.species }} / {% if specie.genus_de %}{{ specie.genus_de }}, {% endif %}{{ specie.species_de }} </a></li>
+         {% for species in species_list|sort(attribute='genus') %}
+         <li><a href="{{species.filename}}.html">{{ species.genus }} {{ species.species }} {% if macros.name_deutche_index(species) %} / {% endif %} {{ macros.name_deutche_index(species) }}</a></li>
          {%- endfor %}
 
       {%- elif index.index_name == 'family_de' %}
-         {% for specie in species|sort(attribute='name_de') %}
-         <li><a href="{{specie.filename}}.html">{% if specie.genus_de %}{{ specie.genus_de }}, {% endif %}{{ specie.species_de }} / {{ specie.genus }} {{ specie.species }}</a></li>
+         {% for species in species_list|sort(attribute='name_de') %}
+         <li><a href="{{species.filename}}.html">{{ macros.name_deutche_index(species) }} {% if macros.name_deutche_index(species) %} / {% endif %} {{ species.genus }} {{ species.species }}</a></li>
          {%- endfor %}
 
       {%- else %}
