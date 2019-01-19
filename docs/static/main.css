@@ -1,8 +1,22 @@
-﻿/******************************
+﻿/*
+   Static web generator for image files.
+   https://github.com/picuino/wildpflanzen
+
+   Copyright (c) 2012-2019 by Irene Pardo
+   Copyright (c) 2018-2019 by Carlos Pardo
+
+   License GPL v3  <https://www.gnu.org/licenses/gpl-3.0.html>
+   This program is free software; you can redistribute it and/or
+   modify it under the terms of the GNU General Public License
+   version 3 as published by the Free Software Foundation.
+*/
+
+
+/******************************
    General styles
  ******************************/
 
-body { 
+body {
 margin:0 8px;
 padding:0;
 font-family: Helvetica, Arial, sans-serif;
@@ -40,7 +54,7 @@ li { list-style-type: none; }
 
 
 /******************************
-   Navigation bar 
+   Navigation bar
  ******************************/
 
 .navi, .naviglobal {
@@ -98,7 +112,7 @@ width: 55px;
 
 
 /******************************
-   Content 
+   Content
  ******************************/
 
 .content {
@@ -150,7 +164,7 @@ display: block;
 /******************************
    Index pages
  ******************************/
- 
+
 .index_dict {
 margin: 0 auto;
 margin-top: 24px;

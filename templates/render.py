@@ -128,7 +128,7 @@ class HTML_generator():
       return res
 
                 
-   def make_index(self, index1, index2=''):
+   def make_index(self, index1, index2='', length=100):
       print('\nRendering index: %s %s' % (index1, index2)) 
       sorted_species =  {}
       for specie in self.database['species']:
@@ -140,7 +140,7 @@ class HTML_generator():
             continue
          else:
             if self.verbose: print('.', sep='', end='')
-         key = name[0].upper()
+         key = name[:length]
 
          # Add new specie
          if key in sorted_species:

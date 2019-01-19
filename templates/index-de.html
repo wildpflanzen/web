@@ -1,19 +1,14 @@
 ﻿{#-
-
    Static web generator for image files.
    https://github.com/picuino/wildpflanzen
 
-   ===============================================================
+   Copyright (c) 2018-2019 by Carlos Pardo
 
-   :copyright: (c) 2018-2019 by Carlos Pardo
-   :license: GPL v3  <https://www.gnu.org/licenses/gpl-3.0.html>
-
+   License GPL v3  <https://www.gnu.org/licenses/gpl-3.0.html>
    This program is free software; you can redistribute it and/or
    modify it under the terms of the GNU General Public License
    version 3 as published by the Free Software Foundation.
-
 -#}
-
 
 {% extends "base.html" %}
 
@@ -58,8 +53,12 @@
    <!-- Dictionary keys -->
    <div class="index_dict">
    <ul>
+   {% set ns = namespace(k='') %}      
    {% for key in index['keys'] %}
-   {% if loop.index > 1 %}</li>{% endif %}<li><a href='#index-{{key|lower()}}'>{{key}}</a>
+   {% if ns.k != key[0] | lower() %}
+      {% set ns.k = key[0] | lower() %}   
+      {% if loop.index > 1 %}</li>{% endif %}<li><a href='#index-{{ ns.k }}'>{{ ns.k | upper() }}</a>
+   {% endif %}
    {%- endfor %}
    </li>
    </ul>
@@ -67,29 +66,29 @@
 
    <!-- list of sorted species -->
    <div class="index_species">
+   {% set ns.k = '' %}  
    {% for key in index['keys'] %} {% set species_list = index.species[key] %}
    
-      {%- if 'family' in index.index_name %}<h2 id='index-{{key|lower()}}'>{{species_list[0]['family_de']}} / {{species_list[0]['family']}}</h2>
-      {%- else %}<h2 id='index-{{key|lower()}}'>{{ key }}</h2>{% endif %}
+      <h2{% if ns.k != key[0] | lower() %}{% set ns.k = key[0] | lower() %} id='index-{{ns.k}}'{% endif %}>{{ key }}</h2>
       
       <ul>
       {%- if index.index_name == 'genus_de' %}
-         {% for species in species_list|sort(attribute='name_de') %}
+         {%- for species in species_list|sort(attribute='name_de') %}
          <li><a href="{{species.filename}}.html">{{ macros.name_deutche_index(species) }} {% if macros.name_deutche_index(species) %} / {% endif %} {{ species.genus }} {{ species.species }}</a></li>
          {%- endfor %}
 
       {%- elif index.index_name == 'genus' %}
-         {% for species in species_list|sort(attribute='genus') %}
+         {%- for species in species_list|sort(attribute='genus') %}
          <li><a href="{{species.filename}}.html">{{ species.genus }} {{ species.species }} {% if macros.name_deutche_index(species) %} / {% endif %} {{ macros.name_deutche_index(species) }}</a></li>
          {%- endfor %}
 
       {%- elif index.index_name == 'family' %}
-         {% for species in species_list|sort(attribute='genus') %}
+         {%- for species in species_list|sort(attribute='genus') %}
          <li><a href="{{species.filename}}.html">{{ species.genus }} {{ species.species }} {% if macros.name_deutche_index(species) %} / {% endif %} {{ macros.name_deutche_index(species) }}</a></li>
          {%- endfor %}
 
       {%- elif index.index_name == 'family_de' %}
-         {% for species in species_list|sort(attribute='name_de') %}
+         {%- for species in species_list|sort(attribute='name_de') %}
          <li><a href="{{species.filename}}.html">{{ macros.name_deutche_index(species) }} {% if macros.name_deutche_index(species) %} / {% endif %} {{ species.genus }} {{ species.species }}</a></li>
          {%- endfor %}
 
@@ -97,7 +96,7 @@
 
          <!-- Error, unknown index: "{{index.index_name}}" -->
 
-      {% endif %}
+      {%- endif %}
       </ul>
       {{ macros.nach_oben() }}
    {% endfor %}
