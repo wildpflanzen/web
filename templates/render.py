@@ -23,6 +23,7 @@ import subprocess
 import shutil
 from collections import UserDict
 
+
 def main():
 
    # Read options
@@ -98,18 +99,56 @@ class HTML_generator():
    def html_index(self):
 
       # Make html genus index
-      self.make_index('genus')
+      self.make_index('genus', keyf=lambda sp: sp['genus'], length=1)
 
       # Make html genus_de index
-      for specie in self.database['species']:
-         specie['name_de'] = self.getindex(specie, 'genus_de', 'species_de')
-      self.make_index('genus_de', 'species_de')
+      self.make_index('genus_de', keyf=lambda sp: self.getindex(sp, 'genus_de', 'species_de'), length=1)
 
       # Make html family index
-      self.make_index('family')
+      self.make_index('family', keyf=lambda sp: sp['family'])
 
       # Make html family_de index
-      self.make_index('family_de')
+      self.make_index('family_de', keyf=lambda sp: sp['family'])
+
+
+   def make_index(self, index1, index2='', length=100):
+      print('\nRendering index: %s %s' % (index1, index2)) 
+      sorted_species =  {}
+      for species in self.database['species']:
+         name = keyf(species)
+
+         # Test if name exists and select first character
+         if not name:
+            if self.verbose: print('x', sep='', end='')
+            continue
+         else:
+            if self.verbose: print('.', sep='', end='')
+         key = name if not lenght else name[:length]
+
+         # Add new species
+         if key in sorted_species:
+            sorted_species[key].append(species)
+         else:
+            sorted_species[key] = [species]
+      if self.verbose: print()
+
+      # Sort key characters
+      keys = [k for k in sorted_species.keys()]
+      keys.sort()
+
+      # Sort species
+      for key in keys:
+         sorted_species[key] = sorted(sorted_species[key], key=keyf)
+         
+      # compose index
+      self.index = {'keys': keys, 'species': sorted_species }
+      self.index['index_name'] = index1
+
+      # Jinja template
+      html_template = self.jinja_environment('index-de.html')
+      html = html_template.render(index=self.index)
+      output = os.path.join(self.output, 'index-' + re.sub('[_ ]', '-', index1)+'.html')
+      self.write_file(output, html)
 
 
    def getindex(self, variable, index1, index2=''):
@@ -127,41 +166,7 @@ class HTML_generator():
       res = res.strip(' ')
       return res
 
-                
-   def make_index(self, index1, index2='', length=100):
-      print('\nRendering index: %s %s' % (index1, index2)) 
-      sorted_species =  {}
-      for specie in self.database['species']:
-         name = self.getindex(specie, index1, index2)
 
-         # Test if name exists and select first character
-         if not name:
-            if self.verbose: print('x', sep='', end='')
-            continue
-         else:
-            if self.verbose: print('.', sep='', end='')
-         key = name[:length]
-
-         # Add new specie
-         if key in sorted_species:
-            sorted_species[key].append(specie)
-         else:
-            sorted_species[key] = [specie]
-      if self.verbose: print()
-
-      # Sort key characters
-      keys = [k for k in sorted_species.keys()]
-      keys.sort()
-      self.index = {'keys': keys, 'species': sorted_species }
-      self.index['index_name'] = index1
-
-      # Jinja template
-      html_template = self.jinja_environment('index-de.html')
-      html = html_template.render(index=self.index)
-      output = os.path.join(self.output, 'index-' + re.sub('[_ ]', '-', index1)+'.html')
-      self.write_file(output, html)
-
- 
    def html_groups(self):
       print('\nRendering html groups ...')
 
@@ -337,8 +342,8 @@ class Database(UserDict):
             if self.test_file(register['path'], register['thumb']):
                images.append(register['thumb'])
          else:
-            register['thumb'] = images[0]
-
+            register['thumb'] = images[0] if len(images) else ''
+ 
          # Test if image files are in database
          for file in os.listdir(os.path.join(self.source, register['path'])):
             if file[-4:].lower() == '.jpg' and file not in images:

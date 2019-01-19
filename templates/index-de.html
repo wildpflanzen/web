@@ -16,7 +16,7 @@
 {% block page_title -%}{{ macros.index_title(index.index_name) }} | Wildpflanzen{%- endblock -%}
 
 
-{% block navi_global %}
+{% block navi_global -%}
    {{ macros.navi_global('index') }}
 {%- endblock %}
 
@@ -53,12 +53,12 @@
    <!-- Dictionary keys -->
    <div class="index_dict">
    <ul>
-   {% set ns = namespace(k='') %}      
-   {% for key in index['keys'] %}
-   {% if ns.k != key[0] | lower() %}
-      {% set ns.k = key[0] | lower() %}   
+   {%- set ns = namespace(k='') %}      
+   {%- for key in index['keys'] %}
+   {%- if ns.k != key[0] | lower() %}
+      {%- set ns.k = key[0] | lower() %}   
       {% if loop.index > 1 %}</li>{% endif %}<li><a href='#index-{{ ns.k }}'>{{ ns.k | upper() }}</a>
-   {% endif %}
+   {%- endif %}
    {%- endfor %}
    </li>
    </ul>
@@ -66,31 +66,48 @@
 
    <!-- list of sorted species -->
    <div class="index_species">
-   {% set ns.k = '' %}  
-   {% for key in index['keys'] %} {% set species_list = index.species[key] %}
-   
-      <h2{% if ns.k != key[0] | lower() %}{% set ns.k = key[0] | lower() %} id='index-{{ns.k}}'{% endif %}>{{ key }}</h2>
-      
+      {%- set ns.k = '' %}  
+      {% for key in index['keys'] -%} {% set species_list = index.species[key] -%}
+
+      <h2{% if ns.k != key[0] | lower() %}{% set ns.k = key[0] | lower() %} id='index-{{ns.k}}'{% endif %}>
+	   {%- if index.index_name == 'genus_de' -%}
+	   {{ key }}
+      {%- elif index.index_name == 'genus' -%}
+	   {{ key }}
+      {%- elif index.index_name == 'family_de' -%}
+	   {{ key }} / {{ species_list[0].family }}
+      {%- elif index.index_name == 'family' -%}
+	   {{ key }} / {{ species_list[0].family_de }}
+	   {%- endif -%}
+	   </h2>
       <ul>
       {%- if index.index_name == 'genus_de' %}
-         {%- for species in species_list|sort(attribute='name_de') %}
-         <li><a href="{{species.filename}}.html">{{ macros.name_deutche_index(species) }} {% if macros.name_deutche_index(species) %} / {% endif %} {{ species.genus }} {{ species.species }}</a></li>
-         {%- endfor %}
+      {%- for species in species_list %}
+      <li><a href="{{species.filename}}.html">{{ macros.name_deutche_index(species) }} 
+        {%- if macros.name_deutche_index(species) %} / {% endif -%}
+        {{ species.genus }} {{ species.species }}</a></li>
+      {%- endfor %}
 
       {%- elif index.index_name == 'genus' %}
-         {%- for species in species_list|sort(attribute='genus') %}
-         <li><a href="{{species.filename}}.html">{{ species.genus }} {{ species.species }} {% if macros.name_deutche_index(species) %} / {% endif %} {{ macros.name_deutche_index(species) }}</a></li>
-         {%- endfor %}
-
-      {%- elif index.index_name == 'family' %}
-         {%- for species in species_list|sort(attribute='genus') %}
-         <li><a href="{{species.filename}}.html">{{ species.genus }} {{ species.species }} {% if macros.name_deutche_index(species) %} / {% endif %} {{ macros.name_deutche_index(species) }}</a></li>
-         {%- endfor %}
+      {%- for species in species_list %}
+      <li><a href="{{species.filename}}.html">{{ species.genus }} {{ species.species }} 
+         {% if macros.name_deutche_index(species) %} / {% endif -%} 
+         {{ macros.name_deutche_index(species) }}</a></li>
+      {%- endfor %}
 
       {%- elif index.index_name == 'family_de' %}
-         {%- for species in species_list|sort(attribute='name_de') %}
-         <li><a href="{{species.filename}}.html">{{ macros.name_deutche_index(species) }} {% if macros.name_deutche_index(species) %} / {% endif %} {{ species.genus }} {{ species.species }}</a></li>
-         {%- endfor %}
+      {%- for species in species_list %}
+      <li><a href="{{species.filename}}.html">{{ macros.name_deutche_index(species) }} 
+         {%- if macros.name_deutche_index(species) %} / {% endif -%} 
+         {{ species.genus }} {{ species.species }}</a></li>
+      {%- endfor %}
+
+      {%- elif index.index_name == 'family' %}
+      {%- for species in species_list %}
+      <li><a href="{{species.filename}}.html">{{ species.genus }} {{ species.species }} 
+         {%- if macros.name_deutche_index(species) %} / {% endif -%} 
+         {{ macros.name_deutche_index(species) }}</a></li>
+      {%- endfor %}
 
       {%- else %}
 
@@ -99,7 +116,8 @@
       {%- endif %}
       </ul>
       {{ macros.nach_oben() }}
-   {% endfor %}
+      
+      {% endfor %}
    </div> <!-- index_species end -->
 
 {%- endblock %}

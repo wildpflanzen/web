@@ -51,13 +51,13 @@
    {%- elif option == 'genus' %}Wissenschaftliche Allgemein
    {%- elif option == 'family_de' %}Deutche Familien
    {%- elif option == 'family' %}Wissenschaftliche Familien
-   {%- endif %}
-{% endmacro -%}
+   {%- endif -%}
+{%-  endmacro -%}
 
 
 {%- macro nach_oben() -%}
    <div class="nach_oben"><a href="#page_init">nach oben</a></div>
-{% endmacro -%}
+{%- endmacro %}
 
 
 {%- macro dump_species(species) -%}
