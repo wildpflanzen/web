@@ -1,0 +1,105 @@
+{% extends "base.html" %}
+
+
+{% block extra_head %}
+   <style>
+   .wrapper, .header { max-width: 1600px; }
+   table { border-collapse: collapse; }
+   table, th, td { border: 1px solid black;}
+   a {margin:0; padding: 8px 6px; display:inline-block; }   
+   </style>
+{% endblock %}
+
+
+{% block page_title -%}Database | Wildpflanzen{% endblock -%}
+
+
+{% block content %}
+
+   <h1>Database contents</h1>
+
+
+
+   <h2>Groups of species</h2>
+
+   {% set columns = ['group_name', 'path', 'species', 'group_prev', 'group_next'] %}
+
+   <table>
+   <tr>
+      <th>Group</th>
+      {% for col in columns %}
+      <th>{{ col }}</th>
+      {%- endfor %}
+   </tr>
+   {% for key in database.groups.keys() | sort() %}
+   <tr>
+      {% set group = database.groups[key] %}
+      <td>{{ key }}</td>
+      <td><a href="{{ database.groups[key].filename }}.html">{{ group.group_name }}</a></td>
+      <td><a href="../source/{{ database.groups[key].path }}">{{ group.path }}</a></td>
+      <td>{{ group.species | length }}</td>
+      <td>{{ group.group_prev.group_name }}</td>
+      <td>{{ group.group_next.group_name }}</td>
+   </tr>
+   {%- endfor %}
+   </table>
+
+
+
+   <h2>Species</h2>
+   
+   {% set columns = ['num', 'group', 'path', 'species_de / genus_de', 'genus / species',
+                     'order / family', 'family_de',  'session date', 'session location', 'session images'] %}
+   <table>
+   <tr>
+      {% for col in columns %}
+      <th>{{ col }}</th>
+      {%- endfor %}
+   </tr>
+   {% for species in database.species %}
+   <tr>
+      <td>{{ loop.index }}</td>
+
+      <td><a href="{{ species.group.filename }}.html">{{ species.group.group_name }}</a></td>
+
+      <td><a href="../source/{{species.path}}">{{ species.path | replace("/","/ ") }}</a></td>
+
+      <td><a href="{{ species.filename }}.html">
+      {% for species_de in species.species_de %}
+      {{ species_de }} / {{species.genus_de[loop.index0] }}
+      {%- if loop.index < loop.length %}; <br />{% endif %}
+      {%- endfor %}</a>
+      </td>
+
+      <td><a href="{{ species.filename }}.html">{{ species.genus }} / {{ species.species }}</a></td>
+
+      <td>{{ species.order }} / {{ species.family }}</td>
+
+      <td>{{ species.family_de }}</td>
+
+      <td>
+      {% for session in species.sessions %}
+      {{ session.date }}{% if loop.index < loop.length %}<br />{% endif %}
+      {%- endfor %}
+      </td>
+      
+      <td>
+      {% for session in species.sessions %}
+      {{ session.location }}{% if loop.index < loop.length %}<br />{% endif %}
+      {%- endfor %}
+      </td>
+      
+      <td>
+      {% for session in species.sessions %}
+      {% for image in session.images %}<a href="../source/{{species.path}}/{{ image }}">{{ image }}</a>{% endfor %} 
+      {%- if loop.index < loop.length %}<hr> S2: {% endif %}
+      {%- endfor %}
+      </td>
+   </tr>
+   {%- endfor %}
+   </table>
+
+
+   {{ macros.nach_oben() }}
+
+{%- endblock %}

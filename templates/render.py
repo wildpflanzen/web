@@ -45,9 +45,9 @@ def main():
    generator.copy_static()
 
    # Generate html files
-   generator.html_species()
-   generator.html_groups()
-   generator.html_index()
+   #generator.html_species()
+   #generator.html_groups()
+   #generator.html_index()
    generator.html_extra()
 
    
@@ -92,7 +92,7 @@ class HTML_generator():
       for fname in extra:
          html_template = self.jinja_environment(fname, path=['', 'extra'])
          filename = os.path.join(self.output, fname)
-         html = html_template.render(groups=self.database['groups'])
+         html = html_template.render(database=self.database)
          self.write_file(filename, html)
       
 
