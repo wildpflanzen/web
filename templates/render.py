@@ -155,7 +155,7 @@ class HTML_generator():
       # Jinja template
       html_template = self.jinja_environment('index-de.html')
       html = html_template.render(index=self.index)
-      output = os.path.join(self.output, 'index-' + re.sub('[_ /]', '-', index_name)+'.html')
+      output = os.path.join(self.output, 'index-' + re.sub('[ _/]', '-', index_name)+'.html')
       self.write_file(output, html)
 
    def session_index(self, species, index):
@@ -248,8 +248,7 @@ class Database(UserDict):
       self.filenames = []
       self.output = options['output']
       self.source = options['source']
-      self.test_files = options['test_files']
-
+      self.ignore_images = options['ignore_images']
 
 
    def read(self):
@@ -425,7 +424,11 @@ class Database(UserDict):
          self['groups'][keys[i]]['group_next'] = self['groups'][keys[i+1]]
          self['groups'][keys[i]]['group_prev'] = self['groups'][keys[i-1]]
       self['groups'][keys[-1]]['group_next'] = self['groups'][keys[0]]
-      self['groups'][keys[-1]]['group_prev'] = self['groups'][keys[-2]]
+      if len(self['groups']) > 1:
+          self['groups'][keys[-1]]['group_prev'] = self['groups'][keys[-2]]
+      else:
+          self['groups'][keys[-1]]['group_prev'] = self['groups'][keys[0]]
+         
 
       # Sort species and link in chain
       all_species = []
@@ -438,13 +441,18 @@ class Database(UserDict):
          all_species[i]['species_next'] = all_species[i+1]
          all_species[i]['species_prev'] = all_species[i-1]
       all_species[-1]['species_next'] = all_species[0]
-      all_species[-1]['species_prev'] = all_species[-2]
+      if len(all_species) > 1:
+         all_species[-1]['species_prev'] = all_species[-2]
+      else:
+         all_species[-1]['species_prev'] = all_species[0]
 
 
    # Test if file exists
    def test_file(self, path, file):
       filename = os.path.join(self.source, path, file)
-      if not self.test_files or os.path.isfile(filename):
+      if self.ignore_images:
+         return filename
+      if os.path.isfile(filename):
          return filename
       print("   Error, file doesn't exitst: %s" % filename)
       return None
@@ -463,24 +471,27 @@ def read_options(fname):
    
 
 def make_thumbnails(database, options):
+   if 'ignore_images' in options and options['ignore_images']:
+      return
    print('\nMaking thumbnails ...')
    thumbfiles = {}
    for register in database['species']:
       for session in register['sessions']:
          for i, image in enumerate(session['images']):
+
             # Add relative path
             thumbname = image_name(register, image, session)
             register['thumbname'] = thumbname
-            source_in = os.path.join(register['path'], image)
+            source_in = os.path.join(options['source'], register['path'], image)
             image_out = os.path.join(options['output'], 'images', thumbname)
             thumb_out = os.path.join(options['output'], 'thumbs', thumbname)
 
             # Make thumbnail without overwrite
-            if not os.path.isfile(thumb_out) and os.path.isfile(source_in):
+            if not os.path.isfile(thumb_out):
                thumbnail(source_in, thumb_out, options)
 
             # Copy image without overwrite
-            if not os.path.isfile(image_out) and os.path.isfile(source_in):
+            if not os.path.isfile(image_out):
                shutil.copy2(source_in, image_out)
 
 
@@ -492,7 +503,6 @@ def thumbnail(filein, thumb, options):
 
 
 def image_name(register, imagename, session=None):
-   global options
    thumbname = register['filename'] + '-' + re.sub('[^0-9]', '', imagename) + '.jpg'
    thumbname = re.sub('-+', '-', thumbname)
    if session:

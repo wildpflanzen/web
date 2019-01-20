@@ -48,7 +48,7 @@
    </li>
    {%- endfor %}
    </ul>
-   <div class="sp_date">Session: {{ session.date }} / {{ session.location }}</div>
+   <div class="sp_date">Session: {{ session.date }}{% if session.location %} / {{ session.location }}{% endif %}</div>
    </div>
    {% endfor %}
    </div>
