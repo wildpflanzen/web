@@ -13,7 +13,7 @@ thumb: v7.jpg
 ---
 
 date: '5.2013'
-location: 'Johannistal, Berlin'
+location: 'Johannisthal, Berlin'
 images:
   - v7.jpg
   - v15.jpg

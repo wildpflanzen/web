@@ -12,7 +12,7 @@ thumb: 1.jpg
 
 ---
 
-date: '06.2013'
+date: '6.2013'
 location: 'Spreewald'
 images:
   - 1.jpg

@@ -97,39 +97,47 @@ class HTML_generator():
       
 
    def html_index(self):
+      print('\nRendering index files ...')
 
+      # Make html place index
+      self.make_index('location', lambda sp: self.session_index(sp, 'location'))
+
+      # Make html place index
+      self.make_index('date', \
+                      lambda sp: [d.split('.')[1]+'.%02d' % int(d.split('.')[0]) for d in self.session_index(sp, 'date')])
+      
       # Make html genus index
-      self.make_index('genus', keyf=lambda sp: sp['genus'], length=1)
+      self.make_index('genus', lambda sp: [sp['genus']], length=1)
 
       # Make html genus_de index
-      self.make_index('genus_de', keyf=lambda sp: self.getindex(sp, 'genus_de', 'species_de'), length=1)
+      self.make_index('genus_de', lambda sp: self.deutchname(sp, 'genus_de', 'species_de'), length=1)
 
       # Make html family index
-      self.make_index('family', keyf=lambda sp: sp['family'])
+      self.make_index('family', lambda sp: [sp['family']])
 
       # Make html family_de index
-      self.make_index('family_de', keyf=lambda sp: sp['family'])
+      self.make_index('family_de', lambda sp: [sp['family']])
 
 
-   def make_index(self, index1, index2='', length=100):
-      print('\nRendering index: %s %s' % (index1, index2)) 
+
+   def make_index(self, index_name, keyf, length=100):
       sorted_species =  {}
       for species in self.database['species']:
-         name = keyf(species)
+         names = keyf(species)
+         for name in names:
+            # Test if name exists and select first character
+            if not name:
+               if self.verbose: print('x', sep='', end='')
+               continue
+            else:
+               if self.verbose: print('.', sep='', end='')
+            key = name if not length else name[:length]
 
-         # Test if name exists and select first character
-         if not name:
-            if self.verbose: print('x', sep='', end='')
-            continue
-         else:
-            if self.verbose: print('.', sep='', end='')
-         key = name if not lenght else name[:length]
-
-         # Add new species
-         if key in sorted_species:
-            sorted_species[key].append(species)
-         else:
-            sorted_species[key] = [species]
+            # Add new species
+            if key in sorted_species:
+               sorted_species[key].append(species)
+            else:
+               sorted_species[key] = [species]
       if self.verbose: print()
 
       # Sort key characters
@@ -142,28 +150,43 @@ class HTML_generator():
          
       # compose index
       self.index = {'keys': keys, 'species': sorted_species }
-      self.index['index_name'] = index1
+      self.index['index_name'] = index_name
 
       # Jinja template
       html_template = self.jinja_environment('index-de.html')
       html = html_template.render(index=self.index)
-      output = os.path.join(self.output, 'index-' + re.sub('[_ ]', '-', index1)+'.html')
+      output = os.path.join(self.output, 'index-' + re.sub('[_ /]', '-', index_name)+'.html')
       self.write_file(output, html)
 
+   def session_index(self, species, index):
+      data = []
+      if 'sessions' in species:
+         for session in species['sessions']:
+            if index in session:
+               if session[index]:
+                  data.append(session[index])
+      if data :
+         return data
+      else:
+         return ['']
 
-   def getindex(self, variable, index1, index2=''):
-      res = ''
+   def deutchname(self, variable, index1, index2=''):
+      # Extract deutche names
       if index1 in variable and variable[index1]:
          if isinstance(variable[index1], list):
-            res = variable[index1][0]
+            res1 = variable[index1]
          else:
-            res = variable[index1]
+            res1 = [variable[index1]]
       if index2 and index2 in variable and variable[index2]:
          if isinstance(variable[index2], list):
-            res = res + ' ' + variable[index2][0]
+            res2 = variable[index2]
          else:
-            res = res + ' ' + variable[index2]
-      res = res.strip(' ')
+            res2 = [variable[index2]]
+      # combine names
+      res = []
+      for i in range(len(res1)):
+         name = res1[i] + ' ' + res2[i]
+         res.append(name.strip(' '))
       return res
 
 
@@ -223,7 +246,10 @@ class Database(UserDict):
       self['groups'] = {}
       self['species'] = []
       self.filenames = []
+      self.output = options['output']
       self.source = options['source']
+      self.test_files = options['test_files']
+
 
 
    def read(self):
@@ -418,10 +444,10 @@ class Database(UserDict):
    # Test if file exists
    def test_file(self, path, file):
       filename = os.path.join(self.source, path, file)
-      if not os.path.isfile(filename):
-         print("   Error, file doesn't exitst: %s" % filename)
-         return None
-      return filename
+      if not self.test_files or os.path.isfile(filename):
+         return filename
+      print("   Error, file doesn't exitst: %s" % filename)
+      return None
 
 
 # --------------------------------------------------------------------
@@ -450,11 +476,11 @@ def make_thumbnails(database, options):
             thumb_out = os.path.join(options['output'], 'thumbs', thumbname)
 
             # Make thumbnail without overwrite
-            if not os.path.isfile(thumb_out):
+            if not os.path.isfile(thumb_out) and os.path.isfile(source_in):
                thumbnail(source_in, thumb_out, options)
 
             # Copy image without overwrite
-            if not os.path.isfile(image_out):
+            if not os.path.isfile(image_out) and os.path.isfile(source_in):
                shutil.copy2(source_in, image_out)
 
 

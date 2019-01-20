@@ -13,6 +13,6 @@ thumb: 1.jpg
 ---
 
 date: '5.2013'
-location: 'Neulölln, Berlin'
+location: 'Neukölln, Berlin'
 images:
   - 1.jpg

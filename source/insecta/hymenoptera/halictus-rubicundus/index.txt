@@ -4,7 +4,7 @@ species: 'Rubicundus'
 
 ---
 
-date: '08.2016'
+date: '8.2016'
 location:
 images:
   - r0034561.jpg

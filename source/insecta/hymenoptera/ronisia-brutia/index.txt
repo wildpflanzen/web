@@ -4,7 +4,7 @@ species: 'Brutia'
 
 ---
 
-date: '01.2016'
+date: '1.2016'
 location:
 images:
   - r0034297.jpg

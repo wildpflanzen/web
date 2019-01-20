@@ -12,7 +12,7 @@ thumb: 1.jpg
 
 ---
 
-date: '07.13'
+date: '7.2013'
 location: 'Dolomiten, Italien'
 images:
   - 1.jpg

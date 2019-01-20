@@ -12,7 +12,7 @@ thumb: 1.jpg
 
 ---
 
-date: '4.13'
+date: '4.2013'
 location: 'Johannisthal, Berlin'
 images:
   - 12.jpg

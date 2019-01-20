@@ -12,7 +12,7 @@ thumb: w2.jpg
 
 ---
 
-date: '04.13'
+date: '4.2013'
 location: 'Gatow, Berlin'
 images:
   - w2.jpg

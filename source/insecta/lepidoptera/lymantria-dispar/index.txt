@@ -4,7 +4,7 @@ species: 'Dispar'
 
 ---
 
-date: '06.2014'
+date: '6.2014'
 location:
 images:
   - R0011728.jpg

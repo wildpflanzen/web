@@ -4,7 +4,7 @@ species: 'Germanica'
 
 ---
 
-date: '01.2016'
+date: '1.2016'
 location:
 images:
   - r0029214.jpg

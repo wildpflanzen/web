@@ -47,10 +47,13 @@
 
 
 {%- macro index_title(option) -%}
-   {%- if option == 'genus_de' %}Deutche Allgemein
-   {%- elif option == 'genus' %}Wissenschaftliche Allgemein
+   {%- if option == 'genus_de' %}Deutche Spezies
+   {%- elif option == 'genus' %}Wissenschaftliche Spezies
    {%- elif option == 'family_de' %}Deutche Familien
    {%- elif option == 'family' %}Wissenschaftliche Familien
+   {%- elif option == 'location' %}Location Register
+   {%- elif option == 'date' %}Date Register
+   {%- else %}{{ option }}
    {%- endif -%}
 {%-  endmacro -%}
 

@@ -4,7 +4,7 @@ species: 'Cephalotes'
 
 ---
 
-date: '03.2014'
+date: '3.2014'
 location:
 images:
   - 104.jpg

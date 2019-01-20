@@ -4,7 +4,7 @@ species: 'Flavipes'
 
 ---
 
-date: '03.2014'
+date: '3.2014'
 location:
 images:
   - 140.jpg

@@ -12,7 +12,7 @@ thumb: m1.jpg
 
 ---
 
-date: '04.13'
+date: '4.2013'
 location: 'Neukölln, Berlin'
 images:
   - m1.jpg

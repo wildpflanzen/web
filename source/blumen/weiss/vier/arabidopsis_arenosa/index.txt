@@ -13,7 +13,7 @@ thumb: a1.jpg
 ---
 
 date: '4.2013'
-location: 'Johannistal, Berlin'
+location: 'Johannisthal, Berlin'
 images:
   - a1.jpg
   - a2.jpg

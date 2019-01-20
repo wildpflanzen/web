@@ -4,7 +4,7 @@ species: 'Prasina'
 
 ---
 
-date: '01.2017'
+date: '1.2017'
 location:
 images:
   - r0034999.jpg
