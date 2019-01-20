@@ -12,7 +12,7 @@ thumb: s1.jpg
 
 ---
 
-date: '07.2013'
+date: '7.2013'
 location: 'Spreewald, Brandenburg'
 images:
   - s1.jpg

@@ -12,7 +12,7 @@ thumb: c1.jpg
 
 ---
 
-date: '03.2013'
+date: '3.2013'
 location: 'Königsheide, Berlin'
 images:
   - c1.jpg

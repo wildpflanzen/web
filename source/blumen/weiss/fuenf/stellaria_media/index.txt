@@ -12,7 +12,7 @@ thumb: s3.jpg
 
 ---
 
-date: '03.2013'
+date: '3.2013'
 location: 'Gatow, Berlin'
 images:
   - s3.jpg

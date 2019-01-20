@@ -4,7 +4,7 @@ species: 'Comma'
 
 ---
 
-date: '03.2016'
+date: '3.2016'
 location:
 images:
   - r0033295.jpg

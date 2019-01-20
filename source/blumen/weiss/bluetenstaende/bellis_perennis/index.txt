@@ -12,7 +12,7 @@ thumb: 1.jpg
 
 ---
 
-date: '03.2013'
+date: '3.2013'
 location: 'Plänterwald, Berlin'
 images:
   - 1.jpg

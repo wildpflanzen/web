@@ -12,8 +12,8 @@ thumb: 1.jpg
 
 ---
 
-date: '03.2013'
-location: 'Mügelsee, Berlin'
+date: '3.2013'
+location: 'Müggelsee, Berlin'
 images:
   - 1.jpg
   - 3.jpg

@@ -12,7 +12,7 @@ thumb: 1.jpg
 
 ---
 
-date: '7.13'
+date: '7.2013'
 location: 'Adamello, Italien'
 images:
   - 1.jpg

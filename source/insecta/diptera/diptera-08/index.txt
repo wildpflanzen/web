@@ -1,12 +1,12 @@
 ﻿order: 'Diptera'
 genus: 'Diptera'
-species: '08'
+species: '8'
 
 thumb: r0031328.jpg
 
 ---
 
-date: '01.2016'
+date: '1.2016'
 location:
 images:
   - r0031328.jpg

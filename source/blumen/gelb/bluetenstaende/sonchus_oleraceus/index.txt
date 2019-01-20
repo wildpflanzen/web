@@ -12,7 +12,7 @@ thumb: 1.jpg
 
 ---
 
-date: '9.13'
+date: '9.2013'
 location: 'Neukölln, Berlin'
 images:
   - 1.jpg

@@ -12,8 +12,8 @@ thumb: s1.jpg
 
 ---
 
-date: '04.13'
-location: 'Johannistal, Berlin'
+date: '4.2013'
+location: 'Johannisthal, Berlin'
 images:
   - s1.jpg
   - s2.jpg

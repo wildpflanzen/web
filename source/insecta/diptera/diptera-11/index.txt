@@ -6,7 +6,7 @@ thumb: 0030151.jpg
 
 ---
 
-date: '01.2015'
+date: '1.2015'
 location:
 images:
   - 0030151.jpg

@@ -4,7 +4,7 @@ species: 'Tiliae'
 
 ---
 
-date: '01.2015'
+date: '1.2015'
 location:
 images:
   - 0030898.jpg

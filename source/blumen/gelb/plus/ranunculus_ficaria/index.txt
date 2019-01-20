@@ -12,7 +12,7 @@ thumb: r4.jpg
 
 ---
 
-date: '04.13'
+date: '4.2013'
 location: 'Plänterwald, Berlin'
 images:
   - r4.jpg

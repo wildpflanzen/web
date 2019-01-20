@@ -4,7 +4,7 @@ species: '18'
 
 ---
 
-date: '08.2016'
+date: '8.2016'
 location:
 images:
   - r0034520.jpg
