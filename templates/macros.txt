@@ -47,8 +47,8 @@
 
 
 {%- macro index_title(option) -%}
-   {%- if option == 'genus_de' %}Deutche Spezies
-   {%- elif option == 'genus' %}Wissenschaftliche Spezies
+   {%- if option == 'genus_de' %}Deutche Allgemain
+   {%- elif option == 'genus' %}Wissenschaftliche Allgemain
    {%- elif option == 'family_de' %}Deutche Familien
    {%- elif option == 'family' %}Wissenschaftliche Familien
    {%- elif option == 'location' %}Location Register

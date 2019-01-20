@@ -23,9 +23,9 @@
 
 {% block navi_local %}
    <ul>
-   {% if index.index_name in ['genus', 'genus_de'] %}<li class="navi_select"><span class="btn">Spezies</span>
-   {% elif index.index_name in ['family'] %}<li><a href="index-genus.html">Spezies</a>
-   {%- else %}<li><a href="index-genus-de.html">Spezies</a>{% endif %}
+   {% if index.index_name in ['genus', 'genus_de'] %}<li class="navi_select"><span class="btn">Allgemain</span>
+   {% elif index.index_name in ['family'] %}<li><a href="index-genus.html">Allgemain</a>
+   {%- else %}<li><a href="index-genus-de.html">Allgemain</a>{% endif %}
 
    {% if index.index_name in ['family', 'family_de'] %}</li><li class="navi_select"><span class="btn">Familien</span>
    {%- elif index.index_name in ['genus'] %}</li><li><a href="index-family-de.html">Familien</a>
