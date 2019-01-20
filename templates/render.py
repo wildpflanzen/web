@@ -100,30 +100,37 @@ class HTML_generator():
       print('\nRendering index files ...')
 
       # Make html place index
-      self.make_index('location', lambda sp: self.session_index(sp, 'location'))
+      self.make_index('location',\
+                      lambda sp: self.session_index(sp, 'location'))
 
       # Make html place index
       self.make_index('date', \
                       lambda sp: [d.split('.')[1]+'.%02d' % int(d.split('.')[0]) for d in self.session_index(sp, 'date')])
       
       # Make html genus index
-      self.make_index('genus', lambda sp: [sp['genus']], length=1)
+      self.make_index('genus', \
+                      lambda sp: [sp['genus']], \
+                      length=1)
 
       # Make html genus_de index
-      self.make_index('genus_de', lambda sp: self.deutchname(sp, 'genus_de', 'species_de'), length=1)
+      self.make_index('genus_de', \
+                      lambda sp: self.deutchname(sp, 'genus_de', 'species_de'), \
+                      length=1)
 
       # Make html family index
-      self.make_index('family', lambda sp: [sp['family']])
+      self.make_index('family', \
+                      lambda sp: [sp['family']])
 
       # Make html family_de index
-      self.make_index('family_de', lambda sp: [sp['family']])
+      self.make_index('family_de', \
+                      lambda sp: [sp['family']])
 
 
 
-   def make_index(self, index_name, keyf, length=100):
+   def make_index(self, index_name, fkey, length=100):
       sorted_species =  {}
       for species in self.database['species']:
-         names = keyf(species)
+         names = fkey(species)
          for name in names:
             # Test if name exists and select first character
             if not name:
@@ -146,7 +153,8 @@ class HTML_generator():
 
       # Sort species
       for key in keys:
-         sorted_species[key] = sorted(sorted_species[key], key=keyf)
+         sorted_species[key] = sorted(sorted_species[key], \
+                                      key=lambda sp: self.deutchname(sp, 'genus_de', 'species_de'))
          
       # compose index
       self.index = {'keys': keys, 'species': sorted_species }
@@ -157,6 +165,7 @@ class HTML_generator():
       html = html_template.render(index=self.index)
       output = os.path.join(self.output, 'index-' + re.sub('[ _/]', '-', index_name)+'.html')
       self.write_file(output, html)
+
 
    def session_index(self, species, index):
       data = []
@@ -169,6 +178,7 @@ class HTML_generator():
          return data
       else:
          return ['']
+
 
    def deutchname(self, variable, index1, index2=''):
       # Extract deutche names
