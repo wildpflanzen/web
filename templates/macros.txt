@@ -51,8 +51,8 @@
    {%- elif option == 'genus' %}Wissenschaftliche Allgemain
    {%- elif option == 'family_de' %}Deutche Familien
    {%- elif option == 'family' %}Wissenschaftliche Familien
-   {%- elif option == 'location' %}Location Register
-   {%- elif option == 'date' %}Date Register
+   {%- elif option == 'location' %}Lokalisierung
+   {%- elif option == 'date' %}Datum
    {%- else %}{{ option }}
    {%- endif -%}
 {%-  endmacro -%}
