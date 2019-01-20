@@ -102,14 +102,14 @@
       {%- endif -%}
       <ul>
       {%- if index.index_name == 'genus' %}
-      {%- for species in species_list %}
+      {%- for species in species_list | sort(attribute='genus') %}
       <li><a href="{{species.filename}}.html">{{ species.genus }} {{ species.species }}
          {% if macros.name_deutche_index(species) %} / {% endif -%}
          {{ macros.name_deutche_index(species) }}</a></li>
       {%- endfor %}
 
       {%- elif index.index_name == 'family' %}
-      {%- for species in species_list %}
+      {%- for species in species_list | sort(attribute='genus') %}
       <li><a href="{{species.filename}}.html">{{ species.genus }} {{ species.species }}
          {%- if macros.name_deutche_index(species) %} / {% endif -%}
          {{ macros.name_deutche_index(species) }}</a></li>
