@@ -21,6 +21,7 @@ margin:0 8px;
 padding:0;
 font-family: Helvetica, Arial, sans-serif;
 font-size: 14px;
+min-width: 360px;
 }
 
 h1, h2 {
@@ -42,6 +43,10 @@ margin-top: 0;
 
 a {
 color: #404040;
+}
+
+img {
+max-width: 100%;
 }
 
 a:hover {
