@@ -1,5 +1,6 @@
 ﻿/*
-   Static web generator for image files.
+   Style sheet for Wildpflanzen static web generator.
+   
    https://github.com/picuino/wildpflanzen
 
    Copyright (c) 2012-2019 by Irene Pardo
@@ -33,12 +34,6 @@ margin: 0;
 padding: 0;
 padding-top: 24px;
 margin-bottom: 32px;
-}
-
-.wrapper, .header {
-max-width: 1024px;
-margin: 0 auto;
-margin-top: 0;
 }
 
 a {
@@ -117,8 +112,14 @@ width: 55px;
 
 
 /******************************
-   Content
+   Content and wrapper
  ******************************/
+
+.wrapper, .header {
+max-width: 1024px;
+margin: 0 auto;
+margin-top: 0;
+}
 
 .content {
 text-align: center;
@@ -295,6 +296,42 @@ max-height: 100%;
 .sp_session ul li a {
 padding: 0;
 margin: 0;
+}
+
+/******************************
+   Cookies advise
+ ******************************/
+
+#cookiesbar {
+display:block;
+position:fixed;
+width:100%;
+max-width:1024px;
+bottom:8px;
+}
+
+#cookiesadvise {
+position: static;
+margin: 0 auto;
+max-width:900px;
+padding:24px;
+font-size:16px;
+line-height:2em;
+text-align:center;
+background-color: rgba(0,0,0,0.9);
+color:#fff;
+z-index:99999;
+}
+
+#cookiesbar a {
+display:inline-block;
+padding:2px 8px;
+color:#e0e000;
+text-decoration:none;
+}
+
+#cookiesbar a:hover {
+background-color: #444;
 }
 
 

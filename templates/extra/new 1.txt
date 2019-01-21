@@ -1,2 +1,0 @@
-﻿      <td>{{database.groups[key].group_next.group_prev }}</td>
-      <td>{{database.groups[key].group_next.group_name }}</td>

@@ -28,7 +28,10 @@ def main():
 
    # Read options
    options = read_options('options.ini')
-
+   makedir(options['output'])
+   makedir(os.path.join(options['output'],'images'))
+   makedir(os.path.join(options['output'],'thumbs'))
+           
    # Read database
    print('\nReading data ...')
    database = Database(options)
@@ -45,9 +48,9 @@ def main():
    generator.copy_static()
 
    # Generate html files
-   #generator.html_species()
-   #generator.html_groups()
-   #generator.html_index()
+   generator.html_species()
+   generator.html_groups()
+   generator.html_index()
    generator.html_extra()
 
    
@@ -62,6 +65,7 @@ class HTML_generator():
 
    def __init__(self, database, options):
       self.database = database
+      self.database.options = options
       self.overwrite = False
       self.verbose = options['verbose']
       self.output = options['output']
@@ -134,10 +138,7 @@ class HTML_generator():
          for name in names:
             # Test if name exists and select first character
             if not name:
-               if self.verbose: print('x', sep='', end='')
                continue
-            else:
-               if self.verbose: print('.', sep='', end='')
             key = name if not length else name[:length]
 
             # Add new species
@@ -145,7 +146,6 @@ class HTML_generator():
                sorted_species[key].append(species)
             else:
                sorted_species[key] = [species]
-      if self.verbose: print()
 
       # Sort key characters
       keys = [k for k in sorted_species.keys()]
@@ -153,8 +153,9 @@ class HTML_generator():
 
       # Sort species
       for key in keys:
-         sorted_species[key] = sorted(sorted_species[key], \
-                                      key=lambda sp: self.deutchname(sp, 'genus_de', 'species_de'))
+         sorted_species[key] = \
+            sorted(sorted_species[key], \
+                   key=lambda sp: self.deutchname(sp, 'genus_de', 'species_de'))
          
       # compose index
       self.index = {'keys': keys, 'species': sorted_species }
@@ -162,7 +163,7 @@ class HTML_generator():
 
       # Jinja template
       html_template = self.jinja_environment('index-de.html')
-      html = html_template.render(index=self.index)
+      html = html_template.render(index=self.index, database=self.database)
       output = os.path.join(self.output, 'index-' + re.sub('[ _/]', '-', index_name)+'.html')
       self.write_file(output, html)
 
@@ -209,7 +210,7 @@ class HTML_generator():
       # Make html group files
       for group_path, group in self.database['groups'].items():
          filename = os.path.join(self.output, group['filename'] + '.html')
-         html = html_template.render(group=group)
+         html = html_template.render(group=group, database=self.database)
          self.write_file(filename, html)
 
 
@@ -220,11 +221,11 @@ class HTML_generator():
       html_template = self.jinja_environment('species-de.html')
 
       # Make html files
-      for register in self.database['species']:
-         if not 'group' in register:
+      for species in self.database['species']:
+         if not 'group' in species:
             continue
-         filename = os.path.join(self.output, register['filename'] + '.html')
-         html = html_template.render(species=register)
+         filename = os.path.join(self.output, species['filename'] + '.html')
+         html = html_template.render(species=species, database=self.database)
          self.write_file(filename, html)
 
 
@@ -478,7 +479,12 @@ def read_options(fname):
       data = fi.read()
    options = yaml.load(data)
    return options
-   
+
+
+def makedir(path):
+   if not os.path.exists(path):
+      os.mkdir(path)
+
 
 def make_thumbnails(database, options):
    if 'ignore_images' in options and options['ignore_images']:
@@ -502,6 +508,8 @@ def make_thumbnails(database, options):
 
             # Copy image without overwrite
             if not os.path.isfile(image_out):
+               if options['verbose']:
+                  print('   Copy %s -->\n        %s' %(source_in, image_out))
                shutil.copy2(source_in, image_out)
 
 

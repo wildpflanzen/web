@@ -1,4 +1,4 @@
-{% extends "base.html" %}
+﻿{% extends "base.html" %}
 
 
 {% block extra_head %}
@@ -62,7 +62,7 @@
 
       <td><a href="{{ species.group.filename }}.html">{{ species.group.group_name }}</a></td>
 
-      <td><a href="../source/{{species.path}}">{{ species.path | replace("/","/ ") }}</a></td>
+      <td><a href="../source/{{species.path}}">{{ species.path | replace("/","/ ") | replace("_","_ ") }}</a></td>
 
       <td><a href="{{ species.filename }}.html">
       {% for species_de in species.species_de %}
