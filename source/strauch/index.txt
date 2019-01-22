@@ -1,1 +1,1 @@
-﻿group_name: 'Strauch'
+﻿group_name: 'Sträucher'
