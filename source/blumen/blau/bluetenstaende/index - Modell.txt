@@ -1,0 +1,18 @@
+﻿family: ''
+genus: ''
+species: ''
+
+family_de: ''
+species_de: ''
+genus_de: ''
+
+floration: ''
+
+thumb: ''
+
+---
+
+date: ''
+location: ''
+images:
+   

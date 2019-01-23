@@ -1,0 +1,10 @@
+﻿order: 'Diptera'
+genus: 'Syritta'
+species: 'Pipiens'
+
+---
+
+date: '11.2013'
+location:
+images:
+  - 138.jpg

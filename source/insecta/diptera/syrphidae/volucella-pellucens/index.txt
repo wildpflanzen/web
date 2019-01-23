@@ -1,0 +1,10 @@
+﻿order: 'Diptera'
+genus: 'Volucella'
+species: 'Pellucens'
+
+---
+
+date: '11.2013'
+location:
+images:
+  - 52.jpg

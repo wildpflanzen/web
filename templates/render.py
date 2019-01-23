@@ -38,7 +38,7 @@ def main():
    database.read()
 
    # Make thumbnails
-   make_thumbnails(database, options)
+   thumbnails_make(database, options)
 
    # Make html pages
    generator = HTML_generator(database, options)
@@ -306,7 +306,7 @@ class Database(UserDict):
          self.add_group()
       else:
          # Register unknown
-         print('   Error, unknown type of register: %s' % fname)
+         print('   Error, unknown type of register: %s' % os.path.join(self.register['path'], fname))
 
 
    def add_species(self, sessions=None):
@@ -363,7 +363,7 @@ class Database(UserDict):
    def test_errors(self):
       print('\nFinding errors ...')
 
-      # Test all species
+      # Test all species      
       for register in self['species']:
          
          # Test if database images exists
@@ -371,19 +371,22 @@ class Database(UserDict):
          for session in register['sessions']:
             for image in session['images']:
                if self.test_file(register['path'], image):
-                  images.append(image)
+                  images.append(image)                  
                   
          # Test thumbnail image
-         if 'thumb' in register and not register['thumb'] in images:
+         if 'thumb' in register and register['thumb']:
+            if not register['thumb'] in images:
+               print('   Error, thumbnail not in image list: %' % os.path.join(register['path'], register['thumb']))
             if self.test_file(register['path'], register['thumb']):
-               images.append(register['thumb'])
-         else:
-            register['thumb'] = images[0] if len(images) else ''
+               if not register['thumb'] in images:
+                  images.append(register['thumb'])
+            else:
+               register['thumb'] = images[0] if len(images) else ''
  
-         # Test if image files are in database
+         # Test if source image files are in database
          for file in os.listdir(os.path.join(self.source, register['path'])):
             if file[-4:].lower() == '.jpg' and file not in images:
-               print('   Error, not in database: %s' % os.path.join(register['path'], file))
+               print('   Warning, image file not in database: %s' % os.path.join(register['path'], file))
                
          # Create empty keys
          for key in ['family', 'genus', 'species',
@@ -486,25 +489,32 @@ def makedir(path):
       os.mkdir(path)
 
 
-def make_thumbnails(database, options):
+def thumbnails_make(database, options):
    if 'ignore_images' in options and options['ignore_images']:
       return
    print('\nMaking thumbnails ...')
-   thumbfiles = {}
+
+   all_image_files = []
+   
    for register in database['species']:
       for session in register['sessions']:
+         thumbname = ''
+         if not 'thumbs' in session:
+            session['thumbs'] = []
+
          for i, image in enumerate(session['images']):
 
-            # Add relative path
-            thumbname = image_name(register, image, session)
-            register['thumbname'] = thumbname
+            # Make imagename and test if duplicated
+            imagename = image_name(register, image)
+            if imagename in all_image_files:
+               print('   Error, duplicated image: %s' % os.path.join(register['path'], imagename))
+               continue
+            all_image_files.append(imagename)
+            
+            # Add relative path to images
             source_in = os.path.join(options['source'], register['path'], image)
-            image_out = os.path.join(options['output'], 'images', thumbname)
-            thumb_out = os.path.join(options['output'], 'thumbs', thumbname)
-
-            # Make thumbnail without overwrite
-            if not os.path.isfile(thumb_out):
-               thumbnail(source_in, thumb_out, options)
+            image_out = os.path.join(options['output'], 'images', imagename)
+            thumb_out = os.path.join(options['output'], 'thumbs', imagename)
 
             # Copy image without overwrite
             if not os.path.isfile(image_out):
@@ -512,24 +522,45 @@ def make_thumbnails(database, options):
                   print('   Copy %s -->\n        %s' %(source_in, image_out))
                shutil.copy2(source_in, image_out)
 
+            # Select main thumbnail
+            if not thumbname:
+               thumbname = imagename
+            if 'thumb' in register and register['thumb'] == image:
+               thumbname = imagename
 
-def thumbnail(filein, thumb, options):
+            # Store thumbnails names
+            session['thumbs'].append(imagename)
+            
+            # Make thumbnail without overwrite
+            if not os.path.isfile(thumb_out):
+               thumb_convert(source_in, thumb_out, options)
+
+         register['thumbname'] = thumbname
+       
+   # Search for unused image files
+   remove_unused_files('images', all_image_files, options)
+   remove_unused_files('thumbs', all_image_files, options)
+
+
+def remove_unused_files(path, used_image_files, options):
+   fullpath = os.path.join(options['output'], path)
+   for image in os.listdir(fullpath):
+      if not image in used_image_files:
+         print('   Warning, unused image: %s' % os.path.join(path, image))
+         if remove_unused_files in options and options['remove_unused_files']:
+            os.remove(os.path.join(path, image))
+
+
+def thumb_convert(filein, thumb, options):
    print('   Thumbnail: ' + thumb)
    thumb_options = ' '.join(options['thumb_options'])
    command = options['imagemagick'] + ' ' + filein + ' ' + thumb_options + ' ' + thumb
    subprocess.call(command, shell=True)
 
 
-def image_name(register, imagename, session=None):
+def image_name(register, imagename):
    thumbname = register['filename'] + '-' + re.sub('[^0-9]', '', imagename) + '.jpg'
    thumbname = re.sub('-+', '-', thumbname)
-   if session:
-      if not 'thumbs' in session:
-         session['thumbs'] = []
-      if thumbname in session['thumbs']:
-         print('   Error, duplicated image: %s' % os.path.join(reg['path'], thumbname))
-      else:
-         session['thumbs'].append(thumbname)
    return thumbname
 
 

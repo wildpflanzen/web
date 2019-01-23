@@ -1,0 +1,20 @@
+﻿family: 'Familium'
+genus: 'Inventatus'
+species: 'Floripondius'
+
+family_de: 'Familie'
+species_de: 'Blummie Alpen-'
+genus_de: 'Gemeiner'
+
+floration: '28.12.2018'
+
+
+---
+
+date: '1.2019'
+location: 'Imaginarium, Alpen'
+images:
+  - 2.jpg
+  - 3.jpg
+  - 4.jpg
+  - 1.jpg

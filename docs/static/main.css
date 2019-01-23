@@ -220,6 +220,10 @@ display: block;
 padding: 4px;
 }
 
+.index_species ul li a:hover {
+background-color: white;
+color: #989898;
+}
 
 /******************************
    Group pages
