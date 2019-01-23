@@ -545,7 +545,6 @@
    
 	<!-- Cookies Advise -->
    <div id="cookiesbar" style="display:none">
-   <div id="cookiesadvise">
    Diese Webseite verwendet Cookies, 
    Informationen ausarbeiten Statistiken und analysieren Sie die 
    Navigation auf unserer Website.
@@ -554,8 +553,7 @@
    target="_blank">Cookie-Richtlinie.</a> <br />
    Wenn Sie weiter surfen, stimmen Sie der Verwendung zu.
    <a href="javascript:void(0);" onclick="cookieBarAccept();"><b>Akzeptieren</b></a>
-   </div>
-   </div>
+   </div> <!-- Cookiesbar end -->
    <script>
    if(document.cookie.indexOf("pcookiebar")<0) {cookieBarDisplay("block");}
    function cookieBarAccept(){setCookie("pcookiebar","1",365); cookieBarDisplay("none");}
