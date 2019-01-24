@@ -1,5 +1,4 @@
-﻿group_title: 'Gelbe'
-listdir:
+﻿listdir:
   - vier
   - fuenf
   - plus

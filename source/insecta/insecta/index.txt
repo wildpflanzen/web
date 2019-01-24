@@ -1,2 +1,3 @@
 ﻿group_title: 'Insecta'
 navi_name: 'Insecta'
+next_group: 'insecta/diptera/syrphidae'

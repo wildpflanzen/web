@@ -1,2 +1,2 @@
 ﻿group_title: 'Hymenoptera, Apoidea'
-navi_name: 'Apoidea'
+navi_name: 'Hymenoptera'

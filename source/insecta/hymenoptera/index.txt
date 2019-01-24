@@ -1,2 +1,5 @@
-﻿group_title: 'Hymenoptera'
-navi_name: 'Hymenoptera'
+﻿listdir:
+  - apoidea
+  - bombus
+  - vespoidea
+  - symphyta

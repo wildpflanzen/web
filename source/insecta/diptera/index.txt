@@ -1,2 +1,4 @@
-﻿group_title: 'Diptera'
-navi_name: 'Diptera'
+﻿listdir:
+  - syrphidae
+  - tephritidae
+  - andere

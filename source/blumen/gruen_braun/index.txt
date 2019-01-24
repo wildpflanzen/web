@@ -1,6 +1,4 @@
-﻿group_title: 'Grüne oder braune'
-navi_name: ''
-listdir:
+﻿listdir:
   - vier
   - plus
   - bluetenstaende

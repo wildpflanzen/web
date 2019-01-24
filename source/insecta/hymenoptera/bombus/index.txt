@@ -1,2 +1,2 @@
 ﻿group_title: 'Hymenoptera, Bombus'
-navi_name: 'Bombus'
+navi_name: 'Hymenoptera'

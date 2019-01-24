@@ -317,7 +317,7 @@ class Database(UserDict):
       if 'species' in register:
          # Register species
          self.add_species(register, docs[1:])
-      elif 'group_title' in register:
+      elif 'group_title' in register or 'listdir' in register:
          # Register group of species
          self.add_group(register, parent)
          return register
@@ -413,7 +413,7 @@ class Database(UserDict):
             if not key in register:
                register[key] = ''
 
-         # Force list in deutche genus and species
+         # Change string to list of strings in genus_de and species_de
          if not isinstance(register['genus_de'], list):
             register['genus_de'] = [ register['genus_de'] ]
          if not isinstance(register['species_de'], list):
@@ -431,15 +431,16 @@ class Database(UserDict):
          
          # Link species with group
          group_path = register['group_path']
-         if not self.find_group(group_path):
-            print('   Warning, species without group: %s' % register['path'])
-            continue
-         group = self.find_group(group_path)
-         if not register in group['species']:
-             group['species'].append(register)
-             register['group'] = group
+         group = self.find_group(group_path) 
+         if group:
+            group = self.find_group(group_path)
+            if not register in group['species']:
+               group['species'].append(register)
+               register['group'] = group
+            else:
+               print('   Error, duplicated species: %s' % group_path)              
          else:
-            print('   Error, duplicated species: %s' % group_path)
+            print('   Warning, species without group: %s' % register['path'])
 
       # Delete empty groups
       used_groups = []

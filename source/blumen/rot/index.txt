@@ -1,5 +1,4 @@
-﻿group_title: 'Rote'
-listdir:
+﻿listdir:
   - vier
   - fuenf
   - plus

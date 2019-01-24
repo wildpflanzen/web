@@ -1,6 +1,4 @@
-﻿group_title: ''
-navi_name: ''
-listdir:
+﻿listdir:
   - diptera
   - hymenoptera
   - lepidoptera
@@ -8,3 +6,4 @@ listdir:
   - hemiptera
   - coleoptera
   - orthoptera
+  - insecta

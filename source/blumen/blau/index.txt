@@ -1,4 +1,3 @@
-group_title: 'Blaue'
 listdir:
   - vier
   - fuenf

@@ -1,6 +1,4 @@
-﻿group_title: 'Weisse'
-navi_name: ''
-listdir:
+﻿listdir:
   - vier
   - fuenf
   - plus
