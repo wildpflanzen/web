@@ -29,9 +29,13 @@
    <ul>
    <li class="navi_next"><a href="{{ group.group_prev.filename }}.html">&lt;</a>
    </li><li class="navi_select navi_fix"><span class="btn">
-            {%- if 'parent' in group and group.parent and group.parent.group_name %}
-            {{ group.parent.group_name }}, {% endif -%}
-            {{ group.group_name }}<span>
+            {%- if 'navi_name' in group -%}
+            {{ group.navi_name }}
+            {%- else -%}
+               {%- if 'parent' in group and group.parent and group.parent.group_name %}
+               {{ group.parent.group_name }}, {% endif -%}
+               {{ group.group_name }}
+            {%- endif -%}<span>            
    </li><li class="navi_next"><a href="{{ group.group_next.filename }}.html">&gt;</a>
    </li>
    </ul>
