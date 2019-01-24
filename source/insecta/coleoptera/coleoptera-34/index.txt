@@ -2,7 +2,6 @@
 genus: 'Coleoptera'
 species: '34'
 
-
 ---
 
 date: '11.2013'

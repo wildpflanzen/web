@@ -8,8 +8,6 @@ genus_de: 'Schattenblume'
 
 floration: ''
 
-thumb: 1.jpg
-
 ---
 
 date: '3.2013'

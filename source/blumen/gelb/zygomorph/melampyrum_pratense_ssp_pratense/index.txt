@@ -8,8 +8,6 @@ genus_de: 'Wiesen-wachtelweizen'
 
 floration: 'Mai - August'
 
-thumb: 1.jpg
-
 ---
 
 date: '6.2014'

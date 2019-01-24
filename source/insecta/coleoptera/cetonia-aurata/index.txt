@@ -2,7 +2,6 @@
 genus: 'Cetonia'
 species: 'Aurata'
 
-
 ---
 
 date: '11.2013'

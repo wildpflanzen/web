@@ -1,1 +1,1 @@
-﻿group_name: 'Hymenoptera, Vespoidea'
+﻿group_name: 'Vespoidea'

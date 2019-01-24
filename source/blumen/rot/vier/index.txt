@@ -1,1 +1,1 @@
-﻿group_name: 'Rote, bis vier Blütenblätter'                     
+﻿group_name: 'Bis vier Blütenblätter'                    

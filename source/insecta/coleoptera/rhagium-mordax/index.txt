@@ -2,8 +2,6 @@
 genus: 'Rhagium'
 species: 'Mordax'
 
-thumb: r0011706.jpg
-
 ---
 
 date: '1.2016'

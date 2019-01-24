@@ -8,8 +8,6 @@ genus_de: 'Wolfsmilch'
 
 floration: ''
 
-thumb: 1.jpg
-
 ---
 
 date: '5.2013'

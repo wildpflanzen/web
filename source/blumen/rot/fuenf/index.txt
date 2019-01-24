@@ -1,1 +1,1 @@
-﻿group_name: 'Rote, fünf Blütenblätter'                         
+﻿group_name: 'Fünf Blütenblätter'                        

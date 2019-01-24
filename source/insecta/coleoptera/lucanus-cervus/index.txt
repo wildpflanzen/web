@@ -2,8 +2,6 @@
 genus: 'Lucanus'
 species: 'Cervus'
 
-thumb: r0014901.jpg
-
 ---
 
 date: '1.2016'

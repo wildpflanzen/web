@@ -8,8 +8,6 @@ genus_de: 'Leberblümchen'
 
 floration: ''
 
-thumb: h8.jpg
-
 ---
 
 date: '4.2013'

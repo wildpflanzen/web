@@ -2,8 +2,6 @@
 genus: 'Diptera'
 species: '12'
 
-thumb: r0030647.jpg
-
 ---
 
 date: '1.2016'

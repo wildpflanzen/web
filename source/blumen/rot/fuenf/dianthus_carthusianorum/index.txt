@@ -8,8 +8,6 @@ genus_de: 'Nelke'
 
 floration: 'Juni - September'
 
-thumb: k1.jpg
-
 ---
 
 date: '4.2013'

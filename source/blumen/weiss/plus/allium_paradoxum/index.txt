@@ -8,8 +8,6 @@ genus_de: ''
 
 floration: ''
 
-thumb: a1.jpg
-
 ---
 
 date: '3.2013'

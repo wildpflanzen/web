@@ -64,8 +64,8 @@ margin-top: 24px;
 .navi ul, .naviglobal ul {
 margin: 0;
 padding: 0;
-width:100%;
 height: 30px;
+width:100%;
 border-bottom: 1px solid #989898;
 border-left: 1px solid #989898;
 }
@@ -81,33 +81,30 @@ font-family: Helvetica, Arial, sans-serif;
 margin: 0;
 padding: 0;
 text-align: center;
-line-height: 20px;
 border-top: 1px solid #989898;
 border-right: 1px solid #989898;
 }
 
 .navi a, .naviglobal a, .navi .btn, .naviglobal .btn {
 line-height: 14px;
-display:block;
+padding: 8px 8px 7px 8px;
+display: block;
 text-decoration: none;
 color: #404040;
-padding: 8px 8px 7px 8px;
 }
 
 .naviglobal .navi_select, .navi .navi_select {
-border-bottom:none;
-background-color:white;
+border-bottom: none;
+background-color: white;
 padding-bottom: 1px;
 }
 
-.navi .nav_right {
-float:right;
-border-left: 1px solid #989898;
-border-right: none;
+.navi_next {
+width: 45px;
 }
 
-.navi_next {
-width: 55px;
+.navi_fix {
+min-width: 230px;
 }
 
 
@@ -197,7 +194,7 @@ line-height: 22px;
 
 .index_dict a {
 line-height: 14px;
-display:block;
+display: block;
 text-decoration: none;
 color: #404040;
 border: 1px solid #ccc;
@@ -309,24 +306,24 @@ margin: 0;
 #cookiesbar {
 font-size: 15px;
 font-family: Helvetica, Arial, sans-serif;
-line-height:1.5em;
-display:block;
-position:fixed;
-top:10px;
-text-align:center;
-max-width:983px;
-padding:20px 20px;
-margin-right:8px;
+line-height: 1.5em;
+display: block;
+position: fixed;
+top: 10px;
+text-align: center;
+max-width: 983px;
+padding: 20px 20px;
+margin-right: 8px;
 background-color: rgba(40,40,40,0.95);
-color:#fff;
-z-index:99999;
+color: #fff;
+z-index: 99999;
 }
 
 #cookiesbar a {
-display:inline-block;
-padding:4px 8px;
-color:#e0e000;
-text-decoration:none;
+display: inline-block;
+padding: 4px 8px;
+color: #e0e000;
+text-decoration: none;
 }
 
 #cookiesbar a:hover {
@@ -362,7 +359,7 @@ font-family: Helvetica, Arial, sans-serif;
 font-size: 12px;
 color: #404040;
 margin: 0;
-padding: 2px 10px;
+padding: 2px;
 text-align: center;
 border-right: 1px solid #989898;
 }
@@ -372,6 +369,7 @@ border-right: none;
 }
 
 .footer a {
+padding: 10px;
 text-decoration: none;
 color: #404040;
 }

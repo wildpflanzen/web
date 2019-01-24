@@ -2,7 +2,6 @@
 genus: 'Salticus'
 species: 'Scenicus'
 
-
 ---
 
 date: '11.2013'

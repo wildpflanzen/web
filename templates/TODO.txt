@@ -1,0 +1,1 @@
+cambiar groups de diccionarios a listas (Encadenadas?)

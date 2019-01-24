@@ -8,8 +8,6 @@ genus_de: 'Bärenklau'
 
 floration: 'Juni - Oktober'
 
-thumb: 1.jpg
-
 ---
 
 date: '11.2013'

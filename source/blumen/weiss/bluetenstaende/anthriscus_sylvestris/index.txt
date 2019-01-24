@@ -8,8 +8,6 @@ genus_de: 'Kerbel'
 
 floration: 'April - Jul'
 
-thumb: 1.jpg
-
 ---
 
 date: '6.2013'

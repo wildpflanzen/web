@@ -8,8 +8,6 @@ genus_de: ''
 
 floration: ''
 
-thumb: ''
-
 ---
 
 date: ''

@@ -8,8 +8,6 @@ genus_de: 'Goldrute'
 
 floration: 'August - Oktober'
 
-thumb: 1.jpg
-
 ---
 
 date: '8.2013'

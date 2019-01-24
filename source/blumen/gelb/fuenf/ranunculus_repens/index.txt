@@ -8,8 +8,6 @@ genus_de: 'Hahnenfuβ'
 
 floration: ''
 
-thumb: r1.jpg
-
 ---
 
 date: '4.2013'

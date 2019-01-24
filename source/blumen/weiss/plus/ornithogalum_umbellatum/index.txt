@@ -8,8 +8,6 @@ genus_de: 'Milchstern'
 
 floration: ''
 
-thumb: o1.jpg
-
 ---
 
 date: '3.2013'

@@ -8,8 +8,6 @@ genus_de: 'Franzosenkraut, zottiges knopfkraut'
 
 floration: 'Mai - Oktober'
 
-thumb: 1.jpg
-
 ---
 
 date: '9.2013'

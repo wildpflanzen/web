@@ -2,8 +2,6 @@
 genus: 'Variimorda'
 species: 'Villosa'
 
-thumb: R0031054.jpg
-
 ---
 
 date: '12.2014'

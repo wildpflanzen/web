@@ -2,8 +2,6 @@
 genus: 'Abrachyglossum'
 species: 'Capitatum'
 
-thumb: r0033009.jpg
-
 ---
 
 date: '3.2016'

@@ -1,17 +1,17 @@
 """
 
-   Static web generator for image files.
+   Wildpflanzen static web generator.
+
    https://github.com/picuino/wildpflanzen
 
-   ===============================================================
 
-   :copyright: (c) 2018-2019 by Carlos Pardo
-   :license: GPL v3  <https://www.gnu.org/licenses/gpl-3.0.html>
+   Copyright (c) 2018-2019 by Carlos Pardo
 
+   License GPL v3  <https://www.gnu.org/licenses/gpl-3.0.html>
    This program is free software; you can redistribute it and/or
    modify it under the terms of the GNU General Public License
    version 3 as published by the Free Software Foundation.
-   
+
 """
 
 import os
@@ -133,7 +133,7 @@ class HTML_generator():
 
    def make_index(self, index_name, fkey, length=100):
       sorted_species =  {}
-      for species in self.database['species']:
+      for species in self.database.species:
          names = fkey(species)
          for name in names:
             # Test if name exists and select first character
@@ -208,7 +208,7 @@ class HTML_generator():
       html_template = self.jinja_environment('groups-de.html')
 
       # Make html group files
-      for group_path, group in self.database['groups'].items():
+      for group in self.database.groups:
          filename = os.path.join(self.output, group['filename'] + '.html')
          html = html_template.render(group=group, database=self.database)
          self.write_file(filename, html)
@@ -221,7 +221,7 @@ class HTML_generator():
       html_template = self.jinja_environment('species-de.html')
 
       # Make html files
-      for species in self.database['species']:
+      for species in self.database.species:
          if not 'group' in species:
             continue
          filename = os.path.join(self.output, species['filename'] + '.html')
@@ -254,8 +254,8 @@ class Database(UserDict):
 
    def __init__(self, options):
       UserDict.__init__(self) 
-      self['groups'] = {}
-      self['species'] = []
+      self.groups = []
+      self.species = []
       self.filenames = []
       self.output = options['output']
       self.source = options['source']
@@ -268,21 +268,37 @@ class Database(UserDict):
       self.combine_database()
       
 
-   def read_paths(self, basepath, path=''):
+   def read_paths(self, basepath, path='', parent=None):
       # Process files
+      group = None
       fnames = os.listdir(os.path.join(basepath, path))
-      for f in fnames:
-         if 'index.txt' in f.lower():
-            self.read_data(basepath, path, f)
+      fnames.sort()
+      for fname in fnames:
+         if 'index.txt' in fname.lower():
+            group = self.read_data(basepath, path, fname, parent)
 
       # Recurse subdirs
+      subdirs = []
+      if group and 'listdir' in group:
+         for f in group['listdir']:
+            subdirs.append(f)
+            fullname = os.path.join(basepath, path, f)
+            if not os.path.exists(fullname) or not os.path.isdir(fullname):
+               print("   Error, path %s doesn't exists: %s" % (f, os.path.join(path, 'index.txt')))
+               continue
+            self.read_paths(basepath, path=os.path.join(path, f), parent=group)
+
       for f in fnames:
+         if f == 'static' and path=='':
+            continue
+         if f in subdirs:
+            continue
          fullname = os.path.join(basepath, path, f)
          if os.path.isdir(fullname):
-            self.read_paths(basepath, os.path.join(path, f))
+            self.read_paths(basepath, path=os.path.join(path, f), parent=group)
 
 
-   def read_data(self, basepath, path, fname):
+   def read_data(self, basepath, path, fname, parent):
 
       # Read yaml documents from file
       fullpath = os.path.join(basepath, path)
@@ -292,56 +308,61 @@ class Database(UserDict):
         
 
       # Create register with first yaml document and add path
-      self.register = docs[0]
+      register = docs[0]
       # Complete source path
-      self.register['path'] = path.replace('\\', '/')      
+      register['path'] = path.replace('\\', '/')      
       # Path clasification
-      self.register['splitpath'] = self.register['path'].split('/')
+      register['splitpath'] = register['path'].split('/')
 
-      if 'species' in self.register:
-         # Register of species
-         self.add_species(docs[1:])
-      elif 'group_name' in self.register:
-         # Register of group of species
-         self.add_group()
+      if 'species' in register:
+         # Register species
+         self.add_species(register, docs[1:])
+      elif 'group_name' in register:
+         # Register group of species
+         self.add_group(register, parent)
+         return register
       else:
          # Register unknown
          print('   Error, unknown type of register: %s' % os.path.join(self.register['path'], fname))
+      return None
 
 
-   def add_species(self, sessions=None):
+   def add_species(self, register, sessions=None):
       # Generate species unique filename
-      self.file_name()
+      self.file_name(register)
 
       # Group path
-      self.register['group_path'] = os.path.split(self.register['path'])[0]
+      register['group_path'] = os.path.split(register['path'])[0]
 
       # Add photo sessions
-      self.register['sessions'] = []
+      register['sessions'] = []
       if sessions:
-         self.register['sessions'] = [s for s in sessions]
+         register['sessions'] = [s for s in sessions]
 
       # Store register in database
-      self['species'].append(self.register)
+      self.species.append(register)
 
 
-   def add_group(self):
+   def add_group(self, register, parent):
       # Generate group unique name
-      self.file_name()
+      self.file_name(register)
+
+      # Add parent group
+      register['parent'] = parent
 
       # Add group species list
-      self.register['species'] = []
+      register['species'] = []
 
       # Store register in database
-      self['groups'][self.register['path']] = self.register
+      self.groups.append(register)
 
 
-   def file_name(self):
+   def file_name(self, register):
       # Generate register name
-      if 'genus' in self.register and 'species' in self.register:
-         name = self.register['genus'] + '-' + self.register['species']
+      if 'genus' in register and 'species' in register:
+         name = register['genus'] + '-' + register['species']
       else:
-         name = '-'.join(self.register['splitpath'])
+         name = '-'.join(register['splitpath'])
 
       # Normalize filename
       name = re.sub('[^a-zA-Z0-9]', '-', name).lower()
@@ -350,21 +371,19 @@ class Database(UserDict):
 
       # Test if duplicated
       if name in self.filenames:
-         print('   Error, duplicated name: %s' % name)
-         print(self.register)
-         input()
+         print('   Error, duplicated name: %s' % os.path.join(register['path'], name))
       else:
          self.filenames.append(name)
 
       # Store filename
-      self.register['filename'] = name
+      register['filename'] = name
 
 
    def test_errors(self):
       print('\nFinding errors ...')
 
       # Test all species      
-      for register in self['species']:
+      for register in self.species:
          
          # Test if database images exists
          images = []
@@ -412,10 +431,10 @@ class Database(UserDict):
          
          # Link species with group
          group_path = register['group_path']
-         if not group_path in self['groups']:
+         if not self.find_group(group_path):
             print('   Warning, species without group: %s' % register['path'])
             continue
-         group = self['groups'][group_path]
+         group = self.find_group(group_path)
          if not register in group['species']:
              group['species'].append(register)
              register['group'] = group
@@ -423,33 +442,37 @@ class Database(UserDict):
             print('   Error, duplicated species: %s' % group_path)
 
       # Delete empty groups
-      used_groups = {}
-      for key, group in self['groups'].items():
+      used_groups = []
+      for group in self.groups:
          if group['species']:
-            used_groups[key] = group
-      self['groups'] = used_groups
+            used_groups.append(group)
+      self.groups = used_groups
 
 
+   def find_group(self, group_path):
+      """Find group by path"""
+      for group in self.groups:
+         if group['path'] == group_path:
+            return group
+      return None
+
+      
    def combine_database(self):
-      # Sort groups and link in chain
-      keys = [k for k in self['groups'].keys()]
-      keys.sort()
-      for i in range(len(keys)-1):
-         self['groups'][keys[i]]['group_next'] = self['groups'][keys[i+1]]
-         self['groups'][keys[i]]['group_prev'] = self['groups'][keys[i-1]]
-      self['groups'][keys[-1]]['group_next'] = self['groups'][keys[0]]
-      if len(self['groups']) > 1:
-          self['groups'][keys[-1]]['group_prev'] = self['groups'][keys[-2]]
+      # Link groups in chain
+      for i in range(len(self.groups)-1):
+         self.groups[i]['group_next'] = self.groups[i+1]
+         self.groups[i]['group_prev'] = self.groups[i-1]
+      self.groups[-1]['group_next'] = self.groups[0]
+      if len(self.groups) > 1:
+          self.groups[-1]['group_prev'] = self.groups[-2]
       else:
-          self['groups'][keys[-1]]['group_prev'] = self['groups'][keys[0]]
-         
+          self.groups[-1]['group_prev'] = self.groups[0]
 
       # Sort species and link in chain
       all_species = []
-      for key in keys:
-         species = [s for s in self['groups'][key]['species']]
-         species.sort(key=lambda s: s['filename'])
-         all_species = all_species + species
+      for group in self.groups:
+         group['species'].sort(key=lambda s: s['filename'])
+         all_species = all_species + group['species']
 
       for i in range(len(all_species)-1):
          all_species[i]['species_next'] = all_species[i+1]
@@ -496,7 +519,7 @@ def thumbnails_make(database, options):
 
    all_image_files = []
    
-   for register in database['species']:
+   for register in database.species:
       for session in register['sessions']:
          thumbname = ''
          if not 'thumbs' in session:

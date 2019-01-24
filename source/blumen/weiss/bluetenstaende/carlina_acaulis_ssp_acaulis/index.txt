@@ -8,8 +8,6 @@ genus_de: 'Distel'
 
 floration: 'Juli - Oktober'
 
-thumb: 1.jpg
-
 ---
 
 date: '8.2015'

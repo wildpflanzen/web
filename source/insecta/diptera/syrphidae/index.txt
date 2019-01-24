@@ -1,1 +1,1 @@
-﻿group_name: 'Diptera, Syrphidae'
+﻿group_name: 'Syrphidae'

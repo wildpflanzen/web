@@ -1,5 +1,6 @@
 ﻿{#-
-   Static web generator for image files.
+   Layout template for Wildpflanzen static web generator.
+   
    https://github.com/picuino/wildpflanzen
 
    Copyright (c) 2018-2019 by Carlos Pardo
@@ -27,7 +28,10 @@
 {% block navi_local %}
    <ul>
    <li class="navi_next"><a href="{{ group.group_prev.filename }}.html">&lt;</a>
-   </li><li class="navi_select"><span class="btn">{{ group.group_name }}<span>
+   </li><li class="navi_select navi_fix"><span class="btn">
+            {%- if 'parent' in group and group.parent %}
+            {{ group.parent.group_name }}, {% endif -%}
+            {{ group.group_name }}<span>
    </li><li class="navi_next"><a href="{{ group.group_next.filename }}.html">&gt;</a>
    </li>
    </ul>
@@ -36,7 +40,9 @@
 
 {% block content %}
    <!-- Group name -->
-   <h1>{{ group.group_name }}</h1>
+   <h1>{%- if 'parent' in group and group.parent %}
+       {{ group.parent.group_name }}, {% endif -%}
+       {{ group.group_name }}</h1>
 
    <!-- Group species -->
    {% for species in group.species %}

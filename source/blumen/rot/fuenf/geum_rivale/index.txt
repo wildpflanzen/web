@@ -8,8 +8,6 @@ genus_de: 'Nelkenwurz'
 
 floration: 'April - Jul'
 
-thumb: 1.jpg
-
 ---
 
 date: '5.2014'

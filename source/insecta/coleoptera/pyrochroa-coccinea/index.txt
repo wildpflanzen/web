@@ -2,8 +2,6 @@
 genus: 'Pyrochroa'
 species: 'Coccinea'
 
-thumb: R0030570.jpg
-
 ---
 
 date: '12.2014'

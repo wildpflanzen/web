@@ -1,1 +1,1 @@
-﻿group_name: 'Weisse, zygomorphe Blüten'                        
+﻿group_name: 'Zygomorphe Blüten'                         

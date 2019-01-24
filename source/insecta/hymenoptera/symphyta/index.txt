@@ -1,1 +1,1 @@
-﻿group_name: 'Hymenoptera, Symphyta'
+﻿group_name: 'Symphyta'

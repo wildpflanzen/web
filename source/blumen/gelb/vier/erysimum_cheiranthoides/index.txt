@@ -8,8 +8,6 @@ genus_de: 'Schöterich'
 
 floration: 'Mai - September'
 
-thumb: 1.jpg
-
 ---
 
 date: '5.2014'

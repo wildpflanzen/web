@@ -2,7 +2,6 @@
 genus: 'Misumena'
 species: 'Vatia'
 
-
 ---
 
 date: '11.2013'

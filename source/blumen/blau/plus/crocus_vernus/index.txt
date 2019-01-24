@@ -8,8 +8,6 @@ genus_de: 'Krokus'
 
 floration: ''
 
-thumb: 1.jpg
-
 ---
 
 date: '2.2014'

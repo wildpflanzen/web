@@ -2,7 +2,6 @@
 genus: 'Clytra'
 species: 'Laeviuscula'
 
-
 ---
 
 date: '11.2013'

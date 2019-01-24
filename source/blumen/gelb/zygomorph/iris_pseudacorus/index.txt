@@ -8,8 +8,6 @@ genus_de: 'Schwertlilie'
 
 floration: 'Mai - Jun'
 
-thumb: 1.jpg
-
 ---
 
 date: '6.2014'

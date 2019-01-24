@@ -2,8 +2,6 @@
 genus: 'Aculepeira'
 species: 'Ceropegia'
 
-thumb: r0033305.jpg
-
 ---
 
 date: '3.2016'

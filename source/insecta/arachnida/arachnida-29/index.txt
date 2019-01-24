@@ -2,7 +2,6 @@
 genus: 'Arachnida'
 species: '29'
 
-
 ---
 
 date: '11.2013'

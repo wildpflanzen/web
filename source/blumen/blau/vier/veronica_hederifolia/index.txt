@@ -8,8 +8,6 @@ genus_de: 'Ehrenpreis'
 
 floration: ''
 
-thumb: v1.jpg
-
 ---
 
 date: '4.2013'

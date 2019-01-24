@@ -2,8 +2,6 @@
 genus: 'Judolia'
 species: 'Cerambyciformis'
 
-thumb: r0014312.jpg
-
 ---
 
 date: '3.2016'

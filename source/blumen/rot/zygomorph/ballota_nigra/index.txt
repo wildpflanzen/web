@@ -8,8 +8,6 @@ genus_de: ''
 
 floration: 'Juni - Oktober'
 
-thumb: 1.jpg
-
 ---
 
 date: '8.2013'

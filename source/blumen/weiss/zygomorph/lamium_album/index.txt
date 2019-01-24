@@ -8,8 +8,6 @@ genus_de: 'Taubnessel'
 
 floration: ''
 
-thumb: l1.jpg
-
 ---
 
 date: '4.2013'

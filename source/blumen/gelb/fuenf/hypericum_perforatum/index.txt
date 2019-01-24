@@ -8,8 +8,6 @@ genus_de: 'Johanniskraut'
 
 floration: 'Juni - August'
 
-thumb: 1.jpg
-
 ---
 
 date: '6.2013'

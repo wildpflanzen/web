@@ -6,10 +6,7 @@ family_de: 'Amaryllisgewächse'
 species_de: ['Märzenbecher', 'Frühlings']
 genus_de: ['', 'Knotenblume']
 
-
 floration: ''
-
-thumb: m2.jpg
 
 ---
 

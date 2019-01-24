@@ -8,8 +8,6 @@ genus_de: ''
 
 floration: ''
 
-thumb: r4.jpg
-
 ---
 
 date: '4.2013'

@@ -8,8 +8,6 @@ genus_de: 'Silberwurz'
 
 floration: 'Juni - August'
 
-thumb: 1.jpg
-
 ---
 
 date: '7.2013'

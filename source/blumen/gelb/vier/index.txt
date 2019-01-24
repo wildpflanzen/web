@@ -1,1 +1,1 @@
-﻿group_name: 'Gelbe, bis vier Blütenblätter'                    
+﻿group_name: 'Bis vier Blütenblätter'                    

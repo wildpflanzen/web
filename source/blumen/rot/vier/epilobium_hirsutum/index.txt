@@ -8,8 +8,6 @@ genus_de: 'Weidenröschen'
 
 floration: 'Juli - September'
 
-thumb: 1.jpg
-
 ---
 
 date: '8.2016'

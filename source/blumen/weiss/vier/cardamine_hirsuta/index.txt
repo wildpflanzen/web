@@ -8,8 +8,6 @@ genus_de: 'Schaumkraut'
 
 floration: 'März - Jun'
 
-thumb: c5.jpg
-
 ---
 
 date: '4.2013'

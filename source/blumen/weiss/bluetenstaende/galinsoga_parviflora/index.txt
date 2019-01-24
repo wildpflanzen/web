@@ -8,8 +8,6 @@ genus_de: 'Franzosenkraut, kleines knopfkraut'
 
 floration: 'Juni - November'
 
-thumb: 1.jpg
-
 ---
 
 date: '9.2013'

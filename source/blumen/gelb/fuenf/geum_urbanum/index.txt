@@ -8,8 +8,6 @@ genus_de: 'Nelkenwurz'
 
 floration: 'Mai - Oktober'
 
-thumb: 1.jpg
-
 ---
 
 date: '4.2013'
@@ -21,8 +19,6 @@ images:
   - 4.jpg
   - 5.jpg
   - 6.jpg
-
-thumb: 1.jpg
 
 ---
 

@@ -8,8 +8,6 @@ genus_de: 'Nachtschatten'
 
 floration: ''
 
-thumb: 1.jpg
-
 ---
 
 date: '9.2013'

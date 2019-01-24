@@ -1,1 +1,1 @@
-﻿group_name: 'Hymenoptera, Bombus'
+﻿group_name: 'Bombus'

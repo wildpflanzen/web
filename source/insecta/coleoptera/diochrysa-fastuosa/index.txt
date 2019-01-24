@@ -2,8 +2,6 @@
 genus: 'Diochrysa'
 species: 'Fastuosa'
 
-thumb: r0014859.jpg
-
 ---
 
 date: '3.2016'

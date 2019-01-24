@@ -1,0 +1,6 @@
+﻿group_name: 'Grüne oder braune'
+listdir:
+  - vier
+  - plus
+  - bluetenstaende
+  - zygomorph

@@ -8,8 +8,6 @@ genus_de: 'Hornkraut'
 
 floration: ''
 
-thumb: c5.jpg
-
 ---
 
 date: '4.2013'

@@ -8,8 +8,6 @@ genus_de: 'Storchschnabel, ruprechtskraut'
 
 floration: 'Mai - Oktober'
 
-thumb: 1.jpg
-
 ---
 
 date: '6.2013'

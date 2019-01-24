@@ -8,8 +8,6 @@ genus_de: 'Maβliebchen'
 
 floration: 'Juni - Oktober'
 
-thumb: 1.jpg
-
 ---
 
 date: '3.2013'

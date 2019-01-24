@@ -8,8 +8,6 @@ genus_de: 'Wolfstrapp'
 
 floration: 'Juli - September'
 
-thumb: 1.jpg
-
 ---
 
 date: '9.2013'

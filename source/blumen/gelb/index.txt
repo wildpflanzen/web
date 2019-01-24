@@ -1,0 +1,7 @@
+﻿group_name: 'Gelbe'
+listdir:
+  - vier
+  - fuenf
+  - plus
+  - bluetenstaende
+  - zygomorph

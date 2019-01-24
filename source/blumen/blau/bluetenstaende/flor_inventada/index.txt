@@ -8,7 +8,6 @@ genus_de: 'Gemeiner'
 
 floration: '28.12.2018'
 
-
 ---
 
 date: '1.2019'

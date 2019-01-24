@@ -1,0 +1,7 @@
+group_name: 'Blaue'
+listdir:
+  - vier
+  - fuenf
+  - plus
+  - bluetenstaende
+  - zygomorph

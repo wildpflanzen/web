@@ -8,8 +8,6 @@ genus_de: 'Waldrebe'
 
 floration: 'April - Jun'
 
-thumb: 1.jpg
-
 ---
 
 date: '7.2013'

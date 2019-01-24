@@ -8,8 +8,6 @@ genus_de: 'Kreuzlabkraut'
 
 floration: 'April - August'
 
-thumb: 1.jpg
-
 ---
 
 date: '8.2015'

@@ -8,8 +8,6 @@ genus_de: 'Greiskraut'
 
 floration: 'Juni - November'
 
-thumb: 1.jpg
-
 ---
 
 date: '10.2013'

@@ -2,8 +2,6 @@
 genus: 'Urophora'
 species: 'Cardui'
 
-thumb: r0011335.jpg
-
 ---
 
 date: '11.2013'

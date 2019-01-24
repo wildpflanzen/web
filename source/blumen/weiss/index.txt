@@ -1,0 +1,7 @@
+﻿group_name: 'Weisse'
+listdir:
+  - vier
+  - fuenf
+  - plus
+  - bluetenstaende
+  - zygomorph

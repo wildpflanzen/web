@@ -2,8 +2,6 @@
 genus: 'Pachyta'
 species: 'Quadrimaculata'
 
-thumb: r0032967.jpg
-
 ---
 
 date: '3.2016'

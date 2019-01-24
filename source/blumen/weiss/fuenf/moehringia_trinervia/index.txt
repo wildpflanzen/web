@@ -8,8 +8,6 @@ genus_de: 'Nabelmiere'
 
 floration: ''
 
-thumb: m1.jpg
-
 ---
 
 date: '4.2013'

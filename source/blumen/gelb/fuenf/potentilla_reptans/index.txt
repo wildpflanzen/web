@@ -8,8 +8,6 @@ genus_de: 'Fingerkraut'
 
 floration: 'Juni - August'
 
-thumb: 1.jpg
-
 ---
 
 date: '5.2013'

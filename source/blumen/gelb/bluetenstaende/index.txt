@@ -1,1 +1,1 @@
-﻿group_name: 'Gelbe, Blütenstände'                              
+﻿group_name: 'Blütenstände'                              

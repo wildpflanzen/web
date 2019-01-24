@@ -8,8 +8,6 @@ genus_de: 'Schuppenlöwenzahn'
 
 floration: ''
 
-thumb: 1.jpg
-
 ---
 
 date: '7.2012'

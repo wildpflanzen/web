@@ -8,8 +8,6 @@ genus_de: 'Vergissmeinnicht'
 
 floration: 'April - Jun'
 
-thumb: 1.jpg
-
 ---
 
 date: '4.2014'

@@ -1,0 +1,7 @@
+﻿group_name: 'Rote'
+listdir:
+  - vier
+  - fuenf
+  - plus
+  - bluetenstaende
+  - zygomorph

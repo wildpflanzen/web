@@ -1,1 +1,1 @@
-﻿group_name: 'Diptera, Tephritidae'
+﻿group_name: 'Tephritidae'
