@@ -1,6 +1,6 @@
 ﻿{#-
    Layout template for Wildpflanzen static web generator.
-   
+
    https://github.com/picuino/wildpflanzen
 
    Copyright (c) 2018-2019 by Carlos Pardo
@@ -22,8 +22,7 @@
 {% block navi_local %}
    <ul>
    <li class="navi_next"><a href="{{ species.species_prev.filename }}.html">&lt;</a>
-   </li><li class="navi_fix"><a href="{{ species.group.filename }}.html">
-            {{- species.group.group_title }}</a>
+   </li><li class="navi_fix"><a href="{{ species.group.filename }}.html">{{ species.group.group_title }}</a>
    </li><li class="navi_next"><a href="{{ species.species_next.filename }}.html">&gt;</a>
    </li>
    </ul>
@@ -32,9 +31,15 @@
 
 {% block content %}
    <!-- Species name -->
-   <h1>{{ macros.name_deutche(species) }} 
-       {%- if macros.name_deutche(species) %} / {% endif -%}
-       {{ species.genus }}{% if species.species | int == 0 %} {{ species.species }}{% endif %}</h1>
+   <h1>
+      {%- if macros.deutche_name(species) -%}
+         {{ macros.deutche_name(species) }} / {% endif -%}
+      {{ species.genus }}
+      {%- if species.species | int == 0 -%}{# does not show numbers in names #}
+         {{ species.species }}
+      {%- endif -%}
+   </h1>
+
    <div class="sp_info">
    <div class="sp_family">{{ species.family_de }}
        {%- if species.family_de and species.family %} / {% endif -%}
@@ -62,5 +67,5 @@
 
 
 {% block data %}
-    {{ macros.dump_species(species) }}
+    {{ macros.dump_data(species) }}
 {%- endblock %}

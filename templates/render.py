@@ -31,7 +31,7 @@ def main():
    makedir(options['output'])
    makedir(os.path.join(options['output'],'images'))
    makedir(os.path.join(options['output'],'thumbs'))
-           
+
    # Read database
    print('\nReading data ...')
    database = Database(options)
@@ -53,7 +53,7 @@ def main():
    generator.html_index()
    generator.html_extra()
 
-   
+
    # End
    print('\nRender end.\n')
 
@@ -70,13 +70,13 @@ class HTML_generator():
       self.verbose = options['verbose']
       self.output = options['output']
       self.source = options['source']
-      
+
 
    def copy_static(self):
       print("\nCopying static files ...")
       self.copy_files(self.source + '/static', self.output + '/static')
       self.copy_files('root', self.output)
-      self.copy_files('static', self.output + '/static')     
+      self.copy_files('static', self.output + '/static')
 
 
    def copy_files(self, src, dst):
@@ -98,7 +98,7 @@ class HTML_generator():
          filename = os.path.join(self.output, fname)
          html = html_template.render(database=self.database)
          self.write_file(filename, html)
-      
+
 
    def html_index(self):
       print('\nRendering index files ...')
@@ -110,7 +110,7 @@ class HTML_generator():
       # Make html place index
       self.make_index('date', \
                       lambda sp: [d.split('.')[1]+'.%02d' % int(d.split('.')[0]) for d in self.session_index(sp, 'date')])
-      
+
       # Make html genus index
       self.make_index('genus', \
                       lambda sp: [sp['genus']], \
@@ -156,7 +156,7 @@ class HTML_generator():
          sorted_species[key] = \
             sorted(sorted_species[key], \
                    key=lambda sp: self.deutchname(sp, 'genus_de', 'species_de'))
-         
+
       # compose index
       self.index = {'keys': keys, 'species': sorted_species }
       self.index['index_name'] = index_name
@@ -253,7 +253,7 @@ class HTML_generator():
 class Database(UserDict):
 
    def __init__(self, options):
-      UserDict.__init__(self) 
+      UserDict.__init__(self)
       self.groups = []
       self.species = []
       self.filenames = []
@@ -266,7 +266,7 @@ class Database(UserDict):
       self.read_paths(self.source)
       self.test_errors()
       self.combine_database()
-      
+
 
    def read_paths(self, basepath, path='', parent=None):
       # Process files
@@ -305,12 +305,12 @@ class Database(UserDict):
       with codecs.open(os.path.join(fullpath, fname), 'r', encoding='utf-8-sig') as fi:
          data = fi.read()
       docs = [d for d in yaml.load_all(data)]
-        
+
 
       # Create register with first yaml document and add path
       register = docs[0]
       # Complete source path
-      register['path'] = path.replace('\\', '/')      
+      register['path'] = path.replace('\\', '/')
       # Path clasification
       register['splitpath'] = register['path'].split('/')
 
@@ -382,16 +382,16 @@ class Database(UserDict):
    def test_errors(self):
       print('\nFinding errors ...')
 
-      # Test all species      
+      # Test all species
       for register in self.species:
-         
+
          # Test if database images exists
          images = []
          for session in register['sessions']:
             for image in session['images']:
                if self.test_file(register['path'], image):
-                  images.append(image)                  
-                  
+                  images.append(image)
+
          # Test thumbnail image
          if 'thumb' in register and register['thumb']:
             if not register['thumb'] in images:
@@ -401,12 +401,12 @@ class Database(UserDict):
                   images.append(register['thumb'])
             else:
                register['thumb'] = images[0] if len(images) else ''
- 
+
          # Test if source image files are in database
          for file in os.listdir(os.path.join(self.source, register['path'])):
             if file[-4:].lower() == '.jpg' and file not in images:
                print('   Warning, image file not in database: %s' % os.path.join(register['path'], file))
-               
+
          # Create empty keys
          for key in ['family', 'genus', 'species',
                      'family_de', 'genus_de', 'species_de']:
@@ -428,17 +428,17 @@ class Database(UserDict):
                   print('   Warning, deutche genus without specie: %s' % os.path.join(register['path'], 'index.txt'))
                elif ' ' in register['species_de'][i] and register['species_de'][i][-1] != '-':
                   print('   Warning, subspecie without hyphen: %s' % os.path.join(register['path'], 'index.txt'))
-         
+
          # Link species with group
          group_path = register['group_path']
-         group = self.find_group(group_path) 
+         group = self.find_group(group_path)
          if group:
             group = self.find_group(group_path)
             if not register in group['species']:
                group['species'].append(register)
                register['group'] = group
             else:
-               print('   Error, duplicated species: %s' % group_path)              
+               print('   Error, duplicated species: %s' % group_path)
          else:
             print('   Warning, species without group: %s' % register['path'])
 
@@ -457,7 +457,7 @@ class Database(UserDict):
             return group
       return None
 
-      
+
    def combine_database(self):
       # Link groups in chain
       for i in range(len(self.groups)-1):
@@ -507,10 +507,10 @@ class Database(UserDict):
 
 
 # --------------------------------------------------------------------
-#    READ OPTIONS, MAKE THUMBNAILS 
+#    READ OPTIONS, MAKE THUMBNAILS
 # --------------------------------------------------------------------
 
-def read_options(fname):   
+def read_options(fname):
    print('\nReading options ...')
    with codecs.open(os.path.join(fname), 'r', encoding='utf-8-sig') as fi:
       data = fi.read()
@@ -529,7 +529,7 @@ def thumbnails_make(database, options):
    print('\nMaking thumbnails ...')
 
    all_image_files = []
-   
+
    for register in database.species:
       for session in register['sessions']:
          thumbname = ''
@@ -544,7 +544,7 @@ def thumbnails_make(database, options):
                print('   Error, duplicated image: %s' % os.path.join(register['path'], imagename))
                continue
             all_image_files.append(imagename)
-            
+
             # Add relative path to images
             source_in = os.path.join(options['source'], register['path'], image)
             image_out = os.path.join(options['output'], 'images', imagename)
@@ -564,13 +564,13 @@ def thumbnails_make(database, options):
 
             # Store thumbnails names
             session['thumbs'].append(imagename)
-            
+
             # Make thumbnail without overwrite
             if not os.path.isfile(thumb_out):
                thumb_convert(source_in, thumb_out, options)
 
          register['thumbname'] = thumbname
-       
+
    # Search for unused image files
    remove_unused_files('images', all_image_files, options)
    remove_unused_files('thumbs', all_image_files, options)

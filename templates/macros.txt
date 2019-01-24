@@ -1,6 +1,6 @@
 ﻿{#-
    Template functions for Wildpflanzen static web generator.
-   
+
    https://github.com/picuino/wildpflanzen
 
    Copyright (c) 2018-2019 by Carlos Pardo
@@ -12,16 +12,7 @@
 -#}
 
 
-{%- macro name_deutche_index(species) -%}
-{%- for species_de in species.species_de %}
-   {%- set genus_de = species.genus_de[loop.index0] %}
-   {%- if genus_de %}{{ genus_de }}, {% endif %}{{ species_de }}
-   {%- if loop.index != loop.length %}; {% endif %}
-{%- endfor -%}
-{%- endmacro -%}
-
-
-{%- macro name_deutche(species) -%}
+{%- macro deutche_name(species) -%}
 {%- for species_de in species.species_de %}
    {%- set genus_de = species.genus_de[loop.index0] %}
    {%- if genus_de and species_de and species_de[-1] == '-' -%}
@@ -43,7 +34,7 @@
    {% else -%}
    <li><a href="index.html">Bestimmung</a>
    {% endif %}
-   
+
    {%- if selected == 'index' -%}
    </li><li class="navi_select"><span class="btn">Register</span>
    {% else -%}
@@ -83,9 +74,18 @@
 {%- endmacro %}
 
 
-{%- macro dump_species(species) -%}
-   {%- for key in ['family', 'genus', 'species', 'family_de', 
-                   'species_de', 'genus_de', 'floration', 
+{%- macro deutche_name_index(species) -%}
+{%- for species_de in species.species_de %}
+   {%- set genus_de = species.genus_de[loop.index0] %}
+   {%- if genus_de %}{{ genus_de }}, {% endif %}{{ species_de }}
+   {%- if loop.index != loop.length %}; {% endif %}
+{%- endfor -%}
+{%- endmacro -%}
+
+
+{%- macro dump_data(species) -%}
+   {%- for key in ['family', 'genus', 'species', 'family_de',
+                   'species_de', 'genus_de', 'floration',
                    'thumb', 'path', 'order' ] -%}
    {%- if key in species %}
    {{key}}: {% if species[key] is string %}'{{ species[key] }}'
