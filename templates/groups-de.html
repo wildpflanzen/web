@@ -52,11 +52,12 @@
          <img src="thumbs/{{ species.thumbname }}" alt="{{ species.genus }} {{ species.species }}" />
       </a>
       </div>
-      <div class="group_name">
+      <h2 class="group_name">
          <a href="{{ species.filename }}.html">{{ macros.name_deutche(species) }}
           {%- if macros.name_deutche(species) %} / {% endif -%}
-          {{ species.genus }} {{ species.species }}</a>
-      </div>
+          {{ species.genus }}
+          {%- if species.species | int == 0 %} {{ species.species }}{% endif %}</a>
+      </h2>
    </div>
    {% endfor %}
 

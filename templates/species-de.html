@@ -34,7 +34,9 @@
 
 {% block content %}
    <!-- Species name -->
-   <h1>{{ macros.name_deutche(species) }} {% if macros.name_deutche(species) %} / {% endif %} {{ species.genus }} {{ species.species }}</h1>
+   <h1>{{ macros.name_deutche(species) }} 
+       {%- if macros.name_deutche(species) %} / {% endif -%}
+       {{ species.genus }}{% if species.species | int == 0 %} {{ species.species }}{% endif %}</h1>
    <div class="sp_info">
    <div class="sp_family">{{ species.family_de }}
        {%- if species.family_de and species.family %} / {% endif -%}

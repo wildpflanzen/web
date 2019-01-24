@@ -1,0 +1,6 @@
+﻿group_name: ''
+listdir:
+  - blumen
+  - grass
+  - strauch
+  - insecta
