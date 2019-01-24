@@ -1,1 +1,2 @@
-﻿group_name: 'Symphyta'
+﻿group_title: 'Hymenoptera, Symphyta'
+navi_name: 'Hymenoptera'

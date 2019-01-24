@@ -1,4 +1,5 @@
-﻿group_name: 'Grüne oder braune'
+﻿group_title: 'Grüne oder braune'
+navi_name: ''
 listdir:
   - vier
   - plus

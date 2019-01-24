@@ -1,1 +1,2 @@
-﻿group_name: 'Fünf Blütenblätter'                        
+﻿group_title: 'Weisse, Fünf Blütenblätter'
+navi_name: 'Weisse, Fünf Blütenblätter'

@@ -1,2 +1,2 @@
-﻿group_name: 'Tephritidae'
+﻿group_title: 'Diptera, Tephritidae'
 navi_name: 'Diptera'

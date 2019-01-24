@@ -1,1 +1,2 @@
-﻿group_name: 'Lepidoptera'
+﻿group_title: 'Lepidoptera'
+navi_name: 'Lepidoptera'

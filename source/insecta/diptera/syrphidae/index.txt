@@ -1,2 +1,2 @@
-﻿group_name: 'Syrphidae'
+﻿group_title: 'Diptera, Syrphidae'
 navi_name: 'Diptera'

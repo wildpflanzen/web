@@ -1,1 +1,3 @@
-﻿group_name: 'Sträucher'
+﻿group_title: 'Sträucher'
+navi_name: 'Sträucher'
+next_group: 'blumen/weiss/vier'

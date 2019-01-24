@@ -1,1 +1,2 @@
-﻿group_name: 'Bis vier Blütenblätter'                    
+﻿group_title: 'Weisse, Bis vier Blütenblätter'
+navi_name: 'Weisse, Bis vier Blütenblätter'

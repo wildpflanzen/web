@@ -23,9 +23,7 @@
    <ul>
    <li class="navi_next"><a href="{{ species.species_prev.filename }}.html">&lt;</a>
    </li><li class="navi_fix"><a href="{{ species.group.filename }}.html">
-            {%- if 'parent' in species.group and species.group.parent and species.group.parent.group_name -%}
-            {{ species.group.parent.group_name }}, {% endif -%}
-            {{ species.group.group_name }}</a>
+            {{- species.group.group_title }}</a>
    </li><li class="navi_next"><a href="{{ species.species_next.filename }}.html">&gt;</a>
    </li>
    </ul>

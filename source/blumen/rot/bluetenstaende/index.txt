@@ -1,1 +1,2 @@
-﻿group_name: 'Blütenstände'                              
+﻿group_title: 'Rote, Blütenstände'
+navi_name: 'Rote, Blütenstände'

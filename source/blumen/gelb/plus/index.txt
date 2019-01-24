@@ -1,1 +1,2 @@
-﻿group_name: 'Mehr als fünf Blütenblätter'               
+﻿group_title: 'Mehr als fünf Blütenblätter'
+navi_name: 'Mehr als fünf Blütenblätter'

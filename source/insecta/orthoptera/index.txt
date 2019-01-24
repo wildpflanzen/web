@@ -1,1 +1,3 @@
-﻿group_name: 'Orthoptera'
+﻿group_title: 'Orthoptera'
+navi_name: 'Orthoptera'
+next_group: 'insecta/diptera'

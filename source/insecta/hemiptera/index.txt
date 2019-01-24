@@ -1,2 +1,2 @@
-﻿group_name: 'Hemiptera'
-
+﻿group_title: 'Hemiptera'
+navi_name: 'Hemiptera'

@@ -1,2 +1,2 @@
-﻿group_name: 'Arachnida'
-
+﻿group_title: 'Arachnida'
+navi_name: 'Arachnida'

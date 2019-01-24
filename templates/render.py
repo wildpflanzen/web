@@ -317,13 +317,13 @@ class Database(UserDict):
       if 'species' in register:
          # Register species
          self.add_species(register, docs[1:])
-      elif 'group_name' in register:
+      elif 'group_title' in register:
          # Register group of species
          self.add_group(register, parent)
          return register
       else:
          # Register unknown
-         print('   Error, unknown type of register: %s' % os.path.join(self.register['path'], fname))
+         print('   Error, unknown type of register: %s' % os.path.join(register['path'], fname))
       return None
 
 
@@ -467,6 +467,16 @@ class Database(UserDict):
           self.groups[-1]['group_prev'] = self.groups[-2]
       else:
           self.groups[-1]['group_prev'] = self.groups[0]
+
+      # Make next_group links
+      for group in self.groups:
+         if 'next_group' in group:
+            next_group = self.find_group(group['next_group'])
+            if next_group:
+               group['group_next'] = next_group
+               next_group['group_prev'] = group
+            else:
+               print('   Warning, next path group does not exists: %s' % group['next_group'])
 
       # Sort species and link in chain
       all_species = []

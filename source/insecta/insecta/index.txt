@@ -1,1 +1,2 @@
-﻿group_name: 'Insecta'
+﻿group_title: 'Insecta'
+navi_name: 'Insecta'
