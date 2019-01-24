@@ -27,7 +27,7 @@
 .navi3, .navi31,.navi32, .navi4, .navi42{color:#989898;line-height:1.9;
 	}
 .navi31{border-bottom:solid 1px #fff; color:#989898;}
-.navi:hover,.navi2:hover,.navi3:hover, .navi4:hover{ background-color:#EEF3E2;color:#000;}
+.navi2:hover,.navi3:hover, .navi4:hover{ background-color:#EEF3E2;color:#000;}
 /*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/		
 		
 #farben{ margin-left:0px; margin-top:50px;}

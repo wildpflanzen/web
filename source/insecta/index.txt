@@ -1,1 +1,9 @@
-﻿group_name: 'Besucher'
+﻿group_name: ''
+listdir:
+  - diptera
+  - hymenoptera
+  - lepidoptera
+  - arachnida
+  - hemiptera
+  - coleoptera
+  - orthoptera

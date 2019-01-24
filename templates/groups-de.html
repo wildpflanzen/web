@@ -29,7 +29,7 @@
    <ul>
    <li class="navi_next"><a href="{{ group.group_prev.filename }}.html">&lt;</a>
    </li><li class="navi_select navi_fix"><span class="btn">
-            {%- if 'parent' in group and group.parent %}
+            {%- if 'parent' in group and group.parent and group.parent.group_name %}
             {{ group.parent.group_name }}, {% endif -%}
             {{ group.group_name }}<span>
    </li><li class="navi_next"><a href="{{ group.group_next.filename }}.html">&gt;</a>
@@ -40,7 +40,7 @@
 
 {% block content %}
    <!-- Group name -->
-   <h1>{%- if 'parent' in group and group.parent %}
+   <h1>{%- if 'parent' in group and group.parent and group.parent.group_name %}
        {{ group.parent.group_name }}, {% endif -%}
        {{ group.group_name }}</h1>
 
