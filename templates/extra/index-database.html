@@ -21,7 +21,7 @@
 
    <h2>Groups of species</h2>
 
-   {% set columns = ['group_name', 'path', 'species', 'group_prev', 'group_next'] %}
+   {% set columns = ['group_title', 'navi_name', 'path', 'species', 'groups linked to here'] %}
 
    <table>
    <tr>
@@ -31,11 +31,11 @@
    </tr>
    {% for group in database.groups %}
    <tr>
-      <td><a href="{{ group.filename }}.html">{{ group.group_name }}</a></td>
+      <td><a href="{{ group.filename }}.html">{{ group.group_title }}</a></td>
+      <td>{{ group.navi_name }}</td>
       <td><a href="../source/{{ group.path }}">{{ group.path }}</a></td>
       <td>{{ group.species | length }}</td>
-      <td>{{ group.group_prev.group_name }}</td>
-      <td>{{ group.group_next.group_name }}</td>
+      <td>{{ macros.find_linked_to(group, database) }}</td>{# find group(s) that links to here #}
    </tr>
    {%- endfor %}
    </table>
@@ -56,7 +56,7 @@
    <tr>
       <td>{{ loop.index }}</td>
 
-      <td><a href="{{ species.group.filename }}.html">{{ species.group.group_name }}</a></td>
+      <td><a href="{{ species.group.filename }}.html">{{ species.group.group_title }}</a></td>
 
       <td><a href="../source/{{species.path}}">{{ species.path | replace("/","/ ") | replace("_","_ ") }}</a></td>
 

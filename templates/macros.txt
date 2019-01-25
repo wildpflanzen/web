@@ -57,6 +57,24 @@
 {% endmacro -%}
 
 
+{%- macro find_linked_to(group_here, database) %}
+   {%- set ns = namespace(n=0) -%}
+   {%- for group in database.groups -%}
+      {%- if  group.group_next == group_here -%}
+         {% if ns.n == 1 %}; {% endif %}{{ group.group_title }}->
+         {%- set ns.n = 1 -%}
+      {%- endif -%}
+   {%- endfor -%}
+   {%- for group in database.groups -%}
+      {%- if  group.group_prev == group_here -%}
+         {%- if ns.n == 1 %}<br />{% endif -%}
+         {%- if ns.n == 2 %}; {% endif %}<-{{ group.group_title }}
+         {%- set ns.n = 2 -%}
+      {%- endif -%}
+   {%- endfor -%}
+{% endmacro -%}
+
+
 {%- macro index_title(option) -%}
    {%- if option == 'genus_de' %}Deutche Allgemain
    {%- elif option == 'genus' %}Wissenschaftliche Allgemain

@@ -54,6 +54,12 @@ li {
 list-style-type: none; 
 }
 
+p {
+line-height: 1.5em;
+max-width: 640px;
+margin: 0 auto;
+}
+
 
 /******************************
    Navigation bar
@@ -388,5 +394,45 @@ border-right: none;
 padding: 10px;
 text-decoration: none;
 color: #404040;
+}
+
+
+/******************************
+   Responsive: Landscape phones
+ ******************************/
+ 
+@media (max-width: 680px) { 
+
+h1 {
+font-size: 22px;
+margin-bottom: 8px;
+padding-top: 8px;
+}
+
+.content h1 { 
+font-size: 16px;
+margin-top: 16px;
+margin-bottom: 8px;
+}
+
+h2.group_name {
+font-size: 14px;
+padding-top: 4px;
+padding-bottom: 4px;
+}
+
+.naviglobal, .navi {
+margin-top: 8px;
+}
+
+.group_thumb {
+width: 240px;
+height: 180px;
+}
+
+.group_species {
+width: 240px;
+}
+
 }
 
