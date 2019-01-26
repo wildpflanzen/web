@@ -57,8 +57,8 @@
          <a href="{{ species.filename }}.html">
             {%- if macros.deutche_name(species) %}{{- macros.deutche_name(species) }} / {% endif -%}
             {{ species.genus }}
-            {%- if species.species | int == 0 %}{# does not show numbers in names -#}
-               {{ species.species }}
+            {% if species.species | int == 0 %}{# does not show numbers in names -#}
+            {{ species.species }}
             {%- endif -%}
          </a> 
       </h2>
