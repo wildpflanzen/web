@@ -22,7 +22,7 @@ margin:0 8px;
 padding:0;
 font-family: Helvetica, Arial, sans-serif;
 font-size: 14px;
-min-width: 340px;
+min-width: 350px;
 }
 
 h1 {
@@ -75,7 +75,6 @@ padding: 0;
 height: 30px;
 width:100%;
 border-bottom: 1px solid #989898;
-border-left: 1px solid #989898;
 }
 
 .naviglobal ul {
@@ -86,11 +85,10 @@ border-right: none;
 display: inline-block;
 font-size: 14px;
 font-family: Helvetica, Arial, sans-serif;
-margin: 0;
+margin: 0 -1px -1px 0;
 padding: 0;
 text-align: center;
-border-top: 1px solid #989898;
-border-right: 1px solid #989898;
+border: 1px solid #989898;
 }
 
 .navi a, .naviglobal a, .navi .btn, .naviglobal .btn {
@@ -177,6 +175,73 @@ display: block;
 
 .content .nach_oben a:hover {
 background-color: #EEF3E2;
+}
+
+
+/******************************
+   Main page
+ ******************************/
+
+.index {
+margin-top: 64px;
+}
+
+.index_farben {
+margin-top: 48px;
+}
+
+.index_farben h3 {
+margin: 0;
+padding: 0;
+border: none;
+}
+
+.index_farben a,
+.index a,
+.index_farben .btn {
+font-size: 14px;
+font-weight: 400;
+display: block;
+width: 100px;
+padding: 4px 10px;
+border: 1px solid #404040;
+margin: 0 -1px -1px 0;
+}
+
+.index li {
+display: inline-block;
+}
+
+.index_farben .btn {
+display: inline-block;
+}
+
+.index_farben a:hover,
+.index a:hover {
+background-color: #EEF3E2;
+}
+
+.index_farben ul {
+position: relative;
+}
+
+.index_farben ul ul {
+position: absolute;
+top: 33px;
+left: 121px;
+}
+
+#menu_weiss,
+#menu_gelb,
+#menu_blau,
+#menu_rot,
+#menu_gruen {
+visibility: hidden;
+}
+
+.icono {
+position: absolute;
+visibility: hidden;
 }
 
 

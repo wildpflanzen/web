@@ -12,21 +12,6 @@
 -#}
 
 
-{%- macro deutche_name(species) -%}
-{%- for species_de in species.species_de %}
-   {%- set genus_de = species.genus_de[loop.index0] %}
-   {%- if genus_de and species_de and species_de[-1] == '-' -%}
-   {{ species_de[:-1] }}{{ genus_de | lower() }}
-   {%- elif genus_de and species_de -%}
-   {{ species_de }} {{ genus_de }}
-   {%- else -%}
-   {{ species_de }}
-   {%- endif -%}
-   {%- if loop.index != loop.length %}; {% endif %}
-{%- endfor -%}
-{%- endmacro -%}
-
-
 {%- macro navi_global(selected) %}
    <ul>
    {% if selected == 'main' -%}
@@ -57,6 +42,42 @@
 {% endmacro -%}
 
 
+{%- macro index_title(option) -%}
+   {%- if option == 'genus_de' %}Deutche Allgemain
+   {%- elif option == 'genus' %}Wissenschaftliche Allgemain
+   {%- elif option == 'family_de' %}Deutche Familien
+   {%- elif option == 'family' %}Wissenschaftliche Familien
+   {%- elif option == 'location' %}Lokalisierung
+   {%- elif option == 'date' %}Datum
+   {%- else %}{{ option }}
+   {%- endif -%}
+{%-  endmacro -%}
+
+
+{%- macro deutche_name(species) -%}
+{%- for species_de in species.species_de %}
+   {%- set genus_de = species.genus_de[loop.index0] %}
+   {%- if genus_de and species_de and species_de[-1] == '-' -%}
+   {{ species_de[:-1] }}{{ genus_de | lower() }}
+   {%- elif genus_de and species_de -%}
+   {{ species_de }} {{ genus_de }}
+   {%- else -%}
+   {{ species_de }}
+   {%- endif -%}
+   {%- if loop.index != loop.length %}; {% endif %}
+{%- endfor -%}
+{%- endmacro -%}
+
+
+{%- macro deutche_name_index(species) -%}
+{%- for species_de in species.species_de %}
+   {%- set genus_de = species.genus_de[loop.index0] %}
+   {%- if genus_de %}{{ genus_de }}, {% endif %}{{ species_de }}
+   {%- if loop.index != loop.length %}; {% endif %}
+{%- endfor -%}
+{%- endmacro -%}
+
+
 {%- macro find_linked_to(group_here, database) %}
    {%- set ns = namespace(n=0) -%}
    {%- for group in database.groups -%}
@@ -75,30 +96,9 @@
 {% endmacro -%}
 
 
-{%- macro index_title(option) -%}
-   {%- if option == 'genus_de' %}Deutche Allgemain
-   {%- elif option == 'genus' %}Wissenschaftliche Allgemain
-   {%- elif option == 'family_de' %}Deutche Familien
-   {%- elif option == 'family' %}Wissenschaftliche Familien
-   {%- elif option == 'location' %}Lokalisierung
-   {%- elif option == 'date' %}Datum
-   {%- else %}{{ option }}
-   {%- endif -%}
-{%-  endmacro -%}
-
-
 {%- macro nach_oben() -%}
    <div class="nach_oben"><a href="#page_init">nach oben</a></div>
 {%- endmacro %}
-
-
-{%- macro deutche_name_index(species) -%}
-{%- for species_de in species.species_de %}
-   {%- set genus_de = species.genus_de[loop.index0] %}
-   {%- if genus_de %}{{ genus_de }}, {% endif %}{{ species_de }}
-   {%- if loop.index != loop.length %}; {% endif %}
-{%- endfor -%}
-{%- endmacro -%}
 
 
 {%- macro dump_data(species) -%}

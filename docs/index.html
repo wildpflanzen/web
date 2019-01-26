@@ -29,7 +29,28 @@
    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
    <link href="static/main.css" rel="stylesheet" type="text/css" media="all" />
 
-   <link href="static/main-old.css" rel="stylesheet" type="text/css" media="all"/>
+   
+   <script>
+   function menu_toggle(idcolor) {
+      /* Hide menus */
+      var color = ['weiss', 'gelb', 'blau', 'rot', 'gruen'];
+      for (i=0; i < color.length; i++) {
+         if (color[i] == idcolor) continue;
+         document.getElementById('menu_' + color[i]).style.visibility = "hidden";
+         document.getElementById('toggle_' + color[i]).style.backgroundColor = "#fff";
+      }
+
+      /* Toggle menu */
+      var menu = document.getElementById('menu_' + idcolor);
+      if (menu.style.visibility != "visible") {
+         menu.style.visibility = "visible";
+         document.getElementById('toggle_' + idcolor).style.backgroundColor = "#EEF3E2";
+      } else {
+         menu.style.visibility = "hidden";
+         document.getElementById('toggle_' + idcolor).style.backgroundColor = "#fff";
+      };
+   }
+   </script>   
 
 </head>
 
@@ -68,82 +89,94 @@
    <!-- Content -->
    <div class="content">
    
-   <div id="farben">
-	    <div id="f_titel">
-		<div class="f_titel">Blütenfarbe</div>
-		<div class="f_titel2">Blütenblätter</div>
-	    </div>
-		 <div class="clear2"> &nbsp;</div>
-	    <div class="f">
-		 <div class="a"><div class="b"><h3>weiss</h3></div><div class="c"><img class="icono"src="static/4.png" alt="4" /></div><div class="clear2">&nbsp;</div>
-		  <div class="bluetenblaetter1">
-		    <a href="blumen-weiss-vier.html"><span class="hide">bis vier</span></a>
-		    <a href="blumen-weiss-fuenf.html"><span class="hide">fünf</span></a>
-		    <a href="blumen-weiss-plus.html"><span class="hide">mehr als fünf</span></a>
-		    <a href="blumen-weiss-bluetenstaende.html"><span class="hide">Blütenstände</span></a>
-		    <a href="blumen-weiss-zygomorph.html"><span class="hide">zygomorph</span></a>
-		  </div>
-		 </div>
-		 <div class="clear2">&nbsp;</div>
-		 <div class="a2"><div class="b"><h3>gelb</h3></div><div class="c"><img class="icono"src="static/5.png" alt="5" /></div><div class="clear2">&nbsp;</div>
-		  <div class="bluetenblaetter2">
-		    <a href="blumen-gelb-vier.html"><span class="hide">bis vier</span></a>
-		    <a href="blumen-gelb-fuenf.html"><span class="hide">fünf</span></a>
-		    <a href="blumen-gelb-plus.html" title="__  Blüten- oder ScheinBlütenblätter  __"><span class="hide">mehr als fünf</span></a>
-		    <a href="blumen-gelb-bluetenstaende.html"><span class="hide">Blütenstände</span></a>
-		    <a href="blumen-gelb-zygomorph.html"><span class="hide">zygomorph</span></a>
-		  </div>
-		 </div>
-		 <div class="clear2">&nbsp;</div>
-		 <div class="a3"><div class="b"><h3>blau / lila</h3></div><div class="c"><img class="icono"src="static/6.png" alt="6" /></div><div class="clear2">&nbsp;</div>
-		  <div class="bluetenblaetter3">
-		    <a href="blumen-blau-vier.html"><span class="hide">bis vier</span></a>
-		    <a href="blumen-blau-fuenf.html"><span class="hide">fünf</span></a>
-		    <a href="blumen-blau-plus.html"><span class="hide">mehr als fünf</span></a>
-		    <a href="blumen-blau-bluetenstaende.html"><span class="hide">Blütenstände</span></a>
-		    <a href="blumen-blau-zygomorph.html"><span class="hide">zygomorph</span></a>
-		  </div>
-		 </div>
-		 <div class="clear2">&nbsp;</div>
-		 <div class="a4"><div class="b"><h3>rot / rosa</h3></div><div class="c"><img class="icono"src="static/d.png" alt="d" /></div><div class="clear2">&nbsp;</div>
-		  <div class="bluetenblaetter4">
-		    <a href="blumen-rot-vier.html"><span class="hide">bis vier</span></a>
-		    <a href="blumen-rot-fuenf.html"><span class="hide">fünf</span></a>
-		    <a href="blumen-rot-plus.html"><span class="hide">mehr als fünf</span></a>
-		    <a href="blumen-rot-bluetenstaende.html"><span class="hide">Blütenstände</span></a>
-		    <a href="blumen-rot-zygomorph.html"><span class="hide">zygomorph</span></a>
-		  </div>
-		 </div>
-		 <div class="clear2">&nbsp;</div>
-		 <div class="a5"><div class="b"><h3>grün / braun</h3></div><div class="c"><img class="icono"src="static/z.png" alt="z" /></div><div class="clear2">&nbsp;</div>
-		  <div class="bluetenblaetter5">
-		    <a href="blumen-gruen-braun-vier.html"><span class="hide">bis vier</span></a>
-		    <a href="#"title="noch keine Einträge"><span class="hide">fünf</span></a>
-		    <a href="blumen-gruen-braun-plus.html"><span class="hide">mehr als fünf</span></a>
-		    <a href="blumen-gruen-braun-bluetenstaende.html"><span class="hide">Blütenstände</span></a>
-		    <a href="blumen-gruen-braun-zygomorph.html"><span class="hide">zygomorph</span></a>
-		  </div>
-		 </div>
-		 <div class="clear2">&nbsp;</div>
-	    </div>
-   </div><!-- farben -->
 
-   <div class="clear2">&nbsp;</div>
 
-   <div class="clear">&nbsp;</div>
-   <div class="space_foot2">&nbsp;</div>
+   <div class="index_farben">
+   <ul>
+   <li class="head"><span class="btn">Blütenfarbe</span><span class="btn">Blütenblätter</span></li>
+
    
-   <div id="navi4" style="margin-top:200px;">
-   <a href="grass.html"><span class="navi4">Gr&auml;ser</span></a>
-   <a href="strauch.html"><span class="navi4">Str&auml;ucher</span></a>
-   <!--<a href="#">--><span class="navi42">Moose</span>
-   <!--<a href="#">--><span class="navi42">Farne</span>
+   <li>
+      <h3><a id="toggle_weiss" onclick="menu_toggle('weiss')">Weiss</a></h3>
+      <ul id="menu_weiss">
+      <li><img class="icono" src="static/4.png" alt="4" /><a href="blumen-weiss-vier.html">Bis vier</a>
+		</li><li><img class="icono" src="static/5.png" alt="5" /><a href="blumen-weiss-fuenf.html">Fünf</a>
+		</li><li><img class="icono" src="static/6.png" alt="6" /><a href="blumen-weiss-plus.html">Mehr als fünf</a>
+		</li><li><img class="icono" src="static/d.png" alt="d" /><a href="blumen-weiss-bluetenstaende.html">Blütenstände</a>
+		</li><li><img class="icono" src="static/z.png" alt="z" /><a href="blumen-weiss-zygomorph.html">Zygomorph</a>
+      </li>
+      </ul>
+   </li>
+   
+   <li>
+      <h3><a id="toggle_gelb" onclick="menu_toggle('gelb')">Gelb</a></h3>
+      <ul id="menu_gelb">
+      <li><img class="icono" src="static/4.png" alt="4" /><a href="blumen-gelb-vier.html">Bis vier</a>
+		</li><li><img class="icono" src="static/5.png" alt="5" /><a href="blumen-gelb-fuenf.html">Fünf</a>
+		</li><li><img class="icono" src="static/6.png" alt="6" /><a href="blumen-gelb-plus.html">Mehr als fünf</a>
+		</li><li><img class="icono" src="static/d.png" alt="d" /><a href="blumen-gelb-bluetenstaende.html">Blütenstände</a>
+		</li><li><img class="icono" src="static/z.png" alt="z" /><a href="blumen-gelb-zygomorph.html">Zygomorph</a>
+      </li>
+      </ul>
+   </li>
+   
+   <li>
+      <h3><a id="toggle_blau" onclick="menu_toggle('blau')">Blau / lila</a></h3>
+      <ul id="menu_blau">
+      <li><img class="icono" src="static/4.png" alt="4" /><a href="blumen-blau-vier.html">Bis vier</a>
+		</li><li><img class="icono" src="static/5.png" alt="5" /><a href="blumen-blau-fuenf.html">Fünf</a>
+		</li><li><img class="icono" src="static/6.png" alt="6" /><a href="blumen-blau-plus.html">Mehr als fünf</a>
+		</li><li><img class="icono" src="static/d.png" alt="d" /><a href="blumen-blau-bluetenstaende.html">Blütenstände</a>
+		</li><li><img class="icono" src="static/z.png" alt="z" /><a href="blumen-blau-zygomorph.html">Zygomorph</a>
+      </li>
+      </ul>
+   </li>
+   
+   <li>
+      <h3><a id="toggle_rot" onclick="menu_toggle('rot')">Rot / rosa</a></h3>
+      <ul id="menu_rot">
+      <li><img class="icono" src="static/4.png" alt="4" /><a href="blumen-rot-vier.html">Bis vier</a>
+		</li><li><img class="icono" src="static/5.png" alt="5" /><a href="blumen-rot-fuenf.html">Fünf</a>
+		</li><li><img class="icono" src="static/6.png" alt="6" /><a href="blumen-rot-plus.html">Mehr als fünf</a>
+		</li><li><img class="icono" src="static/d.png" alt="d" /><a href="blumen-rot-bluetenstaende.html">Blütenstände</a>
+		</li><li><img class="icono" src="static/z.png" alt="z" /><a href="blumen-rot-zygomorph.html">Zygomorph</a>
+      </li>
+      </ul>
+   </li>
+   
+   <li>
+      <h3><a id="toggle_gruen" onclick="menu_toggle('gruen')">Grün / braun</a></h3>
+      <ul id="menu_gruen">
+      <li><img class="icono" src="static/4.png" alt="4" /><a href="blumen-gruen-braun-vier.html">Bis vier</a>
+		</li><li><img class="icono" src="static/5.png" alt="5" /><a href="blumen-gruen-braun-fuenf.html">Fünf</a>
+		</li><li><img class="icono" src="static/6.png" alt="6" /><a href="blumen-gruen-braun-plus.html">Mehr als fünf</a>
+		</li><li><img class="icono" src="static/d.png" alt="d" /><a href="blumen-gruen-braun-bluetenstaende.html">Blütenstände</a>
+		</li><li><img class="icono" src="static/z.png" alt="z" /><a href="blumen-gruen-braun-zygomorph.html">Zygomorph</a>
+      </li>
+      </ul>
+   </li>
+   
+
+   </ul>
+
+   </div> <!-- farben -->
+
+   <!-- Extra index -->
+   <div class="index">
+   <ul>
+   <li><a href="grass.html">Gräser</a>
+   </li><li><a href="strauch.html">Sträucher</a>
+   </li><li><a href="">Moose</a>
+   </li><li><a href="">Farne</a>
+   </li>
+   </ul>
    </div>
-   <div class="space1">&nbsp;</div> 
-   <div class="space1">&nbsp;</div>
    </div>  <!-- Content end -->
 
-
+   <!-- Extra content -->
+   
+   
+   
    
 	<!-- Cookies Advise -->
    <div id="cookiesbar" style="display:none">
