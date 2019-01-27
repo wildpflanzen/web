@@ -30,7 +30,9 @@
    <link href="static/main.css" rel="stylesheet" type="text/css" media="all" />
 
    
+
    <script>
+   /* Select submenus for each flowers color */
    function menu_toggle(idcolor) {
       /* Hide menus */
       var color = ['weiss', 'gelb', 'blau', 'rot', 'gruen'];
@@ -50,8 +52,71 @@
          document.getElementById('toggle_' + idcolor).style.backgroundColor = "#fff";
       };
    }
-   </script>   
+   </script>
 
+   <style>
+   /*   Main page style */
+
+   .index { margin-top: 64px; }
+
+   .index_farben { margin-top: 48px; }
+
+   .index_farben h3 {
+   margin: 0;
+   padding: 0;
+   border: none;
+   }
+
+   .index_farben a,
+   .index a,
+   .index_farben .btn {
+   font-size: 14px;
+   font-weight: 400;
+   display: block;
+   width: 90px;
+   padding: 4px 10px;
+   border: 1px solid #404040;
+   margin: 0 -1px -1px 0;
+   }
+
+   .index_farben .btn {
+   display: inline-block;
+   }
+
+   .index_farben a:hover,
+   .index a:hover {
+   background-color: #EEF3E2;
+   }
+
+   .index_farben ul {
+   position: relative;
+   }
+
+   .index_farben ul ul {
+   position: absolute;
+   top: 33px;
+   left: 111px;
+   }
+
+   #menu_gelb,
+   #menu_blau,
+   #menu_rot,
+   #menu_gruen {
+   visibility: hidden;
+   }
+   #toggle_weiss { background-color: #EEF3E2; }
+
+   .submenu a, span.btn.submenu {
+   width: 130px;
+   }
+
+   .icono {
+   vertical-align: middle;
+   height: 22px;
+   padding: 0 12px 0 0;
+   margin: -2px 0 0 0;
+   }
+   </style>
 </head>
 
 <body>
@@ -93,65 +158,69 @@
 
    <div class="index_farben">
    <ul>
-   <li class="head"><span class="btn">Blütenfarbe</span><span class="btn">Blütenblätter</span></li>
+   <li class="head">
+      <span class="btn">Blütenfarbe
+      </span><span class="btn submenu">Blütenblätter
+      </span>
+   </li>
 
    
    <li>
       <h3><a id="toggle_weiss" onclick="menu_toggle('weiss')">Weiss</a></h3>
-      <ul id="menu_weiss">
-      <li><img class="icono" src="static/4.png" alt="4" /><a href="blumen-weiss-vier.html">Bis vier</a>
-		</li><li><img class="icono" src="static/5.png" alt="5" /><a href="blumen-weiss-fuenf.html">Fünf</a>
-		</li><li><img class="icono" src="static/6.png" alt="6" /><a href="blumen-weiss-plus.html">Mehr als fünf</a>
-		</li><li><img class="icono" src="static/d.png" alt="d" /><a href="blumen-weiss-bluetenstaende.html">Blütenstände</a>
-		</li><li><img class="icono" src="static/z.png" alt="z" /><a href="blumen-weiss-zygomorph.html">Zygomorph</a>
+      <ul id="menu_weiss"  class="submenu">
+      <li><a href="blumen-weiss-vier.html"><img class="icono" src="static/4.png" alt="4" /> Bis vier</a>
+		</li><li><a href="blumen-weiss-fuenf.html"><img class="icono" src="static/5.png" alt="5" /> Fünf</a>
+		</li><li><a href="blumen-weiss-plus.html"><img class="icono" src="static/6.png" alt="6" /> Mehr als fünf</a>
+		</li><li><a href="blumen-weiss-bluetenstaende.html"><img class="icono" src="static/d.png" alt="d" /> Blütenstände</a>
+		</li><li><a href="blumen-weiss-zygomorph.html"><img class="icono" src="static/z.png" alt="z" /> Zygomorph</a>
       </li>
       </ul>
    </li>
    
    <li>
       <h3><a id="toggle_gelb" onclick="menu_toggle('gelb')">Gelb</a></h3>
-      <ul id="menu_gelb">
-      <li><img class="icono" src="static/4.png" alt="4" /><a href="blumen-gelb-vier.html">Bis vier</a>
-		</li><li><img class="icono" src="static/5.png" alt="5" /><a href="blumen-gelb-fuenf.html">Fünf</a>
-		</li><li><img class="icono" src="static/6.png" alt="6" /><a href="blumen-gelb-plus.html">Mehr als fünf</a>
-		</li><li><img class="icono" src="static/d.png" alt="d" /><a href="blumen-gelb-bluetenstaende.html">Blütenstände</a>
-		</li><li><img class="icono" src="static/z.png" alt="z" /><a href="blumen-gelb-zygomorph.html">Zygomorph</a>
+      <ul id="menu_gelb"  class="submenu">
+      <li><a href="blumen-gelb-vier.html"><img class="icono" src="static/4.png" alt="4" /> Bis vier</a>
+		</li><li><a href="blumen-gelb-fuenf.html"><img class="icono" src="static/5.png" alt="5" /> Fünf</a>
+		</li><li><a href="blumen-gelb-plus.html"><img class="icono" src="static/6.png" alt="6" /> Mehr als fünf</a>
+		</li><li><a href="blumen-gelb-bluetenstaende.html"><img class="icono" src="static/d.png" alt="d" /> Blütenstände</a>
+		</li><li><a href="blumen-gelb-zygomorph.html"><img class="icono" src="static/z.png" alt="z" /> Zygomorph</a>
       </li>
       </ul>
    </li>
    
    <li>
       <h3><a id="toggle_blau" onclick="menu_toggle('blau')">Blau / lila</a></h3>
-      <ul id="menu_blau">
-      <li><img class="icono" src="static/4.png" alt="4" /><a href="blumen-blau-vier.html">Bis vier</a>
-		</li><li><img class="icono" src="static/5.png" alt="5" /><a href="blumen-blau-fuenf.html">Fünf</a>
-		</li><li><img class="icono" src="static/6.png" alt="6" /><a href="blumen-blau-plus.html">Mehr als fünf</a>
-		</li><li><img class="icono" src="static/d.png" alt="d" /><a href="blumen-blau-bluetenstaende.html">Blütenstände</a>
-		</li><li><img class="icono" src="static/z.png" alt="z" /><a href="blumen-blau-zygomorph.html">Zygomorph</a>
+      <ul id="menu_blau"  class="submenu">
+      <li><a href="blumen-blau-vier.html"><img class="icono" src="static/4.png" alt="4" /> Bis vier</a>
+		</li><li><a href="blumen-blau-fuenf.html"><img class="icono" src="static/5.png" alt="5" /> Fünf</a>
+		</li><li><a href="blumen-blau-plus.html"><img class="icono" src="static/6.png" alt="6" /> Mehr als fünf</a>
+		</li><li><a href="blumen-blau-bluetenstaende.html"><img class="icono" src="static/d.png" alt="d" /> Blütenstände</a>
+		</li><li><a href="blumen-blau-zygomorph.html"><img class="icono" src="static/z.png" alt="z" /> Zygomorph</a>
       </li>
       </ul>
    </li>
    
    <li>
       <h3><a id="toggle_rot" onclick="menu_toggle('rot')">Rot / rosa</a></h3>
-      <ul id="menu_rot">
-      <li><img class="icono" src="static/4.png" alt="4" /><a href="blumen-rot-vier.html">Bis vier</a>
-		</li><li><img class="icono" src="static/5.png" alt="5" /><a href="blumen-rot-fuenf.html">Fünf</a>
-		</li><li><img class="icono" src="static/6.png" alt="6" /><a href="blumen-rot-plus.html">Mehr als fünf</a>
-		</li><li><img class="icono" src="static/d.png" alt="d" /><a href="blumen-rot-bluetenstaende.html">Blütenstände</a>
-		</li><li><img class="icono" src="static/z.png" alt="z" /><a href="blumen-rot-zygomorph.html">Zygomorph</a>
+      <ul id="menu_rot"  class="submenu">
+      <li><a href="blumen-rot-vier.html"><img class="icono" src="static/4.png" alt="4" /> Bis vier</a>
+		</li><li><a href="blumen-rot-fuenf.html"><img class="icono" src="static/5.png" alt="5" /> Fünf</a>
+		</li><li><a href="blumen-rot-plus.html"><img class="icono" src="static/6.png" alt="6" /> Mehr als fünf</a>
+		</li><li><a href="blumen-rot-bluetenstaende.html"><img class="icono" src="static/d.png" alt="d" /> Blütenstände</a>
+		</li><li><a href="blumen-rot-zygomorph.html"><img class="icono" src="static/z.png" alt="z" /> Zygomorph</a>
       </li>
       </ul>
    </li>
    
    <li>
       <h3><a id="toggle_gruen" onclick="menu_toggle('gruen')">Grün / braun</a></h3>
-      <ul id="menu_gruen">
-      <li><img class="icono" src="static/4.png" alt="4" /><a href="blumen-gruen-braun-vier.html">Bis vier</a>
-		</li><li><img class="icono" src="static/5.png" alt="5" /><a href="blumen-gruen-braun-fuenf.html">Fünf</a>
-		</li><li><img class="icono" src="static/6.png" alt="6" /><a href="blumen-gruen-braun-plus.html">Mehr als fünf</a>
-		</li><li><img class="icono" src="static/d.png" alt="d" /><a href="blumen-gruen-braun-bluetenstaende.html">Blütenstände</a>
-		</li><li><img class="icono" src="static/z.png" alt="z" /><a href="blumen-gruen-braun-zygomorph.html">Zygomorph</a>
+      <ul id="menu_gruen"  class="submenu">
+      <li><a href="blumen-gruen-braun-vier.html"><img class="icono" src="static/4.png" alt="4" /> Bis vier</a>
+		</li><li><a href="blumen-gruen-braun-fuenf.html"><img class="icono" src="static/5.png" alt="5" /> Fünf</a>
+		</li><li><a href="blumen-gruen-braun-plus.html"><img class="icono" src="static/6.png" alt="6" /> Mehr als fünf</a>
+		</li><li><a href="blumen-gruen-braun-bluetenstaende.html"><img class="icono" src="static/d.png" alt="d" /> Blütenstände</a>
+		</li><li><a href="blumen-gruen-braun-zygomorph.html"><img class="icono" src="static/z.png" alt="z" /> Zygomorph</a>
       </li>
       </ul>
    </li>
