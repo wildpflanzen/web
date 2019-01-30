@@ -554,7 +554,7 @@ def thumbnails_make(database, options):
             if not os.path.isfile(image_out):
                if options['verbose']:
                   print('   Copy %s -->\n        %s' %(source_in, image_out))
-               shutil.copy2(source_in, image_out)
+               image_convert(source_in, image_out, options)
 
             # Select main thumbnail
             if not thumbname:
@@ -583,6 +583,13 @@ def remove_unused_files(path, used_image_files, options):
          print('   Warning, unused image: %s' % os.path.join(path, image))
          if remove_unused_files in options and options['remove_unused_files']:
             os.remove(os.path.join(path, image))
+
+
+def image_convert(image_in, image_out, options):
+   print('   Image: ' + image_in)
+   image_options = ' '.join(options['image_options'])
+   command = options['imagemagick'] + ' ' + image_in + ' ' + image_options + ' ' + image_out
+   subprocess.call(command, shell=True)
 
 
 def thumb_convert(filein, thumb, options):
