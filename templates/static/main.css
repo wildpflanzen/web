@@ -99,6 +99,10 @@ text-decoration: none;
 color: #404040;
 }
 
+.naviglobal .btn, .navi .btn {
+color: #989898;
+}
+
 .navi a:hover, .naviglobal a:hover {
 background-color: #EEF3E2;
 }
