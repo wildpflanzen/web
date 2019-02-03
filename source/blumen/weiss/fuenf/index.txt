@@ -1,2 +1,6 @@
 ﻿group_title: 'Weisse, Fünf Blütenblätter'
 navi_name: 'Weisse, Fünf Blütenblätter'
+
+listdir:
+  - parnassia_palustris
+  - silene_latifolia

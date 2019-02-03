@@ -280,22 +280,23 @@ class Database(UserDict):
       # Recurse subdirs
       subdirs = []
       if group and 'listdir' in group:
-         for f in group['listdir']:
-            subdirs.append(f)
-            fullname = os.path.join(basepath, path, f)
+         for diname in group['listdir']:
+            subdirs.append(diname)
+            fullname = os.path.join(basepath, path, diname)
             if not os.path.exists(fullname) or not os.path.isdir(fullname):
-               print("   Error, path %s doesn't exists: %s" % (f, os.path.join(path, 'index.txt')))
+               print("   Error, path %s doesn't exists: %s" % (diname, os.path.join(path, 'index.txt')))
                continue
-            self.read_paths(basepath, path=os.path.join(path, f), parent=group)
+            self.read_paths(basepath, path=os.path.join(path, diname), parent=group)
 
-      for f in fnames:
-         if f == 'static' and path=='':
+      for diname in fnames:
+         if diname == 'static' and path=='':
             continue
-         if f in subdirs:
+         if diname in subdirs:
             continue
-         fullname = os.path.join(basepath, path, f)
+         fullname = os.path.join(basepath, path, diname)
          if os.path.isdir(fullname):
-            self.read_paths(basepath, path=os.path.join(path, f), parent=group)
+            #print("   Warning, path %s not in listdir: %s" % (diname, os.path.join(path, 'index.txt')))
+            self.read_paths(basepath, path=os.path.join(path, diname), parent=group)
 
 
    def read_data(self, basepath, path, fname, parent):
@@ -469,20 +470,9 @@ class Database(UserDict):
       else:
           self.groups[-1]['group_prev'] = self.groups[0]
 
-      # Make next_group links
-      for group in self.groups:
-         if 'next_group' in group:
-            next_group = self.find_group(group['next_group'])
-            if next_group:
-               group['group_next'] = next_group
-               next_group['group_prev'] = group
-            else:
-               print('   Warning, next path group does not exists: %s' % group['next_group'])
-
-      # Sort species and link in chain
+      # Link Species in chain
       all_species = []
       for group in self.groups:
-         group['species'].sort(key=lambda s: s['filename'])
          all_species = all_species + group['species']
 
       for i in range(len(all_species)-1):
@@ -493,6 +483,20 @@ class Database(UserDict):
          all_species[-1]['species_prev'] = all_species[-2]
       else:
          all_species[-1]['species_prev'] = all_species[0]
+
+      # Make next_group links
+      for group in self.groups:
+         if 'next_group' in group:
+            next_group = self.find_group(group['next_group'])
+            if next_group:
+               # relink next group
+               group['group_next'] = next_group
+               next_group['group_prev'] = group
+               # relink next species of last species in group
+               group['species'][-1]['species_next'] = next_group['species'][0]
+               next_group['species'][0]['species_prev'] = group['species'][-1]
+            else:
+               print('   Warning, next path group does not exists: %s' % group['next_group'])
 
 
    # Test if file exists

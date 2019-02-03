@@ -31,12 +31,6 @@
    {% else -%}
    </li><li><a href="systematik.html">Systematik</a>
    {% endif %}
-
-   {%- if selected == 'besucher' -%}
-   </li><li class="navi_select"><span class="btn">Besucher</span>
-   {% else -%}
-   </li><li><a href="insecta-diptera-syrphidae.html">Besucher</a>
-   {% endif -%}
    </li>
    </ul>
 {% endmacro -%}

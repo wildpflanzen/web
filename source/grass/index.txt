@@ -1,2 +1,4 @@
 ﻿group_title: 'Gräser'
 navi_name: 'Gräser'
+
+next_group: 'grass'
