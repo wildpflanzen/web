@@ -1,2 +1,10 @@
 ﻿group_title: 'Arachnida'
 navi_name: 'Arachnida'
+
+listdir:
+  - aculepeira-ceropegia
+  - arachnida-27
+  - arachnida-28
+  - arachnida-29
+  - misumena-vatia
+  - salticus-scenicus

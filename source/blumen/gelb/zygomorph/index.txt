@@ -1,2 +1,26 @@
 ﻿group_title: 'Gelbe, Zygomorphe Blüten'
 navi_name: 'Gelbe, Zygomorphe Blüten'
+
+listdir:
+  - lotus_alpinus
+  - lotus_corniculatus
+  - medicago_lupulina
+  - trifolium_campestre
+  - trifolium_badium
+  - anthyllis_vulneraria
+  - astragalus_frigidus
+  - viola_biflora
+  - viola_tricolor
+  - viola_arvensis
+  - impatiens_parviflora
+  - impatiens_edgeworthii
+  - impatiens_noli_tangere
+  - iris_pseudacorus
+  - linaria_vulgaris
+  - digitalis_grandiflora
+  - melampyrum_pratense_ssp_commutatum
+  - melampyrum_sylvaticum
+  - melampyrum_pratense_ssp_pratense
+  - pedicularis_tuberosa
+  - aconitum_lycoctonum
+  - euphrasia_minima

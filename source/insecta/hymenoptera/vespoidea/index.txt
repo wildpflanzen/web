@@ -1,2 +1,8 @@
 ﻿group_title: 'Hymenoptera, Vespoidea'
 navi_name: 'Hymenoptera'
+
+listdir:
+  - ancistrocerus-parietum
+  - polistes-dominula
+  - ronisia-brutia
+  - vespula-germanica

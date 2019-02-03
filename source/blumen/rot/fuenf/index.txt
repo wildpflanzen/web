@@ -1,2 +1,29 @@
 ﻿group_title: 'Rote, Fünf Blütenblätter'
 navi_name: 'Rote, Fünf Blütenblätter'
+
+listdir:
+  - dianthus_sylvestris
+  - dianthus_carthusianorum
+  - dianthus_deltoides
+  - primula_daonensis
+  - primula_halleri
+  - erodium_cicutarium
+  - geranium_robertianum
+  - petrorhagia_saxifraga
+  - petrorhagia_prolifera
+  - malva_neglecta
+  - potentilla_nitida
+  - potentilla_palustris
+  - silene_acaulis
+  - silene_dioica
+  - silene_flos_cuculi
+  - agrostemma_githago
+  - armeria_alpina
+  - armeria_maritima
+  - convolvulus_arvensis
+  - cynoglossum_officinale
+  - sedum_atratum
+  - symphytum_officinale
+  - linum_viscosum
+  - prenanthes_purpurea
+  - geum_rivale

@@ -1,2 +1,11 @@
 ﻿group_title: 'Blaue, Mehr als fünf Blütenblätter'
 navi_name: 'Blaue, Mehr als fünf Blütenblätter'
+
+listdir:
+  - hepatica_nobilis
+  - crocus_vernus
+  - aquilegia_einseleana
+  - aquilegia_vulgaris
+  - scilla_bifolia
+  - soldanella_alpina
+  - soldanella_pusilla

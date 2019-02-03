@@ -1,2 +1,16 @@
 ﻿group_title: 'Blaue, Bis vier Blütenblätter'
 navi_name: 'Blaue, Bis vier Blütenblätter'
+
+listdir:
+  - veronica_aphylla
+  - veronica_chamaedrys
+  - veronica_hederifolia
+  - veronica_persica
+  - veronica_verna
+  - veronica_serpyllifolia
+  - veronica_officinalis
+  - veronica_urticifolia
+  - veronica_bellidioides
+  - veronica_fruticans
+  - veronica_alpina
+  - clematis_alpina

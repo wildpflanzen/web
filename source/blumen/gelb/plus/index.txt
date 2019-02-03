@@ -1,2 +1,13 @@
 ﻿group_title: 'Mehr als fünf Blütenblätter'
 navi_name: 'Mehr als fünf Blütenblätter'
+
+listdir:
+  - eranthis_hyemalis
+  - geum_montanum
+  - geum_reptans
+  - pulsatilla_alpina_ssp_apiifolia
+  - ranunculus_ficaria
+  - gentiana_punctata
+  - gagea_lutea
+  - sedum_rupestre
+  - trollius_europaeus

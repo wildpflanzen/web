@@ -1,4 +1,7 @@
 ﻿group_title: 'Sträucher'
 navi_name: 'Sträucher'
 
+listdir:
+  - clematis_vitalba
+
 next_group: 'strauch'

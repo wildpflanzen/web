@@ -1,2 +1,6 @@
 ﻿group_title: 'Grüne oder braune, Mehr als fünf Blütenblätter'
 navi_name: 'Grüne oder braune, Mehr als fünf Blütenblätter'
+
+listdir:
+  - polygonatum_multiflorum
+  - veratrum_album_ssp_lobelianum

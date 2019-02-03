@@ -1,2 +1,21 @@
 ﻿group_title: 'Lepidoptera'
 navi_name: 'Lepidoptera'
+
+listdir:
+  - apatura-ilia
+  - argynnis-paphia
+  - coenonympha-gardetta
+  - coenonympha-pamphilus
+  - gillmeria-pallidactyla
+  - hesperia-comma
+  - lepidoptera-25
+  - lepidoptera-26
+  - leptotes-pirithous
+  - lycaenidae-polyommatinae
+  - lymantria-dispar
+  - melanargia-galathea
+  - nymphalis-io
+  - ochlodes-sylvanus
+  - speyeria-aglaja
+  - zygaena-filipendulae
+  - zygaenidae-24

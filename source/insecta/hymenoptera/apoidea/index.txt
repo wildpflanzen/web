@@ -1,2 +1,15 @@
 ﻿group_title: 'Hymenoptera, Apoidea'
 navi_name: 'Hymenoptera'
+
+listdir:
+  - andrena-flavipes
+  - andrena-fulva
+  - coelioxys-17
+  - dasypoda-hirtipes
+  - halictus-18
+  - halictus-rubicundus
+  - hylaeus-21
+  - hymenoptera-19
+  - hymenoptera-20
+  - hymenoptera-22
+  - philanthus-triangulum

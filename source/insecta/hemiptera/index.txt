@@ -1,2 +1,10 @@
 ﻿group_title: 'Hemiptera'
 navi_name: 'Hemiptera'
+
+listdir:
+  - cercopis-vulnerata
+  - cicadella-viridis
+  - eucallipterus-tiliae
+  - graphosoma-lineatum
+  - orthezia-urticae
+  - palomena-prasina

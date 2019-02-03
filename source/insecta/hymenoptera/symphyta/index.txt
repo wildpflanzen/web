@@ -1,2 +1,7 @@
 ﻿group_title: 'Hymenoptera, Symphyta'
 navi_name: 'Hymenoptera'
+listdir:
+  - calameuta-filiformis
+  - eutomostethus-ephippium
+  - megalodontes-cephalotes
+  - tenthredo-mesomela

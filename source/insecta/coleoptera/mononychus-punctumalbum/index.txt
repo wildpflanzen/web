@@ -8,3 +8,4 @@ date: '11.2013'
 location:
 images:
   - 32.jpg
+  - 32_2.jpg

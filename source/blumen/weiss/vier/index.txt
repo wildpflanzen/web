@@ -1,2 +1,26 @@
 ﻿group_title: 'Weisse, Bis vier Blütenblätter'
 navi_name: 'Weisse, Bis vier Blütenblätter'
+
+listdir:
+  - galanthus_nivalis
+  - sagittaria_sagittifolia
+  - hydrocharis_morsus_ranae
+  - alisma_plantago_aquatica
+  - galium_album
+  - galium_aparine
+  - galium_rotundifolium
+  - galium_palustre
+  - thesium_alpinum
+  - alliaria_petiolata
+  - arabidopsis_arenosa
+  - armoracia_rusticana
+  - cardamine_hirsuta
+  - berteroa_incana
+  - draba_praecox
+  - draba_verna
+  - hornungia_alpina_ssp_alpina
+  - nasturtium_officinale
+  - arabis_alpina
+  - thlaspi_arvense
+  - capsella_bursa_pastoris
+  - cardamine_amara

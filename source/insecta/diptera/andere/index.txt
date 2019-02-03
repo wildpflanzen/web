@@ -1,2 +1,15 @@
 ﻿group_title: 'Diptera'
 navi_name: 'Diptera'
+listdir:
+  - abrachyglossum-capitatum
+  - asilidae-01
+  - diptera-12
+  - diptera-15
+  - diptera-16
+  - empis-pennipes
+  - gymnosoma-rotundatum
+  - pelatachina-tibialis
+  - scathophaga-stercoraria
+  - sicus-ferrugineus
+  - tabanidae-14
+  - tipula-oleracea

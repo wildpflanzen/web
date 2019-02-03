@@ -1,2 +1,11 @@
 ﻿group_title: 'Grüne oder braune, Bis vier Blütenblätter'
 navi_name: 'Grüne oder braune, Bis vier Blütenblätter'
+
+listdir:
+  - rumex_scutatus
+  - rumex_obtusifolius
+  - parietaria_officinalis
+  - sanguisorba_minor
+  - urtica_dioica
+  - calla_palustris
+  - alchemilla_nitida

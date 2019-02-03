@@ -1,2 +1,11 @@
 ﻿group_title: 'Rote, Mehr als fünf Blütenblätter'
 navi_name: 'Rote, Mehr als fünf Blütenblätter'
+
+listdir:
+  - aquilegia_atrata
+  - lilium_martagon
+  - lilium_bulbiferum
+  - sempervivum_tectorum
+  - sempervivum_montanum
+  - sempervivum_arachnoideum
+  - allium_carinatum

@@ -1,4 +1,8 @@
 ﻿group_title: 'Grüne oder braune, Zygomorphe Blüten'
 navi_name: 'Grüne oder braune, Zygomorphe Blüten'
 
+listdir:
+  - epipactis_helleborine
+  - neottia_ovata
+
 next_group: 'blumen/weiss/vier'

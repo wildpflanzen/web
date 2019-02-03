@@ -1,2 +1,13 @@
 ﻿group_title: 'Orthoptera'
 navi_name: 'Orthoptera'
+
+listdir:
+  - grillotalpa-grillotalpa
+  - miramella-alpina
+  - orthoptera-37
+  - orthoptera-38
+  - orthoptera-39
+  - orthoptera-40
+  - orthoptera-41
+  - orthoptera-42
+  - stethophyma-grossum

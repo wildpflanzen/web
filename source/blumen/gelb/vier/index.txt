@@ -1,2 +1,14 @@
 ﻿group_title: 'Gelbe, Bis vier Blütenblätter'
 navi_name: 'Gelbe, Bis vier Blütenblätter'
+
+listdir:
+  - papaver_alpinum_kerneri
+  - potentilla_anglica
+  - erysimum_cheiranthoides
+  - euphorbia_cyparissias
+  - diplotaxis_tenuifolia
+  - chelidonium_majus
+  - brassica_napus
+  - biscutella_laevigata
+  - cruciata_laevipes
+  - sisymbrium_strictissimum

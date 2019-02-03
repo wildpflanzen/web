@@ -1,2 +1,8 @@
 ﻿group_title: 'Grüne oder braune, Blütenstände'
 navi_name: 'Grüne oder braune, Blütenstände'
+
+listdir:
+  - plantago_lanceolata
+  - plantago_media
+  - sparganium_erectum
+  - cirsium_spinosissimum

@@ -2,3 +2,13 @@
 navi_name: 'Insecta'
 
 next_group: 'insecta/diptera/syrphidae'
+
+listdir:
+  - chrysopa-perla
+  - ephemera-vulgata
+  - insecta-43
+  - insecta-44
+  - insecta-45
+  - insecta-46
+  - insecta-47
+  - panorpa-communis

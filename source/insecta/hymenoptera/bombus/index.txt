@@ -1,2 +1,9 @@
 ﻿group_title: 'Hymenoptera, Bombus'
 navi_name: 'Hymenoptera'
+
+listdir:
+  - bombus-hortorum
+  - bombus-lapidarius
+  - bombus-pascuorum
+  - bombus-sylvarum
+  - bombus-terrestris

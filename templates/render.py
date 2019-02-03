@@ -295,7 +295,7 @@ class Database(UserDict):
             continue
          fullname = os.path.join(basepath, path, diname)
          if os.path.isdir(fullname):
-            #print("   Warning, path %s not in listdir: %s" % (diname, os.path.join(path, 'index.txt')))
+            print("   Warning, path %s not in listdir: %s" % (diname, os.path.join(path, 'index.txt')))
             self.read_paths(basepath, path=os.path.join(path, diname), parent=group)
 
 

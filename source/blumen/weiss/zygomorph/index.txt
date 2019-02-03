@@ -1,2 +1,10 @@
 ﻿group_title: 'Weisse, Zygomorphe Blüten'
 navi_name: 'Weisse, Zygomorphe Blüten'
+
+listdir:
+  - lamium_album
+  - stachys_recta
+  - lycopus_europaeus
+  - platanthera_bifolia
+  - goodyera_repens
+  - euphrasia_salisburgensis

@@ -1,2 +1,12 @@
 ﻿group_title: 'Rote, Bis vier Blütenblätter'
 navi_name: 'Rote, Bis vier Blütenblätter'
+
+listdir:
+  - lunaria_annua
+  - hesperis_matronalis
+  - noccaea_rotundifolia
+  - petrocallis_pyrenaica
+  - epilobium_fleischeri
+  - epilobium_angustifolium
+  - epilobium_hirsutum
+  - epilobium_montanum

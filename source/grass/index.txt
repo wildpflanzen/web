@@ -1,4 +1,9 @@
 ﻿group_title: 'Gräser'
 navi_name: 'Gräser'
 
+listdir:
+  - carex_pseudocyperus
+  - eriophorum_vaginatum
+  - luzula_nivea
+
 next_group: 'grass'

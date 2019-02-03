@@ -1,2 +1,24 @@
 ﻿group_title: 'Rote, Blütenstände'
 navi_name: 'Rote, Blütenstände'
+
+listdir:
+  - crepis_aurea
+  - erigeron_uniflorus
+  - homogyne_alpina
+  - knautia_baldensis
+  - scabiosa_lucida
+  - centaurea_jacea
+  - centaurea_scabiosa
+  - centaurea_stoebe_ssp_stoebe
+  - cirsium_arvense
+  - carduus_defloratus_ssp_rhaeticus
+  - carduus_nutans
+  - trifolium_arvense
+  - lythrum_salicaria
+  - adenostyles_alliariae
+  - thalictrum_aquilegifolia
+  - phyteuma_nigrum
+  - phyteuma_ovatum
+  - persicaria_amphibia
+  - bistorta_officinalis
+  - polygonum_viviparum

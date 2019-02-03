@@ -1,2 +1,12 @@
 ﻿group_title: 'Diptera, Syrphidae'
 navi_name: 'Diptera'
+
+listdir:
+  - diptera-07
+  - episyrphus-balteatus
+  - eristalis-tenax
+  - helophilus-trivittatus
+  - sphaerophoria-scripta
+  - syritta-pipiens
+  - syrphus-ribesii
+  - volucella-pellucens

@@ -1,2 +1,28 @@
 ﻿group_title: 'Rote, Zygomorphe Blüten'
 navi_name: 'Rote, Zygomorphe Blüten'
+
+listdir:
+  - ballota_nigra
+  - lamium_purpureum
+  - lamium_maculatum
+  - lamium_amplexicaule
+  - galeopsis_tetrahit
+  - stachys_sylvatica
+  - stachys_palustris
+  - leonurus_cardiaca
+  - clinopodium_vulgare
+  - thymus_praecox_ssp_polytrichus
+  - pedicularis_rostratocapitata
+  - pedicularis_verticillata
+  - bartsia_alpina
+  - ajuga_pyramidalis
+  - cephalanthera_rubra
+  - epipactis_atrorubens
+  - orobanche_gracilis
+  - corydalis_solida
+  - nigritella_rhellicani
+  - scrophularia_nodosa
+  - onobrychis_viciifolia
+  - trifolium_alpinum
+  - gymnadenia_conopsea
+  - gymnadenia_conopsea_ssp_alpina
