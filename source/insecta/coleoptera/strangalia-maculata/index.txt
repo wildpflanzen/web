@@ -2,9 +2,11 @@
 genus: 'Strangalia'
 species: 'Maculata'
 
+makeindex: False
+
 ---
 
-date: '11.2013'
+date: ''
 location:
 images:
   - 114.jpg

@@ -2,9 +2,11 @@
 genus: 'Dasypoda'
 species: 'Hirtipes'
 
+makeindex: False
+
 ---
 
-date: '11.2013'
+date: ''
 location:
 images:
   - 69.jpg

@@ -2,9 +2,11 @@
 genus: 'Eucallipterus'
 species: 'Tiliae'
 
+makeindex: False
+
 ---
 
-date: '1.2015'
+date: ''
 location:
 images:
   - 0030898.jpg

@@ -2,9 +2,11 @@
 genus: 'Tenthredo'
 species: 'Mesomela'
 
+makeindex: False
+
 ---
 
-date: '11.2013'
+date: ''
 location:
 images:
   - 118.jpg

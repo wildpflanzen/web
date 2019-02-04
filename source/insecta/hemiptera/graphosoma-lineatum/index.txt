@@ -2,9 +2,11 @@
 genus: 'Graphosoma'
 species: 'Lineatum'
 
+makeindex: False
+
 ---
 
-date: '11.2013'
+date: ''
 location:
 images:
   - 106.jpg

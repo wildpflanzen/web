@@ -2,9 +2,11 @@
 genus: 'Zygaenidae'
 species: '24'
 
+makeindex: False
+
 ---
 
-date: '1.2016'
+date: ''
 location:
 images:
   - r0016235.jpg

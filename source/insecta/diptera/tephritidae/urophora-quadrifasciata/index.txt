@@ -2,9 +2,11 @@
 genus: 'Urophora'
 species: 'Quadrifasciata'
 
+makeindex: False
+
 ---
 
-date: '1.2016'
+date: ''
 location:
 images:
   - r0031328.jpg

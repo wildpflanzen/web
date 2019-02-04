@@ -2,9 +2,11 @@
 genus: 'Lepidoptera'
 species: '25'
 
+makeindex: False
+
 ---
 
-date: '11.2013'
+date: ''
 location:
 images:
   - 84.jpg

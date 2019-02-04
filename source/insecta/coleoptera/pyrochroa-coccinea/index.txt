@@ -2,9 +2,11 @@
 genus: 'Pyrochroa'
 species: 'Coccinea'
 
+makeindex: False
+
 ---
 
-date: '12.2014'
+date: ''
 location:
 images:
   - R0030570.jpg

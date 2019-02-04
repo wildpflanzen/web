@@ -2,9 +2,11 @@
 genus: 'Lymantria'
 species: 'Dispar'
 
+makeindex: False
+
 ---
 
-date: '6.2014'
+date: ''
 location:
 images:
   - R0011728.jpg

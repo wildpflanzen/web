@@ -2,9 +2,11 @@
 genus: 'Pelatachina'
 species: 'Tibialis'
 
+makeindex: False
+
 ---
 
-date: '11.2013'
+date: ''
 location:
 images:
   - 102.jpg

@@ -2,9 +2,11 @@
 genus: 'Ancistrocerus'
 species: 'Parietum'
 
+makeindex: False
+
 ---
 
-date: '11.2014'
+date: ''
 location:
 images:
   - r0030744.jpg

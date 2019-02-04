@@ -2,9 +2,11 @@
 genus: 'Philanthus'
 species: 'Triangulum'
 
+makeindex: False
+
 ---
 
-date: '8.2016'
+date: ''
 location:
 images:
   - r0032723.jpg

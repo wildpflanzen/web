@@ -2,9 +2,11 @@
 genus: 'Gymnosoma'
 species: 'Rotundatum'
 
+makeindex: False
+
 ---
 
-date: '11.2013'
+date: ''
 location:
 images:
   - 101.jpg

@@ -2,9 +2,11 @@
 genus: 'Abrachyglossum'
 species: 'Capitatum'
 
+makeindex: False
+
 ---
 
-date: '3.2016'
+date: ''
 location:
 images:
   - r0033009.jpg

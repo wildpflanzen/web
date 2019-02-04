@@ -2,9 +2,11 @@
 genus: 'Saperda'
 species: 'Carcharias'
 
+makeindex: False
+
 ---
 
-date: '11.2013'
+date: ''
 location:
 images:
   - 58.jpg

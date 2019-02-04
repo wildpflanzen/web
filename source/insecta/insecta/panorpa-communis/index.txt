@@ -2,9 +2,11 @@
 genus: 'Panorpa'
 species: 'Communis'
 
+makeindex: False
+
 ---
 
-date: '11.2013'
+date: ''
 location:
 images:
   - 94.jpg

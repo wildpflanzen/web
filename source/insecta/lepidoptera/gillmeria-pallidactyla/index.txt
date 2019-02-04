@@ -2,9 +2,11 @@
 genus: 'Gillmeria'
 species: 'Pallidactyla'
 
+makeindex: False
+
 ---
 
-date: '1.2016'
+date: ''
 location:
 images:
   - r0030791.jpg

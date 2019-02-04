@@ -2,9 +2,11 @@
 genus: 'Insecta'
 species: '44'
 
+makeindex: False
+
 ---
 
-date: '11.2013'
+date: ''
 location:
 images:
   - 38.jpg

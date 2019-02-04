@@ -2,9 +2,11 @@
 genus: 'Arachnida'
 species: '27'
 
+makeindex: False
+
 ---
 
-date: '11.2013'
+date: ''
 location:
 images:
   - 126.jpg

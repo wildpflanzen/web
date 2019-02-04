@@ -2,9 +2,11 @@
 genus: 'Asilidae'
 species: '01'
 
+makeindex: False
+
 ---
 
-date: '8.2016'
+date: ''
 location:
 images:
   - r0031526.jpg

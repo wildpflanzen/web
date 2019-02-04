@@ -2,9 +2,11 @@
 genus: 'Coelioxys'
 species: '17'
 
+makeindex: False
+
 ---
 
-date: '10.2015'
+date: ''
 location:
 images:
   - r0034327.jpg

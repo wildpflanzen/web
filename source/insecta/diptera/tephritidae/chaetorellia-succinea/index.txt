@@ -2,9 +2,11 @@
 genus: 'Chaetorellia'
 species: 'Succinea'
 
+makeindex: False
+
 ---
 
-date: '8.2014'
+date: ''
 location:
 images:
   - R0031055.jpg

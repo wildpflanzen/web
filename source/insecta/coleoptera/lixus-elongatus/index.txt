@@ -2,9 +2,11 @@
 genus: 'Lixus'
 species: 'Elongatus'
 
+makeindex: False
+
 ---
 
-date: '11.2013'
+date: ''
 location:
 images:
   - 113.jpg

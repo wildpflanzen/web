@@ -2,9 +2,11 @@
 genus: 'Ochlodes'
 species: 'Sylvanus'
 
+makeindex: False
+
 ---
 
-date: '11.2013'
+date: ''
 location:
 images:
   - 61.jpg

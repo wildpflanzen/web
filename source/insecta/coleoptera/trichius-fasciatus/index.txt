@@ -2,9 +2,11 @@
 genus: 'Trichius'
 species: 'Fasciatus'
 
+makeindex: False
+
 ---
 
-date: '11.2013'
+date: ''
 location:
 images:
   - 62.jpg

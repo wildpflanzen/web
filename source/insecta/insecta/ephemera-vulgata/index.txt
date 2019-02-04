@@ -2,9 +2,11 @@
 genus: 'Ephemera'
 species: 'Vulgata'
 
+makeindex: False
+
 ---
 
-date: '11.2013'
+date: ''
 location:
 images:
   - 92.jpg

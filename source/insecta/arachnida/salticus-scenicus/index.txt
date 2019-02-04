@@ -2,9 +2,11 @@
 genus: 'Salticus'
 species: 'Scenicus'
 
+makeindex: False
+
 ---
 
-date: '11.2013'
+date: ''
 location:
 images:
   - 97.jpg

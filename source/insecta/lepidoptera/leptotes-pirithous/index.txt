@@ -2,9 +2,11 @@
 genus: 'Leptotes'
 species: 'Pirithous'
 
+makeindex: False
+
 ---
 
-date: '11.2015'
+date: ''
 location:
 images:
   - r0034305.jpg

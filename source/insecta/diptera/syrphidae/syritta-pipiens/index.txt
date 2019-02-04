@@ -2,9 +2,11 @@
 genus: 'Syritta'
 species: 'Pipiens'
 
+makeindex: False
+
 ---
 
-date: '11.2013'
+date: ''
 location:
 images:
   - 138.jpg

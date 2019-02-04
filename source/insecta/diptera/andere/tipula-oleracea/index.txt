@@ -2,9 +2,11 @@
 genus: 'Tipula'
 species: 'Oleracea'
 
+makeindex: False
+
 ---
 
-date: '11.2013'
+date: ''
 location:
 images:
   - 95.jpg

@@ -2,9 +2,11 @@
 genus: 'Palomena'
 species: 'Prasina'
 
+makeindex: False
+
 ---
 
-date: '1.2017'
+date: ''
 location:
 images:
   - r0034999.jpg

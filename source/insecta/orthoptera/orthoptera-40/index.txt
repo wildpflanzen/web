@@ -2,9 +2,11 @@
 genus: 'Orthoptera'
 species: '40'
 
+makeindex: False
+
 ---
 
-date: '11.2013'
+date: ''
 location:
 images:
   - 26.jpg

@@ -2,9 +2,11 @@
 genus: 'Vespula'
 species: 'Germanica'
 
+makeindex: False
+
 ---
 
-date: '1.2016'
+date: ''
 location:
 images:
   - r0029214.jpg

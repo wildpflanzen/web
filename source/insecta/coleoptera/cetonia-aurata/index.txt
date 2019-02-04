@@ -2,9 +2,11 @@
 genus: 'Cetonia'
 species: 'Aurata'
 
+makeindex: False
+
 ---
 
-date: '11.2013'
+date: ''
 location:
 images:
   - 40.jpg

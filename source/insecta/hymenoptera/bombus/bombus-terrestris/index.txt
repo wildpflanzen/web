@@ -2,9 +2,11 @@
 genus: 'Bombus'
 species: 'Terrestris'
 
+makeindex: False
+
 ---
 
-date: '11.2014'
+date: ''
 location:
 images:
   - r0030994.jpg

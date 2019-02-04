@@ -2,9 +2,11 @@
 genus: 'Halictus'
 species: 'Rubicundus'
 
+makeindex: False
+
 ---
 
-date: '8.2016'
+date: ''
 location:
 images:
   - r0034561.jpg

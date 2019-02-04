@@ -2,9 +2,11 @@
 genus: 'Curculio'
 species: 'Nucum'
 
+makeindex: False
+
 ---
 
-date: '11.2013'
+date: ''
 location:
 images:
   - 7.jpg

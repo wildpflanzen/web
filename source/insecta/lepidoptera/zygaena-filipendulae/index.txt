@@ -2,9 +2,11 @@
 genus: 'Zygaena'
 species: 'Filipendulae'
 
+makeindex: False
+
 ---
 
-date: '11.2014'
+date: ''
 location:
 images:
   - r0031309.jpg

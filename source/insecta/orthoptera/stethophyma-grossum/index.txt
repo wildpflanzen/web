@@ -2,9 +2,11 @@
 genus: 'Stethophyma'
 species: 'Grossum'
 
+makeindex: False
+
 ---
 
-date: '12.2014'
+date: ''
 location:
 images:
   - R0031168.jpg

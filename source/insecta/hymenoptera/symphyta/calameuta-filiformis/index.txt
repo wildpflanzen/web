@@ -2,9 +2,11 @@
 genus: 'Calameuta'
 species: 'Filiformis'
 
+makeindex: False
+
 ---
 
-date: '11.2013'
+date: ''
 location:
 images:
   - 27.jpg

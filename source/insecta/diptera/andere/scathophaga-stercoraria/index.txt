@@ -2,9 +2,11 @@
 genus: 'Scathophaga'
 species: 'Stercoraria'
 
+makeindex: False
+
 ---
 
-date: '11.2013'
+date: ''
 location:
 images:
   - 88.jpg

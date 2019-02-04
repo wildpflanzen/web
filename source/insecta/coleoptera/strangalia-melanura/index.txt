@@ -2,9 +2,11 @@
 genus: 'Strangalia'
 species: 'Melanura'
 
+makeindex: False
+
 ---
 
-date: '11.2013'
+date: ''
 location:
 images:
   - 116.jpg

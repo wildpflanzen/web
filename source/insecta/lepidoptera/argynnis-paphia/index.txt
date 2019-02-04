@@ -2,9 +2,11 @@
 genus: 'Argynnis'
 species: 'Paphia'
 
+makeindex: False
+
 ---
 
-date: '11.2013'
+date: ''
 location:
 images:
   - 83.jpg

@@ -2,9 +2,11 @@
 genus: 'Polistes'
 species: 'Dominula'
 
+makeindex: False
+
 ---
 
-date: '12.2016'
+date: ''
 location:
 images:
   - r0034876.jpg

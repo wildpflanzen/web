@@ -2,9 +2,11 @@
 genus: 'Tabanidae'
 species: '14'
 
+makeindex: False
+
 ---
 
-date: '11.2013'
+date: ''
 location:
 images:
   - 28.jpg

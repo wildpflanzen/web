@@ -2,9 +2,11 @@
 genus: 'Sphaerophoria'
 species: 'Scripta'
 
+makeindex: False
+
 ---
 
-date: '11.2013'
+date: ''
 location:
 images:
   - 128.jpg

@@ -2,9 +2,11 @@
 genus: 'Coenonympha'
 species: 'Gardetta'
 
+makeindex: False
+
 ---
 
-date: '6.2014'
+date: ''
 location:
 images:
   - R0014742.jpg

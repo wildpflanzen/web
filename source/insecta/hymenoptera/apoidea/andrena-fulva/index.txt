@@ -2,9 +2,11 @@
 genus: 'Andrena'
 species: 'Fulva'
 
+makeindex: False
+
 ---
 
-date: '3.2014'
+date: ''
 location:
 images:
   - 139.jpg

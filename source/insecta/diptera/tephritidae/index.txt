@@ -3,5 +3,6 @@ navi_name: 'Diptera'
 listdir:
   - acidia-cognata
   - chaetorellia-succinea
+  - diptera-12  
   - urophora-cardui
   - urophora-quadrifasciata

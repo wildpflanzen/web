@@ -2,9 +2,11 @@
 genus: 'Nymphalis'
 species: 'Io'
 
+makeindex: False
+
 ---
 
-date: '6.2014'
+date: ''
 location:
 images:
   - R0019225.jpg

@@ -2,9 +2,11 @@
 genus: 'Miramella'
 species: 'Alpina'
 
+makeindex: False
+
 ---
 
-date: '11.2013'
+date: ''
 location:
 images:
   - 107.jpg

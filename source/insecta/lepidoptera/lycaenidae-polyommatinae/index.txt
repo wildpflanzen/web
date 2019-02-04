@@ -2,9 +2,11 @@
 genus: 'Lycaenidae'
 species: 'Polyommatinae'
 
+makeindex: False
+
 ---
 
-date: '1.2016'
+date: ''
 location:
 images:
   - r0034310.jpg

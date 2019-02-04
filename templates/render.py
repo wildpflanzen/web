@@ -108,8 +108,7 @@ class HTML_generator():
                       lambda sp: self.session_index(sp, 'location'))
 
       # Make html place index
-      self.make_index('date', \
-                      lambda sp: [d.split('.')[1]+'.%02d' % int(d.split('.')[0]) for d in self.session_index(sp, 'date')])
+      self.make_index('date', lambda sp: self.getdate(sp))
 
       # Make html genus index
       self.make_index('genus', \
@@ -130,10 +129,22 @@ class HTML_generator():
                       lambda sp: [sp['family']])
 
 
+   def getdate(self, sp):
+      result = []
+      for d in self.session_index(sp, 'date'):
+         fields = d.split('.')
+         if len(fields) != 2:
+            continue
+         result.append(fields[1] + '.%02d' % int(fields[0]))
+      return result
+
 
    def make_index(self, index_name, fkey, length=100):
       sorted_species =  {}
       for species in self.database.species:
+         if 'makeindex' in species and species['makeindex'] == False:
+            continue
+
          names = fkey(species)
          for name in names:
             # Test if name exists and select first character
@@ -295,7 +306,7 @@ class Database(UserDict):
             continue
          fullname = os.path.join(basepath, path, diname)
          if os.path.isdir(fullname):
-            print("   Warning, path %s not in listdir: %s" % (diname, os.path.join(path, 'index.txt')))
+            #print("   Warning, path %s not in listdir: %s" % (diname, os.path.join(path, 'index.txt')))
             self.read_paths(basepath, path=os.path.join(path, diname), parent=group)
 
 
@@ -484,7 +495,7 @@ class Database(UserDict):
       else:
          all_species[-1]['species_prev'] = all_species[0]
 
-      # Make next_group links
+      # Make manual links, from field next_group
       for group in self.groups:
          if 'next_group' in group:
             next_group = self.find_group(group['next_group'])

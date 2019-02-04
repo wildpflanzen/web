@@ -2,9 +2,11 @@
 genus: 'Coleoptera'
 species: '36'
 
+makeindex: False
+
 ---
 
-date: '11.2013'
+date: ''
 location:
 images:
   - 12.jpg

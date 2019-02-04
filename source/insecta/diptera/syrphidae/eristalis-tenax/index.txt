@@ -2,9 +2,11 @@
 genus: 'Eristalis'
 species: 'Tenax'
 
+makeindex: False
+
 ---
 
-date: '11.2013'
+date: ''
 location:
 images:
   - 47.jpg

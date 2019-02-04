@@ -2,9 +2,11 @@
 genus: 'Episyrphus'
 species: 'Balteatus'
 
+makeindex: False
+
 ---
 
-date: '11.2013'
+date: ''
 location:
 images:
   - 136.jpg

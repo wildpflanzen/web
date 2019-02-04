@@ -2,9 +2,11 @@
 genus: 'Acidia'
 species: 'Cognata'
 
+makeindex: False
+
 ---
 
-date: '1.2015'
+date: ''
 location:
 images:
   - 0030151.jpg

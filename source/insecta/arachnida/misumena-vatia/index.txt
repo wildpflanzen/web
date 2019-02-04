@@ -2,9 +2,11 @@
 genus: 'Misumena'
 species: 'Vatia'
 
+makeindex: False
+
 ---
 
-date: '11.2013'
+date: ''
 location:
 images:
   - 98.jpg

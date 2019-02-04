@@ -2,9 +2,11 @@
 genus: 'Diptera'
 species: '12'
 
+makeindex: False
+
 ---
 
-date: '1.2016'
+date: ''
 location:
 images:
   - r0030647.jpg

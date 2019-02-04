@@ -2,9 +2,11 @@
 genus: 'Cicadella'
 species: 'Viridis'
 
+makeindex: False
+
 ---
 
-date: '1.2016'
+date: ''
 location:
 images:
   - r0030321.jpg

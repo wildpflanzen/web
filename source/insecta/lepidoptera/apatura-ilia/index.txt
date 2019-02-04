@@ -2,9 +2,11 @@
 genus: 'Apatura'
 species: 'Ilia'
 
+makeindex: False
+
 ---
 
-date: '11.2014'
+date: ''
 location:
 images:
   - r0030633.jpg

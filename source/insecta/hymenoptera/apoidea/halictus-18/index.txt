@@ -2,9 +2,11 @@
 genus: 'Halictus'
 species: '18'
 
+makeindex: False
+
 ---
 
-date: '8.2016'
+date: ''
 location:
 images:
   - r0034520.jpg

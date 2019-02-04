@@ -2,9 +2,11 @@
 genus: 'Ronisia'
 species: 'Brutia'
 
+makeindex: False
+
 ---
 
-date: '1.2016'
+date: ''
 location:
 images:
   - r0034297.jpg

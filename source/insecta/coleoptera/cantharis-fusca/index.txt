@@ -2,9 +2,11 @@
 genus: 'Cantharis'
 species: 'Fusca'
 
+makeindex: False
+
 ---
 
-date: '11.2013'
+date: ''
 location:
 images:
   - 17.jpg
