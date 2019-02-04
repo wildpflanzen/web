@@ -1,6 +1,8 @@
 ﻿group_title: 'Hymenoptera, Bombus'
 navi_name: 'Hymenoptera'
 
+group_template: groups_insecta.html
+
 listdir:
   - bombus-hortorum
   - bombus-lapidarius

@@ -1,6 +1,8 @@
 ﻿group_title: 'Diptera, Syrphidae'
 navi_name: 'Diptera'
 
+group_template: groups_insecta.html
+
 listdir:
   - diptera-07
   - episyrphus-balteatus

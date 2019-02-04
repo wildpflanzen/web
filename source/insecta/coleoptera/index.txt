@@ -1,6 +1,8 @@
 ﻿group_title: 'Coleoptera'
 navi_name: 'Coleoptera'
 
+group_template: groups_insecta.html
+
 listdir:
   - adelocera-murina
   - cantharis-fusca

@@ -94,6 +94,7 @@ class HTML_generator():
       path = 'extra'
       extra = [f for f in os.listdir(path) if f[-5:].lower() == '.html']
       for fname in extra:
+         print('   ' + fname)
          html_template = self.jinja_environment(fname, path=['', 'extra'])
          filename = os.path.join(self.output, fname)
          html = html_template.render(database=self.database)
@@ -173,7 +174,7 @@ class HTML_generator():
       self.index['index_name'] = index_name
 
       # Jinja template
-      html_template = self.jinja_environment('index-de.html')
+      html_template = self.jinja_environment('index_species.html')
       html = html_template.render(index=self.index, database=self.database)
       output = os.path.join(self.output, 'index-' + re.sub('[ _/]', '-', index_name)+'.html')
       self.write_file(output, html)
@@ -215,11 +216,16 @@ class HTML_generator():
    def html_groups(self):
       print('\nRendering html groups ...')
 
-      # Jinja environment
-      html_template = self.jinja_environment('groups-de.html')
-
       # Make html group files
       for group in self.database.groups:
+
+         # Select Jinja environment
+         if 'group_template' in group:
+            html_template = self.jinja_environment(group['group_template'])
+         else:
+            html_template = self.jinja_environment('groups.html')
+
+         # Render template
          filename = os.path.join(self.output, group['filename'] + '.html')
          html = html_template.render(group=group, database=self.database)
          self.write_file(filename, html)
@@ -229,7 +235,7 @@ class HTML_generator():
       print('\nRendering html species ...')
 
       # Jinja environment
-      html_template = self.jinja_environment('species-de.html')
+      html_template = self.jinja_environment('species.html')
 
       # Make html files
       for species in self.database.species:

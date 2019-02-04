@@ -1,5 +1,8 @@
 ﻿group_title: 'Diptera, Tephritidae'
 navi_name: 'Diptera'
+
+group_template: groups_insecta.html
+
 listdir:
   - acidia-cognata
   - chaetorellia-succinea

@@ -1,6 +1,8 @@
 ﻿group_title: 'Hemiptera'
 navi_name: 'Hemiptera'
 
+group_template: groups_insecta.html
+
 listdir:
   - cercopis-vulnerata
   - cicadella-viridis

@@ -1,6 +1,8 @@
 ﻿group_title: 'Hymenoptera, Vespoidea'
 navi_name: 'Hymenoptera'
 
+group_template: groups_insecta.html
+
 listdir:
   - ancistrocerus-parietum
   - polistes-dominula

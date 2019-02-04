@@ -1,6 +1,8 @@
 ﻿group_title: 'Hymenoptera, Apoidea'
 navi_name: 'Hymenoptera'
 
+group_template: groups_insecta.html
+
 listdir:
   - andrena-flavipes
   - andrena-fulva

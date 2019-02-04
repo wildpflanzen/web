@@ -1,6 +1,8 @@
 ﻿group_title: 'Orthoptera'
 navi_name: 'Orthoptera'
 
+group_template: groups_insecta.html
+
 listdir:
   - grillotalpa-grillotalpa
   - miramella-alpina

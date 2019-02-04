@@ -1,6 +1,8 @@
 ﻿group_title: 'Insecta'
 navi_name: 'Insecta'
 
+group_template: groups_insecta.html
+
 next_group: 'insecta/diptera/syrphidae'
 
 listdir:
