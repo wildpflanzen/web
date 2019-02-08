@@ -42,15 +42,9 @@
          document.getElementById('toggle_' + color[i]).style.backgroundColor = "#fff";
       }
 
-      /* Toggle menu */
+      /* visibility menu */
       var menu = document.getElementById('menu_' + idcolor);
-      if (menu.style.visibility != "visible") {
-         menu.style.visibility = "visible";
-         document.getElementById('toggle_' + idcolor).style.backgroundColor = "#EEF3E2";
-      } else {
-         menu.style.visibility = "hidden";
-         document.getElementById('toggle_' + idcolor).style.backgroundColor = "#fff";
-      };
+      menu.style.visibility = "visible";
    }
    </script>
 
@@ -230,9 +224,12 @@
    </ul>
 
    </div> <!-- farben -->
+   </div>  <!-- Content end -->
 
+   <!-- Extra content -->
+   
    <!-- Extra index -->
-   <div class="index">
+   <div class="navi">
    <ul>
    <li><a href="grass.html">Gräser</a>
    </li><li><a href="strauch.html">Sträucher</a>
@@ -241,10 +238,6 @@
    </li>
    </ul>
    </div>
-   </div>  <!-- Content end -->
-
-   <!-- Extra content -->
-   
    
    
    

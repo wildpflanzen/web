@@ -3,7 +3,7 @@ navi_name: 'Insecta'
 
 group_template: groups_insecta.html
 
-next_group: 'insecta/diptera/syrphidae'
+next_group: 'besucher/diptera/syrphidae'
 
 listdir:
   - chrysopa-perla

@@ -105,16 +105,14 @@ class HTML_generator():
       print('\nRendering index files ...')
 
       # Make html place index
-      self.make_index('location',\
-                      lambda sp: self.session_index(sp, 'location'))
+      self.make_index('location',  lambda sp: self.session_index(sp, 'location'))
 
       # Make html place index
-      self.make_index('date', lambda sp: self.getdate(sp))
+      self.make_index('date',      lambda sp: self.getdate(sp))
 
       # Make html genus index
       self.make_index('genus', \
-                      lambda sp: [sp['genus']], \
-                      length=1)
+                      lambda sp: [sp['genus']], length=1)
 
       # Make html genus_de index
       self.make_index('genus_de', \
@@ -140,13 +138,16 @@ class HTML_generator():
       return result
 
 
-   def make_index(self, index_name, fkey, length=100):
+   def make_index(self, index_name, fkey, length=0):
       sorted_species =  {}
       for species in self.database.species:
          if 'makeindex' in species and species['makeindex'] == False:
             continue
 
-         names = fkey(species)
+         try:
+            names = fkey(species)
+         except:
+            continue
          for name in names:
             # Test if name exists and select first character
             if not name:

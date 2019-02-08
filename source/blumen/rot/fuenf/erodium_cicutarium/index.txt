@@ -6,7 +6,7 @@ family_de: 'Storchschnabelgewächse'
 species_de: 'Gewöhnlicher'
 genus_de: 'Reiherschnabel'
 
-floration: 'mai - September'
+floration: 'Mai - September'
 
 ---
 

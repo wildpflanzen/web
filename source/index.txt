@@ -4,4 +4,4 @@ listdir:
   - blumen
   - grass
   - strauch
-  - insecta
+  - besucher
