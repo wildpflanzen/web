@@ -4,7 +4,7 @@
 Static web site generator for image photograps
 
 
-[Wildpflanzen. Webpage hosted in GitHub](https://wildpflanzen.github.io/wildpflanzen-web/index.html)
+[Wildpflanzen. Webpage hosted in GitHub](https://wildpflanzen.github.io/web/index.html)
 
 
 [Original Wildpflanzen Web](http://www.wildpflanzen.com.de/)
