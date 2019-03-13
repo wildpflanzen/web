@@ -1,5 +1,5 @@
-﻿group_title: 'Grüne oder braune, Blütenstände'
-navi_name: 'Grüne oder braune, Blütenstände'
+﻿group_title: 'Grüne Blütenstände'
+navi_name: 'Grüne Blütenstände'
 
 listdir:
   - plantago_lanceolata

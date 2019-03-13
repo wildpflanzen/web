@@ -6,7 +6,7 @@ family_de: 'Dickblattgewächse'
 species_de: 'Dickblättrige'
 genus_de: 'Fetthenne'
 
-floration: ''
+floration: 'Mai - August'
 
 ---
 
@@ -19,3 +19,14 @@ images:
   - 4.jpg
   - 5.jpg
   - 6.jpg
+  - R0016155.jpg
+  - R0016154.jpg
+  - R0016153.jpg
+  - R0016152.jpg
+  - R0016156.jpg
+  
+  
+  
+  
+  
+  

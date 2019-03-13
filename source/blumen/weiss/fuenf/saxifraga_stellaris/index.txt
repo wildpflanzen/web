@@ -6,7 +6,7 @@ family_de: 'Steinbrechgewächse'
 species_de: 'Stern'
 genus_de: 'Steinbrech'
 
-floration: ''
+floration: 'Juni - September'
 
 ---
 
@@ -14,3 +14,18 @@ date: '7.2013'
 location: 'Adamello, Italien'
 images:
   - 1.jpg
+  - R0016139.jpg
+  - R0015699.jpg
+  - R0015700.jpg
+  - R0015698.jpg
+  - R0016139_1.jpg
+  - R0016140.jpg
+  - R0015701.jpg
+  - R0015702.jpg
+  - R0015703.jpg
+  - R0015706.jpg
+  - R0015705.jpg
+  - R0015704.jpg
+  - R0016137.jpg
+  - R0016138_1.jpg
+  - R0016138_2.jpg

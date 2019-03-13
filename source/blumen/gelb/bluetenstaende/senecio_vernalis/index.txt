@@ -13,9 +13,9 @@ floration: 'April - November'
 date: '4.2013'
 location: 'Johannisthal, Berlin'
 images:
+  - 1.jpg
   - 12.jpg
   - 13.jpg
-  - 1.jpg
   - 2.jpg
   - 3.jpg
   - 4.jpg

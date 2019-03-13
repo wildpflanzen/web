@@ -1,8 +1,9 @@
-﻿group_title: 'Rote, Blütenstände'
-navi_name: 'Rote, Blütenstände'
+﻿group_title: 'Rote Blütenstände'
+navi_name: 'Rote Blütenstände'
 
 listdir:
   - crepis_aurea
+  - senecio_abrotanifolius
   - erigeron_uniflorus
   - homogyne_alpina
   - knautia_baldensis

@@ -11,3 +11,6 @@ location:
 images:
   - r0032723.jpg
   - r0032720.jpg
+  - r0037197.jpg
+  - r0037240.jpg
+  - r0037245.jpg

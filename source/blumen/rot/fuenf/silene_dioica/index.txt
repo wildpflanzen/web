@@ -6,7 +6,7 @@ family_de: 'Nelkengewächse'
 species_de: 'Rote'
 genus_de: 'Lichtnelke'
 
-floration: ''
+floration: 'Juni - August'
 
 ---
 
@@ -14,3 +14,14 @@ date: '6.2013'
 location: 'Tiergarten, Berlin'
 images:
   - s1.jpg
+  - R0038650.jpg
+  - R0038651.jpg
+  - R0038649.jpg
+  - R0038652.jpg
+  - R0038654.jpg
+  - R0038655.jpg
+  - R0038656.jpg
+  
+  
+  
+  

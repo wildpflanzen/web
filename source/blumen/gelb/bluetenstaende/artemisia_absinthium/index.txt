@@ -1,0 +1,24 @@
+﻿# Blumen data
+
+family: 'Asteraceae'
+genus: 'Artemisia'
+species: 'Absinthium'
+
+family_de: 'Korbblütler'
+species_de: ['Wermutkraut', 'Echt-Wermut']
+genus_de: ['', '']
+
+floration: 'Juli - September'
+
+---
+
+date: '2019'
+location: 'Trafoi'
+images:
+  - R0037542.jpg
+  - R0037543.jpg
+  - R0037546.jpg
+  - R0037544.jpg
+  - R0037539.jpg
+  - R0037540.jpg
+  - R0037541.jpg

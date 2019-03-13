@@ -1,0 +1,18 @@
+﻿# Blumen data
+
+family: ''
+genus: ''
+species: ''
+
+family_de: ''
+species_de: ['', '']
+genus_de: ['', '']
+
+floration: ''
+
+---
+
+date: ''
+location: ''
+images:
+  - 

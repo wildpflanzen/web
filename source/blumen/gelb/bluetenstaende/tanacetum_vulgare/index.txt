@@ -13,7 +13,7 @@ floration: 'Juni - September'
 date: '7.2014'
 location: 'Johannisthal, Berlin'
 images:
+  - 3.jpg
   - 1.jpg
   - 2.jpg
-  - 3.jpg
   - 4.jpg

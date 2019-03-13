@@ -1,0 +1,26 @@
+﻿family: 'Asteraceae'
+genus: 'Senecio'
+species: 'Abrotanifolius'
+
+family_de: 'Korbblütler'
+species_de: 'Eberrauten'
+genus_de: 'Greiskraut'
+
+floration: 'Juli - September'
+
+---
+
+date: '2018'
+location: 'Ortlergruppe'
+images:
+  - R0037696.jpg
+  - R0037698.jpg
+  - R0037690.jpg
+  - R0037689.jpg
+  - R0037691.jpg
+  - R0037695.jpg
+  - R0037694.jpg
+  - R0037688.jpg
+  - R0037692.jpg
+  - R0037697.jpg
+  - R0037686.jpg

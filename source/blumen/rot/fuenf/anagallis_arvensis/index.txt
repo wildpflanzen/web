@@ -1,0 +1,25 @@
+﻿family: 'Primulaceae'
+genus: 'Anagallis'
+species: 'Arvensis'
+
+family_de: 'Primelgewächse'
+species_de: 'Acker'
+genus_de: 'Gauchheil'
+
+floration: 'Juni - September'
+
+---
+
+date: ''
+location: ''
+images:
+  - R0036309.jpg
+  - R0036307.jpg
+  - R0036306.jpg
+  - R0036311.jpg
+  - R0036314.jpg
+  - R0036315.jpg
+  - R0036318.jpg
+  - R0036319.jpg
+  - R0036303.jpg
+  

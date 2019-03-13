@@ -6,11 +6,19 @@ family_de: 'Nelkengewächse'
 species_de: 'Gewöhnlicher'
 genus_de: 'Kornrade'
 
-floration: ''
+floration: 'Juni - August'
 
 ---
 
-date: '6.2013'
-location: 'Neukölln, Berlin'
+date: '6.2018'
+location: 'Möllendorf, Brandenburg'
 images:
   - 1.jpg
+  - R0036364.jpg
+  - R0036363.jpg
+  - R0036365.jpg
+  - R0036358.jpg
+  - R0036358_1.jpg
+  - R0036361.jpg
+  - R0036362.jpg
+  - R0036367.jpg

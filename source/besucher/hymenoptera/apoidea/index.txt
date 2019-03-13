@@ -8,10 +8,10 @@ listdir:
   - andrena-fulva
   - coelioxys-17
   - dasypoda-hirtipes
+  - philanthus-triangulum
   - halictus-18
   - halictus-rubicundus
   - hylaeus-21
   - hymenoptera-19
   - hymenoptera-20
   - hymenoptera-22
-  - philanthus-triangulum

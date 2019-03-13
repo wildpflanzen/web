@@ -21,20 +21,22 @@ listdir:
   - doronicum_clusii
   - solidago_vigaurea_ssp_minuta
   - arnica_montana
-  - senecio_inaequidens
   - senecio_doronicum_ssp_doronicum
+  - senecio_inaequidens
   - senecio_vernalis
   - senecio_hercynicus
   - senecio_incanus_ssp_carneolicus
-  - carlina_vulgaris
   - tanacetum_vulgare
   - matricaria_discoidea
   - senecio_vulgaris
+  - artemisia_absinthium
   - helichrysum_arenarium
   - otanthus_maritimus
   - solidago_canadensis
   - bidens_frondosa
   - lysimachia_thyrsiflora
   - tofieldia_calyculata
+  - reseda_lutea
   - thalictrum_flavum
+  - carlina_vulgaris
   

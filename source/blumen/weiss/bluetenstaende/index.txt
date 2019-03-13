@@ -1,5 +1,5 @@
-﻿group_title: 'Weisse, Blütenstände'
-navi_name: 'Weisse, Blütenstände'
+﻿group_title: 'Weisse Blütenstände'
+navi_name: 'Weisse Blütenstände'
 
 listdir:
   - bellis_perennis
