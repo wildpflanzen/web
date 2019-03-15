@@ -95,7 +95,7 @@
 {%- endmacro %}
 
 
-{%- macro dump_data(species) -%}
+{%- macro dump_species_data(species) -%}
    {%- for key in ['family', 'genus', 'species', 'family_de',
                    'species_de', 'genus_de', 'floration',
                    'thumb', 'path', 'order' ] -%}
@@ -111,4 +111,24 @@
        {% endfor -%}
        images: {{ session.images }}
    {%- endfor %}
+{% endmacro -%}
+
+
+{%- macro dump_group_data(group) -%}
+   {%- for key in ['group_title', 
+                   'navi_name', 
+                   'next_group' ] -%}
+   {%- if key in group %}
+   {{ key }}: {% if group[key] is string %}'{{ group[key] }}'
+              {%- else %}{{ group[key] }}{% endif %}
+   {%- endif %}
+   {%- endfor %}
+
+  
+   {%- if 'listdir' in group %}
+   listdir:
+   {%- for species in group.listdir %}
+     - {{ species }}
+   {%- endfor %}
+   {%- endif %}
 {% endmacro -%}
