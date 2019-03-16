@@ -1,5 +1,5 @@
 ﻿group_title: 'Rote, Mehr als fünf Blütenblätter'
-navi_name: 'Rote, Mehr als fünf Blütenblätter'
+navi_name: 'Rote, mehr als fünf Blütenblätter'
 
 listdir:
   - aquilegia_atrata

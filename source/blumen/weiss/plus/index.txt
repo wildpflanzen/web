@@ -1,5 +1,5 @@
 ﻿group_title: 'Weisse, Mehr als fünf Blütenblätter'
-navi_name: 'Weisse, Mehr als fünf Blütenblätter'
+navi_name: 'Weisse, mehr als fünf Blütenblätter'
 
 listdir:
   - anemone_nemorosa

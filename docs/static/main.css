@@ -1,7 +1,7 @@
 ﻿/*
    Style sheet for Wildpflanzen static web generator.
 
-   https://github.com/picuino/wildpflanzen
+   https://github.com/wildpflanzen/web
 
    Copyright (c) 2012-2019 by Irene Pardo
    Copyright (c) 2018-2019 by Carlos Pardo
@@ -406,9 +406,9 @@ color: #404040;
 @media (max-width: 680px) { 
 
 h1 {
-font-size: 24px;
-margin-bottom: 12px;
-padding-top: 12px;
+font-size: 28px;
+margin-bottom: 18px;
+padding-top: 18px;
 }
 
 .content h1 { 

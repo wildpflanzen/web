@@ -42,9 +42,12 @@
          document.getElementById('toggle_' + color[i]).style.backgroundColor = "#fff";
       }
 
-      /* visibility menu */
+      /* Toggle menu */
       var menu = document.getElementById('menu_' + idcolor);
-      menu.style.visibility = "visible";
+      if (menu.style.visibility != "visible") {
+         menu.style.visibility = "visible";
+         document.getElementById('toggle_' + idcolor).style.backgroundColor = "#EEF3E2";
+      }
    }
    </script>
 
@@ -53,7 +56,10 @@
 
    .index { margin-top: 64px; }
 
-   .index_farben { margin-top: 48px; }
+   .index_farben {
+   margin-top: 48px;
+   margin-bottom: 48px; 
+   }
 
    .index_farben h3 {
    margin: 0;
@@ -119,7 +125,7 @@
    <div id="page_init"></div>
    <div class="header">
    
-   <h1>Wildpflanzen</h1>
+   <h1><a href="index.html">Wildpflanzen</a></h1>
    </div> <!-- Header end -->
 
    <div class="wrapper">
@@ -233,8 +239,10 @@
    <ul>
    <li><a href="grass.html">Gräser</a>
    </li><li><a href="strauch.html">Sträucher</a>
+   <!-- Not implemented 
    </li><li><a href="">Moose</a>
    </li><li><a href="">Farne</a>
+   -->
    </li>
    </ul>
    </div>
@@ -267,7 +275,7 @@
    
        <div class="footer_links">
        <ul>
-       <li><a href="impressum.html">Impressum</a>
+       <!-- <li><a href="impressum.html">Impressum</a> -->
        </li><li><a href="cookies.html">Cookies</a>
        </li><li><a href="kontakt.html">Kontakt</a>
        </li><li><a href="insecta-diptera-syrphidae.html">Besucher</a>

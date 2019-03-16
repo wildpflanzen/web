@@ -2,7 +2,7 @@
 
    Wildpflanzen static web generator.
 
-   https://github.com/picuino/wildpflanzen
+   https://github.com/wildpflanzen/web
 
 
    Copyright (c) 2018-2019 by Carlos Pardo
@@ -105,10 +105,10 @@ class HTML_generator():
       print('\nRendering index files ...')
 
       # Make html place index
-      self.make_index('location',  lambda sp: self.session_index(sp, 'location'))
+      self.make_index('location', lambda sp: self.session_index(sp, 'location'))
 
       # Make html place index
-      self.make_index('date',      lambda sp: self.getdate(sp))
+      self.make_index('date', lambda sp: self.getdate(sp))
 
       # Make html genus index
       self.make_index('genus', \
@@ -120,12 +120,10 @@ class HTML_generator():
                       length=1)
 
       # Make html family index
-      self.make_index('family', \
-                      lambda sp: [sp['family']])
+      self.make_index('family', lambda sp: [sp['family']])
 
       # Make html family_de index
-      self.make_index('family_de', \
-                      lambda sp: [sp['family']])
+      self.make_index('family_de', lambda sp: [sp['family_de']])
 
 
    def getdate(self, sp):

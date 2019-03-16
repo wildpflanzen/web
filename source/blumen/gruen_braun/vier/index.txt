@@ -1,5 +1,5 @@
 ﻿group_title: 'Grüne, Bis vier Blütenblätter'
-navi_name: 'Bis vier Blütenblätter, grüne'
+navi_name: 'Grüne bis vier Blütenblätter'
 
 listdir:
   - rumex_scutatus

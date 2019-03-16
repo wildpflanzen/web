@@ -1,5 +1,0 @@
-
-listdir:
-  - index.txt
-  - listdir.bat
-  - _install_python_libs.bat

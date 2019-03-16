@@ -1,5 +1,5 @@
 ﻿group_title: 'Grüne oder braune, Zygomorphe Blüten'
-navi_name: 'Grüne oder braune, Zygomorphe Blüten'
+navi_name: 'Grüne zygomorphe Blüten'
 
 listdir:
   - epipactis_helleborine

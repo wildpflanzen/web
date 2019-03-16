@@ -1,5 +1,5 @@
 ﻿group_title: 'Blaue, Zygomorphe Blüten'
-navi_name: 'Blaue, Zygomorphe Blüten'
+navi_name: 'Blaue zygomorphe Blüten'
 
 listdir:
   - acinos_alpinus

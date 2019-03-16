@@ -1,5 +1,5 @@
 ﻿group_title: 'Rote, Zygomorphe Blüten'
-navi_name: 'Rote, Zygomorphe Blüten'
+navi_name: 'Rote zygomorphe Blüten'
 
 listdir:
   - ballota_nigra

@@ -1,7 +1,7 @@
 ﻿{#-
    Layout template for Wildpflanzen static web generator.
 
-   https://github.com/picuino/wildpflanzen
+   https://github.com/wildpflanzen/web
 
    Copyright (c) 2018-2019 by Carlos Pardo
 
@@ -30,9 +30,9 @@
 
 {% block navi_local %}
    <ul>
-      <li class="navi_next"><a href="{{ group.group_prev.filename }}.html">&lt;&lt;</a>
+      <li class="navi_next"><a href="{{ group.group_prev.filename }}.html">&lt;</a>
       </li><li class="navi_select navi_fix"><span class="btn">{{ group.navi_name }}<span>
-      </li><li class="navi_next"><a href="{{ group.group_next.filename }}.html">&gt;&gt;</a>
+      </li><li class="navi_next"><a href="{{ group.group_next.filename }}.html">&gt;</a>
       </li>
    </ul>
 {%- endblock %}

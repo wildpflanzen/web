@@ -1,5 +1,5 @@
 ﻿group_title: 'Blaue, Blütenstände'
-navi_name: 'Blaue, Blütenstände'
+navi_name: 'Blaue Blütenstände'
 
 listdir:
   - aster_alpinus

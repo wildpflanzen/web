@@ -1,5 +1,5 @@
 ﻿group_title: 'Blaue, Mehr als fünf Blütenblätter'
-navi_name: 'Blaue, Mehr als fünf Blütenblätter'
+navi_name: 'Blaue, mehr als fünf Blütenblätter'
 
 listdir:
   - hepatica_nobilis

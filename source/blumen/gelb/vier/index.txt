@@ -1,5 +1,5 @@
 ﻿group_title: 'Gelbe, Bis vier Blütenblätter'
-navi_name: 'Gelbe, Bis vier Blütenblätter'
+navi_name: 'Gelbe bis vier Blütenblätter'
 
 listdir:
   - papaver_alpinum_kerneri

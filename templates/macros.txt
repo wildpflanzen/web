@@ -1,7 +1,7 @@
 ﻿{#-
    Template functions for Wildpflanzen static web generator.
 
-   https://github.com/picuino/wildpflanzen
+   https://github.com/wildpflanzen/web
 
    Copyright (c) 2018-2019 by Carlos Pardo
 
@@ -37,10 +37,10 @@
 
 
 {%- macro index_title(option) -%}
-   {%- if option == 'genus_de' %}Deutche Allgemain
-   {%- elif option == 'genus' %}Wissenschaftliche Allgemain
-   {%- elif option == 'family_de' %}Deutche Familien
-   {%- elif option == 'family' %}Wissenschaftliche Familien
+   {%- if option == 'genus_de' %}Deutche Namen
+   {%- elif option == 'genus' %}Wissenschaftliche Namen
+   {%- elif option == 'family_de' %}Deutche Namen
+   {%- elif option == 'family' %}Wissenschaftliche Namen
    {%- elif option == 'location' %}Lokalisierung
    {%- elif option == 'date' %}Datum
    {%- else %}{{ option }}

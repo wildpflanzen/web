@@ -1,5 +1,5 @@
 ﻿group_title: 'Rote, Fünf Blütenblätter'
-navi_name: 'Rote, Fünf Blütenblätter'
+navi_name: 'Rote, fünf Blütenblätter'
 
 listdir:
   - dianthus_sylvestris

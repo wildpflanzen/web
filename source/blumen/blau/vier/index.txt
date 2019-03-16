@@ -1,5 +1,5 @@
 ﻿group_title: 'Blaue, Bis vier Blütenblätter'
-navi_name: 'Blaue, Bis vier Blütenblätter'
+navi_name: 'Blaue bis vier Blütenblätter'
 
 listdir:
   - veronica_aphylla

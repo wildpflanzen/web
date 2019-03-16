@@ -1,5 +1,5 @@
 ﻿group_title: 'Rote, Bis vier Blütenblätter'
-navi_name: 'Rote, Bis vier Blütenblätter'
+navi_name: 'Rote bis vier Blütenblätter'
 
 listdir:
   - lunaria_annua

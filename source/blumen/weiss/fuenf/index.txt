@@ -1,5 +1,5 @@
 ﻿group_title: 'Weisse, Fünf Blütenblätter'
-navi_name: 'Weisse, Fünf Blütenblätter'
+navi_name: 'Weisse, fünf Blütenblätter'
 
 listdir:
   - stellaria_graminea

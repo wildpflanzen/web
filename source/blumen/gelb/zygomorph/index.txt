@@ -1,5 +1,5 @@
 ﻿group_title: 'Gelbe, Zygomorphe Blüten'
-navi_name: 'Gelbe, Zygomorphe Blüten'
+navi_name: 'Gelbe zygomorphe Blüten'
 
 listdir:
   - lotus_alpinus

@@ -1,5 +1,5 @@
 ﻿group_title: 'Blaue, Fünf Blütenblätter'
-navi_name: 'Blaue, Fünf Blütenblätter'
+navi_name: 'Blaue, fünf Blütenblätter'
 
 listdir:
   - campanula_barbata

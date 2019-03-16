@@ -1,5 +1,5 @@
 ﻿group_title: 'Weisse, Zygomorphe Blüten'
-navi_name: 'Weisse, Zygomorphe Blüten'
+navi_name: 'Weisse zygomorphe Blüten'
 
 listdir:
   - lamium_album
