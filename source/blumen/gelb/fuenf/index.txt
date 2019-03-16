@@ -1,5 +1,5 @@
 ﻿group_title: 'Gelbe, Fünf Blütenblätter'
-navi_name: 'Gelbe, Fünf Blütenblätter'
+navi_name: 'Gelbe, fünf Blütenblätter'
 
 listdir:
   - potentilla_aurea

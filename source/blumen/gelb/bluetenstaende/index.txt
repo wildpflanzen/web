@@ -1,5 +1,5 @@
 ﻿group_title: 'Gelbe, Blütenstände'
-navi_name: 'Gelbe, Blütenstände'
+navi_name: 'Gelbe Blütenstände'
 
 listdir:
   - taraxacum_officinale
