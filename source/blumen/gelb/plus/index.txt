@@ -1,5 +1,5 @@
-﻿group_title: 'Mehr als fünf Blütenblätter'
-navi_name: 'Mehr als fünf Blütenblätter'
+﻿group_title: 'Gelbe, Mehr als fünf Blütenblätter'
+navi_name: 'Gelbe, mehr als fünf Blütenblätter'
 
 listdir:
   - eranthis_hyemalis
