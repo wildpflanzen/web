@@ -68,3 +68,8 @@
 
    {{ macros.nach_oben() }}
 {%- endblock %}
+
+
+{% block data -%}
+    {{ macros.dump_group_data(group) }}
+{%- endblock %}
