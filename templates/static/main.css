@@ -132,6 +132,8 @@ margin: 0 auto;
 margin-top: 0;
 }
 
+.text_left { text-align: left; }
+
 .content {
 text-align: center;
 font-family: Helvetica, Arial, sans-serif;

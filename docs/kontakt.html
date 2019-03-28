@@ -63,6 +63,7 @@
    <!-- Content -->
    <div class="content">
    
+   <div class="text_left">
 	<p>Liebe Besucher,<br />
       um uns die wunderbare Vielfalt der Natur n&auml;her beizubringen, 
       bearbeiten wir diese kleine Datenbank  und stellen sie gerne 
@@ -82,7 +83,9 @@
        </i>haben wir auch Scheinbl&uuml;tenst&auml;nde mit einbezogen.
 	</p>
 	<p> Unser Kontaktadresse lautet: info (at) wildpflanzen.com.de </p>
+   <br />
 	<p> Viel Spa&beta; im sch&ouml;nen Gr&uuml;nen!</p>
+   <div class="text-left">
    </div>  <!-- Content end -->
 
    <!-- Extra content -->
@@ -105,7 +108,9 @@
    if(document.cookie.indexOf("pcookiebar")<0) {cookieBarDisplay("block");}
    function cookieBarAccept(){setCookie("pcookiebar","1",365); cookieBarDisplay("none");}
    function cookieBarDisplay(dsp){document.getElementById("cookiesbar").style.display=dsp;}
-   function setCookie(cname, cvalue, exdays){var d=new Date();d.setTime(d.getTime()+(exdays*24*3600000));document.cookie=cname+"="+cvalue+"; "+"expires="+d.toUTCString()+"; path=/";}
+   function setCookie(cname, cvalue, exdays){var d=new Date();
+   d.setTime(d.getTime()+(exdays*24*3600000));
+   document.cookie=cname+"="+cvalue+"; "+"expires="+d.toUTCString()+"; path=/";}
    </script>
 
 
