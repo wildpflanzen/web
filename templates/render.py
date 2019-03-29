@@ -39,7 +39,6 @@ def main():
 
    # Make html pages
    generator = HTML_generator(database, options)
-   generator.overwrite = True
 
    # Copy static files
    generator.copy_static()
@@ -63,7 +62,7 @@ class HTML_generator():
    def __init__(self, database, options):
       self.database = database
       self.database.options = options
-      self.overwrite = False
+      self.options = options
       self.verbose = options['verbose']
       self.output = options['output']
       self.source = options['source']
@@ -79,19 +78,18 @@ class HTML_generator():
 
 
    def copy_files(self, src, dst):
-      if not os.path.isdir(src):
-         return
       if not os.path.isdir(dst):
          os.mkdir(dst)         
       for fname in os.listdir(src):
-         if os.path.exists(os.path.join(dst, fname)):
-            continue
-         print('   ' + fname)
+         if self.verbose:
+            print('   %s' % fname)
          if os.path.isdir(os.path.join(src, fname)):
-            os.mkdir(os.path.join(dst, fname))
+            if not os.path.exists(os.path.join(dst, fname)):
+               os.mkdir(os.path.join(dst, fname))
             self.copy_files(os.path.join(src, fname), os.path.join(dst, fname))
-         if os.path.isfile(os.path.join(src, fname)) and self.overwrite:
-            shutil.copy2(os.path.join(src, fname), os.path.join(dst, fname))
+         if os.path.isfile(os.path.join(src, fname)):
+            if not os.path.exists(os.path.join(dst, fname)) or self.options['overwrite']:
+               shutil.copy2(os.path.join(src, fname), os.path.join(dst, fname))
 
 
    def html_extra(self):
@@ -258,13 +256,13 @@ class HTML_generator():
 
 
    def write_file(self, filename, data):
-      if self.overwrite or not os.path.isfile(filename):
-         if self.verbose:
-            print('   %s' % filename)
-         with codecs.open(filename, 'w', encoding='utf-8') as fo:
-            fo.write(data)
-            return True
-      return False
+      if os.path.exists(filename) and self.options['overwrite'] == False:
+         return False
+      if self.verbose:
+         print('   %s' % filename)
+      with codecs.open(filename, 'w', encoding='utf-8') as fo:
+         fo.write(data)
+      return True
 
 
 # --------------------------------------------------------------------

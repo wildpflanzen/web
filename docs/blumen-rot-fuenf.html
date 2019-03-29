@@ -20,6 +20,11 @@
 
 
    
+   <!-- Google Analytics -->
+   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-59765999-4"></script>
+   <script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());
+   gtag('config', 'UA-59765999-4');
+   </script>
    
    
    
@@ -521,6 +526,24 @@
    
    
 	
+   <!-- Cookies Advise -->
+   <div id="cookiesbar" style="display:none">
+   Diese Webseite verwendet Cookies - nähere Informationen dazu und zu
+   Ihren Rechten als Benutzer finden Sie in unserer Datenschutzerklärung
+   am Ende der Seite (Cookies). 
+   Klicken Sie auf 
+   <a href="javascript:void(0);" onclick="cookieBarAccept();"><b>Ich stimme zu</b></a>
+   um Cookies zu akzeptieren und direkt unsere Website besuchen zu können.
+   <!-- <a href="cookies.html"  target="_blank">Cookie-Richtlinie.</a> -->
+   </div> <!-- Cookiesbar end -->
+   <script>
+   if(document.cookie.indexOf("pcookiebar")<0) {cookieBarDisplay("block");}
+   function cookieBarAccept(){setCookie("pcookiebar","1",365); cookieBarDisplay("none");}
+   function cookieBarDisplay(dsp){document.getElementById("cookiesbar").style.display=dsp;}
+   function setCookie(cname, cvalue, exdays){var d=new Date();
+   d.setTime(d.getTime()+(exdays*24*3600000));
+   document.cookie=cname+"="+cvalue+"; "+"expires="+d.toUTCString()+"; path=/";}
+   </script>
 
 
    </div>  <!-- Wrapper end -->
@@ -531,7 +554,7 @@
        <div class="footer_links">
        <ul>
        <!-- <li><a href="impressum.html">Impressum</a> -->
-       
+       </li><li><a href="cookies.html">Cookies</a>
        </li><li><a href="kontakt.html">Kontakt</a>
        </li><li><a href="besucher-diptera-syrphidae.html">Besucher</a>
        </li>
