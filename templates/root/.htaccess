@@ -22,4 +22,4 @@ SetEnvIfNoCase Request_URI "\.(?:jpeg|jpg|png|gif|zip|pdf)$" no-gzip
 
 
 # Error 404
-ErrorDocument 404 /error-404.html
+ErrorDocument 404 http://www.wildpflanzen.com.de/error-404.html
