@@ -1,0 +1,73 @@
+﻿{#-
+   Layout template for Wildpflanzen static web generator.
+
+   https://github.com/wildpflanzen/web
+
+   Copyright (c) 2018-2019 by Carlos Pardo
+
+   License GPL v3  <https://www.gnu.org/licenses/gpl-3.0.html>
+   This program is free software; you can redistribute it and/or
+   modify it under the terms of the GNU General Public License
+   version 3 as published by the Free Software Foundation.
+-#}
+
+{% extends "base.html" %}
+
+
+{% block page_title -%}
+   {{ species.genus }} {{ species.species }} | Wildpflanzen
+{%- endblock %}
+
+
+{% block navi_local %}
+   <ul>
+   <li class="navi_next"><a href="{{ species.species_prev.filename }}.html">&lt;</a>
+   </li><li class="navi_fix"><a href="{{ species.group.filename }}.html">
+   {%- if 'navi_name' in species.group %}{{ species.group.navi_name }}
+   {%- else %}{{ species.group.group_title }}{% endif %}</a>
+   </li><li class="navi_next"><a href="{{ species.species_next.filename }}.html">&gt;</a>
+   </li>
+   </ul>
+{%- endblock %}
+
+
+{% block content %}
+   <!-- Species name -->
+   <h1>
+      {%- if macros.deutche_name(species) -%}
+         {{ macros.deutche_name(species) }} / {% endif -%}
+      {{ species.genus }}
+      {%- if species.species | int == 0 -%}{# does not show numbers in names #}
+         {{ species.species }}
+      {%- endif -%}
+   </h1>
+
+   <div class="sp_info">
+   <div class="sp_family">{{ species.family_de }}
+       {%- if species.family_de and species.family %} / {% endif -%}
+       {{ species.family }}</div>
+   {% if species.floration %}<div class="sp_floration">Blütezeit: {{ species.floration }}</div>{% endif %}
+   </div>
+
+   <!-- Species photo sessions -->
+   <div class="sp_sessions">
+   {% for session in species.sessions %}
+   <div class="sp_session">
+   <ul>
+   {% for thumb in session.thumbs -%}
+   <li><a href="images/{{ thumb }}"><img src="thumbs/{{ thumb }}" alt="{{ species.genus }} {{ species.species }}" /></a>
+   </li>
+   {%- endfor %}
+   </ul>
+   <div class="sp_date">{{ session.date }}{% if session.location %} / {{ session.location }}{% endif %}</div>
+   </div>
+   {% endfor %}
+   </div>
+
+   {{ macros.nach_oben() }}
+{%- endblock %}
+
+
+{% block data -%}
+    {{ macros.dump_species_data(species) }}
+{%- endblock %}

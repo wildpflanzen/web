@@ -28,9 +28,6 @@ def main():
 
    # Read options
    options = read_options('options.ini')
-   makedir(options['output'])
-   makedir(os.path.join(options['output'],'images'))
-   makedir(os.path.join(options['output'],'thumbs'))
 
    # Read database
    print('\nReading data ...')
@@ -74,18 +71,26 @@ class HTML_generator():
 
    def copy_static(self):
       print("\nCopying static files ...")
-      self.copy_files(self.source + '/static', self.output + '/static')
+      self.copy_files(os.path.join(self.source, 'static'), \
+                      os.path.join(self.output, 'static'))
+      self.copy_files('static', os.path.join(self.output, 'static'))
       self.copy_files('root', self.output)
-      self.copy_files('static', self.output + '/static')
+      self.copy_files('../templates', os.path.join(self.output, 'templates'))
 
 
    def copy_files(self, src, dst):
       if not os.path.isdir(src):
          return
       if not os.path.isdir(dst):
-         os.mkdir(dst)
+         os.mkdir(dst)         
       for fname in os.listdir(src):
-         if self.overwrite or not os.path.isfile(os.path.join(dst, fname)):
+         if os.path.exists(os.path.join(dst, fname)):
+            continue
+         print('   ' + fname)
+         if os.path.isdir(os.path.join(src, fname)):
+            os.mkdir(os.path.join(dst, fname))
+            self.copy_files(os.path.join(src, fname), os.path.join(dst, fname))
+         if os.path.isfile(os.path.join(src, fname)) and self.overwrite:
             shutil.copy2(os.path.join(src, fname), os.path.join(dst, fname))
 
 
@@ -624,5 +629,9 @@ def image_name(register, imagename):
    thumbname = re.sub('-+', '-', thumbname)
    return thumbname
 
+
+# --------------------------------------------------------------------
+#    CALL MAIN FUNCTION
+# --------------------------------------------------------------------
 
 main()

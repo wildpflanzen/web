@@ -1,0 +1,25 @@
+# Opciones
+SetEnv TZ Europe/Berlin
+
+RewriteEngine On
+
+# Force SSL and WWW
+#RewriteCond %{HTTPS} off [OR]
+#RewriteCond %{HTTP_HOST} ^picuino.com$ [NC]
+#RewriteRule ^ https://www.picuino.com%{REQUEST_URI} [L,NE,R=301]
+
+# Cache expiration time
+<ifModule mod_expires.c>
+<Filesmatch "\.(jpg|jpeg|png|ico|gif|ttf|htm|html|xml|txt|css|js|php|swf)$">
+    ExpiresActive on
+    ExpiresDefault "access plus 7 days"
+</Filesmatch>
+</ifModule>
+
+
+# Compress content
+SetOutputFilter DEFLATE
+SetEnvIfNoCase Request_URI "\.(?:jpeg|jpg|png|gif|zip|pdf)$" no-gzip
+
+# Error 404
+#ErrorDocument 404 /error-404.html

@@ -1,0 +1,134 @@
+﻿{#-
+   Template functions for Wildpflanzen static web generator.
+
+   https://github.com/wildpflanzen/web
+
+   Copyright (c) 2018-2019 by Carlos Pardo
+
+   License GPL v3  <https://www.gnu.org/licenses/gpl-3.0.html>
+   This program is free software; you can redistribute it and/or
+   modify it under the terms of the GNU General Public License
+   version 3 as published by the Free Software Foundation.
+-#}
+
+
+{%- macro navi_global(selected) %}
+   <ul>
+   {% if selected == 'main' -%}
+   <li class="navi_select"><span class="btn">Bestimmung</span>
+   {% else -%}
+   <li><a href="index.html">Bestimmung</a>
+   {% endif %}
+
+   {%- if selected == 'index' -%}
+   </li><li class="navi_select"><span class="btn">Register</span>
+   {% else -%}
+   </li><li><a href="index-genus-de.html">Register</a>
+   {% endif %}
+
+   {%- if selected == 'systematik' -%}
+   </li><li class="navi_select"><span class="btn">Systematik</span>
+   {% else -%}
+   </li><li><a href="systematik.html">Systematik</a>
+   {% endif %}
+   </li>
+   </ul>
+{% endmacro -%}
+
+
+{%- macro index_title(option) -%}
+   {%- if option == 'genus_de' %}Deutche Namen
+   {%- elif option == 'genus' %}Wissenschaftliche Namen
+   {%- elif option == 'family_de' %}Deutche Namen
+   {%- elif option == 'family' %}Wissenschaftliche Namen
+   {%- elif option == 'location' %}Lokalisierung
+   {%- elif option == 'date' %}Datum
+   {%- else %}{{ option }}
+   {%- endif -%}
+{%-  endmacro -%}
+
+
+{%- macro deutche_name(species) -%}
+{%- for species_de in species.species_de %}
+   {%- set genus_de = species.genus_de[loop.index0] %}
+   {%- if genus_de and species_de and species_de[-1] == '-' -%}
+   {{ species_de[:-1] }}{{ genus_de | lower() }}
+   {%- elif genus_de and species_de -%}
+   {{ species_de }} {{ genus_de }}
+   {%- else -%}
+   {{ species_de }}
+   {%- endif -%}
+   {%- if loop.index != loop.length %}; {% endif %}
+{%- endfor -%}
+{%- endmacro -%}
+
+
+{%- macro deutche_name_index(species) -%}
+{%- for species_de in species.species_de %}
+   {%- set genus_de = species.genus_de[loop.index0] %}
+   {%- if genus_de %}{{ genus_de }}, {% endif %}{{ species_de }}
+   {%- if loop.index != loop.length %}; {% endif %}
+{%- endfor -%}
+{%- endmacro -%}
+
+
+{%- macro find_linked_to(group_here, database) %}
+   {%- set ns = namespace(n=0) -%}
+   {%- for group in database.groups -%}
+      {%- if  group.group_next == group_here -%}
+         {% if ns.n == 1 %}; {% endif %}{{ group.group_title }}->
+         {%- set ns.n = 1 -%}
+      {%- endif -%}
+   {%- endfor -%}
+   {%- for group in database.groups -%}
+      {%- if  group.group_prev == group_here -%}
+         {%- if ns.n == 1 %}<br />{% endif -%}
+         {%- if ns.n == 2 %}; {% endif %}<-{{ group.group_title }}
+         {%- set ns.n = 2 -%}
+      {%- endif -%}
+   {%- endfor -%}
+{% endmacro -%}
+
+
+{%- macro nach_oben() -%}
+   <div class="nach_oben"><a href="#page_init">nach oben</a></div>
+{%- endmacro %}
+
+
+{%- macro dump_species_data(species) -%}
+   {%- for key in ['family', 'genus', 'species', 'family_de',
+                   'species_de', 'genus_de', 'floration',
+                   'thumb', 'path', 'order' ] -%}
+   {%- if key in species %}
+   {{key}}: {% if species[key] is string %}'{{ species[key] }}'
+            {%- else %}{{ species[key] }}{% endif %}
+   {%- endif %}
+   {%- endfor %}
+   sessions:
+   {%- for session in species.sessions %}
+     - {% for key in ['date', 'location'] -%}
+       {{key}}: '{{ session[key] }}'
+       {% endfor -%}
+       images: {{ session.images }}
+   {%- endfor %}
+{% endmacro -%}
+
+
+{%- macro dump_group_data(group) -%}
+   {%- for key in ['group_title', 
+                   'navi_name', 
+                   'next_group' ] -%}
+   {%- if key in group %}
+   {{ key }}: {% if group[key] is string %}'{{ group[key] }}'
+              {%- else %}{{ group[key] }}{% endif %}
+   {%- endif %}
+   {%- endfor %}
+
+  
+   {%- if 'listdir' in group %}
+   listdir:
+   {%- for species in group.listdir %}
+     - {{ species }}
+   {%- endfor %}
+   {%- endif %}
+{% endmacro -%}

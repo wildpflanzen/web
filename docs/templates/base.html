@@ -1,0 +1,156 @@
+﻿{#-
+   Layout template for Wildpflanzen static web generator.
+
+   https://github.com/wildpflanzen/web
+
+   Copyright (c) 2018-2019 by Carlos Pardo
+
+   License GPL v3  <https://www.gnu.org/licenses/gpl-3.0.html>
+   This program is free software; you can redistribute it and/or
+   modify it under the terms of the GNU General Public License
+   version 3 as published by the Free Software Foundation.
+-#}
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
+
+{%- import 'macros.txt' as macros %}
+
+<head>
+   <!-- Metadata -->
+   {% block metadata %}
+   <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+   <meta http-equiv="Content-Type" content="text/html" />
+   <meta http-equiv="Content-Language" content="de" />
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+   <meta name="description" lang="en" content="" />
+   <meta name="keywords" lang="en" content="" />
+
+   <meta name="author" content="Irene Pardo" />
+   <meta name="copyright" content="CC BY-SA 4.0" />
+   {%- endblock %}
+
+   <title>{% block page_title %}{% endblock %}</title>
+
+
+   {% if database.options.cookies == True -%}
+   {% block google_analytics %}
+   <!-- Google Analytics -->
+   <script async src="https://www.googletagmanager.com/gtag/js?id={{database.options.google_analytics_id}}"></script>
+   <script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());
+   gtag('config', '{{database.options.google_analytics_id}}');
+   </script>
+   {%- endblock %}
+   {%- endif %}
+   
+   
+   {% block links %}
+   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
+   <link href="static/main.css" rel="stylesheet" type="text/css" media="all" />
+   {%- endblock %}
+
+   {% block extra_head %}
+   {%- endblock %}
+</head>
+
+<body>
+   <!-- Header -->
+   <div id="page_init"></div>
+   <div class="header">
+   {% block header %}
+   <h1><a href="index.html">Wildpflanzen</a></h1>
+   {%- endblock %}
+   </div> <!-- Header end -->
+
+   <div class="wrapper">
+
+   <!-- Global Navigation -->
+   <div class="naviglobal">
+   {% block navi_global %}
+   {{ macros.navi_global('') }}
+   {%- endblock %}
+   </div>
+
+   <!-- Local Navigation -->
+   <div class="navi">
+   {% block navi_local %}
+   {%- endblock %}
+   </div>
+
+   <!-- Content -->
+   <div class="content">
+   {% block content %}
+   {%- endblock %}
+   </div>  <!-- Content end -->
+
+   <!-- Extra content -->
+   {% block extra_content %}
+   {%- endblock %}
+   
+   
+	{% if database.options.cookies == True -%}
+   {% block cookiesbar %}
+   <!-- Cookies Advise -->
+   <div id="cookiesbar" style="display:none">
+   Diese Webseite verwendet Cookies - nähere Informationen dazu und zu
+   Ihren Rechten als Benutzer finden Sie in unserer Datenschutzerklärung
+   am Ende der Seite (Cookies). 
+   Klicken Sie auf 
+   <a href="javascript:void(0);" onclick="cookieBarAccept();"><b>Ich stimme zu</b></a>
+   um Cookies zu akzeptieren und direkt unsere Website besuchen zu können.
+   <!-- <a href="cookies.html"  target="_blank">Cookie-Richtlinie.</a> -->
+   </div> <!-- Cookiesbar end -->
+   <script>
+   if(document.cookie.indexOf("pcookiebar")<0) {cookieBarDisplay("block");}
+   function cookieBarAccept(){setCookie("pcookiebar","1",365); cookieBarDisplay("none");}
+   function cookieBarDisplay(dsp){document.getElementById("cookiesbar").style.display=dsp;}
+   function setCookie(cname, cvalue, exdays){var d=new Date();
+   d.setTime(d.getTime()+(exdays*24*3600000));
+   document.cookie=cname+"="+cvalue+"; "+"expires="+d.toUTCString()+"; path=/";}
+   </script>
+   {%- endblock %}
+   {%- endif %}
+
+
+   </div>  <!-- Wrapper end -->
+
+   <!-- Footer -->
+   <div class="footer">
+   {% block footer %}
+       <div class="footer_links">
+       <ul>
+       <!-- <li><a href="impressum.html">Impressum</a> -->
+       </li><li><a href="cookies.html">Cookies</a>
+       </li><li><a href="kontakt.html">Kontakt</a>
+       </li><li><a href="besucher-diptera-syrphidae.html">Besucher</a>
+       </li>
+       </ul>
+       </div>
+      <p>Contents available under the
+      <a rel="License" onclick="this.target='_blank'"
+         href="http://creativecommons.org/licenses/by-sa/4.0/">
+         Creative Commons Attribution-ShareAlike 4.0 License
+      </a>
+      <br />
+      Source code available on 
+      <a rel="GitHub" onclick="this.target='_blank'"
+         href="https://www.github.com/wildpflanzen/web">GitHub</a>
+      </p>
+   {%- endblock %}
+   </div>  <!-- Footer end -->
+
+
+   <!-- Database
+   {% block data %}
+   {%- endblock %}
+   -->
+
+   <!--
+   Page Build with Python language and Jinja2 template engine.
+   Source code: https://github.com/wildpflanzen/web
+   -->
+
+</body>
+</html>

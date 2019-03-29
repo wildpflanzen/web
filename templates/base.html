@@ -34,6 +34,8 @@
 
    <title>{% block page_title %}{% endblock %}</title>
 
+
+   {% if database.options.cookies == True -%}
    {% block google_analytics %}
    <!-- Google Analytics -->
    <script async src="https://www.googletagmanager.com/gtag/js?id={{database.options.google_analytics_id}}"></script>
@@ -41,7 +43,9 @@
    gtag('config', '{{database.options.google_analytics_id}}');
    </script>
    {%- endblock %}
-
+   {%- endif %}
+   
+   
    {% block links %}
    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
    <link href="static/main.css" rel="stylesheet" type="text/css" media="all" />
@@ -86,17 +90,17 @@
    {%- endblock %}
    
    
+	{% if database.options.cookies == True -%}
    {% block cookiesbar %}
-	<!-- Cookies Advise -->
+   <!-- Cookies Advise -->
    <div id="cookiesbar" style="display:none">
-   Diese Webseite verwendet Cookies,
-   Informationen ausarbeiten Statistiken und analysieren Sie die
-   Navigation auf unserer Website.
-   Weitere Informationen finden Sie in unserer
-   <a href="cookies.html"
-   target="_blank">Cookie-Richtlinie.</a> <br />
-   Wenn Sie weiter surfen, stimmen Sie der Verwendung zu.
-   <a href="javascript:void(0);" onclick="cookieBarAccept();"><b>Akzeptieren</b></a>
+   Diese Webseite verwendet Cookies - nähere Informationen dazu und zu
+   Ihren Rechten als Benutzer finden Sie in unserer Datenschutzerklärung
+   am Ende der Seite (Cookies). 
+   Klicken Sie auf 
+   <a href="javascript:void(0);" onclick="cookieBarAccept();"><b>Ich stimme zu</b></a>
+   um Cookies zu akzeptieren und direkt unsere Website besuchen zu können.
+   <!-- <a href="cookies.html"  target="_blank">Cookie-Richtlinie.</a> -->
    </div> <!-- Cookiesbar end -->
    <script>
    if(document.cookie.indexOf("pcookiebar")<0) {cookieBarDisplay("block");}
@@ -107,6 +111,7 @@
    document.cookie=cname+"="+cvalue+"; "+"expires="+d.toUTCString()+"; path=/";}
    </script>
    {%- endblock %}
+   {%- endif %}
 
 
    </div>  <!-- Wrapper end -->
@@ -117,7 +122,7 @@
        <div class="footer_links">
        <ul>
        <!-- <li><a href="impressum.html">Impressum</a> -->
-       </li><li><a href="cookies.html">Cookies</a>
+       {% if database.options.cookies == True -%}</li><li><a href="cookies.html">Cookies</a>{%- endif %}
        </li><li><a href="kontakt.html">Kontakt</a>
        </li><li><a href="besucher-diptera-syrphidae.html">Besucher</a>
        </li>

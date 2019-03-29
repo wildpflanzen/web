@@ -1,0 +1,51 @@
+﻿{% extends "base.html" %}
+
+
+{% block page_title -%}Systematik | Wildpflanzen{% endblock -%}
+
+
+{% block navi_global %}{{ macros.navi_global('systematik') }}{%- endblock %}
+
+
+{% block navi_local %}
+   <ul>
+   <li class="navi_select"><span class="btn">PLANTAE<span>
+   </li>
+   </ul>
+{%- endblock %}
+
+
+{% block content %}
+
+
+   <div class="content_s">
+     <a target="_blank" href="static/eukarya_g.jpg" title="vergr&ouml;ssern">
+     <img style="border:solid 1px #CDB7B5;" src="static/eukarya2.jpg" alt="img"/>
+     </a>
+   </div>
+   <p><a target="_blank" href="static/mabberley_rothmaler_fischer.pdf" title="Link zum PDF">
+   Nach Mabberley, Rothmaler, Fischer &rarr;</a></p>
+   
+   {{ macros.nach_oben() }}
+   
+   <div class="content_s">
+     <a target="_blank" href="static/polypodiopsida_g.jpg" title="vergr&ouml;ssern">
+     <img style="border:solid 1px #CDB7B5;" src="static/polypodiopsida2.jpg" alt="img"/>
+     </a>
+   </div>
+   
+   {{ macros.nach_oben() }}
+   
+{%- endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
