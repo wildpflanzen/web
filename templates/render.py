@@ -27,7 +27,7 @@ from collections import UserDict
 def main():
 
    # Read options
-   options = read_options('options.ini')
+   options = Options('options.ini')
 
    # Read database
    print('\nReading data ...')
@@ -63,32 +63,28 @@ class HTML_generator():
       self.database = database
       self.database.options = options
       self.options = options
-      self.verbose = options['verbose']
-      self.output = options['output']
-      self.source = options['source']
-
-
+      
    def copy_static(self):
       print("\nCopying static files ...")
-      self.copy_files(os.path.join(self.source, 'static'), \
-                      os.path.join(self.output, 'static'))
-      self.copy_files('static', os.path.join(self.output, 'static'))
-      self.copy_files('root', self.output)
-      self.copy_files('../templates', os.path.join(self.output, 'templates'))
+      self.copy_files(os.path.join(self.options.source, 'static'), \
+                      os.path.join(self.options.output, 'static'))
+      self.copy_files('static', os.path.join(self.options.output, 'static'))
+      self.copy_files('root', self.options.output)
+      self.copy_files('../templates', os.path.join(self.options.output, 'templates'))
 
 
    def copy_files(self, src, dst):
       if not os.path.isdir(dst):
          os.mkdir(dst)         
       for fname in os.listdir(src):
-         if self.verbose:
+         if self.options.verbose:
             print('   %s' % fname)
          if os.path.isdir(os.path.join(src, fname)):
             if not os.path.exists(os.path.join(dst, fname)):
                os.mkdir(os.path.join(dst, fname))
             self.copy_files(os.path.join(src, fname), os.path.join(dst, fname))
          if os.path.isfile(os.path.join(src, fname)):
-            if not os.path.exists(os.path.join(dst, fname)) or self.options['overwrite']:
+            if not os.path.exists(os.path.join(dst, fname)) or self.options.overwrite:
                shutil.copy2(os.path.join(src, fname), os.path.join(dst, fname))
 
 
@@ -99,7 +95,7 @@ class HTML_generator():
       for fname in extra:
          print('   ' + fname)
          html_template = self.jinja_environment(fname, path=['', 'extra'])
-         filename = os.path.join(self.output, fname)
+         filename = os.path.join(self.options.output, fname)
          html = html_template.render(database=self.database)
          self.write_file(filename, html)
 
@@ -178,7 +174,7 @@ class HTML_generator():
       # Jinja template
       html_template = self.jinja_environment('index_species.html')
       html = html_template.render(index=self.index, database=self.database)
-      output = os.path.join(self.output, 'index-' + re.sub('[ _/]', '-', index_name)+'.html')
+      output = os.path.join(self.options.output, 'index-' + re.sub('[ _/]', '-', index_name)+'.html')
       self.write_file(output, html)
 
 
@@ -228,7 +224,7 @@ class HTML_generator():
             html_template = self.jinja_environment('groups.html')
 
          # Render template
-         filename = os.path.join(self.output, group['filename'] + '.html')
+         filename = os.path.join(self.options.output, group['filename'] + '.html')
          html = html_template.render(group=group, database=self.database)
          self.write_file(filename, html)
 
@@ -243,7 +239,7 @@ class HTML_generator():
       for species in self.database.species:
          if not 'group' in species:
             continue
-         filename = os.path.join(self.output, species['filename'] + '.html')
+         filename = os.path.join(self.options.output, species['filename'] + '.html')
          html = html_template.render(species=species, database=self.database)
          self.write_file(filename, html)
 
@@ -256,9 +252,9 @@ class HTML_generator():
 
 
    def write_file(self, filename, data):
-      if os.path.exists(filename) and self.options['overwrite'] == False:
+      if os.path.exists(filename) and self.options.overwrite == False:
          return False
-      if self.verbose:
+      if self.options.verbose:
          print('   %s' % filename)
       with codecs.open(filename, 'w', encoding='utf-8') as fo:
          fo.write(data)
@@ -276,13 +272,11 @@ class Database(UserDict):
       self.groups = []
       self.species = []
       self.filenames = []
-      self.output = options['output']
-      self.source = options['source']
-      self.ignore_images = options['ignore_images']
+      self.options = options
 
 
    def read(self):
-      self.read_paths(self.source)
+      self.read_paths(self.options.source)
       self.test_errors()
       self.combine_database()
 
@@ -423,7 +417,7 @@ class Database(UserDict):
                register['thumb'] = images[0] if len(images) else ''
 
          # Test if source image files are in database
-         for file in os.listdir(os.path.join(self.source, register['path'])):
+         for file in os.listdir(os.path.join(self.options.source, register['path'])):
             if file[-4:].lower() == '.jpg' and file not in images:
                print('   Warning, image file not in database: %s' % os.path.join(register['path'], file))
 
@@ -520,8 +514,8 @@ class Database(UserDict):
 
    # Test if file exists
    def test_file(self, path, file):
-      filename = os.path.join(self.source, path, file)
-      if self.ignore_images:
+      filename = os.path.join(self.options.source, path, file)
+      if self.options.ignore_images:
          return filename
       if os.path.isfile(filename):
          return filename
@@ -533,13 +527,24 @@ class Database(UserDict):
 #    READ OPTIONS, MAKE THUMBNAILS
 # --------------------------------------------------------------------
 
-def read_options(fname):
-   print('\nReading options ...')
-   with codecs.open(os.path.join(fname), 'r', encoding='utf-8-sig') as fi:
-      data = fi.read()
-   options = yaml.load(data)
-   return options
+class Options():
 
+   def __init__(self, fname):
+      print('\nReading options ...')
+      with codecs.open(os.path.join(fname), 'r', encoding='utf-8-sig') as fi:
+         options = fi.read()
+      options = yaml.load(options)
+      for key, val in options.items():
+         setattr(self, key, val)
+
+   def __repr__(self):
+      return yaml.dump(self.__dict__)
+
+   def __getitem__(self, key):
+      if key in self.__dict__:
+         return self.__dict__[key]
+      return False
+   
 
 def makedir(path):
    if not os.path.exists(path):
@@ -547,7 +552,7 @@ def makedir(path):
 
 
 def thumbnails_make(database, options):
-   if 'ignore_images' in options and options['ignore_images']:
+   if options.ignore_images:
       return
    print('\nMaking thumbnails ...')
 
@@ -569,13 +574,13 @@ def thumbnails_make(database, options):
             all_image_files.append(imagename)
 
             # Add relative path to images
-            source_in = os.path.join(options['source'], register['path'], image)
-            image_out = os.path.join(options['output'], 'images', imagename)
-            thumb_out = os.path.join(options['output'], 'thumbs', imagename)
+            source_in = os.path.join(options.source, register['path'], image)
+            image_out = os.path.join(options.output, 'images', imagename)
+            thumb_out = os.path.join(options.output, 'thumbs', imagename)
 
             # Copy image without overwrite
             if not os.path.isfile(image_out):
-               if options['verbose']:
+               if options.verbose:
                   print('   Copy %s -->\n        %s' %(source_in, image_out))
                image_convert(source_in, image_out, options)
 
@@ -600,25 +605,25 @@ def thumbnails_make(database, options):
 
 
 def remove_unused_files(path, used_image_files, options):
-   fullpath = os.path.join(options['output'], path)
+   fullpath = os.path.join(options.output, path)
    for image in os.listdir(fullpath):
       if not image in used_image_files:
          print('   Warning, unused image: %s' % os.path.join(path, image))
-         if remove_unused_files in options and options['remove_unused_files']:
+         if remove_unused_files in options and options.remove_unused_files:
             os.remove(os.path.join(path, image))
 
 
 def image_convert(image_in, image_out, options):
    print('   Image: ' + image_in)
-   image_options = ' '.join(options['image_options'])
-   command = options['imagemagick'] + ' ' + image_in + ' ' + image_options + ' ' + image_out
+   image_options = ' '.join(options.image_options)
+   command = options.imagemagick + ' ' + image_in + ' ' + image_options + ' ' + image_out
    subprocess.call(command, shell=True)
 
 
 def thumb_convert(filein, thumb, options):
    print('   Thumbnail: ' + thumb)
-   thumb_options = ' '.join(options['thumb_options'])
-   command = options['imagemagick'] + ' ' + filein + ' ' + thumb_options + ' ' + thumb
+   thumb_options = ' '.join(options.thumb_options)
+   command = options.imagemagick + ' ' + filein + ' ' + thumb_options + ' ' + thumb
    subprocess.call(command, shell=True)
 
 
