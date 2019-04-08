@@ -66,11 +66,12 @@ class HTML_generator():
       
    def copy_static(self):
       print("\nCopying static files ...")
+      self.copy_files('../templates', \
+                      os.path.join(self.options.output, 'templates'))
       self.copy_files(os.path.join(self.options.source, 'static'), \
                       os.path.join(self.options.output, 'static'))
       self.copy_files('static', os.path.join(self.options.output, 'static'))
       self.copy_files('root', self.options.output)
-      self.copy_files('../templates', os.path.join(self.options.output, 'templates'))
 
 
    def copy_files(self, src, dst):
@@ -107,7 +108,7 @@ class HTML_generator():
       self.make_index('location', lambda sp: self.session_index(sp, 'location'))
 
       # Make html place index
-      self.make_index('date', lambda sp: self.getdate(sp))
+      self.make_index('date', lambda sp: self.getdate(sp), length=8)
 
       # Make html genus index
       self.make_index('genus', \
@@ -130,8 +131,10 @@ class HTML_generator():
       for d in self.session_index(sp, 'date'):
          fields = d.split('.')
          if len(fields) != 2:
-            continue
-         result.append(fields[1] + '.%02d' % int(fields[0]))
+            print('   Date error:', d, sp['genus'], sp['species'])            
+            result.append(fields[0] + '.')
+         else:
+            result.append(fields[1] + '.%02d' % int(fields[0]))
       return result
 
 

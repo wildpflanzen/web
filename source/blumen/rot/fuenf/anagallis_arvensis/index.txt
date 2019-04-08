@@ -10,7 +10,7 @@ floration: 'Juni - September'
 
 ---
 
-date: ''
+date: '2017'
 location: ''
 images:
   - R0036309.jpg
