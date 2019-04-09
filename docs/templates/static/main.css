@@ -73,7 +73,7 @@ margin-top: 24px;
 .navi ul, .naviglobal ul {
 margin: 0;
 padding: 0;
-height: 30px;
+height: 38px;
 width:100%;
 border-bottom: 1px solid #989898;
 }
@@ -94,7 +94,7 @@ border: 1px solid #989898;
 
 .navi a, .naviglobal a, .navi .btn, .naviglobal .btn {
 line-height: 14px;
-padding: 8px 8px 7px 8px;
+padding: 12px 8px 11px 8px;
 display: block;
 text-decoration: none;
 color: #404040;
