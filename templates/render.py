@@ -68,6 +68,8 @@ class HTML_generator():
       print("\nCopying static files ...")
       self.copy_files('../templates', \
                       os.path.join(self.options.output, 'templates'))
+      self.copy_files(os.path.join(self.options.source, 'static'), \
+                      os.path.join(self.options.output, 'static'))
       self.copy_files('static', os.path.join(self.options.output, 'static'))
       self.copy_files('root', self.options.output)
 
