@@ -6,7 +6,7 @@ family_de: 'Wegerichgewächse'
 species_de: 'Herzblättrige'
 genus_de: 'Kugelblume'
 
-floration: 'Juni - Jul'
+floration: 'Juni - Juli'
 
 ---
 

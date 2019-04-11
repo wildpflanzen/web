@@ -6,7 +6,7 @@ family_de: 'Primelgewächse'
 species_de: 'Hallers'
 genus_de: 'Primel'
 
-floration: 'Juni - Jul'
+floration: 'Juni - Juli'
 
 ---
 

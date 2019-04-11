@@ -6,7 +6,7 @@ family_de: 'Rosengewächse'
 species_de: 'Sumpf'
 genus_de: 'Blutauge'
 
-floration: 'Juni - Jul'
+floration: 'Juni - Juli'
 
 ---
 

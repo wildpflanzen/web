@@ -6,7 +6,7 @@ family_de: 'Hahnenfuβgewächse'
 species_de: 'Schwarzviolette'
 genus_de: 'Akelei'
 
-floration: 'Mai - Jul'
+floration: 'Mai - Juli'
 
 ---
 

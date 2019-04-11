@@ -6,7 +6,7 @@ family_de: 'Hahnenfuβgewächse'
 species_de: 'Kleinblütige'
 genus_de: 'Akelei'
 
-floration: 'Juni - Jul'
+floration: 'Juni - Juli'
 
 ---
 

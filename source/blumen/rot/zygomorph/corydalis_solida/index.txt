@@ -6,7 +6,7 @@ family_de: 'Mohngewächse'
 species_de: 'Gefingerter'
 genus_de: 'Lerchensporn'
 
-floration: 'April bis Ma'
+floration: 'April - Mai'
 
 ---
 

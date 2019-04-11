@@ -6,7 +6,7 @@ family_de: 'Glockenblumengewächse'
 species_de: 'Kugel'
 genus_de: 'Teufelskralle'
 
-floration: 'Mai - Jul'
+floration: 'Mai - Juli'
 
 ---
 

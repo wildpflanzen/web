@@ -6,7 +6,7 @@ family_de: 'Rötegewächse'
 species_de: 'Sumpf'
 genus_de: 'Labkraut'
 
-floration: 'Mai - Jul'
+floration: 'Mai - Juli'
 
 ---
 

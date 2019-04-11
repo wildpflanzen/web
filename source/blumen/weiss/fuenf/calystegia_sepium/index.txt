@@ -6,7 +6,7 @@ family_de: 'Windengewächse'
 species_de: 'Echte'
 genus_de: 'Zaunwinde'
 
-floration: 'Juni bis September'
+floration: 'Juni - September'
 
 ---
 

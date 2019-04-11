@@ -6,7 +6,7 @@ family_de: 'Kreuzblütengewächse'
 species_de: 'Behaartes'
 genus_de: 'Schaumkraut'
 
-floration: 'März - Jun'
+floration: 'März - Juni'
 
 ---
 

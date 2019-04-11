@@ -6,7 +6,7 @@ family_de: 'Korbblütengewächse'
 species_de: 'Wiesen'
 genus_de: 'Bocksbart'
 
-floration: 'Mai - Jul'
+floration: 'Mai - Juli'
 
 ---
 

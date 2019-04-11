@@ -6,7 +6,7 @@ family_de: 'Dickblattgewächse'
 species_de: 'Spinnweben'
 genus_de: 'Hauswurz'
 
-floration: 'Juni - Jul'
+floration: 'Juni - Juli'
 
 ---
 

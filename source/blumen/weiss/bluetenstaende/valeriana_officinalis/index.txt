@@ -6,7 +6,7 @@ family_de: 'Geiβblattgewächse'
 species_de: 'Echter'
 genus_de: 'Baldrian'
 
-floration: 'Mai - Jul'
+floration: 'Mai - Juli'
 
 ---
 

@@ -6,7 +6,7 @@ family_de: 'Orchideen'
 species_de: 'Rotbraune'
 genus_de: 'Ständelwurz'
 
-floration: 'Juni - Jul'
+floration: 'Juni - Juli'
 
 ---
 

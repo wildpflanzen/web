@@ -6,7 +6,7 @@ family_de: 'Amaryllisgewächse'
 species_de: 'Gekielter'
 genus_de: 'Lauch'
 
-floration: 'Juni - Jul'
+floration: 'Juni - Juli'
 
 ---
 

@@ -6,7 +6,7 @@ family_de: 'Geiβblattgewächse'
 species_de: 'Kleiner'
 genus_de: 'Baldrian'
 
-floration: 'Mai - Jun'
+floration: 'Mai - Juni'
 
 ---
 

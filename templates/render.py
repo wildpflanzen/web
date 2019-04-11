@@ -104,10 +104,15 @@ class HTML_generator():
    def html_index(self):
       print('\nRendering index files ...')
 
+      # Make html floration index
+      self.make_index('floration', \
+                      lambda sp: [sp['floration'].split('-')[0]], \
+                      template_name='index_floration.html')
+
       # Make html place index
       self.make_index('location', lambda sp: self.session_index(sp, 'location'))
 
-      # Make html place index
+      # Make html date index
       self.make_index('date', lambda sp: self.getdate(sp), length=8)
 
       # Make html genus index
@@ -138,7 +143,7 @@ class HTML_generator():
       return result
 
 
-   def make_index(self, index_name, fkey, length=0):
+   def make_index(self, index_name, fkey, template_name='index_species.html', length=0):
       sorted_species =  {}
       for species in self.database.species:
          if 'makeindex' in species and species['makeindex'] == False:
@@ -175,7 +180,7 @@ class HTML_generator():
       self.index['index_name'] = index_name
 
       # Jinja template
-      html_template = self.jinja_environment('index_species.html')
+      html_template = self.jinja_environment(template_name)
       html = html_template.render(index=self.index, database=self.database)
       output = os.path.join(self.options.output, 'index-' + re.sub('[ _/]', '-', index_name)+'.html')
       self.write_file(output, html)

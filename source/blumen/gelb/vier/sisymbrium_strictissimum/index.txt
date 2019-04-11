@@ -6,7 +6,7 @@ family_de: 'Kreuzblütengewächse'
 species_de: 'Steife'
 genus_de: 'Rauke'
 
-floration: 'Juni - Jul'
+floration: 'Juni - Juli'
 
 ---
 

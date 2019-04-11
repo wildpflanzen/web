@@ -6,7 +6,7 @@ family_de: 'Glockenblumengewächse'
 species_de: 'Zwerg'
 genus_de: 'Teufelskralle'
 
-floration: 'Juli bis September'
+floration: 'Juli - September'
 
 ---
 

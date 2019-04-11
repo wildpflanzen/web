@@ -6,7 +6,7 @@ family_de: 'Doldengewächse'
 species_de: 'Wiesen'
 genus_de: 'Kerbel'
 
-floration: 'April - Jul'
+floration: 'April - Juli'
 
 ---
 

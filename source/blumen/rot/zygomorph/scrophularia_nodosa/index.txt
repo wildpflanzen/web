@@ -6,7 +6,7 @@ family_de: 'Braunwurzgewächse'
 species_de: 'Knotige'
 genus_de: 'Braunwurz'
 
-floration: 'Juni - Jul'
+floration: 'Juni - Juli'
 
 ---
 

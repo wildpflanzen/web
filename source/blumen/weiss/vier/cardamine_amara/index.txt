@@ -6,7 +6,7 @@ family_de: 'Kreuzblütengewächse'
 species_de: 'Bitteres'
 genus_de: 'Schaumkraut'
 
-floration: 'April - Jun'
+floration: 'April - Juni'
 
 ---
 

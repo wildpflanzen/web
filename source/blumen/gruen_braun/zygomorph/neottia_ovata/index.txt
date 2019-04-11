@@ -6,7 +6,7 @@ family_de: 'Orchideen'
 species_de: 'Großes'
 genus_de: 'Zweiblatt'
 
-floration: 'Mai - Jul'
+floration: 'Mai - Juli'
 
 ---
 

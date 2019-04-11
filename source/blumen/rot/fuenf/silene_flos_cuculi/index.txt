@@ -6,7 +6,7 @@ family_de: 'Nelkengewächse'
 species_de: 'Kuckucks'
 genus_de: 'Lichtnelke'
 
-floration: 'Mai - Jul'
+floration: 'Mai - Juli'
 
 ---
 

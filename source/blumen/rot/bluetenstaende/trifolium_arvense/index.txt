@@ -6,7 +6,7 @@ family_de: 'Hülsenfrüchtler'
 species_de: 'Hasen'
 genus_de: 'Klee'
 
-floration: 'Juni - Jul'
+floration: 'Juni - Juli'
 
 ---
 

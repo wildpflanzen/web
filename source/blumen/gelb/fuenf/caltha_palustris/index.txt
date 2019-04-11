@@ -6,7 +6,7 @@ family_de: 'Hahnenfuβgewächse'
 species_de: 'Sumpfdotterblume'
 genus_de: ''
 
-floration: 'April - Jun'
+floration: 'April - Juni'
 
 ---
 

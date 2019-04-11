@@ -6,7 +6,7 @@ family_de: 'Hülsenfrüchtler'
 species_de: 'Viersamige'
 genus_de: 'Wicke'
 
-floration: 'Mai - Jun'
+floration: 'Mai - Juni'
 
 ---
 

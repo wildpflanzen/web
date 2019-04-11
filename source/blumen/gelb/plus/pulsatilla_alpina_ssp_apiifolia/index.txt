@@ -6,7 +6,7 @@ family_de: 'Hahnenfuβgewächse'
 species_de: 'Gelbe'
 genus_de: 'Alpen- kuhschelle'
 
-floration: 'Mai - Jul'
+floration: 'Mai - Juli'
 
 ---
 

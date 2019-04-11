@@ -6,7 +6,7 @@ family_de: 'Korbblütengewächse'
 species_de: 'Gewöhnliches'
 genus_de: 'Katzenpfötchen'
 
-floration: 'Mai - Jul'
+floration: 'Mai - Juli'
 
 ---
 

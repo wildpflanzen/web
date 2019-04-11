@@ -6,7 +6,7 @@ family_de: 'Rosengewächse'
 species_de: 'Bach'
 genus_de: 'Nelkenwurz'
 
-floration: 'April - Jul'
+floration: 'April - Juli'
 
 ---
 

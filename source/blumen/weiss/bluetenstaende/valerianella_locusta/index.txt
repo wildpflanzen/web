@@ -6,7 +6,7 @@ family_de: 'Geiβblattgewächse'
 species_de: 'Gewöhnlicher'
 genus_de: 'Feldsalat'
 
-floration: 'April - Ma'
+floration: 'April - Mai'
 
 ---
 

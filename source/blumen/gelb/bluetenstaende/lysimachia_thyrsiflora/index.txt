@@ -6,7 +6,7 @@ family_de: 'Primelgewächse'
 species_de: 'Strauβ'
 genus_de: 'Gilbweiderich'
 
-floration: 'Mai - Jul'
+floration: 'Mai - Juli'
 
 ---
 

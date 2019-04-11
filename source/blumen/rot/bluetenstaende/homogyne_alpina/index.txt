@@ -6,7 +6,7 @@ family_de: 'Korbblütengewächse'
 species_de: 'Gemeiner'
 genus_de: 'Alpenlattich'
 
-floration: 'Mai - Jul'
+floration: 'Mai - Juli'
 
 ---
 

@@ -6,7 +6,7 @@ family_de: 'Orchideen'
 species_de: 'Rotes'
 genus_de: 'Waldvögelein'
 
-floration: 'Mai - Jul'
+floration: 'Mai - Juli'
 
 ---
 

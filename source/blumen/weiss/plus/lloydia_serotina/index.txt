@@ -6,7 +6,7 @@ family_de: 'Liliengewächse'
 species_de: 'Faltenlilie'
 genus_de: ''
 
-floration: 'Juni - Jul'
+floration: 'Juni - Juli'
 
 ---
 

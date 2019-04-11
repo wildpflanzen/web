@@ -6,7 +6,7 @@ family_de: 'Schwertliliengewächse'
 species_de: 'Sumpf'
 genus_de: 'Schwertlilie'
 
-floration: 'Mai - Jun'
+floration: 'Mai - Juni'
 
 ---
 

@@ -6,7 +6,7 @@ family_de: 'Sommerwurzgewächse'
 species_de: 'Wald'
 genus_de: 'Wachtelweizen'
 
-floration: 'Juni > | September'
+floration: 'Juni - September'
 
 ---
 

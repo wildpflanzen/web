@@ -6,7 +6,7 @@ family_de: 'Raublattgewächse'
 species_de: 'Buntes'
 genus_de: 'Vergissmeinnicht'
 
-floration: 'April - Jun'
+floration: 'April - Juni'
 
 ---
 

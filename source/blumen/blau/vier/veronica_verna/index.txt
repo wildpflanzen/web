@@ -6,7 +6,7 @@ family_de: 'Wegerichgewächse'
 species_de: 'Frühlings'
 genus_de: 'Ehrenpreis'
 
-floration: 'Mai - Jun'
+floration: 'Mai - Juni'
 
 ---
 

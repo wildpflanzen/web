@@ -6,7 +6,7 @@ family_de: 'Hahnenfuβgewächse'
 species_de: 'Alpen'
 genus_de: 'Waldrebe'
 
-floration: 'April - Jun'
+floration: 'April - Juni'
 
 ---
 
