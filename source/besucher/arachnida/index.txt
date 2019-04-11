@@ -1,7 +1,7 @@
 ﻿group_title: 'Arachnida'
 navi_name: 'Arachnida'
 
-group_template: groups_insecta.html
+group_template: groups_besucher.html
 
 listdir:
   - aculepeira-ceropegia

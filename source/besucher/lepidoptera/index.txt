@@ -1,7 +1,7 @@
 ﻿group_title: 'Lepidoptera'
 navi_name: 'Lepidoptera'
 
-group_template: groups_insecta.html
+group_template: groups_besucher.html
 
 listdir:
   - apatura-ilia

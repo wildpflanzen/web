@@ -1,7 +1,7 @@
 ﻿group_title: 'Hymenoptera, Vespoidea'
 navi_name: 'Hymenoptera'
 
-group_template: groups_insecta.html
+group_template: groups_besucher.html
 
 listdir:
   - ancistrocerus-parietum

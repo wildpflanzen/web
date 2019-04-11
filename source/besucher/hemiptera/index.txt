@@ -1,7 +1,7 @@
 ﻿group_title: 'Hemiptera'
 navi_name: 'Hemiptera'
 
-group_template: groups_insecta.html
+group_template: groups_besucher.html
 
 listdir:
   - cercopis-vulnerata

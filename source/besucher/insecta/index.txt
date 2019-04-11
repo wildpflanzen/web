@@ -1,7 +1,7 @@
 ﻿group_title: 'Insecta'
 navi_name: 'Insecta'
 
-group_template: groups_insecta.html
+group_template: groups_besucher.html
 
 next_group: 'besucher/diptera/syrphidae'
 

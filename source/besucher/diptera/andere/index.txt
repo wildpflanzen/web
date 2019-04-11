@@ -1,7 +1,7 @@
 ﻿group_title: 'Diptera'
 navi_name: 'Diptera'
 
-group_template: groups_insecta.html
+group_template: groups_besucher.html
 
 listdir:
   - abrachyglossum-capitatum

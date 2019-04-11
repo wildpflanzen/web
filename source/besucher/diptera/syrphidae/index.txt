@@ -1,7 +1,7 @@
 ﻿group_title: 'Diptera, Syrphidae'
 navi_name: 'Diptera'
 
-group_template: groups_insecta.html
+group_template: groups_besucher.html
 
 listdir:
   - diptera-07
