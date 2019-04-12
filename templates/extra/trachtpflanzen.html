@@ -1,12 +1,26 @@
-{% extends "base.html" %}
+﻿{% extends "base.html" %}
 
 
 {% block page_title -%}Trachtpflanzen{% endblock -%}
 
 
+{% block navi_global %}{{ macros.navi_global('systematik') }}{%- endblock %}
+
+
+{% block navi_local %}
+   <ul>
+   <li><a href="systematik.html">Plantae</a>
+   </li><li class="navi_select"><span class="btn">Trachtpflanzen<span>
+   </li>
+   </ul>
+{%- endblock %}
+
+
 {% block content %}
    <h1>Trachtpflanzen</h1>
    
+   <div class="text_left">
+
    <p>Die folgende Liste ist, mit minimalen inhaltlichen 
    Ver&auml;nderungen, ein Auszug aus der Tabelle des Deutschen 
    Imkerbundes <a target="_blank" 
@@ -199,7 +213,8 @@
 
    <h2>September</h2>
       <p>Efeu / Hedera Helix &mdash; (September - Oktober / Pollen, viel Nektar)</p>
-
+	  
+   </div>
 
 {%- endblock %}
 

@@ -1,7 +1,7 @@
 ﻿{% extends "base.html" %}
 
 
-{% block page_title -%}Systematik | Wildpflanzen{% endblock -%}
+{% block page_title -%}Systematik{% endblock -%}
 
 
 {% block navi_global %}{{ macros.navi_global('systematik') }}{%- endblock %}
@@ -9,7 +9,8 @@
 
 {% block navi_local %}
    <ul>
-   <li class="navi_select"><span class="btn">PLANTAE<span>
+   <li class="navi_select"><span class="btn">Plantae<span>
+   </li><li><a href="trachtpflanzen.html">Trachtpflanzen</a>
    </li>
    </ul>
 {%- endblock %}

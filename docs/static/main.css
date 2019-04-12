@@ -26,15 +26,22 @@ font-size: 14px;
 min-width: 350px;
 }
 
-h1 {
+h1, h2 {
 font-family: Arial, Helvetica, sans-serif;
-font-size: 44px;
 font-weight: 400;
 letter-spacing: 2px;
-margin: 0;
-padding: 0;
-padding-top: 24px;
-margin-bottom: 32px;
+}
+
+h1 {
+font-size: 28px; 
+margin: 12px 0 12px 0;
+padding: 12px 0 12px 0;
+}
+
+h2 {
+font-size: 21px; 
+margin: 12px 0 12px 0;
+padding: 12px 0 12px 0;
 }
 
 a {
@@ -59,6 +66,17 @@ p {
 line-height: 1.5em;
 max-width: 640px;
 margin: 0 auto;
+margin-bottom: 6px;
+}
+
+
+/******************************
+   Header 
+ ******************************/
+.header h1 {
+font-size: 40px;
+margin: 40px 0 24px 0;
+padding: 0;
 }
 
 
@@ -133,24 +151,15 @@ margin: 0 auto;
 margin-top: 0;
 }
 
-.text_left { text-align: left; }
+.text_left  p { 
+text-align: left; 
+}
 
 .content {
 text-align: center;
 font-family: Helvetica, Arial, sans-serif;
 font-size: 14px;
 margin-top: 24px;
-}
-
-.content h1, .content h2 {
-font-size: 24px;
-padding-top: 0;
-margin-top: 32px;
-margin-bottom: 24px;
-}
-
-.content h2 {
-font-size: 20px;
 }
 
 .content a {
@@ -414,16 +423,10 @@ line-height: 200%;
  
 @media (max-width: 680px) { 
 
-h1 {
-font-size: 28px;
-margin-bottom: 18px;
+.header h1 {
+font-size: 32px;
+margin: 16px 0 18px 0;
 padding-top: 18px;
-}
-
-.content h1 { 
-font-size: 16px;
-margin-top: 16px;
-margin-bottom: 8px;
 }
 
 h2.group_name {
