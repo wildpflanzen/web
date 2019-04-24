@@ -97,17 +97,17 @@
       {% for key in index['keys'] -%} {% set species_list = index.species[key] -%}
 
       {%- if index.index_name == 'family_de' -%}
-         <h1{% if ns.key != key[0] | lower() %}{% set ns.key = key[0] | lower() %} id='index-{{ns.key}}'{% endif %}>
-         {{ key }} / {{ species_list[0].family }}</h1>
+         <h2{% if ns.key != key[0] | lower() %}{% set ns.key = key[0] | lower() %} id='index-{{ns.key}}'{% endif %}>
+         {{ key }} / {{ species_list[0].family }}</h2>
       {%- elif index.index_name == 'family' -%}
-         <h1{% if ns.key != key[0] | lower() %}{% set ns.key = key[0] | lower() %} id='index-{{ns.key}}'{% endif %}>
-         {{ key }} / {{ species_list[0].family_de }}</h1>
+         <h2{% if ns.key != key[0] | lower() %}{% set ns.key = key[0] | lower() %} id='index-{{ns.key}}'{% endif %}>
+         {{ key }} / {{ species_list[0].family_de }}</h2>
       {%- elif index.index_name == 'date' -%}
-         <h1{% if ns.key != key[:4] | lower() %}{% set ns.key = key[:4] | lower() %} id='index-{{ns.key}}'{% endif %}>
+         <h2{% if ns.key != key[:4] | lower() %}{% set ns.key = key[:4] | lower() %} id='index-{{ns.key}}'{% endif %}>
          {{ key }}</h2>
       {%- else -%}
-         <h1{% if ns.key != key[0] | lower() %}{% set ns.key = key[0] | lower() %} id='index-{{ns.key}}'{% endif %}>
-         {{ key }}</h1>
+         <h2{% if ns.key != key[0] | lower() %}{% set ns.key = key[0] | lower() %} id='index-{{ns.key}}'{% endif %}>
+         {{ key }}</h2>
       {%- endif -%}
       <ul>
       {%- if index.index_name == 'genus' %}

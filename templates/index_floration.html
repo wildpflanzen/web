@@ -72,8 +72,8 @@
    <div class="index_species">
       {%- set ns.key = '' %}
       {% for key in index['keys'] -%} {% set species_list = index.species[key] -%}
-         <h1{% if ns.key != key | lower() %}{% set ns.key = key | lower() %} id='index-{{ns.key|lower()}}'{% endif %}>
-         {{ key | title() }}</h1>
+         <h2{% if ns.key != key | lower() %}{% set ns.key = key | lower() %} id='index-{{ns.key|lower()}}'{% endif %}>
+         {{ key | title() }}</h2>
       <ul>
 
       {%- for species in species_list %}
