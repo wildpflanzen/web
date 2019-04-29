@@ -8,11 +8,9 @@
 
 
 {% block navi_local %}
-   <ul>
-   <li class="navi_select"><span class="btn">Plantae<span>
-   </li><li><a href="trachtpflanzen.html">Trachtpflanzen</a>
-   </li>
-   </ul>
+   {{ macros.navi_menu([
+       ['Plantae', 'systematik.html', True], 
+       ['Trachtpflanzen', 'trachtpflanzen.html'] ]) }}
 {%- endblock %}
 
 
@@ -36,6 +34,12 @@
    </div>
    
    {{ macros.nach_oben() }}
+   
+   <div class="content_s">
+     <a target="_blank" href="static/insekta_systematik.jpg" title="vergr&ouml;ssern"> 
+     <img style="border:solid 1px #CDB7B5;" src="static/insekta_systematik2.jpg" alt="img"/>
+     </a>
+   </div>
    
 {%- endblock %}
 

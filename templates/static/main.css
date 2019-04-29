@@ -22,7 +22,6 @@ margin:0 8px;
 padding:0;
 font-family: Helvetica, Arial, sans-serif;
 font-size: 14px;
-
 min-width: 350px;
 }
 
@@ -69,10 +68,17 @@ margin: 0 auto;
 margin-bottom: 6px;
 }
 
+.wrapper {
+max-width: 1024px;
+margin: 0;
+margin-top: 0;
+}
+
 
 /******************************
    Header 
  ******************************/
+ 
 .header h1 {
 font-size: 40px;
 margin: 40px 0 24px 0;
@@ -144,12 +150,6 @@ min-width: 230px;
 /******************************
    Content and wrapper
  ******************************/
-
-.wrapper, .header {
-max-width: 1024px;
-margin: 0 auto;
-margin-top: 0;
-}
 
 .text_left  p { 
 text-align: left; 
@@ -373,7 +373,6 @@ background-color: #444;
  ******************************/
 
 .footer {
-max-width: 1024px;
 font-family: Helvetica, Arial, sans-serif;
 font-size: 12px;
 line-height: 150%;

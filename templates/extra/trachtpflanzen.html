@@ -8,11 +8,9 @@
 
 
 {% block navi_local %}
-   <ul>
-   <li><a href="systematik.html">Plantae</a>
-   </li><li class="navi_select"><span class="btn">Trachtpflanzen<span>
-   </li>
-   </ul>
+   {{ macros.navi_menu([
+       ['Plantae', 'systematik.html'], 
+       ['Trachtpflanzen', 'trachtpflanzen.html', True] ]) }}
 {%- endblock %}
 
 

@@ -36,6 +36,20 @@
 {% endmacro -%}
 
 
+{%- macro navi_menu(options) %}
+   <ul>
+   {% for option in options %}
+   {% if option[-1] == True -%}
+   {% if loop.index > 1 %}</li>{% endif %}<li class="navi_select"><span class="btn">{{option[0]}}</span>
+   {% else -%}
+   {% if loop.index > 1 %}</li>{% endif %}<li><a href="{{option[1]}}">{{option[0]}}</a>
+   {% endif -%}
+   {% endfor %}
+   </li>
+   </ul>
+{% endmacro -%}
+
+
 {%- macro index_title(option) -%}
    {%- if option == 'genus_de' %}Deutche Namen
    {%- elif option == 'genus' %}Wissenschaftliche Namen

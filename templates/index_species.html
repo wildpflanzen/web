@@ -25,42 +25,41 @@
 
 
 {% block navi_local %}
-   <ul>
-   {% if index.index_name in ['genus', 'genus_de'] %}<li class="navi_select"><span class="btn">Allgemein</span>
-   {% elif index.index_name in ['family'] %}<li><a href="index-genus.html">Allgemein</a>
-   {%- else %}<li><a href="index-genus-de.html">Allgemein</a>{% endif %}
+   {% if index.index_name == 'genus' %}
+   {{ macros.navi_menu([['Allgemein', True], 
+                       ['Familien', 'index-family.html']]) }}
+   {% elif index.index_name == 'genus_de' %}
+   {{ macros.navi_menu([['Allgemein', True], 
+                       ['Familien', 'index-family-de.html']]) }}
+   {% elif index.index_name == 'family' %} 
+   {{ macros.navi_menu([['Allgemein', 'index-genus.html'], 
+                       ['Familien', True]]) }}
+   {% elif index.index_name == 'family_de' %}
+   {{ macros.navi_menu([['Allgemein', 'index-genus-de.html'], 
+                       ['Familien', True]]) }}
+   {%- endif %}
 
-   {% if index.index_name in ['family', 'family_de'] %}</li><li class="navi_select"><span class="btn">Familien</span>
-   {%- elif index.index_name in ['genus'] %}</li><li><a href="index-family-de.html">Familien</a>
-   {%- else %}<li><a href="index-family-de.html">Familien</a>{% endif %}
-
-   {#  Not implemented
-
-   {% if index.index_name in ['floration'] %}</li><li class="navi_select"><span class="btn">Blutezeit</span>
-   {%- else %}</li><li><a href="index-floration.html">Blutezeit</a>{% endif %}
-   
-   {% if index.index_name in ['location'] %}</li><li class="navi_select"><span class="btn">Lokalisierung</span>
-   {%- else %}</li><li><a href="index-location.html">Lokalisierung</a>{% endif %}
-
-   {% if index.index_name in ['date'] %}</li><li class="navi_select"><span class="btn">Datum</span>
-   {%- else %}</li><li><a href="index-date.html">Datum</a>{% endif %}
-    #}
-   </li>
-   </ul>
    </div>
 
    {%- if index.index_name in ['genus', 'genus_de', 'family', 'family_de'] %}
    <div class="navi">
-   <ul>
-   {% if '_de' in index.index_name %}<li class="navi_select"><span class="btn">Deutsche Namen</span>
-   {%- elif 'family' in index.index_name %}<li><a href="index-family-de.html">Deutsche Namen</a>
-   {%- else %}<li><a href="index-genus-de.html">Deutsche Namen</a>{% endif %}
-   {% if not '_de' in index.index_name %}</li><li class="navi_select"><span class="btn">Wissenschaftliche Namen</span>
-   {%- elif 'family' in index.index_name %}</li><li><a href="index-family.html">Wissenschaftliche Namen</a>
-   {%- else %}</li><li><a href="index-genus.html">Wissenschaftliche Namen</a>{% endif %}
-   </li>
-   </ul>
+   
+   {% if index.index_name == 'genus' %}
+   {{ macros.navi_menu([['Deutsche Namen', 'index-genus-de.html'], 
+                       ['Wissenschaftliche Namen', True]]) }}
+   {% elif index.index_name == 'genus_de' %}
+   {{ macros.navi_menu([['Deutsche Namen', True], 
+                       ['Wissenschaftliche Namen', 'index-genus.html']]) }}
+   {% elif index.index_name == 'family' %} 
+   {{ macros.navi_menu([['Deutsche Namen', 'index-family-de.html'], 
+                       ['Wissenschaftliche Namen', True]]) }}
+   {% elif index.index_name == 'family_de' %}
+   {{ macros.navi_menu([['Deutsche Namen', True], 
+                       ['Wissenschaftliche Namen', 'index-family.html']]) }}
    {%- endif %}
+
+   {%- endif %}
+   
 {%- endblock %}
 
 
