@@ -35,6 +35,8 @@
 </head>
 
 <body>
+   <div class="wrapper">
+
    <!-- Header -->
    <div id="page_init"></div>
    <div class="header">
@@ -42,7 +44,6 @@
    <h1><a href="index.html">Wildpflanzen</a></h1>
    </div> <!-- Header end -->
 
-   <div class="wrapper">
 
    <!-- Global Navigation -->
    <div class="naviglobal">
@@ -60,11 +61,16 @@
    <!-- Local Navigation -->
    <div class="navi">
    
+   
    <ul>
-   <li class="navi_select"><span class="btn">Plantae<span>
+   
+   <li class="navi_select"><span class="btn">Plantae</span>
+   
    </li><li><a href="trachtpflanzen.html">Trachtpflanzen</a>
+   
    </li>
    </ul>
+
    </div>
 
    <!-- Content -->
@@ -89,6 +95,12 @@
    </div>
    
    <div class="nach_oben"><a href="#page_init">nach oben</a></div>
+   
+   <div class="content_s">
+     <a target="_blank" href="static/insekta_systematik.jpg" title="vergr&ouml;ssern"> 
+     <img style="border:solid 1px #CDB7B5;" src="static/insekta_systematik2.jpg" alt="img"/>
+     </a>
+   </div>
    </div>  <!-- Content end -->
 
    <!-- Extra content -->
@@ -114,9 +126,6 @@
    d.setTime(d.getTime()+(exdays*24*3600000));
    document.cookie=cname+"="+cvalue+"; "+"expires="+d.toUTCString()+"; path=/";}
    </script>
-
-
-   </div>  <!-- Wrapper end -->
 
    <!-- Footer -->
    <div class="footer">
@@ -151,6 +160,8 @@
    Page Build with Python language and Jinja2 template engine.
    Source code: https://github.com/wildpflanzen/web
    -->
+
+   </div>  <!-- Wrapper end -->
 
 </body>
 </html>

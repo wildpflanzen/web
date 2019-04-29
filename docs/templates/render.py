@@ -617,7 +617,7 @@ def remove_unused_files(path, used_image_files, options):
    for image in os.listdir(fullpath):
       if not image in used_image_files:
          print('   Warning, unused image: %s' % os.path.join(path, image))
-         if remove_unused_files in options and options.remove_unused_files:
+         if options.remove_unused_files:
             os.remove(os.path.join(path, image))
 
 

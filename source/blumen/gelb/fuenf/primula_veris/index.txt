@@ -1,0 +1,27 @@
+﻿family: 'Primulaceae'
+genus: 'Primula'
+species: 'veris'
+
+family_de: 'Primelgewächse'
+species_de: 'Echte'
+genus_de: 'Schlüsselblume'
+
+floration: 'März - Mai'
+
+---
+
+date: '3.2019'
+location: 'Wernberg-Köblitz, Oberpfalz'
+images:
+  - R0039523.jpg
+  - R0039551.jpg
+  - R0039535.jpg
+  - R0039521.jpg
+  - R0039522.jpg
+  - R0039532.jpg
+  - R0039533.jpg
+  - R0039531.jpg
+  - R0039548.jpg
+  - R0039528.jpg
+  - R0039527.jpg
+  - R0039525.jpg

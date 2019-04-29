@@ -111,21 +111,16 @@
 {%- endblock %}
 
 
-
-{% block navi_global %}{{ macros.navi_global('main') }}{%- endblock %}
+{% block navi_global %}
+   {{ macros.navi_global('main') }}
+{%- endblock %}
 
 
 {% block navi_local %}
-   <ul>
-   <li class="navi_select"><span class="btn">Krautige Pflanzen<span>
-   </li><li><a href="grass.html">Gräser</a>
-   </li><li><a href="strauch.html">Sträucher</a>
-   <!-- Not implemented 
-   </li><li><a href="">Moose</a>
-   </li><li><a href="">Farne</a>
-   -->
-   </li>
-   </ul>
+   {{ macros.navi_menu([
+       ['Krautige Pflanzen', True], 
+       ['Gräser', 'grass.html'],
+       ['Sträucher', 'strauch.html'] ]) }}
 {%- endblock %}
 
 
