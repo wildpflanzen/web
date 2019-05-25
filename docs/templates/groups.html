@@ -20,15 +20,26 @@
 
 
 {% block navi_global %}
-   {%- if group.splitpath[0] == 'insecta' -%}
-      {{ macros.navi_global('besucher') }}
+   {%- if group.splitpath[0] in ['grass', 'strauch'] -%}
+   {{ macros.navi_global('main') }}   
    {%- else -%}
-      {{ macros.navi_global('') }}
-   {%- endif -%}
+   {{ macros.navi_global('') }}
+   {%- endif -%}   
 {%- endblock %}
 
 
 {% block navi_local %}
+   {%- if group.splitpath[0] == 'grass' -%}
+      {{ macros.navi_menu([
+         ['Krautige Pflanzen', 'index.html'], 
+         ['Gräser', 'grass.html', True],
+         ['Sträucher', 'strauch.html'] ]) }}
+   {%- elif group.splitpath[0] == 'strauch' -%}
+      {{ macros.navi_menu([
+         ['Krautige Pflanzen', 'index.html'], 
+         ['Gräser', 'grass.html'],
+         ['Sträucher', 'strauch.html', True] ]) }}
+   {%- else -%}
    <ul>
       <li class="navi_next"><a href="{{ group.group_prev.filename }}.html">&lt;</a>
       </li><li class="navi_select navi_fix"><span class="btn">
@@ -37,6 +48,7 @@
       </li><li class="navi_next"><a href="{{ group.group_next.filename }}.html">&gt;</a>
       </li>
    </ul>
+   {%- endif -%}
 {%- endblock %}
 
 
