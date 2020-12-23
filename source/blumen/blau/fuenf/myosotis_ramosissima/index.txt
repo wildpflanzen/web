@@ -1,6 +1,6 @@
 ﻿family: 'Boraginaceae'
 genus: 'Myosotis'
-species: 'Ramosissima'
+species: 'ramosissima'
 
 family_de: 'Raublattgewächse'
 species_de: 'Hügel'

@@ -1,6 +1,6 @@
 ﻿family: 'Caryophyllaceae'
 genus: 'Moehringia'
-species: 'Trinervia'
+species: 'trinervia'
 
 family_de: 'Nelkengewächse'
 species_de: 'Dreinervige'

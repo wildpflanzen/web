@@ -1,6 +1,6 @@
 ﻿family: 'Campanulaceae'
 genus: 'Phyteuma'
-species: 'Betonicifolium'
+species: 'betonicifolium'
 
 family_de: 'Glockenblumengewächse'
 species_de: 'Ziestblättrige'

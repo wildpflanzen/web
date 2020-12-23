@@ -1,6 +1,6 @@
 ﻿family: 'Caryophyllaceae'
 genus: 'Cerastium'
-species: 'Holosteoides'
+species: 'holosteoides'
 
 family_de: 'Nelkengewächse'
 species_de: 'Gewöhnliches'

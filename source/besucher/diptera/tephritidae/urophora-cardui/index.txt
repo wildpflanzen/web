@@ -1,6 +1,6 @@
 ﻿order: 'Diptera'
 genus: 'Urophora'
-species: 'Cardui'
+species: 'cardui'
 
 makeindex: False
 

@@ -1,6 +1,6 @@
 ﻿family: 'Caprifoliaceae'
 genus: 'Valeriana'
-species: 'Dioica'
+species: 'dioica'
 
 family_de: 'Geiβblattgewächse'
 species_de: 'Kleiner'

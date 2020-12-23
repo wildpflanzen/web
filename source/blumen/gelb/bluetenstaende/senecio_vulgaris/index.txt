@@ -1,6 +1,6 @@
 ﻿family: 'Asteraceae'
 genus: 'Senecio'
-species: 'Vulgaris'
+species: 'vulgaris'
 
 family_de: 'Korbblütengewächse'
 species_de: 'Gewöhnliche'

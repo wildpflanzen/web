@@ -1,6 +1,6 @@
 ﻿family: 'Alismataceae'
 genus: 'Sagittaria'
-species: 'Sagittifolia'
+species: 'sagittifolia'
 
 family_de: 'Froschlöffelgewächse'
 species_de: 'Gewöhnliches'

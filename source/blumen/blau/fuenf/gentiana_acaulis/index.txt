@@ -1,6 +1,6 @@
 ﻿family: 'Gentianaceae'
 genus: 'Gentiana'
-species: 'Acaulis'
+species: 'acaulis'
 
 family_de: 'Enziangewächse'
 species_de: 'Kochscher'

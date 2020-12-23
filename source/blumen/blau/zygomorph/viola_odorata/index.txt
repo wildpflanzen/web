@@ -1,6 +1,6 @@
 ﻿family: 'Violaceae'
 genus: 'Viola'
-species: 'Odorata'
+species: 'odorata'
 
 family_de: 'Veilchengewächse'
 species_de: 'Duft'

@@ -1,6 +1,6 @@
 ﻿family: 'Fabaceae'
 genus: 'Trifolium'
-species: 'Alpinum'
+species: 'alpinum'
 
 family_de: 'Hülsenfrüchtler'
 species_de: 'Alpen'

@@ -1,6 +1,6 @@
 ﻿family: 'Amaryllidaceae'
 genus: 'Allium'
-species: 'Carinatum'
+species: 'carinatum'
 
 family_de: 'Amaryllisgewächse'
 species_de: 'Gekielter'

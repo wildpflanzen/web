@@ -1,6 +1,6 @@
 ﻿family: 'Caryophyllaceae'
 genus: 'Petrorhagia'
-species: 'Prolifera'
+species: 'prolifera'
 
 family_de: 'Nelkengewächse'
 species_de: 'Sprossende'

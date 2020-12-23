@@ -1,6 +1,6 @@
 ﻿family: 'Caryophyllaceae'
 genus: 'Stellaria'
-species: 'Media'
+species: 'media'
 
 family_de: 'Nelkengewächse'
 species_de: 'Gewöhnliche'

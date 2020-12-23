@@ -1,6 +1,6 @@
 ﻿family: 'Asteraceae'
 genus: 'Aster'
-species: 'Alpinus'
+species: 'alpinus'
 
 family_de: 'Korbblütengewächse'
 species_de: 'Alpen'

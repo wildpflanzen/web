@@ -1,6 +1,6 @@
 ﻿family: 'Asteraceae'
 genus: 'Centaurea'
-species: 'Scabiosa'
+species: 'scabiosa'
 
 family_de: 'Korbblütengewächse'
 species_de: 'Skabiosen'

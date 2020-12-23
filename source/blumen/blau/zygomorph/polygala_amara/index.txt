@@ -1,6 +1,6 @@
 ﻿family: 'Polygalaceae'
 genus: 'Polygala'
-species: 'Amara'
+species: 'amara'
 
 family_de: 'Kreuzblumengewächse'
 species_de: 'Bitteres'

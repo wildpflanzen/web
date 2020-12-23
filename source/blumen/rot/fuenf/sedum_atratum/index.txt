@@ -1,6 +1,6 @@
 ﻿family: 'Crassulaceae'
 genus: 'Sedum'
-species: 'Atratum'
+species: 'atratum'
 
 family_de: 'Dickblattgewächse'
 species_de: 'Dunkle'

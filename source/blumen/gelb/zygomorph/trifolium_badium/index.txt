@@ -1,6 +1,6 @@
 ﻿family: 'Fabaceae'
 genus: 'Trifolium'
-species: 'Badium'
+species: 'badium'
 
 family_de: 'Hülsenfrüchtler'
 species_de: 'Braun'

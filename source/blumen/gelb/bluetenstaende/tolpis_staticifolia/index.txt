@@ -1,6 +1,6 @@
 ﻿family: 'Asteraceae'
 genus: 'Tolpis'
-species: 'Staticifolia'
+species: 'staticifolia'
 
 family_de: 'Korbblütengewächse'
 species_de: 'Grasnelken'

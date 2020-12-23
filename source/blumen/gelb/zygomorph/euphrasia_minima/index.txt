@@ -1,6 +1,6 @@
 ﻿family: 'Lamiaceae'
 genus: 'Euphrasia'
-species: 'Minima'
+species: 'minima'
 
 family_de: 'Lippenblütengewächse'
 species_de: 'Zwerg'

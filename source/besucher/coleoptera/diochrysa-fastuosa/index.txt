@@ -1,6 +1,6 @@
 ﻿order: 'Coleoptera'
 genus: 'Diochrysa'
-species: 'Fastuosa'
+species: 'fastuosa'
 
 makeindex: False
 

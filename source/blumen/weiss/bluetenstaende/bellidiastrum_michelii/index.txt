@@ -1,6 +1,6 @@
 ﻿family: 'Asteraceae'
 genus: 'Bellidiastrum'
-species: 'Michel'
+species: 'michel'
 
 family_de: 'Korbblütengewächse'
 species_de: 'Alpenmaβliebchen'

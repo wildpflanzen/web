@@ -1,6 +1,6 @@
 ﻿family: 'Ranunculaceae'
 genus: 'Aquilegia'
-species: 'Vulgaris'
+species: 'vulgaris'
 
 family_de: 'Hahnenfuβgewächse'
 species_de: 'Gewöhnliche'

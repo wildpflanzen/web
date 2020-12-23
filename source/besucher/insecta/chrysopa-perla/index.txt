@@ -1,6 +1,6 @@
 ﻿order: 'Insecta'
 genus: 'Chrysopa'
-species: 'Perla'
+species: 'perla'
 
 makeindex: False
 

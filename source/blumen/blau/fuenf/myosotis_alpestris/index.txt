@@ -1,6 +1,6 @@
 ﻿family: 'Boraginaceae'
 genus: 'Myosotis'
-species: 'Alpestris'
+species: 'alpestris'
 
 family_de: 'Raublattgewächse'
 species_de: 'Alpen'

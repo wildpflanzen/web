@@ -1,6 +1,6 @@
 ﻿order: 'Diptera'
 genus: 'Helophilus'
-species: 'Trivittatus'
+species: 'trivittatus'
 
 makeindex: False
 

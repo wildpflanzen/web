@@ -1,6 +1,6 @@
 ﻿order: 'Coleoptera'
 genus: 'Clytra'
-species: 'Laeviuscula'
+species: 'laeviuscula'
 
 makeindex: False
 

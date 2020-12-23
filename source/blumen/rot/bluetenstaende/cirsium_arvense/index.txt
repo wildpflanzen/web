@@ -1,6 +1,6 @@
 ﻿family: 'Asteraceae'
 genus: 'Cirsium'
-species: 'Arvense'
+species: 'arvense'
 
 family_de: 'Korbblütengewächse'
 species_de: 'Acker Kratz-'

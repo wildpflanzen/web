@@ -1,6 +1,6 @@
 ﻿family: 'Orchidaceae'
 genus: 'Epipactis'
-species: 'Helleborine'
+species: 'helleborine'
 
 family_de: 'Orchideen'
 species_de: 'Breitblättrige'

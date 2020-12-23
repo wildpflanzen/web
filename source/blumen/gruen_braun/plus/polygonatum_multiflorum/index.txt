@@ -1,6 +1,6 @@
 ﻿family: 'Asparagaceae'
 genus: 'Polygonatum'
-species: 'Multiflorum'
+species: 'multiflorum'
 
 family_de: 'Spargelgewächse'
 species_de: 'Vielblütige'

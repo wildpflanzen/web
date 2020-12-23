@@ -1,6 +1,6 @@
 ﻿family: 'Asteraceae'
 genus: 'Tussilago'
-species: 'Farfara'
+species: 'farfara'
 
 family_de: 'Korbblütengewächse'
 species_de: 'Huflattich'

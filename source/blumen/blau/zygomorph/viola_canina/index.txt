@@ -1,6 +1,6 @@
 ﻿family: 'Violaceae'
 genus: 'Viola'
-species: 'Canina'
+species: 'canina'
 
 family_de: 'Veilchengewächse'
 species_de: 'Hund'

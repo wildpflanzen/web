@@ -1,6 +1,6 @@
 ﻿family: 'Brassicaceae'
 genus: 'Armoracia'
-species: 'Rusticana'
+species: 'rusticana'
 
 family_de: 'Kreuzblütengewächse'
 species_de: 'Meerrettich'

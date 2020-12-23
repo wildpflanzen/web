@@ -1,6 +1,6 @@
 ﻿family: 'Iridaceae'
 genus: 'Iris'
-species: 'Pseudacorus'
+species: 'pseudacorus'
 
 family_de: 'Schwertliliengewächse'
 species_de: 'Sumpf'

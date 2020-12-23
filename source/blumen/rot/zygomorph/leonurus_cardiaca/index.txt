@@ -1,6 +1,6 @@
 ﻿family: 'Lamiaceae'
 genus: 'Leonurus'
-species: 'Cardiaca'
+species: 'cardiaca'
 
 family_de: 'Lippenblütengewächse'
 species_de: 'Echter'

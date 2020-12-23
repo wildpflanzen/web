@@ -1,6 +1,6 @@
 ﻿family: 'Orobanchaceae'
 genus: 'Melampyrum'
-species: 'Pratense ssp. pratense'
+species: 'pratense ssp. pratense'
 
 family_de: 'Sommerwurzgewächse'
 species_de: 'Gewöhnlicher'

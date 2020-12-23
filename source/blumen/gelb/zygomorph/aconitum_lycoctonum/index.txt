@@ -1,6 +1,6 @@
 ﻿family: 'Ranunculaceae'
 genus: 'Aconitum'
-species: 'Lycoctonum'
+species: 'lycoctonum'
 
 family_de: 'Hahnenfuβgewächse'
 species_de: 'Gelber'

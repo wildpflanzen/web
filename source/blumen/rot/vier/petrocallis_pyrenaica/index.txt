@@ -1,6 +1,6 @@
 ﻿family: 'Brassicaceae'
 genus: 'Petrocallis'
-species: 'Pyrenaica'
+species: 'pyrenaica'
 
 family_de: 'Kreuzblütengewächse'
 species_de: 'Steinschmückel'

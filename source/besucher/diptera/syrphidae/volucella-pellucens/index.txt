@@ -1,6 +1,6 @@
 ﻿order: 'Diptera'
 genus: 'Volucella'
-species: 'Pellucens'
+species: 'pellucens'
 
 makeindex: False
 

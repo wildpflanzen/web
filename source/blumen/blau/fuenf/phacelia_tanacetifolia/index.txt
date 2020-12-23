@@ -1,6 +1,6 @@
 ﻿family: 'Boraginaceae'
 genus: 'Phacelia'
-species: 'Tanacetifolia'
+species: 'tanacetifolia'
 
 family_de: 'Raublattgewächse'
 species_de: 'Rainfarnblättriges'

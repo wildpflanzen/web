@@ -1,0 +1,22 @@
+﻿family: 'Rosaceae'
+genus: 'Rubus'
+species: 'laciniatus'
+
+family_de: 'Rosengewächse'
+species_de: 'Schlitzblättrige'
+genus_de: 'Brombeere'
+
+floration: 'Mai - Juni'
+
+---
+
+date: '8.2013'
+location: 'Godnasee, Brandenburg'
+images:
+  - R0040081.JPG
+  - R0040078.JPG
+  - R0040079.JPG
+  - R0040080.JPG
+  - R0040082.JPG
+  - R0040083.JPG
+  - R0040084.JPG

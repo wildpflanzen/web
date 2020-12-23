@@ -1,6 +1,6 @@
 ﻿family: 'Plumbaginaceae'
 genus: 'Armeria'
-species: 'Alpina'
+species: 'alpina'
 
 family_de: 'Bleiwurzgewächse'
 species_de: 'Alpen'

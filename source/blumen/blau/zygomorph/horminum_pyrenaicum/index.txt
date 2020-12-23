@@ -1,6 +1,6 @@
 ﻿family: 'Lamiaceae'
 genus: 'Horminum'
-species: 'Pyrenaicum'
+species: 'pyrenaicum'
 
 family_de: 'Lippenblütengewächse'
 species_de: 'Pyrenäen'

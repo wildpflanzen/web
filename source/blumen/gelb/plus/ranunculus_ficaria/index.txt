@@ -1,6 +1,6 @@
 ﻿family: 'Ranunculaceae'
 genus: 'Ranunculus'
-species: 'Ficaria'
+species: 'ficaria'
 
 family_de: 'Hahnenfuβgewächse'
 species_de: 'Scharbockskraut'

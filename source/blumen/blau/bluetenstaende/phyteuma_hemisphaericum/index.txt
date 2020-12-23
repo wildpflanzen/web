@@ -1,6 +1,6 @@
 ﻿family: 'Campanulaceae'
 genus: 'Phyteuma'
-species: 'Hemisphaericum'
+species: 'hemisphaericum'
 
 family_de: 'Glockenblumengewächse'
 species_de: 'Halbkugelige'

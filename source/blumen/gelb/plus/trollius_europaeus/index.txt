@@ -1,6 +1,6 @@
 ﻿family: 'Ranunculaceae'
 genus: 'Trollius'
-species: 'Europaeus'
+species: 'europaeus'
 
 family_de: 'Hahnenfuβgewächse'
 species_de: 'Europäische'

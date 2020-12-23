@@ -1,6 +1,6 @@
 ﻿family: 'Asteraceae'
 genus: 'Senecio'
-species: 'Incanus ssp. carneolicus'
+species: 'incanus ssp. carneolicus'
 
 family_de: 'Korbblütengewächse'
 species_de: 'Krainer'

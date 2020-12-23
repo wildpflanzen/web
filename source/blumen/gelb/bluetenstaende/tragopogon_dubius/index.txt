@@ -1,6 +1,6 @@
 ﻿family: 'Asteraceae'
 genus: 'Tragopogon'
-species: 'Dubius'
+species: 'dubius'
 
 family_de: 'Korbblütengewächse'
 species_de: 'Groβe'

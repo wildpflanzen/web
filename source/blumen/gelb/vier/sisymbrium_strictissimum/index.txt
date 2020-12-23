@@ -1,6 +1,6 @@
 ﻿family: 'Brassicaceae'
 genus: 'Sisymbrium'
-species: 'Strictissimum'
+species: 'strictissimum'
 
 family_de: 'Kreuzblütengewächse'
 species_de: 'Steife'

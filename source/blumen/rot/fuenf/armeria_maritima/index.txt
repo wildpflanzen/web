@@ -1,6 +1,6 @@
 ﻿family: 'Plumbaginaceae'
 genus: 'Armeria'
-species: 'Maritima ssp. elongata'
+species: 'maritima ssp. elongata'
 
 family_de: 'Bleiwurzgewächse'
 species_de: 'Sand'

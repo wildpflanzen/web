@@ -1,6 +1,6 @@
 ﻿family: 'Asteraceae'
 genus: 'Buphthalmum'
-species: 'Salicifolium'
+species: 'salicifolium'
 
 family_de: 'Korbblütengewächse'
 species_de: 'Weidenblättriges'

@@ -1,6 +1,6 @@
 ﻿family: 'Asteraceae'
 genus: 'Prenanthes'
-species: 'Purpurea'
+species: 'purpurea'
 
 family_de: 'Korbblütengewächse'
 species_de: 'Gewöhnlicher'

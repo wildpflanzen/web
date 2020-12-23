@@ -1,6 +1,6 @@
 ﻿family: 'Lamiaceae'
 genus: 'Stachys'
-species: 'Recta'
+species: 'recta'
 
 family_de: 'Lippenblütengewächse'
 species_de: 'Aufrechter'

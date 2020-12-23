@@ -1,6 +1,6 @@
 ﻿family: 'Plantaginaceae'
 genus: 'Plantago'
-species: 'Media'
+species: 'media'
 
 family_de: 'Wegerichgewächse'
 species_de: 'Mittlerer'

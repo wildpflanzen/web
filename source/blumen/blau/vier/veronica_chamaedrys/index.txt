@@ -1,6 +1,6 @@
 ﻿family: 'Plantaginaceae'
 genus: 'Veronica'
-species: 'Chamaedrys'
+species: 'chamaedrys'
 
 family_de: 'Wegerichgewächse'
 species_de: 'Gamander'

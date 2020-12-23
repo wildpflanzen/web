@@ -1,6 +1,6 @@
 ﻿family: 'Asteraceae'
 genus: 'Solidago'
-species: 'Canadensis'
+species: 'canadensis'
 
 family_de: 'Korbblütengewächse'
 species_de: 'Kanadische'

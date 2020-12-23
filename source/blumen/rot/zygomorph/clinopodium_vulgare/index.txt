@@ -1,6 +1,6 @@
 ﻿family: 'Lamiaceae'
 genus: 'Clinopodium'
-species: 'Vulgare'
+species: 'vulgare'
 
 family_de: 'Lippenblütengewächse'
 species_de: 'Gewöhnlicher'

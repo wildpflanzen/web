@@ -1,6 +1,6 @@
 ﻿family: 'Rosaceae'
 genus: 'Potentilla'
-species: 'Recta'
+species: 'recta'
 
 family_de: 'Rosengewächse'
 species_de: 'Aufrechtes'

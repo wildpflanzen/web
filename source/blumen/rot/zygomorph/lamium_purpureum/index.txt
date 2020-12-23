@@ -1,6 +1,6 @@
 ﻿family: 'Lamiaceae'
 genus: 'Lamium'
-species: 'Purpureum'
+species: 'purpureum'
 
 family_de: 'Lippenblütengewächse'
 species_de: 'Purpurrote'

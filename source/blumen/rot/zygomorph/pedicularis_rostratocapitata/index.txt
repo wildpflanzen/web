@@ -1,6 +1,6 @@
 ﻿family: 'Orobanchaceae'
 genus: 'Pedicularis'
-species: 'Rostratocapitata'
+species: 'rostratocapitata'
 
 family_de: 'Sommerwurzgewächse'
 species_de: 'Kopfiges'

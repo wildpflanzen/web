@@ -27,10 +27,9 @@ from collections import UserDict
 def main():
 
    # Read options
-   options = Options('options.ini')
-
+   options = Options(file_name='options.ini')
+   
    # Read database
-   print('\nReading data ...')
    database = Database(options)
    database.read()
 
@@ -200,7 +199,7 @@ class HTML_generator():
 
 
    def deutchname(self, variable, index1, index2=''):
-      # Extract deutche names
+      # Extract deutsche names
       if index1 in variable and variable[index1]:
          if isinstance(variable[index1], list):
             res1 = variable[index1]
@@ -270,7 +269,7 @@ class HTML_generator():
 
 
 # --------------------------------------------------------------------
-#    DATABASE CLASS
+#    DATABASE
 # --------------------------------------------------------------------
 
 class Database(UserDict):
@@ -284,6 +283,7 @@ class Database(UserDict):
 
 
    def read(self):
+      print('\nReading database ...')
       self.read_paths(self.options.source)
       self.test_errors()
       self.combine_database()
@@ -441,13 +441,13 @@ class Database(UserDict):
          if not isinstance(register['species_de'], list):
             register['species_de'] = [ register['species_de'] ]
          if len(register['species_de']) != len(register['genus_de']):
-            print('   Error, different number of deutche names: %s' % os.path.join(register['path'], 'index.txt'))
+            print('   Error, different number of deutsche names: %s' % os.path.join(register['path'], 'index.txt'))
 
-         # Test deutche name
+         # Test deutsche name
          if register['splitpath'][1] in ['blumen']:
             for i in range(len(register['species_de'])):
                if register['genus_de'][i] and len(register['species_de'][i])<1:
-                  print('   Warning, deutche genus without specie: %s' % os.path.join(register['path'], 'index.txt'))
+                  print('   Warning, deutsche genus without specie: %s' % os.path.join(register['path'], 'index.txt'))
                elif ' ' in register['species_de'][i] and register['species_de'][i][-1] != '-':
                   print('   Warning, subspecie without hyphen: %s' % os.path.join(register['path'], 'index.txt'))
 
@@ -532,17 +532,25 @@ class Database(UserDict):
 
 
 # --------------------------------------------------------------------
-#    READ OPTIONS, MAKE THUMBNAILS
+#    READ OPTIONS
 # --------------------------------------------------------------------
 
 class Options():
 
-   def __init__(self, fname):
+   def __init__(self, file_name=''):
+      if file_name:
+         options_dict = self.read(file_name)
+         self.set_options(options_dict)
+   
+   def read(self, file_name):
       print('\nReading options ...')
-      with codecs.open(os.path.join(fname), 'r', encoding='utf-8-sig') as fi:
-         options = fi.read()
-      options = yaml.load(options)
-      for key, val in options.items():
+      with codecs.open(file_name, 'r', encoding='utf-8-sig') as fi:
+         options_raw = fi.read()
+      options_dict = yaml.load(options_raw)
+      return options_dict
+   
+   def set_options(self, options_dict):
+      for key, val in options_dict.items():
          setattr(self, key, val)
 
    def __repr__(self):
@@ -551,8 +559,13 @@ class Options():
    def __getitem__(self, key):
       if key in self.__dict__:
          return self.__dict__[key]
-      return False
+      if not key in self.__dict__:
+         return False
    
+
+# --------------------------------------------------------------------
+#    MAKE THUMBNAILS
+# --------------------------------------------------------------------
 
 def makedir(path):
    if not os.path.exists(path):
@@ -567,8 +580,8 @@ def thumbnails_make(database, options):
    all_image_files = []
 
    for register in database.species:
+      thumbname = ''
       for session in register['sessions']:
-         thumbname = ''
          if not 'thumbs' in session:
             session['thumbs'] = []
 

@@ -1,6 +1,6 @@
 ﻿family: 'Fabaceae'
 genus: 'Trifolium'
-species: 'Arvense'
+species: 'arvense'
 
 family_de: 'Hülsenfrüchtler'
 species_de: 'Hasen'

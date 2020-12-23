@@ -1,6 +1,6 @@
 ﻿order: 'Coleoptera'
 genus: 'Pyrochroa'
-species: 'Coccinea'
+species: 'coccinea'
 
 makeindex: False
 

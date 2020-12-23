@@ -1,6 +1,6 @@
 ﻿family: 'Asparagaceae'
 genus: 'Convallaria'
-species: 'Majalis'
+species: 'majalis'
 
 family_de: 'Spargelgewächse'
 species_de: 'Maiglöckchen'

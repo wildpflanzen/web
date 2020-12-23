@@ -1,6 +1,6 @@
 ﻿family: 'Hypericaceae'
 genus: 'Hypericum'
-species: 'Maculatum'
+species: 'maculatum'
 
 family_de: 'Johanniskrautgewächse'
 species_de: 'Geflecktes'

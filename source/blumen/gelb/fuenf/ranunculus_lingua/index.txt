@@ -1,6 +1,6 @@
 ﻿family: 'Ranunculaceae'
 genus: 'Ranunculus'
-species: 'Lingua'
+species: 'lingua'
 
 family_de: 'Hahnenfuβgewächse'
 species_de: 'Zungen'

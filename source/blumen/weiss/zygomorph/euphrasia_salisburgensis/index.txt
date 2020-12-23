@@ -1,6 +1,6 @@
 ﻿family: 'Orobanchaceae'
 genus: 'Euphrasia'
-species: 'Salisburgensis'
+species: 'salisburgensis'
 
 family_de: 'Sommerwurzgewächse'
 species_de: 'Salzburger'

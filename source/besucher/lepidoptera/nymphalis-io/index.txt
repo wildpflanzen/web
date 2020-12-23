@@ -1,6 +1,6 @@
 ﻿order: 'Lepidoptera'
 genus: 'Nymphalis'
-species: 'Io'
+species: 'io'
 
 makeindex: False
 

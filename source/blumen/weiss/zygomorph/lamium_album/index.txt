@@ -1,6 +1,6 @@
 ﻿family: 'Lamiaceae'
 genus: 'Lamium'
-species: 'Album'
+species: 'album'
 
 family_de: 'Lippenblütengewächse'
 species_de: 'Weiβe'

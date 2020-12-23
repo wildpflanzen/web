@@ -1,6 +1,6 @@
 ﻿family: 'Plantaginaceae'
 genus: 'Globularia'
-species: 'Cordifolia'
+species: 'cordifolia'
 
 family_de: 'Wegerichgewächse'
 species_de: 'Herzblättrige'

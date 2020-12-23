@@ -1,6 +1,6 @@
 ﻿order: 'Coleoptera'
 genus: 'Pachyta'
-species: 'Quadrimaculata'
+species: 'quadrimaculata'
 
 makeindex: False
 

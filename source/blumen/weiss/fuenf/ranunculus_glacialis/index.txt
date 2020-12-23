@@ -1,6 +1,6 @@
 ﻿family: 'Ranunculaceae'
 genus: 'Ranunculus'
-species: 'Glacialis'
+species: 'glacialis'
 
 family_de: 'Hahnenfuβgewächse'
 species_de: 'Gletscher'

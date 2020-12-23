@@ -1,6 +1,6 @@
 ﻿family: 'Gentianaceae'
 genus: 'Gentianella'
-species: 'Aspera'
+species: 'aspera'
 
 family_de: 'Enziangewächse'
 species_de: 'Rauer'

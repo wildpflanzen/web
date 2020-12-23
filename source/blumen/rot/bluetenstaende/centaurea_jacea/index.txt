@@ -1,6 +1,6 @@
 ﻿family: 'Asteraceae'
 genus: 'Centaurea'
-species: 'Jacea ssp. jacea'
+species: 'jacea ssp. jacea'
 
 family_de: 'Korbblütengewächse'
 species_de: 'Wiesen'

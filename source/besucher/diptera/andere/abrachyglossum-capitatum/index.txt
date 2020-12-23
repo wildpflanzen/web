@@ -1,6 +1,6 @@
 ﻿order: 'Diptera'
 genus: 'Abrachyglossum'
-species: 'Capitatum'
+species: 'capitatum'
 
 makeindex: False
 

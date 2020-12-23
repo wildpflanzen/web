@@ -1,6 +1,6 @@
 ﻿family: 'Asteraceae'
 genus: 'Otanthus'
-species: 'Maritimus'
+species: 'maritimus'
 
 family_de: 'Korbblütengewächse'
 species_de: 'Schneeweiβe'

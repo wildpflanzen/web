@@ -1,6 +1,6 @@
 ﻿family: 'Asteraceae'
 genus: 'Tragopogon'
-species: 'Pratensis'
+species: 'pratensis'
 
 family_de: 'Korbblütengewächse'
 species_de: 'Wiesen'

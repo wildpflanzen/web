@@ -1,6 +1,6 @@
 ﻿family: 'Saxifragaceae'
 genus: 'Saxifraga'
-species: 'Stellaris'
+species: 'stellaris'
 
 family_de: 'Steinbrechgewächse'
 species_de: 'Stern'

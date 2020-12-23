@@ -1,6 +1,6 @@
 ﻿family: 'Boraginaceae'
 genus: 'Myosotis'
-species: 'Scorpioides'
+species: 'scorpioides'
 
 family_de: 'Raublattgewächse'
 species_de: 'Sumpf'

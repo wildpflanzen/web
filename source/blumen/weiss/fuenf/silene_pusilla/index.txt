@@ -1,6 +1,6 @@
 ﻿family: 'Caryophyllaceae'
 genus: 'Silene'
-species: 'Pusilla'
+species: 'pusilla'
 
 family_de: 'Nelkengewächse'
 species_de: 'Vierzähniges'

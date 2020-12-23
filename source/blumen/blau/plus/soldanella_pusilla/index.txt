@@ -1,6 +1,6 @@
 ﻿family: 'Primulaceae'
 genus: 'Soldanella'
-species: 'Pusilla'
+species: 'pusilla'
 
 family_de: 'Primelgewächse'
 species_de: 'Kleines'

@@ -1,6 +1,6 @@
 ﻿family: 'Typhaceae'
 genus: 'Sparganium'
-species: 'Erectum'
+species: 'erectum'
 
 family_de: 'Rohrkolbengewächse'
 species_de: 'Ästiger'

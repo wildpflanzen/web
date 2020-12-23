@@ -1,6 +1,6 @@
 ﻿order: 'Orthoptera'
 genus: 'Miramella'
-species: 'Alpina'
+species: 'alpina'
 
 makeindex: False
 

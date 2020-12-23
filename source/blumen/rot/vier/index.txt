@@ -10,3 +10,4 @@ listdir:
   - epilobium_angustifolium
   - epilobium_hirsutum
   - epilobium_montanum
+  - epilobium_tetragonum

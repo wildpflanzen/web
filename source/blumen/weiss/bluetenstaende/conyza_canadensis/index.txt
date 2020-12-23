@@ -1,6 +1,6 @@
 ﻿family: 'Asteraceae'
 genus: 'Conyza'
-species: 'Canadensis'
+species: 'canadensis'
 
 family_de: 'Korbblütengewächse'
 species_de: 'Kanadisches'

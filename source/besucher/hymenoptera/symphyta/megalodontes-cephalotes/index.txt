@@ -1,6 +1,6 @@
 ﻿order: 'Hymenoptera'
 genus: 'Megalodontes'
-species: 'Cephalotes'
+species: 'cephalotes'
 
 makeindex: False
 

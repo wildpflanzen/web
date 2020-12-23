@@ -1,6 +1,6 @@
 ﻿family: 'Linaceae'
 genus: 'Linum'
-species: 'Viscosum'
+species: 'viscosum'
 
 family_de: 'Leingewächse'
 species_de: 'Klebriger'

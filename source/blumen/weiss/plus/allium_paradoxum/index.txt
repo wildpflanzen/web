@@ -1,6 +1,6 @@
 ﻿family: 'Amaryllidaceae'
 genus: 'Allium'
-species: 'Paradoxum'
+species: 'paradoxum'
 
 family_de: 'Amaryllisgewächse'
 species_de: 'Wunderlauch'

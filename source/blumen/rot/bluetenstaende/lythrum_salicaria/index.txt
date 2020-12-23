@@ -1,6 +1,6 @@
 ﻿family: 'Lythraceae'
 genus: 'Lythrum'
-species: 'Salicaria'
+species: 'salicaria'
 
 family_de: 'Weiderichgewächse'
 species_de: 'Blut'

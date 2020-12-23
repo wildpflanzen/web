@@ -1,6 +1,6 @@
 ﻿family: 'Asteraceae'
 genus: 'Achillea'
-species: 'Clavennae'
+species: 'clavennae'
 
 family_de: 'Korbblütengewächse'
 species_de: 'Bittere'

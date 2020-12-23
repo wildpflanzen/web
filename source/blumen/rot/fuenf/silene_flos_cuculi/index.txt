@@ -1,6 +1,6 @@
 ﻿family: 'Caryophyllaceae'
 genus: 'Silene'
-species: 'Flos- cucul'
+species: 'flos- cucul'
 
 family_de: 'Nelkengewächse'
 species_de: 'Kuckucks'

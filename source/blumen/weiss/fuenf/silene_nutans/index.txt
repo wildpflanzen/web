@@ -1,6 +1,6 @@
 ﻿family: 'Caryophyllaceae'
 genus: 'Silene'
-species: 'Nutans'
+species: 'nutans'
 
 family_de: 'Nelkengewächse'
 species_de: 'Nickendes'

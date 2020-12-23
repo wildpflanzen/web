@@ -1,6 +1,6 @@
 ﻿family: 'Fabaceae'
 genus: 'Medicago'
-species: 'Lupulina'
+species: 'lupulina'
 
 family_de: 'Hülsenfrüchtler'
 species_de: 'Hopfenklee'

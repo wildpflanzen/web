@@ -1,6 +1,6 @@
 ﻿family: 'Brassicaceae'
 genus: 'Alliaria'
-species: 'Petiolata'
+species: 'petiolata'
 
 family_de: 'Kreuzblütengewächse'
 species_de: 'Knoblauchsrauke'

@@ -1,6 +1,6 @@
 ﻿order: 'Coleoptera'
 genus: 'Mononychus'
-species: 'Punctumalbum'
+species: 'punctumalbum'
 
 makeindex: False
 

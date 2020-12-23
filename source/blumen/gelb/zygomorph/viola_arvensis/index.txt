@@ -1,6 +1,6 @@
 ﻿family: 'Violaceae'
 genus: 'Viola'
-species: 'Arvensis'
+species: 'arvensis'
 
 family_de: 'Veilchengewächse'
 species_de: 'Acker'

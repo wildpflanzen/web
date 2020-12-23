@@ -1,6 +1,6 @@
 ﻿family: 'Plantaginaceae'
 genus: 'Linaria'
-species: 'Alpina'
+species: 'alpina'
 
 family_de: 'Wegerichgewächse'
 species_de: 'Alpen'

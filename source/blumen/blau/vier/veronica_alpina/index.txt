@@ -1,6 +1,6 @@
 ﻿family: 'Plantaginaceae'
 genus: 'Veronica'
-species: 'Alpina'
+species: 'alpina'
 
 family_de: 'Wegerichgewächse'
 species_de: 'Alpen'

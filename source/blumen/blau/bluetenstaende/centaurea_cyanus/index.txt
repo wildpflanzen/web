@@ -1,6 +1,6 @@
 ﻿family: 'Asteraceae'
 genus: 'Centaurea'
-species: 'Cyanus'
+species: 'cyanus'
 
 family_de: 'Korbblütengewächse'
 genus_de: ''

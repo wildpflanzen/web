@@ -1,6 +1,6 @@
 ﻿family: 'Campanulaceae'
 genus: 'Campanula'
-species: 'Glomerata'
+species: 'glomerata'
 
 family_de: 'Glockenblumengewächse'
 species_de: 'Knäuel'

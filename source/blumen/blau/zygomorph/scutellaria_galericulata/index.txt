@@ -1,6 +1,6 @@
 ﻿family: 'Lamiaceae'
 genus: 'Scutellaria'
-species: 'Galericulata'
+species: 'galericulata'
 
 family_de: 'Lippenblütengewächse'
 species_de: 'Sumpf'

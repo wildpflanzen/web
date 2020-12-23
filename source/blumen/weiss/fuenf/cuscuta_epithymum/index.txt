@@ -12,7 +12,7 @@ floration: 'Juli - September'
 
 ---
 
-date: '2018'
+date: '8.2018'
 location: 'Ortlergruppe'
 images:
   - R0038214.jpg

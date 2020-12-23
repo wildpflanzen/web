@@ -1,6 +1,6 @@
 ﻿family: 'Asteraceae'
 genus: 'Carduus'
-species: 'Nutans'
+species: 'nutans'
 
 family_de: 'Korbblütengewächse'
 species_de: 'Nickende'

@@ -1,6 +1,6 @@
 ﻿order: 'Diptera'
 genus: 'Sicus'
-species: 'Ferrugineus'
+species: 'ferrugineus'
 
 makeindex: False
 

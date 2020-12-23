@@ -1,6 +1,6 @@
 ﻿family: 'Campanulaceae'
 genus: 'Physoplexis'
-species: 'Comosa'
+species: 'comosa'
 
 family_de: 'Glockenblumengewächse'
 species_de: 'Schopfteufelskralle'

@@ -1,6 +1,6 @@
 ﻿family: 'Orchidaceae'
 genus: 'Neottia'
-species: 'Ovata'
+species: 'ovata'
 
 family_de: 'Orchideen'
 species_de: 'Großes'

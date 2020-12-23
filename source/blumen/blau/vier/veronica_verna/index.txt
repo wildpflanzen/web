@@ -1,6 +1,6 @@
 ﻿family: 'Plantaginaceae'
 genus: 'Veronica'
-species: 'Verna'
+species: 'verna'
 
 family_de: 'Wegerichgewächse'
 species_de: 'Frühlings'

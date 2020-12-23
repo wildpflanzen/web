@@ -1,6 +1,6 @@
 ﻿family: 'Asparagaceae'
 genus: 'Ornithogalum'
-species: 'Umbellatum'
+species: 'umbellatum'
 
 family_de: 'Spargelgewächse'
 species_de: 'Dolden'

@@ -1,6 +1,6 @@
 ﻿family: 'Lamiaceae'
 genus: 'Galeopsis'
-species: 'Tetrahit'
+species: 'tetrahit'
 
 family_de: 'Lippenblütengewächse'
 species_de: 'Stechender'

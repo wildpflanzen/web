@@ -1,6 +1,6 @@
 ﻿family: 'Rosaceae'
 genus: 'Geum'
-species: 'Reptans'
+species: 'reptans'
 
 family_de: 'Rosengewächse'
 species_de: 'Kriechende'

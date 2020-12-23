@@ -1,6 +1,6 @@
 ﻿family: 'Asteraceae'
 genus: 'Solidago'
-species: 'Vigaurea ssp. minuta'
+species: 'vigaurea ssp. minuta'
 
 family_de: 'Korbblütengewächse'
 species_de: 'Alpen'

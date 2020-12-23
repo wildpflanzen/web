@@ -1,6 +1,6 @@
 ﻿family: 'Plantaginaceae'
 genus: 'Veronica'
-species: 'Bellidioides'
+species: 'bellidioides'
 
 family_de: 'Wegerichgewächse'
 species_de: 'Gänseblümchen'

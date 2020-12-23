@@ -1,6 +1,6 @@
 ﻿family: 'Caprifoliaceae'
 genus: 'Scabiosa'
-species: 'Lucida'
+species: 'lucida'
 
 family_de: 'Geiβblattgewächse'
 species_de: 'Glänzende'

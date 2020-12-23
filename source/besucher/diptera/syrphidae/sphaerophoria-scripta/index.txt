@@ -1,6 +1,6 @@
 ﻿order: 'Diptera'
 genus: 'Sphaerophoria'
-species: 'Scripta'
+species: 'scripta'
 
 makeindex: False
 

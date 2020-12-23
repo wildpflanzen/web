@@ -1,6 +1,6 @@
 ﻿order: 'Diptera'
 genus: 'Episyrphus'
-species: 'Balteatus'
+species: 'balteatus'
 
 makeindex: False
 

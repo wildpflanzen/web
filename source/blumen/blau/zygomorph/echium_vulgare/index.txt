@@ -1,6 +1,6 @@
 ﻿family: 'Boraginaceae'
 genus: 'Echium'
-species: 'Vulgare'
+species: 'vulgare'
 
 family_de: 'Raublattgewächse'
 species_de: 'Gewöhnlicher'

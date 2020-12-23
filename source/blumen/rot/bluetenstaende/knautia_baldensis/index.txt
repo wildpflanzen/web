@@ -1,6 +1,6 @@
 ﻿family: 'Asteraceae'
 genus: 'Knautia'
-species: 'Baldensis'
+species: 'baldensis'
 
 family_de: 'Korbblütengewächse'
 species_de: 'Monte-baldo'

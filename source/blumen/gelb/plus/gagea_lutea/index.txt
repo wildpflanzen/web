@@ -1,6 +1,6 @@
 ﻿family: 'Liliaceae'
 genus: 'Gagea'
-species: 'Lutea'
+species: 'lutea'
 
 family_de: 'Liliengewächse'
 species_de: 'Waldgelbstern'

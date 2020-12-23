@@ -1,6 +1,6 @@
 ﻿family: 'Apiaceae'
 genus: 'Falcaria'
-species: 'Vulgaris'
+species: 'vulgaris'
 
 family_de: 'Doldengewächse'
 species_de: 'Gemeine'

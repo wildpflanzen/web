@@ -1,6 +1,6 @@
 ﻿family: 'Boraginaceae'
 genus: 'Cynoglossum'
-species: 'Officinale'
+species: 'officinale'
 
 family_de: 'Raublattgewächse'
 species_de: 'Echte'

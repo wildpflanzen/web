@@ -1,6 +1,6 @@
 ﻿family: 'Papaveraceae'
 genus: 'Papaver'
-species: 'Alpinum ssp. kerner'
+species: 'alpinum ssp. kerner'
 
 family_de: 'Mohngewächse'
 species_de: 'Kerner·alpen'

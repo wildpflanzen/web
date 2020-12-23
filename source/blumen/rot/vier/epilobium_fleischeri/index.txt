@@ -1,6 +1,6 @@
 ﻿family: 'Onagraceae'
 genus: 'Epilobium'
-species: 'Fleischer'
+species: 'fleischer'
 
 family_de: 'Nachtkerzengewächse'
 species_de: 'Fleischers'

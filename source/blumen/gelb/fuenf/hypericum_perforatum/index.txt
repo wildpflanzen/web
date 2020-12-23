@@ -1,6 +1,6 @@
 ﻿family: 'Hypericaceae'
 genus: 'Hypericum'
-species: 'Perforatum'
+species: 'perforatum'
 
 family_de: 'Johanniskrautgewächse'
 species_de: 'Echtes'

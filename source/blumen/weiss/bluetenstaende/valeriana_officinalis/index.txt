@@ -1,6 +1,6 @@
 ﻿family: 'Caprifoliaceae'
 genus: 'Valeriana'
-species: 'Officinalis agg.'
+species: 'officinalis agg.'
 
 family_de: 'Geiβblattgewächse'
 species_de: 'Echter'

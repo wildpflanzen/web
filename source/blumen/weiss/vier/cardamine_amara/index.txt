@@ -1,6 +1,6 @@
 ﻿family: 'Brassicaceae'
 genus: 'Cardamine'
-species: 'Amara'
+species: 'amara'
 
 family_de: 'Kreuzblütengewächse'
 species_de: 'Bitteres'

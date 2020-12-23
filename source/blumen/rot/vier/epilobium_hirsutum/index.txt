@@ -1,6 +1,6 @@
 ﻿family: 'Onagraceae'
 genus: 'Epilobium'
-species: 'Hirsutum'
+species: 'hirsutum'
 
 family_de: 'Nachtkerzengewächse'
 species_de: 'Zottiges'
@@ -25,3 +25,23 @@ images:
   - 11.jpg
   - 12.jpg
   - 9.jpg
+
+---
+
+date: '8.2019'
+location: 'Halbe, Brandenburg'
+images:
+  - R0039998.JPG
+  - R0040016.JPG
+  - R0040017.JPG
+  - R0040018.JPG
+  - R0040019.JPG
+  - R0039995.JPG
+  - R0039996.JPG
+  - R0039997.JPG
+  - R0040014.JPG
+  - R0040015.JPG
+  - R0040020.JPG
+  - R0040021.JPG
+  - R0039999.JPG
+  - R0040001.JPG

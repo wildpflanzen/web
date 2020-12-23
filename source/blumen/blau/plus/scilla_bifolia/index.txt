@@ -1,6 +1,6 @@
 ﻿family: 'Asparagaceae'
 genus: 'Scilla'
-species: 'Bifolia'
+species: 'bifolia'
 
 family_de: 'Spargelgewächse'
 species_de: 'Zweiblätrige'

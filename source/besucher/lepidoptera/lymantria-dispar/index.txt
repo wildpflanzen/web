@@ -1,6 +1,6 @@
 ﻿order: 'Lepidoptera'
 genus: 'Lymantria'
-species: 'Dispar'
+species: 'dispar'
 
 makeindex: False
 

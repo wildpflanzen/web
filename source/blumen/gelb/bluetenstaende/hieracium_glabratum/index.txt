@@ -1,6 +1,6 @@
 ﻿family: 'Asteraceae'
 genus: 'Hieracium'
-species: 'Glabratum'
+species: 'glabratum'
 
 family_de: 'Korbblütengewächse'
 species_de: 'Verkahlendes'

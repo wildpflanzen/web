@@ -1,6 +1,6 @@
 ﻿family: 'Polygonaceae'
 genus: 'Bistorta'
-species: 'Officinalis'
+species: 'officinalis'
 
 family_de: 'Knöterichgewächse'
 species_de: 'Schlangen'

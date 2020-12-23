@@ -1,6 +1,6 @@
 ﻿family: 'Cistaceae'
 genus: 'Helianthemum'
-species: 'Nummularium'
+species: 'nummularium'
 
 family_de: 'Zistrosengewächse'
 species_de: 'Gewöhnliches'

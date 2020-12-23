@@ -1,6 +1,6 @@
 ﻿order: 'Coleoptera'
 genus: 'Cetonia'
-species: 'Aurata'
+species: 'aurata'
 
 makeindex: False
 

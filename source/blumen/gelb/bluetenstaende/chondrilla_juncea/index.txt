@@ -1,6 +1,6 @@
 ﻿family: 'Asteraceae'
 genus: 'Chondrilla'
-species: 'Juncea'
+species: 'juncea'
 
 family_de: 'Korbblütengewächse'
 species_de: 'Groβe'

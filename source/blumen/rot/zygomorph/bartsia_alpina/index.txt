@@ -1,6 +1,6 @@
 ﻿family: 'Orobanchaceae'
 genus: 'Bartsia'
-species: 'Alpina'
+species: 'alpina'
 
 family_de: 'Sommerwurzgewächse'
 species_de: 'Alpenhelm'

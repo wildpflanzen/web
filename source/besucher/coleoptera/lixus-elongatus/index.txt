@@ -1,6 +1,6 @@
 ﻿order: 'Coleoptera'
 genus: 'Lixus'
-species: 'Elongatus'
+species: 'elongatus'
 
 makeindex: False
 

@@ -1,6 +1,6 @@
 ﻿order: 'Lepidoptera'
 genus: 'Melanargia'
-species: 'Galathea'
+species: 'galathea'
 
 makeindex: False
 

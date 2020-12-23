@@ -1,6 +1,6 @@
 ﻿family: 'Saxifragaceae'
 genus: 'Saxifraga'
-species: 'Crustata'
+species: 'crustata'
 
 family_de: 'Steinbrechgewächse'
 species_de: 'Krusten'

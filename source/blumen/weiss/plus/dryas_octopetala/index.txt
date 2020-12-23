@@ -1,6 +1,6 @@
 ﻿family: 'Rosaceae'
 genus: 'Dryas'
-species: 'Octopetala'
+species: 'octopetala'
 
 family_de: 'Rosengewächse'
 species_de: 'Weiße'

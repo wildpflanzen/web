@@ -1,6 +1,6 @@
 ﻿family: 'Rosaceae'
 genus: 'Potentilla'
-species: 'Reptans'
+species: 'reptans'
 
 family_de: 'Rosengewächse'
 species_de: 'Kriechendes'

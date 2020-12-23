@@ -1,6 +1,6 @@
 ﻿family: 'Lamiaceae'
 genus: 'Thymus'
-species: 'Praecox ssp. polytrichus'
+species: 'praecox ssp. polytrichus'
 
 family_de: 'Lippenblütengewächse'
 species_de: 'Alpen'

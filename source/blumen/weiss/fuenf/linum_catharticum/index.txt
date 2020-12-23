@@ -1,6 +1,6 @@
 ﻿family: 'Linaceae'
 genus: 'Linum'
-species: 'Catharticum'
+species: 'catharticum'
 
 family_de: 'Leingewächse'
 species_de: 'Purgier'

@@ -1,6 +1,6 @@
 ﻿family: 'Caryophyllaceae'
 genus: 'Stellaria'
-species: 'Graminea'
+species: 'graminea'
 
 family_de: 'Nelkengewächse'
 species_de: 'Gras'

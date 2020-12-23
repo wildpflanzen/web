@@ -1,6 +1,6 @@
 ﻿family: 'Orchidaceae'
 genus: 'Gymnadenia'
-species: 'Conopsea ssp. alpina'
+species: 'conopsea ssp. alpina'
 
 family_de: 'Orchideen'
 species_de: 'Alpen'

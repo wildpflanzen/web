@@ -1,6 +1,6 @@
 ﻿family: 'Gentianaceae'
 genus: 'Gentiana'
-species: 'Verna'
+species: 'verna'
 
 family_de: 'Enziangewächse'
 species_de: 'Frühlings'

@@ -1,6 +1,6 @@
 ﻿family: 'Asteraceae'
 genus: 'Sonchus'
-species: 'Oleraceus'
+species: 'oleraceus'
 
 family_de: 'Korbblütengewächse'
 species_de: 'Gewöhnliche Gänse-'

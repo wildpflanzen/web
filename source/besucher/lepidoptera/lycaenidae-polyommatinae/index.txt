@@ -1,6 +1,6 @@
 ﻿order: 'Lepidoptera'
 genus: 'Lycaenidae'
-species: 'Polyommatinae'
+species: 'polyommatinae'
 
 makeindex: False
 

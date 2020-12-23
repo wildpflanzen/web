@@ -1,6 +1,6 @@
 ﻿family: 'Orchidaceae'
 genus: 'Epipactis'
-species: 'Atrorubens'
+species: 'atrorubens'
 
 family_de: 'Orchideen'
 species_de: 'Rotbraune'

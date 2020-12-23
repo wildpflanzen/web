@@ -1,6 +1,6 @@
 ﻿family: 'Asteraceae'
 genus: 'Carduus'
-species: 'Defloratus ssp. rhaeticus'
+species: 'defloratus ssp. rhaeticus'
 
 family_de: 'Korbblütengewächse'
 species_de: 'Rhätische Berg-'

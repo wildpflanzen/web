@@ -1,6 +1,6 @@
 ﻿family: 'Rubiaceae'
 genus: 'Galium'
-species: 'Palustre'
+species: 'palustre'
 
 family_de: 'Rötegewächse'
 species_de: 'Sumpf'

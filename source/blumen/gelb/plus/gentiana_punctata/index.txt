@@ -1,6 +1,6 @@
 ﻿family: 'Gentianaceae'
 genus: 'Gentiana'
-species: 'Punctata'
+species: 'punctata'
 
 family_de: 'Enziangewächse'
 species_de: 'Tüpfel'

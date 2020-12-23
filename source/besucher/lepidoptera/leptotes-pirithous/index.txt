@@ -1,6 +1,6 @@
 ﻿order: 'Lepidoptera'
 genus: 'Leptotes'
-species: 'Pirithous'
+species: 'pirithous'
 
 makeindex: False
 

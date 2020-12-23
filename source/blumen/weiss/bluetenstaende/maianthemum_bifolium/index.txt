@@ -1,6 +1,6 @@
 ﻿family: 'Convallariaceae'
 genus: 'Maianthemum'
-species: 'Bifolium'
+species: 'bifolium'
 
 family_de: 'Maiglöckchengewächse'
 species_de: 'Zweiblättrige'

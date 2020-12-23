@@ -1,6 +1,6 @@
 ﻿family: 'Plantaginaceae'
 genus: 'Digitalis'
-species: 'Grandiflora'
+species: 'grandiflora'
 
 family_de: 'Wegerichgewächse'
 species_de: 'Großblütiger'

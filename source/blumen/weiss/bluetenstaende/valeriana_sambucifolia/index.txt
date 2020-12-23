@@ -1,6 +1,6 @@
 ﻿family: 'Caprifoliaceae'
 genus: 'Valeriana'
-species: 'Sambucifolia'
+species: 'sambucifolia'
 
 family_de: 'Geiβblattgewächse'
 species_de: 'Holunderblättriger'

@@ -1,0 +1,1 @@
+dir /b *.jpg > _listado_jpg.txt

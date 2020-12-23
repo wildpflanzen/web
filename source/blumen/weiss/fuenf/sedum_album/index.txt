@@ -1,6 +1,6 @@
 ﻿family: 'Crassulaceae'
 genus: 'Sedum'
-species: 'Album'
+species: 'album'
 
 family_de: 'Dickblattgewächse'
 species_de: 'Weiβe'

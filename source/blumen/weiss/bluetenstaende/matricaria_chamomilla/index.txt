@@ -1,6 +1,6 @@
 ﻿family: 'Asteraceae'
 genus: 'Matricaria'
-species: 'Chamomilla'
+species: 'chamomilla'
 
 family_de: 'Korbblütengewächse'
 species_de: 'Echte'

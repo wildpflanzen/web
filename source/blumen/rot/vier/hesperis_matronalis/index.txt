@@ -1,6 +1,6 @@
 ﻿family: 'Brassicaceae'
 genus: 'Hesperis'
-species: 'Matronalis'
+species: 'matronalis'
 
 family_de: 'Kreuzblütengewächse'
 species_de: 'Gewöhnliche'

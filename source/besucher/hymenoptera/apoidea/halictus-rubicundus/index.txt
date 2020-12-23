@@ -1,6 +1,6 @@
 ﻿order: 'Hymenoptera'
 genus: 'Halictus'
-species: 'Rubicundus'
+species: 'rubicundus'
 
 makeindex: False
 

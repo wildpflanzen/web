@@ -1,6 +1,6 @@
 ﻿family: 'Orchidaceae'
 genus: 'Platanthera'
-species: 'Bifolia'
+species: 'bifolia'
 
 family_de: 'Orchideen'
 species_de: 'Zweiblättrige'

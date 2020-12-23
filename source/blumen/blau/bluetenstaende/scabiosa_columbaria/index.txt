@@ -1,6 +1,6 @@
 ﻿family: 'Caprifoliaceae'
 genus: 'Scabiosa'
-species: 'Columbaria'
+species: 'columbaria'
 
 family_de: 'Geiβblattgewächse'
 species_de: 'Tauben'

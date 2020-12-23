@@ -2,7 +2,7 @@
 
 family: 'Asteraceae'
 genus: 'Artemisia'
-species: 'Absinthium'
+species: 'absinthium'
 
 family_de: 'Korbblütler'
 species_de: ['Wermutkraut', 'Echt-Wermut']
@@ -12,7 +12,7 @@ floration: 'Juli - September'
 
 ---
 
-date: '2019'
+date: '8.2019'
 location: 'Trafoi'
 images:
   - R0037542.jpg

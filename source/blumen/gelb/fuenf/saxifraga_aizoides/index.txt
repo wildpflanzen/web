@@ -1,6 +1,6 @@
 ﻿family: 'Saxifragaceae'
 genus: 'Saxifraga'
-species: 'Aizoides'
+species: 'aizoides'
 
 family_de: 'Steinbrechgewächse'
 species_de: 'Fetthennen'

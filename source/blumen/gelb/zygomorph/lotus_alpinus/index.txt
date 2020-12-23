@@ -1,6 +1,6 @@
 ﻿family: 'Fabaceae'
 genus: 'Lotus'
-species: 'Alpinus'
+species: 'alpinus'
 
 family_de: 'Hülsenfrüchtler'
 species_de: 'Alpen'

@@ -1,6 +1,6 @@
 ﻿family: 'Gentianaceae'
 genus: 'Gentiana'
-species: 'Asclepiadea'
+species: 'asclepiadea'
 
 family_de: 'Enziangewächse'
 species_de: 'Schwalbenwurz'

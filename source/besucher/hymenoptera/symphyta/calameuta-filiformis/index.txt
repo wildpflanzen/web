@@ -1,6 +1,6 @@
 ﻿order: 'Hymenoptera'
 genus: 'Calameuta'
-species: 'Filiformis'
+species: 'filiformis'
 
 makeindex: False
 

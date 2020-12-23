@@ -1,6 +1,6 @@
 ﻿family: 'Solanaceae'
 genus: 'Solanum'
-species: 'Nigrum'
+species: 'nigrum'
 
 family_de: 'Nachtschattengewächse'
 species_de: 'Schwarzer'

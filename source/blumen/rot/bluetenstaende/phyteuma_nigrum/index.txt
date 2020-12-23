@@ -1,6 +1,6 @@
 ﻿family: 'Campanulaceae'
 genus: 'Phyteuma'
-species: 'Nigrum'
+species: 'nigrum'
 
 family_de: 'Glockenblumengewächse'
 species_de: 'Schwarze'

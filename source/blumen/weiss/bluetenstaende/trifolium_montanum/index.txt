@@ -1,6 +1,6 @@
 ﻿family: 'Fabaceae'
 genus: 'Trifolium'
-species: 'Montanum'
+species: 'montanum'
 
 family_de: 'Hülsenfrüchtler'
 species_de: 'Berg'

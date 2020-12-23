@@ -1,6 +1,6 @@
 ﻿family: 'Primulaceae'
 genus: 'Primula'
-species: 'Haller'
+species: 'haller'
 
 family_de: 'Primelgewächse'
 species_de: 'Hallers'

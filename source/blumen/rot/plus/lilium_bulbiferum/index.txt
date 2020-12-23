@@ -1,6 +1,6 @@
 ﻿family: 'Liliaceae'
 genus: 'Lilium'
-species: 'Bulbiferum'
+species: 'bulbiferum'
 
 family_de: 'Liliengewächse'
 species_de: 'Feuer'

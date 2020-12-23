@@ -1,6 +1,6 @@
 ﻿family: 'Lamiaceae'
 genus: 'Acinos'
-species: 'Alpinus'
+species: 'alpinus'
 
 family_de: 'Lippenblütengewächse'
 species_de: 'Alpen'

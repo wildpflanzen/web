@@ -1,6 +1,6 @@
 ﻿family: 'Brassicaceae'
 genus: 'Nasturtium'
-species: 'Officinale'
+species: 'officinale'
 
 family_de: 'Kreuzblütengewächse'
 species_de: 'Echte'

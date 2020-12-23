@@ -1,6 +1,6 @@
 ﻿order: 'Lepidoptera'
 genus: 'Hesperia'
-species: 'Comma'
+species: 'comma'
 
 makeindex: False
 

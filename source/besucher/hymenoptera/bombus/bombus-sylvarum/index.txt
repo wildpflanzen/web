@@ -1,6 +1,6 @@
 ﻿order: 'Hymenoptera'
 genus: 'Bombus'
-species: 'Sylvarum'
+species: 'sylvarum'
 
 makeindex: False
 

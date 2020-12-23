@@ -1,6 +1,6 @@
 ﻿family: 'Amaryllidaceae'
 genus: 'Galanthus'
-species: 'Nivalis'
+species: 'nivalis'
 
 family_de: 'Amaryllisgewächse'
 species_de: 'Kleines'

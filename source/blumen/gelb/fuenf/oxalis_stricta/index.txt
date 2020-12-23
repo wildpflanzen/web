@@ -1,6 +1,6 @@
 ﻿family: 'Oxalidaceae'
 genus: 'Oxalis'
-species: 'Stricta'
+species: 'stricta'
 
 family_de: 'Sauerkleegewächse'
 species_de: 'Aufrechter'

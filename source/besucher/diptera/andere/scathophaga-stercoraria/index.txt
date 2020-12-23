@@ -1,6 +1,6 @@
 ﻿order: 'Diptera'
 genus: 'Scathophaga'
-species: 'Stercoraria'
+species: 'stercoraria'
 
 makeindex: False
 

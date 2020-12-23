@@ -1,6 +1,6 @@
 ﻿family: 'Crassulaceae'
 genus: 'Sedum'
-species: 'Rupestre'
+species: 'rupestre'
 
 family_de: 'Dickblattgewächse'
 species_de: 'Felsen'

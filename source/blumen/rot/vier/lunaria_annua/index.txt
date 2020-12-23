@@ -1,6 +1,6 @@
 ﻿family: 'Brassicaceae'
 genus: 'Lunaria'
-species: 'Annua'
+species: 'annua'
 
 family_de: 'Kreuzblütengewächse'
 species_de: 'Einjährige'

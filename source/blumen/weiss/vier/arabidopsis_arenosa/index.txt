@@ -1,6 +1,6 @@
 ﻿family: 'Brassicaceae'
 genus: 'Arabidopsis'
-species: 'Arenosa'
+species: 'arenosa'
 
 family_de: 'Kreuzblütengewächse'
 species_de: 'Sand'

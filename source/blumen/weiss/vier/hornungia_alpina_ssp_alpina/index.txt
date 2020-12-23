@@ -1,6 +1,6 @@
 ﻿family: 'Brassicaceae'
 genus: 'Hornungia'
-species: 'Alpina ssp. alpina'
+species: 'alpina ssp. alpina'
 
 family_de: 'Kreuzblütengewächse'
 species_de: 'Kalk'

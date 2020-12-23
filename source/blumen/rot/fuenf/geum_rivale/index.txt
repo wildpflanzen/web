@@ -1,6 +1,6 @@
 ﻿family: 'Rosaceae'
 genus: 'Geum'
-species: 'Rivale'
+species: 'rivale'
 
 family_de: 'Rosengewächse'
 species_de: 'Bach'

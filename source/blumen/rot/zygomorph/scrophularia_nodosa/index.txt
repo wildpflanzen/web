@@ -1,6 +1,6 @@
 ﻿family: 'Scrophulariaceae'
 genus: 'Scrophularia'
-species: 'Nodosa'
+species: 'nodosa'
 
 family_de: 'Braunwurzgewächse'
 species_de: 'Knotige'

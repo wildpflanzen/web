@@ -1,6 +1,6 @@
 ﻿family: 'Brassicaceae'
 genus: 'Draba'
-species: 'Praecox'
+species: 'praecox'
 
 family_de: 'Kreuzblütengewächse'
 species_de: 'Frühes'

@@ -1,6 +1,6 @@
 ﻿family: 'Rosaceae'
 genus: 'Geum'
-species: 'Montanum'
+species: 'montanum'
 
 family_de: 'Rosengewächse'
 species_de: 'Berg'

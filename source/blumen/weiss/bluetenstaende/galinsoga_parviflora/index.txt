@@ -1,6 +1,6 @@
 ﻿family: 'Asteraceae'
 genus: 'Galinsoga'
-species: 'Parviflora'
+species: 'parviflora'
 
 family_de: 'Korbblütengewächse'
 species_de: 'Kleinblütiges'

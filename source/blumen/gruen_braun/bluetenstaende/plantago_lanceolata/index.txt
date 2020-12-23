@@ -1,6 +1,6 @@
 ﻿family: 'Plantaginaceae'
 genus: 'Plantago'
-species: 'Lanceolata'
+species: 'lanceolata'
 
 family_de: 'Wegerichgewächse'
 species_de: 'Spitz'

@@ -1,6 +1,6 @@
 ﻿family: 'Amaryllidaceae'
 genus: 'Leucojum'
-species: 'Vernum'
+species: 'vernum'
 
 family_de: 'Amaryllisgewächse'
 species_de: ['Märzenbecher', 'Frühlings']

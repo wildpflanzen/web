@@ -1,6 +1,6 @@
 ﻿family: 'Asteraceae'
 genus: 'Cirsium'
-species: 'Spinosissimum'
+species: 'spinosissimum'
 
 family_de: 'Korbblütengewächse'
 species_de: 'Alpen Kratz-'

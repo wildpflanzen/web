@@ -1,6 +1,6 @@
 ﻿family: 'Ranunculaceae'
 genus: 'Anemone'
-species: 'Nemorosa'
+species: 'nemorosa'
 
 family_de: 'Hahnenfuβgewächse'
 species_de: 'Buschwindröschen'

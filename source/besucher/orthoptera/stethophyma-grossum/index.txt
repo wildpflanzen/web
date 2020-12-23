@@ -1,6 +1,6 @@
 ﻿order: 'Orthoptera'
 genus: 'Stethophyma'
-species: 'Grossum'
+species: 'grossum'
 
 makeindex: False
 

@@ -1,6 +1,6 @@
 ﻿family: 'Saxifragaceae'
 genus: 'Saxifraga'
-species: 'Rotundifolia'
+species: 'rotundifolia'
 
 family_de: 'Steinbrechgewächse'
 species_de: 'Rundblättriger'

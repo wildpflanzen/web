@@ -1,6 +1,6 @@
 ﻿family: 'Rosaceae'
 genus: 'Agrimonia'
-species: 'Eupatoria'
+species: 'eupatoria'
 
 family_de: 'Rosengewächse'
 species_de: 'Gemeiner'

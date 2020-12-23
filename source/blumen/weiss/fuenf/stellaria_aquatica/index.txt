@@ -1,6 +1,6 @@
 ﻿family: 'Caryophyllaceae'
 genus: 'Stellaria'
-species: 'Aquatica'
+species: 'aquatica'
 
 family_de: 'Nelkengewächse'
 species_de: 'Gemeiner'

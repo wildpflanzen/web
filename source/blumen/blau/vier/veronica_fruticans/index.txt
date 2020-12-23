@@ -1,6 +1,6 @@
 ﻿family: 'Plantaginaceae'
 genus: 'Veronica'
-species: 'Fruticans'
+species: 'fruticans'
 
 family_de: 'Wegerichgewächse'
 species_de: 'Felsen'

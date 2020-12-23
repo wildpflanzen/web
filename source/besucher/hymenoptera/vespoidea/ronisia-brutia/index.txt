@@ -1,6 +1,6 @@
 ﻿order: 'Hymenoptera'
 genus: 'Ronisia'
-species: 'Brutia'
+species: 'brutia'
 
 makeindex: False
 

@@ -1,6 +1,6 @@
 ﻿family: 'Campanulaceae'
 genus: 'Phyteuma'
-species: 'Ovatum'
+species: 'ovatum'
 
 family_de: 'Glockenblumengewächse'
 species_de: 'Haller'

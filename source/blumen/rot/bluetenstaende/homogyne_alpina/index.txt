@@ -1,6 +1,6 @@
 ﻿family: 'Asteraceae'
 genus: 'Homogyne'
-species: 'Alpina'
+species: 'alpina'
 
 family_de: 'Korbblütengewächse'
 species_de: 'Gemeiner'

@@ -1,6 +1,6 @@
 ﻿family: 'Apocynaceae'
 genus: 'Vincetoxicum'
-species: 'Hirundinaria'
+species: 'hirundinaria'
 
 family_de: 'Hundsgiftgewächse'
 species_de: 'Weiβe'

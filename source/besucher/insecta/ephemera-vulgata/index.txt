@@ -1,6 +1,6 @@
 ﻿order: 'Insecta'
 genus: 'Ephemera'
-species: 'Vulgata'
+species: 'vulgata'
 
 makeindex: False
 

@@ -1,6 +1,6 @@
 ﻿family: 'Plantaginaceae'
 genus: 'Linaria'
-species: 'Vulgaris'
+species: 'vulgaris'
 
 family_de: 'Wegerichgewächse'
 species_de: 'Echte'

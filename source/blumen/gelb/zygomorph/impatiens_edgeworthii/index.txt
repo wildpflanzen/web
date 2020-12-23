@@ -1,6 +1,6 @@
 ﻿family: 'Balsaminaceae'
 genus: 'Impatiens'
-species: 'Edgeworth'
+species: 'edgeworth'
 
 family_de: 'Balsaminengewächse'
 species_de: 'Buntes'

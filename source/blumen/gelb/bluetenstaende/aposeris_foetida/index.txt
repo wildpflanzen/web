@@ -1,6 +1,6 @@
 ﻿family: 'Asteraceae'
 genus: 'Aposeris'
-species: 'Foetida'
+species: 'foetida'
 
 family_de: 'Korbblütengewächse'
 species_de: 'Stinkender'

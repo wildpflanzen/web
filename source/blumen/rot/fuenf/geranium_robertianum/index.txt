@@ -1,6 +1,6 @@
 ﻿family: 'Geraniaceae'
 genus: 'Geranium'
-species: 'Robertianum'
+species: 'robertianum'
 
 family_de: 'Storchschnabelgewächse'
 species_de: 'Stinkender'

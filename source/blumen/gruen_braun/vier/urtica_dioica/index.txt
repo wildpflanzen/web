@@ -1,6 +1,6 @@
 ﻿family: 'Urticaceae'
 genus: 'Urtica'
-species: 'Dioica'
+species: 'dioica'
 
 family_de: 'Brennnesselgewächse'
 species_de: 'Groβe'

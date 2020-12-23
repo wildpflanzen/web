@@ -1,6 +1,6 @@
 ﻿family: ''
 genus: 'Luzula'
-species: 'Nivea'
+species: 'nivea'
 
 family_de: ''
 species_de: 'Schnee'

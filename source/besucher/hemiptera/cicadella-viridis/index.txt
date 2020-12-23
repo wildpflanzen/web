@@ -1,6 +1,6 @@
 ﻿order: 'Hemiptera'
 genus: 'Cicadella'
-species: 'Viridis'
+species: 'viridis'
 
 makeindex: False
 

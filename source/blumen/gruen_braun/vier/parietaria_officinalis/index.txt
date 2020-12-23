@@ -1,6 +1,6 @@
 ﻿family: 'Urticaceae'
 genus: 'Parietaria'
-species: 'Officinalis'
+species: 'officinalis'
 
 family_de: 'Brennnesselgewächse'
 species_de: 'Aufrechte'

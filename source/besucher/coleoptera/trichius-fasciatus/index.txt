@@ -1,6 +1,6 @@
 ﻿order: 'Coleoptera'
 genus: 'Trichius'
-species: 'Fasciatus'
+species: 'fasciatus'
 
 makeindex: False
 

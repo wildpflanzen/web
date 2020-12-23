@@ -1,6 +1,6 @@
 ﻿family: 'Caryophyllaceae'
 genus: 'Silene'
-species: 'Acaulis'
+species: 'acaulis'
 
 family_de: 'Nelkengewächse'
 species_de: 'Stängelloses'

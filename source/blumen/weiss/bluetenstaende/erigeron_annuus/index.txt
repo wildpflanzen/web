@@ -1,6 +1,6 @@
 ﻿family: 'Asteraceae'
 genus: 'Erigeron'
-species: 'Annuus'
+species: 'annuus'
 
 family_de: 'Korbblütengewächse'
 species_de: 'Einjähriges'

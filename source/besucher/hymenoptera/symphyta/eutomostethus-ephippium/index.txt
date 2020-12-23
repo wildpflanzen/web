@@ -1,6 +1,6 @@
 ﻿order: 'Hymenoptera'
 genus: 'Eutomostethus'
-species: 'Ephippium'
+species: 'ephippium'
 
 makeindex: False
 

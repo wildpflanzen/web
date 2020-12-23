@@ -1,6 +1,6 @@
 ﻿family: 'Plantaginaceae'
 genus: 'Veronica'
-species: 'Persica'
+species: 'persica'
 
 family_de: 'Wegerichgewächse'
 species_de: 'Persische'

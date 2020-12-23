@@ -1,6 +1,6 @@
 ﻿family: 'Nymphaeaceae'
 genus: 'Nymphaea'
-species: 'Alba'
+species: 'alba'
 
 family_de: 'Seerosengewächse'
 species_de: 'Weiβe'

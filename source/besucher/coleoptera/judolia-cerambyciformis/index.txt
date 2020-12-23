@@ -1,6 +1,6 @@
 ﻿order: 'Coleoptera'
 genus: 'Judolia'
-species: 'Cerambyciformis'
+species: 'cerambyciformis'
 
 makeindex: False
 

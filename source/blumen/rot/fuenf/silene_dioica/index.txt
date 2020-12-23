@@ -1,6 +1,6 @@
 ﻿family: 'Caryophyllaceae'
 genus: 'Silene'
-species: 'Dioica'
+species: 'dioica'
 
 family_de: 'Nelkengewächse'
 species_de: 'Rote'
@@ -10,10 +10,9 @@ floration: 'Juni - August'
 
 ---
 
-date: '6.2013'
-location: 'Tiergarten, Berlin'
+date: '8.2018'
+location: 'Ortler-Gruppe, Italien'
 images:
-  - s1.jpg
   - R0038650.jpg
   - R0038651.jpg
   - R0038649.jpg

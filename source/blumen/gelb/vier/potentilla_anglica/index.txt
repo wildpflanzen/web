@@ -1,12 +1,12 @@
 ﻿family: 'Rosaceae'
 genus: 'Potentilla'
-species: 'Anglica'
+species: 'anglica'
 
 family_de: 'Rosengewächse'
 species_de: 'Niederliegendes'
 genus_de: 'Fingerkraut'
 
-floration: ''
+floration: 'Mai - August'
 
 ---
 

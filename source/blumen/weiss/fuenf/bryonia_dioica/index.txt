@@ -1,6 +1,6 @@
 ﻿family: 'Cucurbitaceae'
 genus: 'Bryonia'
-species: 'Dioica'
+species: 'dioica'
 
 family_de: 'Kürbisgewächse'
 species_de: 'Rotbeerige'

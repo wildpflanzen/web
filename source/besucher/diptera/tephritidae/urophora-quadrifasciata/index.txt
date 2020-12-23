@@ -1,6 +1,6 @@
 ﻿order: 'Diptera'
 genus: 'Urophora'
-species: 'Quadrifasciata'
+species: 'quadrifasciata'
 
 makeindex: False
 

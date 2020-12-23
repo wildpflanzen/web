@@ -1,6 +1,6 @@
 ﻿family: 'Primulaceae'
 genus: 'Anagallis'
-species: 'Arvensis'
+species: 'arvensis'
 
 family_de: 'Primelgewächse'
 species_de: 'Acker'
@@ -10,8 +10,8 @@ floration: 'Juni - September'
 
 ---
 
-date: '2017'
-location: ''
+date: '7.2017'
+location: 'Möllendorf, Brandenburg'
 images:
   - R0036309.jpg
   - R0036307.jpg

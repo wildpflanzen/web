@@ -1,6 +1,6 @@
 ﻿family: 'Rosaceae'
 genus: 'Potentilla'
-species: 'Caulescens'
+species: 'caulescens'
 
 family_de: 'Rosengewächse'
 species_de: 'Stängel'

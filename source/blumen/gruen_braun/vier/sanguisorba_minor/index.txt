@@ -1,6 +1,6 @@
 ﻿family: 'Rosaceae'
 genus: 'Sanguisorba'
-species: 'Minor'
+species: 'minor'
 
 family_de: 'Rosengewächse'
 species_de: 'Kleiner'

@@ -1,0 +1,3 @@
+﻿group_title: 'Grüne, Fünf Blütenblätter'
+navi_name: 'Grüne, fünf Blütenblätter'
+

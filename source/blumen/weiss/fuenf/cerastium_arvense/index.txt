@@ -1,6 +1,6 @@
 ﻿family: 'Caryophyllaceae'
 genus: 'Cerastium'
-species: 'Arvense'
+species: 'arvense'
 
 family_de: 'Nelkengewächse'
 species_de: 'Gewöhnliches·acker'

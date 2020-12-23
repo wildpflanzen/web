@@ -1,6 +1,6 @@
 ﻿family: 'Brassicaceae'
 genus: 'Diplotaxis'
-species: 'Tenuifolia'
+species: 'tenuifolia'
 
 family_de: 'Kreuzblütengewächse'
 species_de: 'Schmalblättrige'

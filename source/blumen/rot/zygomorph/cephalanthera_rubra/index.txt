@@ -1,6 +1,6 @@
 ﻿family: 'Orchidaceae'
 genus: 'Cephalanthera'
-species: 'Rubra'
+species: 'rubra'
 
 family_de: 'Orchideen'
 species_de: 'Rotes'

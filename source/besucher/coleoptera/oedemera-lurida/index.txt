@@ -1,6 +1,6 @@
 ﻿order: 'Coleoptera'
 genus: 'Oedemera'
-species: 'Lurida'
+species: 'lurida'
 
 makeindex: False
 

@@ -1,6 +1,6 @@
 ﻿family: 'Ranunculaceae'
 genus: 'Ranunculus'
-species: 'Auricomus'
+species: 'auricomus'
 
 family_de: 'Hahnenfuβgewächse'
 species_de: 'Goldhahnenfuβ'

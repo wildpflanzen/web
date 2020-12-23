@@ -1,6 +1,6 @@
 ﻿family: 'Lamiaceae'
 genus: 'Ballota'
-species: 'Nigra'
+species: 'nigra'
 
 family_de: 'Lippenblütengewächse'
 species_de: 'Schwarznessel'

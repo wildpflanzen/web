@@ -1,6 +1,6 @@
 ﻿family: 'Hydrocharitaceae'
 genus: 'Hydrocharis'
-species: 'Morsus-ranae'
+species: 'morsus-ranae'
 
 family_de: 'Froschbissgewächse'
 species_de: 'Europäische'

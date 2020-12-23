@@ -1,6 +1,6 @@
 ﻿family: 'Rosaceae'
 genus: 'Potentilla'
-species: 'Rupestris'
+species: 'rupestris'
 
 family_de: 'Rosengewächse'
 species_de: 'Felsen'

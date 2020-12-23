@@ -1,6 +1,6 @@
 ﻿order: 'Arachnida'
 genus: 'Aculepeira'
-species: 'Ceropegia'
+species: 'ceropegia'
 
 makeindex: False
 

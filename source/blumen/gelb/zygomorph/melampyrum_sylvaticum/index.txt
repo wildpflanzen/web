@@ -1,6 +1,6 @@
 ﻿family: 'Orobanchaceae'
 genus: 'Melampyrum'
-species: 'Sylvaticum'
+species: 'sylvaticum'
 
 family_de: 'Sommerwurzgewächse'
 species_de: 'Wald'

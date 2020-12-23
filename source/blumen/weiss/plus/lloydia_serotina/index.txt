@@ -1,6 +1,6 @@
 ﻿family: 'Liliaceae'
 genus: 'Lloydia'
-species: 'Serotina'
+species: 'serotina'
 
 family_de: 'Liliengewächse'
 species_de: 'Faltenlilie'

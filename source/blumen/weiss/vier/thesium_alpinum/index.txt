@@ -1,6 +1,6 @@
 ﻿family: 'Santalaceae'
 genus: 'Thesium'
-species: 'Alpinum'
+species: 'alpinum'
 
 family_de: 'Sandelholzgewächse'
 species_de: 'Alpen'

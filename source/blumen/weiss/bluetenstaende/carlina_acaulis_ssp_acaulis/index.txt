@@ -1,6 +1,6 @@
 ﻿family: 'Asteraceae'
 genus: 'Carlina'
-species: 'Acaulis ssp. acaulis'
+species: 'acaulis ssp. acaulis'
 
 family_de: 'Korbblütengewächse'
 species_de: 'Gewöhnliche Silber-'

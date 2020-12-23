@@ -1,6 +1,6 @@
 ﻿order: 'Orthoptera'
 genus: 'Grillotalpa'
-species: 'Grillotalpa'
+species: 'grillotalpa'
 
 makeindex: False
 

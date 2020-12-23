@@ -1,6 +1,6 @@
 ﻿order: 'Diptera'
 genus: 'Syrphus'
-species: 'Ribesii'
+species: 'ribesii'
 
 makeindex: False
 

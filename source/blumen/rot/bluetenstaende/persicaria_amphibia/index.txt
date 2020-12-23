@@ -1,6 +1,6 @@
 ﻿family: 'Polygonaceae'
 genus: 'Persicaria'
-species: 'Amphibia'
+species: 'amphibia'
 
 family_de: 'Knöterichgewächse'
 species_de: 'Wasser'

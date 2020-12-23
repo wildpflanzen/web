@@ -1,6 +1,6 @@
 ﻿family: 'Caryophyllaceae'
 genus: 'Saponaria'
-species: 'Officinalis'
+species: 'officinalis'
 
 family_de: 'Nelkengewächse'
 species_de: 'Echtes'

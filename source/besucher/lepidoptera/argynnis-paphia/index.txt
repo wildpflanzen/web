@@ -1,6 +1,6 @@
 ﻿order: 'Lepidoptera'
 genus: 'Argynnis'
-species: 'Paphia'
+species: 'paphia'
 
 makeindex: False
 

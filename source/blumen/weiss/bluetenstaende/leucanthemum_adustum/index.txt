@@ -1,6 +1,6 @@
 ﻿family: 'Asteraceae'
 genus: 'Leucanthemum'
-species: 'Adustum'
+species: 'adustum'
 
 family_de: 'Korbblütengewächse'
 species_de: 'Berg'

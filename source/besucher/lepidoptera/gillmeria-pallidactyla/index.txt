@@ -1,6 +1,6 @@
 ﻿order: 'Lepidoptera'
 genus: 'Gillmeria'
-species: 'Pallidactyla'
+species: 'pallidactyla'
 
 makeindex: False
 

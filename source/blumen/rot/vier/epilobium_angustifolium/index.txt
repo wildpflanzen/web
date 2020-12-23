@@ -1,6 +1,6 @@
 ﻿family: 'Onagraceae'
 genus: 'Epilobium'
-species: 'Angustifolium'
+species: 'angustifolium'
 
 family_de: 'Nachtkerzengewächse'
 species_de: 'Schmalblättriges'

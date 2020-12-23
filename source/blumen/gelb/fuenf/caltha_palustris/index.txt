@@ -1,6 +1,6 @@
 ﻿family: 'Ranunculaceae'
 genus: 'Caltha'
-species: 'Palustris'
+species: 'palustris'
 
 family_de: 'Hahnenfuβgewächse'
 species_de: 'Sumpfdotterblume'

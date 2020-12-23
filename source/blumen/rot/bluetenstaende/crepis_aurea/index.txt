@@ -1,6 +1,6 @@
 ﻿family: 'Asteraceae'
 genus: 'Crepis'
-species: 'Aurea'
+species: 'aurea'
 
 family_de: 'Korbblütengewächse'
 species_de: 'Gold'

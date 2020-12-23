@@ -1,6 +1,6 @@
 ﻿family: 'Caryophyllaceae'
 genus: 'Gypsophila'
-species: 'Repens'
+species: 'repens'
 
 family_de: 'Nelkengewächse'
 species_de: 'Kriechendes'

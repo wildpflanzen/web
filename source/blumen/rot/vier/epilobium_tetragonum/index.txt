@@ -1,0 +1,26 @@
+﻿family: 'Onagraceae'
+genus: 'Epilobium'
+species: 'tetragonum'
+
+family_de: 'Nachtkerzengewächse'
+species_de: 'Vierkantiges'
+genus_de: 'Weidenröschen'
+
+floration: 'Juli - August'
+
+---
+
+date: '8.2019'
+location: 'Godnasee, Brandenburg'
+images:
+  - R0040040.JPG
+  - R0040024.JPG
+  - R0040025.JPG
+  - R0040026.JPG
+  - R0040027.JPG
+  - R0040027_2.JPG
+  - R0040028.JPG
+  - R0040029.JPG
+  - R0040031.JPG
+  - R0040041.JPG
+  - R0040043.JPG

@@ -1,6 +1,6 @@
 ﻿family: 'Geraniaceae'
 genus: 'Erodium'
-species: 'Cicutarium'
+species: 'cicutarium'
 
 family_de: 'Storchschnabelgewächse'
 species_de: 'Gewöhnlicher'

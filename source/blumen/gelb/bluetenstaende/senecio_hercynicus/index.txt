@@ -1,6 +1,6 @@
 ﻿family: 'Asteraceae'
 genus: 'Senecio'
-species: 'Hercynicus'
+species: 'hercynicus'
 
 family_de: 'Korbblütengewächse'
 species_de: 'Hain'

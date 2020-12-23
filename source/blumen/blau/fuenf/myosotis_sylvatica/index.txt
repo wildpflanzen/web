@@ -1,6 +1,6 @@
 ﻿family: 'Boraginaceae'
 genus: 'Myosotis'
-species: 'Sylvatica'
+species: 'sylvatica'
 
 family_de: 'Raublattgewächse'
 species_de: 'Wald'

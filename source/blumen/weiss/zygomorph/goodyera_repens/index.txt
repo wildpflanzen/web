@@ -1,6 +1,6 @@
 ﻿family: 'Orchidaceae'
 genus: 'Goodyera'
-species: 'Repens'
+species: 'repens'
 
 family_de: 'Orchideen'
 species_de: 'Kriechendes'

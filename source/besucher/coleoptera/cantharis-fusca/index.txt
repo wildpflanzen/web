@@ -1,6 +1,6 @@
 ﻿order: 'Coleoptera'
 genus: 'Cantharis'
-species: 'Fusca'
+species: 'fusca'
 
 makeindex: False
 

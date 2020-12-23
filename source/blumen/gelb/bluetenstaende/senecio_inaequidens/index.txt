@@ -1,6 +1,6 @@
 ﻿family: 'Asteraceae'
 genus: 'Senecio'
-species: 'Inaequidens'
+species: 'inaequidens'
 
 family_de: 'Korbblütengewächse'
 species_de: 'Schmalblättriges'

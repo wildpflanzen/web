@@ -1,6 +1,6 @@
 ﻿family: ''
 genus: 'Eriophorum'
-species: 'Vaginatum'
+species: 'vaginatum'
 
 family_de: ''
 species_de: ''

@@ -1,6 +1,6 @@
 ﻿order: 'Hymenoptera'
 genus: 'Ancistrocerus'
-species: 'Parietum'
+species: 'parietum'
 
 makeindex: False
 

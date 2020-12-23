@@ -4,6 +4,7 @@ navi_name: 'Gelbe bis vier Blütenblätter'
 listdir:
   - papaver_alpinum_kerneri
   - potentilla_anglica
+  - potentilla_erecta
   - erysimum_cheiranthoides
   - euphorbia_cyparissias
   - diplotaxis_tenuifolia

@@ -1,6 +1,6 @@
 ﻿family: 'Saxifragaceae'
 genus: 'Saxifraga'
-species: 'Bryoides'
+species: 'bryoides'
 
 family_de: 'Steinbrechgewächse'
 species_de: 'Moos'

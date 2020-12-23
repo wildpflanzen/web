@@ -1,6 +1,6 @@
 ﻿family: 'Caryophyllaceae'
 genus: 'Dianthus'
-species: 'Monspessulanus'
+species: 'monspessulanus'
 
 family_de: 'Nelkengewächse'
 species_de: 'Montpellier'

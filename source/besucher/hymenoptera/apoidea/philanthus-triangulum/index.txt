@@ -1,6 +1,6 @@
 ﻿order: 'Hymenoptera'
 genus: 'Philanthus'
-species: 'Triangulum'
+species: 'triangulum'
 
 makeindex: False
 

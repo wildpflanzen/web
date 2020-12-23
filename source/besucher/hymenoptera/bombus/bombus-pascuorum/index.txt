@@ -1,6 +1,6 @@
 ﻿order: 'Hymenoptera'
 genus: 'Bombus'
-species: 'Pascuorum'
+species: 'pascuorum'
 
 makeindex: False
 

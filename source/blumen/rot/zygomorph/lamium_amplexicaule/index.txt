@@ -1,6 +1,6 @@
 ﻿family: 'Lamiaceae'
 genus: 'Lamium'
-species: 'Amplexicaule'
+species: 'amplexicaule'
 
 family_de: 'Lippenblütengewächse'
 species_de: 'Stängelumfassende'

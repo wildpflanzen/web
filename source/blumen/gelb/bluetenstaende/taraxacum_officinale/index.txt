@@ -1,6 +1,6 @@
 ﻿family: 'Asteraceae'
 genus: 'Taraxacum'
-species: 'Officinale'
+species: 'officinale'
 
 family_de: 'Korbblütengewächse'
 species_de: 'Gewöhnliche'

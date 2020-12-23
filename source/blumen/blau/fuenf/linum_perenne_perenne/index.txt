@@ -1,6 +1,6 @@
 ﻿family: 'Linaceae'
 genus: 'Linum'
-species: 'Perenne ssp perenne'
+species: 'perenne ssp perenne'
 
 family_de: 'Leingewächse'
 species_de: 'Ausdauernder'

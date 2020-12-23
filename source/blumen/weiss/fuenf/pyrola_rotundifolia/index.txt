@@ -1,6 +1,6 @@
 ﻿family: 'Ericaceae'
 genus: 'Pyrola'
-species: 'Rotundifolia'
+species: 'rotundifolia'
 
 family_de: 'Heidekrautgewächse'
 species_de: 'Rundblättriges'

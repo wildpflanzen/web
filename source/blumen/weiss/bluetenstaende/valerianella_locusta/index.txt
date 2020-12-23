@@ -1,6 +1,6 @@
 ﻿family: 'Caprifoliaceae'
 genus: 'Valerianella'
-species: 'Locusta'
+species: 'locusta'
 
 family_de: 'Geiβblattgewächse'
 species_de: 'Gewöhnlicher'

@@ -1,6 +1,6 @@
 ﻿order: 'Lepidoptera'
 genus: 'Zygaena'
-species: 'Filipendulae'
+species: 'filipendulae'
 
 makeindex: False
 

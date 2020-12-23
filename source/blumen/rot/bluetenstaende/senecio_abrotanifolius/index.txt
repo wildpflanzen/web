@@ -1,6 +1,6 @@
 ﻿family: 'Asteraceae'
 genus: 'Senecio'
-species: 'Abrotanifolius'
+species: 'abrotanifolius'
 
 family_de: 'Korbblütler'
 species_de: 'Eberrauten'
@@ -10,8 +10,8 @@ floration: 'Juli - September'
 
 ---
 
-date: '2018'
-location: 'Ortlergruppe'
+date: '8.2018'
+location: 'Ortler-Gruppe, Italien'
 images:
   - R0037696.jpg
   - R0037698.jpg

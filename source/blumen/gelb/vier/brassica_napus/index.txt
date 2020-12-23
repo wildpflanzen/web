@@ -1,6 +1,6 @@
 ﻿family: 'Brassicaceae'
 genus: 'Brassica'
-species: 'Napus'
+species: 'napus'
 
 family_de: 'Kreuzblütengewächse'
 species_de: 'Raps'

@@ -1,6 +1,6 @@
 ﻿family: 'Rubiaceae'
 genus: 'Cruciata'
-species: 'Laevipes'
+species: 'laevipes'
 
 family_de: 'Rötegewächse'
 species_de: 'Gewimpertes'
@@ -13,9 +13,10 @@ floration: 'April - August'
 date: '8.2015'
 location: 'Texelgruppe, Italien'
 images:
-  - 1.jpg
-  - 2.jpg
+  - 5.jpg
   - 3.jpg
   - 4.jpg
-  - 5.jpg
   - 6.jpg
+  - 2.jpg
+  - 1.jpg
+  

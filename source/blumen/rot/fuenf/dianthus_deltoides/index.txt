@@ -1,6 +1,6 @@
 ﻿family: 'Caryophyllaceae'
 genus: 'Dianthus'
-species: 'Deltoides'
+species: 'deltoides'
 
 family_de: 'Nelkengewächse'
 species_de: 'Heide'

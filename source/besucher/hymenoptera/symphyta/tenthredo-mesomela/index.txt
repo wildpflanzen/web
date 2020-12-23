@@ -1,6 +1,6 @@
 ﻿order: 'Hymenoptera'
 genus: 'Tenthredo'
-species: 'Mesomela'
+species: 'mesomela'
 
 makeindex: False
 

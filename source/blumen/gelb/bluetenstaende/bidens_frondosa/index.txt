@@ -1,6 +1,6 @@
 ﻿family: 'Asteraceae'
 genus: 'Bidens'
-species: 'Frondosa'
+species: 'frondosa'
 
 family_de: 'Korbblütengewächse'
 species_de: 'Schwarzfrüchtiger'

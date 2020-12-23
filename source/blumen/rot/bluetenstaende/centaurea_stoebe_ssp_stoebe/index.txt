@@ -1,6 +1,6 @@
 ﻿family: 'Asteraceae'
 genus: 'Centaurea'
-species: 'Stoebe ssp. stoebe'
+species: 'stoebe ssp. stoebe'
 
 family_de: 'Korbblütengewächse'
 species_de: 'Gewöhnliche'

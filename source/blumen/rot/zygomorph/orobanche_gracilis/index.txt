@@ -1,6 +1,6 @@
 ﻿family: 'Orobanchaceae'
 genus: 'Orobanche'
-species: 'Gracilis'
+species: 'gracilis'
 
 family_de: 'Sommerwurzgewächse'
 species_de: 'Blutrote'

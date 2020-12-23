@@ -1,6 +1,6 @@
 ﻿family: 'Saxifragaceae'
 genus: 'Saxifraga'
-species: 'Exarata'
+species: 'exarata'
 
 family_de: 'Steinbrechgewächse'
 species_de: 'Furchen'

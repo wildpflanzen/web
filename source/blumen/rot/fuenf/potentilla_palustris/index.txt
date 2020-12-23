@@ -1,6 +1,6 @@
 ﻿family: 'Rosaceae'
 genus: 'Potentilla'
-species: 'Palustris'
+species: 'palustris'
 
 family_de: 'Rosengewächse'
 species_de: 'Sumpf'

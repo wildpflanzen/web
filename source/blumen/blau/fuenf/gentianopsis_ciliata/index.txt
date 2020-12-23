@@ -1,6 +1,6 @@
 ﻿family: 'Gentianaceae'
 genus: 'Gentianopsis'
-species: 'Ciliata'
+species: 'ciliata'
 
 family_de: 'Enziangewächse'
 species_de: 'Gewöhnlicher'

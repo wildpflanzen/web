@@ -1,4 +1,4 @@
-﻿group_title: 'Hymenoptera, Bombus'
+﻿group_title: 'Hymenoptera, Apoidea Bombus'
 navi_name: 'Hymenoptera'
 
 group_template: groups_besucher.html

@@ -1,6 +1,6 @@
 ﻿family: 'Caryophyllaceae'
 genus: 'Stellaria'
-species: 'Nemorum'
+species: 'nemorum'
 
 family_de: 'Nelkengewächse'
 species_de: 'Hain'

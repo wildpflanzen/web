@@ -1,6 +1,6 @@
 ﻿family: 'Balsaminaceae'
 genus: 'Impatiens'
-species: 'Noli-tangere'
+species: 'noli-tangere'
 
 family_de: 'Balsaminengewächse'
 species_de: 'Groβes'

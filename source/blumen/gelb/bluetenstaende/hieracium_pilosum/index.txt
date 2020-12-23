@@ -1,6 +1,6 @@
 ﻿family: 'Asteraceae'
 genus: 'Hieracium'
-species: 'Pilosum'
+species: 'pilosum'
 
 family_de: 'Korbblütengewächse'
 species_de: 'Weißhaariges'

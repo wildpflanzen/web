@@ -1,6 +1,6 @@
 ﻿family: 'Ranunculaceae'
 genus: 'Hepatica'
-species: 'Nobilis'
+species: 'nobilis'
 
 family_de: 'Hahnenfuβgewächse'
 species_de: 'Dreilappiges'

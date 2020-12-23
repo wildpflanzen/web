@@ -1,6 +1,6 @@
 ﻿family: 'Fabaceae'
 genus: 'Medicago'
-species: 'X varia'
+species: 'x varia'
 
 family_de: 'Hülsenfrüchtler'
 species_de: 'Bastard'

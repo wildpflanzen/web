@@ -1,6 +1,6 @@
 ﻿order: 'Hymenoptera'
 genus: 'Bombus'
-species: 'Lapidarius'
+species: 'lapidarius'
 
 makeindex: False
 

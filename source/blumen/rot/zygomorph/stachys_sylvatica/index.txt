@@ -1,6 +1,6 @@
 ﻿family: 'Lamiaceae'
 genus: 'Stachys'
-species: 'Sylvatica'
+species: 'sylvatica'
 
 family_de: 'Lippenblütengewächse'
 species_de: 'Wald'

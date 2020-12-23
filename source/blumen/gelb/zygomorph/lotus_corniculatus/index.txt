@@ -1,6 +1,6 @@
 ﻿family: 'Fabaceae'
 genus: 'Lotus'
-species: 'Corniculatus'
+species: 'corniculatus'
 
 family_de: 'Hülsenfrüchtler'
 species_de: 'Gewöhnlicher'

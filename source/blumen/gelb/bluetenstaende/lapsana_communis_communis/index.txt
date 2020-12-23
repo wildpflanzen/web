@@ -1,6 +1,6 @@
 ﻿family: 'Asteraceae'
 genus: 'Lapsana'
-species: 'Communis ssp. communis'
+species: 'communis ssp. communis'
 
 family_de: 'Korbblütengewächse'
 species_de: 'Gemeiner'

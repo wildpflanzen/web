@@ -1,6 +1,6 @@
 ﻿family: 'Fabaceae'
 genus: 'Vicia'
-species: 'Villosa'
+species: 'villosa'
 
 family_de: 'Hülsenfrüchtler'
 species_de: 'Zottel'

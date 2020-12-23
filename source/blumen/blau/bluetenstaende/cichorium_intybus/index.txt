@@ -1,6 +1,6 @@
 ﻿family: 'Asteraceae'
 genus: 'Cichorium'
-species: 'Intybus'
+species: 'intybus'
 
 family_de: 'Korbblütengewächse'
 species_de: 'Gewöhnliche'

@@ -1,12 +1,12 @@
-﻿family: ''
+﻿family: 'Ranunculaceae'
 genus: 'Clematis'
-species: 'Vitalba'
+species: 'vitalba'
 
-family_de: ''
+family_de: 'Hahnenfußgewächse'
 species_de: 'Gemeine'
 genus_de: 'Waldrebe'
 
-floration: ''
+floration: 'Juli - September'
 
 ---
 

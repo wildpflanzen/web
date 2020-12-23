@@ -1,6 +1,6 @@
 ﻿family: 'Ranunculaceae'
 genus: 'Eranthis'
-species: 'Hyemalis'
+species: 'hyemalis'
 
 family_de: 'Hahnenfuβgewächse'
 species_de: 'Winterling'

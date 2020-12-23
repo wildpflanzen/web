@@ -1,6 +1,6 @@
 ﻿order: 'Hymenoptera'
 genus: 'Dasypoda'
-species: 'Hirtipes'
+species: 'hirtipes'
 
 makeindex: False
 

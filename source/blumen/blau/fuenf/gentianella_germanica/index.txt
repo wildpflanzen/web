@@ -1,6 +1,6 @@
 ﻿family: 'Gentianaceae'
 genus: 'Gentianella'
-species: 'Germanica'
+species: 'germanica'
 
 family_de: 'Enziangewächse'
 species_de: 'Deutscher'

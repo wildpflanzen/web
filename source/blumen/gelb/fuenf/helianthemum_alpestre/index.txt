@@ -1,6 +1,6 @@
 ﻿family: 'Helianthemum'
 genus: 'Helianthemum'
-species: 'Alpestre'
+species: 'alpestre'
 
 family_de: 'Zistrosengewächse'
 species_de: 'Alpen'

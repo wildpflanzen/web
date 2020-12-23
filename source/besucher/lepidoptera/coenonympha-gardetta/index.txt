@@ -1,6 +1,6 @@
 ﻿order: 'Lepidoptera'
 genus: 'Coenonympha'
-species: 'Gardetta'
+species: 'gardetta'
 
 makeindex: False
 

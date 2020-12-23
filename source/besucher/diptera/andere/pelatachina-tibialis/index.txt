@@ -1,6 +1,6 @@
 ﻿order: 'Diptera'
 genus: 'Pelatachina'
-species: 'Tibialis'
+species: 'tibialis'
 
 makeindex: False
 

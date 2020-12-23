@@ -1,6 +1,6 @@
 ﻿family: 'Asteraceae'
 genus: 'Tanacetum'
-species: 'Vulgare'
+species: 'vulgare'
 
 family_de: 'Korbblütengewächse'
 species_de: 'Rainfarn'

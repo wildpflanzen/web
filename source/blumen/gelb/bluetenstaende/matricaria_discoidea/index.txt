@@ -1,6 +1,6 @@
 ﻿family: 'Asteraceae'
 genus: 'Matricaria'
-species: 'Discoidea'
+species: 'discoidea'
 
 family_de: 'Korbblütengewächse'
 species_de: 'Strahlenlose'

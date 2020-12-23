@@ -1,6 +1,6 @@
 ﻿family: 'Boraginaceae'
 genus: 'Anchusa'
-species: 'Officinalis'
+species: 'officinalis'
 
 family_de: 'Raublattgewächse'
 species_de: 'Gewöhnliche'

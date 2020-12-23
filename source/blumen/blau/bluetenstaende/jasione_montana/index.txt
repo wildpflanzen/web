@@ -1,6 +1,6 @@
 ﻿family: 'Campanulaceae'
 genus: 'Jasione'
-species: 'Montana'
+species: 'montana'
 
 family_de: 'Glockenblumengewächse'
 species_de: 'Berg'

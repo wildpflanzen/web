@@ -1,0 +1,31 @@
+﻿family: 'Rosaceae'
+genus: 'Potentilla'
+species: 'erecta'
+
+family_de: 'Rosengewächse'
+species_de: 'Blutwurz'
+genus_de: ''
+
+floration: 'Mai - August'
+
+---
+
+date: '8.2019'
+location: 'Godnasee, Brandenburg'
+images:
+  - R0040108.JPG
+  - R0040107.JPG
+  - R0040109.JPG
+  - R0040110.JPG
+  - R0040111.JPG
+  - R0040112.JPG
+  - R0040113.JPG
+  - R0040114.JPG
+  - R0040116.JPG
+  - R0040117.JPG
+  - R0040118.JPG
+  - R0040119.JPG
+  - R0040120.JPG
+  - R0040122.JPG
+  - R0040123.JPG
+  - R0040127.JPG

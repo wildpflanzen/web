@@ -1,6 +1,6 @@
 ﻿order: 'Hymenoptera'
 genus: 'Bombus'
-species: 'Hortorum'
+species: 'hortorum'
 
 makeindex: False
 

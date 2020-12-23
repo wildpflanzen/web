@@ -1,6 +1,6 @@
 ﻿family: 'Campanulaceae'
 genus: 'Campanula'
-species: 'Trachelium'
+species: 'trachelium'
 
 family_de: 'Glockenblumengewächse'
 species_de: 'Nesselblättrige'

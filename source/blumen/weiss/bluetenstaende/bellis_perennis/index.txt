@@ -1,6 +1,6 @@
 ﻿family: 'Asteraceae'
 genus: 'Bellis'
-species: 'Perennis'
+species: 'perennis'
 
 family_de: 'Korbblütengewächse'
 species_de: 'Gänseblümchen'

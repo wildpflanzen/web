@@ -1,6 +1,6 @@
 ﻿family: 'Asteraceae'
 genus: 'Erigeron'
-species: 'Acris'
+species: 'acris'
 
 family_de: 'Korbblütengewächse'
 species_de: 'Scharfes'

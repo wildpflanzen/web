@@ -1,6 +1,6 @@
 ﻿family: 'Lamiaceae'
 genus: 'Lamium'
-species: 'Maculatum'
+species: 'maculatum'
 
 family_de: 'Lippenblütengewächse'
 species_de: 'Gefleckte'

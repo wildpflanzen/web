@@ -1,6 +1,6 @@
 ﻿family: 'Caryophyllaceae'
 genus: 'Silene'
-species: 'Vulgaris ssp. vulgaris'
+species: 'vulgaris ssp. vulgaris'
 
 family_de: 'Nelkengewächse'
 species_de: 'Gewöhnliches'

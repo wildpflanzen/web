@@ -1,6 +1,6 @@
 ﻿family: 'Iridaceae'
 genus: 'Crocus'
-species: 'Vernus'
+species: 'vernus'
 
 family_de: 'Schwertliliengewächse'
 species_de: 'Frühlings'

@@ -1,6 +1,6 @@
 ﻿family: 'Violaceae'
 genus: 'Viola'
-species: 'Tricolor'
+species: 'tricolor'
 
 family_de: 'Veilchengewächse'
 species_de: 'Wildes'

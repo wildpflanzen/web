@@ -1,6 +1,6 @@
 ﻿family: 'Campanulaceae'
 genus: 'Campanula'
-species: 'Barbata'
+species: 'barbata'
 
 family_de: 'Glockenblumengewächse'
 species_de: 'Bärtige'

@@ -1,6 +1,6 @@
 ﻿family: 'Apiaceae'
 genus: 'Aegopodium'
-species: 'Podagraria'
+species: 'podagraria'
 
 family_de: 'Doldengewächse'
 species_de: 'Gewöhnliche'

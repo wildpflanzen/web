@@ -1,6 +1,6 @@
 ﻿order: 'Hemiptera'
 genus: 'Palomena'
-species: 'Prasina'
+species: 'prasina'
 
 makeindex: False
 

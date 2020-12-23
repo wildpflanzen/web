@@ -1,6 +1,6 @@
 ﻿family: 'Brassicaceae'
 genus: 'Arabis'
-species: 'Alpina'
+species: 'alpina'
 
 family_de: 'Kreuzblütengewächse'
 species_de: 'Alpen'

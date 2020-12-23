@@ -1,6 +1,6 @@
 ﻿family: 'Asteraceae'
 genus: 'Adenostyles'
-species: 'Alliariae'
+species: 'alliariae'
 
 family_de: 'Korbblütengewächse'
 species_de: 'Graue'

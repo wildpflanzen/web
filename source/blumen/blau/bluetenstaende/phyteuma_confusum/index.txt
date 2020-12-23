@@ -1,6 +1,6 @@
 ﻿family: 'Campanulaceae'
 genus: 'Phyteuma'
-species: 'Confusum'
+species: 'confusum'
 
 family_de: 'Glockenblumengewächse'
 species_de: 'Zwerg'

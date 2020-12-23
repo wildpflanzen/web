@@ -1,6 +1,6 @@
 ﻿family: 'Brassicaceae'
 genus: 'Capsella'
-species: 'Bursa-pastoris'
+species: 'bursa-pastoris'
 
 family_de: 'Kreuzblütengewächse'
 species_de: 'Gewöhnliches'

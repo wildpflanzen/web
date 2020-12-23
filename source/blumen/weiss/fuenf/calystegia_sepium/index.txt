@@ -1,6 +1,6 @@
 ﻿family: 'Convolvulaceae'
 genus: 'Calystegia'
-species: 'Sepium'
+species: 'sepium'
 
 family_de: 'Windengewächse'
 species_de: 'Echte'

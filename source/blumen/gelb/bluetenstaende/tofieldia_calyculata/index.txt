@@ -1,6 +1,6 @@
 ﻿family: 'Tofieldiaceae'
 genus: 'Tofieldia'
-species: 'Calyculata'
+species: 'calyculata'
 
 family_de: 'Simsenliliengewächse'
 species_de: 'Kelch'

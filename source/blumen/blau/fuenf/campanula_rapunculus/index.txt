@@ -1,6 +1,6 @@
 ﻿family: 'Campanulaceae'
 genus: 'Campanula'
-species: 'Rapunculus'
+species: 'rapunculus'
 
 family_de: 'Glockenblumengewächse'
 species_de: 'Rapunzel'

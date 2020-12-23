@@ -1,6 +1,6 @@
 ﻿family: 'Plantaginaceae'
 genus: 'Veronica'
-species: 'Aphylla'
+species: 'aphylla'
 
 family_de: 'Wegerichgewächse'
 species_de: 'Blattloser'

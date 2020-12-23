@@ -1,6 +1,6 @@
 ﻿family: 'Convolvulaceae'
 genus: 'Convolvulus'
-species: 'Arvensis'
+species: 'arvensis'
 
 family_de: 'Windengewächse'
 species_de: 'Acker'

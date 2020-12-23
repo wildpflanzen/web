@@ -1,6 +1,6 @@
 ﻿family: 'Rubiaceae'
 genus: 'Galium'
-species: 'Rotundifolium'
+species: 'rotundifolium'
 
 family_de: 'Rötegewächse'
 species_de: 'Rundblättrige'

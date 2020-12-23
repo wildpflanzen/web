@@ -1,6 +1,6 @@
 ﻿order: 'Hemiptera'
 genus: 'Cercopis'
-species: 'Vulnerata'
+species: 'vulnerata'
 
 makeindex: False
 

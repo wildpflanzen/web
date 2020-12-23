@@ -1,6 +1,6 @@
 ﻿family: 'Rubiaceae'
 genus: 'Galium'
-species: 'Album'
+species: 'album'
 
 family_de: 'Rötegewächse'
 species_de: 'Weiβes'

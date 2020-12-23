@@ -1,6 +1,6 @@
 ﻿family: 'Ranunculaceae'
 genus: 'Ranunculus'
-species: 'Acris'
+species: 'acris'
 
 family_de: 'Hahnenfuβgewächse'
 species_de: 'Scharfer'

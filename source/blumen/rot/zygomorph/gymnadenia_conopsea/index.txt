@@ -1,6 +1,6 @@
 ﻿family: 'Orchidaceae'
 genus: 'Gymnadenia'
-species: 'Conopsea'
+species: 'conopsea'
 
 family_de: 'Orchideen'
 species_de: 'Große'

@@ -1,6 +1,6 @@
 ﻿family: 'Asteraceae'
 genus: 'Hypochaeris'
-species: 'Uniflora'
+species: 'uniflora'
 
 family_de: 'Korbblütengewächse'
 species_de: 'Einköpfiges'

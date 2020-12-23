@@ -1,6 +1,6 @@
 ﻿family: 'Asteraceae'
 genus: 'Leontopodium'
-species: 'Alpinum'
+species: 'alpinum'
 
 family_de: 'Korbblütengewächse'
 species_de: 'Alpen'

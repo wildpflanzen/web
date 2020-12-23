@@ -1,6 +1,6 @@
 ﻿family: 'Ericaceae'
 genus: 'Moneses'
-species: 'Uniflora'
+species: 'uniflora'
 
 family_de: 'Heidekrautgewächse'
 species_de: 'Moosauge'

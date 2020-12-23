@@ -1,6 +1,6 @@
 ﻿family: 'Malvaceae'
 genus: 'Malva'
-species: 'Neglecta'
+species: 'neglecta'
 
 family_de: 'Malvengewächse'
 species_de: 'Weg-malve,'

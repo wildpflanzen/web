@@ -1,6 +1,6 @@
 ﻿family: 'Asteraceae'
 genus: 'Senecio'
-species: 'Doronicum ssp. doronicum'
+species: 'doronicum ssp. doronicum'
 
 family_de: 'Korbblütengewächse'
 species_de: 'Gewöhnliches-gemswurz'

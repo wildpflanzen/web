@@ -1,6 +1,6 @@
 ﻿family: 'Rosaceae'
 genus: 'Potentilla'
-species: 'Argentea'
+species: 'argentea'
 
 family_de: 'Rosengewächse'
 species_de: 'Silber'

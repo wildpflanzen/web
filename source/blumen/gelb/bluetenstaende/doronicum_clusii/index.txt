@@ -1,6 +1,6 @@
 ﻿family: 'Asteraceae'
 genus: 'Doronicum'
-species: 'Clus'
+species: 'clus'
 
 family_de: 'Korbblütengewächse'
 species_de: 'Clusius'

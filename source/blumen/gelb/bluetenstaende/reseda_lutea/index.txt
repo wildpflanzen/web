@@ -2,7 +2,7 @@
 
 family: 'Resedaceae'
 genus: 'Reseda'
-species: 'Lutea'
+species: 'lutea'
 
 family_de: 'Resedagewächse'
 species_de: 'Gelber'
@@ -12,7 +12,7 @@ floration: 'Mai - September'
 
 ---
 
-date: '2018'
+date: '8.2018'
 location: 'trafoi'
 images:
   - R0037547.jpg

@@ -1,6 +1,6 @@
 ﻿order: 'Lepidoptera'
 genus: 'Speyeria'
-species: 'Aglaja'
+species: 'aglaja'
 
 makeindex: False
 

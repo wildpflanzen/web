@@ -1,6 +1,6 @@
 ﻿family: 'Valeriana'
 genus: 'Valeriana'
-species: 'Montana'
+species: 'montana'
 
 family_de: 'Geiβblattgewächse'
 species_de: 'Berg'

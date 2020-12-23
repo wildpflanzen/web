@@ -1,6 +1,6 @@
 ﻿family: 'Orobanchaceae'
 genus: 'Melampyrum'
-species: 'Pratense ssp. commutatum'
+species: 'pratense ssp. commutatum'
 
 family_de: 'Sommerwurzgewächse'
 species_de: 'Hellgelber'

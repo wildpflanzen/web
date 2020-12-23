@@ -1,6 +1,6 @@
 ﻿family: 'Ranunculaceae'
 genus: 'Ranunculus'
-species: 'Repens'
+species: 'repens'
 
 family_de: 'Hahnenfuβgewächse'
 species_de: 'Kriechender'

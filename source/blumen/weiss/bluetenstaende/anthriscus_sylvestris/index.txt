@@ -1,6 +1,6 @@
 ﻿family: 'Apiaceae'
 genus: 'Anthriscus'
-species: 'Sylvestris'
+species: 'sylvestris'
 
 family_de: 'Doldengewächse'
 species_de: 'Wiesen'

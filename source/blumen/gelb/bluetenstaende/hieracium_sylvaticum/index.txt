@@ -1,6 +1,6 @@
 ﻿family: 'Asteraceae'
 genus: 'Hieracium'
-species: 'Sylvaticum'
+species: 'sylvaticum'
 
 family_de: 'Korbblütengewächse'
 species_de: 'Wald'

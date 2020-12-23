@@ -1,6 +1,6 @@
 ﻿family: 'Asteraceae'
 genus: 'Galinsoga'
-species: 'Ciliata'
+species: 'ciliata'
 
 family_de: 'Korbblütengewächse'
 species_de: 'Zottiges'

@@ -1,6 +1,6 @@
 ﻿family: 'Fabaceae'
 genus: 'Astragalus'
-species: 'Frigidus'
+species: 'frigidus'
 
 family_de: 'Hülsenfrüchtler'
 species_de: 'Gletscher'

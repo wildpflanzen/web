@@ -1,6 +1,6 @@
 ﻿family: 'Fabaceae'
 genus: 'Trifolium'
-species: 'Campestre'
+species: 'campestre'
 
 family_de: 'Hülsenfrüchtler'
 species_de: 'Feld'

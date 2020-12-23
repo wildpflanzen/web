@@ -1,6 +1,6 @@
 ﻿family: 'Caryophyllaceae'
 genus: 'Silene'
-species: 'Latifolia'
+species: 'latifolia'
 
 family_de: 'Nelkengewächse'
 species_de: 'Weiβe'

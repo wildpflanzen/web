@@ -1,6 +1,6 @@
 ﻿family: 'Fabaceae'
 genus: 'Onobrychis'
-species: 'Viciifolia'
+species: 'viciifolia'
 
 family_de: 'Hülsenfrüchtler'
 species_de: 'Saat-esparsette'

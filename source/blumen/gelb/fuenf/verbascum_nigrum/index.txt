@@ -1,6 +1,6 @@
 ﻿family: 'Scrophulariaceae'
 genus: 'Verbascum'
-species: 'Nigrum'
+species: 'nigrum'
 
 family_de: 'Braunwurzgewächse'
 species_de: 'Schwarze'

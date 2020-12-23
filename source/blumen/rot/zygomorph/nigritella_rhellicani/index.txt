@@ -1,6 +1,6 @@
 ﻿family: 'Orchidaceae'
 genus: 'Nigritella'
-species: 'Rhellican'
+species: 'rhellican'
 
 family_de: 'Orchideen'
 species_de: 'Schwarzes'

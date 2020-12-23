@@ -1,6 +1,6 @@
 ﻿family: 'Alismataceae'
 genus: 'Alisma'
-species: 'Plantago aquatica'
+species: 'plantago aquatica'
 
 family_de: 'Froschlöffelgewächse'
 species_de: 'Gewöhnlicher'

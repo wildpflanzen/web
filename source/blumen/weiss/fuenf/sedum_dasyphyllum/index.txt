@@ -1,6 +1,6 @@
 ﻿family: 'Crassulaceae'
 genus: 'Sedum'
-species: 'Dasyphyllum'
+species: 'dasyphyllum'
 
 family_de: 'Dickblattgewächse'
 species_de: 'Dickblättrige'

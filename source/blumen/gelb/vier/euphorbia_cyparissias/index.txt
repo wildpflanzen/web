@@ -1,6 +1,6 @@
 ﻿family: 'Euphorbiaceae'
 genus: 'Euphorbia'
-species: 'Cyparissias'
+species: 'cyparissias'
 
 family_de: 'Wolfsmilchgewächse'
 species_de: 'Zypressen'

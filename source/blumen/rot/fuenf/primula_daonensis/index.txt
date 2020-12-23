@@ -1,6 +1,6 @@
 ﻿family: 'Primulaceae'
 genus: 'Primula'
-species: 'Daonensis'
+species: 'daonensis'
 
 family_de: 'Primelgewächse'
 species_de: 'Inntaler'

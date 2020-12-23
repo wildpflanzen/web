@@ -1,6 +1,6 @@
 ﻿family: 'Primulaceae'
 genus: 'Hottonia'
-species: 'Palustris'
+species: 'palustris'
 
 family_de: 'Primelgewächse'
 species_de: 'Europäische'

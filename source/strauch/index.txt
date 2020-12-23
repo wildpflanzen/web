@@ -3,5 +3,6 @@ navi_name: 'Sträucher'
 
 listdir:
   - clematis_vitalba
+  - rubus_laciniatus
 
 next_group: 'strauch'

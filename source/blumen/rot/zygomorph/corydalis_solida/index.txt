@@ -1,6 +1,6 @@
 ﻿family: 'Papaveraceae'
 genus: 'Corydalis'
-species: 'Solida'
+species: 'solida'
 
 family_de: 'Mohngewächse'
 species_de: 'Gefingerter'

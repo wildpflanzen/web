@@ -1,6 +1,6 @@
 ﻿family: 'Brassicaceae'
 genus: 'Berteroa'
-species: 'Incana'
+species: 'incana'
 
 family_de: 'Kreuzblütengewächse'
 species_de: 'Graukresse'

@@ -1,6 +1,6 @@
 ﻿family: 'Onagraceae'
 genus: 'Epilobium'
-species: 'Montanum'
+species: 'montanum'
 
 family_de: 'Nachtkerzengewächse'
 species_de: 'Berg'

@@ -1,6 +1,6 @@
 ﻿family: 'Asparagaceae'
 genus: 'Muscari'
-species: 'Botryoides'
+species: 'botryoides'
 
 family_de: 'Spargelgewächse'
 species_de: 'Kleine'

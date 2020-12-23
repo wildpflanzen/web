@@ -1,6 +1,6 @@
 ﻿family: 'Plantaginaceae'
 genus: 'Veronica'
-species: 'Officinalis'
+species: 'officinalis'
 
 family_de: 'Wegerichgewächse'
 species_de: 'Wald'

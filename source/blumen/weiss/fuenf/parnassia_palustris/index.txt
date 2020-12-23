@@ -1,6 +1,6 @@
 ﻿family: 'Celastraceae'
 genus: 'Parnassia'
-species: 'Palustris'
+species: 'palustris'
 
 family_de: 'Spindelbaumgewächse'
 species_de: 'Sumpf'

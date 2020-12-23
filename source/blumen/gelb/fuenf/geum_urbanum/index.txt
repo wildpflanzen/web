@@ -1,6 +1,6 @@
 ﻿family: 'Rosaceae'
 genus: 'Geum'
-species: 'Urbanum'
+species: 'urbanum'
 
 family_de: 'Rosengewächse'
 species_de: 'Echte'

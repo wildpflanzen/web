@@ -1,6 +1,6 @@
 ﻿order: 'Coleoptera'
 genus: 'Strangalia'
-species: 'Maculata'
+species: 'maculata'
 
 makeindex: False
 

@@ -1,6 +1,6 @@
 ﻿order: 'Hemiptera'
 genus: 'Graphosoma'
-species: 'Lineatum'
+species: 'lineatum'
 
 makeindex: False
 

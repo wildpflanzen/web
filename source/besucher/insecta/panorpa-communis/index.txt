@@ -1,6 +1,6 @@
 ﻿order: 'Insecta'
 genus: 'Panorpa'
-species: 'Communis'
+species: 'communis'
 
 makeindex: False
 

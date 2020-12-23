@@ -1,6 +1,6 @@
 ﻿family: 'Brassicaceae'
 genus: 'Biscutella'
-species: 'Laevigata'
+species: 'laevigata'
 
 family_de: 'Kreuzblütengewächse'
 species_de: 'Brillenschötchen'

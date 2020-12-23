@@ -1,6 +1,6 @@
 ﻿order: 'Hymenoptera'
 genus: 'Polistes'
-species: 'Dominula'
+species: 'dominula'
 
 makeindex: False
 

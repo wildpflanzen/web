@@ -1,6 +1,6 @@
 ﻿family: 'Campanulaceae'
 genus: 'Phyteuma'
-species: 'Orbiculare'
+species: 'orbiculare'
 
 family_de: 'Glockenblumengewächse'
 species_de: 'Kugel'

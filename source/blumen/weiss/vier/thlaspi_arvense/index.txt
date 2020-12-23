@@ -1,6 +1,6 @@
 ﻿family: 'Brassicaceae'
 genus: 'Thlaspi'
-species: 'Arvense'
+species: 'arvense'
 
 family_de: 'Kreuzblütengewächse'
 species_de: 'Acker'

@@ -1,6 +1,6 @@
 ﻿family: 'Ranunculaceae'
 genus: 'Thalictrum'
-species: 'Aquilegifolia'
+species: 'aquilegifolia'
 
 family_de: 'Hahnenfuβgewächse'
 species_de: 'Akeleiblättrige'

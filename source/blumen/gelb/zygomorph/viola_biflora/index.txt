@@ -1,6 +1,6 @@
 ﻿family: 'Violaceae'
 genus: 'Viola'
-species: 'Biflora'
+species: 'biflora'
 
 family_de: 'Veilchengewächse'
 species_de: 'Zweiblütiges'

@@ -1,6 +1,6 @@
 ﻿family: 'Asteraceae'
 genus: 'Achillea'
-species: 'Millefolium'
+species: 'millefolium'
 
 family_de: 'Korbblütengewächse'
 species_de: 'Gewöhnliche'

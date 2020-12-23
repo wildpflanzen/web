@@ -1,6 +1,6 @@
 ﻿family: 'Brassicaceae'
 genus: 'Draba'
-species: 'Verna'
+species: 'verna'
 
 family_de: 'Kreuzblütengewächse'
 species_de: 'Frühlings'

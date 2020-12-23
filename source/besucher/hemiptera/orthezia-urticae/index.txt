@@ -1,6 +1,6 @@
 ﻿order: 'Hemiptera'
 genus: 'Orthezia'
-species: 'Urticae'
+species: 'urticae'
 
 makeindex: False
 

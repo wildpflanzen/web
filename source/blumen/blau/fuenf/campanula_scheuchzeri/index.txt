@@ -1,6 +1,6 @@
 ﻿family: 'Campanulaceae'
 genus: 'Campanula'
-species: 'Scheuchzer'
+species: 'scheuchzer'
 
 family_de: 'Glockenblumengewächse'
 species_de: 'Scheuchzers'

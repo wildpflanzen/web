@@ -1,6 +1,6 @@
 ﻿family: 'Crassulaceae'
 genus: 'Sedum'
-species: 'Acre'
+species: 'acre'
 
 family_de: 'Dickblattgewächse'
 species_de: 'Scharfer'

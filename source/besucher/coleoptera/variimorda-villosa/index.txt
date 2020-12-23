@@ -1,6 +1,6 @@
 ﻿order: 'Coleoptera'
 genus: 'Variimorda'
-species: 'Villosa'
+species: 'villosa'
 
 makeindex: False
 

@@ -1,6 +1,6 @@
 ﻿family: 'Saxifragaceae'
 genus: 'Saxifraga'
-species: 'Paniculata'
+species: 'paniculata'
 
 family_de: 'Steinbrechgewächse'
 species_de: 'Rispen'

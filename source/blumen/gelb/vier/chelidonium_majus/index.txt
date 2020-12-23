@@ -1,6 +1,6 @@
 ﻿family: 'Papaveraceae'
 genus: 'Chelidonium'
-species: 'Majus'
+species: 'majus'
 
 family_de: 'Mohngewächse'
 species_de: 'Schöllkraut'

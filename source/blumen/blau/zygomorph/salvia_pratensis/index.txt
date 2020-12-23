@@ -1,6 +1,6 @@
 ﻿family: 'Lamiaceae'
 genus: 'Salvia'
-species: 'Pratensis'
+species: 'pratensis'
 
 family_de: 'Lippenblütengewächse'
 species_de: 'Wiesen'

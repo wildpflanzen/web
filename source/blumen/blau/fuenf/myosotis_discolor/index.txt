@@ -1,6 +1,6 @@
 ﻿family: 'Boraginaceae'
 genus: 'Myosotis'
-species: 'Discolor'
+species: 'discolor'
 
 family_de: 'Raublattgewächse'
 species_de: 'Buntes'

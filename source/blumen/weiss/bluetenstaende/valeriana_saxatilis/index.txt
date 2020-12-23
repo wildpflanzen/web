@@ -1,6 +1,6 @@
 ﻿family: 'Caprifoliaceae'
 genus: 'Valeriana'
-species: 'Saxatilis'
+species: 'saxatilis'
 
 family_de: 'Geiβblattgewächse'
 species_de: 'Felsen'

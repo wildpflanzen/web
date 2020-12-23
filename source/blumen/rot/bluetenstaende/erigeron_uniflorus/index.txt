@@ -1,6 +1,6 @@
 ﻿family: 'Asteraceae'
 genus: 'Erigeron'
-species: 'Uniflorus'
+species: 'uniflorus'
 
 family_de: 'Korbblütengewächse'
 species_de: 'Einköpfiges'

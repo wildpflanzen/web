@@ -1,6 +1,6 @@
 ﻿family: 'Ranunculaceae'
 genus: 'Ranunculus'
-species: 'Sceleratus'
+species: 'sceleratus'
 
 family_de: 'Hahnenfuβgewächse'
 species_de: 'Gift'

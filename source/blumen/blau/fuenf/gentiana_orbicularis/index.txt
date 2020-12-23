@@ -1,6 +1,6 @@
 ﻿family: 'Gentianaceae'
 genus: 'Gentiana'
-species: 'Orbicularis'
+species: 'orbicularis'
 
 family_de: 'Enziangewächse'
 species_de: 'Rundblättriger'

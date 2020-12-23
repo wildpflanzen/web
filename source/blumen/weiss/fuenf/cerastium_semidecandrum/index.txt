@@ -1,6 +1,6 @@
 ﻿family: 'Caryophyllaceae'
 genus: 'Cerastium'
-species: 'Semidecandrum'
+species: 'semidecandrum'
 
 family_de: 'Nelkengewächse'
 species_de: 'Sand'

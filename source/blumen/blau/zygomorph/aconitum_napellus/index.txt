@@ -1,6 +1,6 @@
 ﻿family: 'Ranunculaceae'
 genus: 'Aconitum'
-species: 'Napellus'
+species: 'napellus'
 
 family_de: 'Hahnenfuβgewächse'
 species_de: 'Blaue'

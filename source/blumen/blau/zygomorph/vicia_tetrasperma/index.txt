@@ -1,6 +1,6 @@
 ﻿family: 'Fabaceae'
 genus: 'Vicia'
-species: 'Tetrasperma'
+species: 'tetrasperma'
 
 family_de: 'Hülsenfrüchtler'
 species_de: 'Viersamige'

@@ -1,6 +1,6 @@
 ﻿family: 'Melanthiaceae'
 genus: 'Veratrum'
-species: 'Album ssp. lobelianum'
+species: 'album ssp. lobelianum'
 
 family_de: 'Germergewächse'
 species_de: 'Grünlicher'

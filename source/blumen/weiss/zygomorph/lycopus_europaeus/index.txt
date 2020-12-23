@@ -1,6 +1,6 @@
 ﻿family: 'Lamiaceae'
 genus: 'Lycopus'
-species: 'Europaeus'
+species: 'europaeus'
 
 family_de: 'Lippenblütengewächse'
 species_de: 'Ufer'

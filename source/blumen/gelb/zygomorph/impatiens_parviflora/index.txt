@@ -1,6 +1,6 @@
 ﻿family: 'Balsaminaceae'
 genus: 'Impatiens'
-species: 'Parviflora'
+species: 'parviflora'
 
 family_de: 'Balsaminengewächse'
 species_de: 'Kleinblütiges'

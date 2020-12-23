@@ -1,6 +1,6 @@
 ﻿family: 'Geraniaceae'
 genus: 'Geranium'
-species: 'Sylvaticum'
+species: 'sylvaticum'
 
 family_de: 'Storchschnabelgewächse'
 species_de: 'Wald'

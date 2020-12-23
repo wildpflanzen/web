@@ -1,6 +1,6 @@
 ﻿family: 'Asteraceae'
 genus: 'Helichrysum'
-species: 'Arenarium'
+species: 'arenarium'
 
 family_de: 'Korbblütengewächse'
 species_de: 'Sand'

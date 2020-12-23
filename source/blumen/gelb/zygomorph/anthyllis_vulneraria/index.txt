@@ -1,6 +1,6 @@
 ﻿family: 'Fabaceae'
 genus: 'Anthyllis'
-species: 'Vulneraria'
+species: 'vulneraria'
 
 family_de: 'Hülsenfrüchtler'
 species_de: 'Gewöhnlicher'

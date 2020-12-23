@@ -1,6 +1,6 @@
 ﻿family: 'Primulaceae'
 genus: 'Androsace'
-species: 'Alpina'
+species: 'alpina'
 
 family_de: 'Primelgewächse'
 species_de: 'Alpen'

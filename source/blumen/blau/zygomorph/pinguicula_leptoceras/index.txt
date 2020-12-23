@@ -1,6 +1,6 @@
 ﻿family: 'Lentibulariaceae'
 genus: 'Pinguicula'
-species: 'Leptoceras'
+species: 'leptoceras'
 
 family_de: 'Wasserschlauchgewächse'
 species_de: 'Dünnsporniges'

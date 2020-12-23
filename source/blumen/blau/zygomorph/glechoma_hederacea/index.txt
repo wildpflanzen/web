@@ -1,6 +1,6 @@
 ﻿family: 'Lamiaceae'
 genus: 'Glechoma'
-species: 'Hederacea'
+species: 'hederacea'
 
 family_de: 'Lippenblütengewächse'
 species_de: 'Gundermann'

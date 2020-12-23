@@ -1,6 +1,6 @@
 ﻿family: 'Saxifragaceae'
 genus: 'Saxifraga'
-species: 'Aspera'
+species: 'aspera'
 
 family_de: 'Steinbrechgewächse'
 species_de: 'Rauer'

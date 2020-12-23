@@ -1,6 +1,6 @@
 ﻿family: 'Ranunculaceae'
 genus: 'Pulsatilla'
-species: 'Alpina ssp. apiifolia'
+species: 'alpina ssp. apiifolia'
 
 family_de: 'Hahnenfuβgewächse'
 species_de: 'Gelbe'

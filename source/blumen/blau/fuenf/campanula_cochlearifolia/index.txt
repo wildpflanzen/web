@@ -1,6 +1,6 @@
 ﻿family: 'Campanulaceae'
 genus: 'Campanula'
-species: 'Cochlearifolia'
+species: 'cochlearifolia'
 
 family_de: 'Glockenblumengewächse'
 species_de: 'Zwerg'

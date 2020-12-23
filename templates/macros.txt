@@ -51,9 +51,9 @@
 
 
 {%- macro index_title(option) -%}
-   {%- if option == 'genus_de' %}Deutche Namen
+   {%- if option == 'genus_de' %}Deutsche Namen
    {%- elif option == 'genus' %}Wissenschaftliche Namen
-   {%- elif option == 'family_de' %}Deutche Namen
+   {%- elif option == 'family_de' %}Deutsche Namen
    {%- elif option == 'family' %}Wissenschaftliche Namen
    {%- elif option == 'location' %}Lokalisierung
    {%- elif option == 'date' %}Datum
@@ -62,7 +62,7 @@
 {%-  endmacro -%}
 
 
-{%- macro deutche_name(species) -%}
+{%- macro deutsche_name(species) -%}
 {%- for species_de in species.species_de %}
    {%- set genus_de = species.genus_de[loop.index0] %}
    {%- if genus_de and species_de and species_de[-1] == '-' -%}
@@ -77,7 +77,7 @@
 {%- endmacro -%}
 
 
-{%- macro deutche_name_index(species) -%}
+{%- macro deutsche_name_index(species) -%}
 {%- for species_de in species.species_de %}
    {%- set genus_de = species.genus_de[loop.index0] %}
    {%- if genus_de %}{{ genus_de }}, {% endif %}{{ species_de }}

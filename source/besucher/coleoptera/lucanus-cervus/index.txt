@@ -1,6 +1,6 @@
 ﻿order: 'Coleoptera'
 genus: 'Lucanus'
-species: 'Cervus'
+species: 'cervus'
 
 makeindex: False
 

@@ -1,6 +1,6 @@
 ﻿family: 'Plantaginaceae'
 genus: 'Veronica'
-species: 'Urticifolia'
+species: 'urticifolia'
 
 family_de: 'Wegerichgewächse'
 species_de: 'Nesselblättriger'

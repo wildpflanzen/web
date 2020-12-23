@@ -1,6 +1,6 @@
 ﻿order: 'Diptera'
 genus: 'Eristalis'
-species: 'Tenax'
+species: 'tenax'
 
 makeindex: False
 

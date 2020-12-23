@@ -1,6 +1,6 @@
 ﻿family: 'Nymphaeaceae'
 genus: 'Nuphar'
-species: 'Lutea'
+species: 'lutea'
 
 family_de: 'Seerosengewächse'
 species_de: 'Gelbe'

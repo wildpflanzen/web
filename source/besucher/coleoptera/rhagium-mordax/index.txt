@@ -1,6 +1,6 @@
 ﻿order: 'Coleoptera'
 genus: 'Rhagium'
-species: 'Mordax'
+species: 'mordax'
 
 makeindex: False
 

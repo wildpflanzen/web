@@ -1,6 +1,6 @@
 ﻿family: 'Primulaceae'
 genus: 'Lysimachia'
-species: 'Thyrsiflora'
+species: 'thyrsiflora'
 
 family_de: 'Primelgewächse'
 species_de: 'Strauβ'

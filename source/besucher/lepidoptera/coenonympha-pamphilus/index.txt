@@ -1,6 +1,6 @@
 ﻿order: 'Lepidoptera'
 genus: 'Coenonympha'
-species: 'Pamphilus'
+species: 'pamphilus'
 
 makeindex: False
 

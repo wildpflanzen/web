@@ -1,6 +1,6 @@
 ﻿family: 'Araceae'
 genus: 'Calla'
-species: 'Palustris'
+species: 'palustris'
 
 family_de: 'Aronstabgewächse'
 species_de: 'Schlangenwurz'

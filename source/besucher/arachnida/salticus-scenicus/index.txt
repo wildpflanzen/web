@@ -1,6 +1,6 @@
 ﻿order: 'Arachnida'
 genus: 'Salticus'
-species: 'Scenicus'
+species: 'scenicus'
 
 makeindex: False
 

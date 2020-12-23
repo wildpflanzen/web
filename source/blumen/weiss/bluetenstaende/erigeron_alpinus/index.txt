@@ -1,6 +1,6 @@
 ﻿family: 'Asteraceae'
 genus: 'Erigeron'
-species: 'Alpinus'
+species: 'alpinus'
 
 family_de: 'Korbblütengewächse'
 species_de: 'Alpen'

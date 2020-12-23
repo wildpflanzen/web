@@ -1,6 +1,6 @@
 ﻿family: 'Asparagaceae'
 genus: 'Paradisea'
-species: 'Liliastrum'
+species: 'liliastrum'
 
 family_de: 'Spargelgewächse'
 species_de: 'Weiβe'
