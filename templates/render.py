@@ -28,7 +28,7 @@ def main():
 
    # Read options
    options = Options(file_name='options.ini')
-   
+
    # Read database
    database = Database(options)
    database.read()
@@ -259,7 +259,9 @@ class HTML_generator():
 
 
    def write_file(self, filename, data):
-      if os.path.exists(filename) and self.options.overwrite == False:
+      with codecs.open(filename, 'r', encoding='utf-8') as fi:
+         data_in_disk = fi.read()
+      if data == data_in_disk:
          return False
       if self.options.verbose:
          print('   %s' % filename)
@@ -326,8 +328,10 @@ class Database(UserDict):
       fullpath = os.path.join(basepath, path)
       with codecs.open(os.path.join(fullpath, fname), 'r', encoding='utf-8-sig') as fi:
          data = fi.read()
-      docs = [d for d in yaml.load_all(data)]
-
+      try:
+         docs = [d for d in yaml.load_all(data, Loader=yaml.Loader)]
+      except:
+         raise Exception('Error leyendo: ' + os.path.join(fullpath, fname)) 
 
       # Create register with first yaml document and add path
       register = docs[0]
@@ -546,7 +550,7 @@ class Options():
       print('\nReading options ...')
       with codecs.open(file_name, 'r', encoding='utf-8-sig') as fi:
          options_raw = fi.read()
-      options_dict = yaml.load(options_raw)
+      options_dict = yaml.load(options_raw, Loader=yaml.Loader)
       return options_dict
    
    def set_options(self, options_dict):
@@ -599,8 +603,8 @@ def thumbnails_make(database, options):
             image_out = os.path.join(options.output, 'images', imagename)
             thumb_out = os.path.join(options.output, 'thumbs', imagename)
 
-            # Copy image without overwrite
-            if not os.path.isfile(image_out):
+            # Copy image if source is newer
+            if not (os.path.isfile(image_out) and file_newer(image_out, source_in)):
                if options.verbose:
                   print('   Copy %s -->\n        %s' %(source_in, image_out))
                image_convert(source_in, image_out, options)
@@ -615,7 +619,7 @@ def thumbnails_make(database, options):
             session['thumbs'].append(imagename)
 
             # Make thumbnail without overwrite
-            if not os.path.isfile(thumb_out):
+            if not (os.path.isfile(thumb_out) and file_newer(thumb_out, source_in)):
                thumb_convert(source_in, thumb_out, options)
 
          register['thumbname'] = thumbname
@@ -629,9 +633,9 @@ def remove_unused_files(path, used_image_files, options):
    fullpath = os.path.join(options.output, path)
    for image in os.listdir(fullpath):
       if not image in used_image_files:
-         print('   Warning, unused image: %s' % os.path.join(path, image))
+         print('   Warning, unused image: %s' % os.path.join(fullpath, image))
          if options.remove_unused_files:
-            os.remove(os.path.join(path, image))
+            os.remove(os.path.join(fullpath, image))
 
 
 def image_convert(image_in, image_out, options):
@@ -639,6 +643,12 @@ def image_convert(image_in, image_out, options):
    image_options = ' '.join(options.image_options)
    command = options.imagemagick + ' ' + image_in + ' ' + image_options + ' ' + image_out
    subprocess.call(command, shell=True)
+
+
+def file_newer(filename_1, filename_2):
+   if os.path.getmtime(filename_1) > os.path.getmtime(filename_2):
+      return True
+   return False
 
 
 def thumb_convert(filein, thumb, options):
