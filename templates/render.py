@@ -5,7 +5,7 @@
    https://github.com/wildpflanzen/web
 
 
-   Copyright (c) 2018-2019 by Carlos Pardo
+   Copyright (c) 2018-2021 by Carlos Pardo
 
    License GPL v3  <https://www.gnu.org/licenses/gpl-3.0.html>
    This program is free software; you can redistribute it and/or
@@ -104,30 +104,33 @@ class HTML_generator():
       print('\nRendering index files ...')
 
       # Make html floration index
-      self.make_index('floration', \
+      self.make_index('index-floration', \
                       lambda sp: [sp['floration'].split('-')[0]], \
                       template_name='index_floration.html')
 
+      # Make html besucher order index
+      self.make_index('index-besucher-order', lambda sp: [sp['order']], index_type='Animalia')
+
       # Make html place index
-      self.make_index('location', lambda sp: self.session_index(sp, 'location'))
+      self.make_index('index-location', lambda sp: self.session_index(sp, 'location'))
 
       # Make html date index
-      self.make_index('date', lambda sp: self.getdate(sp), length=8)
+      self.make_index('index-date', lambda sp: self.getdate(sp), length=8)
 
       # Make html genus index
-      self.make_index('genus', \
+      self.make_index('index-genus', \
                       lambda sp: [sp['genus']], length=1)
 
       # Make html genus_de index
-      self.make_index('genus_de', \
+      self.make_index('index-genus_de', \
                       lambda sp: self.deutchname(sp, 'genus_de', 'species_de'), \
                       length=1)
 
       # Make html family index
-      self.make_index('family', lambda sp: [sp['family']])
+      self.make_index('index-family', lambda sp: [sp['family']])
 
       # Make html family_de index
-      self.make_index('family_de', lambda sp: [sp['family_de']])
+      self.make_index('index-family_de', lambda sp: [sp['family_de']])
 
 
    def getdate(self, sp):
@@ -142,10 +145,15 @@ class HTML_generator():
       return result
 
 
-   def make_index(self, index_name, fkey, template_name='index_species.html', length=0):
+   def make_index(self, index_name, fkey, template_name='index_species.html', length=0, index_type=False):
       sorted_species =  {}
       for species in self.database.species:
-         if 'makeindex' in species and species['makeindex'] == False:
+         index_species = False
+         if index_type and 'makeindex' in species and species['makeindex'] == index_type:
+            index_species = True
+         if not index_type and not 'makeindex' in species:
+            index_species = True
+         if index_species == False:
             continue
 
          try:
@@ -181,7 +189,7 @@ class HTML_generator():
       # Jinja template
       html_template = self.jinja_environment(template_name)
       html = html_template.render(index=self.index, database=self.database)
-      output = os.path.join(self.options.output, 'index-' + re.sub('[ _/]', '-', index_name)+'.html')
+      output = os.path.join(self.options.output, re.sub('[ _/]', '-', index_name)+'.html')
       self.write_file(output, html)
 
 
@@ -259,10 +267,11 @@ class HTML_generator():
 
 
    def write_file(self, filename, data):
-      with codecs.open(filename, 'r', encoding='utf-8') as fi:
-         data_in_disk = fi.read()
-      if data == data_in_disk:
-         return False
+      if os.path.exists(filename):
+         with codecs.open(filename, 'r', encoding='utf-8') as fi:
+            data_in_disk = fi.read()
+         if data == data_in_disk:
+            return False
       if self.options.verbose:
          print('   %s' % filename)
       with codecs.open(filename, 'w', encoding='utf-8') as fo:
@@ -331,7 +340,7 @@ class Database(UserDict):
       try:
          docs = [d for d in yaml.load_all(data, Loader=yaml.Loader)]
       except:
-         raise Exception('Error leyendo: ' + os.path.join(fullpath, fname)) 
+         raise Exception('Error reading: ' + os.path.join(fullpath, fname)) 
 
       # Create register with first yaml document and add path
       register = docs[0]

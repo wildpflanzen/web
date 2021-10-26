@@ -4,6 +4,14 @@
 {% block page_title -%}Cookies{% endblock -%}
 
 
+{% block navi_global %}
+   {{ macros.navi_menu([
+       ['Bestimmung', 'index.html'],
+       ['Register', 'index-genus-de.html'],
+       ['Systematik', 'systematik.html']  ]) }}
+{%- endblock %}
+
+
 {% block content %}
 
    <h1>Cookie-Richtlinie</h1>

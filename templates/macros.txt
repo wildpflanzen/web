@@ -12,30 +12,6 @@
 -#}
 
 
-{%- macro navi_global(selected) %}
-   <ul>
-   {% if selected == 'main' -%}
-   <li class="navi_select"><span class="btn">Bestimmung</span>
-   {% else -%}
-   <li><a href="index.html">Bestimmung</a>
-   {% endif %}
-
-   {%- if selected == 'index' -%}
-   </li><li class="navi_select"><span class="btn">Register</span>
-   {% else -%}
-   </li><li><a href="index-genus-de.html">Register</a>
-   {% endif %}
-
-   {%- if selected == 'systematik' -%}
-   </li><li class="navi_select"><span class="btn">Systematik</span>
-   {% else -%}
-   </li><li><a href="systematik.html">Systematik</a>
-   {% endif %}
-   </li>
-   </ul>
-{% endmacro -%}
-
-
 {%- macro navi_menu(options) %}
    <ul>
    {% for option in options %}
@@ -51,12 +27,13 @@
 
 
 {%- macro index_title(option) -%}
-   {%- if option == 'genus_de' %}Deutsche Namen
-   {%- elif option == 'genus' %}Wissenschaftliche Namen
-   {%- elif option == 'family_de' %}Deutsche Namen
-   {%- elif option == 'family' %}Wissenschaftliche Namen
-   {%- elif option == 'location' %}Lokalisierung
-   {%- elif option == 'date' %}Datum
+   {%- if   option == 'index-genus_de' %}Deutsche Namen
+   {%- elif option == 'index-genus' %}Wissenschaftliche Namen
+   {%- elif option == 'index-family_de' %}Deutsche Namen
+   {%- elif option == 'index-family' %}Wissenschaftliche Namen
+   {%- elif option == 'index-location' %}Lokalisierung
+   {%- elif option == 'index-date' %}Datum
+   {%- elif option == 'index-besucher-order' %}Besucher Order 
    {%- else %}{{ option }}
    {%- endif -%}
 {%-  endmacro -%}

@@ -112,7 +112,10 @@
 
 
 {% block navi_global %}
-   {{ macros.navi_global('main') }}
+   {{ macros.navi_menu([
+       ['Bestimmung', True],
+       ['Register', 'index-genus-de.html'],
+       ['Systematik', 'systematik.html']  ]) }}
 {%- endblock %}
 
 

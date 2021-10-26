@@ -21,9 +21,15 @@
 
 {% block navi_global %}
    {%- if group.splitpath[0] in ['grass', 'strauch'] -%}
-   {{ macros.navi_global('main') }}   
+   {{ macros.navi_menu([
+       ['Bestimmung', True],
+       ['Register', 'index-genus-de.html'],
+       ['Systematik', 'systematik.html']  ]) }}
    {%- else -%}
-   {{ macros.navi_global('') }}
+   {{ macros.navi_menu([
+       ['Bestimmung', 'index.html'],
+       ['Register', 'index-genus-de.html'],
+       ['Systematik', 'systematik.html']  ]) }}
    {%- endif -%}   
 {%- endblock %}
 

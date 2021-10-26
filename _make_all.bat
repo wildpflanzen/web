@@ -1,4 +1,9 @@
 @echo off
+set PATH=\Bin\Python39;%PATH%
+
 cd /D "%~dp0"/templates
-/Bin/Python39/python.exe  render.py
+
+python.exe render.py
+python.exe sitemap.py
+
 pause

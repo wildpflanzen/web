@@ -1,0 +1,48 @@
+﻿{% extends "base.html" %}
+
+
+{% block page_title -%}Systematik{% endblock -%}
+
+
+{% block navi_global %}
+   {{ macros.navi_menu([
+       ['Bestimmung', 'index-besucher.html'],
+       ['Register', 'index-besucher-order.html'],
+       ['Systematik', True]  ]) }}
+{%- endblock %}
+
+{% block navi_local %}
+   {{ macros.navi_menu([ ['Insecta', True ] ]) }}
+{%- endblock %}
+
+{% block content %}
+   
+   <div class="content_s">
+     <a target="_blank" href="static/insekta_systematik.jpg" title="vergr&ouml;ssern"> 
+     <img style="border:solid 1px #CDB7B5;" src="static/insekta_systematik2.jpg" alt="img"/>
+     </a>
+   </div>
+   
+      {{ macros.nach_oben() }}
+   
+   <div class="content_s">
+     <a target="_blank" href="static/hemiptera_g.png" title="vergr&ouml;ssern"> 
+     <img style="border:solid 1px #CDB7B5;" src="static/hemiptera_g.png" alt="img"/>
+     </a>
+   </div>
+
+      {{ macros.nach_oben() }}
+   
+{%- endblock %}
+
+
+
+
+
+
+
+
+
+
+
+

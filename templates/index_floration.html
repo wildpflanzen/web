@@ -20,7 +20,10 @@
 
 
 {% block navi_global -%}
-   {{ macros.navi_global('index') }}
+   {{ macros.navi_menu([
+       ['Bestimmung', 'index.html'],
+       ['Register', True],
+       ['Systematik', 'systematik.html']  ]) }}
 {%- endblock %}
 
 
