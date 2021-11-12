@@ -13,8 +13,7 @@ Static web site generator for image photograps
 Licenses
 ========
 
-[Contents under Creative Commons Attribution-NonCommercial-ShareAlike
-3.0 Unported License](https://creativecommons.org/licenses/by-nc-sa/3.0/)
+[Contents under Creative Commons Attribution-ShareAlike 4.0 Unported License](https://creativecommons.org/licenses/by-sa/4.0/)
 
 
 [Computer programs under GPL v3.0 License](https://www.gnu.org/licenses/gpl-3.0.en.html)
