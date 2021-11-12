@@ -1,6 +1,6 @@
 ﻿{#-
    Static web generator for image files.
-   
+
    https://github.com/wildpflanzen/web
 
    Copyright (c) 2012-2019 by Irene Pardo
@@ -27,7 +27,7 @@
 
    .index_farben {
    margin-top: 48px;
-   margin-bottom: 48px; 
+   margin-bottom: 48px;
    }
 
    .index_farben h3 {
@@ -42,7 +42,7 @@
    font-size: 14px;
    font-weight: 400;
    display: block;
-   width: 90px;
+   width: 150px;
    padding: 4px 10px;
    border: 1px solid #989898;
    margin: 0 -1px -1px 0;
@@ -83,7 +83,7 @@
 
 {% block navi_global %}
    {{ macros.navi_menu([
-       ['Bestimmung', True],
+       ['Besucher', True],
        ['Register', 'index-besucher-order.html'],
        ['Systematik', 'systematik-besucher.html']  ]) }}
 {%- endblock %}
@@ -97,38 +97,30 @@
 
    <div class="index_farben">
    <ul>
-      <li>
-         <h3><a href="besucher-diptera-syrphidae.html">Diptera</a></h3>
-      </li>
-
-      <li>
-         <h3><a href="besucher-hymenoptera-apoidea.html">Hymenoptera</a></h3>
-      </li>
-
-      <li>
-         <h3><a href="besucher-lepidoptera.html">Lepidoptera</a></h3>
-      </li>
-
-      <li>
-         <h3><a href="besucher-arachnida.html">Arachnida</a></h3>
-      </li>
-
-      <li>
-         <h3><a href="besucher-hemiptera.html">Hemiptera</a></h3>
-      </li>
-
-      <li>
-         <h3><a href="besucher-coleoptera.html">Coleoptera</a></h3>
-      </li>
-
-      <li>
-         <h3><a href="besucher-orthoptera.html">Orthoptera</a></h3>
-      </li>
-
-      <li>
-         <h3><a href="besucher-insecta.html">Insecta</a></h3>
-      </li>
-
+      <li><a href="besucher-diptera-syrphidae.html">
+          <img class="icon" src="static/icon-diptera.png" alt="Diptera" />
+          Diptera</a> </li>
+      <li><a href="besucher-hymenoptera-apoidea.html">
+          <img class="icon" src="static/icon-hymenoptera.png" alt="Hymenoptera" />
+          Hymenoptera</a></li>
+      <li><a href="besucher-lepidoptera.html">
+          <img class="icon" src="static/icon-lepidoptera.png" alt="Lepidoptera" />
+          Lepidoptera</a></li>
+      <li><a href="besucher-coleoptera.html">
+          <img class="icon" src="static/icon-coleoptera.png" alt="Coleoptera" />
+          Coleoptera</a></li>
+      <li><a href="besucher-hemiptera.html">
+          <img class="icon" src="static/icon-hemiptera.png" alt="Hemiptera" />
+          Hemiptera</a></li>
+      <li><a href="besucher-arachnida.html">
+          <img class="icon" src="static/icon-arachnida.png" alt="Arachnida" />
+          Arachnida</a></li>
+      <li><a href="besucher-orthoptera.html">
+          <img class="icon" src="static/icon-orthoptera.png" alt="Orthoptera" />
+          Orthoptera</a></li>
+      <li><a href="besucher-insecta.html">
+          <img class="icon" src="static/icon-insecta.png" alt="Insecta" />
+          Insecta</a></li>
    </ul>
 
    </div> <!-- farben -->

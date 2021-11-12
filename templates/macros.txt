@@ -33,7 +33,7 @@
    {%- elif option == 'index-family' %}Wissenschaftliche Namen
    {%- elif option == 'index-location' %}Lokalisierung
    {%- elif option == 'index-date' %}Datum
-   {%- elif option == 'index-besucher-order' %}Besucher Order 
+   {%- elif option == 'index-besucher-order' %}
    {%- else %}{{ option }}
    {%- endif -%}
 {%-  endmacro -%}

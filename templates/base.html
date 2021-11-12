@@ -118,9 +118,8 @@
    {% block footer %}
        <div class="footer_links">
        <ul>
-       <!-- <li><a href="impressum.html">Impressum</a> -->
-       {% if database.options.cookies == True -%}</li><li><a href="cookies.html">Cookies</a>{%- endif %}
-       </li><li><a href="kontakt.html">Kontakt</a>
+       {% if database.options.cookies == True -%}<li><a href="cookies.html">Cookies</a>
+       </li>{%- endif %}<li><a href="kontakt.html">Kontakt</a>
        </li><li><a href="index-besucher.html">Besucher</a>
        </li>
        </ul>
@@ -139,10 +138,10 @@
    </div>  <!-- Footer end -->
 
 
-   <!-- Database
+   <!-- Database init
    {% block data %}
    {%- endblock %}
-   -->
+   Database end -->
 
    <!--
    Page Build with Python language and Jinja2 template engine.
