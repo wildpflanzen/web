@@ -44,7 +44,7 @@
 
    <h2>Species</h2>
 
-   {% set columns = ['num', 'group', 'path', 'species_de / genus_de', 'genus / species',
+   {% set columns = ['num', 'group', 'path', 'genus / species', 'species_de / genus_de',
                      'order / family', 'family_de',  'session date', 'session location', 'session images'] %}
    <table>
    <tr>
@@ -60,14 +60,14 @@
 
       <td><a href="../source/{{species.path}}">{{ species.path | replace("/","/ ") | replace("_","_ ") }}</a></td>
 
+      <td><a href="{{ species.filename }}.html">{{ species.genus }} / {{ species.species }}</a></td>
+
       <td><a href="{{ species.filename }}.html">
       {% for species_de in species.species_de %}
       {{ species_de }} / {{species.genus_de[loop.index0] }}
       {%- if loop.index < loop.length %}; <br />{% endif %}
       {%- endfor %}</a>
       </td>
-
-      <td><a href="{{ species.filename }}.html">{{ species.genus }} / {{ species.species }}</a></td>
 
       <td>{{ species.order }} / {{ species.family }}</td>
 
@@ -88,7 +88,7 @@
       <td>
       {% for session in species.sessions %}
       {% for image in session.images %}<a href="../source/{{species.path}}/{{ image }}">{{ image }}</a>{% endfor %}
-      {%- if loop.index < loop.length %}<hr> S2: {% endif %}
+      {%- if loop.index < loop.length %} <hr> {% endif %}
       {%- endfor %}
       </td>
    </tr>

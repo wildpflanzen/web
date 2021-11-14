@@ -19,6 +19,22 @@
 {%- endblock %}
 
 
+{% block navi_global %}
+   {% if  species.splitpath[0]=="besucher" %}
+   {{ macros.navi_menu([
+       ['Besucher', 'index-besucher.html'],
+       ['Register', 'index-besucher-order.html'],
+       ['Systematik', 'systematik-besucher.html']  ]) }}
+   {% else %}
+   {{ macros.navi_menu([
+       ['Bestimmung', 'index.html'],
+       ['Register', 'index-genus-de.html'],
+       ['Systematik', 'systematik.html']  ]) }}
+   {% endif %}   
+{%- endblock %}
+
+
+
 {% block navi_local %}
    <ul>
    <li class="navi_next"><a href="{{ species.species_prev.filename }}.html">&lt;</a>
@@ -34,12 +50,11 @@
 {% block content %}
    <!-- Species name -->
    <h1>
-      {%- if macros.deutsche_name(species) -%}
-         {{ macros.deutsche_name(species) }} / {% endif -%}
       {{ species.genus }}
-      {%- if species.species | int == 0 -%}{# does not show numbers in names #}
+      {%- if species.species | int == 0 -%} {# does not show numbers in names #}
          {{ species.species }}
       {%- endif -%}
+      {%- if macros.deutsche_name(species) %} / {{ macros.deutsche_name(species) }} {% endif -%}
    </h1>
 
    <div class="sp_info">
@@ -55,7 +70,7 @@
    <div class="sp_session">
    <ul>
    {% for thumb in session.thumbs -%}
-   <li><a href="images/{{ thumb }}"><img src="thumbs/{{ thumb }}" alt="{{ species.genus }} {{ species.species }}" /></a>
+   <li><a target="_blank" href="images/{{ thumb }}"><img src="thumbs/{{ thumb }}" alt="{{ species.genus }} {{ species.species }}" /></a>
    </li>
    {%- endfor %}
    </ul>

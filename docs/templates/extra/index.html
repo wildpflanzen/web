@@ -93,7 +93,6 @@
    #menu_gruen {
    visibility: hidden;
    }
-   #toggle_weiss { background-color: #EEF3E2; }
 
    .submenu a, span.btn.submenu {
    width: 150px;
@@ -112,7 +111,10 @@
 
 
 {% block navi_global %}
-   {{ macros.navi_global('main') }}
+   {{ macros.navi_menu([
+       ['Bestimmung', True],
+       ['Register', 'index-genus-de.html'],
+       ['Systematik', 'systematik.html']  ]) }}
 {%- endblock %}
 
 
@@ -144,11 +146,11 @@
    <li>
       <h3><a id="toggle_{{ color }}" onclick="menu_toggle('{{ color }}')">{{ color_name }}</a></h3>
       <ul id="menu_{{ color }}"  class="submenu">
-      <li><a href="blumen-{{ color_path }}-vier.html"><img class="icon" src="static/4.png" alt="4" /> Bis vier</a>
-		</li><li><a href="blumen-{{ color_path }}-fuenf.html"><img class="icon" src="static/5.png" alt="5" /> Fünf</a>
-		</li><li><a href="blumen-{{ color_path }}-plus.html"><img class="icon" src="static/6.png" alt="6" /> Mehr als fünf</a>
-		</li><li><a href="blumen-{{ color_path }}-bluetenstaende.html"><img class="icon" src="static/d.png" alt="d" /> Blütenstände</a>
-		</li><li><a href="blumen-{{ color_path }}-zygomorph.html"><img class="icon" src="static/z.png" alt="z" /> Zygomorph</a>
+      <li><a href="blumen-{{ color_path }}-vier.html"><img class="icon" src="static/icon-4.png" alt="4" /> Bis vier</a>
+		</li><li><a href="blumen-{{ color_path }}-fuenf.html"><img class="icon" src="static/icon-5.png" alt="5" /> Fünf</a>
+		</li><li><a href="blumen-{{ color_path }}-plus.html"><img class="icon" src="static/icon-6.png" alt="6" /> Mehr als fünf</a>
+		</li><li><a href="blumen-{{ color_path }}-bluetenstaende.html"><img class="icon" src="static/icon-d.png" alt="d" /> Blütenstände</a>
+		</li><li><a href="blumen-{{ color_path }}-zygomorph.html"><img class="icon" src="static/icon-z.png" alt="z" /> Zygomorph</a>
       </li>
       </ul>
    </li>

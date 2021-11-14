@@ -4,7 +4,12 @@
 {% block page_title -%}Kontakt{% endblock -%}
 
 
-{% block navi_global %}{{ macros.navi_global('kontakt') }}{%- endblock %}
+{% block navi_global %}
+   {{ macros.navi_menu([
+       ['Bestimmung', 'index.html'],
+       ['Register', 'index-genus-de.html'],
+       ['Systematik', 'systematik.html']  ]) }}
+{%- endblock %}
 
 
 {% block content %}

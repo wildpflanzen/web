@@ -5,7 +5,10 @@
 
 
 {% block navi_global %}
-   {{ macros.navi_global('') }}
+   {{ macros.navi_menu([
+       ['Bestimmung', 'index.html'],
+       ['Register', 'index-genus-de.html'],
+       ['Systematik', 'systematik.html']  ]) }}
 {%- endblock %}
 
 

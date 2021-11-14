@@ -1,4 +1,4 @@
-"""
+﻿"""
 
    Wildpflanzen static web generator.
 
@@ -104,11 +104,6 @@ class HTML_generator():
    def html_index(self):
       print('\nRendering index files ...')
 
-      # Make html floration index
-      self.make_index('index-floration', \
-                      lambda sp: [sp['floration'].split('-')[0]], \
-                      template_name='index_floration.html')
-
       # Make html besucher order index
       self.make_index('index-besucher-order', lambda sp: [sp['order']], index_type='Animalia')
 
@@ -119,19 +114,16 @@ class HTML_generator():
       self.make_index('index-date', lambda sp: self.getdate(sp), length=8)
 
       # Make html genus index
-      self.make_index('index-genus', \
-                      lambda sp: [sp['genus']], length=1)
+      self.make_index('index-genus', lambda sp: [sp['genus']], length=1)
 
       # Make html genus_de index
-      self.make_index('index-genus_de', \
-                      lambda sp: self.deutchname(sp, 'genus_de', 'species_de'), \
-                      length=1)
+      self.make_index('index-genus_de', lambda sp: self.deutchname(sp, 'genus_de', 'species_de'), sort_deutchname=True, length=1)
 
       # Make html family index
       self.make_index('index-family', lambda sp: [sp['family']])
 
       # Make html family_de index
-      self.make_index('index-family_de', lambda sp: [sp['family_de']])
+      self.make_index('index-family_de', lambda sp: [sp['family_de']], sort_deutchname=True)
 
 
    def getdate(self, sp):
@@ -146,7 +138,7 @@ class HTML_generator():
       return result
 
 
-   def make_index(self, index_name, fkey, template_name='index_species.html', length=0, index_type=False):
+   def make_index(self, index_name, fkey, template_name='index_species.html', length=0, sort_deutchname=False, index_type=False):
       sorted_species =  {}
       for species in self.database.species:
          index_species = False
@@ -179,13 +171,16 @@ class HTML_generator():
 
       # Sort species
       for key in keys:
-         sorted_species[key] = \
-            sorted(sorted_species[key], \
-                   key=lambda sp: self.deutchname(sp, 'genus_de', 'species_de'))
+         if sort_deutchname:
+            sorted_species[key] = sorted(sorted_species[key], \
+                                         key=lambda sp: self.deutchname(sp, 'genus_de', 'species_de'))
+         else:
+            sorted_species[key] = sorted(sorted_species[key], \
+                                         key=lambda sp: sp['genus'] + sp['species'])
+         
 
       # compose index
-      self.index = {'keys': keys, 'species': sorted_species }
-      self.index['index_name'] = index_name
+      self.index = {'keys': keys, 'species': sorted_species, 'index_name': index_name }
 
       # Jinja template
       html_template = self.jinja_environment(template_name)
@@ -464,6 +459,26 @@ class Database(UserDict):
                   print('   Warning, deutsche genus without specie: %s' % os.path.join(register['path'], 'index.txt'))
                elif ' ' in register['species_de'][i] and register['species_de'][i][-1] != '-':
                   print('   Warning, subspecie without hyphen: %s' % os.path.join(register['path'], 'index.txt'))
+
+         # Test Uppercase and lowercase
+         if register['family'] and not re.match(u'[A-Z]', register['family']):
+            print('   Warning, family first letter not Uppercase: %s' % os.path.join(register['path'], 'index.txt'))
+         if register['species'] and not re.match(u'[a-z1-9]', register['species']):
+            print('   Warning, species first letter not lowercase: "%s", %s' % (register['species'], os.path.join(register['path'], 'index.txt')))
+         if register['genus'] and not re.match(u'[A-Z]', register['genus']):
+            print('   Warning, genus first letter not Uppercase: %s' % os.path.join(register['path'], 'index.txt'))
+         if register['family_de'] and not re.match(u'[A-ZÄËÏÖÜ]', register['family_de']):
+            print('   Warning, family_de first letter not Uppercase: %s' % register['family_de'], os.path.join(register['path'], 'index.txt'))
+         for i in range(len(register['species_de'])):
+            if register['species_de'][i] and not re.match(u'[A-ZÄËÏÖÜ]', register['species_de'][i]):
+               print('   Warning, species_de first letter not Uppercase: %s' % os.path.join(register['path'], 'index.txt'))
+         for i in range(len(register['genus_de'])):
+            if register['genus_de'][i] and not re.match(u'[A-ZÄËÏÖÜ]', register['genus_de'][i]):
+               print('   Warning, genus_de first letter not Uppercase: %s' % os.path.join(register['path'], 'index.txt'))            
+         if 'sessions' in register:
+            for session in register['sessions']:
+               if 'location' in session and session['location'] and not re.match(u'[A-ZÄËÏÖÜ]', session['location']):
+                  print('   Warning, location first letter not Uppercase: %s' % os.path.join(register['path'], 'index.txt'))
 
          # Link species with group
          group_path = register['group_path']

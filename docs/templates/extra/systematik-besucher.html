@@ -1,0 +1,81 @@
+﻿{% extends "base.html" %}
+
+
+{% block page_title -%}Systematik{% endblock -%}
+
+
+{% block navi_global %}
+   {{ macros.navi_menu([
+       ['Besucher', 'index-besucher.html'],
+       ['Register', 'index-besucher-order.html'],
+       ['Systematik', True]  ]) }}
+{%- endblock %}
+
+
+{% block navi_local %}
+   {{ macros.navi_menu([
+      ['Plantae / Insecta', True ] ]) }}
+{%- endblock %}
+
+
+{% block content %}
+
+   <div class="content_s">
+     <a target="_blank" href="static/eukarya.png" title="vergr&ouml;ssern">
+     <img style="border:solid 1px #CDB7B5;" src="static/eukarya.png" alt="img"/>
+     </a>
+   </div>
+   <p><a target="_blank" href="static/mabberley_rothmaler_fischer.pdf" title="Link zum PDF">
+   Nach Mabberley, Rothmaler, Fischer &rarr;</a></p>
+   
+   {{ macros.nach_oben() }}
+   
+   <div class="content_s">
+     <a target="_blank" href="static/polypodiopsida.png" title="vergr&ouml;ssern">
+     <img style="border:solid 1px #CDB7B5;" src="static/polypodiopsida.png" alt="img"/>
+     </a>
+   </div>
+   <p><a target="_blank" href="static/mabberley_rothmaler_fischer.pdf" title="Link zum PDF">
+   Nach Mabberley, Rothmaler, Fischer &rarr;</a></p>
+   
+   {{ macros.nach_oben() }}
+
+   <div class="content_s">
+     <a target="_blank" href="static/hymenoptera.pdf" title="vergr&ouml;ssern"> 
+     <img style="border:solid 1px #CDB7B5;" src="static/hymenoptera.png" alt="img"/>
+     </a>
+     <p>Nach Wolfgang Hemmer</p>
+   </div>
+   
+      {{ macros.nach_oben() }}
+   
+   <div class="content_s">
+     <a target="_blank" href="static/hemiptera_g.png" title="vergr&ouml;ssern"> 
+     <img style="border:solid 1px #CDB7B5;" src="static/hemiptera_g.png" alt="img"/>
+     </a>
+     <p>Nach Bourgoin & Campbell 2002</p>
+   </div>
+
+      {{ macros.nach_oben() }}
+   
+   <div class="content_s">
+     <a target="_blank" href="static/insekta_systematik.jpg" title="vergr&ouml;ssern"> 
+     <img style="border:solid 1px #CDB7B5;" src="static/insekta_systematik2.jpg" alt="img"/>
+     </a>
+   </div>
+   
+      {{ macros.nach_oben() }}
+
+{%- endblock %}
+
+
+
+
+
+
+
+
+
+
+
+

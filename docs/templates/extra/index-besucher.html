@@ -1,0 +1,128 @@
+﻿{#-
+   Static web generator for image files.
+
+   https://github.com/wildpflanzen/web
+
+   Copyright (c) 2012-2019 by Irene Pardo
+   Copyright (c) 2018-2019 by Carlos Pardo
+
+   License GPL v3  <https://www.gnu.org/licenses/gpl-3.0.html>
+   This program is free software; you can redistribute it and/or
+   modify it under the terms of the GNU General Public License
+   version 3 as published by the Free Software Foundation.
+-#}
+
+{% extends "base.html" %}
+
+
+{% block page_title -%}Wildpflanzen{% endblock -%}
+
+
+{% block extra_head %}
+
+   <style>
+   /* Main page style */
+
+   .index { margin-top: 64px; }
+
+   .index_farben {
+   margin-top: 48px;
+   margin-bottom: 48px;
+   }
+
+   .index_farben h3 {
+   margin: 0;
+   padding: 0;
+   border: none;
+   }
+
+   .index_farben a,
+   .index a,
+   .index_farben .btn {
+   font-size: 14px;
+   font-weight: 400;
+   display: block;
+   width: 150px;
+   padding: 4px 10px;
+   border: 1px solid #989898;
+   margin: 0 -1px -1px 0;
+   }
+
+   .index_farben .btn {
+   display: inline-block;
+   }
+
+   .index_farben a:hover,
+   .index a:hover {
+   background-color: #EEF3E2;
+   }
+
+   .index_farben ul {
+   position: relative;
+   }
+
+   .index_farben ul ul {
+   left: 32px;
+   }
+
+   .submenu a, span.btn.submenu {
+   width: 150px;
+   }
+
+   .icon {
+   vertical-align: middle;
+   height: 22px;
+   padding: 0 12px 0 0;
+   border-right: 1px solid #989898;
+   margin: -2px 10px 0 0;
+   }
+   </style>
+
+{%- endblock %}
+
+
+{% block navi_global %}
+   {{ macros.navi_menu([
+       ['Besucher', True],
+       ['Register', 'index-besucher-order.html'],
+       ['Systematik', 'systematik-besucher.html']  ]) }}
+{%- endblock %}
+
+
+{% block navi_local %}
+{%- endblock %}
+
+
+{% block content %}
+
+   <div class="index_farben">
+   <ul>
+      <li><a href="besucher-diptera-syrphidae.html">
+          <img class="icon" src="static/icon-diptera.png" alt="Diptera" />
+          Diptera</a> </li>
+      <li><a href="besucher-hymenoptera-apoidea.html">
+          <img class="icon" src="static/icon-hymenoptera.png" alt="Hymenoptera" />
+          Hymenoptera</a></li>
+      <li><a href="besucher-lepidoptera.html">
+          <img class="icon" src="static/icon-lepidoptera.png" alt="Lepidoptera" />
+          Lepidoptera</a></li>
+      <li><a href="besucher-coleoptera.html">
+          <img class="icon" src="static/icon-coleoptera.png" alt="Coleoptera" />
+          Coleoptera</a></li>
+      <li><a href="besucher-hemiptera.html">
+          <img class="icon" src="static/icon-hemiptera.png" alt="Hemiptera" />
+          Hemiptera</a></li>
+      <li><a href="besucher-arachnida.html">
+          <img class="icon" src="static/icon-arachnida.png" alt="Arachnida" />
+          Arachnida</a></li>
+      <li><a href="besucher-orthoptera.html">
+          <img class="icon" src="static/icon-orthoptera.png" alt="Orthoptera" />
+          Orthoptera</a></li>
+      <li><a href="besucher-insecta.html">
+          <img class="icon" src="static/icon-insecta.png" alt="Insecta" />
+          Insecta</a></li>
+   </ul>
+
+   </div> <!-- farben -->
+
+{%- endblock %}

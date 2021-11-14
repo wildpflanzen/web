@@ -1,11 +1,11 @@
-"""
+﻿"""
 
    Wildpflanzen static web generator.
 
    https://github.com/wildpflanzen/web
 
 
-   Copyright (c) 2018-2019 by Carlos Pardo
+   Copyright (c) 2018-2021 by Carlos Pardo
 
    License GPL v3  <https://www.gnu.org/licenses/gpl-3.0.html>
    This program is free software; you can redistribute it and/or
@@ -13,6 +13,7 @@
    version 3 as published by the Free Software Foundation.
 
 """
+
 
 import os
 import re
@@ -28,7 +29,7 @@ def main():
 
    # Read options
    options = Options(file_name='options.ini')
-   
+
    # Read database
    database = Database(options)
    database.read()
@@ -103,31 +104,26 @@ class HTML_generator():
    def html_index(self):
       print('\nRendering index files ...')
 
-      # Make html floration index
-      self.make_index('floration', \
-                      lambda sp: [sp['floration'].split('-')[0]], \
-                      template_name='index_floration.html')
+      # Make html besucher order index
+      self.make_index('index-besucher-order', lambda sp: [sp['order']], index_type='Animalia')
 
       # Make html place index
-      self.make_index('location', lambda sp: self.session_index(sp, 'location'))
+      self.make_index('index-location', lambda sp: self.session_index(sp, 'location'))
 
       # Make html date index
-      self.make_index('date', lambda sp: self.getdate(sp), length=8)
+      self.make_index('index-date', lambda sp: self.getdate(sp), length=8)
 
       # Make html genus index
-      self.make_index('genus', \
-                      lambda sp: [sp['genus']], length=1)
+      self.make_index('index-genus', lambda sp: [sp['genus']], length=1)
 
       # Make html genus_de index
-      self.make_index('genus_de', \
-                      lambda sp: self.deutchname(sp, 'genus_de', 'species_de'), \
-                      length=1)
+      self.make_index('index-genus_de', lambda sp: self.deutchname(sp, 'genus_de', 'species_de'), sort_deutchname=True, length=1)
 
       # Make html family index
-      self.make_index('family', lambda sp: [sp['family']])
+      self.make_index('index-family', lambda sp: [sp['family']])
 
       # Make html family_de index
-      self.make_index('family_de', lambda sp: [sp['family_de']])
+      self.make_index('index-family_de', lambda sp: [sp['family_de']], sort_deutchname=True)
 
 
    def getdate(self, sp):
@@ -142,10 +138,15 @@ class HTML_generator():
       return result
 
 
-   def make_index(self, index_name, fkey, template_name='index_species.html', length=0):
+   def make_index(self, index_name, fkey, template_name='index_species.html', length=0, sort_deutchname=False, index_type=False):
       sorted_species =  {}
       for species in self.database.species:
-         if 'makeindex' in species and species['makeindex'] == False:
+         index_species = False
+         if index_type and 'makeindex' in species and species['makeindex'] == index_type:
+            index_species = True
+         if not index_type and not 'makeindex' in species:
+            index_species = True
+         if index_species == False:
             continue
 
          try:
@@ -170,18 +171,21 @@ class HTML_generator():
 
       # Sort species
       for key in keys:
-         sorted_species[key] = \
-            sorted(sorted_species[key], \
-                   key=lambda sp: self.deutchname(sp, 'genus_de', 'species_de'))
+         if sort_deutchname:
+            sorted_species[key] = sorted(sorted_species[key], \
+                                         key=lambda sp: self.deutchname(sp, 'genus_de', 'species_de'))
+         else:
+            sorted_species[key] = sorted(sorted_species[key], \
+                                         key=lambda sp: sp['genus'] + sp['species'])
+         
 
       # compose index
-      self.index = {'keys': keys, 'species': sorted_species }
-      self.index['index_name'] = index_name
+      self.index = {'keys': keys, 'species': sorted_species, 'index_name': index_name }
 
       # Jinja template
       html_template = self.jinja_environment(template_name)
       html = html_template.render(index=self.index, database=self.database)
-      output = os.path.join(self.options.output, 'index-' + re.sub('[ _/]', '-', index_name)+'.html')
+      output = os.path.join(self.options.output, re.sub('[ _/]', '-', index_name)+'.html')
       self.write_file(output, html)
 
 
@@ -259,8 +263,11 @@ class HTML_generator():
 
 
    def write_file(self, filename, data):
-      if os.path.exists(filename) and self.options.overwrite == False:
-         return False
+      if os.path.exists(filename):
+         with codecs.open(filename, 'r', encoding='utf-8') as fi:
+            data_in_disk = fi.read()
+         if data == data_in_disk:
+            return False
       if self.options.verbose:
          print('   %s' % filename)
       with codecs.open(filename, 'w', encoding='utf-8') as fo:
@@ -326,8 +333,10 @@ class Database(UserDict):
       fullpath = os.path.join(basepath, path)
       with codecs.open(os.path.join(fullpath, fname), 'r', encoding='utf-8-sig') as fi:
          data = fi.read()
-      docs = [d for d in yaml.load_all(data)]
-
+      try:
+         docs = [d for d in yaml.load_all(data, Loader=yaml.Loader)]
+      except:
+         raise Exception('Error reading: ' + os.path.join(fullpath, fname)) 
 
       # Create register with first yaml document and add path
       register = docs[0]
@@ -451,6 +460,32 @@ class Database(UserDict):
                elif ' ' in register['species_de'][i] and register['species_de'][i][-1] != '-':
                   print('   Warning, subspecie without hyphen: %s' % os.path.join(register['path'], 'index.txt'))
 
+         # Test Uppercase and lowercase
+         if register['family'] and not re.match(u'[A-Z]', register['family']):
+            print('   Warning, family first letter not Uppercase: %s' % os.path.join(register['path'], 'index.txt'))
+         if register['species'] and not re.match(u'[a-z1-9]', register['species']):
+            print('   Warning, species first letter not lowercase: "%s", %s' % (register['species'], os.path.join(register['path'], 'index.txt')))
+         if register['genus'] and not re.match(u'[A-Z]', register['genus']):
+            print('   Warning, genus first letter not Uppercase: %s' % os.path.join(register['path'], 'index.txt'))
+         if register['family_de'] and not re.match(u'[A-ZÄËÏÖÜ]', register['family_de']):
+            print('   Warning, family_de first letter not Uppercase: %s' % register['family_de'], os.path.join(register['path'], 'index.txt'))
+         for i in range(len(register['species_de'])):
+            if register['species_de'][i] and not re.match(u'[A-ZÄËÏÖÜ]', register['species_de'][i]):
+               print('   Warning, species_de first letter not Uppercase: %s' % os.path.join(register['path'], 'index.txt'))
+         for i in range(len(register['genus_de'])):
+            if register['genus_de'][i] and not re.match(u'[A-ZÄËÏÖÜ]', register['genus_de'][i]):
+               print('   Warning, genus_de first letter not Uppercase: %s' % os.path.join(register['path'], 'index.txt'))            
+         if 'sessions' in register:
+            for session in register['sessions']:
+               if 'location' in session and session['location'] and not re.match(u'[A-ZÄËÏÖÜ]', session['location']):
+                  print('   Warning, location first letter not Uppercase: %s' % os.path.join(register['path'], 'index.txt'))
+
+         # Test date
+         if 'sessions' in register:
+            for session in register['sessions']:
+               if 'date' in session and session['date'] and not re.match('(?:1[0-2]|[0-9])\.20[1-3][0-9]$', session['date']):
+                  print('   Warning, date with bad format: %s, %s' % (session['date'], os.path.join(register['path'], 'index.txt')))
+
          # Link species with group
          group_path = register['group_path']
          group = self.find_group(group_path)
@@ -546,7 +581,7 @@ class Options():
       print('\nReading options ...')
       with codecs.open(file_name, 'r', encoding='utf-8-sig') as fi:
          options_raw = fi.read()
-      options_dict = yaml.load(options_raw)
+      options_dict = yaml.load(options_raw, Loader=yaml.Loader)
       return options_dict
    
    def set_options(self, options_dict):
@@ -599,8 +634,8 @@ def thumbnails_make(database, options):
             image_out = os.path.join(options.output, 'images', imagename)
             thumb_out = os.path.join(options.output, 'thumbs', imagename)
 
-            # Copy image without overwrite
-            if not os.path.isfile(image_out):
+            # Copy image if source is newer
+            if not (os.path.isfile(image_out) and file_newer(image_out, source_in)):
                if options.verbose:
                   print('   Copy %s -->\n        %s' %(source_in, image_out))
                image_convert(source_in, image_out, options)
@@ -615,7 +650,7 @@ def thumbnails_make(database, options):
             session['thumbs'].append(imagename)
 
             # Make thumbnail without overwrite
-            if not os.path.isfile(thumb_out):
+            if not (os.path.isfile(thumb_out) and file_newer(thumb_out, source_in)):
                thumb_convert(source_in, thumb_out, options)
 
          register['thumbname'] = thumbname
@@ -629,9 +664,9 @@ def remove_unused_files(path, used_image_files, options):
    fullpath = os.path.join(options.output, path)
    for image in os.listdir(fullpath):
       if not image in used_image_files:
-         print('   Warning, unused image: %s' % os.path.join(path, image))
+         print('   Warning, unused image: %s' % os.path.join(fullpath, image))
          if options.remove_unused_files:
-            os.remove(os.path.join(path, image))
+            os.remove(os.path.join(fullpath, image))
 
 
 def image_convert(image_in, image_out, options):
@@ -639,6 +674,12 @@ def image_convert(image_in, image_out, options):
    image_options = ' '.join(options.image_options)
    command = options.imagemagick + ' ' + image_in + ' ' + image_options + ' ' + image_out
    subprocess.call(command, shell=True)
+
+
+def file_newer(filename_1, filename_2):
+   if os.path.getmtime(filename_1) > os.path.getmtime(filename_2):
+      return True
+   return False
 
 
 def thumb_convert(filein, thumb, options):

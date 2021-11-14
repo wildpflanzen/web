@@ -20,11 +20,10 @@
 
 
 {% block navi_global %}
-   {%- if group.splitpath[0] == 'insecta' -%}
-      {{ macros.navi_global('besucher') }}
-   {%- else -%}
-      {{ macros.navi_global('') }}
-   {%- endif -%}
+   {{ macros.navi_menu([
+       ['Besucher', 'index-besucher.html'],
+       ['Register', 'index-besucher-order.html'],
+       ['Systematik', 'systematik-besucher.html']  ]) }}
 {%- endblock %}
 
 
